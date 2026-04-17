@@ -1,0 +1,1472 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wiki Pandorus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="intro-overlay" class="intro-overlay" aria-hidden="true">
+    <img id="intro-logo" class="intro-logo" src="./media/logo/logo.jpg" alt="Logo Pandorus">
+  </div>
+  <div class="page-shell">
+    <header class="hero">
+      <nav class="topbar">
+        <a class="brand" href="#home">
+          <img class="brand-mark" src="./media/logo/logo.jpg" alt="Logo Pandorus">
+          <div>
+            <p class="eyebrow">Archive locale</p>
+            <h1>Pandorus</h1>
+          </div>
+        </a>
+        <div class="top-links">
+          <a href="#fiches">Fiches</a>
+          <a href="#relations">Arbre de Relation</a>
+          <a href="#chronologie">Chronologie</a>
+          <a href="#chapitres">Chapitres</a>
+          <a href="#personnages">Personnages</a>
+          <a href="#creatures">Créatures</a>
+          <a href="#mysteres">Mystères</a>
+          <a href="#cartes">Cartes</a>
+        </div>
+        <div class="topbar-meta">
+          <p id="section-whisper" class="section-whisper">Entrer dans l'archive vivante de Pandorus.</p>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="section">
+        <div class="landing-marquee-shell" aria-hidden="true">
+          <div class="landing-marquee">
+            <div id="landing-marquee-track" class="landing-marquee-track"></div>
+          </div>
+        </div>
+        <div class="landing-hero">
+          <div class="landing-copy">
+            <p class="landing-kicker">Univers vivant, mémoire ancienne, forces en éveil</p>
+            <h2 class="landing-title">Pandorus</h2>
+            <p class="landing-aura">Archive d'un monde qui respire, observe et se souvient.</p>
+            <p class="landing-lead">
+              Entre souffle primordial, territoires conscients, figures légendaires et créatures indomptées,
+              Pandorus ouvre un monde où chaque pas réveille une mémoire plus ancienne que les royaumes eux-mêmes.
+            </p>
+            <div class="landing-invocation">
+              <p class="landing-invocation-mark">Fragment d'ouverture</p>
+              <p>
+                Ici, les fleuves gardent la memoire, les terres reagissent, les creatures pressentent l'alteration
+                avant les hommes, et certaines naissances ne relevent pas du hasard mais de la necessite.
+              </p>
+            </div>
+            <div class="landing-stats">
+              <article>
+                <strong>Souffle</strong>
+                <span>Origine vive du monde</span>
+              </article>
+              <article>
+                <strong>Vrax</strong>
+                <span>Territoire conscient et reponse</span>
+              </article>
+              <article>
+                <strong>Memoire</strong>
+                <span>Ancienne guerre jamais eteinte</span>
+              </article>
+            </div>
+            <div class="landing-actions">
+              <a class="button primary" href="#fiches">Entrer dans les fiches</a>
+              <a class="button secondary" href="#chronologie">Voir la chronologie</a>
+              <a class="button secondary" href="#creatures">Explorer le bestiaire</a>
+            </div>
+            <article id="landing-oracle" class="landing-oracle" aria-live="polite"></article>
+            <div class="landing-entry-grid">
+              <article class="entry-card">
+                <p class="entry-card-kicker">Entrer par les visages</p>
+                <h3>Fiches majeures</h3>
+                <p>Shaushana, Shan, Franklin, Elrick et les figures du Vrax composent les lignes de force du recit.</p>
+                <a href="#fiches">Ouvrir les fiches</a>
+              </article>
+              <article class="entry-card">
+                <p class="entry-card-kicker">Entrer par les lieux</p>
+                <h3>Cartes et ciels</h3>
+                <p>Constellations, mondes lointains, terres conscientes et geographies anciennes prolongent le mystere.</p>
+                <a href="#cartes">Explorer les cartes</a>
+              </article>
+              <article class="entry-card">
+                <p class="entry-card-kicker">Entrer par les bascules</p>
+                <h3>Chronologie vivante</h3>
+                <p>Naissances, fractures, revelations et desequilibre du vivant dessinent la progression du monde.</p>
+                <a href="#chronologie">Suivre les evenements</a>
+              </article>
+            </div>
+          </div>
+
+          <div class="landing-stage" aria-hidden="true">
+            <div class="landing-stage-scene">
+              <div class="landing-stage-halo"></div>
+              <div class="landing-stage-ring"></div>
+              <div class="landing-emblem">
+                <img src="./media/logo/logo.jpg" alt="Logo Pandorus">
+              </div>
+
+              <div class="stage-whisper whisper-passar">Passar</div>
+              <div class="stage-whisper whisper-bassai">Bassaï</div>
+              <div class="stage-whisper whisper-vrax">Vrax</div>
+
+              <figure class="archive-chip archive-franklin">
+                <img src="./media/pandorus/Franklin.png" alt="Franklin">
+                <figcaption>
+                  <span class="archive-chip-kicker">Point d'ancrage</span>
+                  <strong>Franklin</strong>
+                </figcaption>
+              </figure>
+
+              <article class="sky-tablet sky-tablet-ezze">
+                <div class="sky-tablet-orbit" aria-hidden="true"></div>
+                <img src="./media/pandorus/Ezze.png" alt="Ezze">
+                <div class="sky-tablet-copy">
+                  <p class="sky-tablet-kicker">Presence fine</p>
+                  <h3>Ezze</h3>
+                  <p>Une silhouette plus rare, presque suspendue, qui apporte a la scene une note d'eclat calme et de mystere.</p>
+                </div>
+              </article>
+
+              <figure class="spotlight-card spotlight-shaushana">
+                <img src="./media/pandorus/Shaushana.jpg" alt="Shaushana">
+                <figcaption>Shaushana</figcaption>
+              </figure>
+
+              <figure class="spotlight-card spotlight-shan">
+                <img src="./media/pandorus/Shan.jpg" alt="Shan">
+                <figcaption>Shan</figcaption>
+              </figure>
+
+              <figure class="spotlight-card spotlight-eben">
+                <img src="./media/pandorus/Eben.jpg" alt="Eben">
+                <figcaption>Eben</figcaption>
+              </figure>
+
+              <figure class="creature-badge creature-felou">
+                <img src="./media/creatures/F%C3%A9lou.png" alt="Félou">
+                <figcaption>Félou</figcaption>
+              </figure>
+
+              <figure class="creature-badge creature-felours">
+                <img src="./media/creatures/Felours.png" alt="Félours">
+                <figcaption>Félours</figcaption>
+              </figure>
+
+              <figure class="creature-badge creature-renastar">
+                <img src="./media/creatures/Renastar.png" alt="Renastar">
+                <figcaption>Renastar</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="landing-panels">
+          <article class="landing-panel landing-panel-wide world-seals-panel">
+            <p class="landing-panel-kicker">Sceaux du monde</p>
+            <h3>Les grandes familles de Pandorus</h3>
+            <div class="world-seals">
+              <article class="world-seal world-seal-living">
+                <span class="world-seal-mark">SV</span>
+                <strong>Vivant</strong>
+                <p>Ce qui respire, réagit et reconnaît les altérations.</p>
+              </article>
+              <article class="world-seal world-seal-memory">
+                <span class="world-seal-mark">ME</span>
+                <strong>Mémoire</strong>
+                <p>Les traces du monde, gardées par les terres, les eaux et les anciens.</p>
+              </article>
+              <article class="world-seal world-seal-war">
+                <span class="world-seal-mark">GA</span>
+                <strong>Guerre ancienne</strong>
+                <p>La fracture lointaine dont les échos reviennent encore.</p>
+              </article>
+              <article class="world-seal world-seal-vrax">
+                <span class="world-seal-mark">VX</span>
+                <strong>Vrax</strong>
+                <p>La veille, la défense et l'intelligence du territoire conscient.</p>
+              </article>
+              <article class="world-seal world-seal-cosmic">
+                <span class="world-seal-mark">CS</span>
+                <strong>Cosmique</strong>
+                <p>Le ciel, les constellations et les mondes qui prolongent Pandorus.</p>
+              </article>
+            </div>
+          </article>
+
+          <article class="landing-panel">
+            <p class="landing-panel-kicker">Forces</p>
+            <h3>Figures majeures</h3>
+            <p>Shaushana, Shan et Eben dessinent la tension centrale du récit : éveil, survie, héritage violent et affrontement du destin.</p>
+          </article>
+
+          <article class="landing-panel">
+            <p class="landing-panel-kicker">Bestiaire</p>
+            <h3>Créatures signatures</h3>
+            <p>Félou, Félours et Renastar donnent au monde sa part d’instinct, de peur, de vitesse et de beauté sauvage.</p>
+          </article>
+
+          <article class="landing-panel">
+            <p class="landing-panel-kicker">Navigation</p>
+            <h3>Point d’entrée</h3>
+            <p>Les fiches, la chronologie, le bestiaire et l’arbre de relation permettent d’entrer dans Pandorus par le chemin que tu veux.</p>
+          </article>
+
+          <article class="landing-panel landing-panel-wide">
+            <p class="landing-panel-kicker">Matière du monde</p>
+            <h3>Ce qui fait tenir Pandorus</h3>
+            <p>
+              Un souffle originel, des territoires qui pensent, des creatures qui reagissent avant les hommes,
+              et des figures anciennes qui sentent revenir ce qui n'a jamais totalement disparu.
+            </p>
+          </article>
+
+          <article class="landing-panel">
+            <p class="landing-panel-kicker">Réseaux</p>
+            <h3>Suivre Pandorus</h3>
+            <div class="social-links" aria-label="Réseaux sociaux de Pandorus">
+              <a class="social-link" href="https://www.instagram.com/pandorus.game/" target="_blank" rel="noreferrer">Instagram : @pandorus.game</a>
+              <a class="social-link" href="https://www.facebook.com/share/18mNmtS8TU/" target="_blank" rel="noreferrer">Facebook : Pandorus Game</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="fiches" class="section" hidden>
+        <div class="section-heading">
+          <h3>Fiches</h3>
+        </div>
+        <div class="fiches-intro">
+          <div class="fiches-intro-copy">
+            <p class="eyebrow">Archives vivantes</p>
+            <p>
+              Chaque fiche rassemble une presence, une trajectoire et une maniere d'habiter Pandorus. Ici,
+              les personnages ne sont pas seulement listes : ils apparaissent comme des forces du monde,
+              avec leurs traces, leurs liens et leur memoire.
+            </p>
+          </div>
+          <div class="fiches-intro-seals" aria-hidden="true">
+            <span>Visages</span>
+            <span>Liens</span>
+            <span>Memoire</span>
+          </div>
+        </div>
+        <div id="fiches-alphabet" class="alphabet-filter" aria-label="Filtre alphabétique des fiches"></div>
+        <div class="fiche-tabs" role="tablist" aria-label="Fiches personnages">
+          <button class="fiche-tab active" type="button" data-fiche-target="shan-panel" role="tab" aria-selected="true">Shan</button>
+          <button class="fiche-tab" type="button" data-fiche-target="shaushana-panel" role="tab" aria-selected="false">Shaushana</button>
+          <button class="fiche-tab" type="button" data-fiche-target="franklin-panel" role="tab" aria-selected="false">Franklin</button>
+          <button class="fiche-tab" type="button" data-fiche-target="mike-panel" role="tab" aria-selected="false">Mike</button>
+          <button class="fiche-tab" type="button" data-fiche-target="gerom-panel" role="tab" aria-selected="false">Gérôm</button>
+          <button class="fiche-tab" type="button" data-fiche-target="elrick-panel" role="tab" aria-selected="false">Elrick</button>
+        </div>
+        <div id="shan-panel" class="fiche-panel" role="tabpanel">
+        <div id="fiches-shan" class="fiche-grid">
+          <div class="fiche-portrait">
+            <img src="./media/personnages/Shan.jpg" alt="Shan">
+          </div>
+          <div class="fiche-content">
+            <p class="eyebrow">Pandorien</p>
+            <h2>Shan</h2>
+            <p class="hero-text">
+              Combattant solitaire devenu allie de Shaushana et Franklin, Shan est marque par une enfance rude,
+              une discipline extreme et une relation instinctive au danger.
+            </p>
+
+            <div class="fiche-meta">
+              <article>
+                <strong>Statut</strong>
+                <span>Allie majeur du recit</span>
+              </article>
+              <article>
+                <strong>Specialite</strong>
+                <span>Combat, traque, survie</span>
+              </article>
+              <article>
+                <strong>Arme</strong>
+                <span>Sabre</span>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <section class="section">
+          <div class="section-heading">
+            <h3>Biographie</h3>
+          </div>
+          <p>
+            Shan grandit loin de toute douceur, dans un environnement ou l'apprentissage passe par l'endurance,
+            la chasse et la violence. Enfant, il est forme par ses parents a observer, frapper, survivre et
+            ne jamais montrer de faiblesse. Cette education forge un combattant redoutable, mais aussi un etre
+            ferme sur lui-meme, qui apprend tres tot a vivre sans aide.
+          </p>
+          <p>
+            Le traumatisme majeur de son existence survient lors de l'affrontement contre Eben. Face a cette
+            creature hors norme, ses parents tombent et Shan reste seul. Cet evenement brise son enfance et
+            transforme sa vie en une longue periode de survie solitaire, de perfectionnement physique et de
+            fermeture emotionnelle.
+          </p>
+          <p>
+            Au debut du recit, Shan reapparait comme un traqueur et un combattant deja accompli. Il suit d'abord
+            Shaushana a distance, intrigue par sa presence et par la maniere dont elle agit sans imposer sa force
+            comme lui le ferait. Leur rencontre evolue vers la confrontation, puis vers une forme de respect mutuel.
+            A partir de la, Shan devient un allie actif du groupe, meme s'il continue a exprimer ses liens par la
+            tension, l'observation et le combat plutot que par les mots.
+          </p>
+          <p>
+            Son parcours montre un personnage en transition : il reste brutal, direct et instinctif, mais il commence
+            a se confronter a un monde qu'il ne peut plus seulement dominer par la force. Le voyage vers le Vrax,
+            sa relation avec Franklin et surtout son lien avec Shaushana l'obligent peu a peu a changer.
+          </p>
+          <p>
+            Au coeur de son entree dans le Vrax, Shan se retrouve face a des adversaires qui ne cherchent pas
+            seulement a le dominer par la force, mais qui lisent leur terrain comme une mecanique collective. Cette
+            attaque du Vrax le desorganise autrement que ses combats precedents et ouvre une nouvelle etape dans son
+            parcours.
+          </p>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <h3>Résumé</h3>
+          </div>
+          <p>
+            Shan a ete eleve dans la durete par ses parents, formes a la chasse et au combat. Leur mort face a Eben
+            le laisse seul tres jeune et forge chez lui une vision brutale du monde : survivre, frapper juste et ne
+            dependre de personne.
+          </p>
+          <p>
+            Au fil du recit, il croise Shaushana apres l'affrontement contre un Felou, la suit d'abord par curiosite,
+            puis s'implique vraiment a ses cotes. Son lien avec elle se construit dans la confrontation, le respect
+            et une fascination croissante pour une force qu'il ne comprend pas encore totalement.
+          </p>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <h3>Profil</h3>
+          </div>
+          <div class="fiche-list">
+            <article class="overview-card">
+              <h4>Caractère</h4>
+              <p>Ferme, observateur, direct et souvent provocateur, Shan cache sous sa durete une vraie capacite d'attachement et un sens moral reel.</p>
+            </article>
+            <article class="overview-card">
+              <h4>Forces</h4>
+              <p>Excellente maitrise du combat rapproche, grande lecture du danger, endurance elevee et instinct de survie exceptionnel.</p>
+            </article>
+            <article class="overview-card">
+              <h4>Faiblesses</h4>
+              <p>Il controle mal ce qui echappe a ses schemas habituels, accepte difficilement l'impuissance et exprime peu ses emotions.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <h3>Relations connues</h3>
+          </div>
+          <div class="fiche-list">
+            <article class="overview-card">
+              <h4>Shaushana</h4>
+              <p>Point de bascule dans son parcours. Il la voit d'abord comme une enigme et une adversaire potentielle, puis comme une alliee essentielle.</p>
+            </article>
+            <article class="overview-card">
+              <h4>Franklin</h4>
+              <p>Compagnon de route qu'il protege souvent de facon rude, mais sincere, surtout lors des affrontements et du voyage vers le Vrax.</p>
+            </article>
+            <article class="overview-card">
+              <h4>Eben</h4>
+              <p>Figure traumatique de son passe. L'affrontement contre Eben marque la perte de ses parents et transforme definitivement sa vie.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <h3>Évolution dans l'histoire</h3>
+          </div>
+          <div class="timeline-list">
+            <article class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <p class="timeline-era">Avant le récit</p>
+                <h4>Formation brutale</h4>
+                <p class="timeline-summary">Shan grandit dans la chasse et le combat, forge son corps et son esprit dans un cadre extremement dur.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <p class="timeline-era">Début du récit</p>
+                <h4>Observation de Shaushana</h4>
+                <p class="timeline-summary">Apres la mort du Felou, il suit Shaushana et Franklin, intrigue par leur trajectoire et la force de la jeune femme.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <p class="timeline-era">Bidonville</p>
+                <h4>Combat fondateur</h4>
+                <p class="timeline-summary">Son duel contre Shaushana transforme leur relation en respect mutuel et l'ancre dans l'histoire principale.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <p class="timeline-era">Quête du Vrax</p>
+                <h4>Allié actif</h4>
+                <p class="timeline-summary">Il combat aux cotes du groupe, se confronte a un monde qu'il ne peut plus seulement dominer et commence a changer.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+        </div>
+
+        <div id="shaushana-panel" class="fiche-panel" role="tabpanel" hidden>
+        <section class="section" id="fiches-shaushana">
+          <div class="section-heading">
+            <h3>Shaushana</h3>
+          </div>
+          <div class="fiche-grid">
+            <div class="fiche-portrait">
+              <img src="./media/personnages/Shaushana.jpg" alt="Shaushana">
+            </div>
+            <div class="fiche-content">
+              <p class="eyebrow">Pandorienne</p>
+              <h2>Shaushana</h2>
+              <p class="hero-text">
+                Figure centrale du recit, Shaushana apparait comme une presence calme, instinctive et profonde,
+                intimement liee au vivant et aux forces qui traversent Pandorus.
+              </p>
+
+              <div class="fiche-meta">
+                <article>
+                  <strong>Statut</strong>
+                  <span>Figure centrale du recit</span>
+                </article>
+                <article>
+                  <strong>Specialite</strong>
+                  <span>Combat instinctif, perception, lien au vivant</span>
+                </article>
+                <article>
+                    <strong>Particularité</strong>
+                  <span>Affinite avec les papillons et la lumiere</span>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <h3>Biographie de Shaushana</h3>
+          </div>
+          <p>
+            Shaushana ouvre les yeux dans un monde deja forme, mais qu'elle percoit d'emblee comme vivant,
+            traversé par une pulsation profonde. Elle n'entre pas dans Pandorus comme une etrangere ordinaire :
+            elle semble aussitot sensible a ses rythmes, a ses forces et a ses signes les plus subtils.
+          </p>
+          <p>
+            Son premier grand acte est de sauver Franklin d'un Felou. Cet affrontement revele deja sa nature :
+            elle observe vite, agit sans hesitation inutile et s'adapte au danger avec une precision presque
+            instinctive. A partir de ce moment, elle laisse une trace dans le monde et entre dans une trajectoire
+            qui la depasse elle-meme.
+          </p>
+          <p>
+            Au fil du voyage, Shaushana developpe un rapport singulier avec les papillons, certaines creatures
+            et les manifestations du vivant. Elle ne se contente pas de voir le monde, elle le ressent. Cette
+            sensibilite grandit jusqu'a devenir un axe majeur du recit, notamment face au desequilibre qui touche
+            les animaux, les plantes et les fleuves.
+          </p>
+          <p>
+            Son lien avec Shan, Franklin et plus tard Elrick construit progressivement sa place : elle devient
+            une combattante, une protectrice et sans doute une cle dans la comprehension du mal qui revient.
+            Plus l'histoire avance, plus Shaushana apparait comme une figure appelee a comprendre quelque chose
+            de fondamental sur Pandorus, sur son passe et sur elle-meme.
+          </p>
+          <p>
+            En entrant dans le Vrax, Shaushana se heurte a un territoire qui ne se contente plus d'etre un decor vivant : il
+            repond activement a sa presence. Face a l'interception de Levy, Gardien Isma et Wingard, elle se
+            heurte a une intelligence territoriale plus organisee que tout ce qu'elle avait affronte jusque-la, et sa
+            reaction lors de la capture de Franklin revele a quel point son engagement affectif a evolue.
+          </p>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <h3>Résumé de Shaushana</h3>
+          </div>
+          <p>
+            Shaushana est introduite comme une jeune femme calme et puissante, dont les capacites semblent liees
+            a l'equilibre du vivant. Son parcours commence par une rencontre decisive avec Franklin, se poursuit
+            dans le voyage vers le Passar puis le Vrax, et la place au coeur du mystere qui traverse l'univers.
+          </p>
+          <p>
+            Sa force ne tient pas seulement a ses qualites de combattante, mais aussi a sa maniere d'ecouter,
+            ressentir et comprendre un monde que beaucoup cherchent seulement a affronter ou a controler.
+          </p>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <h3>Profil de Shaushana</h3>
+          </div>
+          <div class="fiche-list">
+            <article class="overview-card">
+              <h4>Caractère</h4>
+              <p>Calme, attentive, peu bavarde et tres maitrisee, elle agit avec une justesse qui contraste avec la violence du monde autour d'elle.</p>
+            </article>
+            <article class="overview-card">
+              <h4>Forces</h4>
+              <p>Grande capacite d'adaptation, sang-froid au combat, perception fine du vivant et emergence d'une puissance lumineuse singuliere.</p>
+            </article>
+            <article class="overview-card">
+              <h4>Faiblesses</h4>
+              <p>Elle comprend encore mal sa propre nature et reste exposee a des forces anciennes qui semblent reagir directement a sa presence.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <h3>Relations connues de Shaushana</h3>
+          </div>
+          <div class="fiche-list">
+            <article class="overview-card">
+              <h4>Franklin</h4>
+              <p>Premier lien concret de son aventure. Elle le sauve, le suit puis construit avec lui une relation de confiance et de protection mutuelle.</p>
+            </article>
+            <article class="overview-card">
+              <h4>Shan</h4>
+              <p>Rival puis allie, Shan reconnait en elle une force inhabituelle. Leur relation passe par le combat, le respect et une attirance profonde pour ce qu'ils representent l'un pour l'autre.</p>
+            </article>
+            <article class="overview-card">
+              <h4>Elrick</h4>
+              <p>Elrick percoit rapidement qu'elle n'a pas seulement ecoute l'histoire du monde : il comprend qu'elle y est liee d'une facon intime.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <h3>Évolution de Shaushana dans l'histoire</h3>
+          </div>
+          <div class="timeline-list">
+            <article class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <p class="timeline-era">Jour 1</p>
+                <h4>Éveil dans Le Passage</h4>
+                <p class="timeline-summary">Shaushana prend conscience du monde et de sa pulsation vivante avant de rencontrer le danger et Franklin.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <p class="timeline-era">Jour 1</p>
+                <h4>Premier combat fondateur</h4>
+                <p class="timeline-summary">Elle affronte le Felou, sauve Franklin et manifeste deja une facon unique d'agir au sein du vivant.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <p class="timeline-era">Jour 2</p>
+                <h4>Defense du bidonville</h4>
+                <p class="timeline-summary">Face aux creatures corrompues, elle combat au premier plan et confirme sa place centrale dans le groupe.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <p class="timeline-era">Jour 3 a 5</p>
+                <h4>Revelation progressive</h4>
+                <p class="timeline-summary">Entre Elrick, le Bassaï et le Vrax, Shaushana semble de plus en plus reconnue par les forces du monde lui-meme.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+        </div>
+
+        <div id="franklin-panel" class="fiche-panel" role="tabpanel" hidden>
+          <section class="section">
+            <div class="fiche-grid">
+              <div class="fiche-portrait">
+                <img src="./media/pandorus/Franklin.png" alt="Franklin">
+              </div>
+              <div class="fiche-content">
+                <p class="eyebrow">Pandorien</p>
+                <h2>Franklin</h2>
+                <p class="hero-text">
+                  Jeune habitant du Passar, Franklin est l'un des premiers liens humains de Shaushana et un moteur essentiel
+                  de la quete vers le Vrax.
+                </p>
+                <div class="fiche-meta">
+                  <article>
+                    <strong>Statut</strong>
+                    <span>Allie majeur du groupe</span>
+                  </article>
+                  <article>
+                    <strong>Specialite</strong>
+                    <span>Mobilite, initiative, survie du terrain</span>
+                  </article>
+                  <article>
+                    <strong>Origine</strong>
+                    <span>Bidonville du Passar</span>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="section-heading">
+              <h3>Biographie</h3>
+            </div>
+            <p>
+              Franklin vit pres du fleuve Passar avec ses freres Mike et Gérôm, dans un bidonville construit autour
+              de la survie, de l'entraide et du soin apporte aux creatures. Il connait les dangers du terrain, les flux
+              du fleuve et la precarite d'un monde ou il faut observer vite pour rester en vie.
+            </p>
+            <p>
+              Son destin bascule lorsqu'il se retrouve attaque par un Felou et est sauve par Shaushana. A partir de ce
+              moment, Franklin devient le premier guide humain de son aventure. Il l'introduit a son monde, a ses proches
+              et aux signes du desequilibre qui touche deja le vivant autour du Passar.
+            </p>
+            <p>
+              Franklin n'est pas le plus puissant du groupe, mais il agit souvent comme un coeur narratif : il relie les
+              grands enjeux du monde a une realite concrete, humaine, immediate. Son attachement a Mike, Gérôm et au
+              bidonville donne un poids emotionnel fort a la quete vers le Vrax.
+            </p>
+            <p>
+              Son importance grandit encore lorsque, au coeur de l'interception, Levy percoit en lui quelque
+              chose de different, comme s'il etait porteur d'un lien ou d'une singularite que le Vrax reconnait avant
+              meme de l'expliquer. Son enlevement ne fait donc pas seulement basculer l'intrigue, il confirme que
+              Franklin est devenu un enjeu vivant du conflit.
+            </p>
+          </section>
+
+          <section class="section">
+            <div class="section-heading">
+              <h3>Résumé</h3>
+            </div>
+            <p>
+              Franklin est un survivant du Passar, lucide, vif et plus courageux qu'il ne le pense. Son parcours le fait
+              passer du statut de jeune garcon sauve a celui de compagnon de route indispensable dans la comprehension de
+              la crise qui traverse Pandorus.
+            </p>
+          </section>
+
+          <section class="section">
+            <div class="section-heading">
+              <h3>Profil</h3>
+            </div>
+            <div class="fiche-list">
+              <article class="overview-card">
+                <h4>Caractère</h4>
+                <p>Vif, sensible, inquiet mais volontaire, Franklin agit souvent avec le coeur et garde une forte capacite de loyauté.</p>
+              </article>
+              <article class="overview-card">
+                <h4>Forces</h4>
+                <p>Connaissance du terrain, adaptation rapide, sens du collectif et capacite a continuer meme sous pression.</p>
+              </article>
+              <article class="overview-card">
+                <h4>Faiblesses</h4>
+                <p>Il doute, porte fortement la peur de perdre les siens et reste physiquement plus vulnerable que Shan ou Shaushana.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="section-heading">
+              <h3>Relations connues</h3>
+            </div>
+            <div class="fiche-list">
+              <article class="overview-card">
+                <h4>Shaushana</h4>
+                <p>Elle lui sauve la vie et devient rapidement une presence de confiance, puis une alliee majeure dans sa lutte pour proteger les siens.</p>
+              </article>
+              <article class="overview-card">
+                <h4>Shan</h4>
+                <p>Leur relation est rude mais solidaire. Shan le protege souvent durement, sans tendresse apparente mais avec un engagement reel.</p>
+              </article>
+              <article class="overview-card">
+                <h4>Mike et Gérôm</h4>
+                <p>Le noyau affectif de sa vie. Son attachement a ses deux freres motive nombre de ses choix au cours du recit.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="section-heading">
+              <h3>Évolution dans l'histoire</h3>
+            </div>
+            <div class="timeline-list">
+              <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <p class="timeline-era">Jour 1</p>
+                  <h4>Sauvé par Shaushana</h4>
+                  <p class="timeline-summary">Franklin survit au Felou et devient le premier compagnon de route de Shaushana.</p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <p class="timeline-era">Jour 1</p>
+                  <h4>Retour au bidonville</h4>
+                  <p class="timeline-summary">Il ramene Shaushana chez les siens et expose les troubles qui touchent deja le Passar.</p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <p class="timeline-era">Jour 2</p>
+                  <h4>Départ vers le Vrax</h4>
+                  <p class="timeline-summary">Apres la blessure de Mike, il choisit de partir pour comprendre et agir.</p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <p class="timeline-era">Jour 5</p>
+                  <h4>Enlevé dans le Vrax</h4>
+                  <p class="timeline-summary">Son enlevement par les Gamins du Vrax fait de lui un pivot dramatique du recit a venir.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <div id="mike-panel" class="fiche-panel" role="tabpanel" hidden>
+          <section class="section">
+            <div class="fiche-grid">
+              <div class="fiche-portrait">
+                <img src="./media/pandorus/Mike.png" alt="Mike">
+              </div>
+              <div class="fiche-content">
+                <p class="eyebrow">Pandorien</p>
+                <h2>Mike</h2>
+                <p class="hero-text">
+                  Frere de Franklin, Mike incarne la fragilite humaine du bidonville et la violence du desequilibre qui frappe le vivant.
+                </p>
+                <div class="fiche-meta">
+                  <article>
+                    <strong>Statut</strong>
+                    <span>Frere de Franklin</span>
+                  </article>
+                  <article>
+                    <strong>Trait notable</strong>
+                    <span>Cri a effet destabilisant</span>
+                  </article>
+                  <article>
+                    <strong>Origine</strong>
+                    <span>Bidonville du Passar</span>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="section-heading">
+              <h3>Biographie</h3>
+            </div>
+            <p>
+              Mike vit avec Franklin et Gérôm dans la communaute du Passar. Moins ancre dans l'action strategique que
+              ses freres, il represente davantage la vie quotidienne du bidonville, son energie immediate et sa sensibilite.
+            </p>
+            <p>
+              Lors de l'attaque du bidonville, Mike se retrouve directement expose au chaos. Son cri devient une force
+              capable de perturber les creatures et meme l'environnement proche, mais il ne le maitrise pas encore
+              completement. Cette singularite fait de lui un personnage important, bien que tres vulnerable.
+            </p>
+            <p>
+              Sa grave blessure lors de l'assaut constitue l'un des grands basculements du recit. A travers lui, l'histoire
+              montre ce que le groupe risque de perdre si personne ne remonte a la source du mal.
+            </p>
+          </section>
+
+          <section class="section">
+            <div class="section-heading">
+              <h3>Résumé</h3>
+            </div>
+            <p>
+              Mike est une presence sensible, attachante et encore instable. Il porte en lui une force particuliere,
+              mais son role dans le recit passe surtout par la blessure qu'il subit et par l'urgence emotionnelle
+              qu'il provoque chez Franklin et les autres.
+            </p>
+          </section>
+
+          <section class="section">
+            <div class="section-heading">
+              <h3>Profil</h3>
+            </div>
+            <div class="fiche-list">
+              <article class="overview-card">
+                <h4>Caractère</h4>
+                <p>Expressif, attachant et plus vulnerable, Mike agit avec spontaneite et emotion.</p>
+              </article>
+              <article class="overview-card">
+                <h4>Forces</h4>
+                <p>Son cri semble produire un effet reel sur le vivant et peut devenir une capacite importante.</p>
+              </article>
+              <article class="overview-card">
+                <h4>Faiblesses</h4>
+                <p>Il manque de maitrise, subit fortement les evenements et reste physiquement expose aux attaques.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="section-heading">
+              <h3>Relations connues</h3>
+            </div>
+            <div class="fiche-list">
+              <article class="overview-card">
+                <h4>Franklin</h4>
+                <p>Franklin agit pour lui comme un frere protecteur, et sa blessure devient l'un des moteurs du voyage vers le Vrax.</p>
+              </article>
+              <article class="overview-card">
+                <h4>Gérôm</h4>
+                <p>Gérôm veille sur lui avec plus de retenue, mais avec une solidite evidente lors de la crise du bidonville.</p>
+              </article>
+              <article class="overview-card">
+                <h4>Shaushana et Shan</h4>
+                <p>Ils le rencontrent au moment ou le monde du Passar vacille deja, et sa situation donne une urgence concrete a leur engagement.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="section-heading">
+              <h3>Évolution dans l'histoire</h3>
+            </div>
+            <div class="timeline-list">
+              <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <p class="timeline-era">Jour 1</p>
+                  <h4>Vie au bidonville</h4>
+                  <p class="timeline-summary">Mike fait partie du quotidien du Passar avant que la crise n'explose ouvertement.</p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <p class="timeline-era">Jour 2</p>
+                  <h4>Cri révélateur</h4>
+                  <p class="timeline-summary">Au coeur de l'attaque, son cri agit sur les creatures et revele une capacite encore mal comprise.</p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <p class="timeline-era">Jour 2</p>
+                  <h4>Blessure majeure</h4>
+                  <p class="timeline-summary">Grievement touche par un Felou, Mike devient le symbole de l'urgence qui pousse le groupe a agir.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <div id="gerom-panel" class="fiche-panel" role="tabpanel" hidden>
+          <section class="section">
+            <div class="fiche-grid">
+              <div class="fiche-portrait">
+                <img src="./media/pandorus/G%C3%A9r%C3%B4m.png" alt="Gérôm">
+              </div>
+              <div class="fiche-content">
+                <p class="eyebrow">Pandorien</p>
+                <h2>Gérôm</h2>
+                <p class="hero-text">
+                  Frere de Franklin et Mike, Gérôm est une presence calme, solide et observatrice, souvent le plus stable
+                  dans les moments de crise.
+                </p>
+                <div class="fiche-meta">
+                  <article>
+                    <strong>Statut</strong>
+                    <span>Frere de Franklin et Mike</span>
+                  </article>
+                  <article>
+                    <strong>Specialite</strong>
+                    <span>Protection, maitrise, sang-froid</span>
+                  </article>
+                  <article>
+                    <strong>Origine</strong>
+                    <span>Bidonville du Passar</span>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="section-heading">
+              <h3>Biographie</h3>
+            </div>
+            <p>
+              Gérôm appartient au noyau familial et communautaire du Passar. Plus discret que Franklin et moins exposé
+              que Mike, il se distingue par sa retenue, sa capacité d'observation et sa force d'ancrage dans les moments
+              ou tout bascule.
+            </p>
+            <p>
+              Lors de l'attaque du bidonville, il fait partie des premiers a agir avec precision. Là ou d'autres sont
+              emportes par l'urgence, Gérôm reste capable de lire la situation, de frapper juste et de proteger les siens.
+            </p>
+            <p>
+              Meme s'il n'est pas encore au centre du voyage vers le Vrax, sa presence laisse voir
+              une figure de soutien essentielle, stable, presque silencieuse, mais indispensable a l'equilibre des freres.
+            </p>
+          </section>
+
+          <section class="section">
+            <div class="section-heading">
+              <h3>Résumé</h3>
+            </div>
+            <p>
+              Gérôm est un personnage de stabilite et de protection. Moins demonstratif que Franklin, moins fragile que
+              Mike, il porte une force calme qui ancre la famille dans les moments de crise.
+            </p>
+          </section>
+
+          <section class="section">
+            <div class="section-heading">
+              <h3>Profil</h3>
+            </div>
+            <div class="fiche-list">
+              <article class="overview-card">
+                <h4>Caractère</h4>
+                <p>Reserve, attentif et solide, Gérôm parle peu mais agit avec constance et justesse.</p>
+              </article>
+              <article class="overview-card">
+                <h4>Forces</h4>
+                <p>Sang-froid, reactivite en situation de crise, capacite a proteger les autres sans se disperser.</p>
+              </article>
+              <article class="overview-card">
+                <h4>Faiblesses</h4>
+                <p>Sa retenue emotionnelle laisse encore peu voir ses propres fragilites ou ses aspirations personnelles.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="section-heading">
+              <h3>Relations connues</h3>
+            </div>
+            <div class="fiche-list">
+              <article class="overview-card">
+                <h4>Franklin</h4>
+                <p>Leur lien est celui d'une fraternite solide. Gérôm comprend vite ce que Franklin porte sans avoir besoin de longs discours.</p>
+              </article>
+              <article class="overview-card">
+                <h4>Mike</h4>
+                <p>Il veille sur Mike avec une attention contenue mais tres reelle, notamment au moment de sa blessure.</p>
+              </article>
+              <article class="overview-card">
+                <h4>Le groupe</h4>
+                <p>Il accueille Shaushana et observe Shan avec recul, jouant un role de point fixe quand le chaos s'installe.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="section-heading">
+              <h3>Évolution dans l'histoire</h3>
+            </div>
+            <div class="timeline-list">
+              <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <p class="timeline-era">Jour 1</p>
+                  <h4>Présence au bidonville</h4>
+                  <p class="timeline-summary">Gérôm apparait comme l'un des piliers humains du Passar, aux cotes de Franklin et Mike.</p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <p class="timeline-era">Jour 2</p>
+                  <h4>Défense face aux créatures</h4>
+                  <p class="timeline-summary">Il intervient avec efficacité pendant l'attaque et contribue directement a contenir le chaos.</p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <p class="timeline-era">Jour 2</p>
+                  <h4>Soutien au départ de Franklin</h4>
+                  <p class="timeline-summary">Par sa simple presence, Gérôm permet a Franklin de partir vers le Vrax avec un appui moral decisif.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <div id="elrick-panel" class="fiche-panel" role="tabpanel" hidden>
+          <section class="section">
+            <div class="fiche-grid">
+              <div class="fiche-carousel" data-carousel="elrick">
+                <div class="fiche-carousel-track">
+                  <figure class="fiche-carousel-slide active">
+                    <img src="./media/pandorus/Elrick.png" alt="Elrick">
+                    <figcaption>Elrick</figcaption>
+                  </figure>
+                  <figure class="fiche-carousel-slide">
+                    <img src="./media/pandorus/Elrick%20Jeune.png" alt="Elrick Jeune">
+                    <figcaption>Elrick Jeune</figcaption>
+                  </figure>
+                </div>
+                <div class="fiche-carousel-controls">
+                  <button class="fiche-carousel-button" type="button" data-carousel-prev="elrick">Précédent</button>
+                  <button class="fiche-carousel-button" type="button" data-carousel-next="elrick">Suivant</button>
+                </div>
+              </div>
+              <div class="fiche-content">
+                <p class="eyebrow">Pandorien</p>
+                <h2>Elrick</h2>
+                <p class="hero-text">
+                  Ancien combattant devenu figure de sagesse, Elrick vit au contact du vivant et porte en lui la memoire
+                  d'une guerre ancienne qui continue de hanter Pandorus.
+                </p>
+                <div class="fiche-meta">
+                  <article>
+                    <strong>Statut</strong>
+                    <span>Briscard et guide de passage</span>
+                  </article>
+                  <article>
+                    <strong>Specialite</strong>
+                    <span>Mémoire du monde, lecture du vivant, survie</span>
+                  </article>
+                  <article>
+                    <strong>Lieu</strong>
+                    <span>Cabane isolée avant le Vrax</span>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="section-heading">
+              <h3>Biographie</h3>
+            </div>
+            <p>
+              Elrick ne vit plus selon les rythmes ordinaires. Installe dans une cabane entouree de vivant, il consacre
+              ses jours a observer les signes faibles du monde, en particulier ceux que la plupart des autres ne voient pas :
+              le comportement des animaux, l'etat des plantes, le silence des papillons et la qualite meme de l'air.
+            </p>
+            <p>
+              Avant cette vie retiree, Elrick a connu la grande guerre contre l'homme sombre. Il n'etait ni un chef
+              glorifie ni une legende officielle, mais un survivant, un combattant parmi ceux qui ont tenu quand le monde
+              s'effondrait. Son recit revele un passe de violence extreme, la corruption des terres, la dislocation des
+              frontieres et l'apparition des etoiles apres une victoire inachevee.
+            </p>
+            <p>
+              Quand Shaushana, Shan et Franklin arrivent chez lui, Elrick comprend vite qu'ils ne traversent pas une crise
+              ordinaire. Il voit en Shaushana un lien direct avec quelque chose de plus ancien, et il reconnait dans leur
+              venue les signes d'un retour possible du peril autrefois contenu.
+            </p>
+            <p>
+              La suite des evenements donne retrospectivement plus de poids a ses paroles : ce qu'Elrick annonçait sur le retour
+              d'une ancienne menace et sur la necessite de preparer le groupe trouve un premier accomplissement concret
+              dans la reponse structuree du Vrax. Il apparait encore davantage comme celui qui avait compris avant les
+              autres que le monde approchait d'une reorganisation plus profonde.
+            </p>
+          </section>
+
+          <section class="section">
+            <div class="section-heading">
+              <h3>Résumé</h3>
+            </div>
+            <p>
+              Elrick est une figure charniere du recit. Il relie le present des heros au passe profond de Pandorus, apporte
+              un savoir ancien et donne au voyage vers le Vrax une portee historique beaucoup plus large.
+            </p>
+          </section>
+
+          <section class="section">
+            <div class="section-heading">
+              <h3>Profil</h3>
+            </div>
+            <div class="fiche-list">
+              <article class="overview-card">
+                <h4>Caractère</h4>
+                <p>Calme, lucide, chaleureux a sa maniere, Elrick melange humour de vieux survivant et profondeur de temoin du passe.</p>
+              </article>
+              <article class="overview-card">
+                <h4>Forces</h4>
+                <p>Grande perception des desequilibres du vivant, memoire historique, recul strategique et forte capacite d'ancrage.</p>
+              </article>
+              <article class="overview-card">
+                <h4>Faiblesses</h4>
+                <p>Il porte le poids d'une ancienne guerre et sait que l'histoire peut recommencer sans etre certain de pouvoir encore l'empecher.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="section-heading">
+              <h3>Relations connues</h3>
+            </div>
+            <div class="fiche-list">
+              <article class="overview-card">
+                <h4>Shaushana</h4>
+                <p>Elrick comprend tres vite qu'elle n'a pas seulement entendu l'histoire du monde, mais qu'elle y est reliee de facon intime.</p>
+              </article>
+              <article class="overview-card">
+                <h4>Franklin et Shan</h4>
+                <p>Il les accueille, les lit avec justesse et les prepare a poursuivre leur route vers le Vrax avec davantage de conscience.</p>
+              </article>
+              <article class="overview-card">
+                <h4>Brad et Bradlette</h4>
+                <p>Compagnons d'autrefois dans la grande guerre, ils appartiennent aux souvenirs qui structurent encore sa vision du monde.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="section-heading">
+              <h3>Évolution dans l'histoire</h3>
+            </div>
+            <div class="timeline-list">
+              <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <p class="timeline-era">Ancien temps</p>
+                  <h4>Soldat de la grande guerre</h4>
+                  <p class="timeline-summary">Elrick participe au conflit contre l'homme sombre et en garde une memoire vive et douloureuse.</p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <p class="timeline-era">Avant le récit</p>
+                  <h4>Vie de retrait</h4>
+                  <p class="timeline-summary">Installe pres de sa cabane, il observe les signes faibles du desequilibre et attend sans le dire le retour de quelque chose.</p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <p class="timeline-era">Jour 3</p>
+                  <h4>Accueil du groupe</h4>
+                  <p class="timeline-summary">Il recoit Shaushana, Shan et Franklin, comprend la gravite de la situation et partage le passe cache du monde.</p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <p class="timeline-era">Jour 4</p>
+                  <h4>Transmission</h4>
+                  <p class="timeline-summary">Elrick equipe et oriente les heros avant leur depart vers le Bassaï puis le Vrax.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section id="chronologie" class="section" hidden>
+        <div class="section-heading">
+          <h3>Chronologie</h3>
+        </div>
+        <div class="chronology-intro">
+          <div class="chronology-intro-copy">
+            <p class="eyebrow">Temps du monde</p>
+            <p>
+              La chronologie suit les bascules, les veilles, les affrontements et les transmissions qui donnent
+              sa forme au récit. Elle ne range pas seulement les événements : elle montre comment Pandorus se
+              déplace, se fracture et se réveille.
+            </p>
+          </div>
+          <div class="chronology-intro-seals" aria-hidden="true">
+            <span>Veille</span>
+            <span>Bascule</span>
+            <span>Transmission</span>
+          </div>
+        </div>
+        <div id="timeline-overview" class="timeline-overview" aria-label="Vue d'ensemble de la chronologie"></div>
+        <div id="timeline-list" class="timeline-list"></div>
+      </section>
+
+      <section id="chapitres" class="section" hidden>
+        <div class="section-heading">
+          <h3>Chapitres</h3>
+        </div>
+        <div id="chapters-list" class="chapters-list"></div>
+        <section id="chapter-viewer" class="chapter-viewer" hidden>
+          <div class="section-heading split">
+            <h3 id="chapter-viewer-title">Lecture du chapitre</h3>
+            <button id="chapter-viewer-close" class="button tiny secondary chapter-viewer-close" type="button">Fermer</button>
+          </div>
+          <iframe id="chapter-viewer-frame" class="chapter-viewer-frame" title="Lecteur de chapitre"></iframe>
+        </section>
+      </section>
+
+      <section id="personnages" class="section" hidden>
+        <div class="section-heading">
+          <h3>Personnages</h3>
+        </div>
+        <div id="personnages-alphabet" class="alphabet-filter" aria-label="Filtre alphabétique des personnages"></div>
+        <div id="characters-grid" class="media-grid"></div>
+      </section>
+
+      <section id="relations" class="section" hidden>
+        <div class="section-heading">
+          <h3>Arbre de Relation</h3>
+        </div>
+        <div class="relations-intro">
+          <div class="relations-intro-copy">
+            <p class="eyebrow">Trames humaines et anciennes</p>
+            <p class="hero-text relation-intro">
+              Cette page relie les personnages majeurs de Pandorus selon les liens visibles dans l'histoire :
+              alliances, fraternités, protections, transmissions et tensions.
+            </p>
+          </div>
+          <div class="relations-intro-seals" aria-hidden="true">
+            <span>Alliance</span>
+            <span>Protection</span>
+            <span>Tension</span>
+          </div>
+        </div>
+        <div id="relations-alphabet" class="alphabet-filter" aria-label="Filtre alphabétique des relations"></div>
+        <label class="search relation-search">
+          <span>Rechercher un personnage</span>
+          <input id="relations-search" type="search" placeholder="Ex. Shaushana">
+        </label>
+        <div id="relations-grid" class="relations-grid"></div>
+      </section>
+
+      <section id="creatures" class="section" hidden>
+        <div class="section-heading">
+          <h3>Créatures</h3>
+        </div>
+        <div id="creatures-alphabet" class="alphabet-filter" aria-label="Filtre alphabétique des créatures"></div>
+        <div id="creatures-grid" class="media-grid"></div>
+        <section id="creatures-fiches" class="section">
+          <div class="section-heading">
+            <h3>Fiches du bestiaire</h3>
+          </div>
+          <div id="creatures-fiches-tabs" class="fiche-tabs" role="tablist" aria-label="Fiches du bestiaire"></div>
+          <div id="creatures-fiches-panels"></div>
+        </section>
+      </section>
+
+      <section id="mysteres" class="section" hidden>
+        <div class="section-heading">
+          <h3>Mystères</h3>
+        </div>
+        <div class="mysteries-intro">
+          <div class="mysteries-intro-copy">
+            <p class="eyebrow">Archives incomplètes</p>
+            <p>
+              Certaines zones de Pandorus résistent encore à une lecture pleine. Ce sont des présences,
+              des silences, des traces ou des bascules dont on sait assez pour sentir leur poids,
+              mais pas encore assez pour les refermer.
+            </p>
+          </div>
+          <div class="mysteries-intro-seals" aria-hidden="true">
+            <span>Trace</span>
+            <span>Silence</span>
+            <span>Veille</span>
+          </div>
+        </div>
+        <div class="mysteries-grid">
+          <article class="mystery-card">
+            <p class="mystery-kicker">Absence</p>
+            <h4>La disparition du Capitaine</h4>
+            <p>
+              Le Capitaine perçoit quelque chose durant l'expédition, renvoie Franklin et disparaît seul.
+              Son absence continue d'agir comme une question ouverte dans la mémoire du Passar.
+            </p>
+          </article>
+          <article class="mystery-card">
+            <p class="mystery-kicker">Retour</p>
+            <h4>Ce qui remonte de la guerre ancienne</h4>
+            <p>
+              Les récits d'Elrick, les réactions du vivant et l'organisation du Vrax laissent entendre
+              qu'une fracture ancienne n'a jamais été totalement refermée.
+            </p>
+          </article>
+          <article class="mystery-card">
+            <p class="mystery-kicker">Présence</p>
+            <h4>Le rôle exact de Shaushana</h4>
+            <p>
+              Beaucoup sentent que Shaushana n'est pas seulement une héroïne au cœur du récit,
+              mais une présence plus liée au monde lui-même qu'elle ne le sait encore.
+            </p>
+          </article>
+          <article class="mystery-card">
+            <p class="mystery-kicker">Réponse</p>
+            <h4>Pourquoi Franklin semble compter pour le Vrax</h4>
+            <p>
+              Lors de sa capture, Franklin paraît porter quelque chose que les protecteurs du Vrax
+              ne peuvent pas traiter comme un simple intrus.
+            </p>
+          </article>
+          <article class="mystery-card">
+            <p class="mystery-kicker">Conscience</p>
+            <h4>Jusqu'où vont les territoires conscients</h4>
+            <p>
+              Le Bassaï, le Vrax et d'autres zones donnent l'impression d'observer, d'éprouver ou de répondre.
+              L'étendue réelle de cette conscience reste encore trouble.
+            </p>
+          </article>
+          <article class="mystery-card">
+            <p class="mystery-kicker">Cosmique</p>
+            <h4>Le lien entre ciel et vivant</h4>
+            <p>
+              Les constellations et les mondes lointains ne semblent pas seulement décoratifs.
+              Ils prolongent peut-être dans le ciel la même logique du vivant qui traverse Pandorus.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="cartes" class="section" hidden>
+        <div class="section-heading">
+          <h3>Cartes</h3>
+        </div>
+        <div class="map-carousel" data-map-carousel>
+          <div class="map-carousel-frame">
+            <button id="maps-carousel-prev" class="map-carousel-arrow map-carousel-arrow-left" type="button" aria-label="Carte précédente">‹</button>
+            <a id="maps-carousel-link" class="map-carousel-link" target="_blank" rel="noreferrer">
+              <img id="maps-carousel-image" alt="">
+            </a>
+            <button id="maps-carousel-next" class="map-carousel-arrow map-carousel-arrow-right" type="button" aria-label="Carte suivante">›</button>
+          </div>
+          <div class="map-carousel-meta">
+            <p id="maps-carousel-name" class="map-carousel-name"></p>
+          </div>
+          <div id="maps-carousel-thumbs" class="map-carousel-thumbs" aria-label="Miniatures des cartes"></div>
+          <div id="maps-info-lock" class="maps-info-lock" hidden>
+            <p id="maps-info-lock-text" class="maps-info-lock-text"></p>
+            <button id="maps-info-unlock" class="button secondary maps-info-unlock" type="button">Reprendre le suivi du carrousel</button>
+          </div>
+        </div>
+
+        <section id="constellations-panel" class="section constellation-panel" hidden>
+          <div class="section-heading">
+            <h3>Les Constellations</h3>
+          </div>
+          <div class="constellation-panel-copy">
+            <p class="constellation-lead">
+              Au-dessus de Pandorus, les constellations ne sont pas de simples repères célestes.
+              Elles prolongent le vivant dans le ciel, comme si les formes du monde continuaient de respirer jusque dans la nuit.
+            </p>
+            <div id="constellation-grid" class="constellation-grid"></div>
+          </div>
+        </section>
+
+        <section id="planets-panel" class="section constellation-panel" hidden>
+          <div class="section-heading">
+            <h3>Les Planètes Alien</h3>
+          </div>
+          <div class="constellation-panel-copy">
+            <p class="constellation-lead">
+              Au loin, ces mondes dessinent une géographie plus vaste encore : royaumes brûlants, terres d'eau,
+              sphères jumelles du vivant et planète royale suspendue au centre d'un ordre cosmique plus ancien.
+            </p>
+            <div id="planet-grid" class="constellation-grid"></div>
+          </div>
+        </section>
+
+        <section id="living-map-panel" class="section living-map-panel">
+          <div class="section-heading">
+            <h3>Carte Vivante</h3>
+          </div>
+          <div class="living-map-copy">
+            <p class="constellation-lead">
+              Les territoires de Pandorus ne sont pas de simples décors. Chacun possède sa respiration, sa mémoire,
+              sa manière d'abriter ou de repousser ceux qui y passent.
+            </p>
+            <div id="living-map-seals" class="living-map-seals" aria-label="Accès aux territoires de Pandorus"></div>
+            <article id="living-map-focus" class="living-map-focus"></article>
+          </div>
+        </section>
+
+        <section class="section world-summary">
+          <div class="section-heading">
+            <h3>Résumé du monde</h3>
+          </div>
+          <div class="world-summary-copy">
+            <p>
+              Pandorus est un monde né d'un souffle primordial, une force vivante qui a donné forme à la matière,
+              aux terres, aux eaux et aux multiples plans du réel. Tout y semble relié par une énergie profonde,
+              comme si le monde lui-même respirait à travers ses paysages et ses habitants.
+            </p>
+            <p>
+              Les chapitres montrent un univers ancien, vaste et déjà blessé par une guerre oubliée. Le souvenir
+              d'un affrontement contre une force sombre continue de marquer la mémoire du monde, les récits des
+              anciens et les déséquilibres qui réapparaissent peu à peu dans le vivant.
+            </p>
+            <p>
+              Pandorus rassemble des zones très différentes : passages sauvages, fleuves, terres habitées,
+              bidonvilles fragiles, régions anciennes et territoires plus mystérieux comme le Bassaï ou le Vrax.
+              Les créatures y sont nombreuses, parfois harmonieuses, parfois dangereuses, surtout lorsque quelque
+              chose vient troubler leur nature.
+            </p>
+            <p>
+              À travers Shaushana, Shan, Franklin et leurs alliés, le monde apparaît à la fois magnifique et
+              instable. Ce qui était enfoui recommence à bouger, et Pandorus se révèle comme un univers vivant,
+              conscient par endroits, au bord d'un réveil ancien.
+            </p>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+  <template id="image-template">
+    <article class="wiki-card media-card">
+      <a class="image-link">
+        <img alt="">
+        <span class="image-name"></span>
+      </a>
+    </article>
+  </template>
+  <template id="chapter-template">
+    <article class="chapter-item">
+      <div>
+        <h4></h4>
+        <p class="chapter-summary"></p>
+      </div>
+      <div class="card-actions">
+        <a class="button tiny secondary chapter-open-button" target="_blank" rel="noreferrer">Ouvrir</a>
+      </div>
+    </article>
+  </template>
+  <template id="timeline-template">
+    <article class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <p class="timeline-era"></p>
+        <h4></h4>
+        <p class="timeline-summary"></p>
+      </div>
+    </article>
+  </template>
+  <template id="map-template">
+    <article class="wiki-card media-card">
+      <a class="image-link" target="_blank" rel="noreferrer">
+        <img alt="">
+      </a>
+      <div class="card-body compact">
+        <p class="card-kicker">Map</p>
+        <h4></h4>
+      </div>
+    </article>
+  </template>
+  <script src="app.js"></script>
+</body>
+</html>
+
+
