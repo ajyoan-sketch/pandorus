@@ -380,7 +380,7 @@ function renderLandingMarquee() {
       ? (item.type === "creature" ? "#creatures" : "#personnages")
       : targetLink;
     card.innerHTML = `
-      <img src="${item.src}" alt="${item.name}" loading="lazy">
+      <img src="${item.src}" alt="${item.name}" loading="lazy" decoding="async">
       <figcaption>${item.name}</figcaption>
     `;
     track.appendChild(card);
@@ -1124,6 +1124,8 @@ let currentFicheLetter = "all";
 let currentCreatureFiche = creatureFiches[0]?.slug || "";
 let currentRelationLetter = "all";
 let currentRelationSearch = "";
+let ficheUiInitialized = false;
+let creatureFichesInitialized = false;
 
 const chapters = [
   {
@@ -1896,6 +1898,7 @@ function renderMaps() {
 
   image.src = path;
   image.alt = fileName;
+  image.decoding = "async";
   link.href = path;
   name.textContent = fileName;
 
@@ -1907,7 +1910,7 @@ function renderMaps() {
     button.type = "button";
     button.setAttribute("aria-label", `Afficher la carte ${thumbName}`);
     button.innerHTML = `
-      <img src="${mapPath}" alt="${thumbName}">
+      <img src="${mapPath}" alt="${thumbName}" loading="lazy" decoding="async">
       <span>${thumbName}</span>
     `;
     button.addEventListener("click", () => {
@@ -2078,6 +2081,8 @@ function renderPandorusImages() {
     const imageLink = getPandorusImageLink(path, imageName);
     image.src = path;
     image.alt = imageName;
+    image.loading = "lazy";
+    image.decoding = "async";
     link.href = imageLink;
     if (imageLink.startsWith("#")) {
       link.removeAttribute("target");
@@ -2120,6 +2125,8 @@ function renderCreatureImages() {
 
     image.src = path;
     image.alt = imageName;
+    image.loading = "lazy";
+    image.decoding = "async";
     link.href = imageLink;
     if (imageLink.startsWith("#")) {
       link.removeAttribute("target");
@@ -2174,7 +2181,7 @@ function renderRelations() {
     };
     const portrait = portraitMap[nodeData.name];
     const portraitThumb = portrait
-      ? `<div class="relation-thumb"><img src="${portrait}" alt="${nodeData.name}"></div>`
+      ? `<div class="relation-thumb"><img src="${portrait}" alt="${nodeData.name}" loading="lazy" decoding="async"></div>`
       : "";
 
     if (portrait) {
@@ -2373,6 +2380,21 @@ function initFicheAlphabetFilter(tabs, activatePanel) {
   applyFicheFilter(currentFicheLetter);
 }
 
+function ensureFicheUiInitialized() {
+  if (ficheUiInitialized) return;
+  renderAdditionalCharacterFiches();
+  initFicheTabs();
+  initFicheCarousels();
+  ficheUiInitialized = true;
+}
+
+function ensureCreatureFichesInitialized() {
+  if (creatureFichesInitialized) return;
+  renderCreatureFiches();
+  initCreatureFicheTabs();
+  creatureFichesInitialized = true;
+}
+
 function showSectionFromHash() {
   const home = document.getElementById("home");
   const fiches = document.getElementById("fiches");
@@ -2392,6 +2414,7 @@ function showSectionFromHash() {
     currentHash === "#fiches" ||
     Boolean(ficheHashPanelMap[currentHash])
   ) {
+    ensureFicheUiInitialized();
     if (home) home.hidden = true;
     if (fiches) fiches.hidden = false;
     if (relations) relations.hidden = true;
@@ -2464,6 +2487,7 @@ function showSectionFromHash() {
   }
 
   if (currentHash === "#creatures" || isCreatureFicheHash) {
+    ensureCreatureFichesInitialized();
     if (home) home.hidden = true;
     if (fiches) fiches.hidden = true;
     if (relations) relations.hidden = true;
@@ -2530,15 +2554,10 @@ function showSectionFromHash() {
 window.addEventListener("hashchange", showSectionFromHash);
 renderLandingMarquee();
 startLandingOracleRotation();
-renderAdditionalCharacterFiches();
-initFicheTabs();
-initFicheCarousels();
 initChapterViewer();
 initCharacterAlphabetFilter();
 initCreatureAlphabetFilter();
 initRelationFilters();
-renderCreatureFiches();
-initCreatureFicheTabs();
 showSectionFromHash();
 window.addEventListener("load", runIntroAnimation);
 
