@@ -1,9 +1,9 @@
 ﻿const maps = [
-  "./media/cartes/Constellations.png",
-  "./media/cartes/Monde%20Sous%20Marin.png",
-  "./media/cartes/Pandorus%20Universe.png",
-  "./media/cartes/Plan%C3%A8tes%20Alien.png",
-  "./media/cartes/Terre%20Pandorienne.png"
+  "./media/cartes/Constellations.jpg",
+  "./media/cartes/Monde%20Sous%20Marin.jpg",
+  "./media/cartes/Pandorus%20Universe.jpg",
+  "./media/cartes/Plan%C3%A8tes%20Alien.jpg",
+  "./media/cartes/Terre%20Pandorienne.jpg"
 ];
 
 const constellationCards = [

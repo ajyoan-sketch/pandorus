@@ -8,6 +8,30 @@
   --muted: #54595d;
   --link: #3366cc;
   --link-hover: #1a4fb3;
+  --font-body: "Source Sans 3", Arial, Helvetica, sans-serif;
+  --font-display: "Cinzel", Georgia, "Times New Roman", serif;
+  --font-ui: Georgia, "Times New Roman", serif;
+  --pandorus-ink: #2f2113;
+  --pandorus-ink-soft: #5c4d38;
+  --pandorus-accent: #8a6a2d;
+  --pandorus-accent-strong: #6f5528;
+  --pandorus-border-soft: rgba(104, 82, 39, 0.18);
+  --pandorus-border-mid: rgba(118, 88, 38, 0.28);
+  --pandorus-surface-glass: rgba(255, 252, 246, 0.78);
+  --pandorus-surface-soft: rgba(255, 252, 245, 0.72);
+  --pandorus-surface-rich: linear-gradient(180deg, rgba(255, 252, 246, 0.94), rgba(245, 235, 214, 0.82));
+  --pandorus-surface-panel: linear-gradient(180deg, rgba(255, 251, 244, 0.98), rgba(243, 231, 204, 0.9));
+  --pandorus-shadow-soft: 0 12px 24px rgba(80, 57, 22, 0.06);
+  --pandorus-shadow-card: 0 14px 26px rgba(86, 60, 19, 0.08);
+  --pandorus-shadow-hover: 0 18px 30px rgba(80, 57, 22, 0.1);
+  --pandorus-shadow-hover-strong: 0 18px 32px rgba(86, 60, 19, 0.12);
+  --pandorus-radius-md: 16px;
+  --pandorus-radius-lg: 22px;
+  --pandorus-radius-xl: 26px;
+  --pandorus-space-3: 12px;
+  --pandorus-space-4: 16px;
+  --pandorus-space-5: 18px;
+  --pandorus-transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background 0.18s ease;
 }
 
 * {
@@ -21,7 +45,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
   color: var(--text);
   position: relative;
   isolation: isolate;
@@ -178,7 +202,7 @@ h2,
 h3,
 h4 {
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-ui);
   font-weight: 400;
 }
 
@@ -266,22 +290,23 @@ h4 {
   align-items: center;
   justify-content: center;
   padding: 9px 14px;
-  border: 1px solid #8a6c34;
+  border: 1px solid var(--pandorus-accent);
   background: linear-gradient(180deg, #fff7e5 0%, #edd9ad 56%, #d7b87e 100%);
-  color: #2c1f12;
-  font-family: Georgia, "Times New Roman", serif;
+  color: var(--pandorus-ink);
+  font-family: var(--font-ui);
   font-size: 0.95rem;
   letter-spacing: 0.04em;
   cursor: pointer;
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.82),
     0 8px 18px rgba(84, 55, 16, 0.14);
-  transition: transform 0.16s ease, box-shadow 0.16s ease, background 0.16s ease, border-color 0.16s ease;
+  border-radius: var(--pandorus-radius-md);
+  transition: var(--pandorus-transition);
 }
 
 .button:hover {
   background: linear-gradient(180deg, #fffaf0 0%, #f0deb7 56%, #dfc089 100%);
-  border-color: #6f5528;
+  border-color: var(--pandorus-accent-strong);
   color: #201409;
   transform: translateY(-1px);
   box-shadow:
@@ -293,7 +318,17 @@ h4 {
 .button.primary,
 .button.secondary,
 .button.tiny {
-  color: #2c1f12;
+  color: var(--pandorus-ink);
+}
+
+.entry-card,
+.landing-panel,
+.timeline-overview-card,
+.constellation-card,
+.world-seal,
+.relation-card {
+  border-radius: var(--pandorus-radius-lg);
+  transition: var(--pandorus-transition);
 }
 
 .stats {
@@ -605,19 +640,17 @@ h4 {
 
 .entry-card {
   position: relative;
-  padding: 16px;
-  border: 1px solid rgba(104, 82, 39, 0.18);
-  background:
-    linear-gradient(180deg, rgba(255, 252, 246, 0.94), rgba(245, 235, 214, 0.82));
-  box-shadow: 0 14px 26px rgba(86, 60, 19, 0.08);
-  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  padding: var(--pandorus-space-4);
+  border: 1px solid var(--pandorus-border-soft);
+  background: var(--pandorus-surface-rich);
+  box-shadow: var(--pandorus-shadow-card);
   animation: cardRise 0.9s ease both;
 }
 
 .entry-card:hover {
   transform: translateY(-3px);
-  border-color: rgba(122, 92, 40, 0.3);
-  box-shadow: 0 18px 32px rgba(86, 60, 19, 0.12);
+  border-color: var(--pandorus-border-mid);
+  box-shadow: var(--pandorus-shadow-hover-strong);
 }
 
 .entry-card-kicker {
@@ -625,7 +658,7 @@ h4 {
   font-size: 0.74rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #89692f;
+  color: var(--pandorus-accent);
 }
 
 .entry-card h3 {
@@ -633,18 +666,18 @@ h4 {
   border: 0;
   padding: 0;
   font-size: 1.08rem;
-  color: #2d2012;
+  color: var(--pandorus-ink);
 }
 
 .entry-card p {
   margin: 10px 0 0;
-  color: #5d4d39;
+  color: var(--pandorus-ink-soft);
 }
 
 .entry-card a {
   display: inline-block;
   margin-top: 14px;
-  color: #2c2217;
+  color: var(--pandorus-ink);
   font-weight: 700;
   text-decoration: none;
   border-bottom: 1px solid rgba(44, 34, 23, 0.3);
@@ -963,30 +996,29 @@ h4 {
 
 .landing-panel {
   position: relative;
-  padding: 16px;
-  border: 1px solid rgba(104, 82, 39, 0.2);
-  background: rgba(255, 252, 245, 0.72);
-  box-shadow: 0 12px 24px rgba(80, 57, 22, 0.06);
-  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  padding: var(--pandorus-space-4);
+  border: 1px solid var(--pandorus-border-soft);
+  background: var(--pandorus-surface-soft);
+  box-shadow: var(--pandorus-shadow-soft);
   animation: cardRise 0.95s ease both;
 }
 
 .landing-panel:hover {
   transform: translateY(-2px);
-  border-color: rgba(118, 88, 38, 0.28);
-  box-shadow: 0 18px 30px rgba(80, 57, 22, 0.1);
+  border-color: var(--pandorus-border-mid);
+  box-shadow: var(--pandorus-shadow-hover);
 }
 
 .landing-panel h3 {
   border: 0;
   padding: 0;
   font-size: 1.2rem;
-  color: #2b1f12;
+  color: var(--pandorus-ink);
 }
 
 .landing-panel p {
   margin: 10px 0 0;
-  color: #5a4b35;
+  color: var(--pandorus-ink-soft);
 }
 
 .landing-panel-wide {
@@ -1009,9 +1041,8 @@ h4 {
 
 .world-seal {
   position: relative;
-  padding: 16px;
+  padding: var(--pandorus-space-4);
   border: 1px solid rgba(112, 84, 39, 0.16);
-  border-radius: 22px;
   background: rgba(255, 250, 241, 0.76);
   box-shadow: 0 12px 22px rgba(79, 56, 21, 0.05);
 }
@@ -1024,7 +1055,7 @@ h4 {
 
 .world-seal p {
   margin: 10px 0 0;
-  color: #5a4b35;
+  color: var(--pandorus-ink-soft);
 }
 
 .world-seal-mark {
@@ -1637,11 +1668,9 @@ h4 {
 
 .timeline-overview-card {
   position: relative;
-  padding: 16px 18px;
+  padding: var(--pandorus-space-4) var(--pandorus-space-5);
   border: 1px solid rgba(139, 106, 48, 0.14);
-  border-radius: 22px;
-  background:
-    linear-gradient(180deg, rgba(255, 251, 244, 0.98), rgba(243, 231, 204, 0.9));
+  background: var(--pandorus-surface-panel);
   box-shadow: 0 14px 28px rgba(88, 60, 19, 0.05);
   overflow: hidden;
 }
@@ -1666,14 +1695,14 @@ h4 {
   font-size: 0.76rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #8a6a2d;
+  color: var(--pandorus-accent);
 }
 
 .timeline-overview-value {
   margin: 0;
   font-size: 1.8rem;
   line-height: 1;
-  color: #2f2113;
+  color: var(--pandorus-ink);
 }
 
 .timeline-overview-note {
@@ -2057,16 +2086,14 @@ h4 {
 .relation-card {
   position: relative;
   border: 1px solid rgba(138, 103, 43, 0.16);
-  border-radius: 26px;
   background:
     linear-gradient(180deg, rgba(255, 250, 239, 0.98), rgba(244, 232, 208, 0.96)),
     var(--surface);
-  padding: 18px;
+  padding: var(--pandorus-space-5);
   overflow: hidden;
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.78),
     0 16px 28px rgba(88, 60, 19, 0.08);
-  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 
 .relation-card:hover {
@@ -2623,16 +2650,15 @@ h4 {
 }
 
 .constellation-card {
-  padding: 16px;
-  border: 1px solid rgba(104, 82, 39, 0.18);
-  background: rgba(255, 252, 246, 0.78);
+  padding: var(--pandorus-space-4);
+  border: 1px solid var(--pandorus-border-soft);
+  background: var(--pandorus-surface-glass);
   box-shadow: 0 12px 24px rgba(93, 67, 28, 0.08);
-  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 
 .constellation-card:hover {
   transform: translateY(-2px);
-  border-color: rgba(104, 82, 39, 0.28);
+  border-color: var(--pandorus-border-mid);
   box-shadow: 0 18px 30px rgba(93, 67, 28, 0.12);
 }
 
@@ -2641,7 +2667,7 @@ h4 {
   font-size: 0.75rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #8a6a2d;
+  color: var(--pandorus-accent);
 }
 
 .constellation-card h4 {
@@ -2649,12 +2675,12 @@ h4 {
   border: 0;
   padding: 0;
   font-size: 1.08rem;
-  color: #2d2012;
+  color: var(--pandorus-ink);
 }
 
 .constellation-card p {
   margin: 10px 0 0;
-  color: #5c4d38;
+  color: var(--pandorus-ink-soft);
 }
 
 .planet-card-central {
