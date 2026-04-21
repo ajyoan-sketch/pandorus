@@ -29,6 +29,7 @@
           <a href="#chronologie">Chronologie</a>
           <a href="#chapitres">Chapitres</a>
           <a href="#personnages">Personnages</a>
+          <a href="#lieux">Lieux</a>
           <a href="#creatures">Créatures</a>
           <a href="#mysteres">Mystères</a>
           <a href="#cartes">Cartes</a>
@@ -79,7 +80,27 @@
             <div class="landing-actions">
               <a class="button primary" href="#fiches">Entrer dans les fiches</a>
               <a class="button secondary" href="#chronologie">Voir la chronologie</a>
-              <a class="button secondary" href="#creatures">Explorer le bestiaire</a>
+              <a class="button secondary" href="#lieux">Explorer les lieux</a>
+            </div>
+            <div class="landing-pathways">
+              <article class="pathway-card">
+                <p class="pathway-kicker">Commencer par</p>
+                <h3>Les personnages</h3>
+                <p>Entrer dans Pandorus par Shaushana, Shan et Franklin pour comprendre d'abord les visages du récit.</p>
+                <a class="button tiny secondary" href="#fiches">Suivre ce chemin</a>
+              </article>
+              <article class="pathway-card">
+                <p class="pathway-kicker">Commencer par</p>
+                <h3>Les lieux</h3>
+                <p>Lire les fleuves, les seuils et les territoires conscients avant de revenir vers ceux qui les traversent.</p>
+                <a class="button tiny secondary" href="#lieux">Entrer par les lieux</a>
+              </article>
+              <article class="pathway-card">
+                <p class="pathway-kicker">Commencer par</p>
+                <h3>Les bascules</h3>
+                <p>Suivre le déséquilibre du vivant, les révélations et les passages qui structurent l'histoire.</p>
+                <a class="button tiny secondary" href="#chronologie">Lire les bascules</a>
+              </article>
             </div>
             <article id="landing-oracle" class="landing-oracle" aria-live="polite"></article>
             <div class="landing-entry-grid">
@@ -91,15 +112,21 @@
               </article>
               <article class="entry-card">
                 <p class="entry-card-kicker">Entrer par les lieux</p>
-                <h3>Cartes et ciels</h3>
-                <p>Constellations, mondes lointains, terres conscientes et geographies anciennes prolongent le mystere.</p>
-                <a href="#cartes">Explorer les cartes</a>
+                <h3>Lieux traversés</h3>
+                <p>Passage, Passar, Bassaï, Vrax et coeur du Vrax donnent au recit sa respiration et sa tension.</p>
+                <a href="#lieux">Explorer les lieux</a>
               </article>
               <article class="entry-card">
                 <p class="entry-card-kicker">Entrer par les bascules</p>
                 <h3>Chronologie vivante</h3>
                 <p>Naissances, fractures, revelations et desequilibre du vivant dessinent la progression du monde.</p>
                 <a href="#chronologie">Suivre les evenements</a>
+              </article>
+              <article class="entry-card">
+                <p class="entry-card-kicker">Entrer par les cartes</p>
+                <h3>Cartes et ciels</h3>
+                <p>Constellations, mondes lointains, terres conscientes et geographies anciennes prolongent le mystere.</p>
+                <a href="#cartes">Explorer les cartes</a>
               </article>
             </div>
           </div>
@@ -1335,6 +1362,33 @@
           <input id="relations-search" type="search" placeholder="Ex. Shaushana">
         </label>
         <div id="relations-grid" class="relations-grid"></div>
+      </section>
+
+      <section id="lieux" class="section" hidden>
+        <div class="section-heading">
+          <h3>Lieux</h3>
+        </div>
+        <div class="locations-intro">
+          <div class="locations-intro-copy">
+            <p class="eyebrow">Geographie sensible</p>
+            <p class="hero-text">
+              Les lieux de Pandorus ne sont jamais de simples decors. Chaque rive, chaque passage, chaque territoire
+              porte une ambiance, une memoire et une maniere propre d'accueillir, de mettre a l'epreuve ou de reveler.
+            </p>
+          </div>
+          <div class="locations-intro-seals" aria-hidden="true">
+            <span>Seuil</span>
+            <span>Fleuve</span>
+            <span>Territoire</span>
+          </div>
+        </div>
+        <div id="lieux-alphabet" class="alphabet-filter" aria-label="Filtre alphabetique des lieux"></div>
+        <label class="search relation-search">
+          <span>Rechercher un lieu</span>
+          <input id="lieux-search" type="search" placeholder="Ex. Vrax">
+        </label>
+        <div id="lieux-fiches-tabs" class="fiche-tabs" role="tablist" aria-label="Fiches des lieux"></div>
+        <div id="lieux-fiches-panels"></div>
       </section>
 
       <section id="creatures" class="section" hidden>

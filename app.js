@@ -182,6 +182,448 @@ const livingMapRegions = [
   }
 ];
 
+const characterRouteMap = {
+  shan: "#fiches",
+  shaushana: "#fiches-shaushana",
+  franklin: "#fiches-franklin",
+  mike: "#fiches-mike",
+  gerom: "#fiches-gerom",
+  "gerom": "#fiches-gerom",
+  elrick: "#fiches-elrick",
+  "elrick-jeune": "#fiches-elrick",
+  eben: "#fiches-eben",
+  capitaine: "#fiches-capitaine",
+  "harry-py": "#fiches-harry-py",
+  "pandorus-games-harry-py": "#fiches-harry-py",
+  "gardien-isma": "#fiches-gardien-isma",
+  wingard: "#fiches-wingard",
+  "games-wingard": "#fiches-wingard",
+  levy: "#fiches-levy",
+  "ossah-lyla": "#fiches-ossah-lyla",
+  nastaz: "#fiches-nastaz"
+};
+
+const characterPrimaryLocationMap = {
+  shan: "#lieux-vrax",
+  shaushana: "#lieux-passage",
+  franklin: "#lieux-passar",
+  mike: "#lieux-bidonville-du-passar",
+  gerom: "#lieux-passar",
+  elrick: "#lieux-bassai",
+  eben: "#lieux-vrax",
+  capitaine: "#lieux-veyrine",
+  "harry-py": "#lieux-fleuve-sylvae",
+  "gardien-isma": "#lieux-vrax",
+  wingard: "#lieux-vrax",
+  levy: "#lieux-coeur-du-vrax",
+  "ossah-lyla": "#lieux-coeur-du-vrax",
+  nastaz: "#lieux-coeur-du-vrax"
+};
+
+const staticFicheContextMap = {
+  "shan-panel": [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#chronologie", label: "Suivre son parcours" },
+    { href: "#lieux-vrax", label: "Lire le Vrax" }
+  ],
+  "shaushana-panel": [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#chronologie", label: "Suivre ses bascules" },
+    { href: "#lieux-passage", label: "Relire Le Passage" }
+  ],
+  "franklin-panel": [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#chronologie", label: "Suivre son eveil" },
+    { href: "#lieux-passar", label: "Relire le Passar" }
+  ],
+  "mike-panel": [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#chronologie", label: "Lire les evenements" },
+    { href: "#lieux-bidonville-du-passar", label: "Voir le bidonville" }
+  ],
+  "gerom-panel": [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#chronologie", label: "Lire les evenements" },
+    { href: "#lieux-passar", label: "Relire le Passar" }
+  ],
+  "elrick-panel": [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#chronologie", label: "Voir sa place dans l'histoire" },
+    { href: "#lieux-bassai", label: "Lire le Bassaï" }
+  ]
+};
+
+const additionalFicheContextMap = {
+  "harry-py": [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#chronologie", label: "Suivre la piste au sud" },
+    { href: "#lieux-fleuve-sylvae", label: "Lire le fleuve Sylvae" }
+  ],
+  "gardien-isma": [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#chronologie", label: "Voir le coeur du conflit" },
+    { href: "#lieux-vrax", label: "Relire le Vrax" }
+  ],
+  wingard: [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#chronologie", label: "Voir les affrontements" },
+    { href: "#lieux-vrax", label: "Relire le Vrax" }
+  ],
+  levy: [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#chronologie", label: "Suivre son depart" },
+    { href: "#lieux-coeur-du-vrax", label: "Lire le coeur du Vrax" }
+  ],
+  "ossah-lyla": [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#chronologie", label: "Voir la revelation" },
+    { href: "#lieux-coeur-du-vrax", label: "Lire le coeur du Vrax" }
+  ],
+  nastaz: [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#chronologie", label: "Voir la revelation" },
+    { href: "#lieux-coeur-du-vrax", label: "Lire le coeur du Vrax" }
+  ],
+  eben: [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#chronologie", label: "Lire son empreinte" },
+    { href: "#lieux-vrax", label: "Relire le Vrax" }
+  ],
+  capitaine: [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#mysteres", label: "Ouvrir le mystere" },
+    { href: "#lieux-veyrine", label: "Lire le Veyrine" }
+  ]
+};
+
+const creatureContextMap = {
+  "croconha": [
+    { href: "#lieux-bassai", label: "Voir le Bassaï" },
+    { href: "#chronologie", label: "Lire les traverses" }
+  ],
+  "felou": [
+    { href: "#fiches-shaushana", label: "Voir Shaushana" },
+    { href: "#chronologie", label: "Lire le premier basculement" }
+  ],
+  "felours": [
+    { href: "#lieux-passar", label: "Lire le Passar" },
+    { href: "#chronologie", label: "Voir les tensions du vivant" }
+  ],
+  "gueplynx": [
+    { href: "#lieux-coeur-du-vrax", label: "Lire le coeur du Vrax" },
+    { href: "#chronologie", label: "Voir l'affrontement" }
+  ],
+  "luminael": [
+    { href: "#lieux-passage", label: "Relire Le Passage" },
+    { href: "#cartes", label: "Voir les cartes" }
+  ],
+  "lumineau": [
+    { href: "#lieux-bassai", label: "Voir le Bassaï" },
+    { href: "#cartes", label: "Voir les cartes" }
+  ],
+  "nignoble": [
+    { href: "#mysteres", label: "Voir les mysteres" },
+    { href: "#chronologie", label: "Lire les signes d'alteration" }
+  ],
+  "renastar": [
+    { href: "#lieux-passage", label: "Relire Le Passage" },
+    { href: "#chronologie", label: "Voir les premieres traverses" }
+  ],
+  "reptidile": [
+    { href: "#lieux-bassai", label: "Voir le Bassaï" },
+    { href: "#chronologie", label: "Lire les traverses" }
+  ],
+  "scarabeast": [
+    { href: "#lieux-vrax", label: "Voir le Vrax" },
+    { href: "#chronologie", label: "Voir les tensions du vivant" }
+  ],
+  "serpours": [
+    { href: "#lieux-passar", label: "Relire le Passar" },
+    { href: "#chronologie", label: "Lire les epreuves" }
+  ],
+  "verdeflor": [
+    { href: "#lieux-passage", label: "Relire Le Passage" },
+    { href: "#mysteres", label: "Voir les mysteres" }
+  ]
+};
+
+const locationFiches = [
+  {
+    slug: "passage",
+    name: "Le Passage",
+    tone: "threshold",
+    category: "Seuil d'entree",
+    intro: "Le Passage est le premier lieu ou Pandorus cesse d'etre seulement un decor pour devenir une presence. Tout y semble annoncer une naissance, une écoute et une premiere reconnaissance du monde.",
+    meta: [
+      { label: "Atmosphere", value: "Eveil, seuil, perception naissante" },
+      { label: "Fonction", value: "Point d'ouverture du recit" },
+      { label: "Presences", value: "Shaushana, Franklin, premieres creatures" }
+    ],
+    biography: [
+      "Le Passage agit comme une membrane entre l'errance et l'entree veritable dans Pandorus. Ce n'est pas encore un territoire organise comme le Vrax ni un foyer comme le Passar, mais deja un lieu qui repond, qui filtre et qui oriente.",
+      "C'est la que le recit prend son premier souffle sensible. Le vivant y est encore diffus, presque flottant, mais deja assez fort pour signaler que la suite du voyage ne sera pas seulement geographique."
+    ],
+    summary: [
+      "Le Passage est le lieu ou la lecture du monde commence.",
+      "Il donne a Shaushana et a Franklin une premiere experience d'un univers qui observe, met a l'epreuve et attire vers plus grand que lui."
+    ],
+    profile: [
+      { title: "Texture du lieu", text: "Ouverture, frisson, lumiere encore indeterminee et signaux fins du vivant." },
+      { title: "Role narratif", text: "Il met les heros en route sans encore tout leur reveler." },
+      { title: "Lien contextuel", text: "Il prepare aussi les figures, creatures et fleuves qui seront compris plus tard." }
+    ],
+    contextLinks: [
+      { href: "#fiches-shaushana", label: "Voir Shaushana" },
+      { href: "#chronologie", label: "Lire le debut du recit" },
+      { href: "#cartes", label: "Voir la carte du monde" }
+    ]
+  },
+  {
+    slug: "passar",
+    name: "Passar",
+    tone: "river",
+    category: "Fleuve habite",
+    intro: "Le Passar est a la fois une rive, un rythme et un refuge. C'est le premier lieu ou Pandorus prend une forme communautaire, humaine, fragile, mais tenace.",
+    meta: [
+      { label: "Atmosphere", value: "Rive, precarite, fraternite" },
+      { label: "Fonction", value: "Premier ancrage humain du recit" },
+      { label: "Presences", value: "Franklin, Gerom, Mike, memoire du Capitaine" }
+    ],
+    biography: [
+      "Le Passar accueille sans jamais rassurer totalement. On y sent la vie partagee, les solidarites, les manques et la conscience que l'equilibre reste toujours precaire.",
+      "C'est autour de lui que Franklin existe d'abord, que Mike est protege, et que la disparition du Capitaine continue de laisser une marque ouverte."
+    ],
+    summary: [
+      "Le Passar donne au recit sa premiere epaisseur sociale.",
+      "Il devient vite un point de comparaison avec d'autres lieux, notamment quand le vivant commence a se deregler."
+    ],
+    profile: [
+      { title: "Texture du lieu", text: "Eau, bois, precarite, solidarite et respiration de bord de fleuve." },
+      { title: "Role narratif", text: "Ancrer l'histoire dans des vies concretes avant l'ouverture vers des forces plus anciennes." },
+      { title: "Point de tension", text: "Le fleuve reste aussi un lieu d'inquietude, de manque et de disparition." }
+    ],
+    contextLinks: [
+      { href: "#fiches-franklin", label: "Voir Franklin" },
+      { href: "#relations", label: "Voir les liens du Passar" },
+      { href: "#mysteres", label: "Ouvrir le mystere du Capitaine" }
+    ]
+  },
+  {
+    slug: "bidonville-du-passar",
+    name: "Bidonville du Passar",
+    tone: "settlement",
+    category: "Foyer fragile",
+    intro: "Le bidonville du Passar concentre la survie quotidienne, la tendresse rude et l'effort de tenir ensemble au bord du fleuve.",
+    meta: [
+      { label: "Atmosphere", value: "Abri, improvisation, chaleur humaine" },
+      { label: "Fonction", value: "Foyer narratif et zone de veille" },
+      { label: "Presences", value: "Mike, Gerom, Franklin, habitants du bord" }
+    ],
+    biography: [
+      "Le bidonville n'a rien d'un lieu noble au sens classique, et pourtant il donne au recit une force tres concrete. C'est la que se mesurent la faim, la protection, l'absence et l'attachement.",
+      "Il est le lieu de ceux qui tiennent sans grandeur affichee, mais avec une dignite reelle. Son existence rappelle que Pandorus n'est pas seulement fait de grandes revelations, mais aussi de vies modestes qui resistent."
+    ],
+    summary: [
+      "Le bidonville est un foyer de survie autant qu'un lieu de memoire sociale.",
+      "Il rend sensible ce que les grandes forces du monde mettent en danger jusque dans le quotidien."
+    ],
+    profile: [
+      { title: "Texture du lieu", text: "Assemblages fragiles, proximite humaine, veille continue." },
+      { title: "Role narratif", text: "Donner une chair sociale au recit avant les zones plus sacrees ou anciennes." },
+      { title: "Point de tension", text: "Ce qui manque ici se ressent immédiatement, humainement et sans filtre." }
+    ],
+    contextLinks: [
+      { href: "#fiches-mike", label: "Voir Mike" },
+      { href: "#fiches-gerom", label: "Voir Gerom" },
+      { href: "#chronologie", label: "Lire les evenements lies" }
+    ]
+  },
+  {
+    slug: "veyrine",
+    name: "Veyrine",
+    tone: "memory",
+    category: "Fleuve de comparaison",
+    intro: "Le Veyrine est un lieu d'observation et d'alerte. On y lit mieux qu'ailleurs que quelque chose du vivant ne suit plus sa course ordinaire.",
+    meta: [
+      { label: "Atmosphere", value: "Observation, doute, disparition" },
+      { label: "Fonction", value: "Lieu d'enquete sur le desequilibre" },
+      { label: "Presences", value: "Le Capitaine, Franklin, expedition interrompue" }
+    ],
+    biography: [
+      "Le Veyrine n'est pas seulement important pour ce qu'on y voit, mais pour ce qu'il permet de mesurer. C'est par ecart, par comparaison, qu'il fait sentir que le monde n'est plus tout a fait dans son ordre.",
+      "La disparition du Capitaine y gagne une densite particuliere. Le lieu garde quelque chose de ce qui a ete pressenti sans etre rapporte."
+    ],
+    summary: [
+      "Le Veyrine agit comme une rive de lecture du desequilibre.",
+      "Il est aussi un foyer de memoire troublee autour du Capitaine."
+    ],
+    profile: [
+      { title: "Texture du lieu", text: "Silence, ecart, courant inquiet et memoire inachevee." },
+      { title: "Role narratif", text: "Donner une preuve indirecte mais forte du dereglement du vivant." },
+      { title: "Point de tension", text: "Il concentre l'une des absences les plus lourdes du recit." }
+    ],
+    contextLinks: [
+      { href: "#fiches-capitaine", label: "Voir le Capitaine" },
+      { href: "#mysteres", label: "Ouvrir les mysteres" },
+      { href: "#chronologie", label: "Lire les bascules" }
+    ]
+  },
+  {
+    slug: "bassai",
+    name: "Bassaï",
+    tone: "river",
+    category: "Fleuve d'epreuve",
+    intro: "Le Bassaï est moins un simple lieu a franchir qu'une epreuve fluide. Il met a l'ecoute, use, teste et fait sentir que certains passages doivent etre merites.",
+    meta: [
+      { label: "Atmosphere", value: "Passage, profondeur, epreuve" },
+      { label: "Fonction", value: "Seuil vers des territoires plus anciens" },
+      { label: "Presences", value: "Shaushana, Shan, Franklin, Elrick, creatures du fleuve" }
+    ],
+    biography: [
+      "Le Bassaï concentre la sensation que Pandorus choisit parfois la facon dont on le traverse. Rien n'y est neutre : les formes du vivant, les rythmes du fleuve et les rencontres y composent une epreuve de lecture autant que de survie.",
+      "C'est un lieu de tension fertile, ou les heros comprennent que le monde repond a leur avance et ne se laisse pas seulement parcourir."
+    ],
+    summary: [
+      "Le Bassaï marque le passage de la simple route a l'experience du monde conscient.",
+      "Il annonce deja les logiques plus organisees du Vrax."
+    ],
+    profile: [
+      { title: "Texture du lieu", text: "Eau dense, creatures de passage, profondeur attentive." },
+      { title: "Role narratif", text: "Durcir le voyage et elever la lecture du monde." },
+      { title: "Point de tension", text: "Le lieu juge presque autant qu'il laisse passer." }
+    ],
+    contextLinks: [
+      { href: "#fiches-elrick", label: "Voir Elrick" },
+      { href: "#creatures", label: "Voir les creatures liees" },
+      { href: "#chronologie", label: "Lire les traverses" }
+    ]
+  },
+  {
+    slug: "vrax",
+    name: "Vrax",
+    tone: "vrax",
+    category: "Territoire conscient",
+    intro: "Le Vrax est une veille organisee. Plus qu'un lieu, il fonctionne comme une intelligence territoriale capable d'evaluer, de proteger, d'opposer et de reconnaitre.",
+    meta: [
+      { label: "Atmosphere", value: "Veille, defense, intelligence du vivant" },
+      { label: "Fonction", value: "Centre de protection et de reponse" },
+      { label: "Presences", value: "Harry PY, Gardien Isma, Wingard, Levy, creatrices" }
+    ],
+    biography: [
+      "Entrer dans le Vrax, c'est cesser de croire que le territoire n'est qu'un cadre. Tout y est fonction, lecture, reponse et memoire organisee. Le monde y prend une forme presque politique, sacree et collective.",
+      "Les protecteurs, les flux et les gardiennes n'y apparaissent pas comme des exceptions isolees, mais comme les organes d'une meme logique de defense du vivant."
+    ],
+    summary: [
+      "Le Vrax donne a Pandorus sa forme la plus consciente et la plus structuree.",
+      "Il transforme la lecture du recit: l'univers n'est plus seulement vivant, il sait aussi se repondre a lui-meme."
+    ],
+    profile: [
+      { title: "Texture du lieu", text: "Densite, ordre ancien, lecture territoriale et tension sacree." },
+      { title: "Role narratif", text: "Reveler un niveau superieur d'organisation du monde." },
+      { title: "Point de tension", text: "Ce qui y est reconnu peut etre protege autant que mis a l'epreuve." }
+    ],
+    contextLinks: [
+      { href: "#relations", label: "Voir les figures du Vrax" },
+      { href: "#cartes", label: "Voir la carte vivante" },
+      { href: "#chronologie", label: "Lire les revelations" }
+    ]
+  },
+  {
+    slug: "coeur-du-vrax",
+    name: "Coeur du Vrax",
+    tone: "vrax",
+    category: "Noyau du territoire",
+    intro: "Le coeur du Vrax est un lieu de revelation plus que de repos. On y atteint un centre de verite, mais un centre blesse, ou le vivant montre autant sa puissance que son atteinte.",
+    meta: [
+      { label: "Atmosphere", value: "Revelation, gravite, blessure du vivant" },
+      { label: "Fonction", value: "Noyau de lecture du desequilibre" },
+      { label: "Presences", value: "Ossah Lyla, Nastaz, Franklin, Shan, Shaushana, Levy" }
+    ],
+    biography: [
+      "Au coeur du Vrax, tout se condense. Les affrontements contre les Guéplynx, la capture de Franklin, l'intervention des creatrices et la revelation sur les papillons font de ce lieu un point de bascule majeur.",
+      "Ce n'est pas seulement le centre d'un territoire; c'est aussi un centre de lecture du mal qui traverse Pandorus. On y comprend que l'alteration n'est plus abstraite, mais deja visible dans la trame la plus fine du vivant."
+    ],
+    summary: [
+      "Le coeur du Vrax est l'un des lieux les plus revelateurs du recit a ce stade.",
+      "Il fait converger l'intime, le sacre, la defense du monde et le signe tres concret de son atteinte."
+    ],
+    profile: [
+      { title: "Texture du lieu", text: "Centre dense, presque rituel, ou les signes deviennent explicites." },
+      { title: "Role narratif", text: "Faire passer le recit de la perception du desequilibre a sa reconnaissance claire." },
+      { title: "Point de tension", text: "Ce qui est vu ici oblige a repartir autrement." }
+    ],
+    contextLinks: [
+      { href: "#fiches-franklin", label: "Voir Franklin" },
+      { href: "#fiches-ossah-lyla", label: "Voir Ossah Lyla" },
+      { href: "#chronologie", label: "Lire la revelation" }
+    ]
+  },
+  {
+    slug: "fleuve-sylvae",
+    name: "Fleuve Sylvae",
+    tone: "river",
+    category: "Piste du sud",
+    intro: "Le fleuve Sylvae n'est pas encore pleinement traverse, mais il entre deja dans le recit comme une direction lourde de promesse et d'inquietude.",
+    meta: [
+      { label: "Atmosphere", value: "Appel lointain, piste, decomposition observee" },
+      { label: "Fonction", value: "Nouvelle direction du recit" },
+      { label: "Presences", value: "Harry PY, zone de decomposition du vivant" }
+    ],
+    biography: [
+      "Le fleuve Sylvae apparait d'abord comme une destination, mais une destination deja chargee. Harry PY s'y trouve au sud pour observer une zone ou le vivant semble se decomposer autrement.",
+      "A ce stade, il agit comme une ouverture narrative: le lieu n'est pas encore donne pleinement, mais il attire deja l'histoire vers sa prochaine epreuve."
+    ],
+    summary: [
+      "Le fleuve Sylvae lance la prochaine grande direction du voyage.",
+      "Il annonce que l'alteration du vivant depasse de loin le seul Vrax."
+    ],
+    profile: [
+      { title: "Texture du lieu", text: "Distance, appel, courant encore hors champ mais deja menaçant." },
+      { title: "Role narratif", text: "Ouvrir l'etape suivante sans casser le poids du coeur du Vrax." },
+      { title: "Point de tension", text: "Le sud n'est pas une sortie: c'est une aggravation du mystere." }
+    ],
+    contextLinks: [
+      { href: "#fiches-harry-py", label: "Voir Harry PY" },
+      { href: "#chronologie", label: "Lire la nouvelle direction" },
+      { href: "#mysteres", label: "Ouvrir les mysteres" }
+    ]
+  },
+  {
+    slug: "mer-du-sphinx-pandorien",
+    name: "Mer du Sphinx pandorien",
+    tone: "memory",
+    category: "Horizon du sud",
+    intro: "La mer du Sphinx pandorien n'est encore qu'une ligne de destination, mais une ligne tres chargee, presque mythique, vers laquelle le recit oriente maintenant ses forces.",
+    meta: [
+      { label: "Atmosphere", value: "Lointain, mystere, pression du sud" },
+      { label: "Fonction", value: "Horizon narratif en formation" },
+      { label: "Presences", value: "Piste future pour Shaushana, Shan, Franklin et Levy" }
+    ],
+    biography: [
+      "Comme certains lieux encore peu vus mais deja puissants, la mer du Sphinx pandorien existe d'abord par son nom, sa direction et le poids qu'on lui donne. Elle élargit brusquement l'echelle du monde.",
+      "Elle annonce une geographie plus vaste encore, ou les rivages, les fleuves et les territoires conscients ne suffiront peut-etre plus a contenir ce qui remonte."
+    ],
+    summary: [
+      "La mer du Sphinx pandorien agit comme horizon et menace encore abstraite.",
+      "Elle participe a la sensation que Pandorus s'ouvre a une etape plus ample."
+    ],
+    profile: [
+      { title: "Texture du lieu", text: "Horizon, appel, mystere meridional." },
+      { title: "Role narratif", text: "Etendre le monde au-dela des lieux deja traverses." },
+      { title: "Point de tension", text: "Ce qui attend au sud semble depasser le simple deplacement." }
+    ],
+    contextLinks: [
+      { href: "#lieux-fleuve-sylvae", label: "Voir le fleuve Sylvae" },
+      { href: "#chronologie", label: "Lire la direction vers le sud" },
+      { href: "#cartes", label: "Voir le monde" }
+    ]
+  }
+];
+
+const locationHashPanelMap = Object.fromEntries(
+  locationFiches.map((fiche) => [`#lieux-${fiche.slug}`, `lieu-panel-${fiche.slug}`])
+);
+
 const sectionWhispers = {
   home: "Entrer dans l'archive vivante de Pandorus.",
   fiches: "Les visages qui portent, blessent ou transforment le monde.",
@@ -189,6 +631,7 @@ const sectionWhispers = {
   chronologie: "Le temps ou Pandorus se revele, se fracture et repond.",
   chapitres: "Les portes du recit, ouvertes une a une.",
   personnages: "Les presences du monde, vues dans leur ensemble.",
+  lieux: "Les territoires, fleuves et seuils qui donnent sa respiration au recit.",
   creatures: "Le vivant dans sa beaute, sa peur et son instinct.",
   mysteres: "Ce qui resiste encore a une lecture pleine.",
   cartes: "Les formes du monde, des cieux et des territoires conscients."
@@ -327,7 +770,6 @@ const creatureImageFiles = [
   "Luminaël.png",
   "Lumineau.png",
   "Nignoble.png",
-  "Papillons.png",
   "Renastar.png",
   "Reptidile.png",
   "Scarabeast.png",
@@ -555,6 +997,27 @@ const relationNodes = [
 function buildMediaPath(folder, fileName) {
   const safeFileName = encodeURIComponent(fileName).replace(/'/g, "%27");
   return `./media/${folder}/${safeFileName}`;
+}
+
+function buildContextLinksMarkup(links, title = "Liens contextuels") {
+  if (!links?.length) return "";
+
+  return `
+    <section class="section context-links-section">
+      <div class="section-heading">
+        <h3>${title}</h3>
+      </div>
+      <div class="context-links">
+        ${links.map((link) => `
+          <a class="button tiny secondary context-link" href="${link.href}">${link.label}</a>
+        `).join("")}
+      </div>
+    </section>
+  `;
+}
+
+function inferLocationFromName(name) {
+  return characterPrimaryLocationMap[slugifyValue(name)] || "#lieux";
 }
 
 const additionalCharacterFiches = [
@@ -1017,29 +1480,6 @@ const creatureFiches = [
     ]
   },
   {
-    slug: "papillons",
-    name: "Papillons",
-    image: buildMediaPath("creatures", "Papillons.png"),
-    family: "Essence vitale de Pandorus",
-    status: "Creature clairement essentielle dans le recit",
-    habitat: "Ciel, eaux, terres et zones de passage du vivant",
-    summary: "Les papillons ne sont pas un simple motif du monde: ils portent une energie indispensable a l'equilibre de Pandorus et relient entre eux ses differents plans.",
-    biography: [
-      "Au fil du recit, Shaushana apparait deja liee aux papillons sans en comprendre toute la portee. Ce n'est qu'au coeur du Vrax que les creatrices revelent leur veritable nature: les papillons sont des vecteurs d'essence, des porteurs d'energie vitale qui nourrissent les plantes, les sols, les eaux et l'harmonie generale du monde.",
-      "Leur extinction silencieuse, visible dans le cimetière montre par Ossah Lyla et Nastaz, devient l'une des preuves les plus fortes du desequilibre. Ce ne sont pas seulement des creatures qui meurent: c'est une trame du vivant qui se vide, et avec elle tout Pandorus commence a se deregler."
-    ],
-    profile: [
-      { title: "Nature", text: "Reseau vivant d'essence, de circulation et d'equilibre entre les differentes couches du monde." },
-      { title: "Niveau de menace", text: "Aucune menace directe; leur fragilisation devient en revanche une menace absolue pour l'ensemble de Pandorus." },
-      { title: "Role narratif", text: "Ils transforment la crise du vivant en verite cosmique et donnent une mesure concrete de ce qui est en train de se perdre." }
-    ],
-    timeline: [
-      { era: "Jour 1 a 4", title: "Présence sensible", summary: "Les papillons accompagnent deja les traverses et signalent une affinite profonde entre Shaushana et le vivant." },
-      { era: "Jour 5", title: "Révélation du coeur du Vrax", summary: "Les creatrices expliquent que les papillons portent une energie vitale sans laquelle l'equilibre du monde se defait." },
-      { era: "Jour 5", title: "Cimetière silencieux", summary: "Le groupe decouvre un lieu ou les papillons s'eteignent sans violence visible, preuve glaçante d'une alteration plus profonde." }
-    ]
-  },
-  {
     slug: "nignoble",
     name: "Nignoble",
     image: buildMediaPath("creatures", "Nignoble.png"),
@@ -1184,11 +1624,14 @@ let landingOracleInterval = null;
 let currentCharacterLetter = "all";
 let currentCreatureLetter = "all";
 let currentFicheLetter = "all";
+let currentLocationLetter = "all";
 let currentCreatureFiche = creatureFiches[0]?.slug || "";
 let currentRelationLetter = "all";
 let currentRelationSearch = "";
+let currentLocationSearch = "";
 let ficheUiInitialized = false;
 let creatureFichesInitialized = false;
+let locationFichesInitialized = false;
 
 const chapters = [
   {
@@ -1497,6 +1940,7 @@ function renderAdditionalCharacterFiches() {
     panel.className = "fiche-panel";
     panel.setAttribute("role", "tabpanel");
     panel.hidden = true;
+    const contextLinks = buildContextLinksMarkup(additionalFicheContextMap[fiche.slug], "Parcours lies");
     panel.innerHTML = `
       <section class="section">
         <div id="${fiche.hash.replace("#", "")}" class="fiche-grid">
@@ -1541,6 +1985,7 @@ function renderAdditionalCharacterFiches() {
           ${relations}
         </div>
       </section>
+      ${contextLinks}
       <section class="section">
         <div class="section-heading">
           <h3>Evolution dans l'histoire</h3>
@@ -1553,6 +1998,166 @@ function renderAdditionalCharacterFiches() {
 
     ficheSection.appendChild(panel);
   });
+}
+
+function injectStaticFicheContexts() {
+  Object.entries(staticFicheContextMap).forEach(([panelId, links]) => {
+    const panel = document.getElementById(panelId);
+    if (!panel || panel.querySelector(".context-links-section")) return;
+
+    const relationsSection = Array.from(panel.querySelectorAll(".section")).find((section) => {
+      const title = section.querySelector(".section-heading h3");
+      return title && normalizeForLetter(title.textContent || "").includes("RELATIONS");
+    });
+
+    if (!relationsSection) return;
+
+    relationsSection.insertAdjacentHTML("afterend", buildContextLinksMarkup(links, "Parcours lies"));
+  });
+}
+
+function renderLocationFiches() {
+  const tabsContainer = document.getElementById("lieux-fiches-tabs");
+  const panelsContainer = document.getElementById("lieux-fiches-panels");
+  if (!tabsContainer || !panelsContainer) return;
+
+  tabsContainer.innerHTML = "";
+  panelsContainer.innerHTML = "";
+
+  const filteredLocations = locationFiches.filter((fiche) => {
+    const matchesLetter = matchesLetterFilter(fiche.name, currentLocationLetter);
+    const matchesSearch = !currentLocationSearch || normalizeForLetter(fiche.name).includes(normalizeForLetter(currentLocationSearch));
+    return matchesLetter && matchesSearch;
+  });
+
+  if (!filteredLocations.length) {
+    panelsContainer.innerHTML = `<div class="empty-state">Aucun lieu ne correspond a cette recherche.</div>`;
+    return;
+  }
+
+  filteredLocations.forEach((fiche, index) => {
+    const tab = document.createElement("button");
+    tab.className = `fiche-tab${index === 0 ? " active" : ""}`;
+    tab.type = "button";
+    tab.dataset.locationTarget = `lieu-panel-${fiche.slug}`;
+    tab.setAttribute("role", "tab");
+    tab.setAttribute("aria-selected", index === 0 ? "true" : "false");
+    tab.textContent = fiche.name;
+    tabsContainer.appendChild(tab);
+
+    const panel = document.createElement("div");
+    panel.id = `lieu-panel-${fiche.slug}`;
+    panel.className = "fiche-panel";
+    panel.setAttribute("role", "tabpanel");
+    if (index !== 0) panel.hidden = true;
+
+    const meta = fiche.meta.map((item) => `
+      <article>
+        <strong>${item.label}</strong>
+        <span>${item.value}</span>
+      </article>
+    `).join("");
+
+    const biography = fiche.biography.map((paragraph) => `<p>${paragraph}</p>`).join("");
+    const summary = fiche.summary.map((paragraph) => `<p>${paragraph}</p>`).join("");
+    const profile = fiche.profile.map((item) => `
+      <article class="overview-card">
+        <h4>${item.title}</h4>
+        <p>${item.text}</p>
+      </article>
+    `).join("");
+
+    panel.innerHTML = `
+      <section class="section">
+        <div id="lieux-${fiche.slug}" class="fiche-grid location-fiche-grid">
+          <div class="fiche-portrait">
+            <article class="location-portrait-card location-tone-${fiche.tone}">
+              <p class="location-portrait-kicker">${fiche.category}</p>
+              <h3>${fiche.name}</h3>
+              <p class="location-portrait-line">${fiche.meta[0].value}</p>
+            </article>
+          </div>
+          <div class="fiche-content">
+            <p class="eyebrow">Lieu</p>
+            <h2>${fiche.name}</h2>
+            <p class="hero-text">${fiche.intro}</p>
+            <div class="fiche-meta">
+              ${meta}
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <h3>Ambiance et memoire</h3>
+        </div>
+        ${biography}
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <h3>Lecture du lieu</h3>
+        </div>
+        ${summary}
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <h3>Repères</h3>
+        </div>
+        <div class="fiche-list">
+          ${profile}
+        </div>
+      </section>
+      ${buildContextLinksMarkup(fiche.contextLinks, "Liens contextuels")}
+    `;
+
+    panelsContainer.appendChild(panel);
+  });
+}
+
+function initLocationFicheTabs() {
+  const tabs = Array.from(document.querySelectorAll("#lieux-fiches-tabs .fiche-tab"));
+  const panels = Array.from(document.querySelectorAll("#lieux-fiches-panels .fiche-panel"));
+  if (!tabs.length || !panels.length) return;
+
+  function activatePanel(panelId) {
+    tabs.forEach((tab) => {
+      const isActive = tab.dataset.locationTarget === panelId;
+      tab.classList.toggle("active", isActive);
+      tab.setAttribute("aria-selected", isActive ? "true" : "false");
+    });
+
+    panels.forEach((panel) => {
+      panel.hidden = panel.id !== panelId;
+    });
+  }
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => activatePanel(tab.dataset.locationTarget));
+  });
+
+  window.activateLocationPanel = activatePanel;
+  activatePanel(locationHashPanelMap[window.location.hash] || tabs[0].dataset.locationTarget);
+}
+
+function initLocationFilters() {
+  const searchInput = document.getElementById("lieux-search");
+  const letters = getLettersFromNames(locationFiches.map((fiche) => fiche.name));
+
+  renderAlphabetFilter("lieux-alphabet", letters, currentLocationLetter, (letter) => {
+    currentLocationLetter = letter;
+    renderLocationFiches();
+    initLocationFicheTabs();
+    initLocationFilters();
+  });
+
+  if (searchInput) {
+    searchInput.value = currentLocationSearch;
+    searchInput.oninput = (event) => {
+      currentLocationSearch = event.target.value;
+      renderLocationFiches();
+      initLocationFicheTabs();
+    };
+  }
 }
 
 function initFicheTabs() {
@@ -1664,6 +2269,7 @@ function renderCreatureFiches() {
           ${profileCards}
         </div>
       </section>
+      ${buildContextLinksMarkup(creatureContextMap[fiche.slug], "Liens du bestiaire")}
       <section class="section">
         <div class="section-heading">
           <h3>Presence dans l'histoire</h3>
@@ -1835,6 +2441,43 @@ function renderTimeline() {
     title.textContent = event.title;
     summary.textContent = event.summary;
     content.insertBefore(badgeNode, era);
+    const timelineLinks = document.createElement("div");
+    timelineLinks.className = "context-links compact timeline-context-links";
+
+    const normalizedEventText = normalizeForLetter(`${event.title} ${event.summary}`);
+    const contextCandidates = [];
+
+    if (normalizedEventText.includes("SHAUSHANA")) contextCandidates.push({ href: "#fiches-shaushana", label: "Voir Shaushana" });
+    if (normalizedEventText.includes("SHAN")) contextCandidates.push({ href: "#fiches", label: "Voir Shan" });
+    if (normalizedEventText.includes("FRANKLIN")) contextCandidates.push({ href: "#fiches-franklin", label: "Voir Franklin" });
+    if (normalizedEventText.includes("PASSAR")) contextCandidates.push({ href: "#lieux-passar", label: "Voir le Passar" });
+    if (normalizedEventText.includes("BASSAI")) contextCandidates.push({ href: "#lieux-bassai", label: "Voir le Bassaï" });
+    if (normalizedEventText.includes("VEYRINE") || normalizedEventText.includes("CAPITAINE")) contextCandidates.push({ href: "#lieux-veyrine", label: "Voir le Veyrine" });
+    if (normalizedEventText.includes("VRAX")) contextCandidates.push({ href: "#lieux-vrax", label: "Voir le Vrax" });
+    if (normalizedEventText.includes("CREATRICES") || normalizedEventText.includes("COEUR DU VRAX") || normalizedEventText.includes("PAPILLONS")) {
+      contextCandidates.push({ href: "#lieux-coeur-du-vrax", label: "Lire le coeur du Vrax" });
+    }
+    if (normalizedEventText.includes("SYLVAE") || normalizedEventText.includes("SUD")) {
+      contextCandidates.push({ href: "#lieux-fleuve-sylvae", label: "Voir le fleuve Sylvae" });
+    }
+
+    const uniqueLinks = [];
+    const seenLinks = new Set();
+    contextCandidates.forEach((link) => {
+      const key = `${link.href}|${link.label}`;
+      if (!seenLinks.has(key) && uniqueLinks.length < 3) {
+        seenLinks.add(key);
+        uniqueLinks.push(link);
+      }
+    });
+
+    if (uniqueLinks.length) {
+      timelineLinks.innerHTML = uniqueLinks.map((link) => `
+        <a class="button tiny secondary context-link" href="${link.href}">${link.label}</a>
+      `).join("");
+      content.appendChild(timelineLinks);
+    }
+
     list.appendChild(node);
   });
 }
@@ -1845,6 +2488,7 @@ function getSectionKeyFromHash(hashValue) {
   if (hashValue === "#chapitres") return "chapitres";
   if (hashValue === "#relations") return "relations";
   if (hashValue === "#personnages") return "personnages";
+  if (hashValue === "#lieux" || Boolean(locationHashPanelMap[hashValue])) return "lieux";
   if (hashValue === "#creatures" || hashValue.startsWith("#creatures-fiche-")) return "creatures";
   if (hashValue === "#mysteres") return "mysteres";
   if (hashValue === "#cartes") return "cartes";
@@ -2079,6 +2723,14 @@ function renderMaps() {
   }
 
   livingMapSeals.innerHTML = "";
+  const regionToLocationSlugMap = {
+    passage: "passage",
+    passar: "passar",
+    veyirne: "veyrine",
+    bassai: "bassai",
+    vrax: "vrax",
+    "terre-pandorienne": "passage"
+  };
   livingMapRegions.forEach((region) => {
     const button = document.createElement("button");
     button.className = `living-map-seal${region.slug === currentLivingMapRegion ? " active" : ""}`;
@@ -2101,6 +2753,10 @@ function renderMaps() {
       <p class="living-map-kicker">${activeRegion.kicker}</p>
       <h4 class="living-map-title">${activeRegion.name}</h4>
       <p class="living-map-text">${activeRegion.text}</p>
+      <div class="context-links compact">
+        <a class="button tiny secondary context-link" href="#lieux-${regionToLocationSlugMap[activeRegion.slug] || activeRegion.slug}">Ouvrir la fiche du lieu</a>
+        <a class="button tiny secondary context-link" href="#chronologie">Voir la chronologie</a>
+      </div>
     </div>
     <div class="living-map-side">
       <div class="living-map-meta">
@@ -2302,6 +2958,10 @@ function renderRelations() {
         <p class="relation-link-type">${link.type}</p>
         <h4>${link.target}</h4>
         <p>${link.description}</p>
+        <div class="context-links compact">
+          ${characterRouteMap[slugifyValue(link.target)] ? `<a class="button tiny secondary context-link" href="${characterRouteMap[slugifyValue(link.target)]}">Voir la fiche</a>` : ""}
+          ${characterPrimaryLocationMap[slugifyValue(link.target)] ? `<a class="button tiny secondary context-link" href="${characterPrimaryLocationMap[slugifyValue(link.target)]}">Voir le lieu</a>` : ""}
+        </div>
       </article>
     `).join("");
 
@@ -2310,6 +2970,11 @@ function renderRelations() {
         ${portraitThumb}
         <h4>${nodeData.name}</h4>
         <p class="relation-role">${nodeData.role}</p>
+      </div>
+      <div class="context-links compact relation-context-links">
+        ${characterRouteMap[slugifyValue(nodeData.name)] ? `<a class="button tiny secondary context-link" href="${characterRouteMap[slugifyValue(nodeData.name)]}">Ouvrir la fiche</a>` : ""}
+        <a class="button tiny secondary context-link" href="${inferLocationFromName(nodeData.name)}">Voir le lieu lie</a>
+        <a class="button tiny secondary context-link" href="#chronologie">Lire la chronologie</a>
       </div>
       <div class="relation-links">
         ${links}
@@ -2355,27 +3020,7 @@ function getPandorusImageName(path, index) {
 }
 
 function getPandorusImageLink(path, imageName) {
-  const ficheLinks = {
-    shan: "#fiches",
-    shaushana: "#fiches-shaushana",
-    franklin: "#fiches-franklin",
-    mike: "#fiches-mike",
-    gerom: "#fiches-gerom",
-    elrick: "#fiches-elrick",
-    "elrick-jeune": "#fiches-elrick",
-    eben: "#fiches-eben",
-    capitaine: "#fiches-capitaine",
-    "harry-py": "#fiches-harry-py",
-    "pandorus-games-harry-py": "#fiches-harry-py",
-    "gardien-isma": "#fiches-gardien-isma",
-    wingard: "#fiches-wingard",
-    "games-wingard": "#fiches-wingard",
-    levy: "#fiches-levy",
-    "ossah-lyla": "#fiches-ossah-lyla",
-    nastaz: "#fiches-nastaz"
-  };
-
-  return ficheLinks[slugifyValue(imageName)] || path;
+  return characterRouteMap[slugifyValue(imageName)] || path;
 }
 
 function getCreatureImageLink(imageName) {
@@ -2490,6 +3135,7 @@ function initFicheAlphabetFilter(tabs, activatePanel) {
 
 function ensureFicheUiInitialized() {
   if (ficheUiInitialized) return;
+  injectStaticFicheContexts();
   renderAdditionalCharacterFiches();
   initFicheTabs();
   initFicheCarousels();
@@ -2503,6 +3149,13 @@ function ensureCreatureFichesInitialized() {
   creatureFichesInitialized = true;
 }
 
+function ensureLocationFichesInitialized() {
+  renderLocationFiches();
+  initLocationFicheTabs();
+  initLocationFilters();
+  locationFichesInitialized = true;
+}
+
 function showSectionFromHash() {
   const home = document.getElementById("home");
   const fiches = document.getElementById("fiches");
@@ -2510,11 +3163,13 @@ function showSectionFromHash() {
   const chronologie = document.getElementById("chronologie");
   const chapitres = document.getElementById("chapitres");
   const personnages = document.getElementById("personnages");
+  const lieux = document.getElementById("lieux");
   const creatures = document.getElementById("creatures");
   const mysteres = document.getElementById("mysteres");
   const cartes = document.getElementById("cartes");
   const currentHash = window.location.hash;
   const isCreatureFicheHash = currentHash.startsWith("#creatures-fiche-");
+  const isLocationHash = currentHash === "#lieux" || Boolean(locationHashPanelMap[currentHash]);
 
   updateSectionWhisper();
 
@@ -2522,6 +3177,9 @@ function showSectionFromHash() {
     currentHash === "#fiches" ||
     Boolean(ficheHashPanelMap[currentHash])
   ) {
+    if (Boolean(ficheHashPanelMap[currentHash])) {
+      currentFicheLetter = "all";
+    }
     ensureFicheUiInitialized();
     if (home) home.hidden = true;
     if (fiches) fiches.hidden = false;
@@ -2529,6 +3187,7 @@ function showSectionFromHash() {
     if (chronologie) chronologie.hidden = true;
     if (chapitres) chapitres.hidden = true;
     if (personnages) personnages.hidden = true;
+    if (lieux) lieux.hidden = true;
     if (creatures) creatures.hidden = true;
     if (mysteres) mysteres.hidden = true;
     if (cartes) cartes.hidden = true;
@@ -2545,6 +3204,7 @@ function showSectionFromHash() {
     if (chronologie) chronologie.hidden = false;
     if (chapitres) chapitres.hidden = true;
     if (personnages) personnages.hidden = true;
+    if (lieux) lieux.hidden = true;
     if (creatures) creatures.hidden = true;
     if (mysteres) mysteres.hidden = true;
     if (cartes) cartes.hidden = true;
@@ -2559,6 +3219,7 @@ function showSectionFromHash() {
     if (chronologie) chronologie.hidden = true;
     if (chapitres) chapitres.hidden = false;
     if (personnages) personnages.hidden = true;
+    if (lieux) lieux.hidden = true;
     if (creatures) creatures.hidden = true;
     if (mysteres) mysteres.hidden = true;
     if (cartes) cartes.hidden = true;
@@ -2573,6 +3234,7 @@ function showSectionFromHash() {
     if (chronologie) chronologie.hidden = true;
     if (chapitres) chapitres.hidden = true;
     if (personnages) personnages.hidden = true;
+    if (lieux) lieux.hidden = true;
     if (creatures) creatures.hidden = true;
     if (mysteres) mysteres.hidden = true;
     if (cartes) cartes.hidden = true;
@@ -2587,10 +3249,33 @@ function showSectionFromHash() {
     if (chronologie) chronologie.hidden = true;
     if (chapitres) chapitres.hidden = true;
     if (personnages) personnages.hidden = false;
+    if (lieux) lieux.hidden = true;
     if (creatures) creatures.hidden = true;
     if (mysteres) mysteres.hidden = true;
     if (cartes) cartes.hidden = true;
     renderPandorusImages();
+    return;
+  }
+
+  if (isLocationHash) {
+    if (Boolean(locationHashPanelMap[currentHash])) {
+      currentLocationLetter = "all";
+      currentLocationSearch = "";
+    }
+    ensureLocationFichesInitialized();
+    if (home) home.hidden = true;
+    if (fiches) fiches.hidden = true;
+    if (relations) relations.hidden = true;
+    if (chronologie) chronologie.hidden = true;
+    if (chapitres) chapitres.hidden = true;
+    if (personnages) personnages.hidden = true;
+    if (lieux) lieux.hidden = false;
+    if (creatures) creatures.hidden = true;
+    if (mysteres) mysteres.hidden = true;
+    if (cartes) cartes.hidden = true;
+    if (typeof window.activateLocationPanel === "function") {
+      window.activateLocationPanel(locationHashPanelMap[currentHash] || document.querySelector("#lieux-fiches-tabs .fiche-tab")?.dataset.locationTarget);
+    }
     return;
   }
 
@@ -2602,6 +3287,7 @@ function showSectionFromHash() {
     if (chronologie) chronologie.hidden = true;
     if (chapitres) chapitres.hidden = true;
     if (personnages) personnages.hidden = true;
+    if (lieux) lieux.hidden = true;
     if (creatures) creatures.hidden = false;
     if (mysteres) mysteres.hidden = true;
     if (cartes) cartes.hidden = true;
@@ -2627,6 +3313,7 @@ function showSectionFromHash() {
     if (chronologie) chronologie.hidden = true;
     if (chapitres) chapitres.hidden = true;
     if (personnages) personnages.hidden = true;
+    if (lieux) lieux.hidden = true;
     if (creatures) creatures.hidden = true;
     if (mysteres) mysteres.hidden = false;
     if (cartes) cartes.hidden = true;
@@ -2640,6 +3327,7 @@ function showSectionFromHash() {
     if (chronologie) chronologie.hidden = true;
     if (chapitres) chapitres.hidden = true;
     if (personnages) personnages.hidden = true;
+    if (lieux) lieux.hidden = true;
     if (creatures) creatures.hidden = true;
     if (mysteres) mysteres.hidden = true;
     if (cartes) cartes.hidden = false;
@@ -2654,6 +3342,7 @@ function showSectionFromHash() {
   if (chronologie) chronologie.hidden = true;
   if (chapitres) chapitres.hidden = true;
   if (personnages) personnages.hidden = true;
+  if (lieux) lieux.hidden = true;
   if (creatures) creatures.hidden = true;
   if (mysteres) mysteres.hidden = true;
   if (cartes) cartes.hidden = true;
