@@ -624,6 +624,9 @@ const locationHashPanelMap = Object.fromEntries(
   locationFiches.map((fiche) => [`#lieux-${fiche.slug}`, `lieu-panel-${fiche.slug}`])
 );
 
+const loreLinkEntries = buildLoreLinkEntries();
+const loreLinkRegex = buildLoreLinkRegex(loreLinkEntries);
+
 const sectionWhispers = {
   home: "Entrer dans l'archive vivante de Pandorus.",
   fiches: "Les visages qui portent, blessent ou transforment le monde.",
@@ -999,6 +1002,96 @@ function buildMediaPath(folder, fileName) {
   return `./media/${folder}/${safeFileName}`;
 }
 
+function stripAccents(value) {
+  return (value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
+
+function escapeRegex(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function buildLoreLinkEntries() {
+  const rawEntries = [];
+
+  Object.entries(characterRouteMap).forEach(([slug, href]) => {
+    const matchingAdditional = additionalCharacterFiches.find((fiche) => fiche.slug === slug);
+    const displayName = matchingAdditional?.name
+      || Object.keys(staticFicheContextMap).find((panelId) => panelId.includes(slug))?.replace("-panel", "")
+      || null;
+
+    if (displayName) {
+      rawEntries.push({ label: displayName, href });
+    }
+  });
+
+  [
+    ["Shan", "#fiches"],
+    ["Shaushana", "#fiches-shaushana"],
+    ["Franklin", "#fiches-franklin"],
+    ["Mike", "#fiches-mike"],
+    ["Gérôm", "#fiches-gerom"],
+    ["Gerom", "#fiches-gerom"],
+    ["Elrick", "#fiches-elrick"],
+    ["Eben", "#fiches-eben"],
+    ["Capitaine", "#fiches-capitaine"],
+    ["Harry PY", "#fiches-harry-py"],
+    ["Gardien Isma", "#fiches-gardien-isma"],
+    ["Wingard", "#fiches-wingard"],
+    ["Lévy", "#fiches-levy"],
+    ["Levy", "#fiches-levy"],
+    ["Ossah Lyla", "#fiches-ossah-lyla"],
+    ["Nastaz", "#fiches-nastaz"]
+  ].forEach(([label, href]) => rawEntries.push({ label, href }));
+
+  creatureFiches.forEach((fiche) => {
+    rawEntries.push({ label: fiche.name, href: `#creatures-fiche-${fiche.slug}` });
+  });
+
+  locationFiches.forEach((fiche) => {
+    rawEntries.push({ label: fiche.name, href: `#lieux-${fiche.slug}` });
+  });
+
+  [
+    ["Le Vrax", "#lieux-vrax"],
+    ["Vrax", "#lieux-vrax"],
+    ["Le Passage", "#lieux-passage"],
+    ["Passar", "#lieux-passar"],
+    ["Bidonville du Passar", "#lieux-bidonville-du-passar"],
+    ["Veyrine", "#lieux-veyrine"],
+    ["Bassaï", "#lieux-bassai"],
+    ["Bassai", "#lieux-bassai"],
+    ["Cœur du Vrax", "#lieux-coeur-du-vrax"],
+    ["Coeur du Vrax", "#lieux-coeur-du-vrax"],
+    ["Fleuve Sylvae", "#lieux-fleuve-sylvae"],
+    ["Mer du Sphinx pandorien", "#lieux-mer-du-sphinx-pandorien"]
+  ].forEach(([label, href]) => rawEntries.push({ label, href }));
+
+  const deduped = [];
+  const seen = new Set();
+
+  rawEntries.forEach((entry) => {
+    const variants = Array.from(new Set([entry.label, stripAccents(entry.label)]))
+      .filter(Boolean);
+
+    variants.forEach((variant) => {
+      const key = `${normalizeForLetter(variant)}|${entry.href}`;
+      if (!seen.has(key)) {
+        seen.add(key);
+        deduped.push({ label: variant, href: entry.href });
+      }
+    });
+  });
+
+  return deduped.sort((a, b) => b.label.length - a.label.length);
+}
+
+function buildLoreLinkRegex(entries) {
+  const labels = entries.map((entry) => escapeRegex(entry.label));
+  return new RegExp(`(^|[^\\p{L}\\p{M}])(${labels.join("|")})(?=$|[^\\p{L}\\p{M}])`, "giu");
+}
+
 function buildContextLinksMarkup(links, title = "Liens contextuels") {
   if (!links?.length) return "";
 
@@ -1018,6 +1111,80 @@ function buildContextLinksMarkup(links, title = "Liens contextuels") {
 
 function inferLocationFromName(name) {
   return characterPrimaryLocationMap[slugifyValue(name)] || "#lieux";
+}
+
+function isLoreLinkEligibleElement(element) {
+  if (!element) return false;
+  if (element.closest("a, button, h1, h2, h3, h4, h5, h6")) return false;
+  if (element.closest(".section-heading, .eyebrow, .timeline-era, .timeline-badge, .entry-card-kicker, .pathway-kicker, .landing-panel-kicker, .landing-kicker, .landing-aura, .mystery-kicker, .social-link-copy, .location-portrait-card, .fiche-meta")) return false;
+  return true;
+}
+
+function replaceLoreLinksInElement(element) {
+  if (!element || element.dataset.loreLinked === "true") return;
+  if (!isLoreLinkEligibleElement(element)) return;
+
+  const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT, {
+    acceptNode(node) {
+      if (!node.nodeValue || !node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+      if (node.parentElement?.closest("a, button, h1, h2, h3, h4, h5, h6")) return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
+    }
+  });
+
+  const textNodes = [];
+  let currentNode = walker.nextNode();
+  while (currentNode) {
+    textNodes.push(currentNode);
+    currentNode = walker.nextNode();
+  }
+
+  textNodes.forEach((textNode) => {
+    const originalText = textNode.nodeValue || "";
+    loreLinkRegex.lastIndex = 0;
+    const matches = Array.from(originalText.matchAll(loreLinkRegex));
+    if (!matches.length) return;
+
+    const fragment = document.createDocumentFragment();
+    let lastIndex = 0;
+
+    matches.forEach((match) => {
+      const leading = match[1] || "";
+      const matchedLabel = match[2];
+      const matchIndex = match.index ?? 0;
+      const actualStart = matchIndex + leading.length;
+
+      if (actualStart > lastIndex) {
+        fragment.appendChild(document.createTextNode(originalText.slice(lastIndex, actualStart)));
+      }
+
+      const targetEntry = loreLinkEntries.find((entry) => normalizeForLetter(entry.label) === normalizeForLetter(matchedLabel));
+      if (targetEntry) {
+        const link = document.createElement("a");
+        link.className = "lore-link";
+        link.href = targetEntry.href;
+        link.textContent = matchedLabel;
+        fragment.appendChild(link);
+      } else {
+        fragment.appendChild(document.createTextNode(matchedLabel));
+      }
+
+      lastIndex = actualStart + matchedLabel.length;
+    });
+
+    if (lastIndex < originalText.length) {
+      fragment.appendChild(document.createTextNode(originalText.slice(lastIndex)));
+    }
+
+    textNode.parentNode?.replaceChild(fragment, textNode);
+  });
+
+  element.dataset.loreLinked = "true";
+}
+
+function refreshLoreLinks() {
+  const targets = document.querySelectorAll("main p, main li");
+  targets.forEach((element) => replaceLoreLinksInElement(element));
 }
 
 const additionalCharacterFiches = [
@@ -3139,6 +3306,7 @@ function ensureFicheUiInitialized() {
   renderAdditionalCharacterFiches();
   initFicheTabs();
   initFicheCarousels();
+  refreshLoreLinks();
   ficheUiInitialized = true;
 }
 
@@ -3146,6 +3314,7 @@ function ensureCreatureFichesInitialized() {
   if (creatureFichesInitialized) return;
   renderCreatureFiches();
   initCreatureFicheTabs();
+  refreshLoreLinks();
   creatureFichesInitialized = true;
 }
 
@@ -3153,6 +3322,7 @@ function ensureLocationFichesInitialized() {
   renderLocationFiches();
   initLocationFicheTabs();
   initLocationFilters();
+  refreshLoreLinks();
   locationFichesInitialized = true;
 }
 
@@ -3209,6 +3379,7 @@ function showSectionFromHash() {
     if (mysteres) mysteres.hidden = true;
     if (cartes) cartes.hidden = true;
     renderTimeline();
+    refreshLoreLinks();
     return;
   }
 
@@ -3224,6 +3395,7 @@ function showSectionFromHash() {
     if (mysteres) mysteres.hidden = true;
     if (cartes) cartes.hidden = true;
     renderChapters();
+    refreshLoreLinks();
     return;
   }
 
@@ -3239,6 +3411,7 @@ function showSectionFromHash() {
     if (mysteres) mysteres.hidden = true;
     if (cartes) cartes.hidden = true;
     renderRelations();
+    refreshLoreLinks();
     return;
   }
 
@@ -3254,6 +3427,7 @@ function showSectionFromHash() {
     if (mysteres) mysteres.hidden = true;
     if (cartes) cartes.hidden = true;
     renderPandorusImages();
+    refreshLoreLinks();
     return;
   }
 
@@ -3276,6 +3450,7 @@ function showSectionFromHash() {
     if (typeof window.activateLocationPanel === "function") {
       window.activateLocationPanel(locationHashPanelMap[currentHash] || document.querySelector("#lieux-fiches-tabs .fiche-tab")?.dataset.locationTarget);
     }
+    refreshLoreLinks();
     return;
   }
 
@@ -3303,6 +3478,7 @@ function showSectionFromHash() {
         });
       }
     }
+    refreshLoreLinks();
     return;
   }
 
@@ -3317,6 +3493,7 @@ function showSectionFromHash() {
     if (creatures) creatures.hidden = true;
     if (mysteres) mysteres.hidden = false;
     if (cartes) cartes.hidden = true;
+    refreshLoreLinks();
     return;
   }
 
@@ -3333,6 +3510,7 @@ function showSectionFromHash() {
     if (cartes) cartes.hidden = false;
     initMapsCarousel();
     renderMaps();
+    refreshLoreLinks();
     return;
   }
 
@@ -3346,6 +3524,7 @@ function showSectionFromHash() {
   if (creatures) creatures.hidden = true;
   if (mysteres) mysteres.hidden = true;
   if (cartes) cartes.hidden = true;
+  refreshLoreLinks();
 }
 
 window.addEventListener("hashchange", showSectionFromHash);
