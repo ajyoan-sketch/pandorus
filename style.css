@@ -152,11 +152,11 @@ a:hover {
 }
 
 .topbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 12px 16px;
+  display: grid;
+  grid-template-columns: minmax(0, auto) minmax(220px, 1fr);
+  align-items: start;
+  gap: 12px 18px;
+  padding: 14px 16px 12px;
   border-bottom: 1px solid var(--line);
   background: var(--surface-muted);
 }
@@ -167,9 +167,16 @@ a:hover {
   gap: 8px;
 }
 
+.top-links {
+  grid-column: 1 / -1;
+  justify-content: center;
+  padding-top: 4px;
+  border-top: 1px solid rgba(126, 101, 56, 0.12);
+}
+
 .section-whisper {
   margin: 0;
-  max-width: 320px;
+  max-width: 360px;
   color: #6e5a39;
   font-size: 0.9rem;
   text-align: right;
@@ -179,6 +186,7 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 12px;
+  min-width: 0;
 }
 
 .brand-mark {
@@ -3018,9 +3026,19 @@ h4 {
     align-items: flex-start;
   }
 
+  .topbar {
+    display: flex;
+  }
+
   .topbar-meta {
     width: 100%;
     justify-items: start;
+  }
+
+  .top-links {
+    justify-content: flex-start;
+    width: 100%;
+    padding-top: 8px;
   }
 
   .section-whisper {

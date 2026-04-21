@@ -9,13 +9,13 @@
 const constellationCards = [
   {
     title: "Les Constellations Jumelles : Myrmex",
-    kicker: "Des gauche a droite",
-    text: "Deux formes se repondent dans le ciel : la fourmi et la fourmi volante. Elles donnent au premier ensemble un elan de lien, de travail et de mouvement collectif."
+    kicker: "De gauche à droite",
+    text: "Deux formes se répondent dans le ciel : la fourmi et la fourmi volante. Elles donnent au premier ensemble un élan de lien, de travail et de mouvement collectif."
   },
   {
     title: "Mantiska",
     kicker: "Constellation",
-    text: "La constellation de la mante religieuse, tendue, precise, presque suspendue dans une attente sacree."
+    text: "La constellation de la mante religieuse, tendue, précise, presque suspendue dans une attente sacrée."
   },
   {
     title: "Hornax",
@@ -25,55 +25,55 @@ const constellationCards = [
   {
     title: "Vermis",
     kicker: "Constellation",
-    text: "La constellation du ver, plus discrete, plus profonde, rappel d'un vivant qui travaille loin sous la surface."
+    text: "La constellation du ver, plus discrète, plus profonde, rappel d'un vivant qui travaille loin sous la surface."
   },
   {
     title: "Arachnys",
     kicker: "Constellation",
-    text: "La constellation de l'araignee, tisseuse de structure et de patience, dont la forme semble retenir l'espace entre ses lignes."
+    text: "La constellation de l'araignée, tisseuse de structure et de patience, dont la forme semble retenir l'espace entre ses lignes."
   },
   {
     title: "Lumina",
     kicker: "Constellation",
-    text: "La constellation de la coccinelle, eclat plus doux dans l'ensemble, presque lumineuse dans sa respiration."
+    text: "La constellation de la coccinelle, éclat plus doux dans l'ensemble, presque lumineuse dans sa respiration."
   },
   {
     title: "Scarax",
     kicker: "Constellation",
-    text: "La constellation du scarabee, dense et ancienne, comme un noyau de force grave dans la voute celeste."
+    text: "La constellation du scarabée, dense et ancienne, comme un noyau de force grave dans la voûte céleste."
   },
   {
     title: "Vespara",
     kicker: "Constellation",
-    text: "La constellation de la guepe, vive et tendue, qui ferme la lecture du ciel sur une note de vigilance."
+    text: "La constellation de la guêpe, vive et tendue, qui ferme la lecture du ciel sur une note de vigilance."
   }
 ];
 
 const planetCards = [
   {
     title: "Dravok",
-    kicker: "En haut a gauche",
-    text: "Planete chaude, volcanique et très riche en ressources, Dravok donne l'impression d'un monde forge dans la pression, le feu et la matiere brute."
+    kicker: "En haut à gauche",
+    text: "Planète chaude, volcanique et très riche en ressources, Dravok donne l'impression d'un monde forgé dans la pression, le feu et la matière brute."
   },
   {
     title: "Nerithis",
-    kicker: "En bas a gauche",
-    text: "Planete bleue du systeme, Nerithis est un monde d'eau et de circulation, ou les flux semblent couler avec une abondance presque inepuisable."
+    kicker: "En bas à gauche",
+    text: "Planète bleue du système, Nerithis est un monde d'eau et de circulation, où les flux semblent couler avec une abondance presque inépuisable."
   },
   {
     title: "Sylvae",
-    kicker: "En haut a droite",
-    text: "La plus proche de la Terre Pandorienne, Sylvae evoque un equilibre familier, vivant, stable en apparence et profondement habitable."
+    kicker: "En haut à droite",
+    text: "La plus proche de la Terre Pandorienne, Sylvae évoque un équilibre familier, vivant, stable en apparence et profondément habitable."
   },
   {
     title: "Pyraxis",
-    kicker: "En bas a droite",
-    text: "Planete solaire possedant son propre soleil, Pyraxis rayonne comme un monde autonome, incandescent et presque souverain dans sa lumiere."
+    kicker: "En bas à droite",
+    text: "Planète solaire possédant son propre soleil, Pyraxis rayonne comme un monde autonome, incandescent et presque souverain dans sa lumière."
   },
   {
     title: "Asterion Pandoris",
     kicker: "Au centre",
-    text: "Planete royale du peuple de l'espace, Asterion Pandoris occupe le coeur de l'ensemble comme un centre politique, symbolique et cosmique."
+    text: "Planète royale du peuple de l'espace, Asterion Pandoris occupe le cœur de l'ensemble comme un centre politique, symbolique et cosmique."
   }
 ];
 
@@ -271,18 +271,18 @@ const additionalFicheContextMap = {
   ],
   levy: [
     { href: "#relations", label: "Voir ses liens" },
-    { href: "#chronologie", label: "Suivre son depart" },
-    { href: "#lieux-coeur-du-vrax", label: "Lire le coeur du Vrax" }
+    { href: "#chronologie", label: "Suivre son départ" },
+    { href: "#lieux-coeur-du-vrax", label: "Lire le cœur du Vrax" }
   ],
   "ossah-lyla": [
     { href: "#relations", label: "Voir ses liens" },
     { href: "#chronologie", label: "Voir la révélation" },
-    { href: "#lieux-coeur-du-vrax", label: "Lire le coeur du Vrax" }
+    { href: "#lieux-coeur-du-vrax", label: "Lire le cœur du Vrax" }
   ],
   nastaz: [
     { href: "#relations", label: "Voir ses liens" },
     { href: "#chronologie", label: "Voir la révélation" },
-    { href: "#lieux-coeur-du-vrax", label: "Lire le coeur du Vrax" }
+    { href: "#lieux-coeur-du-vrax", label: "Lire le cœur du Vrax" }
   ],
   eben: [
     { href: "#relations", label: "Voir ses liens" },
@@ -395,7 +395,7 @@ const locationFiches = [
     ],
     summary: [
       "Le Passar donne au récit sa première épaisseur sociale.",
-      "Il devient vite un point de comparaison avec d'autres lieux, notamment quand le vivant commence a se deregler."
+      "Il devient vite un point de comparaison avec d'autres lieux, notamment quand le vivant commence à se dérégler."
     ],
     profile: [
       { title: "Texture du lieu", text: "Eau, bois, précarité, solidarité et respiration de bord de fleuve." },
@@ -405,7 +405,7 @@ const locationFiches = [
     contextLinks: [
       { href: "#fiches-franklin", label: "Voir Franklin" },
       { href: "#relations", label: "Voir les liens du Passar" },
-      { href: "#mysteres", label: "Ouvrir le mystere du Capitaine" }
+      { href: "#mysteres", label: "Ouvrir le mystère du Capitaine" }
     ]
   },
   {
@@ -415,27 +415,27 @@ const locationFiches = [
     category: "Foyer fragile",
     intro: "Le bidonville du Passar concentre la survie quotidienne, la tendresse rude et l'effort de tenir ensemble au bord du fleuve.",
     meta: [
-      { label: "Atmosphere", value: "Abri, improvisation, chaleur humaine" },
+      { label: "Atmosphère", value: "Abri, improvisation, chaleur humaine" },
       { label: "Fonction", value: "Foyer narratif et zone de veille" },
-      { label: "Presences", value: "Mike, Gerom, Franklin, habitants du bord" }
+      { label: "Présences", value: "Mike, Gerom, Franklin, habitants du bord" }
     ],
     biography: [
-      "Le bidonville n'a rien d'un lieu noble au sens classique, et pourtant il donne au récit une force très concrete. C'est la que se mesurent la faim, la protection, l'absence et l'attachement.",
-      "Il est le lieu de ceux qui tiennent sans grandeur affichee, mais avec une dignite reelle. Son existence rappelle que Pandorus n'est pas seulement fait de grandes révélations, mais aussi de vies modestes qui resistent."
+      "Le bidonville n'a rien d'un lieu noble au sens classique, et pourtant il donne au récit une force très concrète. C'est là que se mesurent la faim, la protection, l'absence et l'attachement.",
+      "Il est le lieu de ceux qui tiennent sans grandeur affichée, mais avec une dignité réelle. Son existence rappelle que Pandorus n'est pas seulement fait de grandes révélations, mais aussi de vies modestes qui résistent."
     ],
     summary: [
       "Le bidonville est un foyer de survie autant qu'un lieu de mémoire sociale.",
       "Il rend sensible ce que les grandes forces du monde mettent en danger jusque dans le quotidien."
     ],
     profile: [
-      { title: "Texture du lieu", text: "Assemblages fragiles, proximite humaine, veille continue." },
-      { title: "Role narratif", text: "Donner une chair sociale au récit avant les zones plus sacrees ou anciennes." },
+      { title: "Texture du lieu", text: "Assemblages fragiles, proximité humaine, veille continue." },
+      { title: "Rôle narratif", text: "Donner une chair sociale au récit avant les zones plus sacrées ou anciennes." },
       { title: "Point de tension", text: "Ce qui manque ici se ressent immédiatement, humainement et sans filtre." }
     ],
     contextLinks: [
       { href: "#fiches-mike", label: "Voir Mike" },
-      { href: "#fiches-gerom", label: "Voir Gerom" },
-      { href: "#chronologie", label: "Lire les événements lies" }
+      { href: "#fiches-gerom", label: "Voir Gérôm" },
+      { href: "#chronologie", label: "Lire les événements liés" }
     ]
   },
   {
@@ -445,26 +445,26 @@ const locationFiches = [
     category: "Fleuve de comparaison",
     intro: "Le Veyrine est un lieu d'observation et d'alerte. On y lit mieux qu'ailleurs que quelque chose du vivant ne suit plus sa course ordinaire.",
     meta: [
-      { label: "Atmosphere", value: "Observation, doute, disparition" },
-      { label: "Fonction", value: "Lieu d'enquete sur le déséquilibre" },
-      { label: "Presences", value: "Le Capitaine, Franklin, expedition interrompue" }
+      { label: "Atmosphère", value: "Observation, doute, disparition" },
+      { label: "Fonction", value: "Lieu d'enquête sur le déséquilibre" },
+      { label: "Présences", value: "Le Capitaine, Franklin, expédition interrompue" }
     ],
     biography: [
-      "Le Veyrine n'est pas seulement important pour ce qu'on y voit, mais pour ce qu'il permet de mesurer. C'est par ecart, par comparaison, qu'il fait sentir que le monde n'est plus tout a fait dans son ordre.",
-      "La disparition du Capitaine y gagne une densite particuliere. Le lieu garde quelque chose de ce qui a ete pressenti sans être rapporte."
+      "Le Veyrine n'est pas seulement important pour ce qu'on y voit, mais pour ce qu'il permet de mesurer. C'est par écart, par comparaison, qu'il fait sentir que le monde n'est plus tout à fait dans son ordre.",
+      "La disparition du Capitaine y gagne une densité particulière. Le lieu garde quelque chose de ce qui a été pressenti sans être rapporté."
     ],
     summary: [
       "Le Veyrine agit comme une rive de lecture du déséquilibre.",
-      "Il est aussi un foyer de mémoire troublee autour du Capitaine."
+      "Il est aussi un foyer de mémoire troublée autour du Capitaine."
     ],
     profile: [
-      { title: "Texture du lieu", text: "Silence, ecart, courant inquiet et mémoire inachevee." },
-      { title: "Role narratif", text: "Donner une preuve indirecte mais forte du dereglement du vivant." },
+      { title: "Texture du lieu", text: "Silence, écart, courant inquiet et mémoire inachevée." },
+      { title: "Rôle narratif", text: "Donner une preuve indirecte mais forte du dérèglement du vivant." },
       { title: "Point de tension", text: "Il concentre l'une des absences les plus lourdes du récit." }
     ],
     contextLinks: [
       { href: "#fiches-capitaine", label: "Voir le Capitaine" },
-      { href: "#mysteres", label: "Ouvrir les mysteres" },
+      { href: "#mysteres", label: "Ouvrir les mystères" },
       { href: "#chronologie", label: "Lire les bascules" }
     ]
   },
@@ -472,7 +472,7 @@ const locationFiches = [
     slug: "bassai",
     name: "Bassaï",
     tone: "river",
-    category: "Fleuve d'epreuve",
+    category: "Fleuve d'épreuve",
     intro: "Le Bassaï est moins un simple lieu à franchir qu'une épreuve fluide. Il met à l'écoute, use, teste et fait sentir que certains passages doivent être mérités.",
     meta: [
       { label: "Atmosphère", value: "Passage, profondeur, épreuve" },
@@ -484,7 +484,7 @@ const locationFiches = [
       "C'est un lieu de tension fertile, où les héros comprennent que le monde répond à leur avance et ne se laisse pas seulement parcourir."
     ],
     summary: [
-      "Le Bassaï marque le passage de la simple route a l'experience du monde conscient.",
+      "Le Bassaï marque le passage de la simple route à l'expérience du monde conscient.",
       "Il annonce déjà les logiques plus organisées du Vrax."
     ],
     profile: [
@@ -494,7 +494,7 @@ const locationFiches = [
     ],
     contextLinks: [
       { href: "#fiches-elrick", label: "Voir Elrick" },
-      { href: "#creatures", label: "Voir les creatures liees" },
+      { href: "#creatures", label: "Voir les créatures liées" },
       { href: "#chronologie", label: "Lire les traverses" }
     ]
   },
@@ -507,11 +507,11 @@ const locationFiches = [
     meta: [
       { label: "Atmosphère", value: "Veille, défense, intelligence du vivant" },
       { label: "Fonction", value: "Centre de protection et de réponse" },
-      { label: "Présences", value: "Harry PY, Gardien Isma, Wingard, Levy, créatrices" }
+      { label: "Présences", value: "Harry PY, Gardien Isma, Wingard, Lévy, créatrices" }
     ],
     biography: [
       "Entrer dans le Vrax, c'est cesser de croire que le territoire n'est qu'un cadre. Tout y est fonction, lecture, réponse et mémoire organisée. Le monde y prend une forme presque politique, sacrée et collective.",
-      "Les protecteurs, les flux et les gardiennes n'y apparaissent pas comme des exceptions isolees, mais comme les organes d'une meme logique de defense du vivant."
+      "Les protecteurs, les flux et les gardiennes n'y apparaissent pas comme des exceptions isolées, mais comme les organes d'une même logique de défense du vivant."
     ],
     summary: [
       "Le Vrax donne à Pandorus sa forme la plus consciente et la plus structurée.",
@@ -537,7 +537,7 @@ const locationFiches = [
     meta: [
       { label: "Atmosphère", value: "Révélation, gravité, blessure du vivant" },
       { label: "Fonction", value: "Noyau de lecture du déséquilibre" },
-      { label: "Présences", value: "Ossah Lyla, Nastaz, Franklin, Shan, Shaushana, Levy" }
+      { label: "Présences", value: "Ossah Lyla, Nastaz, Franklin, Shan, Shaushana, Lévy" }
     ],
     biography: [
       "Au cœur du Vrax, tout se condense. Les affrontements contre les Guéplynx, la capture de Franklin, l'intervention des créatrices et la révélation sur les papillons font de ce lieu un point de bascule majeur.",
@@ -550,7 +550,7 @@ const locationFiches = [
     profile: [
       { title: "Texture du lieu", text: "Centre dense, presque rituel, où les signes deviennent explicites." },
       { title: "Rôle narratif", text: "Faire passer le récit de la perception du déséquilibre à sa reconnaissance claire." },
-      { title: "Point de tension", text: "Ce qui est vu ici oblige a repartir autrement." }
+      { title: "Point de tension", text: "Ce qui est vu ici oblige à repartir autrement." }
     ],
     contextLinks: [
       { href: "#fiches-franklin", label: "Voir Franklin" },
@@ -563,29 +563,29 @@ const locationFiches = [
     name: "Fleuve Sylvae",
     tone: "river",
     category: "Piste du sud",
-    intro: "Le fleuve Sylvae n'est pas encore pleinement traverse, mais il entre déjà dans le récit comme une direction lourde de promesse et d'inquietude.",
+    intro: "Le fleuve Sylvae n'est pas encore pleinement traversé, mais il entre déjà dans le récit comme une direction lourde de promesse et d'inquiétude.",
     meta: [
-      { label: "Atmosphere", value: "Appel lointain, piste, decomposition observee" },
+      { label: "Atmosphère", value: "Appel lointain, piste, décomposition observée" },
       { label: "Fonction", value: "Nouvelle direction du récit" },
-      { label: "Presences", value: "Harry PY, zone de decomposition du vivant" }
+      { label: "Présences", value: "Harry PY, zone de décomposition du vivant" }
     ],
     biography: [
-      "Le fleuve Sylvae apparait d'abord comme une destination, mais une destination déjà chargee. Harry PY s'y trouve au sud pour observer une zone ou le vivant semble se decomposer autrement.",
-      "A ce stade, il agit comme une ouverture narrative: le lieu n'est pas encore donne pleinement, mais il attire déjà l'histoire vers sa prochaine épreuve."
+      "Le fleuve Sylvae apparaît d'abord comme une destination, mais une destination déjà chargée. Harry PY s'y trouve au sud pour observer une zone où le vivant semble se décomposer autrement.",
+      "À ce stade, il agit comme une ouverture narrative : le lieu n'est pas encore donné pleinement, mais il attire déjà l'histoire vers sa prochaine épreuve."
     ],
     summary: [
       "Le fleuve Sylvae lance la prochaine grande direction du voyage.",
-      "Il annonce que l'alteration du vivant depasse de loin le seul Vrax."
+      "Il annonce que l'altération du vivant dépasse de loin le seul Vrax."
     ],
     profile: [
       { title: "Texture du lieu", text: "Distance, appel, courant encore hors champ mais déjà menaçant." },
-      { title: "Role narratif", text: "Ouvrir l'etape suivante sans casser le poids du coeur du Vrax." },
-      { title: "Point de tension", text: "Le sud n'est pas une sortie: c'est une aggravation du mystere." }
+      { title: "Rôle narratif", text: "Ouvrir l'étape suivante sans casser le poids du cœur du Vrax." },
+      { title: "Point de tension", text: "Le sud n'est pas une sortie : c'est une aggravation du mystère." }
     ],
     contextLinks: [
       { href: "#fiches-harry-py", label: "Voir Harry PY" },
       { href: "#chronologie", label: "Lire la nouvelle direction" },
-      { href: "#mysteres", label: "Ouvrir les mysteres" }
+      { href: "#mysteres", label: "Ouvrir les mystères" }
     ]
   },
   {
@@ -593,24 +593,24 @@ const locationFiches = [
     name: "Mer du Sphinx pandorien",
     tone: "memory",
     category: "Horizon du sud",
-    intro: "La mer du Sphinx pandorien n'est encore qu'une ligne de destination, mais une ligne très chargee, presque mythique, vers laquelle le récit oriente maintenant ses forces.",
+    intro: "La mer du Sphinx pandorien n'est encore qu'une ligne de destination, mais une ligne très chargée, presque mythique, vers laquelle le récit oriente maintenant ses forces.",
     meta: [
-      { label: "Atmosphere", value: "Lointain, mystere, pression du sud" },
+      { label: "Atmosphère", value: "Lointain, mystère, pression du sud" },
       { label: "Fonction", value: "Horizon narratif en formation" },
-      { label: "Presences", value: "Piste future pour Shaushana, Shan, Franklin et Levy" }
+      { label: "Présences", value: "Piste future pour Shaushana, Shan, Franklin et Lévy" }
     ],
     biography: [
-      "Comme certains lieux encore peu vus mais déjà puissants, la mer du Sphinx pandorien existe d'abord par son nom, sa direction et le poids qu'on lui donne. Elle élargit brusquement l'echelle du monde.",
-      "Elle annonce une géographie plus vaste encore, ou les rivages, les fleuves et les territoires conscients ne suffiront peut-etre plus a contenir ce qui remonte."
+      "Comme certains lieux encore peu vus mais déjà puissants, la mer du Sphinx pandorien existe d'abord par son nom, sa direction et le poids qu'on lui donne. Elle élargit brusquement l'échelle du monde.",
+      "Elle annonce une géographie plus vaste encore, où les rivages, les fleuves et les territoires conscients ne suffiront peut-être plus à contenir ce qui remonte."
     ],
     summary: [
       "La mer du Sphinx pandorien agit comme horizon et menace encore abstraite.",
-      "Elle participe a la sensation que Pandorus s'ouvre a une etape plus ample."
+      "Elle participe à la sensation que Pandorus s'ouvre à une étape plus ample."
     ],
     profile: [
-      { title: "Texture du lieu", text: "Horizon, appel, mystere meridional." },
-      { title: "Role narratif", text: "Etendre le monde au-dela des lieux déjà traverses." },
-      { title: "Point de tension", text: "Ce qui attend au sud semble depasser le simple deplacement." }
+      { title: "Texture du lieu", text: "Horizon, appel, mystère méridional." },
+      { title: "Rôle narratif", text: "Étendre le monde au-delà des lieux déjà traversés." },
+      { title: "Point de tension", text: "Ce qui attend au sud semble dépasser le simple déplacement." }
     ],
     contextLinks: [
       { href: "#lieux-fleuve-sylvae", label: "Voir le fleuve Sylvae" },
@@ -642,7 +642,7 @@ const sectionWhispers = {
 
 const landingOracleEntries = [
   {
-    kicker: "Mise en lumiere",
+    kicker: "Mise en lumière",
     title: "Shaushana",
     text: "Figure d'éveil et de lien profond au vivant, Shaushana semble avancer dans le monde comme si celui-ci la reconnaissait déjà.",
     href: "#fiches-shaushana",
@@ -656,14 +656,14 @@ const landingOracleEntries = [
     label: "Voir les cartes"
   },
   {
-    kicker: "Creature",
+    kicker: "Créature",
     title: "Renastar",
-    text: "Le Renastar porte la part la plus vive et la plus gracieuse du bestiaire, entre elegance, vitesse et instinct de survie.",
+    text: "Le Renastar porte la part la plus vive et la plus gracieuse du bestiaire, entre élégance, vitesse et instinct de survie.",
     href: "#creatures",
     label: "Explorer le bestiaire"
   },
   {
-    kicker: "Mystere",
+    kicker: "Mystère",
     title: "La disparition du Capitaine",
     text: "Son absence continue de peser dans le monde comme une question ouverte, jamais tout à fait apaisée.",
     href: "#mysteres",
