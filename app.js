@@ -323,9 +323,11 @@ const creatureImageFiles = [
   "Croconha.png",
   "Félou.png",
   "Felours.png",
+  "Gueplynx.png",
   "Luminaël.png",
   "Lumineau.png",
   "Nignoble.png",
+  "Papillons.png",
   "Renastar.png",
   "Reptidile.png",
   "Scarabeast.png",
@@ -398,7 +400,9 @@ const relationNodes = [
       { target: "Mike", type: "Allie indirect", description: "Elle protege le groupe dont Mike fait partie et devient liee au destin de sa communaute." },
       { target: "Gérôm", type: "Respect prudent", description: "Leur lien passe par la confiance progressive au sein du Passar et face au danger commun." },
       { target: "Gardien Isma", type: "Affrontement", description: "Dans le Vrax, Shaushana se heurte a une force d'interception qui agit comme un organe du territoire plus que comme un simple adversaire." },
-      { target: "Wingard", type: "Desorientation", description: "Le vent de Wingard casse ses appuis et l'oblige a combattre sans la maitrise instinctive qu'elle garde d'ordinaire." }
+      { target: "Wingard", type: "Desorientation", description: "Le vent de Wingard casse ses appuis et l'oblige a combattre sans la maitrise instinctive qu'elle garde d'ordinaire." },
+      { target: "Ossah Lyla", type: "Reconnaissance", description: "Au coeur du Vrax, Ossah Lyla lit chez Shaushana une presence deja reliee aux papillons, au vivant et a une ancienne necessite du monde." },
+      { target: "Nastaz", type: "Lecture lucide", description: "Nastaz ne la traite pas comme une simple intruse: elle voit en Shaushana une figure impliquee dans ce qui vient, et non un danger ordinaire." }
     ]
   },
   {
@@ -410,7 +414,8 @@ const relationNodes = [
       { target: "Elrick", type: "Reconnaissance tacite", description: "Elrick comprend rapidement ce que Shan porte comme violence, survie et fatigue interieure." },
       { target: "Eben", type: "Traumatisme fondateur", description: "Eben est la creature liee a la mort de ses parents et a la fracture decisive de son enfance." },
       { target: "Wingard", type: "Contrepoint de combat", description: "Wingard le met en echec par la vitesse, la pression du vent et une lecture du terrain que Shan ne peut pas imposer." },
-      { target: "Gardien Isma", type: "Force d'opposition", description: "Gardien Isma incarne face a lui une puissance plus stable, plus dense et presque impossible a deborder frontalement." }
+      { target: "Gardien Isma", type: "Force d'opposition", description: "Gardien Isma incarne face a lui une puissance plus stable, plus dense et presque impossible a deborder frontalement." },
+      { target: "Ossah Lyla", type: "Apaisement forcé", description: "L'intervention d'Ossah Lyla casse la logique du duel pur et oblige Shan a comprendre que tout ne peut pas se regler par la seule frappe." }
     ]
   },
   {
@@ -424,7 +429,9 @@ const relationNodes = [
       { target: "Elrick", type: "Recherche d'aide", description: "Franklin accepte l'autorite tranquille d'Elrick pour comprendre ce qui atteint le vivant." },
       { target: "Capitaine", type: "Memoire de guide", description: "L'expedition menee avec le Capitaine vers le Veyrine structure sa lecture du desequilibre et son besoin de trouver des reponses." },
       { target: "Lévy", type: "Singularite percue", description: "Lévy sent en Franklin quelque chose de distinct, comme un lien que le Vrax reconnait avant de l'expliquer." },
-      { target: "Gardien Isma", type: "Capture", description: "Gardien Isma devient celui qui le saisit au moment de l'interception dans le Vrax." }
+      { target: "Gardien Isma", type: "Capture", description: "Gardien Isma devient celui qui le saisit au moment de l'interception dans le Vrax." },
+      { target: "Ossah Lyla", type: "Révélation", description: "Ossah Lyla confirme que Franklin porte la trace d'une ancienne lignee du Vrax et qu'il n'est pas la par accident." },
+      { target: "Nastaz", type: "Mise en garde", description: "Nastaz comprend que son lien peut l'aider autant que le destabiliser si Franklin avance sans saisir ce que le Vrax reveille en lui." }
     ]
   },
   {
@@ -517,7 +524,8 @@ const relationNodes = [
       { target: "Gardien Isma", type: "Préparation du terrain", description: "Il modifie la matiere et les appuis afin que Gardien puisse ensuite imposer la capture." },
       { target: "Wingard", type: "Interception commune", description: "Lévy agit sous le visible pendant que Wingard travaille l'air et la vitesse du combat." },
       { target: "Franklin", type: "Singularité", description: "Avant les autres, il sent chez Franklin une presence ou un lien que le Vrax reconnait." },
-      { target: "Shaushana", type: "Entrave", description: "Ses interventions cassent les prises, ralentissent le terrain et empechent une reaction simple du groupe." }
+      { target: "Shaushana", type: "Entrave", description: "Ses interventions cassent les prises, ralentissent le terrain et empechent une reaction simple du groupe." },
+      { target: "Shan", type: "Compagnon de route", description: "Apres la revelation des creatrices, Lévy est choisi pour quitter le coeur du Vrax et accompagner Shan vers le sud." }
     ]
   },
   {
@@ -527,7 +535,8 @@ const relationNodes = [
       { target: "Nastaz", type: "Continuité", description: "Nastaz prolonge Ossah Lyla dans une lecture plus froide, plus nette et plus nocturne du meme monde." },
       { target: "Harry PY", type: "Accompagnement", description: "Elle assiste la naissance de Harry PY et mesure la necessite de cette premiere reponse du Vrax." },
       { target: "Protecteurs du Vrax", type: "Protection indirecte", description: "Les protecteurs existent aussi pour defendre ce qu'elle incarne dans l'equilibre du Vrax." },
-      { target: "Wingard", type: "Apaisement", description: "Sa simple presence ralentit et restructure le chaos qui accompagne la naissance de Wingard." }
+      { target: "Wingard", type: "Apaisement", description: "Sa simple presence ralentit et restructure le chaos qui accompagne la naissance de Wingard." },
+      { target: "Papillons", type: "Essence vitale", description: "Ossah Lyla explique que les papillons portent une energie indispensable a l'equilibre de Pandorus et ressent leur extinction comme une blessure directe du monde." }
     ]
   },
   {
@@ -537,7 +546,8 @@ const relationNodes = [
       { target: "Ossah Lyla", type: "Prolongement", description: "Elle n'est pas l'inverse d'Ossah Lyla, mais son prolongement nocturne et analytique." },
       { target: "Harry PY", type: "Lucidité immédiate", description: "Nastaz comprend des la premiere naissance que le Vrax repond a une alteration reelle et durable." },
       { target: "Protecteurs du Vrax", type: "Compréhension", description: "Elle identifie la logique commune des naissances et la preparation qu'elles representent." },
-      { target: "Déséquilibre du vivant", type: "Analyse", description: "La nuit, Nastaz mesure froidement ce que le jour revele deja: un monde qui s'altere et doit apprendre a se defendre." }
+      { target: "Déséquilibre du vivant", type: "Analyse", description: "La nuit, Nastaz mesure froidement ce que le jour revele deja: un monde qui s'altere et doit apprendre a se defendre." },
+      { target: "Franklin", type: "Vigilance", description: "Nastaz reconnait que l'eveil du lien de Franklin avec le Vrax peut devenir aussi dangereux que precieux s'il n'est pas compris." }
     ]
   }
 ];
@@ -563,7 +573,8 @@ const additionalCharacterFiches = [
     biography: [
       "Harry PY apparait il y a neuf ans, lorsque le Vrax detecte une variation anormale dans son equilibre. Sa naissance n'est pas presentee comme un hasard, mais comme une reponse precise du monde a une necessite plus ancienne et plus grave.",
       "En grandissant, Harry PY ne decouvre pas le Vrax comme un enfant ordinaire: il s'y accorde. Il ressent les flux, les absences et les alterations, et devient peu a peu celui qui lit ce que les autres ne font encore qu'encaisser.",
-      "Il apparait comme le centre discret du groupe du Vrax. Gardien Isma, Wingard et Lévy s'organisent autour de lui, et sa simple presence donne une structure a leurs roles respectifs."
+      "Il apparait comme le centre discret du groupe du Vrax. Gardien Isma, Wingard et Lévy s'organisent autour de lui, et sa simple presence donne une structure a leurs roles respectifs.",
+      "Lorsque l'alteration gagne encore du terrain, Harry PY n'est plus seulement un lecteur du coeur du Vrax: il est deja envoye plus au sud, vers une zone de decomposition du vivant, pour comprendre ce qui s'y passe avant les autres."
     ],
     summary: [
       "Harry PY incarne l'intelligence sensible du Vrax. Il ne domine pas les autres par la force, mais par la lecture du monde et la capacite a percevoir les failles avant qu'elles ne deviennent des ruptures.",
@@ -582,7 +593,8 @@ const additionalCharacterFiches = [
     timeline: [
       { era: "Il y a 9 ans", title: "Naissance de Harry PY", summary: "Le Vrax cree Harry PY comme premiere reponse consciente a une variation anormale et a une urgence encore invisible." },
       { era: "Il y a 6 a 3 ans", title: "Centre du groupe protecteur", summary: "Les naissances suivantes s'organisent autour de lui et le Vrax commence a fonctionner en generation de reponse." },
-      { era: "Jour 5", title: "Perception du groupe de Shaushana", summary: "Harry PY fait partie des protecteurs qui reagissent a l'intrusion du groupe dans le Vrax." }
+      { era: "Jour 5", title: "Perception du groupe de Shaushana", summary: "Harry PY fait partie des protecteurs qui reagissent a l'intrusion du groupe dans le Vrax." },
+      { era: "Jour 6", title: "Veille au sud", summary: "Les creatrices revelent qu'Harry PY observe deja une autre zone touchee par l'alteration, vers le fleuve Sylvae et la mer du Sphinx pandorien." }
     ]
   },
   {
@@ -674,7 +686,8 @@ const additionalCharacterFiches = [
     biography: [
       "Lévy nait il y a trois ans, lorsque le Vrax rencontre une absence brutale dans ses flux, quelque chose que ni la force de Gardien, ni la lecture de Harry, ni le chaos de Wingard ne peuvent resoudre seuls.",
       "Plus fin, plus discret, Lévy n'impose pas. Il ajuste. Il dialogue avec la matiere, deplace, reequilibre, corrige ce qui cede, meme si la cicatrice du monde ne disparait jamais totalement.",
-      "Il joue un role determinant pendant l'interception du groupe. Il fixe le sol, ralentit les appuis et sent en Franklin quelque chose de different avant de laisser la necessite l'emporter."
+      "Il joue un role determinant pendant l'interception du groupe. Il fixe le sol, ralentit les appuis et sent en Franklin quelque chose de different avant de laisser la necessite l'emporter.",
+      "Apres l'intervention d'Ossah Lyla et de Nastaz, c'est pourtant lui que les creatrices choisissent pour quitter le coeur du Vrax et accompagner Shaushana, Shan et Franklin vers le sud, preuve qu'il n'est pas seulement une defense du territoire mais deja un passeur."
     ],
     summary: [
       "Lévy est le protecteur du lien et de la reparation partielle. Il intervient la ou le monde n'est plus seulement agresse, mais rompu.",
@@ -693,7 +706,8 @@ const additionalCharacterFiches = [
     timeline: [
       { era: "Il y a 3 ans", title: "Naissance de Lévy", summary: "Le Vrax cree Lévy face a une absence dans ses flux, une fracture que les autres reponses ne peuvent absorber seules." },
       { era: "Il y a 3 ans", title: "Formation du groupe complet", summary: "Avec Lévy, la generation des protecteurs du Vrax atteint une forme d'equilibre fonctionnel." },
-      { era: "Jour 5", title: "Fixation du terrain", summary: "Lévy perturbe les appuis du groupe de Shaushana et participe directement a la prise de Franklin." }
+      { era: "Jour 5", title: "Fixation du terrain", summary: "Lévy perturbe les appuis du groupe de Shaushana et participe directement a la prise de Franklin." },
+      { era: "Jour 6", title: "Depart avec le groupe", summary: "Au matin, Lévy quitte le coeur du Vrax pour accompagner le groupe vers la nouvelle zone de rupture du vivant." }
     ]
   },
   {
@@ -711,11 +725,12 @@ const additionalCharacterFiches = [
     biography: [
       "Ossah Lyla apparait comme l'une des consciences les plus fines du Vrax. Le jour, elle ressent les variations du monde avant qu'elles ne deviennent visibles et accompagne le vivant dans son rythme profond.",
       "Elle ne commande pas par la contrainte. Sa presence revele, intensifie et apaise. C'est sous son regard que l'equilibre du Vrax est d'abord mesure, puis que les premieres inquietudes deviennent assez fortes pour appeler une reponse.",
-      "Au fil des naissances de Harry PY, Gardien Isma, Wingard et Lévy, Ossah Lyla apparait comme une figure de veille et de douceur, mais traversee par une inquietude de plus en plus concrete."
+      "Au fil des naissances de Harry PY, Gardien Isma, Wingard et Lévy, Ossah Lyla apparait comme une figure de veille et de douceur, mais traversee par une inquietude de plus en plus concrete.",
+      "Lorsque Shaushana, Shan et Franklin atteignent enfin le coeur du Vrax, elle se revele aussi comme l'une des deux creatrices du lieu, liee a la vegetation du jour et a l'essence des papillons dont depend une part de l'equilibre de Pandorus."
     ],
     summary: [
       "Ossah Lyla represente le versant lumineux, accompagne et presque sacre du Vrax. Elle est moins une combattante qu'une lectrice profonde du vivant.",
-      "Son importance grandit encore a mesure que l'on comprend que les protecteurs naissent aussi pour proteger les creatrices ou gardiennes du monde."
+      "Son importance grandit encore a mesure que l'on comprend que les protecteurs naissent aussi pour proteger les creatrices du Vrax, et que l'extinction des papillons touche directement ce qu'elle maintient."
     ],
     profile: [
       { title: "Caractere", text: "Douce, attentive, profonde et infiniment sensible aux variations du vivant." },
@@ -730,7 +745,8 @@ const additionalCharacterFiches = [
     timeline: [
       { era: "Avant le recit", title: "Veille diurne du Vrax", summary: "Ossah Lyla lit le Vrax au jour et detecte les premieres dissonances qui menacent son equilibre." },
       { era: "Il y a 9 a 3 ans", title: "Temoin des naissances", summary: "Elle accompagne la formation progressive de la generation des protecteurs du Vrax." },
-      { era: "Jour 5", title: "Presence indirecte", summary: "Son monde, sa memoire et sa fonction de gardienne expliquent la rigueur de la reponse du Vrax face aux intrus." }
+      { era: "Jour 5", title: "Intervention des creatrices", summary: "Ossah Lyla interrompt l'escalade entre le groupe et les protecteurs, puis revele la logique profonde du Vrax." },
+      { era: "Jour 5", title: "Révélation des papillons", summary: "Elle montre le cimetière silencieux des papillons et explique que leur essence est indispensable a l'equilibre du monde." }
     ]
   },
   {
@@ -748,7 +764,8 @@ const additionalCharacterFiches = [
     biography: [
       "Nastaz apparait comme le versant nocturne du meme principe que celui d'Ossah Lyla. La ou l'une accompagne, Nastaz tranche, verifie, decide et accepte plus vite la necessite d'une reponse.",
       "C'est elle qui constate l'alteration du Vrax avec le plus de froideur et qui comprend que les naissances successives ne sont pas des miracles isoles, mais des adaptations imposees par un desequilibre reel.",
-      "Sa presence lie le Vrax a une idee plus vaste: le monde ne subit pas passivement, il observe, calcule et repond."
+      "Sa presence lie le Vrax a une idee plus vaste: le monde ne subit pas passivement, il observe, calcule et repond.",
+      "Lorsque le groupe atteint le coeur du Vrax, Nastaz apparait comme l'autre creatrice du lieu, associee a la vegetation de nuit, a la lucidite froide et a la decision de faire sortir la quete hors du territoire."
     ],
     summary: [
       "Nastaz incarne la conscience analytique et nocturne du Vrax. Elle voit au-dela de l'emotion immediate et reconnait plus vite que les autres la logique de preparation du monde.",
@@ -767,7 +784,8 @@ const additionalCharacterFiches = [
     timeline: [
       { era: "Avant le recit", title: "Veille nocturne du Vrax", summary: "La nuit, Nastaz analyse le vivant et mesure l'ampleur exacte des alterations a venir." },
       { era: "Il y a 9 a 3 ans", title: "Comprehension des naissances", summary: "Elle identifie chaque nouvelle creation comme une reponse complementaire du Vrax face au desequilibre." },
-      { era: "Jour 5", title: "Heritage de vigilance", summary: "L'action des protecteurs prolonge la logique de necessite froide que Nastaz incarne depuis l'origine de leur naissance." }
+      { era: "Jour 5", title: "Intervention nocturne", summary: "Nastaz se revele aux cotes d'Ossah Lyla et impose une lecture plus froide, plus nette et plus strategique de la crise." },
+      { era: "Jour 6", title: "Orientation de la quête", summary: "Elle confirme que la suite ne se trouve plus dans le seul Vrax et oriente le groupe vers la zone alteree du sud." }
     ]
   },
   {
@@ -933,6 +951,28 @@ const creatureFiches = [
     ]
   },
   {
+    slug: "gueplynx",
+    name: "Gueplynx",
+    image: buildMediaPath("creatures", "Gueplynx.png"),
+    family: "Predateur coordonné du Vrax",
+    status: "Creature clairement presente dans le recit",
+    habitat: "Profondeurs du Vrax, zones de traque et de defense",
+    summary: "Predateur collectif du Vrax, le Guéplynx n'attaque pas dans la confusion mais dans une logique de meute precise, presque tactique.",
+    biography: [
+      "Les Guéplynx apparaissent lorsque Shan et Shaushana progressent plus profondement dans le Vrax pour retrouver Franklin. Leur attaque change tout de suite la nature du danger: il ne s'agit plus d'une agression animale brute, mais d'une meute capable de lire, d'encadrer et d'exploiter les erreurs de rythme.",
+      "Leur maniere d'agir montre que le Vrax ne contient pas seulement des gardiens humanoides ou des forces abstraites. Il dispose aussi d'une faune de defense adaptee a ses zones les plus sensibles, capable de tester et d'affaiblir ceux qui y penetrent trop violemment."
+    ],
+    profile: [
+      { title: "Nature", text: "Predateur de meute, rapide, ancre et plus intelligent tactiquement qu'une simple bete de chasse." },
+      { title: "Niveau de menace", text: "Tres eleve face a des intrus isoles ou des combattants qui refusent encore de lire le terrain du Vrax." },
+      { title: "Role narratif", text: "Le Guéplynx force Shan et Shaushana a comprendre que le coeur du Vrax se traverse par adaptation, pas seulement par puissance." }
+    ],
+    timeline: [
+      { era: "Jour 5", title: "Traque dans le Vrax", summary: "Les Guéplynx surgissent pendant la progression de Shan et Shaushana vers le coeur du territoire." },
+      { era: "Jour 5", title: "Combat de meute", summary: "Leur coordination oblige le duo a modifier son style de combat et a entrer dans une lecture plus fine du Vrax." }
+    ]
+  },
+  {
     slug: "luminael",
     name: "Luminael",
     image: buildMediaPath("creatures", "Luminaël.png"),
@@ -974,6 +1014,29 @@ const creatureFiches = [
     timeline: [
       { era: "Bestiaire", title: "Creature de milieu", summary: "Lumineau renforce la coherence des espaces aquatiques de Pandorus." },
       { era: "Lecture du monde", title: "Vie specialisee", summary: "Sa presence rappelle que chaque region du monde semble produire ses propres formes de vie." }
+    ]
+  },
+  {
+    slug: "papillons",
+    name: "Papillons",
+    image: buildMediaPath("creatures", "Papillons.png"),
+    family: "Essence vitale de Pandorus",
+    status: "Creature clairement essentielle dans le recit",
+    habitat: "Ciel, eaux, terres et zones de passage du vivant",
+    summary: "Les papillons ne sont pas un simple motif du monde: ils portent une energie indispensable a l'equilibre de Pandorus et relient entre eux ses differents plans.",
+    biography: [
+      "Au fil du recit, Shaushana apparait deja liee aux papillons sans en comprendre toute la portee. Ce n'est qu'au coeur du Vrax que les creatrices revelent leur veritable nature: les papillons sont des vecteurs d'essence, des porteurs d'energie vitale qui nourrissent les plantes, les sols, les eaux et l'harmonie generale du monde.",
+      "Leur extinction silencieuse, visible dans le cimetière montre par Ossah Lyla et Nastaz, devient l'une des preuves les plus fortes du desequilibre. Ce ne sont pas seulement des creatures qui meurent: c'est une trame du vivant qui se vide, et avec elle tout Pandorus commence a se deregler."
+    ],
+    profile: [
+      { title: "Nature", text: "Reseau vivant d'essence, de circulation et d'equilibre entre les differentes couches du monde." },
+      { title: "Niveau de menace", text: "Aucune menace directe; leur fragilisation devient en revanche une menace absolue pour l'ensemble de Pandorus." },
+      { title: "Role narratif", text: "Ils transforment la crise du vivant en verite cosmique et donnent une mesure concrete de ce qui est en train de se perdre." }
+    ],
+    timeline: [
+      { era: "Jour 1 a 4", title: "Présence sensible", summary: "Les papillons accompagnent deja les traverses et signalent une affinite profonde entre Shaushana et le vivant." },
+      { era: "Jour 5", title: "Révélation du coeur du Vrax", summary: "Les creatrices expliquent que les papillons portent une energie vitale sans laquelle l'equilibre du monde se defait." },
+      { era: "Jour 5", title: "Cimetière silencieux", summary: "Le groupe decouvre un lieu ou les papillons s'eteignent sans violence visible, preuve glaçante d'une alteration plus profonde." }
     ]
   },
   {
@@ -1172,6 +1235,16 @@ const chapters = [
     path: "./media/chapitres/Chapitre%209%20-%20Les%20Gamins%20du%20Vrax.pdf",
     summary: "Le chapitre revele la naissance et le role des jeunes protecteurs du Vrax, jusqu'a leur interception du groupe et a la capture brutale de Franklin.",
     accessKey: "ChapPando9"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2010%20-%20Le%20coeur%20du%20Vrax.pdf",
+    summary: "Au coeur du Vrax, Franklin est confronte a sa lignee ancienne tandis que Shan et Shaushana affrontent les protecteurs avant l'intervention d'Ossah Lyla et de Nastaz.",
+    accessKey: "ChapPando10"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2011%20-%20Les%20Cr%C3%A9atrice.pdf",
+    summary: "Les creatrices revelent l'origine des Gamins du Vrax, le role vital des papillons, l'alteration du monde et orientent le groupe vers une nouvelle piste au sud avec Lévy.",
+    accessKey: "ChapPando11"
   }
 ];
 
@@ -1325,6 +1398,41 @@ const timelineEvents = [
     era: "Jour 5",
     title: "Capture de Franklin",
     summary: "Lévy fixe le terrain, Wingard referme l'espace et Gardien Isma saisit Franklin, qui semble porter quelque chose de singulier pour le Vrax."
+  },
+  {
+    era: "Jour 5",
+    title: "Franklin reconnu comme héritier d'une ancienne lignée du Vrax",
+    summary: "Au coeur du territoire, les protecteurs comprennent que Franklin porte la trace d'une ancienne generation liee au Vrax, ce qui explique sa capture et l'attention qu'il suscite."
+  },
+  {
+    era: "Jour 5",
+    title: "Affrontement contre les Guéplynx et progression vers le coeur du Vrax",
+    summary: "Shan et Shaushana franchissent une nouvelle profondeur du Vrax, affrontent des Guéplynx coordonnes et comprennent que le territoire les guide vers un centre plus ancien."
+  },
+  {
+    era: "Jour 5",
+    title: "Intervention d'Ossah Lyla et de Nastaz",
+    summary: "Les deux creatrices interrompent l'escalade entre le groupe de Shaushana et les protecteurs du Vrax, puis imposent un autre niveau de lecture du monde."
+  },
+  {
+    era: "Jour 5",
+    title: "Révélation des papillons et du cimetière silencieux",
+    summary: "Les creatrices expliquent que les papillons portent une essence vitale pour Pandorus, puis montrent un lieu ou ils s'eteignent sans cause visible, preuve concrete d'une alteration plus profonde."
+  },
+  {
+    era: "Jour 6",
+    title: "Éveil du lien de Franklin avec le Vrax",
+    summary: "Au contact du coeur du Vrax, Franklin commence a repondre autrement au territoire et sent naitre en lui un lien qui ne releve plus seulement de la survie."
+  },
+  {
+    era: "Jour 6",
+    title: "Nouvelle direction vers le sud",
+    summary: "Les creatrices orientent le groupe vers le fleuve Sylvae et la pointe de la mer du Sphinx pandorien, ou Harry PY observe deja une zone de decomposition du vivant."
+  },
+  {
+    era: "Jour 6",
+    title: "Départ avec Lévy",
+    summary: "Au matin, Lévy quitte le coeur du Vrax pour accompagner Shaushana, Shan et Franklin vers cette nouvelle etape du recit."
   }
 ];
 
