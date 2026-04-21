@@ -230,13 +230,15 @@ a:hover {
 .top-social {
   display: inline-flex;
   align-items: center;
+  justify-content: space-between;
   gap: 10px;
   padding: 10px 12px;
   border: 1px solid rgba(120, 93, 46, 0.18);
   border-radius: 18px;
   background: linear-gradient(180deg, rgba(255, 251, 242, 0.94), rgba(241, 229, 200, 0.92));
   color: #3c2c16;
-  min-width: 0;
+  width: min(100%, 250px);
+  min-width: 250px;
 }
 
 .top-social:hover {
@@ -254,6 +256,15 @@ a:hover {
   display: grid;
   gap: 2px;
   min-width: 0;
+  flex: 1 1 auto;
+}
+
+.top-social-instagram .top-social-copy {
+  text-align: left;
+}
+
+.top-social-facebook .top-social-copy {
+  text-align: right;
 }
 
 .top-social-copy strong {
