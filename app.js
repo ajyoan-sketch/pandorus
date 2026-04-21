@@ -624,8 +624,8 @@ const locationHashPanelMap = Object.fromEntries(
   locationFiches.map((fiche) => [`#lieux-${fiche.slug}`, `lieu-panel-${fiche.slug}`])
 );
 
-const loreLinkEntries = buildLoreLinkEntries();
-const loreLinkRegex = buildLoreLinkRegex(loreLinkEntries);
+let loreLinkEntriesCache = null;
+let loreLinkRegexCache = null;
 
 const sectionWhispers = {
   home: "Entrer dans l'archive vivante de Pandorus.",
@@ -1092,6 +1092,22 @@ function buildLoreLinkRegex(entries) {
   return new RegExp(`(^|[^\\p{L}\\p{M}])(${labels.join("|")})(?=$|[^\\p{L}\\p{M}])`, "giu");
 }
 
+function getLoreLinkEntries() {
+  if (!loreLinkEntriesCache) {
+    loreLinkEntriesCache = buildLoreLinkEntries();
+  }
+
+  return loreLinkEntriesCache;
+}
+
+function getLoreLinkRegex() {
+  if (!loreLinkRegexCache) {
+    loreLinkRegexCache = buildLoreLinkRegex(getLoreLinkEntries());
+  }
+
+  return loreLinkRegexCache;
+}
+
 function buildContextLinksMarkup(links, title = "Liens contextuels") {
   if (!links?.length) return "";
 
@@ -1141,6 +1157,8 @@ function replaceLoreLinksInElement(element) {
 
   textNodes.forEach((textNode) => {
     const originalText = textNode.nodeValue || "";
+    const loreLinkRegex = getLoreLinkRegex();
+    const loreLinkEntries = getLoreLinkEntries();
     loreLinkRegex.lastIndex = 0;
     const matches = Array.from(originalText.matchAll(loreLinkRegex));
     if (!matches.length) return;
