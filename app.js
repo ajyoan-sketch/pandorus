@@ -20,7 +20,7 @@ const constellationCards = [
   {
     title: "Hornax",
     kicker: "Constellation",
-    text: "La constellation du frelon, nerveuse et tranchante, comme une presence qui garde son aiguillon jusque dans la nuit."
+    text: "La constellation du frelon, nerveuse et tranchante, comme une présence qui garde son aiguillon jusque dans la nuit."
   },
   {
     title: "Vermis",
@@ -53,7 +53,7 @@ const planetCards = [
   {
     title: "Dravok",
     kicker: "En haut a gauche",
-    text: "Planete chaude, volcanique et tres riche en ressources, Dravok donne l'impression d'un monde forge dans la pression, le feu et la matiere brute."
+    text: "Planete chaude, volcanique et très riche en ressources, Dravok donne l'impression d'un monde forge dans la pression, le feu et la matiere brute."
   },
   {
     title: "Nerithis",
@@ -233,17 +233,17 @@ const staticFicheContextMap = {
   ],
   "franklin-panel": [
     { href: "#relations", label: "Voir ses liens" },
-    { href: "#chronologie", label: "Suivre son eveil" },
+    { href: "#chronologie", label: "Suivre son éveil" },
     { href: "#lieux-passar", label: "Relire le Passar" }
   ],
   "mike-panel": [
     { href: "#relations", label: "Voir ses liens" },
-    { href: "#chronologie", label: "Lire les evenements" },
+    { href: "#chronologie", label: "Lire les événements" },
     { href: "#lieux-bidonville-du-passar", label: "Voir le bidonville" }
   ],
   "gerom-panel": [
     { href: "#relations", label: "Voir ses liens" },
-    { href: "#chronologie", label: "Lire les evenements" },
+    { href: "#chronologie", label: "Lire les événements" },
     { href: "#lieux-passar", label: "Relire le Passar" }
   ],
   "elrick-panel": [
@@ -261,7 +261,7 @@ const additionalFicheContextMap = {
   ],
   "gardien-isma": [
     { href: "#relations", label: "Voir ses liens" },
-    { href: "#chronologie", label: "Voir le coeur du conflit" },
+    { href: "#chronologie", label: "Voir le cœur du conflit" },
     { href: "#lieux-vrax", label: "Relire le Vrax" }
   ],
   wingard: [
@@ -276,12 +276,12 @@ const additionalFicheContextMap = {
   ],
   "ossah-lyla": [
     { href: "#relations", label: "Voir ses liens" },
-    { href: "#chronologie", label: "Voir la revelation" },
+    { href: "#chronologie", label: "Voir la révélation" },
     { href: "#lieux-coeur-du-vrax", label: "Lire le coeur du Vrax" }
   ],
   nastaz: [
     { href: "#relations", label: "Voir ses liens" },
-    { href: "#chronologie", label: "Voir la revelation" },
+    { href: "#chronologie", label: "Voir la révélation" },
     { href: "#lieux-coeur-du-vrax", label: "Lire le coeur du Vrax" }
   ],
   eben: [
@@ -291,7 +291,7 @@ const additionalFicheContextMap = {
   ],
   capitaine: [
     { href: "#relations", label: "Voir ses liens" },
-    { href: "#mysteres", label: "Ouvrir le mystere" },
+    { href: "#mysteres", label: "Ouvrir le mystère" },
     { href: "#lieux-veyrine", label: "Lire le Veyrine" }
   ]
 };
@@ -322,12 +322,12 @@ const creatureContextMap = {
     { href: "#cartes", label: "Voir les cartes" }
   ],
   "nignoble": [
-    { href: "#mysteres", label: "Voir les mysteres" },
-    { href: "#chronologie", label: "Lire les signes d'alteration" }
+    { href: "#mysteres", label: "Voir les mystères" },
+    { href: "#chronologie", label: "Lire les signes d'altération" }
   ],
   "renastar": [
     { href: "#lieux-passage", label: "Relire Le Passage" },
-    { href: "#chronologie", label: "Voir les premieres traverses" }
+    { href: "#chronologie", label: "Voir les premières traversées" }
   ],
   "reptidile": [
     { href: "#lieux-bassai", label: "Voir le Bassaï" },
@@ -339,11 +339,11 @@ const creatureContextMap = {
   ],
   "serpours": [
     { href: "#lieux-passar", label: "Relire le Passar" },
-    { href: "#chronologie", label: "Lire les epreuves" }
+    { href: "#chronologie", label: "Lire les épreuves" }
   ],
   "verdeflor": [
     { href: "#lieux-passage", label: "Relire Le Passage" },
-    { href: "#mysteres", label: "Voir les mysteres" }
+    { href: "#mysteres", label: "Voir les mystères" }
   ]
 };
 
@@ -353,28 +353,28 @@ const locationFiches = [
     name: "Le Passage",
     tone: "threshold",
     category: "Seuil d'entree",
-    intro: "Le Passage est le premier lieu ou Pandorus cesse d'etre seulement un decor pour devenir une presence. Tout y semble annoncer une naissance, une écoute et une premiere reconnaissance du monde.",
+    intro: "Le Passage est le premier lieu où Pandorus cesse d'être seulement un décor pour devenir une présence. Tout y semble annoncer une naissance, une écoute et une première reconnaissance du monde.",
     meta: [
-      { label: "Atmosphere", value: "Eveil, seuil, perception naissante" },
-      { label: "Fonction", value: "Point d'ouverture du recit" },
-      { label: "Presences", value: "Shaushana, Franklin, premieres creatures" }
+      { label: "Atmosphère", value: "Éveil, seuil, perception naissante" },
+      { label: "Fonction", value: "Point d'ouverture du récit" },
+      { label: "Présences", value: "Shaushana, Franklin, premières créatures" }
     ],
     biography: [
-      "Le Passage agit comme une membrane entre l'errance et l'entree veritable dans Pandorus. Ce n'est pas encore un territoire organise comme le Vrax ni un foyer comme le Passar, mais deja un lieu qui repond, qui filtre et qui oriente.",
-      "C'est la que le recit prend son premier souffle sensible. Le vivant y est encore diffus, presque flottant, mais deja assez fort pour signaler que la suite du voyage ne sera pas seulement geographique."
+      "Le Passage agit comme une membrane entre l'errance et l'entrée véritable dans Pandorus. Ce n'est pas encore un territoire organisé comme le Vrax ni un foyer comme le Passar, mais déjà un lieu qui répond, qui filtre et qui oriente.",
+      "C'est là que le récit prend son premier souffle sensible. Le vivant y est encore diffus, presque flottant, mais déjà assez fort pour signaler que la suite du voyage ne sera pas seulement géographique."
     ],
     summary: [
-      "Le Passage est le lieu ou la lecture du monde commence.",
-      "Il donne a Shaushana et a Franklin une premiere experience d'un univers qui observe, met a l'epreuve et attire vers plus grand que lui."
+      "Le Passage est le lieu où la lecture du monde commence.",
+      "Il donne à Shaushana et à Franklin une première expérience d'un univers qui observe, met à l'épreuve et attire vers plus grand que lui."
     ],
     profile: [
-      { title: "Texture du lieu", text: "Ouverture, frisson, lumiere encore indeterminee et signaux fins du vivant." },
-      { title: "Role narratif", text: "Il met les heros en route sans encore tout leur reveler." },
-      { title: "Lien contextuel", text: "Il prepare aussi les figures, creatures et fleuves qui seront compris plus tard." }
+      { title: "Texture du lieu", text: "Ouverture, frisson, lumière encore indéterminée et signaux fins du vivant." },
+      { title: "Rôle narratif", text: "Il met les héros en route sans encore tout leur révéler." },
+      { title: "Lien contextuel", text: "Il prépare aussi les figures, créatures et fleuves qui seront compris plus tard." }
     ],
     contextLinks: [
       { href: "#fiches-shaushana", label: "Voir Shaushana" },
-      { href: "#chronologie", label: "Lire le debut du recit" },
+      { href: "#chronologie", label: "Lire le debut du récit" },
       { href: "#cartes", label: "Voir la carte du monde" }
     ]
   },
@@ -383,24 +383,24 @@ const locationFiches = [
     name: "Passar",
     tone: "river",
     category: "Fleuve habite",
-    intro: "Le Passar est a la fois une rive, un rythme et un refuge. C'est le premier lieu ou Pandorus prend une forme communautaire, humaine, fragile, mais tenace.",
+    intro: "Le Passar est à la fois une rive, un rythme et un refuge. C'est le premier lieu où Pandorus prend une forme communautaire, humaine, fragile, mais tenace.",
     meta: [
-      { label: "Atmosphere", value: "Rive, precarite, fraternite" },
-      { label: "Fonction", value: "Premier ancrage humain du recit" },
-      { label: "Presences", value: "Franklin, Gerom, Mike, memoire du Capitaine" }
+      { label: "Atmosphère", value: "Rive, précarité, fraternité" },
+      { label: "Fonction", value: "Premier ancrage humain du récit" },
+      { label: "Présences", value: "Franklin, Gerom, Mike, mémoire du Capitaine" }
     ],
     biography: [
-      "Le Passar accueille sans jamais rassurer totalement. On y sent la vie partagee, les solidarites, les manques et la conscience que l'equilibre reste toujours precaire.",
-      "C'est autour de lui que Franklin existe d'abord, que Mike est protege, et que la disparition du Capitaine continue de laisser une marque ouverte."
+      "Le Passar accueille sans jamais rassurer totalement. On y sent la vie partagée, les solidarités, les manques et la conscience que l'équilibre reste toujours précaire.",
+      "C'est autour de lui que Franklin existe d'abord, que Mike est protégé, et que la disparition du Capitaine continue de laisser une marque ouverte."
     ],
     summary: [
-      "Le Passar donne au recit sa premiere epaisseur sociale.",
+      "Le Passar donne au récit sa première épaisseur sociale.",
       "Il devient vite un point de comparaison avec d'autres lieux, notamment quand le vivant commence a se deregler."
     ],
     profile: [
-      { title: "Texture du lieu", text: "Eau, bois, precarite, solidarite et respiration de bord de fleuve." },
-      { title: "Role narratif", text: "Ancrer l'histoire dans des vies concretes avant l'ouverture vers des forces plus anciennes." },
-      { title: "Point de tension", text: "Le fleuve reste aussi un lieu d'inquietude, de manque et de disparition." }
+      { title: "Texture du lieu", text: "Eau, bois, précarité, solidarité et respiration de bord de fleuve." },
+      { title: "Rôle narratif", text: "Ancrer l'histoire dans des vies concrètes avant l'ouverture vers des forces plus anciennes." },
+      { title: "Point de tension", text: "Le fleuve reste aussi un lieu d'inquiétude, de manque et de disparition." }
     ],
     contextLinks: [
       { href: "#fiches-franklin", label: "Voir Franklin" },
@@ -420,22 +420,22 @@ const locationFiches = [
       { label: "Presences", value: "Mike, Gerom, Franklin, habitants du bord" }
     ],
     biography: [
-      "Le bidonville n'a rien d'un lieu noble au sens classique, et pourtant il donne au recit une force tres concrete. C'est la que se mesurent la faim, la protection, l'absence et l'attachement.",
-      "Il est le lieu de ceux qui tiennent sans grandeur affichee, mais avec une dignite reelle. Son existence rappelle que Pandorus n'est pas seulement fait de grandes revelations, mais aussi de vies modestes qui resistent."
+      "Le bidonville n'a rien d'un lieu noble au sens classique, et pourtant il donne au récit une force très concrete. C'est la que se mesurent la faim, la protection, l'absence et l'attachement.",
+      "Il est le lieu de ceux qui tiennent sans grandeur affichee, mais avec une dignite reelle. Son existence rappelle que Pandorus n'est pas seulement fait de grandes révélations, mais aussi de vies modestes qui resistent."
     ],
     summary: [
-      "Le bidonville est un foyer de survie autant qu'un lieu de memoire sociale.",
+      "Le bidonville est un foyer de survie autant qu'un lieu de mémoire sociale.",
       "Il rend sensible ce que les grandes forces du monde mettent en danger jusque dans le quotidien."
     ],
     profile: [
       { title: "Texture du lieu", text: "Assemblages fragiles, proximite humaine, veille continue." },
-      { title: "Role narratif", text: "Donner une chair sociale au recit avant les zones plus sacrees ou anciennes." },
+      { title: "Role narratif", text: "Donner une chair sociale au récit avant les zones plus sacrees ou anciennes." },
       { title: "Point de tension", text: "Ce qui manque ici se ressent immédiatement, humainement et sans filtre." }
     ],
     contextLinks: [
       { href: "#fiches-mike", label: "Voir Mike" },
       { href: "#fiches-gerom", label: "Voir Gerom" },
-      { href: "#chronologie", label: "Lire les evenements lies" }
+      { href: "#chronologie", label: "Lire les événements lies" }
     ]
   },
   {
@@ -446,21 +446,21 @@ const locationFiches = [
     intro: "Le Veyrine est un lieu d'observation et d'alerte. On y lit mieux qu'ailleurs que quelque chose du vivant ne suit plus sa course ordinaire.",
     meta: [
       { label: "Atmosphere", value: "Observation, doute, disparition" },
-      { label: "Fonction", value: "Lieu d'enquete sur le desequilibre" },
+      { label: "Fonction", value: "Lieu d'enquete sur le déséquilibre" },
       { label: "Presences", value: "Le Capitaine, Franklin, expedition interrompue" }
     ],
     biography: [
       "Le Veyrine n'est pas seulement important pour ce qu'on y voit, mais pour ce qu'il permet de mesurer. C'est par ecart, par comparaison, qu'il fait sentir que le monde n'est plus tout a fait dans son ordre.",
-      "La disparition du Capitaine y gagne une densite particuliere. Le lieu garde quelque chose de ce qui a ete pressenti sans etre rapporte."
+      "La disparition du Capitaine y gagne une densite particuliere. Le lieu garde quelque chose de ce qui a ete pressenti sans être rapporte."
     ],
     summary: [
-      "Le Veyrine agit comme une rive de lecture du desequilibre.",
-      "Il est aussi un foyer de memoire troublee autour du Capitaine."
+      "Le Veyrine agit comme une rive de lecture du déséquilibre.",
+      "Il est aussi un foyer de mémoire troublee autour du Capitaine."
     ],
     profile: [
-      { title: "Texture du lieu", text: "Silence, ecart, courant inquiet et memoire inachevee." },
+      { title: "Texture du lieu", text: "Silence, ecart, courant inquiet et mémoire inachevee." },
       { title: "Role narratif", text: "Donner une preuve indirecte mais forte du dereglement du vivant." },
-      { title: "Point de tension", text: "Il concentre l'une des absences les plus lourdes du recit." }
+      { title: "Point de tension", text: "Il concentre l'une des absences les plus lourdes du récit." }
     ],
     contextLinks: [
       { href: "#fiches-capitaine", label: "Voir le Capitaine" },
@@ -473,23 +473,23 @@ const locationFiches = [
     name: "Bassaï",
     tone: "river",
     category: "Fleuve d'epreuve",
-    intro: "Le Bassaï est moins un simple lieu a franchir qu'une epreuve fluide. Il met a l'ecoute, use, teste et fait sentir que certains passages doivent etre merites.",
+    intro: "Le Bassaï est moins un simple lieu à franchir qu'une épreuve fluide. Il met à l'écoute, use, teste et fait sentir que certains passages doivent être mérités.",
     meta: [
-      { label: "Atmosphere", value: "Passage, profondeur, epreuve" },
+      { label: "Atmosphère", value: "Passage, profondeur, épreuve" },
       { label: "Fonction", value: "Seuil vers des territoires plus anciens" },
-      { label: "Presences", value: "Shaushana, Shan, Franklin, Elrick, creatures du fleuve" }
+      { label: "Présences", value: "Shaushana, Shan, Franklin, Elrick, créatures du fleuve" }
     ],
     biography: [
-      "Le Bassaï concentre la sensation que Pandorus choisit parfois la facon dont on le traverse. Rien n'y est neutre : les formes du vivant, les rythmes du fleuve et les rencontres y composent une epreuve de lecture autant que de survie.",
-      "C'est un lieu de tension fertile, ou les heros comprennent que le monde repond a leur avance et ne se laisse pas seulement parcourir."
+      "Le Bassaï concentre la sensation que Pandorus choisit parfois la façon dont on le traverse. Rien n'y est neutre : les formes du vivant, les rythmes du fleuve et les rencontres y composent une épreuve de lecture autant que de survie.",
+      "C'est un lieu de tension fertile, où les héros comprennent que le monde répond à leur avance et ne se laisse pas seulement parcourir."
     ],
     summary: [
       "Le Bassaï marque le passage de la simple route a l'experience du monde conscient.",
-      "Il annonce deja les logiques plus organisees du Vrax."
+      "Il annonce déjà les logiques plus organisées du Vrax."
     ],
     profile: [
-      { title: "Texture du lieu", text: "Eau dense, creatures de passage, profondeur attentive." },
-      { title: "Role narratif", text: "Durcir le voyage et elever la lecture du monde." },
+      { title: "Texture du lieu", text: "Eau dense, créatures de passage, profondeur attentive." },
+      { title: "Rôle narratif", text: "Durcir le voyage et élever la lecture du monde." },
       { title: "Point de tension", text: "Le lieu juge presque autant qu'il laisse passer." }
     ],
     contextLinks: [
@@ -503,59 +503,59 @@ const locationFiches = [
     name: "Vrax",
     tone: "vrax",
     category: "Territoire conscient",
-    intro: "Le Vrax est une veille organisee. Plus qu'un lieu, il fonctionne comme une intelligence territoriale capable d'evaluer, de proteger, d'opposer et de reconnaitre.",
+    intro: "Le Vrax est une veille organisée. Plus qu'un lieu, il fonctionne comme une intelligence territoriale capable d'évaluer, de protéger, d'opposer et de reconnaître.",
     meta: [
-      { label: "Atmosphere", value: "Veille, defense, intelligence du vivant" },
-      { label: "Fonction", value: "Centre de protection et de reponse" },
-      { label: "Presences", value: "Harry PY, Gardien Isma, Wingard, Levy, creatrices" }
+      { label: "Atmosphère", value: "Veille, défense, intelligence du vivant" },
+      { label: "Fonction", value: "Centre de protection et de réponse" },
+      { label: "Présences", value: "Harry PY, Gardien Isma, Wingard, Levy, créatrices" }
     ],
     biography: [
-      "Entrer dans le Vrax, c'est cesser de croire que le territoire n'est qu'un cadre. Tout y est fonction, lecture, reponse et memoire organisee. Le monde y prend une forme presque politique, sacree et collective.",
+      "Entrer dans le Vrax, c'est cesser de croire que le territoire n'est qu'un cadre. Tout y est fonction, lecture, réponse et mémoire organisée. Le monde y prend une forme presque politique, sacrée et collective.",
       "Les protecteurs, les flux et les gardiennes n'y apparaissent pas comme des exceptions isolees, mais comme les organes d'une meme logique de defense du vivant."
     ],
     summary: [
-      "Le Vrax donne a Pandorus sa forme la plus consciente et la plus structuree.",
-      "Il transforme la lecture du recit: l'univers n'est plus seulement vivant, il sait aussi se repondre a lui-meme."
+      "Le Vrax donne à Pandorus sa forme la plus consciente et la plus structurée.",
+      "Il transforme la lecture du récit : l'univers n'est plus seulement vivant, il sait aussi se répondre à lui-même."
     ],
     profile: [
-      { title: "Texture du lieu", text: "Densite, ordre ancien, lecture territoriale et tension sacree." },
-      { title: "Role narratif", text: "Reveler un niveau superieur d'organisation du monde." },
-      { title: "Point de tension", text: "Ce qui y est reconnu peut etre protege autant que mis a l'epreuve." }
+      { title: "Texture du lieu", text: "Densité, ordre ancien, lecture territoriale et tension sacrée." },
+      { title: "Rôle narratif", text: "Révéler un niveau supérieur d'organisation du monde." },
+      { title: "Point de tension", text: "Ce qui y est reconnu peut être protégé autant que mis à l'épreuve." }
     ],
     contextLinks: [
       { href: "#relations", label: "Voir les figures du Vrax" },
       { href: "#cartes", label: "Voir la carte vivante" },
-      { href: "#chronologie", label: "Lire les revelations" }
+      { href: "#chronologie", label: "Lire les révélations" }
     ]
   },
   {
     slug: "coeur-du-vrax",
-    name: "Coeur du Vrax",
+    name: "Cœur du Vrax",
     tone: "vrax",
     category: "Noyau du territoire",
-    intro: "Le coeur du Vrax est un lieu de revelation plus que de repos. On y atteint un centre de verite, mais un centre blesse, ou le vivant montre autant sa puissance que son atteinte.",
+    intro: "Le cœur du Vrax est un lieu de révélation plus que de repos. On y atteint un centre de vérité, mais un centre blessé, où le vivant montre autant sa puissance que son atteinte.",
     meta: [
-      { label: "Atmosphere", value: "Revelation, gravite, blessure du vivant" },
-      { label: "Fonction", value: "Noyau de lecture du desequilibre" },
-      { label: "Presences", value: "Ossah Lyla, Nastaz, Franklin, Shan, Shaushana, Levy" }
+      { label: "Atmosphère", value: "Révélation, gravité, blessure du vivant" },
+      { label: "Fonction", value: "Noyau de lecture du déséquilibre" },
+      { label: "Présences", value: "Ossah Lyla, Nastaz, Franklin, Shan, Shaushana, Levy" }
     ],
     biography: [
-      "Au coeur du Vrax, tout se condense. Les affrontements contre les Guéplynx, la capture de Franklin, l'intervention des creatrices et la revelation sur les papillons font de ce lieu un point de bascule majeur.",
-      "Ce n'est pas seulement le centre d'un territoire; c'est aussi un centre de lecture du mal qui traverse Pandorus. On y comprend que l'alteration n'est plus abstraite, mais deja visible dans la trame la plus fine du vivant."
+      "Au cœur du Vrax, tout se condense. Les affrontements contre les Guéplynx, la capture de Franklin, l'intervention des créatrices et la révélation sur les papillons font de ce lieu un point de bascule majeur.",
+      "Ce n'est pas seulement le centre d'un territoire ; c'est aussi un centre de lecture du mal qui traverse Pandorus. On y comprend que l'altération n'est plus abstraite, mais déjà visible dans la trame la plus fine du vivant."
     ],
     summary: [
-      "Le coeur du Vrax est l'un des lieux les plus revelateurs du recit a ce stade.",
-      "Il fait converger l'intime, le sacre, la defense du monde et le signe tres concret de son atteinte."
+      "Le cœur du Vrax est l'un des lieux les plus révélateurs du récit à ce stade.",
+      "Il fait converger l'intime, le sacré, la défense du monde et le signe très concret de son atteinte."
     ],
     profile: [
-      { title: "Texture du lieu", text: "Centre dense, presque rituel, ou les signes deviennent explicites." },
-      { title: "Role narratif", text: "Faire passer le recit de la perception du desequilibre a sa reconnaissance claire." },
+      { title: "Texture du lieu", text: "Centre dense, presque rituel, où les signes deviennent explicites." },
+      { title: "Rôle narratif", text: "Faire passer le récit de la perception du déséquilibre à sa reconnaissance claire." },
       { title: "Point de tension", text: "Ce qui est vu ici oblige a repartir autrement." }
     ],
     contextLinks: [
       { href: "#fiches-franklin", label: "Voir Franklin" },
       { href: "#fiches-ossah-lyla", label: "Voir Ossah Lyla" },
-      { href: "#chronologie", label: "Lire la revelation" }
+      { href: "#chronologie", label: "Lire la révélation" }
     ]
   },
   {
@@ -563,22 +563,22 @@ const locationFiches = [
     name: "Fleuve Sylvae",
     tone: "river",
     category: "Piste du sud",
-    intro: "Le fleuve Sylvae n'est pas encore pleinement traverse, mais il entre deja dans le recit comme une direction lourde de promesse et d'inquietude.",
+    intro: "Le fleuve Sylvae n'est pas encore pleinement traverse, mais il entre déjà dans le récit comme une direction lourde de promesse et d'inquietude.",
     meta: [
       { label: "Atmosphere", value: "Appel lointain, piste, decomposition observee" },
-      { label: "Fonction", value: "Nouvelle direction du recit" },
+      { label: "Fonction", value: "Nouvelle direction du récit" },
       { label: "Presences", value: "Harry PY, zone de decomposition du vivant" }
     ],
     biography: [
-      "Le fleuve Sylvae apparait d'abord comme une destination, mais une destination deja chargee. Harry PY s'y trouve au sud pour observer une zone ou le vivant semble se decomposer autrement.",
-      "A ce stade, il agit comme une ouverture narrative: le lieu n'est pas encore donne pleinement, mais il attire deja l'histoire vers sa prochaine epreuve."
+      "Le fleuve Sylvae apparait d'abord comme une destination, mais une destination déjà chargee. Harry PY s'y trouve au sud pour observer une zone ou le vivant semble se decomposer autrement.",
+      "A ce stade, il agit comme une ouverture narrative: le lieu n'est pas encore donne pleinement, mais il attire déjà l'histoire vers sa prochaine épreuve."
     ],
     summary: [
       "Le fleuve Sylvae lance la prochaine grande direction du voyage.",
       "Il annonce que l'alteration du vivant depasse de loin le seul Vrax."
     ],
     profile: [
-      { title: "Texture du lieu", text: "Distance, appel, courant encore hors champ mais deja menaçant." },
+      { title: "Texture du lieu", text: "Distance, appel, courant encore hors champ mais déjà menaçant." },
       { title: "Role narratif", text: "Ouvrir l'etape suivante sans casser le poids du coeur du Vrax." },
       { title: "Point de tension", text: "Le sud n'est pas une sortie: c'est une aggravation du mystere." }
     ],
@@ -593,15 +593,15 @@ const locationFiches = [
     name: "Mer du Sphinx pandorien",
     tone: "memory",
     category: "Horizon du sud",
-    intro: "La mer du Sphinx pandorien n'est encore qu'une ligne de destination, mais une ligne tres chargee, presque mythique, vers laquelle le recit oriente maintenant ses forces.",
+    intro: "La mer du Sphinx pandorien n'est encore qu'une ligne de destination, mais une ligne très chargee, presque mythique, vers laquelle le récit oriente maintenant ses forces.",
     meta: [
       { label: "Atmosphere", value: "Lointain, mystere, pression du sud" },
       { label: "Fonction", value: "Horizon narratif en formation" },
       { label: "Presences", value: "Piste future pour Shaushana, Shan, Franklin et Levy" }
     ],
     biography: [
-      "Comme certains lieux encore peu vus mais deja puissants, la mer du Sphinx pandorien existe d'abord par son nom, sa direction et le poids qu'on lui donne. Elle élargit brusquement l'echelle du monde.",
-      "Elle annonce une geographie plus vaste encore, ou les rivages, les fleuves et les territoires conscients ne suffiront peut-etre plus a contenir ce qui remonte."
+      "Comme certains lieux encore peu vus mais déjà puissants, la mer du Sphinx pandorien existe d'abord par son nom, sa direction et le poids qu'on lui donne. Elle élargit brusquement l'echelle du monde.",
+      "Elle annonce une géographie plus vaste encore, ou les rivages, les fleuves et les territoires conscients ne suffiront peut-etre plus a contenir ce qui remonte."
     ],
     summary: [
       "La mer du Sphinx pandorien agit comme horizon et menace encore abstraite.",
@@ -609,7 +609,7 @@ const locationFiches = [
     ],
     profile: [
       { title: "Texture du lieu", text: "Horizon, appel, mystere meridional." },
-      { title: "Role narratif", text: "Etendre le monde au-dela des lieux deja traverses." },
+      { title: "Role narratif", text: "Etendre le monde au-dela des lieux déjà traverses." },
       { title: "Point de tension", text: "Ce qui attend au sud semble depasser le simple deplacement." }
     ],
     contextLinks: [
@@ -627,13 +627,13 @@ const locationHashPanelMap = Object.fromEntries(
 const sectionWhispers = {
   home: "Entrer dans l'archive vivante de Pandorus.",
   fiches: "Les visages qui portent, blessent ou transforment le monde.",
-  relations: "Ce qui lie, protege, transmet ou oppose.",
-  chronologie: "Le temps ou Pandorus se revele, se fracture et repond.",
-  chapitres: "Les portes du recit, ouvertes une a une.",
-  personnages: "Les presences du monde, vues dans leur ensemble.",
-  lieux: "Les territoires, fleuves et seuils qui donnent sa respiration au recit.",
-  creatures: "Le vivant dans sa beaute, sa peur et son instinct.",
-  mysteres: "Ce qui resiste encore a une lecture pleine.",
+  relations: "Ce qui lie, protège, transmet ou oppose.",
+  chronologie: "Le temps où Pandorus se révèle, se fracture et répond.",
+  chapitres: "Les portes du récit, ouvertes une à une.",
+  personnages: "Les présences du monde, vues dans leur ensemble.",
+  lieux: "Les territoires, fleuves et seuils qui donnent sa respiration au récit.",
+  creatures: "Le vivant dans sa beauté, sa peur et son instinct.",
+  mysteres: "Ce qui résiste encore à une lecture pleine.",
   cartes: "Les formes du monde, des cieux et des territoires conscients."
 };
 
@@ -641,14 +641,14 @@ const landingOracleEntries = [
   {
     kicker: "Mise en lumiere",
     title: "Shaushana",
-    text: "Figure d'eveil et de lien profond au vivant, Shaushana semble avancer dans le monde comme si celui-ci la reconnaissait deja.",
+    text: "Figure d'éveil et de lien profond au vivant, Shaushana semble avancer dans le monde comme si celui-ci la reconnaissait déjà.",
     href: "#fiches-shaushana",
     label: "Lire la fiche"
   },
   {
     kicker: "Territoire",
     title: "Le Vrax",
-    text: "Plus qu'un lieu, le Vrax agit comme une intelligence territoriale : il veille, mesure, reagit et organise sa propre defense.",
+    text: "Plus qu'un lieu, le Vrax agit comme une intelligence territoriale : il veille, mesure, réagit et organise sa propre défense.",
     href: "#cartes",
     label: "Voir les cartes"
   },
@@ -662,9 +662,9 @@ const landingOracleEntries = [
   {
     kicker: "Mystere",
     title: "La disparition du Capitaine",
-    text: "Son absence continue de peser dans le monde comme une question ouverte, jamais tout a fait apaisee.",
+    text: "Son absence continue de peser dans le monde comme une question ouverte, jamais tout à fait apaisée.",
     href: "#mysteres",
-    label: "Ouvrir les mysteres"
+    label: "Ouvrir les mystères"
   }
 ];
 
@@ -838,12 +838,12 @@ const relationNodes = [
     links: [
       { target: "Shan", type: "Alliance naissante", description: "Leur lien commence par l'affrontement, puis evolue vers le respect, l'attirance et un veritable tandem de route." },
       { target: "Franklin", type: "Protection et confiance", description: "Shaushana sauve Franklin, puis accepte de suivre son monde et de marcher a ses cotes." },
-      { target: "Elrick", type: "Transmission", description: "Elrick reconnait en elle une figure cle et lui transmet une part de la memoire ancienne du monde." },
-      { target: "Mike", type: "Allie indirect", description: "Elle protege le groupe dont Mike fait partie et devient liee au destin de sa communaute." },
+      { target: "Elrick", type: "Transmission", description: "Elrick reconnait en elle une figure cle et lui transmet une part de la mémoire ancienne du monde." },
+      { target: "Mike", type: "Allie indirect", description: "Elle protège le groupe dont Mike fait partie et devient liee au destin de sa communaute." },
       { target: "Gérôm", type: "Respect prudent", description: "Leur lien passe par la confiance progressive au sein du Passar et face au danger commun." },
       { target: "Gardien Isma", type: "Affrontement", description: "Dans le Vrax, Shaushana se heurte a une force d'interception qui agit comme un organe du territoire plus que comme un simple adversaire." },
-      { target: "Wingard", type: "Desorientation", description: "Le vent de Wingard casse ses appuis et l'oblige a combattre sans la maitrise instinctive qu'elle garde d'ordinaire." },
-      { target: "Ossah Lyla", type: "Reconnaissance", description: "Au coeur du Vrax, Ossah Lyla lit chez Shaushana une presence deja reliee aux papillons, au vivant et a une ancienne necessite du monde." },
+      { target: "Wingard", type: "Desorientation", description: "Le vent de Wingard casse ses appuis et l'oblige a combattre sans la maîtrise instinctive qu'elle garde d'ordinaire." },
+      { target: "Ossah Lyla", type: "Reconnaissance", description: "Au coeur du Vrax, Ossah Lyla lit chez Shaushana une présence déjà reliee aux papillons, au vivant et a une ancienne nécessité du monde." },
       { target: "Nastaz", type: "Lecture lucide", description: "Nastaz ne la traite pas comme une simple intruse: elle voit en Shaushana une figure impliquee dans ce qui vient, et non un danger ordinaire." }
     ]
   },
@@ -851,8 +851,8 @@ const relationNodes = [
     name: "Shan",
     role: "Combattant solitaire devenu allié",
     links: [
-      { target: "Shaushana", type: "Attraction et rivalité", description: "Shan est d'abord provoque par sa force, puis attire par ce qu'elle revele du monde et de lui-meme." },
-      { target: "Franklin", type: "Compagnon de route", description: "Leur lien se construit dans l'action, le voyage et la necessite de proteger le meme groupe." },
+      { target: "Shaushana", type: "Attraction et rivalité", description: "Shan est d'abord provoque par sa force, puis attire par ce qu'elle révèle du monde et de lui-meme." },
+      { target: "Franklin", type: "Compagnon de route", description: "Leur lien se construit dans l'action, le voyage et la nécessité de protèger le meme groupe." },
       { target: "Elrick", type: "Reconnaissance tacite", description: "Elrick comprend rapidement ce que Shan porte comme violence, survie et fatigue interieure." },
       { target: "Eben", type: "Traumatisme fondateur", description: "Eben est la creature liee a la mort de ses parents et a la fracture decisive de son enfance." },
       { target: "Wingard", type: "Contrepoint de combat", description: "Wingard le met en echec par la vitesse, la pression du vent et une lecture du terrain que Shan ne peut pas imposer." },
@@ -869,11 +869,11 @@ const relationNodes = [
       { target: "Mike", type: "Fraternité", description: "Mike fait partie de son noyau affectif et communautaire au bidonville." },
       { target: "Gérôm", type: "Fraternité", description: "Gérôm est l'un de ses appuis les plus stables dans la vie du Passar." },
       { target: "Elrick", type: "Recherche d'aide", description: "Franklin accepte l'autorite tranquille d'Elrick pour comprendre ce qui atteint le vivant." },
-      { target: "Capitaine", type: "Memoire de guide", description: "L'expedition menee avec le Capitaine vers le Veyrine structure sa lecture du desequilibre et son besoin de trouver des reponses." },
+      { target: "Capitaine", type: "Memoire de guide", description: "L'expedition menee avec le Capitaine vers le Veyrine structure sa lecture du déséquilibre et son besoin de trouver des réponses." },
       { target: "Lévy", type: "Singularite percue", description: "Lévy sent en Franklin quelque chose de distinct, comme un lien que le Vrax reconnait avant de l'expliquer." },
       { target: "Gardien Isma", type: "Capture", description: "Gardien Isma devient celui qui le saisit au moment de l'interception dans le Vrax." },
       { target: "Ossah Lyla", type: "Révélation", description: "Ossah Lyla confirme que Franklin porte la trace d'une ancienne lignee du Vrax et qu'il n'est pas la par accident." },
-      { target: "Nastaz", type: "Mise en garde", description: "Nastaz comprend que son lien peut l'aider autant que le destabiliser si Franklin avance sans saisir ce que le Vrax reveille en lui." }
+      { target: "Nastaz", type: "Mise en garde", description: "Nastaz comprend que son lien peut l'aider autant que le destabiliser si Franklin avance sans saisir ce que le Vrax réveille en lui." }
     ]
   },
   {
@@ -890,7 +890,7 @@ const relationNodes = [
     role: "Pilier calme du Passar",
     links: [
       { target: "Franklin", type: "Fraternité solide", description: "Ils forment ensemble un appui humain central dans la vie du Passar." },
-      { target: "Mike", type: "Veille protectrice", description: "Gérôm agit comme une presence stable et protectrice aupres de Mike." },
+      { target: "Mike", type: "Veille protectrice", description: "Gérôm agit comme une présence stable et protectrice aupres de Mike." },
       { target: "Shaushana", type: "Confiance progressive", description: "Il l'accueille avec prudence puis la reconnait comme alliee du groupe." },
       { target: "Shan", type: "Observation prudente", description: "Il observe Shan avec reserve, sans lui offrir d'emblee une confiance totale." }
     ]
@@ -899,9 +899,9 @@ const relationNodes = [
     name: "Elrick",
     role: "Gardien de mémoire",
     links: [
-      { target: "Shaushana", type: "Transmission du passé", description: "Il voit en elle une force liee a l'equilibre plus profond du monde et lui transmet une memoire ancienne." },
+      { target: "Shaushana", type: "Transmission du passé", description: "Il voit en elle une force liee a l'equilibre plus profond du monde et lui transmet une mémoire ancienne." },
       { target: "Shan", type: "Lecture intime", description: "Elrick reconnait chez Shan le poids de la survie et d'une histoire brisee." },
-      { target: "Franklin", type: "Guide provisoire", description: "Il aide Franklin et le groupe a comprendre l'ampleur du desequilibre qui les depasse." },
+      { target: "Franklin", type: "Guide provisoire", description: "Il aide Franklin et le groupe a comprendre l'ampleur du déséquilibre qui les depasse." },
       { target: "Ancienne guerre", type: "Héritage", description: "Elrick demeure relie a la grande guerre contre l'ombre, qui structure encore sa vision du monde." }
     ]
   },
@@ -911,17 +911,17 @@ const relationNodes = [
     links: [
       { target: "Shan", type: "Traumatisme originel", description: "La rencontre avec Eben detruit l'enfance de Shan et fonde sa violence, sa solitude et sa discipline." },
       { target: "Parents de Shan", type: "Affrontement fatal", description: "Les parents de Shan transforment Eben en obsession puis meurent en l'affrontant sans recul." },
-      { target: "Monde sauvage", type: "Autorité", description: "Eben n'apparait pas comme une simple bete, mais comme une presence souveraine dans l'ordre du vivant." }
+      { target: "Monde sauvage", type: "Autorité", description: "Eben n'apparait pas comme une simple bete, mais comme une présence souveraine dans l'ordre du vivant." }
     ]
   },
   {
     name: "Capitaine",
     role: "Guide absent du Passar",
     links: [
-      { target: "Franklin", type: "Expédition", description: "Le Capitaine emmene Franklin jusqu'au Veyrine pour verifier si le desequilibre du Passar touche aussi d'autres eaux." },
+      { target: "Franklin", type: "Expédition", description: "Le Capitaine emmene Franklin jusqu'au Veyrine pour verifier si le déséquilibre du Passar touche aussi d'autres eaux." },
       { target: "Passar", type: "Responsabilité", description: "Sa lecture du fleuve et du vivant fait de lui l'un des premiers adultes a prendre la corruption du monde au serieux." },
       { target: "Veyrine", type: "Quête de réponse", description: "Le voyage vers le Veyrine marque son dernier grand geste connu avant sa disparition." },
-      { target: "Déséquilibre du vivant", type: "Pressentiment", description: "Le Capitaine semble percevoir une presence invisible avant d'ordonner a Franklin de rentrer et de disparaitre seul." }
+      { target: "Déséquilibre du vivant", type: "Pressentiment", description: "Le Capitaine semble percevoir une présence invisible avant d'ordonner a Franklin de rentrer et de disparaitre seul." }
     ]
   },
   {
@@ -931,7 +931,7 @@ const relationNodes = [
       { target: "Gardien Isma", type: "Noyau protecteur", description: "Gardien Isma se place instinctivement autour de lui comme une defense nee de sa simple existence." },
       { target: "Wingard", type: "Centre de gravité", description: "Wingard revient toujours a l'axe que Harry impose au groupe, meme quand son energie deborde." },
       { target: "Lévy", type: "Lecture complétée", description: "Lévy complete ce que Harry ne peut plus porter seul face aux zones de vide du Vrax." },
-      { target: "Ossah Lyla", type: "Veille diurne", description: "Ossah Lyla accompagne sa naissance et reconnait en lui une reponse necessaire du monde." },
+      { target: "Ossah Lyla", type: "Veille diurne", description: "Ossah Lyla accompagne sa naissance et reconnait en lui une réponse necessaire du monde." },
       { target: "Nastaz", type: "Lucidité", description: "Nastaz comprend tout de suite qu'Harry PY n'est pas une anomalie, mais le debut d'une preparation." }
     ]
   },
@@ -942,7 +942,7 @@ const relationNodes = [
       { target: "Harry PY", type: "Protection instinctive", description: "Il se place naturellement entre Harry PY et toute menace potentielle." },
       { target: "Wingard", type: "Complément tactique", description: "Wingard ouvre, Gardien fixe, et leur combinaison donne au Vrax une interception brutale mais precise." },
       { target: "Lévy", type: "Coordination", description: "Lévy prepare le terrain et Gardien impose ensuite la force decisive qui manque au groupe." },
-      { target: "Franklin", type: "Prise", description: "C'est lui qui saisit Franklin au coeur du chaos, comme s'il executait une necessite plus vaste que lui." },
+      { target: "Franklin", type: "Prise", description: "C'est lui qui saisit Franklin au coeur du chaos, comme s'il executait une nécessité plus vaste que lui." },
       { target: "Shan", type: "Opposition frontale", description: "Face a Shan, il incarne une puissance plus stable et plus dense que la seule violence du combat." }
     ]
   },
@@ -954,7 +954,7 @@ const relationNodes = [
       { target: "Gardien Isma", type: "Appui croisé", description: "Le vent de Wingard desaxe les corps avant que Gardien ne puisse verrouiller l'espace." },
       { target: "Lévy", type: "Interception coordonnée", description: "Lévy agit sous le visible pendant que Wingard travaille l'air et la vitesse du combat." },
       { target: "Shan", type: "Déséquilibre", description: "Wingard neutralise la lecture habituelle du combat de Shan par la vitesse et par une pression invisible." },
-      { target: "Franklin", type: "Encerclement", description: "Au moment critique, il referme l'espace autour de Franklin et empeche toute reponse immediate." },
+      { target: "Franklin", type: "Encerclement", description: "Au moment critique, il referme l'espace autour de Franklin et empeche toute réponse immediate." },
       { target: "Shaushana", type: "Brisure de rythme", description: "Son vent casse les appuis et la synchronisation de Shaushana dans le Vrax." }
     ]
   },
@@ -965,9 +965,9 @@ const relationNodes = [
       { target: "Harry PY", type: "Complément", description: "Lévy prolonge la lecture de Harry PY la ou les flux cessent simplement de repondre." },
       { target: "Gardien Isma", type: "Préparation du terrain", description: "Il modifie la matiere et les appuis afin que Gardien puisse ensuite imposer la capture." },
       { target: "Wingard", type: "Interception commune", description: "Lévy agit sous le visible pendant que Wingard travaille l'air et la vitesse du combat." },
-      { target: "Franklin", type: "Singularité", description: "Avant les autres, il sent chez Franklin une presence ou un lien que le Vrax reconnait." },
+      { target: "Franklin", type: "Singularité", description: "Avant les autres, il sent chez Franklin une présence ou un lien que le Vrax reconnait." },
       { target: "Shaushana", type: "Entrave", description: "Ses interventions cassent les prises, ralentissent le terrain et empechent une reaction simple du groupe." },
-      { target: "Shan", type: "Compagnon de route", description: "Apres la revelation des creatrices, Lévy est choisi pour quitter le coeur du Vrax et accompagner Shan vers le sud." }
+      { target: "Shan", type: "Compagnon de route", description: "Apres la révélation des creatrices, Lévy est choisi pour quitter le coeur du Vrax et accompagner Shan vers le sud." }
     ]
   },
   {
@@ -975,9 +975,9 @@ const relationNodes = [
     role: "Conscience diurne du Vrax",
     links: [
       { target: "Nastaz", type: "Continuité", description: "Nastaz prolonge Ossah Lyla dans une lecture plus froide, plus nette et plus nocturne du meme monde." },
-      { target: "Harry PY", type: "Accompagnement", description: "Elle assiste la naissance de Harry PY et mesure la necessite de cette premiere reponse du Vrax." },
+      { target: "Harry PY", type: "Accompagnement", description: "Elle assiste la naissance de Harry PY et mesure la nécessité de cette première réponse du Vrax." },
       { target: "Protecteurs du Vrax", type: "Protection indirecte", description: "Les protecteurs existent aussi pour defendre ce qu'elle incarne dans l'equilibre du Vrax." },
-      { target: "Wingard", type: "Apaisement", description: "Sa simple presence ralentit et restructure le chaos qui accompagne la naissance de Wingard." },
+      { target: "Wingard", type: "Apaisement", description: "Sa simple présence ralentit et restructure le chaos qui accompagne la naissance de Wingard." },
       { target: "Papillons", type: "Essence vitale", description: "Ossah Lyla explique que les papillons portent une energie indispensable a l'equilibre de Pandorus et ressent leur extinction comme une blessure directe du monde." }
     ]
   },
@@ -986,9 +986,9 @@ const relationNodes = [
     role: "Conscience nocturne du Vrax",
     links: [
       { target: "Ossah Lyla", type: "Prolongement", description: "Elle n'est pas l'inverse d'Ossah Lyla, mais son prolongement nocturne et analytique." },
-      { target: "Harry PY", type: "Lucidité immédiate", description: "Nastaz comprend des la premiere naissance que le Vrax repond a une alteration reelle et durable." },
+      { target: "Harry PY", type: "Lucidité immédiate", description: "Nastaz comprend des la première naissance que le Vrax repond a une alteration reelle et durable." },
       { target: "Protecteurs du Vrax", type: "Compréhension", description: "Elle identifie la logique commune des naissances et la preparation qu'elles representent." },
-      { target: "Déséquilibre du vivant", type: "Analyse", description: "La nuit, Nastaz mesure froidement ce que le jour revele deja: un monde qui s'altere et doit apprendre a se defendre." },
+      { target: "Déséquilibre du vivant", type: "Analyse", description: "La nuit, Nastaz mesure froidement ce que le jour révèle déjà: un monde qui s'altere et doit apprendre a se defendre." },
       { target: "Franklin", type: "Vigilance", description: "Nastaz reconnait que l'eveil du lien de Franklin avec le Vrax peut devenir aussi dangereux que precieux s'il n'est pas compris." }
     ]
   }
@@ -1034,30 +1034,30 @@ const additionalCharacterFiches = [
       { label: "Lien majeur", value: "Noyau des protecteurs du Vrax" }
     ],
     biography: [
-      "Harry PY apparait il y a neuf ans, lorsque le Vrax detecte une variation anormale dans son equilibre. Sa naissance n'est pas presentee comme un hasard, mais comme une reponse precise du monde a une necessite plus ancienne et plus grave.",
+      "Harry PY apparait il y a neuf ans, lorsque le Vrax detecte une variation anormale dans son equilibre. Sa naissance n'est pas presentee comme un hasard, mais comme une réponse precise du monde a une nécessité plus ancienne et plus grave.",
       "En grandissant, Harry PY ne decouvre pas le Vrax comme un enfant ordinaire: il s'y accorde. Il ressent les flux, les absences et les alterations, et devient peu a peu celui qui lit ce que les autres ne font encore qu'encaisser.",
-      "Il apparait comme le centre discret du groupe du Vrax. Gardien Isma, Wingard et Lévy s'organisent autour de lui, et sa simple presence donne une structure a leurs roles respectifs.",
-      "Lorsque l'alteration gagne encore du terrain, Harry PY n'est plus seulement un lecteur du coeur du Vrax: il est deja envoye plus au sud, vers une zone de decomposition du vivant, pour comprendre ce qui s'y passe avant les autres."
+      "Il apparait comme le centre discret du groupe du Vrax. Gardien Isma, Wingard et Lévy s'organisent autour de lui, et sa simple présence donne une structure a leurs roles respectifs.",
+      "Lorsque l'alteration gagne encore du terrain, Harry PY n'est plus seulement un lecteur du coeur du Vrax: il est déjà envoye plus au sud, vers une zone de decomposition du vivant, pour comprendre ce qui s'y passe avant les autres."
     ],
     summary: [
-      "Harry PY incarne l'intelligence sensible du Vrax. Il ne domine pas les autres par la force, mais par la lecture du monde et la capacite a percevoir les failles avant qu'elles ne deviennent des ruptures.",
-      "Il devient une figure essentielle du nouvel equilibre du Vrax et de la reponse du monde face au retour du desequilibre."
+      "Harry PY incarne l'intelligence sensible du Vrax. Il ne domine pas les autres par la force, mais par la lecture du monde et la capacité a percevoir les failles avant qu'elles ne deviennent des ruptures.",
+      "Il devient une figure essentielle du nouvel equilibre du Vrax et de la réponse du monde face au retour du déséquilibre."
     ],
     profile: [
-      { title: "Caractere", text: "Observe, concentre et deja grave, meme dans un corps d'enfant." },
+      { title: "Caractere", text: "Observe, concentre et déjà grave, meme dans un corps d'enfant." },
       { title: "Forces", text: "Percoit les flux, les absences et les variations du vivant avec une precision unique." },
       { title: "Faiblesses", text: "Porte de plus en plus directement la fatigue d'un monde qu'il tente de comprendre et de contenir." }
     ],
     relations: [
       { title: "Gardien Isma", text: "Gardien se place instinctivement entre Harry PY et le danger, comme si sa fonction etait nee avec lui." },
-      { title: "Wingard", text: "Wingard desequilibre souvent l'espace, mais Harry demeure le centre vers lequel son chaos revient." },
+      { title: "Wingard", text: "Wingard déséquilibre souvent l'espace, mais Harry demeure le centre vers lequel son chaos revient." },
       { title: "Lévy", text: "Lévy complete ce que Harry ne peut plus lire seul, notamment face aux zones de vide du Vrax." }
     ],
     timeline: [
-      { era: "Il y a 9 ans", title: "Naissance de Harry PY", summary: "Le Vrax cree Harry PY comme premiere reponse consciente a une variation anormale et a une urgence encore invisible." },
-      { era: "Il y a 6 a 3 ans", title: "Centre du groupe protecteur", summary: "Les naissances suivantes s'organisent autour de lui et le Vrax commence a fonctionner en generation de reponse." },
+      { era: "Il y a 9 ans", title: "Naissance de Harry PY", summary: "Le Vrax cree Harry PY comme première réponse consciente a une variation anormale et a une urgence encore invisible." },
+      { era: "Il y a 6 a 3 ans", title: "Centre du groupe protecteur", summary: "Les naissances suivantes s'organisent autour de lui et le Vrax commence a fonctionner en generation de réponse." },
       { era: "Jour 5", title: "Perception du groupe de Shaushana", summary: "Harry PY fait partie des protecteurs qui reagissent a l'intrusion du groupe dans le Vrax." },
-      { era: "Jour 6", title: "Veille au sud", summary: "Les creatrices revelent qu'Harry PY observe deja une autre zone touchee par l'alteration, vers le fleuve Sylvae et la mer du Sphinx pandorien." }
+      { era: "Jour 6", title: "Veille au sud", summary: "Les creatrices révèlent qu'Harry PY observe déjà une autre zone touchee par l'alteration, vers le fleuve Sylvae et la mer du Sphinx pandorien." }
     ]
   },
   {
@@ -1073,9 +1073,9 @@ const additionalCharacterFiches = [
       { label: "Lien majeur", value: "Bouclier instinctif de Harry PY" }
     ],
     biography: [
-      "Gardien Isma apparait six ans avant le present du recit, lorsque le Vrax comprend qu'une simple perception ne suffira plus a faire face a ce qui approche.",
+      "Gardien Isma apparait six ans avant le present du récit, lorsque le Vrax comprend qu'une simple perception ne suffira plus a faire face a ce qui approche.",
       "Sa naissance est plus dense, plus brutale, plus immediatement physique que celle de Harry PY. Il apprend le monde par l'appui, l'impact et la resistance, jusqu'a ce que la terre elle-meme reponde avec lui.",
-      "Il devient la ligne de defense evidente du groupe. C'est lui qui saisit Franklin au moment de l'attaque, non par cruaute gratuite, mais comme execution d'une reponse precise du Vrax."
+      "Il devient la ligne de defense evidente du groupe. C'est lui qui saisit Franklin au moment de l'attaque, non par cruaute gratuite, mais comme execution d'une réponse precise du Vrax."
     ],
     summary: [
       "Gardien Isma est la force de maintien du Vrax. Il ne lit pas le monde comme Harry et ne le module pas comme Lévy: il le tient.",
@@ -1092,7 +1092,7 @@ const additionalCharacterFiches = [
       { title: "Franklin", text: "Franklin devient sa cible lors de l'interception, parce qu'il semble porter quelque chose de particulier." }
     ],
     timeline: [
-      { era: "Il y a 6 ans", title: "Naissance de Gardien Isma", summary: "Le Vrax cree Gardien Isma comme reponse plus dense et plus physique au desequilibre grandissant." },
+      { era: "Il y a 6 ans", title: "Naissance de Gardien Isma", summary: "Le Vrax cree Gardien Isma comme réponse plus dense et plus physique au déséquilibre grandissant." },
       { era: "Il y a 6 a 3 ans", title: "Mise en place du role de protecteur", summary: "Il devient le point fixe et l'appui principal du groupe ne autour de Harry PY." },
       { era: "Jour 5", title: "Capture de Franklin", summary: "Gardien Isma traverse le chaos et saisit Franklin au moment le plus critique de l'interception." }
     ]
@@ -1103,7 +1103,7 @@ const additionalCharacterFiches = [
     name: "Wingard",
     image: buildMediaPath("pandorus", "Wingard.png"),
     category: "Protecteur du Vrax",
-    intro: "Troisieme reponse du Vrax, Wingard introduit le mouvement, le vent et l'instabilite necessaire dans un monde qui ne peut plus seulement se maintenir par la force.",
+    intro: "Troisieme réponse du Vrax, Wingard introduit le mouvement, le vent et l'instabilite necessaire dans un monde qui ne peut plus seulement se maintenir par la force.",
     meta: [
       { label: "Statut", value: "Protecteur du Vrax" },
       { label: "Specialite", value: "Vent, vitesse, perturbation" },
@@ -1111,8 +1111,8 @@ const additionalCharacterFiches = [
     ],
     biography: [
       "Wingard nait il y a quatre ans, au moment ou le Vrax ne repond plus seulement par la structure, mais doit integrer un principe de mouvement capable de s'ajuster vite a l'instabilite.",
-      "Sa naissance est la plus chaotique des premieres creations: le vent le deborde lui-meme, les branches cedent, les appuis glissent, et son existence semble d'abord etre une perturbation vivante avant de devenir une fonction.",
-      "Dans le present du recit, Wingard reste le plus imprevisible du groupe, mais sa vitesse et sa maitrise grandissante du vent en font un acteur cle de la neutralisation de Shan, Shaushana et Franklin."
+      "Sa naissance est la plus chaotique des premières creations: le vent le deborde lui-meme, les branches cedent, les appuis glissent, et son existence semble d'abord être une perturbation vivante avant de devenir une fonction.",
+      "Dans le present du récit, Wingard reste le plus imprevisible du groupe, mais sa vitesse et sa maîtrise grandissante du vent en font un acteur cle de la neutralisation de Shan, Shaushana et Franklin."
     ],
     summary: [
       "Wingard est le protecteur du mouvement et de la perturbation. Il n'arrete pas le monde: il le desaxe assez pour le rendre a nouveau saisissable.",
@@ -1120,7 +1120,7 @@ const additionalCharacterFiches = [
     ],
     profile: [
       { title: "Caractere", text: "Vif, instable, joueur en apparence, mais de plus en plus capable de se recentrer." },
-      { title: "Forces", text: "Controle du vent, vitesse d'action, capacite a casser les appuis et les trajectoires." },
+      { title: "Forces", text: "Controle du vent, vitesse d'action, capacité a casser les appuis et les trajectoires." },
       { title: "Faiblesses", text: "Reste le plus sujet au debordement et a la turbulence parmi les protecteurs." }
     ],
     relations: [
@@ -1131,7 +1131,7 @@ const additionalCharacterFiches = [
     timeline: [
       { era: "Il y a 4 ans", title: "Naissance de Wingard", summary: "Le Vrax cree Wingard quand une simple tenue de ligne ne suffit plus a repondre a l'instabilite croissante." },
       { era: "Il y a 4 a 3 ans", title: "Apprentissage du chaos", summary: "Son energie devient progressivement moins destructrice et plus dirigee." },
-      { era: "Jour 5", title: "Encerclement du groupe", summary: "Wingard ferme l'espace, casse les appuis et empeche toute reponse immediate a la prise de Franklin." }
+      { era: "Jour 5", title: "Encerclement du groupe", summary: "Wingard ferme l'espace, casse les appuis et empeche toute réponse immediate a la prise de Franklin." }
     ]
   },
   {
@@ -1149,25 +1149,25 @@ const additionalCharacterFiches = [
     biography: [
       "Lévy nait il y a trois ans, lorsque le Vrax rencontre une absence brutale dans ses flux, quelque chose que ni la force de Gardien, ni la lecture de Harry, ni le chaos de Wingard ne peuvent resoudre seuls.",
       "Plus fin, plus discret, Lévy n'impose pas. Il ajuste. Il dialogue avec la matiere, deplace, reequilibre, corrige ce qui cede, meme si la cicatrice du monde ne disparait jamais totalement.",
-      "Il joue un role determinant pendant l'interception du groupe. Il fixe le sol, ralentit les appuis et sent en Franklin quelque chose de different avant de laisser la necessite l'emporter.",
-      "Apres l'intervention d'Ossah Lyla et de Nastaz, c'est pourtant lui que les creatrices choisissent pour quitter le coeur du Vrax et accompagner Shaushana, Shan et Franklin vers le sud, preuve qu'il n'est pas seulement une defense du territoire mais deja un passeur."
+      "Il joue un role determinant pendant l'interception du groupe. Il fixe le sol, ralentit les appuis et sent en Franklin quelque chose de different avant de laisser la nécessité l'emporter.",
+      "Apres l'intervention d'Ossah Lyla et de Nastaz, c'est pourtant lui que les creatrices choisissent pour quitter le coeur du Vrax et accompagner Shaushana, Shan et Franklin vers le sud, preuve qu'il n'est pas seulement une defense du territoire mais déjà un passeur."
     ],
     summary: [
       "Lévy est le protecteur du lien et de la reparation partielle. Il intervient la ou le monde n'est plus seulement agresse, mais rompu.",
-      "Sa presence fait entrer le recit dans une logique plus fine: celle d'un Vrax qui ne reagit plus seulement par la force, mais aussi par l'ajustement."
+      "Sa présence fait entrer le récit dans une logique plus fine: celle d'un Vrax qui ne reagit plus seulement par la force, mais aussi par l'ajustement."
     ],
     profile: [
       { title: "Caractere", text: "Silencieux, precis, presque absorbe par ce qu'il percoit sous la surface visible." },
       { title: "Forces", text: "Sent les absences, reajuste la matiere et impose des limites invisibles mais efficaces." },
-      { title: "Faiblesses", text: "Affronte le desequilibre le plus abstrait et en porte une charge mentale plus difficile a partager." }
+      { title: "Faiblesses", text: "Affronte le déséquilibre le plus abstrait et en porte une charge mentale plus difficile a partager." }
     ],
     relations: [
       { title: "Harry PY", text: "Lévy complete ce que Harry ne peut plus lire seul lorsque les flux cessent simplement de repondre." },
       { title: "Gardien Isma", text: "Lévy ne retient pas par la force; il prepare le terrain pour que Gardien puisse tenir." },
-      { title: "Franklin", text: "Il ressent chez Franklin une singularite avant meme que le groupe du Vrax n'agisse totalement." }
+      { title: "Franklin", text: "Il ressent chez Franklin une singularité avant meme que le groupe du Vrax n'agisse totalement." }
     ],
     timeline: [
-      { era: "Il y a 3 ans", title: "Naissance de Lévy", summary: "Le Vrax cree Lévy face a une absence dans ses flux, une fracture que les autres reponses ne peuvent absorber seules." },
+      { era: "Il y a 3 ans", title: "Naissance de Lévy", summary: "Le Vrax cree Lévy face a une absence dans ses flux, une fracture que les autres réponses ne peuvent absorber seules." },
       { era: "Il y a 3 ans", title: "Formation du groupe complet", summary: "Avec Lévy, la generation des protecteurs du Vrax atteint une forme d'equilibre fonctionnel." },
       { era: "Jour 5", title: "Fixation du terrain", summary: "Lévy perturbe les appuis du groupe de Shaushana et participe directement a la prise de Franklin." },
       { era: "Jour 6", title: "Depart avec le groupe", summary: "Au matin, Lévy quitte le coeur du Vrax pour accompagner le groupe vers la nouvelle zone de rupture du vivant." }
@@ -1187,28 +1187,28 @@ const additionalCharacterFiches = [
     ],
     biography: [
       "Ossah Lyla apparait comme l'une des consciences les plus fines du Vrax. Le jour, elle ressent les variations du monde avant qu'elles ne deviennent visibles et accompagne le vivant dans son rythme profond.",
-      "Elle ne commande pas par la contrainte. Sa presence revele, intensifie et apaise. C'est sous son regard que l'equilibre du Vrax est d'abord mesure, puis que les premieres inquietudes deviennent assez fortes pour appeler une reponse.",
+      "Elle ne commande pas par la contrainte. Sa présence révèle, intensifie et apaise. C'est sous son regard que l'equilibre du Vrax est d'abord mesure, puis que les premières inquietudes deviennent assez fortes pour appeler une réponse.",
       "Au fil des naissances de Harry PY, Gardien Isma, Wingard et Lévy, Ossah Lyla apparait comme une figure de veille et de douceur, mais traversee par une inquietude de plus en plus concrete.",
-      "Lorsque Shaushana, Shan et Franklin atteignent enfin le coeur du Vrax, elle se revele aussi comme l'une des deux creatrices du lieu, liee a la vegetation du jour et a l'essence des papillons dont depend une part de l'equilibre de Pandorus."
+      "Lorsque Shaushana, Shan et Franklin atteignent enfin le coeur du Vrax, elle se révèle aussi comme l'une des deux creatrices du lieu, liee a la vegetation du jour et a l'essence des papillons dont depend une part de l'equilibre de Pandorus."
     ],
     summary: [
       "Ossah Lyla represente le versant lumineux, accompagne et presque sacre du Vrax. Elle est moins une combattante qu'une lectrice profonde du vivant.",
-      "Son importance grandit encore a mesure que l'on comprend que les protecteurs naissent aussi pour proteger les creatrices du Vrax, et que l'extinction des papillons touche directement ce qu'elle maintient."
+      "Son importance grandit encore a mesure que l'on comprend que les protecteurs naissent aussi pour protèger les creatrices du Vrax, et que l'extinction des papillons touche directement ce qu'elle maintient."
     ],
     profile: [
       { title: "Caractere", text: "Douce, attentive, profonde et infiniment sensible aux variations du vivant." },
-      { title: "Forces", text: "Percoit les dissonances avant qu'elles ne se materialisent et apaise partiellement les desequilibres." },
+      { title: "Forces", text: "Percoit les dissonances avant qu'elles ne se materialisent et apaise partiellement les déséquilibres." },
       { title: "Faiblesses", text: "Ne repond pas par la force brute a ce qui demande une defense immediate." }
     ],
     relations: [
       { title: "Nastaz", text: "Nastaz n'est pas son contraire, mais son prolongement nocturne, plus tranchant et analytique." },
-      { title: "Protecteurs du Vrax", text: "Les enfants-creations du Vrax existent aussi pour proteger ce qu'Ossah Lyla incarne dans l'equilibre du monde." },
-      { title: "Wingard", text: "Sa seule presence parvient a ralentir et restructurer le chaos declenche par Wingard a sa naissance." }
+      { title: "Protecteurs du Vrax", text: "Les enfants-creations du Vrax existent aussi pour protèger ce qu'Ossah Lyla incarne dans l'equilibre du monde." },
+      { title: "Wingard", text: "Sa seule présence parvient a ralentir et restructurer le chaos declenche par Wingard a sa naissance." }
     ],
     timeline: [
-      { era: "Avant le recit", title: "Veille diurne du Vrax", summary: "Ossah Lyla lit le Vrax au jour et detecte les premieres dissonances qui menacent son equilibre." },
+      { era: "Avant le récit", title: "Veille diurne du Vrax", summary: "Ossah Lyla lit le Vrax au jour et detecte les premières dissonances qui menacent son equilibre." },
       { era: "Il y a 9 a 3 ans", title: "Temoin des naissances", summary: "Elle accompagne la formation progressive de la generation des protecteurs du Vrax." },
-      { era: "Jour 5", title: "Intervention des creatrices", summary: "Ossah Lyla interrompt l'escalade entre le groupe et les protecteurs, puis revele la logique profonde du Vrax." },
+      { era: "Jour 5", title: "Intervention des creatrices", summary: "Ossah Lyla interrompt l'escalade entre le groupe et les protecteurs, puis révèle la logique profonde du Vrax." },
       { era: "Jour 5", title: "Révélation des papillons", summary: "Elle montre le cimetière silencieux des papillons et explique que leur essence est indispensable a l'equilibre du monde." }
     ]
   },
@@ -1222,17 +1222,17 @@ const additionalCharacterFiches = [
     meta: [
       { label: "Statut", value: "Figure nocturne du Vrax" },
       { label: "Specialite", value: "Analyse, decision, lecture froide de l'alteration" },
-      { label: "Lien majeur", value: "Comprend la necessite de creer les protecteurs" }
+      { label: "Lien majeur", value: "Comprend la nécessité de creer les protecteurs" }
     ],
     biography: [
-      "Nastaz apparait comme le versant nocturne du meme principe que celui d'Ossah Lyla. La ou l'une accompagne, Nastaz tranche, verifie, decide et accepte plus vite la necessite d'une reponse.",
-      "C'est elle qui constate l'alteration du Vrax avec le plus de froideur et qui comprend que les naissances successives ne sont pas des miracles isoles, mais des adaptations imposees par un desequilibre reel.",
-      "Sa presence lie le Vrax a une idee plus vaste: le monde ne subit pas passivement, il observe, calcule et repond.",
+      "Nastaz apparait comme le versant nocturne du meme principe que celui d'Ossah Lyla. La ou l'une accompagne, Nastaz tranche, verifie, decide et accepte plus vite la nécessité d'une réponse.",
+      "C'est elle qui constate l'alteration du Vrax avec le plus de froideur et qui comprend que les naissances successives ne sont pas des miracles isoles, mais des adaptations imposees par un déséquilibre reel.",
+      "Sa présence lie le Vrax a une idee plus vaste: le monde ne subit pas passivement, il observe, calcule et repond.",
       "Lorsque le groupe atteint le coeur du Vrax, Nastaz apparait comme l'autre creatrice du lieu, associee a la vegetation de nuit, a la lucidite froide et a la decision de faire sortir la quete hors du territoire."
     ],
     summary: [
       "Nastaz incarne la conscience analytique et nocturne du Vrax. Elle voit au-dela de l'emotion immediate et reconnait plus vite que les autres la logique de preparation du monde.",
-      "Avec elle, la reponse du Vrax prend une intelligence plus froide et plus strategique."
+      "Avec elle, la réponse du Vrax prend une intelligence plus froide et plus strategique."
     ],
     profile: [
       { title: "Caractere", text: "Froide en apparence, precise, jamais distraite par l'hesitation." },
@@ -1241,13 +1241,13 @@ const additionalCharacterFiches = [
     ],
     relations: [
       { title: "Ossah Lyla", text: "Elle prolonge Ossah Lyla dans une version plus dure, plus nette et plus orientee vers l'action." },
-      { title: "Harry PY", text: "Elle comprend tres tot qu'Harry n'est pas un enfant ordinaire, mais une reponse consciente du Vrax." },
+      { title: "Harry PY", text: "Elle comprend très tot qu'Harry n'est pas un enfant ordinaire, mais une réponse consciente du Vrax." },
       { title: "Generation des protecteurs", text: "Nastaz saisit avant tous les autres que ces naissances constituent une preparation, et non une suite d'accidents." }
     ],
     timeline: [
-      { era: "Avant le recit", title: "Veille nocturne du Vrax", summary: "La nuit, Nastaz analyse le vivant et mesure l'ampleur exacte des alterations a venir." },
-      { era: "Il y a 9 a 3 ans", title: "Comprehension des naissances", summary: "Elle identifie chaque nouvelle creation comme une reponse complementaire du Vrax face au desequilibre." },
-      { era: "Jour 5", title: "Intervention nocturne", summary: "Nastaz se revele aux cotes d'Ossah Lyla et impose une lecture plus froide, plus nette et plus strategique de la crise." },
+      { era: "Avant le récit", title: "Veille nocturne du Vrax", summary: "La nuit, Nastaz analyse le vivant et mesure l'ampleur exacte des alterations a venir." },
+      { era: "Il y a 9 a 3 ans", title: "Comprehension des naissances", summary: "Elle identifie chaque nouvelle creation comme une réponse complementaire du Vrax face au déséquilibre." },
+      { era: "Jour 5", title: "Intervention nocturne", summary: "Nastaz se révèle aux cotes d'Ossah Lyla et impose une lecture plus froide, plus nette et plus strategique de la crise." },
       { era: "Jour 6", title: "Orientation de la quête", summary: "Elle confirme que la suite ne se trouve plus dans le seul Vrax et oriente le groupe vers la zone alteree du sud." }
     ]
   },
@@ -1259,7 +1259,7 @@ const additionalCharacterFiches = [
     category: "Présence sauvage",
     intro: "Eben n'apparait pas comme une simple creature de chasse, mais comme une souverainete animale devant laquelle la violence ordinaire perd tout son sens.",
     meta: [
-      { label: "Statut", value: "Figure sauvage majeure du recit" },
+      { label: "Statut", value: "Figure sauvage majeure du récit" },
       { label: "Specialite", value: "Presence, domination, puissance animale" },
       { label: "Lien majeur", value: "Traumatisme fondateur de Shan" }
     ],
@@ -1270,12 +1270,12 @@ const additionalCharacterFiches = [
     ],
     summary: [
       "Eben est la creature autour de laquelle s'organise le drame originel de Shan. Il condense la violence du monde sans se reduire a un simple monstre.",
-      "Sa presence donne au recit une verite importante: sur Pandorus, certaines forces ne sont pas faites pour etre attaquees comme on attaque une proie."
+      "Sa présence donne au récit une verite importante: sur Pandorus, certaines forces ne sont pas faites pour être attaquees comme on attaque une proie."
     ],
     profile: [
       { title: "Caractere", text: "Immobile en apparence, souverain, presque impassible dans sa propre puissance." },
       { title: "Forces", text: "Domination naturelle, resistance ecrasante et aura de predation qui casse les reflexes ordinaires." },
-      { title: "Faiblesses", text: "Reste une presence lointaine du recit, plus fondatrice qu'encore pleinement exploree." }
+      { title: "Faiblesses", text: "Reste une présence lointaine du récit, plus fondatrice qu'encore pleinement exploree." }
     ],
     relations: [
       { title: "Shan", text: "Eben est au coeur du traumatisme qui forge la violence, la discipline et la solitude de Shan." },
@@ -1283,9 +1283,9 @@ const additionalCharacterFiches = [
       { title: "Monde sauvage", text: "Eben incarne une loi du vivant plus ancienne et plus haute que le simple rapport de chasse." }
     ],
     timeline: [
-      { era: "Avant le recit", title: "Nom devenu obsession", summary: "Chez les parents de Shan, Eben cesse d'etre une rumeur pour devenir une cible absolue." },
-      { era: "Avant le recit", title: "Confrontation fatale", summary: "La rencontre avec Eben se solde par la mort des parents de Shan et par la fin brutale de son enfance." },
-      { era: "Au fil du recit", title: "Memoire toujours vive", summary: "Le souvenir d'Eben continue de structurer la lecture que Shan fait du danger, de la force et du monde." }
+      { era: "Avant le récit", title: "Nom devenu obsession", summary: "Chez les parents de Shan, Eben cesse d'etre une rumeur pour devenir une cible absolue." },
+      { era: "Avant le récit", title: "Confrontation fatale", summary: "La rencontre avec Eben se solde par la mort des parents de Shan et par la fin brutale de son enfance." },
+      { era: "Au fil du récit", title: "Memoire toujours vive", summary: "Le souvenir d'Eben continue de structurer la lecture que Shan fait du danger, de la force et du monde." }
     ]
   },
   {
@@ -1301,18 +1301,18 @@ const additionalCharacterFiches = [
       { label: "Lien majeur", value: "Premier guide associe a la quete des causes" }
     ],
     biography: [
-      "Avant meme que le groupe principal ne prenne la route du Vrax, le Capitaine comprend que ce qui atteint le Passar ne ressemble pas a une simple crise locale. Il lie le sort du fleuve a quelque chose de plus profond qui traverse deja le vivant.",
+      "Avant meme que le groupe principal ne prenne la route du Vrax, le Capitaine comprend que ce qui atteint le Passar ne ressemble pas a une simple crise locale. Il lie le sort du fleuve a quelque chose de plus profond qui traverse déjà le vivant.",
       "Avec Franklin, il part jusqu'au Veyrine pour comparer, verifier et chercher une origine a cette alteration. Cette expedition fait de lui l'un des premiers personnages a sortir du cadre immediat de la survie pour entrer dans une logique d'enquete du monde.",
-      "Au cours du voyage, le Capitaine percoit brusquement une presence invisible, ordonne a Franklin de rentrer, puis disparait seul. Son absence laisse derriere elle une inquietude durable et donne a la quete du groupe une profondeur plus ancienne."
+      "Au cours du voyage, le Capitaine percoit brusquement une présence invisible, ordonne a Franklin de rentrer, puis disparait seul. Son absence laisse derriere elle une inquietude durable et donne a la quete du groupe une profondeur plus ancienne."
     ],
     summary: [
-      "Le Capitaine represente la premiere tentative consciente de comprendre le desequilibre du vivant plutot que d'en subir seulement les effets.",
+      "Le Capitaine represente la première tentative consciente de comprendre le déséquilibre du vivant plutot que d'en subir seulement les effets.",
       "Sa disparition transforme son role en point de bascule discret: il ouvre la voie a la quete sans pouvoir l'accompagner jusqu'au bout."
     ],
     profile: [
       { title: "Caractere", text: "Calme, concret, responsable, avec une lecture serieuse des signes faibles du terrain." },
-      { title: "Forces", text: "Experience du fleuve, sang-froid, capacite a prendre une decision rapide face a l'invisible." },
-      { title: "Faiblesses", text: "Reste une figure partiellement absente du recit, connue surtout par ce qu'il a amorce puis laisse derriere lui." }
+      { title: "Forces", text: "Experience du fleuve, sang-froid, capacité a prendre une decision rapide face a l'invisible." },
+      { title: "Faiblesses", text: "Reste une figure partiellement absente du récit, connue surtout par ce qu'il a amorce puis laisse derriere lui." }
     ],
     relations: [
       { title: "Franklin", text: "Franklin garde de lui l'image d'un guide qui a vu avant les autres qu'il fallait chercher plus loin." },
@@ -1320,9 +1320,9 @@ const additionalCharacterFiches = [
       { title: "Veyrine", text: "Le voyage vers le Veyrine marque sa derniere grande initiative connue avant sa disparition." }
     ],
     timeline: [
-      { era: "Avant le recit", title: "Lecture du desequilibre", summary: "Le Capitaine comprend que l'etat du Passar traduit une alteration plus vaste du vivant." },
-      { era: "Avant le recit", title: "Expedition vers le Veyrine", summary: "Avec Franklin, il part comparer les fleuves pour trouver une logique a la crise qui gagne le monde." },
-      { era: "Avant le recit", title: "Disparition", summary: "Apres avoir percu une presence invisible, il renvoie Franklin au Passar et disparait seul, laissant une question ouverte." }
+      { era: "Avant le récit", title: "Lecture du déséquilibre", summary: "Le Capitaine comprend que l'etat du Passar traduit une alteration plus vaste du vivant." },
+      { era: "Avant le récit", title: "Expedition vers le Veyrine", summary: "Avec Franklin, il part comparer les fleuves pour trouver une logique a la crise qui gagne le monde." },
+      { era: "Avant le récit", title: "Disparition", summary: "Apres avoir percu une présence invisible, il renvoie Franklin au Passar et disparait seul, laissant une question ouverte." }
     ]
   }
 ];
@@ -1354,17 +1354,17 @@ const creatureFiches = [
     habitat: "Zones humides et berges sauvages",
     summary: "Creature a l'allure reptilienne, rattachee a la faune dangereuse des marges de Pandorus.",
     biography: [
-      "Croconha n'a pas encore de scene detaillee aussi forte que le Felou ou le Felours. Sa presence dans le bestiaire montre cependant que Pandorus abrite une faune de predateurs varies, adaptes a des milieux plus rudes et plus humides.",
+      "Croconha n'a pas encore de scene detaillee aussi forte que le Felou ou le Felours. Sa présence dans le bestiaire montre cependant que Pandorus abrite une faune de predateurs varies, adaptes a des milieux plus rudes et plus humides.",
       "Par son apparence et par la logique du monde raconte, Croconha s'inscrit dans un ecosysteme ou les creatures ne sont jamais de simples monstres. Elles prolongent plutot la diversite du vivant, avec une part de puissance, de territoire et de danger."
     ],
     profile: [
       { title: "Nature", text: "Predateur massif, probablement lie aux bords d'eau, aux marais ou aux terrains glissants." },
-      { title: "Niveau de menace", text: "Moyen a eleve selon l'etat du milieu et le desequilibre du vivant." },
-      { title: "Dans le recit", text: "Pas encore au centre d'une scene, mais coherent avec la faune sauvage evoquee par les voyages." }
+      { title: "Niveau de menace", text: "Moyen a eleve selon l'etat du milieu et le déséquilibre du vivant." },
+      { title: "Dans le récit", text: "Pas encore au centre d'une scene, mais coherent avec la faune sauvage evoquee par les voyages." }
     ],
     timeline: [
       { era: "Bestiaire", title: "Presence dans la faune de Pandorus", summary: "Croconha participe a l'idee d'un monde riche en creatures specialisees et territoriales." },
-      { era: "Lecture du monde", title: "Menace potentielle", summary: "Sa simple presence renforce l'impression que chaque zone de Pandorus peut cacher sa propre forme de danger vivant." }
+      { era: "Lecture du monde", title: "Menace potentielle", summary: "Sa simple présence renforce l'impression que chaque zone de Pandorus peut cacher sa propre forme de danger vivant." }
     ]
   },
   {
@@ -1372,22 +1372,22 @@ const creatureFiches = [
     name: "Felou",
     image: buildMediaPath("creatures", "Félou.png"),
     family: "Predateur terrestre",
-    status: "Creature clairement presente dans le recit",
+    status: "Creature clairement presente dans le récit",
     habitat: "Zones de passage, abords sauvages, territoires de chasse",
-    summary: "Predateur rapide et agressif, le Felou est l'une des premieres creatures a faire basculer le recit dans le danger concret.",
+    summary: "Predateur rapide et agressif, le Felou est l'une des premières creatures a faire basculer le récit dans le danger concret.",
     biography: [
-      "Le Felou marque l'une des premieres grandes confrontations du recit. C'est en sauvant Franklin d'un Felou que Shaushana revele sa force et entre vraiment dans le monde de Pandorus. La creature devient donc un seuil narratif: avant elle, il y a l'eveil; apres elle, il y a le danger, le lien et la route.",
-      "Plus tard, les Felous reapparaissent lors de l'attaque du Passar. Leur agressivite ne semble plus relever d'un simple instinct de predation, mais d'un desequilibre plus large du vivant. A ce moment-la, ils deviennent le signe concret qu'une corruption touche le monde."
+      "Le Felou marque l'une des premières grandes confrontations du récit. C'est en sauvant Franklin d'un Felou que Shaushana révèle sa force et entre vraiment dans le monde de Pandorus. La creature devient donc un seuil narratif: avant elle, il y a l'eveil; apres elle, il y a le danger, le lien et la route.",
+      "Plus tard, les Felous reapparaissent lors de l'attaque du Passar. Leur agressivite ne semble plus relever d'un simple instinct de predation, mais d'un déséquilibre plus large du vivant. A ce moment-la, ils deviennent le signe concret qu'une corruption touche le monde."
     ],
     profile: [
-      { title: "Nature", text: "Chasseur nerveux, rapide et direct, capable de frapper tres vite." },
-      { title: "Niveau de menace", text: "Eleve pour les voyageurs isoles et tres eleve lorsqu'il agit dans un contexte de corruption du vivant." },
+      { title: "Nature", text: "Chasseur nerveux, rapide et direct, capable de frapper très vite." },
+      { title: "Niveau de menace", text: "Eleve pour les voyageurs isoles et très eleve lorsqu'il agit dans un contexte de corruption du vivant." },
       { title: "Role narratif", text: "Premiere menace majeure affrontee par Shaushana et indice central du dereglement du monde." }
     ],
     timeline: [
       { era: "Jour 1", title: "Attaque de Franklin", summary: "Un Felou menace Franklin, et Shaushana intervient pour le sauver." },
       { era: "Jour 2", title: "Assaut du Passar", summary: "Les Felous participent a l'attaque coordonnee contre le bidonville, preuve que la faune devient anormalement agressive." },
-      { era: "Lecture d'ensemble", title: "Premier signal du desequilibre", summary: "Le Felou apparait comme l'une des premieres manifestations visibles d'un mal plus profond que le Vrax tente deja de contenir autrement." }
+      { era: "Lecture d'ensemble", title: "Premier signal du déséquilibre", summary: "Le Felou apparait comme l'une des premières manifestations visibles d'un mal plus profond que le Vrax tente déjà de contenir autrement." }
     ]
   },
   {
@@ -1395,11 +1395,11 @@ const creatureFiches = [
     name: "Felours",
     image: buildMediaPath("creatures", "Felours.png"),
     family: "Brute predatrice",
-    status: "Creature clairement presente dans le recit",
+    status: "Creature clairement presente dans le récit",
     habitat: "Terrains sauvages et zones de confrontation",
     summary: "Creature plus lourde et plus brutale que le Felou, le Felours incarne la force de percussion du bestiaire hostile.",
     biography: [
-      "Le Felours apparait comme l'une des formes les plus dangereuses de l'attaque contre le Passar. Sa presence donne a l'assaut une dimension beaucoup plus lourde: on ne parle plus seulement de chasse ou de peur, mais d'une force capable de briser un fragile refuge humain.",
+      "Le Felours apparait comme l'une des formes les plus dangereuses de l'attaque contre le Passar. Sa présence donne a l'assaut une dimension beaucoup plus lourde: on ne parle plus seulement de chasse ou de peur, mais d'une force capable de briser un fragile refuge humain.",
       "Le Felours accentue ainsi l'idee que certaines creatures de Pandorus deviennent plus violentes, plus coordonnees et plus destructrices qu'elles ne devraient l'etre. Il participe directement au sentiment d'urgence qui pousse le groupe a se mettre en route."
     ],
     profile: [
@@ -1410,7 +1410,7 @@ const creatureFiches = [
     timeline: [
       { era: "Jour 2", title: "Attaque du bidonville", summary: "Le Felours fait partie des creatures qui frappent le Passar avec une violence anormale." },
       { era: "Jour 2", title: "Declencheur du depart", summary: "Son intervention contribue a convaincre le groupe que le mal touche des creatures de plus en plus redoutables." },
-      { era: "Lecture d'ensemble", title: "Violence en amont du Vrax", summary: "Ces attaques precedaient deja la reaction organisee du Vrax et faisaient partie d'un desequilibre plus large du vivant." }
+      { era: "Lecture d'ensemble", title: "Violence en amont du Vrax", summary: "Ces attaques precedaient déjà la reaction organisee du Vrax et faisaient partie d'un déséquilibre plus large du vivant." }
     ]
   },
   {
@@ -1418,12 +1418,12 @@ const creatureFiches = [
     name: "Gueplynx",
     image: buildMediaPath("creatures", "Gueplynx.png"),
     family: "Predateur coordonné du Vrax",
-    status: "Creature clairement presente dans le recit",
+    status: "Creature clairement presente dans le récit",
     habitat: "Profondeurs du Vrax, zones de traque et de defense",
     summary: "Predateur collectif du Vrax, le Guéplynx n'attaque pas dans la confusion mais dans une logique de meute precise, presque tactique.",
     biography: [
       "Les Guéplynx apparaissent lorsque Shan et Shaushana progressent plus profondement dans le Vrax pour retrouver Franklin. Leur attaque change tout de suite la nature du danger: il ne s'agit plus d'une agression animale brute, mais d'une meute capable de lire, d'encadrer et d'exploiter les erreurs de rythme.",
-      "Leur maniere d'agir montre que le Vrax ne contient pas seulement des gardiens humanoides ou des forces abstraites. Il dispose aussi d'une faune de defense adaptee a ses zones les plus sensibles, capable de tester et d'affaiblir ceux qui y penetrent trop violemment."
+      "Leur manière d'agir montre que le Vrax ne contient pas seulement des gardiens humanoides ou des forces abstraites. Il dispose aussi d'une faune de defense adaptee a ses zones les plus sensibles, capable de tester et d'affaiblir ceux qui y penetrent trop violemment."
     ],
     profile: [
       { title: "Nature", text: "Predateur de meute, rapide, ancre et plus intelligent tactiquement qu'une simple bete de chasse." },
@@ -1442,15 +1442,15 @@ const creatureFiches = [
     family: "Creature lumineuse",
     status: "Espece visible dans le bestiaire",
     habitat: "Zones calmes, espaces nocturnes ou milieux sensibles a la lumiere",
-    summary: "Creature associee a une presence lumineuse et plus paisible du vivant, encore peu detaillee dans les chapitres.",
+    summary: "Creature associee a une présence lumineuse et plus paisible du vivant, encore peu detaillee dans les chapitres.",
     biography: [
       "Luminael n'a pas encore de grande scene dediee. Son existence dans le bestiaire s'accorde toutefois avec l'autre versant de Pandorus: un monde traverse non seulement par le danger, mais aussi par des formes de vie plus fines, plus lumineuses et plus fragiles.",
-      "Dans l'economie generale du recit, Luminael peut etre compris comme l'un des signes que le vivant de Pandorus ne se resume pas a la predation. Le monde est aussi fait de grace, d'eclat et d'equilibres discrets."
+      "Dans l'economie generale du récit, Luminael peut être compris comme l'un des signes que le vivant de Pandorus ne se resume pas a la predation. Le monde est aussi fait de grace, d'eclat et d'equilibres discrets."
     ],
     profile: [
       { title: "Nature", text: "Creature probablement liee a la lumiere, a l'orientation ou a des zones de calme." },
-      { title: "Niveau de menace", text: "Faible a inconnu a ce stade du recit." },
-      { title: "Dans le recit", text: "Pas encore detaillee, mais elle enrichit la dimension poetique et vivante du bestiaire." }
+      { title: "Niveau de menace", text: "Faible a inconnu a ce stade du récit." },
+      { title: "Dans le récit", text: "Pas encore detaillee, mais elle enrichit la dimension poetique et vivante du bestiaire." }
     ],
     timeline: [
       { era: "Bestiaire", title: "Presence visuelle", summary: "Luminael participe a la variete sensible du monde de Pandorus." },
@@ -1467,16 +1467,16 @@ const creatureFiches = [
     summary: "Creature evoquant les milieux d'eau et de lumiere, en accord avec les traverses sensibles du monde de Pandorus.",
     biography: [
       "Lumineau n'est pas encore au coeur d'une scene precise. Son nom et sa place dans le bestiaire font cependant echo aux passages ou l'eau, les reflets, les fleuves et la vie sensible des milieux traverses occupent une place importante.",
-      "Dans le cadre du recit, Lumineau prolonge l'idee que Pandorus est un monde d'ecosystemes specialises. Certaines creatures y semblent liees moins a la guerre qu'au rythme naturel des elements."
+      "Dans le cadre du récit, Lumineau prolonge l'idee que Pandorus est un monde d'ecosystemes specialises. Certaines creatures y semblent liees moins a la guerre qu'au rythme naturel des elements."
     ],
     profile: [
       { title: "Nature", text: "Creature probablement liee a l'eau, a la fluidite et a des zones de transition." },
-      { title: "Niveau de menace", text: "Inconnu a ce stade du recit." },
-      { title: "Dans le recit", text: "Elle enrichit le bestiaire des zones humides sans etre encore detaillee par une rencontre directe." }
+      { title: "Niveau de menace", text: "Inconnu a ce stade du récit." },
+      { title: "Dans le récit", text: "Elle enrichit le bestiaire des zones humides sans être encore detaillee par une rencontre directe." }
     ],
     timeline: [
       { era: "Bestiaire", title: "Creature de milieu", summary: "Lumineau renforce la coherence des espaces aquatiques de Pandorus." },
-      { era: "Lecture du monde", title: "Vie specialisee", summary: "Sa presence rappelle que chaque region du monde semble produire ses propres formes de vie." }
+      { era: "Lecture du monde", title: "Vie specialisee", summary: "Sa présence rappelle que chaque region du monde semble produire ses propres formes de vie." }
     ]
   },
   {
@@ -1486,19 +1486,19 @@ const creatureFiches = [
     family: "Creature hostile",
     status: "Espece visible dans le bestiaire",
     habitat: "Zones troubles, marges du vivant, regions potentiellement corrompues",
-    summary: "Creature au profil plus inquietant, coherent avec les formes du vivant qui paraissent deja touches par une ombre ou un desequilibre.",
+    summary: "Creature au profil plus inquietant, coherent avec les formes du vivant qui paraissent déjà touches par une ombre ou un déséquilibre.",
     biography: [
       "Nignoble n'est pas encore decrit longuement, mais il s'insere naturellement dans la part la plus sombre du bestiaire. Son existence accompagne bien la tonalite des passages ou la corruption du vivant devient de plus en plus lisible.",
-      "A ce stade, Nignoble fonctionne surtout comme une promesse d'hostilite a venir: la preuve que Pandorus ne contient pas seulement des predateurs naturels, mais aussi des creatures dont l'apparence meme semble deja marquer un glissement vers quelque chose de plus noir."
+      "A ce stade, Nignoble fonctionne surtout comme une promesse d'hostilite a venir: la preuve que Pandorus ne contient pas seulement des predateurs naturels, mais aussi des creatures dont l'apparence meme semble déjà marquer un glissement vers quelque chose de plus noir."
     ],
     profile: [
       { title: "Nature", text: "Creature a l'allure inquietante, possiblement liee a des zones degradees ou hostiles." },
       { title: "Niveau de menace", text: "Potentiellement eleve, mais pas encore mesure par une scene directe." },
-      { title: "Dans le recit", text: "Figure anticipatrice des formes de vie que le dereglement pourrait rendre plus dangereuses." }
+      { title: "Dans le récit", text: "Figure anticipatrice des formes de vie que le dereglement pourrait rendre plus dangereuses." }
     ],
     timeline: [
       { era: "Bestiaire", title: "Presence latente", summary: "Nignoble elargit le versant le plus sombre de la faune de Pandorus." },
-      { era: "Lecture du monde", title: "Signe d'un vivant trouble", summary: "Sa place visuelle rejoint les themes de corruption et de bascule developpes dans le recit." }
+      { era: "Lecture du monde", title: "Signe d'un vivant trouble", summary: "Sa place visuelle rejoint les themes de corruption et de bascule developpes dans le récit." }
     ]
   },
   {
@@ -1510,17 +1510,17 @@ const creatureFiches = [
     habitat: "Landes, plaines ou zones de course",
     summary: "Creature plus vive et plus elegante, qui rappelle que le bestiaire de Pandorus ne se limite pas aux formes de violence les plus lourdes.",
     biography: [
-      "Renastar n'a pas encore de rencontre marquante. Son profil enrichit toutefois l'idee d'un monde ou les creatures peuvent etre rapides, fuyantes, presque nobles, et non seulement brutales.",
+      "Renastar n'a pas encore de rencontre marquante. Son profil enrichit toutefois l'idee d'un monde ou les creatures peuvent être rapides, fuyantes, presque nobles, et non seulement brutales.",
       "Renastar participe a la respiration du bestiaire. Il ouvre la possibilite d'une faune faite aussi de mouvement, d'instinct et de beauté sauvage dans les espaces traverses par les heros."
     ],
     profile: [
       { title: "Nature", text: "Creature vraisemblablement rapide, mobile et adaptee aux grands espaces." },
       { title: "Niveau de menace", text: "Inconnu a ce stade, probablement variable selon le contexte." },
-      { title: "Dans le recit", text: "Pas encore detaille, mais utile pour montrer la diversite du vivant pandorien." }
+      { title: "Dans le récit", text: "Pas encore detaille, mais utile pour montrer la diversite du vivant pandorien." }
     ],
     timeline: [
       { era: "Bestiaire", title: "Figure de la faune libre", summary: "Renastar prolonge l'image d'un monde ou chaque terrain accueille sa propre creature." },
-      { era: "Lecture du monde", title: "Diversite du vivant", summary: "Sa presence nuance l'idee d'un bestiaire uniquement hostile." }
+      { era: "Lecture du monde", title: "Diversite du vivant", summary: "Sa présence nuance l'idee d'un bestiaire uniquement hostile." }
     ]
   },
   {
@@ -1533,12 +1533,12 @@ const creatureFiches = [
     summary: "Creature reptilienne qui renforce la dimension primitive et territoriale de certaines zones du monde.",
     biography: [
       "Reptidile n'a pas encore de scene developpee. Il complete toutefois la lecture de Pandorus comme un monde d'anciennes lignes de force, ou certaines creatures semblent issues d'une couche plus archaïque du vivant.",
-      "Par sa seule presence, Reptidile suggere une faune capable de survivre dans des espaces plus rudes, plus secs ou plus mineraux, loin des refuges humains et des passages plus hospitaliers."
+      "Par sa seule présence, Reptidile suggere une faune capable de survivre dans des espaces plus rudes, plus secs ou plus mineraux, loin des refuges humains et des passages plus hospitaliers."
     ],
     profile: [
       { title: "Nature", text: "Creature reptilienne, probablement territoriale et resistante." },
       { title: "Niveau de menace", text: "Moyen a eleve selon l'intrusion et le terrain." },
-      { title: "Dans le recit", text: "Pas encore detaillee directement, mais tres coherente avec les marges sauvages du monde." }
+      { title: "Dans le récit", text: "Pas encore detaillee directement, mais très coherente avec les marges sauvages du monde." }
     ],
     timeline: [
       { era: "Bestiaire", title: "Faune ancienne", summary: "Reptidile ajoute au bestiaire une ligne plus primitive et plus ancree dans la survie." },
@@ -1554,13 +1554,13 @@ const creatureFiches = [
     habitat: "Sols epais, territoires creuses ou zones de defense",
     summary: "Creature a l'allure carapacee, symbole d'une faune capable de defense, d'endurance et de resistance.",
     biography: [
-      "Scarabeast n'est pas encore nomme dans une scene forte. Son image s'accorde cependant tres bien avec l'univers de Pandorus, ou la vie semble souvent se proteger, se blinder ou se transformer pour survivre a des milieux parfois hostiles.",
+      "Scarabeast n'est pas encore nomme dans une scene forte. Son image s'accorde cependant très bien avec l'univers de Pandorus, ou la vie semble souvent se protèger, se blinder ou se transformer pour survivre a des milieux parfois hostiles.",
       "Cette creature rappelle que la menace du monde ne passe pas seulement par la vitesse ou la morsure, mais aussi par des formes de resistance lourde, d'approche lente et d'endurance."
     ],
     profile: [
       { title: "Nature", text: "Creature cuirassee, probablement lente mais difficile a neutraliser." },
       { title: "Niveau de menace", text: "Moyen a eleve selon la taille et le terrain." },
-      { title: "Dans le recit", text: "Pas encore detaillee en scene, mais tres lisible dans la logique du bestiaire pandorien." }
+      { title: "Dans le récit", text: "Pas encore detaillee en scene, mais très lisible dans la logique du bestiaire pandorien." }
     ],
     timeline: [
       { era: "Bestiaire", title: "Figure de defense", summary: "Scarabeast enrichit le bestiaire par une logique de carapace et de resistance." },
@@ -1576,13 +1576,13 @@ const creatureFiches = [
     habitat: "Zones forestieres, broussailleuses ou proches de l'eau",
     summary: "Creature hybride dont le nom meme evoque un melange de souplesse et de puissance, typique du vivant de Pandorus.",
     biography: [
-      "Serpours n'a pas encore de moment central. Il illustre cependant tres bien l'imaginaire biologique de Pandorus: un monde ou les creatures semblent parfois hybrides, surprenantes et issues d'equilibres propres a ce monde.",
+      "Serpours n'a pas encore de moment central. Il illustre cependant très bien l'imaginaire biologique de Pandorus: un monde ou les creatures semblent parfois hybrides, surprenantes et issues d'equilibres propres a ce monde.",
       "Son profil suggere une creature a la fois souple, territoriale et capable de puissance, ce qui convient bien aux espaces sauvages et imprévisibles traverses par les heros."
     ],
     profile: [
       { title: "Nature", text: "Creature hybride, possiblement a la fois rampante, puissante et defensive." },
       { title: "Niveau de menace", text: "Potentiellement eleve si elle defend un territoire." },
-      { title: "Dans le recit", text: "Pas encore detaillee, mais tres representative de la singularite du bestiaire pandorien." }
+      { title: "Dans le récit", text: "Pas encore detaillee, mais très representative de la singularité du bestiaire pandorien." }
     ],
     timeline: [
       { era: "Bestiaire", title: "Hybridation du vivant", summary: "Serpours montre que les creatures de Pandorus peuvent brouiller les frontieres habituelles entre formes animales." },
@@ -1594,22 +1594,22 @@ const creatureFiches = [
     name: "Verdeflor",
     image: buildMediaPath("creatures", "Verdeflor.png"),
     family: "Creature vegetale",
-    status: "Creature clairement presente dans le recit",
+    status: "Creature clairement presente dans le récit",
     habitat: "Zones vegetales, lisières, milieux ou le vivant est dense",
-    summary: "Forme de vie vegetale rendue hostile par le desequilibre du monde, Verdeflor montre que meme la croissance peut devenir une menace.",
+    summary: "Forme de vie vegetale rendue hostile par le déséquilibre du monde, Verdeflor montre que meme la croissance peut devenir une menace.",
     biography: [
-      "Verdeflor intervient lors de l'attaque contre le Passar, aux cotes des Felous et du Felours. Sa presence est importante car elle elargit la crise du vivant: ce ne sont pas seulement des predateurs qui se dereglent, mais aussi des formes liees a la vegetation elle-meme.",
+      "Verdeflor intervient lors de l'attaque contre le Passar, aux cotes des Felous et du Felours. Sa présence est importante car elle elargit la crise du vivant: ce ne sont pas seulement des predateurs qui se dereglent, mais aussi des formes liees a la vegetation elle-meme.",
       "Avec Verdeflor, on comprend que la corruption touche des couches differentes de la vie pandorienne. La menace n'est plus seulement animale; elle atteint aussi ce qui pousse, s'etend et devrait normalement participer a l'equilibre du monde."
     ],
     profile: [
       { title: "Nature", text: "Creature vegetale offensive, liee a la propagation, a l'emprise ou a l'envahissement." },
-      { title: "Niveau de menace", text: "Eleve lorsqu'elle agit dans un espace habite ou deja fragilise." },
+      { title: "Niveau de menace", text: "Eleve lorsqu'elle agit dans un espace habite ou déjà fragilise." },
       { title: "Role narratif", text: "Preuve que le dereglement du vivant touche aussi les formes de vie vegetales." }
     ],
     timeline: [
       { era: "Jour 2", title: "Assaut du Passar", summary: "Verdeflor participe a l'attaque coordonnee contre le bidonville." },
       { era: "Jour 2", title: "Signe d'une corruption plus profonde", summary: "Son apparition montre que le mal agit au-dela des seuls predateurs et atteint la trame meme du vivant." },
-      { era: "Lecture d'ensemble", title: "Le vivant se deregle avant la reponse du Vrax", summary: "Verdeflor se lit comme un symptome de corruption touchant les couches les plus profondes du monde." }
+      { era: "Lecture d'ensemble", title: "Le vivant se deregle avant la réponse du Vrax", summary: "Verdeflor se lit comme un symptome de corruption touchant les couches les plus profondes du monde." }
     ]
   }
 ];
@@ -1641,7 +1641,7 @@ const chapters = [
   },
   {
     path: "./media/chapitres/Chapitre%202%20-%20Premier%20Regard.pdf",
-    summary: "Shaushana decouvre le monde, sauve Franklin d'un Felou et laisse pour la premiere fois une trace concrete dans cet univers vivant.",
+    summary: "Shaushana decouvre le monde, sauve Franklin d'un Felou et laisse pour la première fois une trace concrete dans cet univers vivant.",
     accessKey: "ChapPando2"
   },
   {
@@ -1651,12 +1651,12 @@ const chapters = [
   },
   {
     path: "./media/chapitres/Chapitre%204%20-%20Shan.pdf",
-    summary: "Le passe de Shan se revele, de son enfance rude a sa survie solitaire, jusqu'a sa rencontre decisive avec Shaushana.",
+    summary: "Le passe de Shan se révèle, de son enfance rude a sa survie solitaire, jusqu'a sa rencontre decisive avec Shaushana.",
     accessKey: "ChapPando4"
   },
   {
     path: "./media/chapitres/Chapitre%205%20-%20Franklin.pdf",
-    summary: "Au bidonville, Franklin montre son monde, ses liens et les premiers signes clairs du desequilibre qui frappe le vivant autour du Passar.",
+    summary: "Au bidonville, Franklin montre son monde, ses liens et les premiers signes clairs du déséquilibre qui frappe le vivant autour du Passar.",
     accessKey: "ChapPando5"
   },
   {
@@ -1666,7 +1666,7 @@ const chapters = [
   },
   {
     path: "./media/chapitres/Chapitre%207%20-%20Elrick.pdf",
-    summary: "Elrick accueille le groupe, partage la memoire d'une ancienne guerre et les prepare a poursuivre leur route vers le Vrax.",
+    summary: "Elrick accueille le groupe, partage la mémoire d'une ancienne guerre et les prepare a poursuivre leur route vers le Vrax.",
     accessKey: "ChapPando7"
   },
   {
@@ -1676,7 +1676,7 @@ const chapters = [
   },
   {
     path: "./media/chapitres/Chapitre%209%20-%20Les%20Gamins%20du%20Vrax.pdf",
-    summary: "Le chapitre revele la naissance et le role des jeunes protecteurs du Vrax, jusqu'a leur interception du groupe et a la capture brutale de Franklin.",
+    summary: "Le chapitre révèle la naissance et le role des jeunes protecteurs du Vrax, jusqu'a leur interception du groupe et a la capture brutale de Franklin.",
     accessKey: "ChapPando9"
   },
   {
@@ -1686,7 +1686,7 @@ const chapters = [
   },
   {
     path: "./media/chapitres/Chapitre%2011%20-%20Les%20Cr%C3%A9atrice.pdf",
-    summary: "Les creatrices revelent l'origine des Gamins du Vrax, le role vital des papillons, l'alteration du monde et orientent le groupe vers une nouvelle piste au sud avec Lévy.",
+    summary: "Les creatrices révèlent l'origine des Gamins du Vrax, le role vital des papillons, l'alteration du monde et orientent le groupe vers une nouvelle piste au sud avec Lévy.",
     accessKey: "ChapPando11"
   }
 ];
@@ -1710,37 +1710,37 @@ const timelineEvents = [
   {
     era: "Ancien temps",
     title: "Victoire inachevee et apparition des etoiles",
-    summary: "Le mal est brise sans etre totalement detruit, les frontieres sont effacees et un monde reunifie emerge sous un ciel marque par les etoiles."
+    summary: "Le mal est brise sans être totalement detruit, les frontieres sont effacees et un monde reunifie emerge sous un ciel marque par les etoiles."
   },
   {
-    era: "Avant le recit",
+    era: "Avant le récit",
     title: "Enfance de Shan",
     summary: "Shan grandit dans un apprentissage brutal de la survie et du combat, forme par ses parents chasseurs."
   },
   {
-    era: "Avant le recit",
+    era: "Avant le récit",
     title: "Mort des parents de Shan face a Eben",
     summary: "L'affrontement contre Eben brise l'equilibre de l'enfance de Shan et l'entraine vers une vie solitaire."
   },
   {
-    era: "Avant le recit",
+    era: "Avant le récit",
     title: "Retrait d'Elrick pres de sa cabane",
-    summary: "Ancien combattant de la grande guerre, Elrick choisit une vie simple au contact du vivant, tout en percevant les signes d'un nouveau desequilibre."
+    summary: "Ancien combattant de la grande guerre, Elrick choisit une vie simple au contact du vivant, tout en percevant les signes d'un nouveau déséquilibre."
   },
   {
-    era: "Avant le recit",
+    era: "Avant le récit",
     title: "Expedition du Capitaine vers le Veyrine",
-    summary: "Le Capitaine et Franklin quittent le Passar pour comparer les fleuves et verifier si le desequilibre du vivant depasse leur territoire."
+    summary: "Le Capitaine et Franklin quittent le Passar pour comparer les fleuves et verifier si le déséquilibre du vivant depasse leur territoire."
   },
   {
-    era: "Avant le recit",
+    era: "Avant le récit",
     title: "Disparition du Capitaine",
-    summary: "Apres avoir percu une presence invisible durant l'expedition, le Capitaine renvoie Franklin et disparait seul, laissant une inquietude sans reponse."
+    summary: "Apres avoir percu une présence invisible durant l'expedition, le Capitaine renvoie Franklin et disparait seul, laissant une inquietude sans réponse."
   },
   {
     era: "Il y a 9 ans",
     title: "Naissance de Harry PY",
-    summary: "Le Vrax cree Harry PY comme premiere reponse consciente a une variation anormale et a une urgence encore invisible."
+    summary: "Le Vrax cree Harry PY comme première réponse consciente a une variation anormale et a une urgence encore invisible."
   },
   {
     era: "Il y a 6 ans",
@@ -1760,17 +1760,17 @@ const timelineEvents = [
   {
     era: "Il y a 3 ans",
     title: "Formation des protecteurs du Vrax",
-    summary: "Harry PY, Gardien Isma, Wingard et Lévy deviennent une generation de reponse du Vrax chargee de proteger son equilibre et ses gardiennes."
+    summary: "Harry PY, Gardien Isma, Wingard et Lévy deviennent une generation de réponse du Vrax chargee de protèger son equilibre et ses gardiennes."
   },
   {
     era: "Jour 1",
     title: "Reveil de Shaushana dans Le Passage",
-    summary: "Shaushana ouvre les yeux dans un monde deja vivant et ressent immediatement le souffle profond qui le traverse."
+    summary: "Shaushana ouvre les yeux dans un monde déjà vivant et ressent immediatement le souffle profond qui le traverse."
   },
   {
     era: "Jour 1",
     title: "Attaque du Felou et rencontre avec Franklin",
-    summary: "Shaushana sauve Franklin d'un Felou, decouvre ses propres capacites et accepte de le suivre vers le bidonville du Passar."
+    summary: "Shaushana sauve Franklin d'un Felou, decouvre ses propres capacités et accepte de le suivre vers le bidonville du Passar."
   },
   {
     era: "Jour 1",
@@ -1789,13 +1789,13 @@ const timelineEvents = [
   },
   {
     era: "Jour 1",
-    title: "Constat du desequilibre du vivant",
+    title: "Constat du déséquilibre du vivant",
     summary: "Le groupe observe des animaux agressifs, des plantes affaiblies et des signes croissants d'une corruption du vivant."
   },
   {
     era: "Jour 1",
     title: "Affrontement entre Shan et Shaushana",
-    summary: "Shan provoque Shaushana, leur combat revele leur puissance respective et scelle un nouveau lien entre eux."
+    summary: "Shan provoque Shaushana, leur combat révèle leur puissance respective et scelle un nouveau lien entre eux."
   },
   {
     era: "Jour 2",
@@ -1810,12 +1810,12 @@ const timelineEvents = [
   {
     era: "Jour 3",
     title: "Rencontre avec Elrick",
-    summary: "Le groupe trouve refuge chez Elrick, qui revele l'existence de l'ancienne guerre et le retour possible d'un peril enfoui."
+    summary: "Le groupe trouve refuge chez Elrick, qui révèle l'existence de l'ancienne guerre et le retour possible d'un peril enfoui."
   },
   {
     era: "Jour 4",
     title: "Depart de chez Elrick",
-    summary: "Mieux prepares et lourdement marques par les revelations d'Elrick, les voyageurs reprennent leur route vers le Bassaï puis le Vrax."
+    summary: "Mieux prepares et lourdement marques par les révélations d'Elrick, les voyageurs reprennent leur route vers le Bassaï puis le Vrax."
   },
   {
     era: "Jour 4",
@@ -1825,17 +1825,17 @@ const timelineEvents = [
   {
     era: "Jour 5",
     title: "Entree dans le Vrax",
-    summary: "Le territoire du Vrax se revele comme un espace vivant, dense et attentif, ou les regles habituelles cessent de suffire."
+    summary: "Le territoire du Vrax se révèle comme un espace vivant, dense et attentif, ou les regles habituelles cessent de suffire."
   },
   {
     era: "Jour 5",
     title: "Veille d'Ossah Lyla et de Nastaz",
-    summary: "Ossah Lyla le jour puis Nastaz la nuit mesurent l'alteration du Vrax et donnent une profondeur plus consciente a la reponse du territoire."
+    summary: "Ossah Lyla le jour puis Nastaz la nuit mesurent l'alteration du Vrax et donnent une profondeur plus consciente a la réponse du territoire."
   },
   {
     era: "Jour 5",
     title: "Les protecteurs du Vrax sentent l'intrusion",
-    summary: "Pendant leur propre affrontement, Lévy, Gardien Isma et Wingard percoivent l'arrivee du groupe de Shaushana comme une nouvelle variable dans un equilibre deja fragile."
+    summary: "Pendant leur propre affrontement, Lévy, Gardien Isma et Wingard percoivent l'arrivee du groupe de Shaushana comme une nouvelle variable dans un equilibre déjà fragile."
   },
   {
     era: "Jour 5",
@@ -1870,12 +1870,12 @@ const timelineEvents = [
   {
     era: "Jour 6",
     title: "Nouvelle direction vers le sud",
-    summary: "Les creatrices orientent le groupe vers le fleuve Sylvae et la pointe de la mer du Sphinx pandorien, ou Harry PY observe deja une zone de decomposition du vivant."
+    summary: "Les creatrices orientent le groupe vers le fleuve Sylvae et la pointe de la mer du Sphinx pandorien, ou Harry PY observe déjà une zone de decomposition du vivant."
   },
   {
     era: "Jour 6",
     title: "Départ avec Lévy",
-    summary: "Au matin, Lévy quitte le coeur du Vrax pour accompagner Shaushana, Shan et Franklin vers cette nouvelle etape du recit."
+    summary: "Au matin, Lévy quitte le coeur du Vrax pour accompagner Shaushana, Shan et Franklin vers cette nouvelle etape du récit."
   }
 ];
 
@@ -1940,7 +1940,7 @@ function renderAdditionalCharacterFiches() {
     panel.className = "fiche-panel";
     panel.setAttribute("role", "tabpanel");
     panel.hidden = true;
-    const contextLinks = buildContextLinksMarkup(additionalFicheContextMap[fiche.slug], "Parcours lies");
+    const contextLinks = buildContextLinksMarkup(additionalFicheContextMap[fiche.slug], "Parcours liés");
     panel.innerHTML = `
       <section class="section">
         <div id="${fiche.hash.replace("#", "")}" class="fiche-grid">
@@ -1965,7 +1965,7 @@ function renderAdditionalCharacterFiches() {
       </section>
       <section class="section">
         <div class="section-heading">
-          <h3>Resume</h3>
+          <h3>Résumé</h3>
         </div>
         ${summary}
       </section>
@@ -1988,7 +1988,7 @@ function renderAdditionalCharacterFiches() {
       ${contextLinks}
       <section class="section">
         <div class="section-heading">
-          <h3>Evolution dans l'histoire</h3>
+          <h3>Évolution dans l'histoire</h3>
         </div>
         <div class="timeline-list">
           ${timeline}
@@ -2012,7 +2012,7 @@ function injectStaticFicheContexts() {
 
     if (!relationsSection) return;
 
-    relationsSection.insertAdjacentHTML("afterend", buildContextLinksMarkup(links, "Parcours lies"));
+    relationsSection.insertAdjacentHTML("afterend", buildContextLinksMarkup(links, "Parcours liés"));
   });
 }
 
@@ -2031,7 +2031,7 @@ function renderLocationFiches() {
   });
 
   if (!filteredLocations.length) {
-    panelsContainer.innerHTML = `<div class="empty-state">Aucun lieu ne correspond a cette recherche.</div>`;
+    panelsContainer.innerHTML = `<div class="empty-state">Aucun lieu ne correspond à cette recherche.</div>`;
     return;
   }
 
@@ -2089,7 +2089,7 @@ function renderLocationFiches() {
       </section>
       <section class="section">
         <div class="section-heading">
-          <h3>Ambiance et memoire</h3>
+          <h3>Ambiance et mémoire</h3>
         </div>
         ${biography}
       </section>
@@ -2379,7 +2379,7 @@ function renderTimeline() {
       {
         label: "Jalons",
         value: String(timelineEvents.length),
-        note: "Moments qui structurent le monde et le recit."
+        note: "Moments qui structurent le monde et le récit."
       },
       {
         label: "Temps traverses",
@@ -2413,7 +2413,7 @@ function renderTimeline() {
     const combined = `${event.title} ${event.summary}`.toLowerCase();
 
     let tone = "awakening";
-    let badge = "Eveil";
+    let badge = "Éveil";
 
     if (combined.includes("guerre") || combined.includes("affrontement") || combined.includes("attaque")) {
       tone = "conflict";
@@ -2615,10 +2615,10 @@ function renderChapters() {
     openLink.href = chapter.path;
     openLink.addEventListener("click", (event) => {
       event.preventDefault();
-      const answer = window.prompt(`Cle d'acces pour ${decodeChapterName(chapter.path)} :`);
+      const answer = window.prompt(`Clé d'accès pour ${decodeChapterName(chapter.path)} :`);
       if (answer === null) return;
       if (answer.trim() !== chapter.accessKey) {
-        window.alert("Cle incorrecte.");
+        window.alert("Clé incorrecte.");
         return;
       }
       openChapterInViewer(chapter.path);
@@ -2676,7 +2676,7 @@ function renderMaps() {
   lockBox.hidden = pinnedMapInfoIndex === null;
   lockText.textContent = pinnedMapInfoIndex === null
     ? ""
-    : `Fiche verrouillee sur ${infoFileName} pendant que le carrousel continue.`;
+    : `Fiche verrouillée sur ${infoFileName} pendant que le carrousel continue.`;
 
   const isConstellationsMap = infoFileName === "Constellations";
   constellationPanel.hidden = !isConstellationsMap;
@@ -2973,7 +2973,7 @@ function renderRelations() {
       </div>
       <div class="context-links compact relation-context-links">
         ${characterRouteMap[slugifyValue(nodeData.name)] ? `<a class="button tiny secondary context-link" href="${characterRouteMap[slugifyValue(nodeData.name)]}">Ouvrir la fiche</a>` : ""}
-        <a class="button tiny secondary context-link" href="${inferLocationFromName(nodeData.name)}">Voir le lieu lie</a>
+        <a class="button tiny secondary context-link" href="${inferLocationFromName(nodeData.name)}">Voir le lieu lié</a>
         <a class="button tiny secondary context-link" href="#chronologie">Lire la chronologie</a>
       </div>
       <div class="relation-links">
@@ -3357,5 +3357,6 @@ initCreatureAlphabetFilter();
 initRelationFilters();
 showSectionFromHash();
 window.addEventListener("load", runIntroAnimation);
+
 
 
