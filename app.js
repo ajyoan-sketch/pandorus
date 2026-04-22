@@ -2320,17 +2320,17 @@ const chapters = [
     accessKey: "ChapPando11"
   },
   {
-    path: "./media/chapitres/Chapitre%2012%20-%20Un%20voyage%20particulier.txt",
+    path: "./media/chapitres/Chapitre%2012%20-%20Un%20voyage%20particulier.pdf",
     summary: "Le groupe quitte le Vrax, découvre une zone vidée de sa cohérence, des papillons morts, un Renastar touché dans sa création même, puis atteint un village des Renards déjà frappé au sud.",
     accessKey: "ChapPando12"
   },
   {
-    path: "./media/chapitres/Chapitre%2013%20-%20Kuji.txt",
+    path: "./media/chapitres/Chapitre%2013%20-%20Kuji.pdf",
     summary: "Au village des Renards, Tsune, Hez et Javier croisent le groupe, l'assaut reprend, puis Kuji et Elennya se révèlent comme des volontés hostiles conscientes qui imposent la mort de Hez.",
     accessKey: "ChapPando13"
   },
   {
-    path: "./media/chapitres/Chapitre%2014%20-%20La%20communaut%C3%A9%20des%20Papillons.txt",
+    path: "./media/chapitres/Chapitre%2014%20-%20La%20communaut%C3%A9%20des%20Papillons.pdf",
     summary: "Le deuil de Hez et des renards fait naître la Communauté des Papillons, tandis qu'Harry PY retourne au Vrax et que Tsune ouvre la prochaine direction vers l'embouchure du Sombrail.",
     accessKey: "ChapPando14"
   }
@@ -3277,7 +3277,7 @@ function runIntroAnimation() {
 
 function decodeChapterName(path) {
   const fileName = path.split("/").pop() || "";
-  return decodeURIComponent(fileName).replace(/\.(odt|pdf)$/i, "");
+  return decodeURIComponent(fileName).replace(/\.(odt|pdf|txt)$/i, "");
 }
 
 function openChapterInViewer(path) {
