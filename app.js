@@ -179,6 +179,40 @@ const livingMapRegions = [
         text: "L'ensemble des foyers, fleuves, routes et mémoires de Pandorus."
       }
     ]
+  },
+  {
+    slug: "village-renards",
+    name: "Village des Renards",
+    kicker: "Village meurtri",
+    mood: "Deuil, veille, réponse naissante",
+    text: "Au sud du Vrax, le village des Renards apparaît comme le premier lieu où l'altération devient une violence organisée contre une communauté entière. Entre renards en veille, structures frappées et silence de deuil, il devient aussi le lieu de naissance d'une réponse collective nouvelle.",
+    paths: [
+      {
+        title: "Fonction",
+        text: "Transformer le récit en front communautaire face à une volonté hostile consciente."
+      },
+      {
+        title: "Présences liées",
+        text: "Tsune, Hez, Javier, Harry PY, Lévy, Kuji et Elennya."
+      }
+    ]
+  },
+  {
+    slug: "sombrail",
+    name: "Embouchure du Sombrail",
+    kicker: "Direction suivante",
+    mood: "Horizon, mémoire, réponses anciennes",
+    text: "L'embouchure du Sombrail se profile comme la prochaine grande étape. Entre fleuve et mer pandorienne, elle promet un lieu de survivants, de récits anciens et de reconnaissance possible de ce qui cherche maintenant à remplacer le vivant.",
+    paths: [
+      {
+        title: "Fonction",
+        text: "Ouvrir la prochaine strate du voyage vers des survivants d'une autre époque."
+      },
+      {
+        title: "Présences liées",
+        text: "Tsune, Shaushana, Shan, Franklin, Lévy et la taverne des survivants."
+      }
+    ]
   }
 ];
 
@@ -200,7 +234,12 @@ const characterRouteMap = {
   "games-wingard": "#fiches-wingard",
   levy: "#fiches-levy",
   "ossah-lyla": "#fiches-ossah-lyla",
-  nastaz: "#fiches-nastaz"
+  nastaz: "#fiches-nastaz",
+  tsune: "#fiches-tsune",
+  hez: "#fiches-hez",
+  javier: "#fiches-javier",
+  kuji: "#fiches-kuji",
+  elennya: "#fiches-elennya"
 };
 
 const characterPrimaryLocationMap = {
@@ -217,7 +256,12 @@ const characterPrimaryLocationMap = {
   wingard: "#lieux-vrax",
   levy: "#lieux-coeur-du-vrax",
   "ossah-lyla": "#lieux-coeur-du-vrax",
-  nastaz: "#lieux-coeur-du-vrax"
+  nastaz: "#lieux-coeur-du-vrax",
+  tsune: "#lieux-village-renards",
+  hez: "#lieux-village-renards",
+  javier: "#lieux-village-renards",
+  kuji: "#lieux-village-renards",
+  elennya: "#lieux-village-renards"
 };
 
 const staticFicheContextMap = {
@@ -293,6 +337,31 @@ const additionalFicheContextMap = {
     { href: "#relations", label: "Voir ses liens" },
     { href: "#mysteres", label: "Ouvrir le mystère" },
     { href: "#lieux-veyrine", label: "Lire le Veyrine" }
+  ],
+  tsune: [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#lieux-village-renards", label: "Lire le village des Renards" },
+    { href: "#chronologie", label: "Voir la Communauté des Papillons" }
+  ],
+  hez: [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#lieux-village-renards", label: "Lire le village des Renards" },
+    { href: "#chronologie", label: "Voir le basculement du sud" }
+  ],
+  javier: [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#lieux-village-renards", label: "Lire le village des Renards" },
+    { href: "#chronologie", label: "Voir la veille du village" }
+  ],
+  kuji: [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#mysteres", label: "Ouvrir les nouveaux mystères" },
+    { href: "#lieux-village-renards", label: "Lire le village frappé" }
+  ],
+  elennya: [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#mysteres", label: "Ouvrir les nouveaux mystères" },
+    { href: "#lieux-sombrail", label: "Voir la prochaine direction" }
   ]
 };
 
@@ -344,6 +413,14 @@ const creatureContextMap = {
   "verdeflor": [
     { href: "#lieux-passage", label: "Relire Le Passage" },
     { href: "#mysteres", label: "Voir les mystères" }
+  ],
+  "poiscaille": [
+    { href: "#lieux-village-des-renards", label: "Lire le village des Renards" },
+    { href: "#chronologie", label: "Voir l'assaut du village" }
+  ],
+  "chauve-souloup": [
+    { href: "#lieux-village-des-renards", label: "Lire le village des Renards" },
+    { href: "#chronologie", label: "Voir l'assaut du village" }
   ]
 };
 
@@ -617,6 +694,68 @@ const locationFiches = [
       { href: "#chronologie", label: "Lire la direction vers le sud" },
       { href: "#cartes", label: "Voir le monde" }
     ]
+  },
+  {
+    slug: "village-des-renards",
+    name: "Village des Renards",
+    tone: "memory",
+    category: "Communauté frappée",
+    intro: "Le village des Renards apparaît comme un lieu encore debout, mais déjà frappé dans sa matière, ses corps et ses silences. Il porte à la fois la trace d'une attaque organisée et la naissance d'une réponse collective.",
+    meta: [
+      { label: "Atmosphère", value: "Deuil, veille animale, mémoire vive" },
+      { label: "Fonction", value: "Front sud du récit" },
+      { label: "Présences", value: "Tsune, Hez, Javier, Harry PY, Lévy" }
+    ],
+    biography: [
+      "Après le cœur du Vrax, le groupe traverse une zone où les papillons se vident, où un Renastar meurt entre les mains de Shaushana et où l'altération ne touche plus seulement les flux, mais la création elle-même.",
+      "Le village des Renards apparaît ensuite comme une communauté déjà atteinte. Les renards vivants veillent leurs morts, les habitations tiennent encore sans être saines, et le silence y porte davantage de poids que la destruction visible.",
+      "C'est là que Tsune, Hez et Javier deviennent des figures majeures, que Kuji et Elennya se révèlent comme volontés hostiles, et que la Communauté des Papillons prend forme comme réponse partagée."
+    ],
+    summary: [
+      "Le village des Renards montre que le dérèglement du vivant s'est transformé en agression organisée contre des communautés entières.",
+      "Il devient aussi le lieu de naissance d'un nouveau front humain et vivant contre ce qui cherche à remplacer Pandorus."
+    ],
+    profile: [
+      { title: "Texture du lieu", text: "Bois blessé, deuil tenu, renards en veille et mémoire déjà rituelle." },
+      { title: "Rôle narratif", text: "Faire passer le récit d'un constat d'altération à une réponse collective née de la perte." },
+      { title: "Point de tension", text: "Ce qui frappe ici ne veut pas seulement tuer : cela veut imposer un autre ordre du vivant." }
+    ],
+    contextLinks: [
+      { href: "#fiches-tsune", label: "Voir Tsune" },
+      { href: "#fiches-kuji", label: "Voir Kuji" },
+      { href: "#chronologie", label: "Lire le basculement du village" }
+    ]
+  },
+  {
+    slug: "embouchure-du-sombrail",
+    name: "Embouchure du Sombrail",
+    tone: "threshold",
+    category: "Nouvelle direction",
+    intro: "L'embouchure du Sombrail n'est pas encore atteinte, mais elle entre déjà dans le récit comme un seuil de réponses anciennes, de survivants oubliés et de nouvelle étape stratégique.",
+    meta: [
+      { label: "Atmosphère", value: "Horizon, survivance, mémoire marine" },
+      { label: "Fonction", value: "Prochaine cible de la quête" },
+      { label: "Présences", value: "Taverne ancienne, survivants d'une autre guerre" }
+    ],
+    biography: [
+      "Tsune désigne l'embouchure du Sombrail comme un lieu tenu par deux figures que beaucoup croient disparues, des survivants d'une époque où le monde a déjà vacillé autrement.",
+      "Le lieu agit immédiatement comme une promesse de récit et de reconnaissance: ce n'est pas un simple détour, mais une orientation vers ceux qui pourraient savoir ce qui revient, pourquoi cela attaque, et comment y répondre sans rester fragmentés.",
+      "Avant même d'être vu, il redessine la carte mentale du groupe en projetant la quête au-delà du seul sud visible et vers une mémoire encore vivante."
+    ],
+    summary: [
+      "L'embouchure du Sombrail est la prochaine grande direction du groupe après la naissance de la Communauté des Papillons.",
+      "Elle promet des réponses plus anciennes encore, dans un lieu où fleuve, mer et survivance se croisent."
+    ],
+    profile: [
+      { title: "Texture du lieu", text: "Eaux mêlées, seuil maritime, rumeur de savoir ancien." },
+      { title: "Rôle narratif", text: "Projeter le récit vers une strate plus large de mémoire et de stratégie." },
+      { title: "Point de tension", text: "Ce qui attend au Sombrail pourrait reconnaître avant eux ce qui cherche à remplacer le monde." }
+    ],
+    contextLinks: [
+      { href: "#chronologie", label: "Voir la nouvelle destination" },
+      { href: "#mysteres", label: "Ouvrir les nouveaux mystères" },
+      { href: "#cartes", label: "Voir le monde" }
+    ]
   }
 ];
 
@@ -847,7 +986,9 @@ const relationNodes = [
       { target: "Gardien Isma", type: "Affrontement", description: "Dans le Vrax, Shaushana se heurte a une force d'interception qui agit comme un organe du territoire plus que comme un simple adversaire." },
       { target: "Wingard", type: "Desorientation", description: "Le vent de Wingard casse ses appuis et l'oblige a combattre sans la maîtrise instinctive qu'elle garde d'ordinaire." },
       { target: "Ossah Lyla", type: "Reconnaissance", description: "Au coeur du Vrax, Ossah Lyla lit chez Shaushana une présence déjà reliee aux papillons, au vivant et a une ancienne nécessité du monde." },
-      { target: "Nastaz", type: "Lecture lucide", description: "Nastaz ne la traite pas comme une simple intruse: elle voit en Shaushana une figure impliquee dans ce qui vient, et non un danger ordinaire." }
+      { target: "Nastaz", type: "Lecture lucide", description: "Nastaz ne la traite pas comme une simple intruse: elle voit en Shaushana une figure impliquee dans ce qui vient, et non un danger ordinaire." },
+      { target: "Tsune", type: "Alliance nouvelle", description: "Au village des renards, Tsune reconnait en Shaushana un point d'equilibre fiable et rejoint naturellement la direction qu'elle contribue a tenir." },
+      { target: "Kuji", type: "Opposition idéologique", description: "Face a Kuji, Shaushana perçoit une volonté qui ne veut pas seulement corrompre le vivant, mais le remplacer par un ordre controle." }
     ]
   },
   {
@@ -860,7 +1001,9 @@ const relationNodes = [
       { target: "Eben", type: "Traumatisme fondateur", description: "Eben est la creature liee a la mort de ses parents et a la fracture decisive de son enfance." },
       { target: "Wingard", type: "Contrepoint de combat", description: "Wingard le met en echec par la vitesse, la pression du vent et une lecture du terrain que Shan ne peut pas imposer." },
       { target: "Gardien Isma", type: "Force d'opposition", description: "Gardien Isma incarne face a lui une puissance plus stable, plus dense et presque impossible a deborder frontalement." },
-      { target: "Ossah Lyla", type: "Apaisement forcé", description: "L'intervention d'Ossah Lyla casse la logique du duel pur et oblige Shan a comprendre que tout ne peut pas se regler par la seule frappe." }
+      { target: "Ossah Lyla", type: "Apaisement forcé", description: "L'intervention d'Ossah Lyla casse la logique du duel pur et oblige Shan a comprendre que tout ne peut pas se regler par la seule frappe." },
+      { target: "Tsune", type: "Respect guerrier", description: "Shan reconnait chez Tsune une violence tenue, precise, nee de la protection d'un lieu deja frappe." },
+      { target: "Kuji", type: "Cible nouvelle", description: "La mort de Hez et la froideur de Kuji donnent a Shan une direction plus nette que la simple rage: il veut retrouver celui qui incarne cette volonté de remplacement." }
     ]
   },
   {
@@ -876,7 +1019,9 @@ const relationNodes = [
       { target: "Lévy", type: "Singularite percue", description: "Lévy sent en Franklin quelque chose de distinct, comme un lien que le Vrax reconnait avant de l'expliquer." },
       { target: "Gardien Isma", type: "Capture", description: "Gardien Isma devient celui qui le saisit au moment de l'interception dans le Vrax." },
       { target: "Ossah Lyla", type: "Révélation", description: "Ossah Lyla confirme que Franklin porte la trace d'une ancienne lignee du Vrax et qu'il n'est pas la par accident." },
-      { target: "Nastaz", type: "Mise en garde", description: "Nastaz comprend que son lien peut l'aider autant que le destabiliser si Franklin avance sans saisir ce que le Vrax réveille en lui." }
+      { target: "Nastaz", type: "Mise en garde", description: "Nastaz comprend que son lien peut l'aider autant que le destabiliser si Franklin avance sans saisir ce que le Vrax réveille en lui." },
+      { target: "Tsune", type: "Convergence", description: "Au village des renards, Franklin comprend avec Tsune que leur réponse ne peut plus rester locale ou séparée." },
+      { target: "Kuji", type: "Menace consciente", description: "Kuji fait comprendre a Franklin que ce qu'ils affrontent n'est plus un dérèglement aveugle, mais une volonté organisee." }
     ]
   },
   {
@@ -935,7 +1080,9 @@ const relationNodes = [
       { target: "Wingard", type: "Centre de gravité", description: "Wingard revient toujours a l'axe que Harry impose au groupe, meme quand son energie deborde." },
       { target: "Lévy", type: "Lecture complétée", description: "Lévy complete ce que Harry ne peut plus porter seul face aux zones de vide du Vrax." },
       { target: "Ossah Lyla", type: "Veille diurne", description: "Ossah Lyla accompagne sa naissance et reconnait en lui une réponse necessaire du monde." },
-      { target: "Nastaz", type: "Lucidité", description: "Nastaz comprend tout de suite qu'Harry PY n'est pas une anomalie, mais le debut d'une preparation." }
+      { target: "Nastaz", type: "Lucidité", description: "Nastaz comprend tout de suite qu'Harry PY n'est pas une anomalie, mais le debut d'une preparation." },
+      { target: "Tsune", type: "Relais de terrain", description: "Au village des renards, Harry PY reconnait en Tsune un point d'appui local capable de tenir pendant que lui retourne transmettre au Vrax." },
+      { target: "Javier", type: "Veille partagée", description: "Harry PY comprend que Javier restera un relais de perception et de defense pour le village apres son depart." }
     ]
   },
   {
@@ -970,7 +1117,9 @@ const relationNodes = [
       { target: "Wingard", type: "Interception commune", description: "Lévy agit sous le visible pendant que Wingard travaille l'air et la vitesse du combat." },
       { target: "Franklin", type: "Singularité", description: "Avant les autres, il sent chez Franklin une présence ou un lien que le Vrax reconnait." },
       { target: "Shaushana", type: "Entrave", description: "Ses interventions cassent les prises, ralentissent le terrain et empechent une reaction simple du groupe." },
-      { target: "Shan", type: "Compagnon de route", description: "Apres la révélation des creatrices, Lévy est choisi pour quitter le coeur du Vrax et accompagner Shan vers le sud." }
+      { target: "Shan", type: "Compagnon de route", description: "Apres la révélation des creatrices, Lévy est choisi pour quitter le coeur du Vrax et accompagner Shan vers le sud." },
+      { target: "Harry PY", type: "Retrouvailles", description: "Au village des renards, Lévy retrouve Harry PY et leur lien redevient un axe discret au milieu du deuil et des décisions." },
+      { target: "Tsune", type: "Convergence locale", description: "Lévy reconnaît chez Tsune une ligne de defense viable et s'accorde rapidement a la logique du village meurtri." }
     ]
   },
   {
@@ -993,6 +1142,58 @@ const relationNodes = [
       { target: "Protecteurs du Vrax", type: "Compréhension", description: "Elle identifie la logique commune des naissances et la preparation qu'elles representent." },
       { target: "Déséquilibre du vivant", type: "Analyse", description: "La nuit, Nastaz mesure froidement ce que le jour révèle déjà: un monde qui s'altere et doit apprendre a se defendre." },
       { target: "Franklin", type: "Vigilance", description: "Nastaz reconnait que l'eveil du lien de Franklin avec le Vrax peut devenir aussi dangereux que precieux s'il n'est pas compris." }
+    ]
+  },
+  {
+    name: "Tsune",
+    role: "Gardien renard du village",
+    links: [
+      { target: "Hez", type: "Perte fondatrice", description: "La mort de Hez devient le point de rupture qui transforme la defense locale de Tsune en engagement plus large." },
+      { target: "Javier", type: "Veille commune", description: "Tsune et Javier tiennent le village par des formes de vigilance complementaires, l'une mobile, l'autre perceptive." },
+      { target: "Harry PY", type: "Reconnaissance", description: "Harry PY identifie en Tsune une force de terrain deja capable de porter une part de la reponse hors du Vrax." },
+      { target: "Shaushana", type: "Confiance neuve", description: "Tsune accepte rapidement l'equilibre que Shaushana apporte au groupe et s'y associe sans besoin de longues paroles." },
+      { target: "Kuji", type: "Ennemi direct", description: "Tsune affronte Kuji au coeur meme de son village et ne transforme plus ensuite sa douleur qu'en direction." }
+    ]
+  },
+  {
+    name: "Hez",
+    role: "Pilier du village meurtri",
+    links: [
+      { target: "Tsune", type: "Ancrage", description: "Hez agit comme une force de stabilite et de continuite pour Tsune et pour le village." },
+      { target: "Javier", type: "Defense du village", description: "Avec Javier et Tsune, il forme une ligne de protection sobre mais efficace autour de la communaute." },
+      { target: "Kuji", type: "Sacrifice", description: "Hez tient jusqu'au bout face a Kuji et sa mort devient le centre du basculement moral des chapitres du village." },
+      { target: "Renards", type: "Fidelité", description: "Hez est enseveli au milieu des renards qu'il a proteges, dans un geste qui montre a quel point leur lien dépasse l'utilitaire." }
+    ]
+  },
+  {
+    name: "Javier",
+    role: "Archer de veille blanche",
+    links: [
+      { target: "Tsune", type: "Surveillance croisée", description: "Javier couvre le village d'une veille precise pendant que Tsune agit au plus pres du choc." },
+      { target: "Hez", type: "Defense partagée", description: "Tous deux font partie des points fixes qui maintiennent encore le village debout apres l'assaut." },
+      { target: "Harry PY", type: "Compréhension silencieuse", description: "Javier reconnait sans mots chez Harry PY une lecture plus vaste de ce qui frappe leur territoire." },
+      { target: "Kuji", type: "Témoin", description: "Face a Kuji, Javier comprend qu'ils n'affrontent plus un chaos aveugle mais une presence qui pense et choisit." }
+    ]
+  },
+  {
+    name: "Kuji",
+    role: "Force hostile de remplacement",
+    links: [
+      { target: "Elennya", type: "Alliance trouble", description: "Kuji agit avec Elennya dans une logique commune: pousser le vivant vers une autre forme, plus contrôlée, plus dure." },
+      { target: "Hez", type: "Mise a mort", description: "En tuant Hez au centre du combat, Kuji impose un point de non-retour au village et au groupe." },
+      { target: "Tsune", type: "Opposition intime", description: "Tsune voit en Kuji la source directe de la perte qui frappe son village et de la direction qu'il doit désormais suivre." },
+      { target: "Shaushana", type: "Opposition de principe", description: "Face a Shaushana, Kuji porte une lecture du monde qui nie la respiration libre du vivant au profit d'un ordre impose." },
+      { target: "Harry PY", type: "Preuve du dessein", description: "Pour Harry PY, Kuji confirme qu'une volonté organisée dirige les attaques et les altérations du monde." }
+    ]
+  },
+  {
+    name: "Elennya",
+    role: "Présence étrangère et calculatrice",
+    links: [
+      { target: "Kuji", type: "Complément", description: "Elennya complete Kuji par une puissance plus insidieuse, plus froide et plus deformante." },
+      { target: "Tsune", type: "Entrave", description: "Elle ralentit, enferme et empêche Tsune d'intervenir a temps lorsque le combat bascule." },
+      { target: "Javier", type: "Contre-veillée", description: "Les déformations qu'elle impose a l'espace brisent même la precision de Javier." },
+      { target: "Shan", type: "Menace nouvelle", description: "Shan comprend avec Elennya qu'il existe des puissances qui cassent l'action avant meme le choc frontal." }
     ]
   }
 ];
@@ -1065,7 +1266,10 @@ function buildLoreLinkEntries() {
     ["Cœur du Vrax", "#lieux-coeur-du-vrax"],
     ["Coeur du Vrax", "#lieux-coeur-du-vrax"],
     ["Fleuve Sylvae", "#lieux-fleuve-sylvae"],
-    ["Mer du Sphinx pandorien", "#lieux-mer-du-sphinx-pandorien"]
+    ["Mer du Sphinx pandorien", "#lieux-mer-du-sphinx-pandorien"],
+    ["Village des Renards", "#lieux-village-des-renards"],
+    ["Embouchure du Sombrail", "#lieux-embouchure-du-sombrail"],
+    ["Sombrail", "#lieux-embouchure-du-sombrail"]
   ].forEach(([label, href]) => rawEntries.push({ label, href }));
 
   const deduped = [];
@@ -1437,6 +1641,198 @@ const additionalCharacterFiches = [
     ]
   },
   {
+    slug: "tsune",
+    hash: "#fiches-tsune",
+    name: "Tsune",
+    image: buildMediaPath("pandorus", "Tsune.jpg"),
+    category: "Gardien du village des Renards",
+    intro: "Tsune apparaît comme une figure de défense immédiate, vive et tenue, dont la violence n'est jamais gratuite mais toujours liée à la protection d'un lieu déjà frappé.",
+    meta: [
+      { label: "Statut", value: "Gardien du village des Renards" },
+      { label: "Spécialité", value: "Vitesse, hache, lecture du danger" },
+      { label: "Lien majeur", value: "Membre naissant de la Communauté des Papillons" }
+    ],
+    biography: [
+      "Tsune se dresse d'abord comme une méfiance incarnée entre le groupe et le cœur du village. Son apparence de renard-humain, sa lecture instantanée et sa hache tenue comme une extension naturelle de lui-même en font une figure de seuil plus qu'un simple habitant.",
+      "Très vite pourtant, il comprend que Shaushana, Shan, Franklin et Lévy ne sont pas des intrus ordinaires. Son regard change sans perdre sa vigilance, et cette nuance suffit à ouvrir le village au groupe sans jamais effacer la tension du lieu.",
+      "Après la mort de Hez et la révélation de Kuji, Tsune cesse d'être seulement le défenseur d'un foyer. Il devient l'un de ceux qui acceptent qu'aucune réponse locale ne suffira plus, et rejoint ainsi la Communauté des Papillons dans une logique de route autant que de deuil."
+    ],
+    summary: [
+      "Tsune passe du rôle de gardien méfiant à celui de membre essentiel d'une réponse collective nouvelle.",
+      "Sa trajectoire se construit autour de Hez, du village des Renards et de la direction ouverte contre Kuji."
+    ],
+    profile: [
+      { title: "Caractère", text: "Vif, tendu, loyal et beaucoup plus fin dans sa lecture qu'il ne le montre d'abord." },
+      { title: "Forces", text: "Grande vitesse, sens de l'interception, lecture instinctive du danger et engagement total." },
+      { title: "Faiblesses", text: "Le deuil de Hez le traverse directement et risque de transformer sa direction en obsession pure." }
+    ],
+    relations: [
+      { title: "Hez", text: "Hez est la perte qui transforme Tsune et fait basculer sa défense locale en engagement plus vaste." },
+      { title: "Javier", text: "Javier complète sa protection du village par une veille plus silencieuse, plus sensible et plus lointaine." },
+      { title: "Shaushana", text: "Tsune reconnaît rapidement en elle un centre d'équilibre fiable au milieu du chaos du village." },
+      { title: "Kuji", text: "Kuji devient pour Tsune une cible de direction, la preuve que le mal agit avec pensée, méthode et volonté." }
+    ],
+    timeline: [
+      { era: "Jour 7", title: "Seuil du village", summary: "Tsune intercepte le groupe à l'entrée du village des Renards, d'abord par méfiance puis par lecture." },
+      { era: "Jour 7", title: "Défense contre l'assaut", summary: "Il combat les vagues de créatures puis se heurte directement à Kuji dans la bulle du village." },
+      { era: "Jour 7", title: "Mort de Hez", summary: "La perte de Hez scelle chez Tsune un point de non-retour dans sa manière de porter la lutte." },
+      { era: "Jour 8", title: "Communauté des Papillons", summary: "Tsune accepte de ne plus défendre seulement un lieu, mais une réponse plus large à ce qui cherche à remplacer le vivant." }
+    ]
+  },
+  {
+    slug: "hez",
+    hash: "#fiches-hez",
+    name: "Hez",
+    image: buildMediaPath("pandorus", "Hez.jpg"),
+    category: "Pilier du village des Renards",
+    intro: "Hez incarne la stabilité calme du village, la tenue silencieuse et la dignité de ceux qui protègent sans chercher à se raconter.",
+    meta: [
+      { label: "Statut", value: "Protecteur du village" },
+      { label: "Spécialité", value: "Tenue de ligne, ancrage, rituel" },
+      { label: "Lien majeur", value: "Perte centrale des chapitres du village" }
+    ],
+    biography: [
+      "Lorsque le groupe entre dans le village, Hez apparaît déjà au milieu d'un geste de deuil, les mains dans la terre, comme si sa manière d'exister passait d'abord par l'accompagnement de ce qui tombe.",
+      "Pendant l'assaut suivant, il devient l'un des trois axes de défense avec Tsune et Javier. Sa force n'est pas spectaculaire: elle consiste à tenir, à protéger les structures et à offrir au combat un centre humain, lourd et stable.",
+      "Sa mort face à Kuji fait basculer tout le village. Après elle, le récit ne parle plus seulement d'attaque ou d'altération, mais d'une volonté qui tue pour imposer une autre logique au monde. Le rituel qui suit transforme Hez en mémoire partagée autant qu'en perte."
+    ],
+    summary: [
+      "Hez est le pilier silencieux dont la mort devient le cœur moral du basculement au sud.",
+      "Il reste lié au village même après sa disparition, jusque dans la naissance de la Communauté des Papillons."
+    ],
+    profile: [
+      { title: "Caractère", text: "Calme, solide, peu bavard, entièrement défini par ce qu'il tient et protège." },
+      { title: "Forces", text: "Ancrage, endurance, tenue de ligne, capacité à faire face sans éclat inutile." },
+      { title: "Faiblesses", text: "Sa force est locale, frontale, et ne peut suffire seule face à une volonté comme celle de Kuji." }
+    ],
+    relations: [
+      { title: "Tsune", text: "Hez est l'une des attaches majeures de Tsune au village, et sa mort donne à ce lien une profondeur irréversible." },
+      { title: "Javier", text: "Tous deux tiennent le village selon des formes différentes: l'un par le sol, l'autre par la veille." },
+      { title: "Kuji", text: "Kuji choisit Hez comme point de rupture, et cette mise à mort devient la preuve claire d'une volonté hostile." }
+    ],
+    timeline: [
+      { era: "Jour 7", title: "Veille du village", summary: "Hez apparaît déjà au cœur des gestes de terre, de soin et de continuité du village frappé." },
+      { era: "Jour 7", title: "Défense contre Kuji", summary: "Il tient la ligne au centre du combat quand Tsune et Javier ouvrent les autres angles de réponse." },
+      { era: "Jour 7", title: "Mort de Hez", summary: "Sa mort impose un point de non-retour au groupe comme au village entier." },
+      { era: "Jour 8", title: "Rituel commun", summary: "Le deuil de Hez et des renards devient l'un des fondements affectifs de la Communauté des Papillons." }
+    ]
+  },
+  {
+    slug: "javier",
+    hash: "#fiches-javier",
+    name: "Javier",
+    image: buildMediaPath("pandorus", "Javier.png"),
+    category: "Veilleur du village des Renards",
+    intro: "Archer à l'arc blanc et à la perception singulière, Javier veille sans chercher à dominer l'espace; il le sent, le lit et le couvre.",
+    meta: [
+      { label: "Statut", value: "Veilleur du village" },
+      { label: "Spécialité", value: "Perception, tir, surveillance" },
+      { label: "Lien majeur", value: "Point de veille qui demeure au sud" }
+    ],
+    biography: [
+      "Javier apparaît d'abord comme une silhouette blanche en hauteur, marquée par une cicatrice et par des yeux qui ne lisent pas le monde de manière ordinaire. Sa présence donne immédiatement au village une profondeur de perception différente.",
+      "Pendant l'assaut, il couvre le combat par un tir d'une précision troublante, comme s'il sentait les trajectoires plus qu'il ne les voyait. Elennya brise pourtant son appui, montrant que les adversaires nouveaux savent répondre même à cette veille-là.",
+      "Après la nuit de deuil et la naissance de la Communauté des Papillons, Javier reste lié au village comme point de continuité. Là où d'autres repartent, il demeure comme une veille indispensable du sud frappé."
+    ],
+    summary: [
+      "Javier est la forme sensible et silencieuse de la défense du village.",
+      "Il devient aussi l'un de ceux qui restent pour tenir le lieu pendant que la quête s'ouvre plus loin."
+    ],
+    profile: [
+      { title: "Caractère", text: "Silencieux, concentré, presque impassible, mais jamais absent de ce qu'il perçoit." },
+      { title: "Forces", text: "Lecture fine de l'espace, précision du tir, présence calme au cœur du danger." },
+      { title: "Faiblesses", text: "Son corps est touché pendant l'assaut et sa défense dépend d'une stabilité de terrain qu'Elennya peut altérer." }
+    ],
+    relations: [
+      { title: "Tsune", text: "Javier prolonge la protection de Tsune par une veille plus lointaine et plus patiente." },
+      { title: "Hez", text: "Avec Hez, il constitue l'un des appuis qui empêchent encore le village de céder entièrement." },
+      { title: "Harry PY", text: "Harry Py comprend vite que Javier restera l'un des relais de perception du village après son retour vers le Vrax." }
+    ],
+    timeline: [
+      { era: "Jour 7", title: "Veille blanche", summary: "Javier couvre l'entrée du groupe dans le village par une lecture silencieuse de l'espace." },
+      { era: "Jour 7", title: "Assaut du village", summary: "Ses tirs stoppent plusieurs trajectoires avant qu'Elennya ne brise son appui et son élan." },
+      { era: "Jour 8", title: "Présence au rituel", summary: "Blessé mais debout, Javier participe à la nouvelle manière de porter la perte." },
+      { era: "Jour 8", title: "Veille maintenue", summary: "Alors que le groupe s'oriente vers la suite, Javier reste lié au village comme point de garde durable." }
+    ]
+  },
+  {
+    slug: "kuji",
+    hash: "#fiches-kuji",
+    name: "Kuji",
+    image: buildMediaPath("pandorus", "Kuji.png"),
+    category: "Figure hostile",
+    intro: "Kuji fait entrer le récit dans une hostilité consciente, calme et idéologique. Il n'attaque pas comme une créature déréglée: il agit comme quelqu'un qui croit corriger le monde.",
+    meta: [
+      { label: "Statut", value: "Adversaire conscient" },
+      { label: "Spécialité", value: "Combat direct, domination, rupture" },
+      { label: "Lien majeur", value: "Volonté de remplacement du vivant" }
+    ],
+    biography: [
+      "Kuji apparaît à la limite du village avec une assurance qui tranche avec toutes les menaces précédentes. Son corps, sa maîtrise et sa parole montrent immédiatement qu'il n'est ni une simple créature ni un simple bandit du monde altéré.",
+      "Dans le combat, il encaisse, contrôle et décide. Il ne cherche pas seulement à vaincre: il montre qu'il appartient déjà à une logique supérieure de domination, appuyée par Elennya et par une lecture du vivant comme matière à corriger.",
+      "Ses mots rendent la menace plus nette encore. Pour lui, le monde libre, instable et foisonnant de Pandorus n'est pas une richesse, mais un système trop lâche à remplacer par autre chose. En tuant Hez, il transforme cette idée en preuve irréversible."
+    ],
+    summary: [
+      "Kuji est la première grande figure hostile qui pense, parle et assume clairement une vision du monde opposée à celle des héros.",
+      "Il révèle que l'altération n'est plus seulement un symptôme: elle est portée par des agents, une méthode et un objectif."
+    ],
+    profile: [
+      { title: "Caractère", text: "Calme, sûr de lui, dérangeant dans la facilité avec laquelle il impose sa vision." },
+      { title: "Forces", text: "Maîtrise du combat, pression physique, stabilité terrifiante et autorité idéologique." },
+      { title: "Faiblesses", text: "Se révèle par sa propre parole et laisse derrière lui une direction trop nette pour rester abstrait." }
+    ],
+    relations: [
+      { title: "Elennya", text: "Elennya complète Kuji en déformant l'espace et en rendant son avantage encore plus total." },
+      { title: "Hez", text: "La mise à mort de Hez devient le centre concret de ce que Kuji veut imposer au monde." },
+      { title: "Tsune", text: "Kuji fait de Tsune un ennemi de direction, pas seulement de réaction." },
+      { title: "Shaushana", text: "Face à elle, Kuji oppose une vision où la vie doit être contrainte, réglée et remplacée." }
+    ],
+    timeline: [
+      { era: "Jour 7", title: "Révélation au village", summary: "Kuji se montre au groupe comme une présence calme, consciente et déjà sûre de sa propre logique." },
+      { era: "Jour 7", title: "Combat du village", summary: "Il domine le combat central, résiste à Tsune et Hez, puis impose une rupture totale dans le rapport de force." },
+      { era: "Jour 7", title: "Mort de Hez", summary: "En tuant Hez, Kuji transforme l'attaque en point de non-retour moral et narratif." },
+      { era: "Jour 8", title: "Volonté reconnue", summary: "À travers lui, le groupe comprend que la menace cherche à remplacer le monde plutôt qu'à le blesser seulement." }
+    ]
+  },
+  {
+    slug: "elennya",
+    hash: "#fiches-elennya",
+    name: "Elennya",
+    image: buildMediaPath("pandorus", "Elennya.png"),
+    category: "Figure hostile",
+    intro: "Elennya n'impose pas la brutalité de Kuji; elle impose un glissement plus froid, plus déformant, où l'espace lui-même semble renoncer à sa cohérence première.",
+    meta: [
+      { label: "Statut", value: "Présence hostile de soutien" },
+      { label: "Spécialité", value: "Entrave, projection, déformation" },
+      { label: "Lien majeur", value: "Complément stratégique de Kuji" }
+    ],
+    biography: [
+      "Elennya apparaît au côté de Kuji comme une présence presque douce en surface, mais profondément étrangère dans son effet sur la matière, les appuis et l'air lui-même.",
+      "Là où Kuji rompt frontalement, Elennya ralentit, enferme, dévie et casse les possibilités d'action. Elle ne se contente pas d'aider: elle restructure le champ du combat pour rendre la résistance plus difficile, plus tardive et plus coûteuse.",
+      "Sa présence confirme que l'adversité nouvelle n'agit pas seulement par force, mais par manipulation du terrain, des trajectoires et des conditions mêmes de la lutte."
+    ],
+    summary: [
+      "Elennya donne à la menace un versant plus froid, plus technique et plus insidieux que la simple violence de Kuji.",
+      "Avec elle, le récit comprend que l'hostilité sait aussi remodeler les conditions du vivant et du combat."
+    ],
+    profile: [
+      { title: "Caractère", text: "Calme, lisse, presque apaisante en surface, mais profondément dérangeante dans son effet." },
+      { title: "Forces", text: "Déforme l'espace, entrave les corps, brise les appuis et accompagne l'avantage de Kuji." },
+      { title: "Faiblesses", text: "Reste encore partiellement énigmatique, ce qui laisse deviner qu'elle n'a pas tout montré." }
+    ],
+    relations: [
+      { title: "Kuji", text: "Elennya ne suit pas seulement Kuji: elle rend sa domination possible et plus nette encore." },
+      { title: "Tsune", text: "Elle retient Tsune au moment décisif et l'empêche d'intervenir à temps." },
+      { title: "Javier", text: "Elle casse la ligne de tir et les appuis qui permettaient à Javier de tenir le combat à distance." },
+      { title: "Shan", text: "Shan comprend par elle que certains adversaires cassent l'action avant même le choc frontal." }
+    ],
+    timeline: [
+      { era: "Jour 7", title: "Apparition au village", summary: "Elennya se révèle aux côtés de Kuji comme une force d'accompagnement et de déformation." },
+      { era: "Jour 7", title: "Entrave du combat", summary: "Elle ralentit Tsune, brise la précision de Javier et rend le terrain du combat hostile jusque dans sa matière." },
+      { era: "Jour 7", title: "Retrait après la rupture", summary: "Avec Kuji, elle quitte le village sans fuite réelle, comme si rien n'avait pu la menacer." }
+    ]
+  },
+  {
     slug: "eben",
     hash: "#fiches-eben",
     name: "Eben",
@@ -1526,7 +1922,12 @@ const ficheHashPanelMap = {
   "#fiches-wingard": "wingard-panel",
   "#fiches-levy": "levy-panel",
   "#fiches-ossah-lyla": "ossah-lyla-panel",
-  "#fiches-nastaz": "nastaz-panel"
+  "#fiches-nastaz": "nastaz-panel",
+  "#fiches-tsune": "tsune-panel",
+  "#fiches-hez": "hez-panel",
+  "#fiches-javier": "javier-panel",
+  "#fiches-kuji": "kuji-panel",
+  "#fiches-elennya": "elennya-panel"
 };
 
 const creatureFiches = [
@@ -1796,6 +2197,50 @@ const creatureFiches = [
       { era: "Jour 2", title: "Signe d'une corruption plus profonde", summary: "Son apparition montre que le mal agit au-dela des seuls predateurs et atteint la trame meme du vivant." },
       { era: "Lecture d'ensemble", title: "Le vivant se deregle avant la réponse du Vrax", summary: "Verdeflor se lit comme un symptome de corruption touchant les couches les plus profondes du monde." }
     ]
+  },
+  {
+    slug: "poiscaille",
+    name: "Poiscaille",
+    image: buildMediaPath("creatures", "Croconha.png"),
+    family: "Créature aquatique agressive",
+    status: "Créature clairement présente dans le récit",
+    habitat: "Eaux basses, rivages et zones humides proches du village",
+    summary: "Forme aquatique d'assaut du sud, le Poiscaille surgit de l'eau dans une logique de pression coordonnée plutôt que de simple faim.",
+    biography: [
+      "Les Poiscailles apparaissent lors de l'assaut du village des Renards. Leur arrivée rapide depuis les zones humides confirme que les attaques ne procèdent plus par hasard, mais selon un enchaînement pensé et convergent.",
+      "Ils ne sont pas seulement dangereux par leur morsure ou leur vitesse. Ils font partie d'un système de saturation, destiné à user le lieu, à briser les lignes de défense et à préparer l'arrivée de présences plus conscientes comme Kuji."
+    ],
+    profile: [
+      { title: "Nature", text: "Créature de rivage agressive, nerveuse et adaptée aux surgissements depuis l'eau." },
+      { title: "Niveau de menace", text: "Élevé en groupe, surtout lorsqu'il est intégré à une attaque guidée." },
+      { title: "Rôle narratif", text: "Montrer que la faune du sud est désormais mobilisée dans une logique d'assaut organisée." }
+    ],
+    timeline: [
+      { era: "Jour 7", title: "Assaut du village des Renards", summary: "Les Poiscailles surgissent des zones humides et ouvrent l'une des premières vagues de l'attaque." },
+      { era: "Lecture du sud", title: "Créature utilisée", summary: "Leur présence fait comprendre que des formes de vie sont désormais poussées, orientées et utilisées contre les communautés." }
+    ]
+  },
+  {
+    slug: "chauve-souloup",
+    name: "Chauve-Souloup",
+    image: buildMediaPath("creatures", "Nignoble.png"),
+    family: "Créature aérienne de harcèlement",
+    status: "Créature clairement présente dans le récit",
+    habitat: "Cieux bas, toitures, approches du village et zones de plongeon",
+    summary: "Créature volante du sud, la Chauve-Souloup frappe par les hauteurs dans une logique de dispersion, d'usure et de désorientation.",
+    biography: [
+      "Les Chauve-Souloups descendent sur le village presque en même temps que les Poiscailles, ajoutant une deuxième pression, venue du ciel cette fois, à l'assaut contre la communauté.",
+      "Leur rôle dans le récit est moins de tuer directement que de casser les lignes de lecture et de défense. Ils obligent Javier à répondre vers le haut, fragmentent l'attention et montrent que l'attaque pense en plusieurs axes."
+    ],
+    profile: [
+      { title: "Nature", text: "Créature volante agressive, faite pour la plongée, le trouble et l'usure des lignes défensives." },
+      { title: "Niveau de menace", text: "Élevé lorsqu'elle agit en coordination avec d'autres vagues d'assaut." },
+      { title: "Rôle narratif", text: "Installer une guerre de saturation du village, par le ciel autant que par le sol." }
+    ],
+    timeline: [
+      { era: "Jour 7", title: "Plongeon sur le village", summary: "Les Chauve-Souloups frappent depuis les hauteurs et compliquent immédiatement la défense du village." },
+      { era: "Lecture du sud", title: "Attaque multi-axes", summary: "Avec elles, le groupe comprend que les offensives du sud sont pensées pour saturer l'espace et épuiser les protecteurs." }
+    ]
   }
 ];
 
@@ -1873,6 +2318,21 @@ const chapters = [
     path: "./media/chapitres/Chapitre%2011%20-%20Les%20Cr%C3%A9atrice.pdf",
     summary: "Les creatrices révèlent l'origine des Gamins du Vrax, le role vital des papillons, l'alteration du monde et orientent le groupe vers une nouvelle piste au sud avec Lévy.",
     accessKey: "ChapPando11"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2012%20-%20Un%20voyage%20particulier.txt",
+    summary: "Le groupe quitte le Vrax, découvre une zone vidée de sa cohérence, des papillons morts, un Renastar touché dans sa création même, puis atteint un village des Renards déjà frappé au sud.",
+    accessKey: "ChapPando12"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2013%20-%20Kuji.txt",
+    summary: "Au village des Renards, Tsune, Hez et Javier croisent le groupe, l'assaut reprend, puis Kuji et Elennya se révèlent comme des volontés hostiles conscientes qui imposent la mort de Hez.",
+    accessKey: "ChapPando13"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2014%20-%20La%20communaut%C3%A9%20des%20Papillons.txt",
+    summary: "Le deuil de Hez et des renards fait naître la Communauté des Papillons, tandis qu'Harry PY retourne au Vrax et que Tsune ouvre la prochaine direction vers l'embouchure du Sombrail.",
+    accessKey: "ChapPando14"
   }
 ];
 
@@ -2061,6 +2521,56 @@ const timelineEvents = [
     era: "Jour 6",
     title: "Départ avec Lévy",
     summary: "Au matin, Lévy quitte le coeur du Vrax pour accompagner Shaushana, Shan et Franklin vers cette nouvelle etape du récit."
+  },
+  {
+    era: "Jour 7",
+    title: "Traversée de la zone altérée au sud du Vrax",
+    summary: "En quittant le Vrax, le groupe découvre une terre qui tient encore debout sans tenir vraiment, où le vivant persiste sans sa cohérence première."
+  },
+  {
+    era: "Jour 7",
+    title: "Papillons vidés et Renastar touché",
+    summary: "Les papillons morts puis le Renastar qui s'éteint entre les mains de Shaushana révèlent que ce n'est plus seulement la vie qui meurt, mais la création elle-même qui est atteinte."
+  },
+  {
+    era: "Jour 7",
+    title: "Découverte du village des Renards",
+    summary: "Le groupe atteint un village déjà frappé, où les renards veillent leurs morts et où Tsune, Hez et Javier tiennent encore une communauté blessée."
+  },
+  {
+    era: "Jour 7",
+    title: "Retrouvailles avec Harry PY",
+    summary: "Au coeur du village meurtri, Harry PY retrouve Lévy et comprend que l'attaque du sud confirme une altération plus vaste encore que celle du Vrax."
+  },
+  {
+    era: "Jour 7",
+    title: "Assaut du village et révélation de Kuji et Elennya",
+    summary: "Poiscailles et Chauve-Souloups ouvrent une attaque multi-axes avant que Kuji et Elennya n'imposent leur volonté hostile et leur vision d'un monde à remplacer."
+  },
+  {
+    era: "Jour 7",
+    title: "Mort de Hez",
+    summary: "Hez tombe face à Kuji, faisant du village des Renards un lieu de deuil irréversible et donnant au groupe une preuve concrète de la gravité du conflit."
+  },
+  {
+    era: "Jour 8",
+    title: "Rituel du village et veille des renards",
+    summary: "Le village enterre Hez et les renards morts dans un rituel de fidélité silencieuse qui transforme la perte en mémoire portée collectivement."
+  },
+  {
+    era: "Jour 8",
+    title: "Naissance de la Communauté des Papillons",
+    summary: "Autour de Shaushana, Shan, Franklin, Lévy, Tsune et des survivants du village, une nouvelle réponse collective prend forme contre ce qui cherche à effacer le vivant."
+  },
+  {
+    era: "Jour 8",
+    title: "Retour d'Harry PY vers le Vrax",
+    summary: "Harry PY repart transmettre aux créatrices ce qu'il a compris du sud, pendant que Javier reste veiller le village blessé."
+  },
+  {
+    era: "Jour 8",
+    title: "Nouvelle direction vers l'embouchure du Sombrail",
+    summary: "Tsune oriente le groupe vers une taverne tenue par d'anciens survivants à l'embouchure du Sombrail, prochaine étape d'une quête devenue plus vaste et plus consciente."
   }
 ];
 
@@ -2645,6 +3155,14 @@ function renderTimeline() {
     if (normalizedEventText.includes("SYLVAE") || normalizedEventText.includes("SUD")) {
       contextCandidates.push({ href: "#lieux-fleuve-sylvae", label: "Voir le fleuve Sylvae" });
     }
+    if (normalizedEventText.includes("TSUNE")) contextCandidates.push({ href: "#fiches-tsune", label: "Voir Tsune" });
+    if (normalizedEventText.includes("HEZ")) contextCandidates.push({ href: "#fiches-hez", label: "Voir Hez" });
+    if (normalizedEventText.includes("JAVIER")) contextCandidates.push({ href: "#fiches-javier", label: "Voir Javier" });
+    if (normalizedEventText.includes("KUJI")) contextCandidates.push({ href: "#fiches-kuji", label: "Voir Kuji" });
+    if (normalizedEventText.includes("ELENNYA")) contextCandidates.push({ href: "#fiches-elennya", label: "Voir Elennya" });
+    if (normalizedEventText.includes("VILLAGE")) contextCandidates.push({ href: "#lieux-village-des-renards", label: "Voir le village des Renards" });
+    if (normalizedEventText.includes("SOMBRAIL")) contextCandidates.push({ href: "#lieux-embouchure-du-sombrail", label: "Voir l'embouchure du Sombrail" });
+    if (normalizedEventText.includes("COMMUNAUTE DES PAPILLONS")) contextCandidates.push({ href: "#mysteres", label: "Voir les nouveaux mystères" });
 
     const uniqueLinks = [];
     const seenLinks = new Set();
