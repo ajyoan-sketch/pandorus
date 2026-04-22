@@ -2201,7 +2201,7 @@ const creatureFiches = [
   {
     slug: "poiscaille",
     name: "Poiscaille",
-    image: buildMediaPath("creatures", "Croconha.png"),
+    image: buildMediaPath("creatures", "Poiscaille.png"),
     family: "Créature aquatique agressive",
     status: "Créature clairement présente dans le récit",
     habitat: "Eaux basses, rivages et zones humides proches du village",
@@ -2223,7 +2223,7 @@ const creatureFiches = [
   {
     slug: "chauve-souloup",
     name: "Chauve-Souloup",
-    image: buildMediaPath("creatures", "Nignoble.png"),
+    image: buildMediaPath("creatures", "Chauve-Souloup.png"),
     family: "Créature aérienne de harcèlement",
     status: "Créature clairement présente dans le récit",
     habitat: "Cieux bas, toitures, approches du village et zones de plongeon",
