@@ -1334,6 +1334,20 @@ h4 {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
+#creatures-grid.media-grid {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 180px));
+  justify-content: start;
+}
+
+#creatures-grid .wiki-card {
+  width: 100%;
+}
+
+#creatures-grid .wiki-card img {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
 .overview-card,
 .wiki-card,
 .folder-link,

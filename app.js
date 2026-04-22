@@ -3005,6 +3005,31 @@ function initCreatureFicheTabs() {
 
   window.activateCreaturePanel = activatePanel;
   activatePanel(`creature-panel-${currentCreatureFiche}`);
+  syncCreatureFicheFilter();
+}
+
+function syncCreatureFicheFilter() {
+  const tabs = Array.from(document.querySelectorAll("#creatures-fiches-tabs .fiche-tab"));
+  if (!tabs.length) return;
+
+  let visibleTabs = tabs.filter((tab) => matchesLetterFilter(tab.textContent || "", currentCreatureLetter));
+  if (!visibleTabs.length) {
+    visibleTabs = tabs;
+  }
+
+  tabs.forEach((tab) => {
+    const isVisible = visibleTabs.includes(tab);
+    tab.hidden = !isVisible;
+    tab.setAttribute("aria-hidden", isVisible ? "false" : "true");
+  });
+
+  const activeTarget = `creature-panel-${currentCreatureFiche}`;
+  const activeVisibleTab = visibleTabs.find((tab) => tab.dataset.creatureTarget === activeTarget);
+  const fallbackTab = visibleTabs[0];
+
+  if (!activeVisibleTab && fallbackTab && typeof window.activateCreaturePanel === "function") {
+    window.activateCreaturePanel(fallbackTab.dataset.creatureTarget);
+  }
 }
 
 function initFicheCarousels() {
@@ -3569,40 +3594,29 @@ function renderCreatureImages() {
 
   grid.innerHTML = "";
 
-  const visibleImages = creatureImages.filter((path) => {
-    const imageName = getPandorusImageName(path);
-    return matchesLetterFilter(imageName, currentCreatureLetter);
-  });
-
-  if (!visibleImages.length) {
+  if (!creatureFiches.length) {
     const emptyState = document.createElement("div");
     emptyState.className = "empty-state";
-    emptyState.textContent = "Aucune créature pour cette lettre.";
+    emptyState.textContent = "Aucune créature n'est disponible dans le bestiaire.";
     grid.appendChild(emptyState);
     return;
   }
 
-  visibleImages.forEach((path) => {
+  creatureFiches.forEach((fiche) => {
     const node = imageTemplate.content.cloneNode(true);
     const image = node.querySelector("img");
     const link = node.querySelector(".image-link");
     const name = node.querySelector(".image-name");
-    const imageName = getPandorusImageName(path);
-    const imageLink = getCreatureImageLink(imageName);
+    const imageLink = `#creatures-fiche-${fiche.slug}`;
 
-    image.src = path;
-    image.alt = imageName;
+    image.src = fiche.image;
+    image.alt = fiche.name;
     image.loading = "lazy";
     image.decoding = "async";
     link.href = imageLink;
-    if (imageLink.startsWith("#")) {
-      link.removeAttribute("target");
-      link.removeAttribute("rel");
-    } else {
-      link.target = "_blank";
-      link.rel = "noreferrer";
-    }
-    name.textContent = imageName;
+    link.removeAttribute("target");
+    link.removeAttribute("rel");
+    name.textContent = fiche.name;
     grid.appendChild(node);
   });
 }
@@ -3799,14 +3813,12 @@ function initCharacterAlphabetFilter() {
 }
 
 function initCreatureAlphabetFilter() {
-  const letters = getLettersFromNames(
-    creatureImages.map((path) => getPandorusImageName(path))
-  );
+  const letters = getLettersFromNames(creatureFiches.map((fiche) => fiche.name));
 
   renderAlphabetFilter("creatures-alphabet", letters, currentCreatureLetter, (letter) => {
     currentCreatureLetter = letter;
     initCreatureAlphabetFilter();
-    renderCreatureImages();
+    syncCreatureFicheFilter();
   });
 }
 
@@ -4006,6 +4018,12 @@ function showSectionFromHash() {
 
     if (isCreatureFicheHash && typeof window.activateCreaturePanel === "function") {
       const targetSlug = currentHash.replace("#creatures-fiche-", "");
+      const targetFiche = creatureFiches.find((item) => item.slug === targetSlug);
+      if (targetFiche) {
+        currentCreatureLetter = getFirstLetter(targetFiche.name) || "all";
+        initCreatureAlphabetFilter();
+        syncCreatureFicheFilter();
+      }
       window.activateCreaturePanel(`creature-panel-${targetSlug}`);
       const targetSection = document.getElementById("creatures-fiches");
       if (targetSection) {
@@ -4013,6 +4031,9 @@ function showSectionFromHash() {
           targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
         });
       }
+    } else {
+      initCreatureAlphabetFilter();
+      syncCreatureFicheFilter();
     }
     refreshLoreLinks();
     return;
