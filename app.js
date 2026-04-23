@@ -200,17 +200,34 @@ const livingMapRegions = [
   {
     slug: "sombrail",
     name: "Embouchure du Sombrail",
-    kicker: "Direction suivante",
+    kicker: "Seuil atteint",
     mood: "Horizon, mémoire, réponses anciennes",
-    text: "L'embouchure du Sombrail se profile comme la prochaine grande étape. Entre fleuve et mer pandorienne, elle promet un lieu de survivants, de récits anciens et de reconnaissance possible de ce qui cherche maintenant à remplacer le vivant.",
+    text: "L'embouchure du Sombrail est désormais atteinte. Entre fleuve et mer pandorienne, elle expose un territoire déjà fragilisé, mais aussi un lieu où la mémoire ancienne résiste encore à ce qui cherche à remplacer le vivant.",
     paths: [
       {
         title: "Fonction",
-        text: "Ouvrir la prochaine strate du voyage vers des survivants d'une autre époque."
+        text: "Faire passer la quête d'une direction annoncée à une révélation vécue."
       },
       {
         title: "Présences liées",
-        text: "Tsune, Shaushana, Shan, Franklin, Lévy et la taverne des survivants."
+        text: "Shaushana, Shan, Franklin, Lévy, Tsune, Brad, Bradlette, Ab'Youbi, Syne, Ezze, Gil et Filston."
+      }
+    ]
+  },
+  {
+    slug: "taverne-sombrail",
+    name: "Taverne du Sombrail",
+    kicker: "Archive habitée",
+    mood: "Bois ancien, mémoire, silence tendu",
+    text: "La taverne du Sombrail tient comme une archive vivante. On y entre pour s'abriter, mais on y découvre surtout des survivants, des souvenirs capables d'absorber le présent, et une boîte que Syne garde au seuil du visible.",
+    paths: [
+      {
+        title: "Fonction",
+        text: "Relier la Communauté des Papillons aux Briscards, à Elrick jeune et à l'origine ancienne du déséquilibre."
+      },
+      {
+        title: "Présences liées",
+        text: "Brad, Bradlette, Ab'Youbi, Syne, Ezze, Gil, Filston, Mitra Séssé, Papy Perquis et Padre Souf."
       }
     ]
   }
@@ -239,7 +256,21 @@ const characterRouteMap = {
   hez: "#fiches-hez",
   javier: "#fiches-javier",
   kuji: "#fiches-kuji",
-  elennya: "#fiches-elennya"
+  elennya: "#fiches-elennya",
+  ezze: "#fiches-ezze",
+  "gil-et-filston": "#fiches-gil-et-filston",
+  gil: "#fiches-gil-et-filston",
+  filston: "#fiches-gil-et-filston",
+  "brad-et-bradlette": "#fiches-brad-et-bradlette",
+  brad: "#fiches-brad-et-bradlette",
+  bradlette: "#fiches-brad-et-bradlette",
+  abyoubi: "#fiches-abyoubi",
+  "ab-youbi": "#fiches-abyoubi",
+  syne: "#fiches-syne",
+  "mitra-sesse": "#fiches-mitra-sesse",
+  "mitra-séssé": "#fiches-mitra-sesse",
+  "papy-perquis": "#fiches-papy-perquis",
+  "padre-souf": "#fiches-padre-souf"
 };
 
 const characterPrimaryLocationMap = {
@@ -261,7 +292,21 @@ const characterPrimaryLocationMap = {
   hez: "#lieux-village-renards",
   javier: "#lieux-village-renards",
   kuji: "#lieux-village-renards",
-  elennya: "#lieux-village-renards"
+  elennya: "#lieux-village-renards",
+  ezze: "#lieux-taverne-du-sombrail",
+  "gil-et-filston": "#lieux-taverne-du-sombrail",
+  gil: "#lieux-taverne-du-sombrail",
+  filston: "#lieux-taverne-du-sombrail",
+  "brad-et-bradlette": "#lieux-taverne-du-sombrail",
+  brad: "#lieux-taverne-du-sombrail",
+  bradlette: "#lieux-taverne-du-sombrail",
+  abyoubi: "#lieux-taverne-du-sombrail",
+  "ab-youbi": "#lieux-taverne-du-sombrail",
+  syne: "#lieux-taverne-du-sombrail",
+  "mitra-sesse": "#lieux-taverne-du-sombrail",
+  "papy-perquis": "#lieux-taverne-du-sombrail",
+  "padre-souf": "#lieux-taverne-du-sombrail",
+  "taverne-du-sombrail": "#lieux-taverne-du-sombrail"
 };
 
 const staticFicheContextMap = {
@@ -361,7 +406,47 @@ const additionalFicheContextMap = {
   elennya: [
     { href: "#relations", label: "Voir ses liens" },
     { href: "#mysteres", label: "Ouvrir les nouveaux mystères" },
-    { href: "#lieux-sombrail", label: "Voir la prochaine direction" }
+    { href: "#lieux-embouchure-du-sombrail", label: "Voir la prochaine direction" }
+  ],
+  ezze: [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#lieux-taverne-du-sombrail", label: "Lire la taverne" },
+    { href: "#chronologie", label: "Suivre son arrivée" }
+  ],
+  "gil-et-filston": [
+    { href: "#relations", label: "Voir leurs liens" },
+    { href: "#lieux-taverne-du-sombrail", label: "Lire la taverne" },
+    { href: "#mysteres", label: "Ouvrir la frontière du réel" }
+  ],
+  "brad-et-bradlette": [
+    { href: "#relations", label: "Voir leurs liens" },
+    { href: "#lieux-taverne-du-sombrail", label: "Lire leur taverne" },
+    { href: "#chronologie", label: "Voir le souvenir des Briscards" }
+  ],
+  abyoubi: [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#lieux-taverne-du-sombrail", label: "Lire la taverne" },
+    { href: "#mysteres", label: "Ouvrir les mystères" }
+  ],
+  syne: [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#lieux-taverne-du-sombrail", label: "Lire la taverne" },
+    { href: "#mysteres", label: "Lire le mystère de la boîte" }
+  ],
+  "mitra-sesse": [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#mysteres", label: "Lire les Briscards" },
+    { href: "#chronologie", label: "Voir la guerre ancienne" }
+  ],
+  "papy-perquis": [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#mysteres", label: "Lire les Briscards" },
+    { href: "#chronologie", label: "Voir la mémoire ancienne" }
+  ],
+  "padre-souf": [
+    { href: "#relations", label: "Voir ses liens" },
+    { href: "#mysteres", label: "Lire les Briscards" },
+    { href: "#chronologie", label: "Voir la mémoire ancienne" }
   ]
 };
 
@@ -730,31 +815,63 @@ const locationFiches = [
     slug: "embouchure-du-sombrail",
     name: "Embouchure du Sombrail",
     tone: "threshold",
-    category: "Nouvelle direction",
-    intro: "L'embouchure du Sombrail n'est pas encore atteinte, mais elle entre déjà dans le récit comme un seuil de réponses anciennes, de survivants oubliés et de nouvelle étape stratégique.",
+    category: "Seuil atteint",
+    intro: "L'embouchure du Sombrail devient un vrai point de passage: une terre où le fleuve rejoint la mer pandorienne, où le dérèglement se fait sentir et où une taverne ancienne tient encore debout.",
     meta: [
       { label: "Atmosphère", value: "Horizon, survivance, mémoire marine" },
-      { label: "Fonction", value: "Prochaine cible de la quête" },
-      { label: "Présences", value: "Taverne ancienne, survivants d'une autre guerre" }
+      { label: "Fonction", value: "Seuil de mémoire et d'orientation" },
+      { label: "Présences", value: "Taverne ancienne, Brad, Bradlette, Ab'Youbi, Syne" }
     ],
     biography: [
-      "Tsune désigne l'embouchure du Sombrail comme un lieu tenu par deux figures que beaucoup croient disparues, des survivants d'une époque où le monde a déjà vacillé autrement.",
-      "Le lieu agit immédiatement comme une promesse de récit et de reconnaissance: ce n'est pas un simple détour, mais une orientation vers ceux qui pourraient savoir ce qui revient, pourquoi cela attaque, et comment y répondre sans rester fragmentés.",
-      "Avant même d'être vu, il redessine la carte mentale du groupe en projetant la quête au-delà du seul sud visible et vers une mémoire encore vivante."
+      "Tsune désigne l'embouchure du Sombrail comme un lieu tenu par des figures que beaucoup croient disparues, des survivants d'une époque où le monde a déjà vacillé autrement.",
+      "En l'atteignant, la Communauté des Papillons traverse un paysage déjà fragilisé: papillons vidés, créatures mortes sans blessure, vent froid et zones qui semblent perdre leur cohérence.",
+      "Le Sombrail n'est donc plus une simple destination annoncée. Il devient le seuil où le présent rencontre une mémoire active, capable d'expliquer l'origine du déséquilibre et d'ouvrir la route vers ce qui voit plus loin."
     ],
     summary: [
-      "L'embouchure du Sombrail est la prochaine grande direction du groupe après la naissance de la Communauté des Papillons.",
-      "Elle promet des réponses plus anciennes encore, dans un lieu où fleuve, mer et survivance se croisent."
+      "L'embouchure du Sombrail accueille la première halte majeure de la Communauté des Papillons après le village des Renards.",
+      "Elle relie le chemin présent à une mémoire ancienne encore vivante, gardée dans une taverne qui résiste au monde qui se déforme."
     ],
     profile: [
       { title: "Texture du lieu", text: "Eaux mêlées, seuil maritime, rumeur de savoir ancien." },
       { title: "Rôle narratif", text: "Projeter le récit vers une strate plus large de mémoire et de stratégie." },
-      { title: "Point de tension", text: "Ce qui attend au Sombrail pourrait reconnaître avant eux ce qui cherche à remplacer le monde." }
+      { title: "Point de tension", text: "Ce qui attend au Sombrail reconnaît déjà ce que le groupe porte, mais ne révèle pas tout." }
     ],
     contextLinks: [
       { href: "#chronologie", label: "Voir la nouvelle destination" },
       { href: "#mysteres", label: "Ouvrir les nouveaux mystères" },
       { href: "#cartes", label: "Voir le monde" }
+    ]
+  },
+  {
+    slug: "taverne-du-sombrail",
+    name: "Taverne du Sombrail",
+    tone: "memory",
+    category: "Archive habitée",
+    intro: "La taverne du Sombrail est un refuge de bois ancien, de chaleur retenue et de regards prudents. Elle ne protège pas du monde: elle conserve ce que le monde risque d'oublier.",
+    meta: [
+      { label: "Atmosphère", value: "Bois sombre, lanternes, mémoire, tension contenue" },
+      { label: "Fonction", value: "Lieu de révélation et de passage" },
+      { label: "Présences", value: "Brad, Bradlette, Ab'Youbi, Syne, Ezze, Gil, Filston" }
+    ],
+    biography: [
+      "La Communauté des Papillons y entre après une traversée lourde d'anomalies, guidée par la piste ouverte par Tsune. Le lieu n'est ni accueillant ni hostile: il impose son rythme et reconnaît ceux qui n'arrivent pas par hasard.",
+      "Brad et Bradlette y maintiennent un équilibre fragile, tandis qu'Ab'Youbi observe ce que les autres ne voient pas. Au fond de la salle, Syne garde une boîte dont la présence ne semble pas inerte.",
+      "La taverne devient surtout un passage de mémoire: Brad entraîne le groupe dans le souvenir des Briscards, d'Elrick jeune, de Mitra Séssé, de Papy Perquis et de Padre Souf, jusqu'à l'origine du ciel assombri et des étoiles comme traces de l'ancien combat."
+    ],
+    summary: [
+      "La taverne du Sombrail transforme la quête en enquête de mémoire.",
+      "Elle révèle que le monde actuel ne commence pas seulement à se dérégler: il suit à nouveau une ligne déjà vécue autrefois."
+    ],
+    profile: [
+      { title: "Texture du lieu", text: "Tables marquées, lanternes tremblantes, chaleur dense et silence qui écoute." },
+      { title: "Rôle narratif", text: "Relier la Communauté des Papillons aux survivants, aux Briscards et à l'origine ancienne du déséquilibre." },
+      { title: "Point de tension", text: "Syne et sa boîte introduisent une présence retenue qui ne doit pas encore être vue." }
+    ],
+    contextLinks: [
+      { href: "#fiches-brad-et-bradlette", label: "Voir Brad et Bradlette" },
+      { href: "#fiches-abyoubi", label: "Voir Ab'Youbi" },
+      { href: "#fiches-syne", label: "Voir Syne" },
+      { href: "#chronologie", label: "Lire la révélation de la taverne" }
     ]
   }
 ];
@@ -1195,6 +1312,78 @@ const relationNodes = [
       { target: "Javier", type: "Contre-veillée", description: "Les déformations qu'elle impose a l'espace brisent même la precision de Javier." },
       { target: "Shan", type: "Menace nouvelle", description: "Shan comprend avec Elennya qu'il existe des puissances qui cassent l'action avant meme le choc frontal." }
     ]
+  },
+  {
+    name: "Ezze",
+    role: "Voyageur instinctif",
+    links: [
+      { target: "Gil et Filston", type: "Rencontre décisive", description: "Gil et Filston obligent Ezze à rester face à une question plus grande que sa vitesse habituelle." },
+      { target: "Taverne du Sombrail", type: "Point d'arrêt", description: "La taverne devient le premier lieu où Ezze choisit vraiment de rester." },
+      { target: "Shaushana", type: "Reconnaissance silencieuse", description: "En entrant dans la taverne, Ezze repère la Communauté des Papillons comme une anomalie majeure et sent que Shaushana y tient une place centrale." }
+    ]
+  },
+  {
+    name: "Gil et Filston",
+    role: "Duo d'ailleurs",
+    links: [
+      { target: "Ezze", type: "Question ouverte", description: "Leur regard sur la réalité de Pandorus fissure l'assurance d'Ezze et transforme sa manière de lire le monde." },
+      { target: "Taverne du Sombrail", type: "Convergence", description: "Ils rejoignent Ezze à la taverne au moment où plusieurs trajectoires importantes se rassemblent." },
+      { target: "Franklin", type: "Écho de décalage", description: "Comme Franklin avec le Vrax, ils portent une sensibilité à ce qui ne correspond pas tout à fait aux règles visibles du monde." }
+    ]
+  },
+  {
+    name: "Brad et Bradlette",
+    role: "Gardiens de la taverne",
+    links: [
+      { target: "Elrick", type: "Mémoire ancienne", description: "Le nom d'Elrick ouvre chez eux un passage vers les Briscards et l'origine du premier grand déséquilibre." },
+      { target: "Ab'Youbi", type: "Veille commune", description: "Ils partagent avec Ab'Youbi une vigilance silencieuse sur la taverne et ceux qui y entrent." },
+      { target: "Syne", type: "Limite respectée", description: "Ils savent qu'il existe autour de Syne et de sa boîte une frontière à ne pas forcer." }
+    ]
+  },
+  {
+    name: "Ab'Youbi",
+    role: "Veilleur de l'invisible",
+    links: [
+      { target: "Brad et Bradlette", type: "Équilibre du lieu", description: "Avec eux, Ab'Youbi participe à la tenue profonde de la taverne du Sombrail." },
+      { target: "Syne", type: "Reconnaissance", description: "Il reconnaît la force contenue autour de Syne sans chercher à la provoquer." },
+      { target: "Communauté des Papillons", type: "Lecture des traces", description: "Il perçoit ce que le groupe porte, ce qui le suit et ce qui se désaligne autour de lui." }
+    ]
+  },
+  {
+    name: "Syne",
+    role: "Gardienne de la boîte",
+    links: [
+      { target: "Ab'Youbi", type: "Respect de seuil", description: "Ab'Youbi comprend que la présence retenue par Syne appartient à une limite qu'il faut reconnaître." },
+      { target: "Brad et Bradlette", type: "Présence acceptée", description: "La taverne adapte son rythme à Syne sans avoir besoin de la nommer." },
+      { target: "Taverne du Sombrail", type: "Mystère central", description: "Syne transforme la taverne en lieu d'attente, de retenue et de menace contenue." }
+    ]
+  },
+  {
+    name: "Mitra Séssé",
+    role: "Briscard de mémoire",
+    links: [
+      { target: "Elrick", type: "Ancien combat", description: "Mitra Séssé apparaît dans le même souvenir fondateur qu'Elrick jeune." },
+      { target: "Papy Perquis", type: "Briscards", description: "Ils appartiennent à la même mémoire de résistance contre le premier déséquilibre." },
+      { target: "Brad et Bradlette", type: "Souvenir transmis", description: "Brad rend sa présence perceptible à travers un passage de mémoire." }
+    ]
+  },
+  {
+    name: "Papy Perquis",
+    role: "Mémoire analytique des Briscards",
+    links: [
+      { target: "Mitra Séssé", type: "Compagnon ancien", description: "Tous deux apparaissent dans la mémoire des Briscards, au moment où le monde commence à céder." },
+      { target: "Padre Souf", type: "Génération ancienne", description: "Leurs anciens noms rappellent que les figures de mémoire ont aussi été des acteurs jeunes du basculement." },
+      { target: "Ab'Youbi", type: "Lecture du déséquilibre", description: "Leurs rôles se répondent dans l'analyse de ce qui altère le monde." }
+    ]
+  },
+  {
+    name: "Padre Souf",
+    role: "Ancien Briscard",
+    links: [
+      { target: "Papy Perquis", type: "Mémoire partagée", description: "Ils appartiennent à la même strate ancienne révélée par la taverne." },
+      { target: "Mitra Séssé", type: "Résistance ancienne", description: "Avec les Briscards, il participe à la tenue du monde face à l'obscurité dispersée." },
+      { target: "Elrick", type: "Souvenir fondateur", description: "Il apparaît dans le même moment ancien où Elrick est déjà un point d'équilibre." }
+    ]
   }
 ];
 
@@ -1269,7 +1458,12 @@ function buildLoreLinkEntries() {
     ["Mer du Sphinx pandorien", "#lieux-mer-du-sphinx-pandorien"],
     ["Village des Renards", "#lieux-village-des-renards"],
     ["Embouchure du Sombrail", "#lieux-embouchure-du-sombrail"],
-    ["Sombrail", "#lieux-embouchure-du-sombrail"]
+    ["Sombrail", "#lieux-embouchure-du-sombrail"],
+    ["Taverne du Sombrail", "#lieux-taverne-du-sombrail"],
+    ["la taverne", "#lieux-taverne-du-sombrail"],
+    ["taverne", "#lieux-taverne-du-sombrail"],
+    ["Briscards", "#mysteres"],
+    ["Communauté des Papillons", "#mysteres"]
   ].forEach(([label, href]) => rawEntries.push({ label, href }));
 
   const deduped = [];
@@ -1833,6 +2027,301 @@ const additionalCharacterFiches = [
     ]
   },
   {
+    slug: "ezze",
+    hash: "#fiches-ezze",
+    name: "Ezze",
+    image: buildMediaPath("pandorus", "Ezze.png"),
+    category: "Voyageur instinctif",
+    intro: "Ezze est une présence vive, rapide et insaisissable, incapable de rester immobile longtemps, mais capable de lire les anomalies du monde avant même de les comprendre.",
+    meta: [
+      { label: "Statut", value: "Voyageur pandorien lié à la taverne" },
+      { label: "Spécialité", value: "Vitesse, instinct, lecture des moments" },
+      { label: "Lien majeur", value: "Gil, Filston et la Communauté des Papillons" }
+    ],
+    biography: [
+      "Ezze part jeune, non par fuite, mais parce que l'immobilité lui donne l'impression de perdre quelque chose. Son rapport au monde passe par le mouvement: avancer, observer, éviter, réagir avant que les autres n'aient fini de comprendre.",
+      "Au fil de ses routes, il perçoit des zones où le monde ne répond plus correctement. Il ne sait pas encore nommer le déséquilibre, mais il le lit dans les silences, les sols fragiles et les variations invisibles.",
+      "Sa rencontre avec Gil et Filston l'oblige à ralentir intérieurement. Leur manière de voir Pandorus comme un monde qui n'est peut-être pas fermé ouvre en lui une question plus vaste que sa propre course.",
+      "À la taverne du Sombrail, Ezze retrouve Gil et Filston, puis aperçoit la Communauté des Papillons. Pour une fois, il ne passe pas: il reste, comme si toutes les trajectoires qu'il avait suivies convergeaient enfin."
+    ],
+    summary: [
+      "Ezze incarne la vitesse, l'intuition et la lecture instinctive d'un monde qui se dérègle.",
+      "Son arrivée à la taverne le place au contact direct de la Communauté des Papillons et d'une mémoire plus grande que sa propre route."
+    ],
+    profile: [
+      { title: "Caractère", text: "Vif, provocateur, curieux, difficile à fixer, mais plus sensible au monde qu'il ne le montre." },
+      { title: "Forces", text: "Réaction rapide, lecture des anomalies, adaptation immédiate, capacité à éviter les zones instables." },
+      { title: "Faiblesses", text: "Tendance à fuir l'immobilité, à masquer ses questions par l'ironie et le mouvement." }
+    ],
+    relations: [
+      { title: "Gil et Filston", text: "Leur rencontre lui donne une autre manière de comprendre le monde, moins instinctive et plus vertigineuse." },
+      { title: "Communauté des Papillons", text: "Il la reconnaît comme une anomalie majeure de la taverne, avant même de connaître son nom ou son rôle." },
+      { title: "Taverne du Sombrail", text: "Le premier lieu où son mouvement naturel se suspend assez longtemps pour devenir une vraie présence." }
+    ],
+    timeline: [
+      { era: "Avant la taverne", title: "Départ et routes solitaires", summary: "Ezze traverse Pandorus en suivant son instinct, sa vitesse et les signes faibles du terrain." },
+      { era: "Jour 9", title: "Rencontre avec Gil et Filston", summary: "Leur regard décalé sur le monde ouvre chez lui une question qu'il ne peut plus ignorer." },
+      { era: "Jour 10", title: "Arrivée à la taverne", summary: "Ezze rejoint Gil et Filston au Sombrail et choisit de rester face à la Communauté des Papillons." }
+    ]
+  },
+  {
+    slug: "gil-et-filston",
+    hash: "#fiches-gil-et-filston",
+    name: "Gil et Filston",
+    image: buildMediaPath("pandorus", "Gil et Filston.jpg"),
+    category: "Duo d'ailleurs",
+    intro: "Gil et Filston portent une manière étrange de regarder Pandorus, comme si ce monde leur était à la fois réel, impossible et encore à vérifier.",
+    meta: [
+      { label: "Statut", value: "Duo rencontré par Ezze" },
+      { label: "Spécialité", value: "Observation, questionnement, perception du décalage" },
+      { label: "Lien majeur", value: "Ezze et la taverne du Sombrail" }
+    ],
+    biography: [
+      "Gil parle beaucoup, mais pas pour occuper le silence: ses mots cherchent à vérifier la réalité même de ce qu'il voit. Il affirme venir d'un endroit où Pandorus n'existe pas, ce qui déstabilise Ezze plus profondément qu'une provocation ordinaire.",
+      "Filston observe avec une curiosité directe, presque pure. Ses questions touchent des points que les autres évitent, notamment cette impression que le monde va parfois trop vite, trop lentement, ou qu'il décale sans prévenir.",
+      "Avec Ezze, ils traversent une zone instable où le sol se vide sous les pas de Filston. Ezze le sauve par instinct, et leur lien se fixe dans cette expérience du danger.",
+      "À la taverne du Sombrail, leurs routes rejoignent celle d'Ezze et croisent la Communauté des Papillons, comme si leur regard extérieur devait entrer dans le même réseau d'événements."
+    ],
+    summary: [
+      "Gil et Filston ouvrent une autre lecture de Pandorus: celle d'un monde peut-être relié à d'autres réalités.",
+      "Leur présence rend Ezze plus attentif à ce qu'il traverse et prépare son arrêt à la taverne."
+    ],
+    profile: [
+      { title: "Gil", text: "Verbal, posé, presque scientifique dans sa manière de vérifier le réel." },
+      { title: "Filston", text: "Curieux, direct, sensible aux détails que d'autres ne formulent pas." },
+      { title: "Rôle narratif", text: "Introduire une étrangeté plus vaste autour de Pandorus et de ses frontières." }
+    ],
+    relations: [
+      { title: "Ezze", text: "Ils l'obligent à rester face à une question plus grande que son instinct de fuite." },
+      { title: "Taverne du Sombrail", text: "Le lieu où leur trajectoire rejoint celle de la Communauté des Papillons." },
+      { title: "Pandorus", text: "Ils suggèrent que le monde pourrait être plus ouvert, plus troublant et plus poreux qu'il ne paraît." }
+    ],
+    timeline: [
+      { era: "Jour 9", title: "Rencontre avec Ezze", summary: "Gil et Filston troublent Ezze par leur regard différent sur la réalité de Pandorus." },
+      { era: "Jour 9", title: "Sol vidé", summary: "Filston manque d'être pris par une anomalie du terrain avant qu'Ezze ne l'arrache au danger." },
+      { era: "Jour 10", title: "Arrivée commune", summary: "Ils rejoignent Ezze à la taverne et entrent dans le même lieu que la Communauté des Papillons." }
+    ]
+  },
+  {
+    slug: "brad-et-bradlette",
+    hash: "#fiches-brad-et-bradlette",
+    name: "Brad et Bradlette",
+    image: buildMediaPath("pandorus", "Brad et Bradlette.jpg"),
+    category: "Gardiens de taverne",
+    intro: "Brad et Bradlette maintiennent la taverne du Sombrail comme un lieu d'équilibre, de mémoire et de reconnaissance silencieuse.",
+    meta: [
+      { label: "Statut", value: "Tenanciers et survivants de mémoire" },
+      { label: "Spécialité", value: "Accueil prudent, lecture des présences, passage de souvenir" },
+      { label: "Lien majeur", value: "Elrick, les Briscards, la Communauté des Papillons" }
+    ],
+    biography: [
+      "Brad tient le comptoir avec une stabilité presque rituelle. Chaque geste semble maintenir le lieu debout contre ce qui déforme le monde autour.",
+      "Bradlette circule entre les tables avec une légèreté maîtrisée, mais son regard revient sans cesse vers ceux qui décalent l'équilibre de la salle. Elle reconnaît les présences qui ne viennent pas par hasard.",
+      "En évoquant Elrick et les anciens signes du déséquilibre, Brad ouvre un passage de mémoire. Il entraîne la Communauté des Papillons dans un souvenir vivant des Briscards et de l'origine de la nuit chargée d'étoiles."
+    ],
+    summary: [
+      "Brad et Bradlette ne sont pas de simples aubergistes: ils gardent un seuil entre le présent et une mémoire ancienne.",
+      "Leur taverne devient le lieu où la quête comprend que le mal actuel suit une ligne déjà ouverte autrefois."
+    ],
+    profile: [
+      { title: "Brad", text: "Solide, calme, capable d'ouvrir des souvenirs comme des passages." },
+      { title: "Bradlette", text: "Fluide, attentive, gardienne de l'équilibre social et émotionnel du lieu." },
+      { title: "Rôle narratif", text: "Faire entrer la Communauté des Papillons dans une mémoire active du monde." }
+    ],
+    relations: [
+      { title: "Elrick", text: "Son nom suffit à ouvrir une reconnaissance ancienne et à relier la taverne à la guerre passée." },
+      { title: "Ab'Youbi", text: "Il partage avec eux une veille discrète sur ce qui traverse le lieu." },
+      { title: "Syne", text: "Ils connaissent la limite à ne pas franchir autour d'elle et de sa boîte." }
+    ],
+    timeline: [
+      { era: "Jour 10", title: "Accueil de la Communauté", summary: "Brad et Bradlette reconnaissent le décalage du groupe dès son entrée dans la taverne." },
+      { era: "Jour 10", title: "Souvenir des Briscards", summary: "Brad ouvre un passage de mémoire vers l'origine ancienne du déséquilibre." },
+      { era: "Jour 10", title: "Nouvelle direction", summary: "Ils orientent la quête vers une créatrice capable de voir avant que le monde ne bascule." }
+    ]
+  },
+  {
+    slug: "abyoubi",
+    hash: "#fiches-abyoubi",
+    name: "Ab'Youbi",
+    image: buildMediaPath("pandorus", "AbYoubi.png"),
+    category: "Veilleur sombre",
+    intro: "Ab'Youbi est une présence immobile et profonde, capable de percevoir les traces invisibles qui suivent les voyageurs.",
+    meta: [
+      { label: "Statut", value: "Veilleur de la taverne" },
+      { label: "Spécialité", value: "Perception des désalignements et des traces" },
+      { label: "Lien majeur", value: "Syne, Brad, Bradlette, mémoire ancienne" }
+    ],
+    biography: [
+      "Dans l'ombre de la taverne, Ab'Youbi observe moins les corps que ce qui les entoure. Ses yeux rouges semblent lire les variations, les traces et les désalignements laissés par ce que le groupe a traversé.",
+      "Il reconnaît silencieusement la gravité de la Communauté des Papillons, puis valide la mémoire ouverte par Brad comme une réalité encore active plutôt qu'un simple récit.",
+      "Face à Syne et à la boîte, son attitude change à peine, mais cette retenue suffit: il sait que certaines forces ne doivent pas être provoquées pour être comprises."
+    ],
+    summary: [
+      "Ab'Youbi apporte à la taverne une veille plus obscure, plus ancienne et plus perceptive.",
+      "Il confirme que ce qui revient n'a jamais vraiment disparu, mais s'est transformé et dispersé."
+    ],
+    profile: [
+      { title: "Caractère", text: "Silencieux, profond, extrêmement attentif, sans besoin de démonstration." },
+      { title: "Forces", text: "Lecture des traces invisibles, perception de l'altération, reconnaissance des limites." },
+      { title: "Mystère", text: "Son origine et l'étendue réelle de sa perception restent ouvertes." }
+    ],
+    relations: [
+      { title: "Brad et Bradlette", text: "Ils maintiennent avec lui une veille tacite sur l'équilibre de la taverne." },
+      { title: "Syne", text: "Il reconnaît le danger contenu autour d'elle sans chercher à l'affronter." },
+      { title: "Communauté des Papillons", text: "Il lit dans le groupe une trace plus vaste que leur simple présence physique." }
+    ],
+    timeline: [
+      { era: "Jour 10", title: "Veille dans l'ombre", summary: "Ab'Youbi reconnaît ce que le groupe porte avant même que les mots ne soient posés." },
+      { era: "Jour 10", title: "Lecture de l'ancien déséquilibre", summary: "Il nomme une altération qui modifie le monde jusqu'à lui faire perdre son point d'équilibre." },
+      { era: "Jour 10", title: "Reconnaissance de Syne", summary: "Il comprend que la boîte de Syne contient une présence qu'il ne faut pas forcer." }
+    ]
+  },
+  {
+    slug: "syne",
+    hash: "#fiches-syne",
+    name: "Syne",
+    image: buildMediaPath("pandorus", "Syne.jpg"),
+    category: "Gardienne de la boîte",
+    intro: "Syne est la femme blonde de la taverne, calme et presque hors du lieu, gardant une boîte dont la présence retenue commence à s'éveiller.",
+    meta: [
+      { label: "Statut", value: "Présence énigmatique de la taverne" },
+      { label: "Spécialité", value: "Contrôle, retenue, seuil du visible" },
+      { label: "Objet majeur", value: "La boîte fermée" }
+    ],
+    biography: [
+      "Syne reste assise au fond de la taverne, droite, immobile, entourée d'un espace que les autres évitent sans avoir besoin d'en parler. Sa présence ne cherche pas à dominer, mais elle déplace l'équilibre du lieu.",
+      "Devant elle repose une boîte fermée, silencieuse, trop importante pour être un simple objet. Lorsqu'un frottement se fait entendre à l'intérieur, toute la taverne comprend que ce qu'elle garde n'est pas inerte.",
+      "Syne ne menace personne. Elle affirme seulement qu'il n'y a rien à craindre tant que personne ne cherche à voir ce qui n'est pas encore destiné à être vu, imposant une limite calme et absolue."
+    ],
+    summary: [
+      "Syne introduit un mystère nouveau: une présence contenue, retenue au seuil de l'existence visible.",
+      "Elle n'est pas encore une adversaire ni une alliée claire, mais elle devient immédiatement impossible à ignorer."
+    ],
+    profile: [
+      { title: "Caractère", text: "Calme, stable, presque détachée, avec une maîtrise froide du moment." },
+      { title: "Forces", text: "Contrôle de la tension, autorité silencieuse, capacité à maintenir ce qui est contenu." },
+      { title: "Mystère", text: "La nature exacte de sa boîte et de ce qui s'y éveille reste inconnue." }
+    ],
+    relations: [
+      { title: "Ab'Youbi", text: "Il reconnaît autour d'elle une force ou une limite qui ne doit pas être forcée." },
+      { title: "Brad et Bradlette", text: "Ils adaptent toute la taverne à sa présence sans jamais la nommer directement." },
+      { title: "Communauté des Papillons", text: "Son existence ajoute à leur route un mystère qui dépasse leur objectif immédiat." }
+    ],
+    timeline: [
+      { era: "Jour 10", title: "Présence au fond de la taverne", summary: "Syne apparaît comme une figure silencieuse gardant une boîte fermée." },
+      { era: "Jour 10", title: "Premier frémissement", summary: "Un mouvement étouffé se fait entendre dans la boîte, révélant que ce qu'elle contient n'est pas inerte." },
+      { era: "Jour 10", title: "Limite posée", summary: "Syne rappelle que certaines choses ne doivent pas encore être vues." }
+    ]
+  },
+  {
+    slug: "mitra-sesse",
+    hash: "#fiches-mitra-sesse",
+    name: "Mitra Séssé",
+    image: buildMediaPath("pandorus", "Mitra Séssé.jpg"),
+    category: "Briscard",
+    intro: "Mitra Séssé appartient à la mémoire des Briscards, ces figures anciennes qui ont tenu lorsque le monde commençait déjà à se décaler.",
+    meta: [
+      { label: "Statut", value: "Figure de la guerre ancienne" },
+      { label: "Groupe", value: "Les Briscards" },
+      { label: "Lien majeur", value: "Elrick jeune et la mémoire ouverte par Brad" }
+    ],
+    biography: [
+      "Mitra Séssé apparaît dans le souvenir vivant ouvert à la taverne du Sombrail. Il n'est pas présenté comme un simple nom du passé, mais comme une présence encore entière, debout dans un monde sur le point de basculer.",
+      "Avec les Briscards, il participe à la première grande résistance contre le déséquilibre, non par domination, mais par maintien, lecture et coordination face à une présence obscure diffuse.",
+      "Son retour par la mémoire donne au présent une profondeur nouvelle: ceux qui avancent aujourd'hui ne sont pas les premiers à tenir face à ce qui déforme Pandorus."
+    ],
+    summary: [
+      "Mitra Séssé renforce la mémoire des Briscards et l'idée d'une résistance ancienne encore active.",
+      "Sa fiche relie la taverne, Elrick jeune et l'origine du combat contre l'obscurité dispersée."
+    ],
+    profile: [
+      { title: "Nature", text: "Ancien résistant du monde, ancré dans la mémoire des Briscards." },
+      { title: "Rôle", text: "Participer à la stabilisation du vivant lors du premier grand dérèglement." },
+      { title: "Mystère", text: "Son histoire personnelle reste encore à ouvrir au-delà du souvenir collectif." }
+    ],
+    relations: [
+      { title: "Les Briscards", text: "Mitra Séssé en est l'une des figures visibles dans la mémoire de Brad." },
+      { title: "Elrick jeune", text: "Il partage avec lui le moment où le monde commence à perdre son équilibre." },
+      { title: "Brad", text: "Brad transmet sa présence par un souvenir vivant plutôt que par une simple histoire." }
+    ],
+    timeline: [
+      { era: "Ancien temps", title: "Résistance des Briscards", summary: "Mitra Séssé apparaît parmi ceux qui tiennent lorsque le déséquilibre ancien s'installe." },
+      { era: "Jour 10", title: "Retour par la mémoire", summary: "La taverne permet à la Communauté des Papillons de le voir comme une présence réelle du passé." }
+    ]
+  },
+  {
+    slug: "papy-perquis",
+    hash: "#fiches-papy-perquis",
+    name: "Papy Perquis",
+    image: buildMediaPath("pandorus", "Papy Perquis.jpg"),
+    category: "Briscard analyste",
+    intro: "Papy Perquis, appelé autrefois Gamin Perquis, incarne dans le souvenir une intelligence d'analyse face aux premiers signes du déséquilibre.",
+    meta: [
+      { label: "Statut", value: "Figure ancienne des Briscards" },
+      { label: "Ancien nom", value: "Gamin Perquis" },
+      { label: "Spécialité", value: "Analyse, lecture des signes, mémoire stratégique" }
+    ],
+    biography: [
+      "Dans le souvenir ouvert par Brad, Papy Perquis apparaît sous une forme plus jeune, alors appelé Gamin Perquis. Sa présence rappelle que certaines figures âgées du présent furent autrefois des points vifs de l'action.",
+      "Son rôle se dessine autour de l'analyse: comprendre les phénomènes, lire ce qui change et aider les Briscards à ne pas réagir seulement par force.",
+      "À travers lui, le site garde une trace claire de la continuité entre la guerre ancienne et les décisions actuelles de la Communauté des Papillons."
+    ],
+    summary: [
+      "Papy Perquis relie la mémoire ancienne à une lecture stratégique du déséquilibre.",
+      "Son ancien nom, Gamin Perquis, donne au passé une chair plus vivante et moins figée."
+    ],
+    profile: [
+      { title: "Nature", text: "Ancien Briscard devenu mémoire d'analyse." },
+      { title: "Rôle", text: "Observer, comprendre et poser des mots sur les signes du monde." },
+      { title: "Lien au présent", text: "Son souvenir éclaire les zones sensibles que la Communauté devra comprendre." }
+    ],
+    relations: [
+      { title: "Brad", text: "Brad fait revenir sa présence dans un souvenir transmis au groupe." },
+      { title: "Mitra Séssé", text: "Ils appartiennent à la même mémoire de résistance ancienne." },
+      { title: "Padre Souf", text: "Leurs anciens noms rappellent que les figures du passé ont elles aussi connu une jeunesse de lutte." }
+    ],
+    timeline: [
+      { era: "Ancien temps", title: "Gamin Perquis", summary: "Il participe à la lecture des premiers signes du déséquilibre parmi les Briscards." },
+      { era: "Jour 10", title: "Mémoire réactivée", summary: "Son rôle revient dans le souvenir partagé à la taverne." }
+    ]
+  },
+  {
+    slug: "padre-souf",
+    hash: "#fiches-padre-souf",
+    name: "Padre Souf",
+    image: buildMediaPath("pandorus", "Padre Souf.png"),
+    category: "Briscard ancien",
+    intro: "Padre Souf, appelé autrefois Filston Souf, apparaît dans la mémoire des Briscards comme une présence de l'ancienne résistance.",
+    meta: [
+      { label: "Statut", value: "Figure ancienne des Briscards" },
+      { label: "Ancien nom", value: "Filston Souf" },
+      { label: "Lien majeur", value: "Mémoire de la guerre ancienne" }
+    ],
+    biography: [
+      "Dans le souvenir de Brad, Padre Souf apparaît sous son ancien nom, Filston Souf. Cette nuance donne à la mémoire ancienne une continuité humaine: les survivants d'aujourd'hui furent eux aussi des présences jeunes, engagées, prises dans le basculement du monde.",
+      "Sa présence aux côtés des Briscards montre que la première résistance contre l'obscurité dispersée ne tenait pas à un héros unique, mais à un ensemble de points d'ancrage.",
+      "Il devient ainsi une trace importante pour comprendre que la Communauté des Papillons s'inscrit dans une histoire déjà commencée bien avant elle."
+    ],
+    summary: [
+      "Padre Souf relie la taverne et la mémoire des Briscards à une ancienne lutte collective.",
+      "Son ancien nom, Filston Souf, ajoute une profondeur générationnelle au récit."
+    ],
+    profile: [
+      { title: "Nature", text: "Ancien membre ou compagnon de la mémoire des Briscards." },
+      { title: "Rôle", text: "Participer à la tenue collective du monde lorsque l'obscurité gagne du terrain." },
+      { title: "Mystère", text: "Son parcours complet reste encore à développer au-delà du souvenir." }
+    ],
+    relations: [
+      { title: "Papy Perquis", text: "Ils partagent la mémoire d'une génération ancienne vue dans sa jeunesse." },
+      { title: "Mitra Séssé", text: "Ils appartiennent à la même strate de résistance transmise par Brad." },
+      { title: "Elrick jeune", text: "Ils apparaissent dans le même souvenir fondateur autour du monde qui commence à basculer." }
+    ],
+    timeline: [
+      { era: "Ancien temps", title: "Filston Souf", summary: "Il apparaît dans la mémoire ancienne parmi ceux qui tiennent face au premier grand dérèglement." },
+      { era: "Jour 10", title: "Retour du nom", summary: "La taverne rend visible son ancien nom et sa place dans la continuité des Briscards." }
+    ]
+  },
+  {
     slug: "eben",
     hash: "#fiches-eben",
     name: "Eben",
@@ -1927,7 +2416,15 @@ const ficheHashPanelMap = {
   "#fiches-hez": "hez-panel",
   "#fiches-javier": "javier-panel",
   "#fiches-kuji": "kuji-panel",
-  "#fiches-elennya": "elennya-panel"
+  "#fiches-elennya": "elennya-panel",
+  "#fiches-ezze": "ezze-panel",
+  "#fiches-gil-et-filston": "gil-et-filston-panel",
+  "#fiches-brad-et-bradlette": "brad-et-bradlette-panel",
+  "#fiches-abyoubi": "abyoubi-panel",
+  "#fiches-syne": "syne-panel",
+  "#fiches-mitra-sesse": "mitra-sesse-panel",
+  "#fiches-papy-perquis": "papy-perquis-panel",
+  "#fiches-padre-souf": "padre-souf-panel"
 };
 
 const creatureFiches = [
@@ -2333,6 +2830,21 @@ const chapters = [
     path: "./media/chapitres/Chapitre%2014%20-%20La%20communaut%C3%A9%20des%20Papillons.pdf",
     summary: "Le deuil de Hez et des renards fait naître la Communauté des Papillons, tandis qu'Harry PY retourne au Vrax et que Tsune ouvre la prochaine direction vers l'embouchure du Sombrail.",
     accessKey: "ChapPando14"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2015%20-%20Vers%20la%20taverne.pdf",
+    summary: "La Communauté des Papillons quitte le village des Renards, traverse des zones où le vivant se vide encore, puis atteint la taverne du Sombrail comme un point de passage chargé de mémoire.",
+    accessKey: "ChapPando15"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2016%20-%20La%20Taverne.pdf",
+    summary: "Dans la taverne du Sombrail, Brad, Bradlette et Ab'Youbi reconnaissent le groupe, ouvrent la mémoire des Briscards et révèlent une origine ancienne du déséquilibre, tandis que Syne garde une boîte éveillée.",
+    accessKey: "ChapPando16"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2017%20-%20Ezze%2C%20Gil%20et%20Filston.pdf",
+    summary: "Le parcours d'Ezze, sa rencontre avec Gil et Filston, puis leur arrivée commune à la taverne relient une nouvelle trajectoire vive à la Communauté des Papillons.",
+    accessKey: "ChapPando17"
   }
 ];
 
@@ -2571,6 +3083,46 @@ const timelineEvents = [
     era: "Jour 8",
     title: "Nouvelle direction vers l'embouchure du Sombrail",
     summary: "Tsune oriente le groupe vers une taverne tenue par d'anciens survivants à l'embouchure du Sombrail, prochaine étape d'une quête devenue plus vaste et plus consciente."
+  },
+  {
+    era: "Jour 9",
+    title: "Route vers la taverne du Sombrail",
+    summary: "La Communauté des Papillons quitte le village des Renards et traverse des zones où le vivant perd encore sa cohérence, confirmant que le dérèglement s'étend."
+  },
+  {
+    era: "Jour 9",
+    title: "Papillon vidé et créature sans présence",
+    summary: "Le groupe retrouve de nouveaux signes d'arrachement du vivant: papillon vidé, terre instable et corps de créature intact mais déjà absent."
+  },
+  {
+    era: "Jour 10",
+    title: "Entrée dans la taverne du Sombrail",
+    summary: "Shaushana, Shan, Franklin, Lévy et Tsune atteignent la taverne, un lieu de bois ancien où chaque regard semble peser la raison de leur venue."
+  },
+  {
+    era: "Jour 10",
+    title: "Rencontre avec Brad, Bradlette et Ab'Youbi",
+    summary: "Les gardiens de la taverne reconnaissent le décalage du groupe et commencent à relier leur route à la mémoire d'Elrick et des Briscards."
+  },
+  {
+    era: "Jour 10",
+    title: "Souvenir des Briscards et origine des étoiles",
+    summary: "Brad ouvre un passage de mémoire où apparaissent Elrick jeune, Mitra Séssé, Papy Perquis et Padre Souf, au moment où l'homme sombre est contenu puis dispersé dans une nuit devenue porteuse d'étoiles."
+  },
+  {
+    era: "Jour 10",
+    title: "Syne et la boîte éveillée",
+    summary: "Au fond de la taverne, Syne impose une limite calme autour d'une boîte qui frémit, révélant une présence retenue qui ne doit pas encore être vue."
+  },
+  {
+    era: "Jour 10",
+    title: "Brad évoque une créatrice à l'ouest",
+    summary: "Après la mémoire ancienne, Brad et Bradlette orientent la Communauté vers une présence capable de voir avant que le monde ne bascule."
+  },
+  {
+    era: "Jour 10",
+    title: "Arrivée d'Ezze, Gil et Filston",
+    summary: "Ezze retrouve Gil et Filston à la taverne, observe la Communauté des Papillons et choisit de rester, comme si sa route venait enfin de rejoindre un point plus vaste."
   }
 ];
 
@@ -3188,6 +3740,15 @@ function renderTimeline() {
     if (normalizedEventText.includes("VILLAGE")) contextCandidates.push({ href: "#lieux-village-des-renards", label: "Voir le village des Renards" });
     if (normalizedEventText.includes("SOMBRAIL")) contextCandidates.push({ href: "#lieux-embouchure-du-sombrail", label: "Voir l'embouchure du Sombrail" });
     if (normalizedEventText.includes("COMMUNAUTE DES PAPILLONS")) contextCandidates.push({ href: "#mysteres", label: "Voir les nouveaux mystères" });
+    if (normalizedEventText.includes("TAVERNE")) contextCandidates.push({ href: "#lieux-taverne-du-sombrail", label: "Voir la taverne du Sombrail" });
+    if (normalizedEventText.includes("EZZE")) contextCandidates.push({ href: "#fiches-ezze", label: "Voir Ezze" });
+    if (normalizedEventText.includes("GIL") || normalizedEventText.includes("FILSTON")) contextCandidates.push({ href: "#fiches-gil-et-filston", label: "Voir Gil et Filston" });
+    if (normalizedEventText.includes("BRAD")) contextCandidates.push({ href: "#fiches-brad-et-bradlette", label: "Voir Brad et Bradlette" });
+    if (normalizedEventText.includes("AB'YOUBI") || normalizedEventText.includes("ABYOUBI")) contextCandidates.push({ href: "#fiches-abyoubi", label: "Voir Ab'Youbi" });
+    if (normalizedEventText.includes("SYNE")) contextCandidates.push({ href: "#fiches-syne", label: "Voir Syne" });
+    if (normalizedEventText.includes("MITRA")) contextCandidates.push({ href: "#fiches-mitra-sesse", label: "Voir Mitra Séssé" });
+    if (normalizedEventText.includes("PERQUIS")) contextCandidates.push({ href: "#fiches-papy-perquis", label: "Voir Papy Perquis" });
+    if (normalizedEventText.includes("SOUF")) contextCandidates.push({ href: "#fiches-padre-souf", label: "Voir Padre Souf" });
 
     const uniqueLinks = [];
     const seenLinks = new Set();
@@ -3658,7 +4219,20 @@ function renderRelations() {
       Wingard: buildMediaPath("pandorus", "Wingard.png"),
       "Lévy": buildMediaPath("pandorus", "Lévy.png"),
       "Ossah Lyla": buildMediaPath("pandorus", "Ossah Lyla.png"),
-      Nastaz: buildMediaPath("pandorus", "Nastaz.png")
+      Nastaz: buildMediaPath("pandorus", "Nastaz.png"),
+      Tsune: buildMediaPath("pandorus", "Tsune.jpg"),
+      Hez: buildMediaPath("pandorus", "Hez.jpg"),
+      Javier: buildMediaPath("pandorus", "Javier.png"),
+      Kuji: buildMediaPath("pandorus", "Kuji.png"),
+      Elennya: buildMediaPath("pandorus", "Elennya.png"),
+      Ezze: buildMediaPath("pandorus", "Ezze.png"),
+      "Gil et Filston": buildMediaPath("pandorus", "Gil et Filston.jpg"),
+      "Brad et Bradlette": buildMediaPath("pandorus", "Brad et Bradlette.jpg"),
+      "Ab'Youbi": buildMediaPath("pandorus", "AbYoubi.png"),
+      Syne: buildMediaPath("pandorus", "Syne.jpg"),
+      "Mitra Séssé": buildMediaPath("pandorus", "Mitra Séssé.jpg"),
+      "Papy Perquis": buildMediaPath("pandorus", "Papy Perquis.jpg"),
+      "Padre Souf": buildMediaPath("pandorus", "Padre Souf.png")
     };
     const portrait = portraitMap[nodeData.name];
     const portraitThumb = portrait
