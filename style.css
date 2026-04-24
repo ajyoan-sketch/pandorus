@@ -2727,7 +2727,8 @@ h4 {
 .locations-guard-card {
   position: relative;
   flex: 1 1 340px;
-  min-height: 320px;
+  aspect-ratio: 1491 / 1055;
+  min-height: 0;
   margin: 0;
   border: 1px solid rgba(129, 98, 45, 0.22);
   border-radius: 28px;
@@ -2761,7 +2762,7 @@ h4 {
   flex-direction: column;
   justify-content: flex-end;
   gap: 10px;
-  min-height: 320px;
+  min-height: 100%;
   padding: 24px;
   color: #fff8eb;
 }
@@ -3436,9 +3437,12 @@ h4 {
     justify-content: flex-start;
   }
 
-  .locations-guard-card,
+  .locations-guard-card {
+    min-height: 220px;
+  }
+
   .locations-guard-copy {
-    min-height: 260px;
+    min-height: 100%;
   }
 
   .location-fiche-tabs {
