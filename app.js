@@ -2329,10 +2329,10 @@ const additionalCharacterFiches = [
       { era: "Jour 9", title: "Rencontre avec Gil et Filston", summary: "Leur regard décalé sur le monde ouvre chez lui une question qu'il ne peut plus ignorer." },
       { era: "Jour 10", title: "Arrivée à la taverne", summary: "Ezze rejoint Gil et Filston au Sombrail et choisit de rester face à la Communauté des Papillons." },
       { era: "Jour 10", title: "Rumeur du Vert", summary: "À la taverne, Ezze relie ses propres observations à la rumeur d'un homme retenu au coeur du Vert et contribue à réorienter la quête." },
-      { era: "Route du Sombrail", title: "Guide du fleuve", summary: "Sur les berges du Sombrail, Ezze lit le terrain, choisit les appuis et devient naturellement celui qui ouvre le passage." },
-      { era: "Nuit au bord du Sombrail", title: "Pause sans fuite", summary: "Au camp, pour la première fois, Ezze ne cherche pas seulement à repartir : il reste avec le groupe et commence à accepter d'en faire réellement partie." },
-      { era: "Lendemain dans le Vert", title: "Entrée dans la forêt vivante", summary: "Le lendemain, Ezze guide encore le groupe jusqu'au Vert, évite les attaques, protège Filston et assiste au face-à-face avec Eben sans chercher à reprendre le contrôle." },
-      { era: "Ruines du Vert", title: "Vers le Capitaine", summary: "Après le duel entre Shan et Eben, Ezze poursuit la marche avec les autres jusqu'aux ruines où la rumeur sur le Capitaine devient enfin une preuve." }
+      { era: "Jour 11", title: "Guide du fleuve", summary: "Sur les berges du Sombrail, Ezze lit le terrain, choisit les appuis et devient naturellement celui qui ouvre le passage." },
+      { era: "Nuit du Jour 11", title: "Pause sans fuite", summary: "Au camp, pour la première fois, Ezze ne cherche pas seulement à repartir : il reste avec le groupe et commence à accepter d'en faire réellement partie." },
+      { era: "Jour 12", title: "Entrée dans la forêt vivante", summary: "Le lendemain, Ezze guide encore le groupe jusqu'au Vert, évite les attaques, protège Filston et assiste au face-à-face avec Eben sans chercher à reprendre le contrôle." },
+      { era: "Jour 12", title: "Vers le Capitaine", summary: "Après le duel entre Shan et Eben, Ezze poursuit la marche avec les autres jusqu'aux ruines où la rumeur sur le Capitaine devient enfin une preuve." }
     ]
   },
   {
@@ -2372,10 +2372,10 @@ const additionalCharacterFiches = [
       { era: "Jour 9", title: "Sol vidé", summary: "Filston manque d'être pris par une anomalie du terrain avant qu'Ezze ne l'arrache au danger." },
       { era: "Jour 10", title: "Arrivée commune", summary: "Ils rejoignent Ezze à la taverne et entrent dans le même lieu que la Communauté des Papillons." },
       { era: "Jour 10", title: "Ouverture du réel", summary: "Dans la taverne, leurs paroles sur d'autres mondes cessent d'être de simples étrangetés et élargissent réellement la lecture du groupe." },
-      { era: "Route du Sombrail", title: "Traversée avec le groupe", summary: "Sur la route du Sombrail, Gil observe tout comme un système à comprendre, tandis que Filston reste traversé d'émerveillement malgré le danger." },
-      { era: "Nuit au bord du Sombrail", title: "Après les attaques", summary: "La nuit venue, Gil veille sur Filston et tous deux commencent à mesurer que ce qu'ils observent n'est plus un simple décalage de réalité, mais une crise du vivant." },
-      { era: "Lendemain dans le Vert", title: "Témoins du duel", summary: "Dans le Vert, ils assistent à l'attaque des Serpensouffres, à l'apparition d'Eben et au combat de Shan, en comprenant que certaines vérités ne s'expliquent qu'en étant traversées." },
-      { era: "Ruines du Vert", title: "Preuve finale du chapitre", summary: "Ils suivent le groupe jusqu'aux ruines et voient la rumeur prendre corps avec la découverte du Capitaine captif." }
+      { era: "Jour 11", title: "Traversée avec le groupe", summary: "Sur la route du Sombrail, Gil observe tout comme un système à comprendre, tandis que Filston reste traversé d'émerveillement malgré le danger." },
+      { era: "Nuit du Jour 11", title: "Après les attaques", summary: "La nuit venue, Gil veille sur Filston et tous deux commencent à mesurer que ce qu'ils observent n'est plus un simple décalage de réalité, mais une crise du vivant." },
+      { era: "Jour 12", title: "Témoins du duel", summary: "Dans le Vert, ils assistent à l'attaque des Serpensouffres, à l'apparition d'Eben et au combat de Shan, en comprenant que certaines vérités ne s'expliquent qu'en étant traversées." },
+      { era: "Jour 12", title: "Preuve finale du chapitre", summary: "Ils suivent le groupe jusqu'aux ruines et voient la rumeur prendre corps avec la découverte du Capitaine captif." }
     ]
   },
   {
@@ -2414,7 +2414,7 @@ const additionalCharacterFiches = [
       { era: "Jour 10", title: "Souvenir des Briscards", summary: "Brad ouvre un passage de mémoire vers l'origine ancienne du déséquilibre." },
       { era: "Jour 10", title: "Nouvelle direction", summary: "Ils orientent la quête vers une créatrice capable de voir avant que le monde ne bascule." },
       { era: "Jour 10", title: "Priorité du Vert", summary: "Avec Ezze et Franklin, ils aident à faire passer la recherche du Capitaine avant la route de la Sombra, sans effacer cette dernière." },
-      { era: "Après le départ", title: "Parole laissée en veille", summary: "Une fois le groupe parti, leur mémoire et leur orientation continuent d'agir comme une boussole vers le Vert puis vers la Sombra." }
+      { era: "Fin du Jour 10", title: "Parole laissée en veille", summary: "Une fois le groupe parti, leur mémoire et leur orientation continuent d'agir comme une boussole vers le Vert puis vers la Sombra." }
     ]
   },
   {
@@ -2452,11 +2452,11 @@ const additionalCharacterFiches = [
       { era: "Jour 10", title: "Veille dans l'ombre", summary: "Ab'Youbi reconnaît ce que le groupe porte avant même que les mots ne soient posés." },
       { era: "Jour 10", title: "Lecture de l'ancien déséquilibre", summary: "Il nomme une altération qui modifie le monde jusqu'à lui faire perdre son point d'équilibre." },
       { era: "Jour 10", title: "Reconnaissance de Syne", summary: "Il comprend que la boîte de Syne contient une présence qu'il ne faut pas forcer." },
-      { era: "Route du Sombrail", title: "Suivi à distance", summary: "Ab'Youbi quitte la taverne derrière le groupe, maintenant sa distance comme s'il suivait moins leurs pas que leur trajectoire." },
-      { era: "Route du Sombrail", title: "Retrait de l'Aligaroi", summary: "Au bord du fleuve, il fait céder l'Aligaroi sans combat et révèle une autorité plus ancienne que la simple puissance." },
-      { era: "Nuit au bord du Sombrail", title: "Veille silencieuse", summary: "La nuit, Ab'Youbi reste à distance du camp sans jamais disparaître, comme une présence qui protège sans rejoindre." },
-      { era: "Lendemain dans le Vert", title: "Présence dans le territoire ancien", summary: "Le lendemain, il entre dans le Vert comme dans un lieu déjà connu et observe sans intervenir l'approche d'Eben et le duel de Shan." },
-      { era: "Après le duel", title: "Parole d'équilibre", summary: "Quand Shan veut prolonger la violence, Ab'Youbi l'arrête et rappelle qu'Eben n'était pas la cause première du drame ancien." }
+      { era: "Jour 11", title: "Suivi à distance", summary: "Ab'Youbi quitte la taverne derrière le groupe, maintenant sa distance comme s'il suivait moins leurs pas que leur trajectoire." },
+      { era: "Jour 11", title: "Retrait de l'Aligaroi", summary: "Au bord du fleuve, il fait céder l'Aligaroi sans combat et révèle une autorité plus ancienne que la simple puissance." },
+      { era: "Nuit du Jour 11", title: "Veille silencieuse", summary: "La nuit, Ab'Youbi reste à distance du camp sans jamais disparaître, comme une présence qui protège sans rejoindre." },
+      { era: "Jour 12", title: "Présence dans le territoire ancien", summary: "Le lendemain, il entre dans le Vert comme dans un lieu déjà connu et observe sans intervenir l'approche d'Eben et le duel de Shan." },
+      { era: "Jour 12", title: "Parole d'équilibre", summary: "Quand Shan veut prolonger la violence, Ab'Youbi l'arrête et rappelle qu'Eben n'était pas la cause première du drame ancien." }
     ]
   },
   {
@@ -2494,7 +2494,7 @@ const additionalCharacterFiches = [
       { era: "Jour 10", title: "Présence au fond de la taverne", summary: "Syne apparaît comme une figure silencieuse gardant une boîte fermée." },
       { era: "Jour 10", title: "Premier frémissement", summary: "Un mouvement étouffé se fait entendre dans la boîte, révélant que ce qu'elle contient n'est pas inerte." },
       { era: "Jour 10", title: "Limite posée", summary: "Syne rappelle que certaines choses ne doivent pas encore être vues." },
-      { era: "Avant la route", title: "Départ discret", summary: "Au moment où le groupe quitte la taverne, Syne et sa boîte disparaissent déjà du lieu, comme si leur propre route suivait une logique séparée." }
+      { era: "Fin du Jour 10", title: "Départ discret", summary: "Au moment où le groupe quitte la taverne, Syne et sa boîte disparaissent déjà du lieu, comme si leur propre route suivait une logique séparée." }
     ]
   },
   {
@@ -2531,7 +2531,7 @@ const additionalCharacterFiches = [
     timeline: [
       { era: "Ancien temps", title: "Résistance des Briscards", summary: "Mitra Séssé apparaît parmi ceux qui tiennent lorsque le déséquilibre ancien s'installe." },
       { era: "Jour 10", title: "Retour par la mémoire", summary: "La taverne permet à la Communauté des Papillons de le voir comme une présence réelle du passé." },
-      { era: "Après la taverne", title: "Mémoire active", summary: "Une fois la route relancée vers le Vert, Mitra Séssé cesse d'être un simple souvenir : il devient un précédent concret pour ceux qui avancent à leur tour." }
+      { era: "Fin du Jour 10", title: "Mémoire active", summary: "Une fois la route relancée vers le Vert, Mitra Séssé cesse d'être un simple souvenir : il devient un précédent concret pour ceux qui avancent à leur tour." }
     ]
   },
   {
@@ -2568,7 +2568,7 @@ const additionalCharacterFiches = [
     timeline: [
       { era: "Ancien temps", title: "Gamin Perquis", summary: "Il participe à la lecture des premiers signes du déséquilibre parmi les Briscards." },
       { era: "Jour 10", title: "Mémoire réactivée", summary: "Son rôle revient dans le souvenir partagé à la taverne." },
-      { era: "Après la taverne", title: "Analyse léguée", summary: "Quand le groupe choisit le Vert avant la Sombra, la mémoire de Papy Perquis reste comme une invitation à lire avant de frapper." }
+      { era: "Fin du Jour 10", title: "Analyse léguée", summary: "Quand le groupe choisit le Vert avant la Sombra, la mémoire de Papy Perquis reste comme une invitation à lire avant de frapper." }
     ]
   },
   {
@@ -2605,7 +2605,7 @@ const additionalCharacterFiches = [
     timeline: [
       { era: "Ancien temps", title: "Filston Souf", summary: "Il apparaît dans la mémoire ancienne parmi ceux qui tiennent face au premier grand dérèglement." },
       { era: "Jour 10", title: "Retour du nom", summary: "La taverne rend visible son ancien nom et sa place dans la continuité des Briscards." },
-      { era: "Après la taverne", title: "Continuité de veille", summary: "Son souvenir accompagne le départ du groupe comme la preuve qu'une ancienne résistance peut encore nourrir la route présente." }
+      { era: "Fin du Jour 10", title: "Continuité de veille", summary: "Son souvenir accompagne le départ du groupe comme la preuve qu'une ancienne résistance peut encore nourrir la route présente." }
     ]
   },
   {
@@ -2642,8 +2642,8 @@ const additionalCharacterFiches = [
     timeline: [
       { era: "Ancien temps du Vert", title: "Accession à la royauté", summary: "Eben renverse l'ancien chef des singes et devient une autorité reconnue par le Vert." },
       { era: "Avant le récit", title: "Confrontation fatale", summary: "Les parents de Shan meurent en l'affrontant, tandis que l'enfant est épargné." },
-      { era: "Lendemain dans le Vert", title: "Duel avec Shan", summary: "Au coeur du Vert, Eben affronte Shan jusqu'à transformer leur lien en reconnaissance plutôt qu'en pure vengeance." },
-      { era: "Après le duel", title: "Pierre du Vert", summary: "Avant d'être entouré par les siens, Eben laisse à Shan une pierre marquée du Vert, signe que le combat a produit une reconnaissance plus qu'une défaite." }
+      { era: "Jour 12", title: "Duel avec Shan", summary: "Au coeur du Vert, Eben affronte Shan jusqu'à transformer leur lien en reconnaissance plutôt qu'en pure vengeance." },
+      { era: "Jour 12", title: "Pierre du Vert", summary: "Avant d'être entouré par les siens, Eben laisse à Shan une pierre marquée du Vert, signe que le combat a produit une reconnaissance plus qu'une défaite." }
     ]
   },
   {
@@ -2683,7 +2683,7 @@ const additionalCharacterFiches = [
       { era: "Avant le récit", title: "Lecture du déséquilibre", summary: "Le Capitaine comprend que l'etat du Passar traduit une alteration plus vaste du vivant." },
       { era: "Avant le récit", title: "Expedition vers le Veyrine", summary: "Avec Franklin, il part comparer les fleuves pour trouver une logique a la crise qui gagne le monde." },
       { era: "Avant le récit", title: "Disparition", summary: "Apres avoir percu une présence invisible, il renvoie Franklin au Passar et disparait seul, laissant une question ouverte." },
-      { era: "Ruines du Vert", title: "Retrouvé captif", summary: "Au centre de ruines vidées dans le Vert, le groupe retrouve enfin le Capitaine vivant mais retenu." }
+      { era: "Jour 12", title: "Retrouvé captif", summary: "Au centre de ruines vidées dans le Vert, le groupe retrouve enfin le Capitaine vivant mais retenu." }
     ]
   },
   {
@@ -2720,7 +2720,7 @@ const additionalCharacterFiches = [
     timeline: [
       { era: "Jour 10", title: "Nom donné par Brad", summary: "Bichette est évoquée comme la créatrice à l'ouest capable d'offrir une lecture plus fine du basculement." },
       { era: "Jour 10", title: "Horizon maintenu", summary: "Même lorsque le groupe choisit d'abord le Vert à cause du Capitaine, Bichette reste la grande direction stratégique laissée en veille." },
-      { era: "Après le Vert", title: "Après le Vert", summary: "La traversée du Vert renforce encore le poids de son nom : plus le monde se révèle complexe, plus la route vers la Sombra paraît nécessaire." }
+      { era: "Après le Jour 12", title: "Après le Vert", summary: "La traversée du Vert renforce encore le poids de son nom : plus le monde se révèle complexe, plus la route vers la Sombra paraît nécessaire." }
     ]
   },
   {
@@ -2756,7 +2756,7 @@ const additionalCharacterFiches = [
     timeline: [
       { era: "Jour 10", title: "Évoquée à la taverne", summary: "Son nom entre dans le récit par la parole de Brad et Bradlette, avec la Sombra comme horizon." },
       { era: "Jour 10", title: "Présence gardée en réserve", summary: "Luna Queen demeure hors champ, mais son nom suffit déjà à faire comprendre que l'ouest n'est pas vide : il est organisé." },
-      { era: "Après le Vert", title: "Nécessité croissante", summary: "À mesure que le Vert révèle ses propres souverainetés, la perspective d'une rencontre avec Luna Queen gagne en importance pour la suite." }
+      { era: "Après le Jour 12", title: "Nécessité croissante", summary: "À mesure que le Vert révèle ses propres souverainetés, la perspective d'une rencontre avec Luna Queen gagne en importance pour la suite." }
     ]
   },
   {
@@ -2792,7 +2792,7 @@ const additionalCharacterFiches = [
     timeline: [
       { era: "Jour 10", title: "Évoquée à la taverne", summary: "Son nom rejoint ceux de Bichette et Luna Queen comme nouvelle direction stratégique du récit." },
       { era: "Jour 10", title: "Troisième point d'équilibre", summary: "Sa mention confirme que la Sombra repose sur plusieurs présences complémentaires et non sur une seule figure isolée." },
-      { era: "Après le Vert", title: "Attente de l'ouest", summary: "Après la priorité donnée au Vert, Méli Mélo reste l'un des noms qui continuent d'ouvrir l'étape suivante de la route." }
+      { era: "Après le Jour 12", title: "Attente de l'ouest", summary: "Après la priorité donnée au Vert, Méli Mélo reste l'un des noms qui continuent d'ouvrir l'étape suivante de la route." }
     ]
   }
 ];
