@@ -4326,6 +4326,13 @@ function renderTimeline() {
 
     era.textContent = event.era;
     title.textContent = event.title;
+    const dayMatch = (event.era || "").match(/(Jour\s+\d+(?:\s*[àa-]\s*\d+)?)/i);
+    if (dayMatch) {
+      const dayChip = document.createElement("span");
+      dayChip.className = "timeline-day-chip";
+      dayChip.textContent = dayMatch[1].replace(/\s+/g, " ").trim();
+      title.appendChild(dayChip);
+    }
     summary.textContent = event.summary;
     content.insertBefore(badgeNode, era);
     const timelineLinks = document.createElement("div");

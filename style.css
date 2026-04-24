@@ -1426,7 +1426,26 @@ h4 {
 }
 
 .timeline-content h4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
   margin-bottom: 8px;
+}
+
+.timeline-day-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(138, 106, 45, 0.18);
+  background: rgba(250, 244, 228, 0.92);
+  color: #7b5d28;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .timeline-badge {
