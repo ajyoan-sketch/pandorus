@@ -874,7 +874,10 @@ const locationFiches = [
       { href: "#chronologie", label: "Lire la révélation de la taverne" }
     ]
   }
-];
+].map((fiche) => ({
+  ...fiche,
+  image: locationImageMap[fiche.slug] || locationHeroImage
+}));
 
 const locationHashPanelMap = Object.fromEntries(
   locationFiches.map((fiche) => [`#lieux-${fiche.slug}`, `lieu-panel-${fiche.slug}`])
@@ -1391,6 +1394,23 @@ function buildMediaPath(folder, fileName) {
   const safeFileName = encodeURIComponent(fileName).replace(/'/g, "%27");
   return `./media/${folder}/${safeFileName}`;
 }
+
+const locationHeroImage = buildMediaPath("lieux", "Photo de Garde.png");
+
+const locationImageMap = {
+  passage: buildMediaPath("lieux", "Le Passage.png"),
+  passar: buildMediaPath("lieux", "Passar.png"),
+  "bidonville-du-passar": buildMediaPath("lieux", "Bidonville du Passar.png"),
+  veyrine: buildMediaPath("lieux", "Veyrine.png"),
+  bassai: buildMediaPath("lieux", "Bassaï.png"),
+  vrax: buildMediaPath("lieux", "Le Vrax.png"),
+  "coeur-du-vrax": buildMediaPath("lieux", "Coeur Du Vrax.png"),
+  "fleuve-sylvae": buildMediaPath("lieux", "Sylvae.png"),
+  "mer-du-sphinx-pandorien": buildMediaPath("lieux", "Mer du Sphinx Pandorien.png"),
+  "village-des-renards": buildMediaPath("lieux", "Village des Renards.png"),
+  "embouchure-du-sombrail": buildMediaPath("lieux", "Embouchure du Sombrail.png"),
+  "taverne-du-sombrail": buildMediaPath("lieux", "Taverne du Sombrail.png")
+};
 
 function stripAccents(value) {
   return (value || "")
@@ -3268,6 +3288,7 @@ function renderLocationFiches() {
   const panelsContainer = document.getElementById("lieux-fiches-panels");
   if (!tabsContainer || !panelsContainer) return;
 
+  tabsContainer.classList.add("location-fiche-tabs");
   tabsContainer.innerHTML = "";
   panelsContainer.innerHTML = "";
 
@@ -3284,12 +3305,21 @@ function renderLocationFiches() {
 
   filteredLocations.forEach((fiche, index) => {
     const tab = document.createElement("button");
-    tab.className = `fiche-tab${index === 0 ? " active" : ""}`;
+    tab.className = `fiche-tab location-tab${index === 0 ? " active" : ""}`;
     tab.type = "button";
     tab.dataset.locationTarget = `lieu-panel-${fiche.slug}`;
     tab.setAttribute("role", "tab");
     tab.setAttribute("aria-selected", index === 0 ? "true" : "false");
-    tab.textContent = fiche.name;
+    tab.innerHTML = `
+      <span class="location-tab-media">
+        <img src="${fiche.image}" alt="${fiche.name}">
+      </span>
+      <span class="location-tab-overlay" aria-hidden="true"></span>
+      <span class="location-tab-content">
+        <span class="location-tab-kicker">${fiche.category}</span>
+        <span class="location-tab-title">${fiche.name}</span>
+      </span>
+    `;
     tabsContainer.appendChild(tab);
 
     const panel = document.createElement("div");
@@ -3319,9 +3349,13 @@ function renderLocationFiches() {
         <div id="lieux-${fiche.slug}" class="fiche-grid location-fiche-grid">
           <div class="fiche-portrait">
             <article class="location-portrait-card location-tone-${fiche.tone}">
-              <p class="location-portrait-kicker">${fiche.category}</p>
-              <h3>${fiche.name}</h3>
-              <p class="location-portrait-line">${fiche.meta[0].value}</p>
+              <img class="location-portrait-image" src="${fiche.image}" alt="${fiche.name}">
+              <div class="location-portrait-overlay" aria-hidden="true"></div>
+              <div class="location-portrait-copy">
+                <p class="location-portrait-kicker">${fiche.category}</p>
+                <h3>${fiche.name}</h3>
+                <p class="location-portrait-line">${fiche.meta[0].value}</p>
+              </div>
             </article>
           </div>
           <div class="fiche-content">
