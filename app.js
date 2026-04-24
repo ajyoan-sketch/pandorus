@@ -1641,7 +1641,7 @@ function getLocationImage(slug) {
     "embouchure-du-sombrail": buildMediaPath("lieux", "Embouchure du Sombrail.jpg"),
     "taverne-du-sombrail": buildMediaPath("lieux", "Taverne du Sombrail.jpg"),
     vert: buildMediaPath("lieux", "Le Vert.png"),
-    "ruines-du-vert": buildMediaPath("lieux", "Le Vert.png")
+    "ruines-du-vert": buildMediaPath("lieux", "Les Ruines du Vert.png")
   };
 
   return locationImageMap[slug] || locationHeroImage;
