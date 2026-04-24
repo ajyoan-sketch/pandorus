@@ -1396,20 +1396,20 @@ function buildMediaPath(folder, fileName) {
 }
 
 function getLocationImage(slug) {
-  const locationHeroImage = buildMediaPath("lieux", "Photo de Garde.png");
+  const locationHeroImage = buildMediaPath("lieux", "Photo de Garde.jpg");
   const locationImageMap = {
-    passage: buildMediaPath("lieux", "Le Passage.png"),
-    passar: buildMediaPath("lieux", "Passar.png"),
-    "bidonville-du-passar": buildMediaPath("lieux", "Bidonville du Passar.png"),
-    veyrine: buildMediaPath("lieux", "Veyrine.png"),
-    bassai: buildMediaPath("lieux", "Bassaï.png"),
-    vrax: buildMediaPath("lieux", "Le Vrax.png"),
-    "coeur-du-vrax": buildMediaPath("lieux", "Coeur Du Vrax.png"),
-    "fleuve-sylvae": buildMediaPath("lieux", "Sylvae.png"),
-    "mer-du-sphinx-pandorien": buildMediaPath("lieux", "Mer du Sphinx Pandorien.png"),
-    "village-des-renards": buildMediaPath("lieux", "Village des Renards.png"),
-    "embouchure-du-sombrail": buildMediaPath("lieux", "Embouchure du Sombrail.png"),
-    "taverne-du-sombrail": buildMediaPath("lieux", "Taverne du Sombrail.png")
+    passage: buildMediaPath("lieux", "Le Passage.jpg"),
+    passar: buildMediaPath("lieux", "Passar.jpg"),
+    "bidonville-du-passar": buildMediaPath("lieux", "Bidonville du Passar.jpg"),
+    veyrine: buildMediaPath("lieux", "Veyrine.jpg"),
+    bassai: buildMediaPath("lieux", "Bassaï.jpg"),
+    vrax: buildMediaPath("lieux", "Le Vrax.jpg"),
+    "coeur-du-vrax": buildMediaPath("lieux", "Coeur Du Vrax.jpg"),
+    "fleuve-sylvae": buildMediaPath("lieux", "Sylvae.jpg"),
+    "mer-du-sphinx-pandorien": buildMediaPath("lieux", "Mer du Sphinx Pandorien.jpg"),
+    "village-des-renards": buildMediaPath("lieux", "Village des Renards.jpg"),
+    "embouchure-du-sombrail": buildMediaPath("lieux", "Embouchure du Sombrail.jpg"),
+    "taverne-du-sombrail": buildMediaPath("lieux", "Taverne du Sombrail.jpg")
   };
 
   return locationImageMap[slug] || locationHeroImage;
