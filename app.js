@@ -230,6 +230,57 @@ const livingMapRegions = [
         text: "Brad, Bradlette, Ab'Youbi, Syne, Ezze, Gil, Filston, Mitra Séssé, Papy Perquis et Padre Souf."
       }
     ]
+  },
+  {
+    slug: "vert",
+    name: "Le Vert",
+    kicker: "Royaume vivant",
+    mood: "Densité, royauté animale, résistance ancienne",
+    text: "Le Vert n'est pas une simple forêt. C'est un espace où la vie reste dense malgré le dérèglement, où les peuples animaux lisent encore le monde, et où Eben tient une forme d'autorité reconnue par le lieu lui-même.",
+    paths: [
+      {
+        title: "Fonction",
+        text: "Faire converger la quête du Capitaine, la blessure de Shan et une autre lecture du vivant souverain."
+      },
+      {
+        title: "Présences liées",
+        text: "Eben, Macagardiens, Gorillanges, Nonstitis, Serpensouffres, Shan, Shaushana, Franklin, Ezze et Ab'Youbi."
+      }
+    ]
+  },
+  {
+    slug: "ruines-vert",
+    name: "Ruines du Vert",
+    kicker: "Lieu vidé",
+    mood: "Absence, captivité, souffle retenu",
+    text: "Au cœur d'une zone que la vie semble avoir désertée, les ruines du Vert abritent un vide actif, des pierres brisées et une vérité longtemps tenue hors champ : le Capitaine y est retrouvé vivant mais captif.",
+    paths: [
+      {
+        title: "Fonction",
+        text: "Transformer la rumeur en preuve et relancer la quête humaine au centre d'un territoire déjà rééquilibré par le duel de Shan et Eben."
+      },
+      {
+        title: "Présences liées",
+        text: "Capitaine, Franklin, Shan, Shaushana, Lévy, Tsune, Ezze, Gil, Filston."
+      }
+    ]
+  },
+  {
+    slug: "sombra",
+    name: "Sombra",
+    kicker: "Direction de l'ouest",
+    mood: "Veille blanche, lecture, créatrices en retrait",
+    text: "La Sombra n'est pas encore atteinte, mais elle devient une direction majeure du récit : le lieu où Bichette, Reine du Blanc, ainsi que Luna Queen et Méli Mélo pourraient offrir une lecture plus fine du dérèglement qui revient.",
+    paths: [
+      {
+        title: "Fonction",
+        text: "Ouvrir la prochaine grande étape stratégique au-delà du Vert et du Sombrail."
+      },
+      {
+        title: "Présences liées",
+        text: "Bichette, Luna Queen, Méli Mélo, Brad, Bradlette, la Communauté des Papillons."
+      }
+    ]
   }
 ];
 
@@ -270,7 +321,11 @@ const characterRouteMap = {
   "mitra-sesse": "#fiches-mitra-sesse",
   "mitra-séssé": "#fiches-mitra-sesse",
   "papy-perquis": "#fiches-papy-perquis",
-  "padre-souf": "#fiches-padre-souf"
+  "padre-souf": "#fiches-padre-souf",
+  bichette: "#fiches-bichette",
+  "luna-queen": "#fiches-luna-queen",
+  "meli-melo": "#fiches-meli-melo",
+  "méli-mélo": "#fiches-meli-melo"
 };
 
 const characterPrimaryLocationMap = {
@@ -280,8 +335,8 @@ const characterPrimaryLocationMap = {
   mike: "#lieux-bidonville-du-passar",
   gerom: "#lieux-passar",
   elrick: "#lieux-bassai",
-  eben: "#lieux-vrax",
-  capitaine: "#lieux-veyrine",
+  eben: "#lieux-vert",
+  capitaine: "#lieux-ruines-du-vert",
   "harry-py": "#lieux-fleuve-sylvae",
   "gardien-isma": "#lieux-vrax",
   wingard: "#lieux-vrax",
@@ -306,6 +361,14 @@ const characterPrimaryLocationMap = {
   "mitra-sesse": "#lieux-taverne-du-sombrail",
   "papy-perquis": "#lieux-taverne-du-sombrail",
   "padre-souf": "#lieux-taverne-du-sombrail",
+  bichette: "#lieux-sombra",
+  "luna-queen": "#lieux-sombra",
+  "meli-melo": "#lieux-sombra",
+  "méli-mélo": "#lieux-sombra",
+  "le-vert": "#lieux-vert",
+  vert: "#lieux-vert",
+  "ruines-du-vert": "#lieux-ruines-du-vert",
+  sombra: "#lieux-sombra",
   "taverne-du-sombrail": "#lieux-taverne-du-sombrail"
 };
 
@@ -376,12 +439,12 @@ const additionalFicheContextMap = {
   eben: [
     { href: "#relations", label: "Voir ses liens" },
     { href: "#chronologie", label: "Lire son empreinte" },
-    { href: "#lieux-vrax", label: "Relire le Vrax" }
+    { href: "#lieux-vert", label: "Lire le Vert" }
   ],
   capitaine: [
     { href: "#relations", label: "Voir ses liens" },
     { href: "#mysteres", label: "Ouvrir le mystère" },
-    { href: "#lieux-veyrine", label: "Lire le Veyrine" }
+    { href: "#lieux-ruines-du-vert", label: "Lire les ruines du Vert" }
   ],
   tsune: [
     { href: "#relations", label: "Voir ses liens" },
@@ -410,8 +473,8 @@ const additionalFicheContextMap = {
   ],
   ezze: [
     { href: "#relations", label: "Voir ses liens" },
-    { href: "#lieux-taverne-du-sombrail", label: "Lire la taverne" },
-    { href: "#chronologie", label: "Suivre son arrivée" }
+    { href: "#lieux-vert", label: "Suivre la route du Vert" },
+    { href: "#chronologie", label: "Suivre son parcours" }
   ],
   "gil-et-filston": [
     { href: "#relations", label: "Voir leurs liens" },
@@ -425,7 +488,7 @@ const additionalFicheContextMap = {
   ],
   abyoubi: [
     { href: "#relations", label: "Voir ses liens" },
-    { href: "#lieux-taverne-du-sombrail", label: "Lire la taverne" },
+    { href: "#lieux-vert", label: "Voir son passage dans le Vert" },
     { href: "#mysteres", label: "Ouvrir les mystères" }
   ],
   syne: [
@@ -447,10 +510,33 @@ const additionalFicheContextMap = {
     { href: "#relations", label: "Voir ses liens" },
     { href: "#mysteres", label: "Lire les Briscards" },
     { href: "#chronologie", label: "Voir la mémoire ancienne" }
+  ],
+  bichette: [
+    { href: "#lieux-sombra", label: "Voir la Sombra" },
+    { href: "#mysteres", label: "Lire la nouvelle direction" },
+    { href: "#relations", label: "Voir ses liens" }
+  ],
+  "luna-queen": [
+    { href: "#lieux-sombra", label: "Voir la Sombra" },
+    { href: "#mysteres", label: "Lire la nouvelle direction" },
+    { href: "#relations", label: "Voir ses liens" }
+  ],
+  "meli-melo": [
+    { href: "#lieux-sombra", label: "Voir la Sombra" },
+    { href: "#mysteres", label: "Lire la nouvelle direction" },
+    { href: "#relations", label: "Voir ses liens" }
   ]
 };
 
 const creatureContextMap = {
+  "aligaphoque": [
+    { href: "#lieux-embouchure-du-sombrail", label: "Lire le Sombrail" },
+    { href: "#chronologie", label: "Voir l'attaque du fleuve" }
+  ],
+  "aligaroi": [
+    { href: "#lieux-embouchure-du-sombrail", label: "Lire le Sombrail" },
+    { href: "#fiches-abyoubi", label: "Voir Ab'Youbi" }
+  ],
   "croconha": [
     { href: "#lieux-bassai", label: "Voir le Bassaï" },
     { href: "#chronologie", label: "Lire les traverses" }
@@ -463,6 +549,10 @@ const creatureContextMap = {
     { href: "#lieux-passar", label: "Lire le Passar" },
     { href: "#chronologie", label: "Voir les tensions du vivant" }
   ],
+  "gorillange": [
+    { href: "#lieux-vert", label: "Lire le Vert" },
+    { href: "#fiches-eben", label: "Voir Eben" }
+  ],
   "gueplynx": [
     { href: "#lieux-coeur-du-vrax", label: "Lire le coeur du Vrax" },
     { href: "#chronologie", label: "Voir l'affrontement" }
@@ -472,12 +562,20 @@ const creatureContextMap = {
     { href: "#cartes", label: "Voir les cartes" }
   ],
   "lumineau": [
-    { href: "#lieux-bassai", label: "Voir le Bassaï" },
-    { href: "#cartes", label: "Voir les cartes" }
+    { href: "#lieux-embouchure-du-sombrail", label: "Lire le Sombrail" },
+    { href: "#chronologie", label: "Voir les Lumineaux" }
+  ],
+  "macagardien": [
+    { href: "#lieux-vert", label: "Lire le Vert" },
+    { href: "#fiches-eben", label: "Voir Eben" }
   ],
   "nignoble": [
     { href: "#mysteres", label: "Voir les mystères" },
     { href: "#chronologie", label: "Lire les signes d'altération" }
+  ],
+  "nonstiti": [
+    { href: "#lieux-vert", label: "Lire le Vert" },
+    { href: "#chronologie", label: "Voir l'entrée dans le Vert" }
   ],
   "renastar": [
     { href: "#lieux-passage", label: "Relire Le Passage" },
@@ -490,6 +588,10 @@ const creatureContextMap = {
   "scarabeast": [
     { href: "#lieux-vrax", label: "Voir le Vrax" },
     { href: "#chronologie", label: "Voir les tensions du vivant" }
+  ],
+  "serpensouffre": [
+    { href: "#lieux-vert", label: "Lire le Vert" },
+    { href: "#chronologie", label: "Voir l'attaque depuis la canopée" }
   ],
   "serpours": [
     { href: "#lieux-passar", label: "Relire le Passar" },
@@ -873,6 +975,99 @@ const locationFiches = [
       { href: "#fiches-syne", label: "Voir Syne" },
       { href: "#chronologie", label: "Lire la révélation de la taverne" }
     ]
+  },
+  {
+    slug: "vert",
+    name: "Le Vert",
+    tone: "vrax",
+    category: "Royaume vivant",
+    intro: "Le Vert est une profondeur du monde où la vie déborde encore, dense, observatrice, parfois blessée mais pas soumise. On n'y entre pas comme dans une forêt : on y est lu, jugé, puis éventuellement accepté.",
+    meta: [
+      { label: "Atmosphère", value: "Canopée dense, souffle humide, royauté animale" },
+      { label: "Fonction", value: "Lieu de reconnaissance, de duel et de rééquilibrage" },
+      { label: "Présences", value: "Eben, Macagardiens, Gorillanges, Nonstitis, Serpensouffres" }
+    ],
+    biography: [
+      "Le Vert s'impose d'abord comme une zone encore très vivante, où le dérèglement existe sans avoir totalement gagné. Les sons, l'humidité, la densité des arbres et la multiplicité des espèces y donnent l'impression d'une vie plus ancienne que les routes humaines.",
+      "En s'y enfonçant, le groupe découvre une hiérarchie animale et territoriale plus subtile qu'une simple hostilité : Serpensouffres dans la hauteur, peuples singes en veille, puis Eben comme centre d'équilibre reconnu par le lieu.",
+      "Le Vert devient alors le théâtre d'une bascule majeure : Shan y retrouve Eben, comprend autrement ce qui a fondé sa violence, puis transforme leur affrontement en reconnaissance réciproque plutôt qu'en simple destruction."
+    ],
+    summary: [
+      "Le Vert est le lieu où le vivant résiste encore par sa propre souveraineté.",
+      "Il relie la quête du Capitaine, la blessure de Shan et une autre forme de puissance du monde, moins humaine, mais pleinement consciente."
+    ],
+    profile: [
+      { title: "Texture du lieu", text: "Feuillages épais, sol respirant, vie animale organisée et pression ancienne." },
+      { title: "Rôle narratif", text: "Faire passer le récit d'une quête de réponse à une épreuve de reconnaissance, de duel et de rééquilibrage." },
+      { title: "Point de tension", text: "Le Vert protège encore ses formes de vie, mais ses ruines intérieures montrent que le vide y a déjà pénétré." }
+    ],
+    contextLinks: [
+      { href: "#fiches-eben", label: "Voir Eben" },
+      { href: "#fiches-capitaine", label: "Voir le Capitaine" },
+      { href: "#chronologie", label: "Lire le passage dans le Vert" }
+    ]
+  },
+  {
+    slug: "ruines-du-vert",
+    name: "Ruines du Vert",
+    tone: "memory",
+    category: "Captivité révélée",
+    intro: "Au milieu d'une zone étrangement vidée, les ruines du Vert gardent un silence plus lourd que le reste de la forêt. Ici, le monde ne paraît pas mort : il paraît retiré.",
+    meta: [
+      { label: "Atmosphère", value: "Pierres brisées, vie retirée, souffle captif" },
+      { label: "Fonction", value: "Lieu de révélation humaine et de reprise de quête" },
+      { label: "Présences", value: "Capitaine, groupe de Shaushana, rumeur devenue preuve" }
+    ],
+    biography: [
+      "Les ruines apparaissent après le duel entre Shan et Eben, comme si le groupe devait d'abord rééquilibrer un lien ancien avant d'accéder à cette vérité-là. Le silence y est plus inquiétant que la violence directe.",
+      "Les murs brisés, le sol desséché et l'absence anormale de vie y signalent une autre forme d'atteinte du monde : non plus l'agression frontale, mais le retrait, l'assèchement, la captivité.",
+      "C'est là que Franklin reconnaît enfin le Capitaine, maintenu vivant mais brisé, transformant une disparition lointaine en présence retrouvée et ouvrant une nouvelle urgence pour le groupe."
+    ],
+    summary: [
+      "Les ruines du Vert convertissent la rumeur en preuve.",
+      "Elles montrent que le dérèglement du monde n'enlève pas seulement la vie : il retient, use et suspend certaines présences au bord de l'effacement."
+    ],
+    profile: [
+      { title: "Texture du lieu", text: "Ruines ouvertes, sol sec, silence comprimé et gémissement retenu." },
+      { title: "Rôle narratif", text: "Réintroduire le Capitaine dans le présent du récit et réorienter la quête après le duel d'Eben." },
+      { title: "Point de tension", text: "Ce lieu prouve que le groupe n'a fait qu'effleurer la logique qui vide, retient et altère Pandorus." }
+    ],
+    contextLinks: [
+      { href: "#fiches-capitaine", label: "Voir le Capitaine" },
+      { href: "#mysteres", label: "Relire les mystères" },
+      { href: "#chronologie", label: "Lire la découverte des ruines" }
+    ]
+  },
+  {
+    slug: "sombra",
+    name: "Sombra",
+    tone: "threshold",
+    category: "Direction de l'ouest",
+    intro: "La Sombra n'est pas encore traversée, mais elle entre dans le récit comme une terre d'observation et de lecture, liée à Bichette, Reine du Blanc, et à ses gardiennes.",
+    meta: [
+      { label: "Atmosphère", value: "Ouest lointain, veille blanche, compréhension en réserve" },
+      { label: "Fonction", value: "Prochaine orientation stratégique" },
+      { label: "Présences", value: "Bichette, Luna Queen, Méli Mélo" }
+    ],
+    biography: [
+      "Brad et Bradlette nomment la Sombra comme une direction plutôt que comme une promesse de salut. Ce n'est pas un refuge évident, mais un lieu où certaines figures peuvent encore lire ce qui vient avant qu'il ne s'impose pleinement au monde.",
+      "Bichette, Reine du Blanc, y est évoquée avec Luna Queen et Méli Mélo comme une triade de veille, de perception et d'équilibre plus fin que la seule force de combat.",
+      "Même si le groupe choisit d'abord de passer par le Vert à cause du Capitaine et d'Eben, la Sombra reste inscrite comme l'une des prochaines étapes majeures de la route."
+    ],
+    summary: [
+      "La Sombra ouvre l'ouest du récit.",
+      "Elle promet moins une bataille qu'une compréhension, et pourrait devenir le lieu où les lignes du monde se lisent avant de se rompre."
+    ],
+    profile: [
+      { title: "Texture du lieu", text: "Horizon occidental, lumière tenue, présence blanche et lecture du monde." },
+      { title: "Rôle narratif", text: "Déplacer la quête de la survie immédiate vers une recherche plus fine de compréhension." },
+      { title: "Point de tension", text: "Le groupe sait désormais qu'il devra y aller, mais le monde l'oblige d'abord à passer par d'autres nœuds plus urgents." }
+    ],
+    contextLinks: [
+      { href: "#fiches-bichette", label: "Voir Bichette" },
+      { href: "#fiches-luna-queen", label: "Voir Luna Queen" },
+      { href: "#fiches-meli-melo", label: "Voir Méli Mélo" }
+    ]
   }
 ].map((fiche) => ({
   ...fiche,
@@ -1025,16 +1220,22 @@ const pandorusImages = pandorusImageFiles.map((fileName) => {
 });
 
 const creatureImageFiles = [
+  "Aligaphoque.png",
+  "Aligaroi.png",
   "Croconha.png",
   "Félou.png",
   "Felours.png",
+  "Gorillange.png",
   "Gueplynx.png",
   "Luminaël.png",
   "Lumineau.png",
+  "Macagardien.png",
   "Nignoble.png",
+  "Nonstiti.png",
   "Renastar.png",
   "Reptidile.png",
   "Scarabeast.png",
+  "Serpensouffre.png",
   "Serpours.png",
   "Verdeflor.png"
 ];
@@ -1177,9 +1378,9 @@ const relationNodes = [
     name: "Eben",
     role: "Présence sauvage fondatrice",
     links: [
-      { target: "Shan", type: "Traumatisme originel", description: "La rencontre avec Eben detruit l'enfance de Shan et fonde sa violence, sa solitude et sa discipline." },
-      { target: "Parents de Shan", type: "Affrontement fatal", description: "Les parents de Shan transforment Eben en obsession puis meurent en l'affrontant sans recul." },
-      { target: "Monde sauvage", type: "Autorité", description: "Eben n'apparait pas comme une simple bete, mais comme une présence souveraine dans l'ordre du vivant." }
+      { target: "Shan", type: "Traumatisme puis rééquilibrage", description: "Eben tue les parents de Shan, épargne l'enfant, puis retrouve l'adulte au coeur du Vert dans un duel qui transforme enfin leur lien." },
+      { target: "Parents de Shan", type: "Affrontement fatal", description: "Les parents de Shan veulent vaincre Eben comme une cible absolue et meurent face à une présence qu'ils lisent trop mal." },
+      { target: "Le Vert", type: "Royauté", description: "Eben n'apparait plus comme une simple bête, mais comme un roi accepté par le Vert et par les peuples animaux qui y vivent." }
     ]
   },
   {
@@ -1189,7 +1390,8 @@ const relationNodes = [
       { target: "Franklin", type: "Expédition", description: "Le Capitaine emmene Franklin jusqu'au Veyrine pour verifier si le déséquilibre du Passar touche aussi d'autres eaux." },
       { target: "Passar", type: "Responsabilité", description: "Sa lecture du fleuve et du vivant fait de lui l'un des premiers adultes a prendre la corruption du monde au serieux." },
       { target: "Veyrine", type: "Quête de réponse", description: "Le voyage vers le Veyrine marque son dernier grand geste connu avant sa disparition." },
-      { target: "Déséquilibre du vivant", type: "Pressentiment", description: "Le Capitaine semble percevoir une présence invisible avant d'ordonner a Franklin de rentrer et de disparaitre seul." }
+      { target: "Déséquilibre du vivant", type: "Pressentiment", description: "Le Capitaine semble percevoir une présence invisible avant d'ordonner a Franklin de rentrer et de disparaitre seul." },
+      { target: "Ruines du Vert", type: "Captivité", description: "La rumeur du Vert se révèle juste : le Capitaine est retrouvé vivant mais retenu dans une zone vidée, au centre de ruines anciennes." }
     ]
   },
   {
@@ -1349,7 +1551,8 @@ const relationNodes = [
     links: [
       { target: "Brad et Bradlette", type: "Équilibre du lieu", description: "Avec eux, Ab'Youbi participe à la tenue profonde de la taverne du Sombrail." },
       { target: "Syne", type: "Reconnaissance", description: "Il reconnaît la force contenue autour de Syne sans chercher à la provoquer." },
-      { target: "Communauté des Papillons", type: "Lecture des traces", description: "Il perçoit ce que le groupe porte, ce qui le suit et ce qui se désaligne autour de lui." }
+      { target: "Communauté des Papillons", type: "Lecture des traces", description: "Il perçoit ce que le groupe porte, ce qui le suit et ce qui se désaligne autour de lui." },
+      { target: "Aligaroi", type: "Autorité reconnue", description: "Au bord du Sombrail, Ab'Youbi fait céder l'Aligaroi sans combat, comme si une ancienneté commune se reconnaissait entre eux." }
     ]
   },
   {
@@ -1387,6 +1590,33 @@ const relationNodes = [
       { target: "Mitra Séssé", type: "Résistance ancienne", description: "Avec les Briscards, il participe à la tenue du monde face à l'obscurité dispersée." },
       { target: "Elrick", type: "Souvenir fondateur", description: "Il apparaît dans le même moment ancien où Elrick est déjà un point d'équilibre." }
     ]
+  },
+  {
+    name: "Bichette",
+    role: "Reine du Blanc",
+    links: [
+      { target: "Sombra", type: "Ancrage", description: "Bichette est nommée comme la grande présence de la Sombra, lieu de lecture et de veille plus que de domination." },
+      { target: "Luna Queen", type: "Gardienne liée", description: "Luna Queen fait partie des figures qui prolongent ou accompagnent son équilibre." },
+      { target: "Méli Mélo", type: "Gardienne liée", description: "Méli Mélo complète autour d'elle une forme de veille plus fine que la seule force." }
+    ]
+  },
+  {
+    name: "Luna Queen",
+    role: "Gardienne de la Sombra",
+    links: [
+      { target: "Bichette", type: "Veille partagée", description: "Luna Queen est évoquée comme l'une des gardiennes liées à Bichette dans la Sombra." },
+      { target: "Méli Mélo", type: "Complément", description: "Avec Méli Mélo, elle forme une présence secondaire mais stratégique autour de la Reine du Blanc." },
+      { target: "Sombra", type: "Territoire", description: "Sa présence appartient aux terres de l'ouest vers lesquelles Brad réoriente le groupe." }
+    ]
+  },
+  {
+    name: "Méli Mélo",
+    role: "Gardienne de la Sombra",
+    links: [
+      { target: "Bichette", type: "Veille partagée", description: "Méli Mélo est nommée comme une gardienne liée à Bichette et à la lecture de la Sombra." },
+      { target: "Luna Queen", type: "Complément", description: "Elle prolonge avec Luna Queen une même ligne de présence autour de l'ouest." },
+      { target: "Sombra", type: "Territoire", description: "Sa place se dessine dans la prochaine grande direction du récit, encore hors champ mais déjà décisive." }
+    ]
   }
 ];
 
@@ -1409,7 +1639,9 @@ function getLocationImage(slug) {
     "mer-du-sphinx-pandorien": buildMediaPath("lieux", "Mer du Sphinx Pandorien.jpg"),
     "village-des-renards": buildMediaPath("lieux", "Village des Renards.jpg"),
     "embouchure-du-sombrail": buildMediaPath("lieux", "Embouchure du Sombrail.jpg"),
-    "taverne-du-sombrail": buildMediaPath("lieux", "Taverne du Sombrail.jpg")
+    "taverne-du-sombrail": buildMediaPath("lieux", "Taverne du Sombrail.jpg"),
+    vert: buildMediaPath("lieux", "Le Vert.png"),
+    "ruines-du-vert": buildMediaPath("lieux", "Le Vert.png")
   };
 
   return locationImageMap[slug] || locationHeroImage;
@@ -1483,10 +1715,21 @@ function buildLoreLinkEntries() {
     ["Embouchure du Sombrail", "#lieux-embouchure-du-sombrail"],
     ["Sombrail", "#lieux-embouchure-du-sombrail"],
     ["Taverne du Sombrail", "#lieux-taverne-du-sombrail"],
+    ["Le Vert", "#lieux-vert"],
+    ["Vert", "#lieux-vert"],
+    ["Ruines du Vert", "#lieux-ruines-du-vert"],
+    ["Sombra", "#lieux-sombra"],
     ["la taverne", "#lieux-taverne-du-sombrail"],
     ["taverne", "#lieux-taverne-du-sombrail"],
     ["Briscards", "#mysteres"],
-    ["Communauté des Papillons", "#mysteres"]
+    ["Communauté des Papillons", "#mysteres"],
+    ["Capitaine", "#fiches-capitaine"],
+    ["Lumineaux", "#creatures-fiche-lumineau"],
+    ["Aligaphoques", "#creatures-fiche-aligaphoque"],
+    ["Gorillanges", "#creatures-fiche-gorillange"],
+    ["Macagardiens", "#creatures-fiche-macagardien"],
+    ["Nonstitis", "#creatures-fiche-nonstiti"],
+    ["Serpensouffres", "#creatures-fiche-serpensouffre"]
   ].forEach(([label, href]) => rawEntries.push({ label, href }));
 
   const deduped = [];
@@ -2350,35 +2593,35 @@ const additionalCharacterFiches = [
     name: "Eben",
     image: buildMediaPath("pandorus", "Eben.jpg"),
     category: "Présence sauvage",
-    intro: "Eben n'apparait pas comme une simple creature de chasse, mais comme une souverainete animale devant laquelle la violence ordinaire perd tout son sens.",
+    intro: "Eben n'apparait plus comme une simple creature de chasse, mais comme un roi du Vert, presence animale souveraine devant laquelle la violence ordinaire perd tout son sens.",
     meta: [
-      { label: "Statut", value: "Figure sauvage majeure du récit" },
-      { label: "Specialite", value: "Presence, domination, puissance animale" },
-      { label: "Lien majeur", value: "Traumatisme fondateur de Shan" }
+      { label: "Statut", value: "Roi du Vert et figure sauvage majeure du récit" },
+      { label: "Specialite", value: "Lecture du combat, puissance animale, autorité territoriale" },
+      { label: "Lien majeur", value: "Traumatisme fondateur puis duel d'équilibre avec Shan" }
     ],
     biography: [
-      "Dans l'enfance de Shan, Eben commence comme un nom. Ce n'est d'abord qu'un murmure dans la bouche de ses parents, puis une obsession qui les devore peu a peu, jusqu'a les detourner d'une chasse mesuree vers une recherche de sommet, de verite et de confrontation.",
-      "Lorsque la rencontre a finalement lieu, Eben ne se comporte pas comme une bete traquee. Il apparait immense, stable, presque souverain. Les parents de Shan l'attaquent sans recul et meurent face a une puissance qu'ils ne comprenaient pas vraiment.",
-      "Shan survit, lui, mais au prix d'une fracture definitive. Eben devient alors moins un ennemi ponctuel qu'une figure matricielle de la peur, de la puissance et du silence sauvage qui hantera toute sa construction."
+      "Eben nait au coeur du Vert et s'y impose non par brutalité aveugle, mais par justesse. Là où les autres dominent par force, il lit, attend, dévie, puis répond exactement. C'est ainsi qu'il renverse l'ancien chef des singes et devient une figure acceptée par le lieu lui-même.",
+      "Lorsque les parents de Shan viennent le chercher, Eben ne se comporte pas comme une proie. Il affronte une volonté humaine déjà dévorée par l'obsession, les tue, puis épargne l'enfant, comme s'il reconnaissait qu'autre chose se construisait encore en lui.",
+      "Des années plus tard, Shan le retrouve au coeur du Vert. Leur duel ne répète pas seulement le traumatisme initial : il le transforme. Eben oblige Shan à cesser de frapper contre sa propre rage, puis lui laisse la possibilité d'un équilibre retrouvé. Après le combat, il lui remet une pierre du Vert, signe de reconnaissance plus que de défaite."
     ],
     summary: [
-      "Eben est la creature autour de laquelle s'organise le drame originel de Shan. Il condense la violence du monde sans se reduire a un simple monstre.",
-      "Sa présence donne au récit une verite importante: sur Pandorus, certaines forces ne sont pas faites pour être attaquees comme on attaque une proie."
+      "Eben est la créature autour de laquelle s'organisent à la fois le drame originel de Shan et son rééquilibrage adulte.",
+      "Sa présence donne au récit une vérité plus haute : sur Pandorus, certaines forces du vivant ne sont ni des monstres ni des cibles, mais des souverainetés à lire avant de prétendre les vaincre."
     ],
     profile: [
-      { title: "Caractere", text: "Immobile en apparence, souverain, presque impassible dans sa propre puissance." },
-      { title: "Forces", text: "Domination naturelle, resistance ecrasante et aura de predation qui casse les reflexes ordinaires." },
-      { title: "Faiblesses", text: "Reste une présence lointaine du récit, plus fondatrice qu'encore pleinement exploree." }
+      { title: "Caractere", text: "Stable, souverain, silencieux, mais jamais aveuglément brutal." },
+      { title: "Forces", text: "Lecture parfaite des appuis, puissance animale immense, autorité reconnue par le Vert." },
+      { title: "Faiblesses", text: "Sa place reste liée au Vert : il agit moins comme un conquérant que comme un centre territorial." }
     ],
     relations: [
-      { title: "Shan", text: "Eben est au coeur du traumatisme qui forge la violence, la discipline et la solitude de Shan." },
-      { title: "Parents de Shan", text: "Ils transforment Eben en obsession et meurent en le cherchant comme une verite ultime." },
-      { title: "Monde sauvage", text: "Eben incarne une loi du vivant plus ancienne et plus haute que le simple rapport de chasse." }
+      { title: "Shan", text: "Eben fonde d'abord sa blessure, puis devient celui qui l'oblige enfin à combattre autrement au coeur du Vert." },
+      { title: "Peuples du Vert", text: "Macagardiens, Gorillanges et Nonstitis le reconnaissent comme un roi davantage que comme un simple dominant." },
+      { title: "Ab'Youbi", text: "Tous deux appartiennent à des présences anciennes que le groupe ne comprend pas encore totalement, chacune liée à un territoire vivant." }
     ],
     timeline: [
-      { era: "Avant le récit", title: "Nom devenu obsession", summary: "Chez les parents de Shan, Eben cesse d'etre une rumeur pour devenir une cible absolue." },
-      { era: "Avant le récit", title: "Confrontation fatale", summary: "La rencontre avec Eben se solde par la mort des parents de Shan et par la fin brutale de son enfance." },
-      { era: "Au fil du récit", title: "Memoire toujours vive", summary: "Le souvenir d'Eben continue de structurer la lecture que Shan fait du danger, de la force et du monde." }
+      { era: "Ancien temps du Vert", title: "Accession à la royauté", summary: "Eben renverse l'ancien chef des singes et devient une autorité reconnue par le Vert." },
+      { era: "Avant le récit", title: "Confrontation fatale", summary: "Les parents de Shan meurent en l'affrontant, tandis que l'enfant est épargné." },
+      { era: "Jour 12", title: "Duel avec Shan", summary: "Au coeur du Vert, Eben affronte Shan jusqu'à transformer leur lien en reconnaissance plutôt qu'en pure vengeance." }
     ]
   },
   {
@@ -2387,35 +2630,141 @@ const additionalCharacterFiches = [
     name: "Capitaine",
     image: buildMediaPath("pandorus", "Capitaine.png"),
     category: "Guide du Passar",
-    intro: "Figure adulte du Passar, le Capitaine est l'un des premiers a prendre au serieux l'alteration du vivant et a chercher sa source au-dela du fleuve familier.",
+    intro: "Figure adulte du Passar, le Capitaine est l'un des premiers à prendre au sérieux l'altération du vivant, puis la preuve humaine que le monde peut retenir quelqu'un longtemps hors de vue.",
     meta: [
-      { label: "Statut", value: "Eclaireur et referent du Passar" },
+      { label: "Statut", value: "Éclaireur du Passar, puis captif retrouvé" },
       { label: "Specialite", value: "Lecture du fleuve, expedition, decision" },
-      { label: "Lien majeur", value: "Premier guide associe a la quete des causes" }
+      { label: "Lien majeur", value: "Franklin et la première quête des causes" }
     ],
     biography: [
       "Avant meme que le groupe principal ne prenne la route du Vrax, le Capitaine comprend que ce qui atteint le Passar ne ressemble pas a une simple crise locale. Il lie le sort du fleuve a quelque chose de plus profond qui traverse déjà le vivant.",
       "Avec Franklin, il part jusqu'au Veyrine pour comparer, verifier et chercher une origine a cette alteration. Cette expedition fait de lui l'un des premiers personnages a sortir du cadre immediat de la survie pour entrer dans une logique d'enquete du monde.",
-      "Au cours du voyage, le Capitaine percoit brusquement une présence invisible, ordonne a Franklin de rentrer, puis disparait seul. Son absence laisse derriere elle une inquietude durable et donne a la quete du groupe une profondeur plus ancienne."
+      "Au cours du voyage, le Capitaine percoit brusquement une présence invisible, ordonne a Franklin de rentrer, puis disparait seul. Son absence laisse derriere elle une inquietude durable et donne a la quete du groupe une profondeur plus ancienne.",
+      "Au terme des chapitres du Vert, la rumeur portée par Ezze devient preuve: le groupe retrouve le Capitaine vivant, attaché au coeur de ruines vidées. Sa survie transforme son absence en urgence nouvelle."
     ],
     summary: [
-      "Le Capitaine represente la première tentative consciente de comprendre le déséquilibre du vivant plutot que d'en subir seulement les effets.",
-      "Sa disparition transforme son role en point de bascule discret: il ouvre la voie a la quete sans pouvoir l'accompagner jusqu'au bout."
+      "Le Capitaine représente la première tentative consciente de comprendre le déséquilibre du vivant plutôt que d'en subir seulement les effets.",
+      "Sa disparition ouvrait une quête; sa réapparition captive la relance sur un plan plus grave encore."
     ],
     profile: [
       { title: "Caractere", text: "Calme, concret, responsable, avec une lecture serieuse des signes faibles du terrain." },
       { title: "Forces", text: "Experience du fleuve, sang-froid, capacité a prendre une decision rapide face a l'invisible." },
-      { title: "Faiblesses", text: "Reste une figure partiellement absente du récit, connue surtout par ce qu'il a amorce puis laisse derriere lui." }
+      { title: "Faiblesses", text: "Longtemps absent du récit, il revient au moment où son corps porte déjà la trace d'une captivité prolongée." }
     ],
     relations: [
       { title: "Franklin", text: "Franklin garde de lui l'image d'un guide qui a vu avant les autres qu'il fallait chercher plus loin." },
       { title: "Passar", text: "Le Capitaine est intimement relie au fleuve et a la responsabilite de comprendre ce qui le menace." },
-      { title: "Veyrine", text: "Le voyage vers le Veyrine marque sa derniere grande initiative connue avant sa disparition." }
+      { title: "Veyrine", text: "Le voyage vers le Veyrine marque sa dernière grande initiative libre avant sa disparition." },
+      { title: "Ruines du Vert", text: "Le lieu où sa disparition cesse d'être une hypothèse pour devenir une réalité retrouvée." }
     ],
     timeline: [
       { era: "Avant le récit", title: "Lecture du déséquilibre", summary: "Le Capitaine comprend que l'etat du Passar traduit une alteration plus vaste du vivant." },
       { era: "Avant le récit", title: "Expedition vers le Veyrine", summary: "Avec Franklin, il part comparer les fleuves pour trouver une logique a la crise qui gagne le monde." },
-      { era: "Avant le récit", title: "Disparition", summary: "Apres avoir percu une présence invisible, il renvoie Franklin au Passar et disparait seul, laissant une question ouverte." }
+      { era: "Avant le récit", title: "Disparition", summary: "Apres avoir percu une présence invisible, il renvoie Franklin au Passar et disparait seul, laissant une question ouverte." },
+      { era: "Jour 12", title: "Retrouvé captif", summary: "Au centre de ruines vidées dans le Vert, le groupe retrouve enfin le Capitaine vivant mais retenu." }
+    ]
+  },
+  {
+    slug: "bichette",
+    hash: "#fiches-bichette",
+    name: "Bichette",
+    image: buildMediaPath("pandorus", "Bichette.png"),
+    category: "Reine du Blanc",
+    intro: "Bichette est une présence encore lointaine du récit, mais déjà centrale dans la direction ouverte par Brad : une figure de lecture, de veille et d'équilibre installée dans la Sombra.",
+    meta: [
+      { label: "Statut", value: "Créatrice évoquée à l'ouest" },
+      { label: "Titre", value: "Reine du Blanc" },
+      { label: "Lien majeur", value: "Sombra, Luna Queen et Méli Mélo" }
+    ],
+    biography: [
+      "Brad et Bradlette nomment Bichette sans emphase, comme on nomme quelqu'un de réel, pas une légende. Sa force ne semble pas tenir à l'affrontement direct, mais à une capacité de voir, de comprendre et de lire ce qui revient dans le monde.",
+      "La Sombra devient ainsi le territoire associé à sa présence, un ouest encore hors champ où la lecture du dérèglement pourrait être plus fine que dans les lieux déjà traversés.",
+      "Même sans être encore rencontrée, Bichette modifie déjà la trajectoire du groupe : elle donne un horizon stratégique nouveau, au-delà du seul réflexe de survie."
+    ],
+    summary: [
+      "Bichette est la prochaine grande figure annoncée du récit.",
+      "Elle promet moins une guerre qu'une compréhension plus aiguë de ce qui revient altérer Pandorus."
+    ],
+    profile: [
+      { title: "Nature", text: "Présence de lecture, de veille et d'équilibre occidental." },
+      { title: "Rôle", text: "Ouvrir la prochaine grande étape après le Sombrail et le Vert." },
+      { title: "Mystère", text: "On sait qu'elle voit beaucoup, mais pas encore jusqu'où ni à quel prix." }
+    ],
+    relations: [
+      { title: "Sombra", text: "La Sombra est le territoire auquel son nom est désormais lié." },
+      { title: "Luna Queen", text: "Luna Queen fait partie des gardiennes ou présences associées à Bichette." },
+      { title: "Méli Mélo", text: "Méli Mélo complète autour d'elle une ligne de veille plus discrète." }
+    ],
+    timeline: [
+      { era: "Jour 10", title: "Nom donné par Brad", summary: "Bichette est évoquée comme la créatrice à l'ouest capable d'offrir une lecture plus fine du basculement." }
+    ]
+  },
+  {
+    slug: "luna-queen",
+    hash: "#fiches-luna-queen",
+    name: "Luna Queen",
+    image: buildMediaPath("pandorus", "Luna Queen.png"),
+    category: "Gardienne de la Sombra",
+    intro: "Luna Queen est liée à Bichette et à la Sombra comme une présence de veille encore hors champ, mais déjà intégrée à la prochaine direction du groupe.",
+    meta: [
+      { label: "Statut", value: "Figure liée à Bichette" },
+      { label: "Ancrage", value: "Sombra" },
+      { label: "Lien majeur", value: "Bichette et Méli Mélo" }
+    ],
+    biography: [
+      "Luna Queen n'est pas encore rencontrée directement, mais son nom entre dans le récit avec celui de Bichette comme une présence déjà reconnue par Brad et Bradlette.",
+      "Elle participe à dessiner une triade de veille autour de la Sombra, moins tournée vers la guerre frontale que vers la lecture, la compréhension et l'équilibre.",
+      "Son importance est donc narrative avant d'être événementielle : elle prépare le groupe à un autre type de rencontre et de savoir."
+    ],
+    summary: [
+      "Luna Queen élargit la Sombra en véritable réseau de présences, pas en simple destination unique.",
+      "Elle annonce une strate plus fine du récit, où l'ouest comptera autant par ce qu'il lit que par ce qu'il protège."
+    ],
+    profile: [
+      { title: "Nature", text: "Présence de veille liée à la Sombra." },
+      { title: "Rôle", text: "Compléter l'horizon ouvert par Bichette." },
+      { title: "Mystère", text: "Sa fonction exacte reste encore entièrement à révéler." }
+    ],
+    relations: [
+      { title: "Bichette", text: "Luna Queen est liée à la Reine du Blanc dans la même direction occidentale." },
+      { title: "Méli Mélo", text: "Toutes deux sont nommées comme des présences complémentaires autour de la Sombra." }
+    ],
+    timeline: [
+      { era: "Jour 10", title: "Évoquée à la taverne", summary: "Son nom entre dans le récit par la parole de Brad et Bradlette, avec la Sombra comme horizon." }
+    ]
+  },
+  {
+    slug: "meli-melo",
+    hash: "#fiches-meli-melo",
+    name: "Méli Mélo",
+    image: buildMediaPath("pandorus", "Méli Mélo.png"),
+    category: "Gardienne de la Sombra",
+    intro: "Méli Mélo est l'autre nom associé à Bichette dans l'ouverture vers la Sombra, présence encore lointaine mais déjà intégrée à la prochaine logique du récit.",
+    meta: [
+      { label: "Statut", value: "Figure liée à Bichette" },
+      { label: "Ancrage", value: "Sombra" },
+      { label: "Lien majeur", value: "Bichette et Luna Queen" }
+    ],
+    biography: [
+      "Comme Luna Queen, Méli Mélo n'est pas encore rencontrée directement. Son importance vient du fait qu'elle n'est pas citée comme un décor lointain, mais comme une présence réelle de la prochaine étape.",
+      "Elle participe à transformer la Sombra en territoire organisé, habité par des figures capables d'une lecture du monde différente de celle des routes déjà traversées.",
+      "Son apparition dans le récit reste donc discrète, mais structurante : elle annonce que l'ouest ne sera pas un simple détour, mais une strate entière du monde."
+    ],
+    summary: [
+      "Méli Mélo renforce l'idée que la Sombra abrite plusieurs points d'équilibre.",
+      "Elle prépare une étape du récit où la compréhension pourrait compter autant que le combat."
+    ],
+    profile: [
+      { title: "Nature", text: "Présence de veille encore hors champ, liée à la Sombra." },
+      { title: "Rôle", text: "Compléter la ligne ouverte par Bichette et Luna Queen." },
+      { title: "Mystère", text: "On ignore encore sa forme d'action, mais non sa place future dans la trajectoire du groupe." }
+    ],
+    relations: [
+      { title: "Bichette", text: "Méli Mélo est liée à la Reine du Blanc dans la direction ouverte à l'ouest." },
+      { title: "Luna Queen", text: "Elles sont évoquées ensemble comme des présences complémentaires de la Sombra." }
+    ],
+    timeline: [
+      { era: "Jour 10", title: "Évoquée à la taverne", summary: "Son nom rejoint ceux de Bichette et Luna Queen comme nouvelle direction stratégique du récit." }
     ]
   }
 ];
@@ -2447,10 +2796,57 @@ const ficheHashPanelMap = {
   "#fiches-syne": "syne-panel",
   "#fiches-mitra-sesse": "mitra-sesse-panel",
   "#fiches-papy-perquis": "papy-perquis-panel",
-  "#fiches-padre-souf": "padre-souf-panel"
+  "#fiches-padre-souf": "padre-souf-panel",
+  "#fiches-bichette": "bichette-panel",
+  "#fiches-luna-queen": "luna-queen-panel",
+  "#fiches-meli-melo": "meli-melo-panel"
 };
 
 const creatureFiches = [
+  {
+    slug: "aligaphoque",
+    name: "Aligaphoque",
+    image: buildMediaPath("creatures", "Aligaphoque.png"),
+    family: "Prédateur du Sombrail",
+    status: "Créature clairement présente dans le récit",
+    habitat: "Fleuve du Sombrail, remous lourds et berges humides",
+    summary: "Prédateur aquatique du Sombrail, l'Aligaphoque surgit avec une violence brutale et rappelle que même les moments de grâce peuvent être happés en une seconde.",
+    biography: [
+      "Les Aligaphoques apparaissent au moment où les Lumineaux semblent rendre au Sombrail une beauté presque intacte. Leur attaque transforme aussitôt ce tableau en embuscade, comme si le fleuve contenait sous sa surface un autre rythme, plus lourd et plus prédateur.",
+      "Ils ne frappent pas comme des animaux isolés. Leur sortie groupée donne l'impression d'une pression coordonnée du milieu lui-même, poussant le groupe à se défendre dans un espace où l'eau reste toujours plus forte qu'eux."
+    ],
+    profile: [
+      { title: "Nature", text: "Créature de fleuve massive, faite pour l'embuscade, la morsure et le surgissement." },
+      { title: "Niveau de menace", text: "Très élevé près de l'eau, surtout lorsqu'ils émergent en groupe." },
+      { title: "Dans le récit", text: "Ils font du Sombrail un lieu de bascule entre beauté vivante et danger immédiat." }
+    ],
+    timeline: [
+      { era: "Jour 11", title: "Lumineau happé", summary: "Un Aligaphoque surgit du Sombrail et brise le moment de grâce créé par les Lumineaux." },
+      { era: "Jour 11", title: "Assaut du fleuve", summary: "Plusieurs Aligaphoques encerclent ensuite le groupe depuis les berges et les remous." }
+    ]
+  },
+  {
+    slug: "aligaroi",
+    name: "Aligaroi",
+    image: buildMediaPath("creatures", "Aligaroi.png"),
+    family: "Souverain du Sombrail",
+    status: "Créature clairement présente dans le récit",
+    habitat: "Profondeurs du Sombrail et berges de grande puissance",
+    summary: "Plus ancien et plus imposant que les Aligaphoques, l'Aligaroi surgit comme une autorité du fleuve plutôt que comme une simple bête.",
+    biography: [
+      "Après l'assaut des Aligaphoques, l'Aligaroi émerge comme une présence d'un autre ordre. Sa masse, sa lenteur maîtrisée et la manière dont le groupe cesse presque de penser le combat devant lui en font une figure de souveraineté aquatique.",
+      "Le fait qu'Ab'Youbi le fasse céder sans affrontement révèle qu'il n'est pas seulement question de force. L'Aligaroi appartient à une logique ancienne du territoire, capable de reconnaître une autorité plus vieille que la violence immédiate."
+    ],
+    profile: [
+      { title: "Nature", text: "Créature majeure du fleuve, plus stable, plus consciente et plus ancienne que les formes d'attaque ordinaires." },
+      { title: "Niveau de menace", text: "Extrême, au point d'interrompre tout réflexe de combat simple." },
+      { title: "Dans le récit", text: "L'Aligaroi ouvre une lecture du Sombrail comme territoire vivant doté de hiérarchies propres." }
+    ],
+    timeline: [
+      { era: "Jour 11", title: "Émergence majeure", summary: "L'Aligaroi se montre après les Aligaphoques et impose un arrêt net au groupe." },
+      { era: "Jour 11", title: "Retrait devant Ab'Youbi", summary: "Ab'Youbi le fait reculer sans combat, révélant une autre forme d'autorité dans le monde." }
+    ]
+  },
   {
     slug: "croconha",
     name: "Croconha",
@@ -2520,6 +2916,27 @@ const creatureFiches = [
     ]
   },
   {
+    slug: "gorillange",
+    name: "Gorillange",
+    image: buildMediaPath("creatures", "Gorillange.png"),
+    family: "Peuple du Vert",
+    status: "Créature clairement présente dans le récit",
+    habitat: "Profondeurs du Vert, zones d'autorité animale",
+    summary: "Le Gorillange appartient aux peuples du Vert qui ne se présentent pas comme une horde sauvage, mais comme une société animale organisée autour d'Eben.",
+    biography: [
+      "Les Gorillanges apparaissent avec les Macagardiens et les Nonstitis au moment où le groupe entre plus profondément dans le Vert. Leur simple présence suffit à montrer que ce territoire ne relève pas d'une forêt ordinaire, mais d'un ordre animal structuré.",
+      "Autour d'Eben, ils n'attaquent pas d'emblée. Ils observent, reconnaissent et accompagnent, comme si leur rôle était autant politique que physique dans l'équilibre du lieu."
+    ],
+    profile: [
+      { title: "Nature", text: "Grand primate du Vert, puissant mais intégré à une logique collective et territoriale." },
+      { title: "Niveau de menace", text: "Très élevé si le Vert est rompu, mais contenu lorsqu'un équilibre est encore possible." },
+      { title: "Dans le récit", text: "Le Gorillange fait comprendre qu'Eben règne sur un peuple, pas seulement sur une meute." }
+    ],
+    timeline: [
+      { era: "Jour 12", title: "Reconnaissance dans le Vert", summary: "Les Gorillanges apparaissent comme une présence organisée autour d'Eben." }
+    ]
+  },
+  {
     slug: "gueplynx",
     name: "Gueplynx",
     image: buildMediaPath("creatures", "Gueplynx.png"),
@@ -2567,22 +2984,43 @@ const creatureFiches = [
     slug: "lumineau",
     name: "Lumineau",
     image: buildMediaPath("creatures", "Lumineau.png"),
-    family: "Creature aquatique ou lumineuse",
-    status: "Espece visible dans le bestiaire",
-    habitat: "Eaux, rives ou zones humides",
-    summary: "Creature evoquant les milieux d'eau et de lumiere, en accord avec les traverses sensibles du monde de Pandorus.",
+    family: "Créature lumineuse du Sombrail",
+    status: "Créature clairement présente dans le récit",
+    habitat: "Cieux bas et reflets du Sombrail",
+    summary: "Créature lumineuse du Sombrail, le Lumineau traverse le ciel comme une pensée vivante et rend au fleuve un instant de grâce avant l'embuscade.",
     biography: [
-      "Lumineau n'est pas encore au coeur d'une scene precise. Son nom et sa place dans le bestiaire font cependant echo aux passages ou l'eau, les reflets, les fleuves et la vie sensible des milieux traverses occupent une place importante.",
-      "Dans le cadre du récit, Lumineau prolonge l'idee que Pandorus est un monde d'ecosystemes specialises. Certaines creatures y semblent liees moins a la guerre qu'au rythme naturel des elements."
+      "Au bord du Sombrail, les Lumineaux apparaissent au-dessus de l'eau dans une harmonie presque irréelle. Leur lumière glisse sur le fleuve et suspend brièvement la tension du groupe comme si le vivant montrait encore sa part intacte.",
+      "La violence avec laquelle l'un d'eux est happé par un Aligaphoque rend leur rôle encore plus fort dans le récit : ils ne sont pas décoratifs, ils mesurent ce qui reste de beauté vulnérable au sein d'un monde déjà attaqué."
     ],
     profile: [
-      { title: "Nature", text: "Creature probablement liee a l'eau, a la fluidite et a des zones de transition." },
-      { title: "Niveau de menace", text: "Inconnu a ce stade du récit." },
-      { title: "Dans le récit", text: "Elle enrichit le bestiaire des zones humides sans être encore detaillee par une rencontre directe." }
+      { title: "Nature", text: "Créature aérienne et lumineuse, liée aux reflets, aux courants et à une grâce fragile du monde." },
+      { title: "Niveau de menace", text: "Faible par elle-même, mais très exposée à la brutalité du milieu." },
+      { title: "Dans le récit", text: "Le Lumineau fait du Sombrail un lieu de beauté réelle, pas seulement de menace." }
     ],
     timeline: [
-      { era: "Bestiaire", title: "Creature de milieu", summary: "Lumineau renforce la coherence des espaces aquatiques de Pandorus." },
-      { era: "Lecture du monde", title: "Vie specialisee", summary: "Sa présence rappelle que chaque region du monde semble produire ses propres formes de vie." }
+      { era: "Jour 11", title: "Apparition au-dessus du Sombrail", summary: "Les Lumineaux suspendent brièvement la tension du groupe par leur lumière et leur grâce." },
+      { era: "Jour 11", title: "Beauté brisée", summary: "L'un d'eux est happé par un Aligaphoque, révélant combien le vivant reste vulnérable même dans sa splendeur." }
+    ]
+  },
+  {
+    slug: "macagardien",
+    name: "Macagardien",
+    image: buildMediaPath("creatures", "Macagardien.png"),
+    family: "Veilleur du Vert",
+    status: "Créature clairement présente dans le récit",
+    habitat: "Canopée, troncs et hauteurs du Vert",
+    summary: "Le Macagardien observe avant d'agir et donne au Vert une forme de surveillance intelligente, presque sentinelle.",
+    biography: [
+      "Les Macagardiens apparaissent après l'attaque des Serpensouffres, lorsqu'il devient clair que le Vert ne réagit pas seulement par instinct. Leur présence en hauteur transforme la forêt en système de veille.",
+      "Ils n'assaillent pas le groupe à l'aveugle. Ils observent, pèsent, puis entourent Eben comme des gardiens d'un ordre vivant plutôt que comme de simples singes agressifs."
+    ],
+    profile: [
+      { title: "Nature", text: "Créature arboricole vive, liée à l'observation, à la hauteur et à la garde du territoire." },
+      { title: "Niveau de menace", text: "Élevé dans la canopée et les espaces de passage contraints." },
+      { title: "Dans le récit", text: "Le Macagardien fait du Vert un lieu de jugement autant que d'affrontement." }
+    ],
+    timeline: [
+      { era: "Jour 12", title: "Veille du Vert", summary: "Les Macagardiens apparaissent comme des observateurs organisés autour du passage du groupe." }
     ]
   },
   {
@@ -2605,6 +3043,27 @@ const creatureFiches = [
     timeline: [
       { era: "Bestiaire", title: "Presence latente", summary: "Nignoble elargit le versant le plus sombre de la faune de Pandorus." },
       { era: "Lecture du monde", title: "Signe d'un vivant trouble", summary: "Sa place visuelle rejoint les themes de corruption et de bascule developpes dans le récit." }
+    ]
+  },
+  {
+    slug: "nonstiti",
+    name: "Nonstiti",
+    image: buildMediaPath("creatures", "Nonstiti.png"),
+    family: "Éclaireur du Vert",
+    status: "Créature clairement présente dans le récit",
+    habitat: "Branches basses, lisières intérieures et mouvements rapides du Vert",
+    summary: "Petit peuple nerveux du Vert, le Nonstiti complète la lecture collective du territoire par sa vitesse et sa vigilance continue.",
+    biography: [
+      "Les Nonstitis sont moins massifs que les Gorillanges et moins statiques que les Macagardiens, mais leur importance est immédiate : ils donnent au Vert une mobilité de regard constante.",
+      "Leur manière d'entourer le groupe sans l'attaquer frontalement montre que le territoire ne répond pas en bloc. Il déploie différents niveaux d'observation, d'essai et de reconnaissance."
+    ],
+    profile: [
+      { title: "Nature", text: "Créature rapide, vive, faite pour le repérage et la circulation nerveuse du territoire." },
+      { title: "Niveau de menace", text: "Moyen à élevé selon le nombre et le contexte d'encerclement." },
+      { title: "Dans le récit", text: "Le Nonstiti rend visible l'intelligence collective du Vert." }
+    ],
+    timeline: [
+      { era: "Jour 12", title: "Présence autour d'Eben", summary: "Les Nonstitis apparaissent avec les autres peuples du Vert lors de la reconnaissance du groupe." }
     ]
   },
   {
@@ -2671,6 +3130,27 @@ const creatureFiches = [
     timeline: [
       { era: "Bestiaire", title: "Figure de defense", summary: "Scarabeast enrichit le bestiaire par une logique de carapace et de resistance." },
       { era: "Lecture du monde", title: "Survie par l'endurance", summary: "Il renforce l'idee que beaucoup de creatures de Pandorus ont evolue pour tenir face a un monde exigeant." }
+    ]
+  },
+  {
+    slug: "serpensouffre",
+    name: "Serpensouffre",
+    image: buildMediaPath("creatures", "Serpensouffre.png"),
+    family: "Prédateur de canopée",
+    status: "Créature clairement présente dans le récit",
+    habitat: "Canopée du Vert, branches hautes et attaques plongeantes",
+    summary: "Le Serpensouffre attaque depuis le haut avec un souffle chaud et corrosif, rendant la forêt elle-même hostile et verticale.",
+    biography: [
+      "Les Serpensouffres plongent du haut des arbres au moment où le groupe entre plus profondément dans le Vert. Ils ne se montrent que par fragments, frappant vite, soufflant puis disparaissant dans la canopée.",
+      "Leur rôle est essentiel dans la lecture du territoire : ils prouvent que le danger du Vert n'est pas seulement au sol ou dans la masse, mais aussi dans ce qui domine l'espace depuis le dessus."
+    ],
+    profile: [
+      { title: "Nature", text: "Créature serpentiforme de hauteur, liée au plongeon et au souffle brûlant." },
+      { title: "Niveau de menace", text: "Très élevé lorsque la visibilité est faible ou que la canopée les couvre." },
+      { title: "Dans le récit", text: "Le Serpensouffre transforme l'entrée dans le Vert en épreuve de lecture totale du terrain." }
+    ],
+    timeline: [
+      { era: "Jour 12", title: "Attaque verticale", summary: "Les Serpensouffres tombent de la canopée et forcent le groupe à tenir plutôt qu'à poursuivre." }
     ]
   },
   {
@@ -2868,6 +3348,21 @@ const chapters = [
     path: "./media/chapitres/Chapitre%2017%20-%20Ezze%2C%20Gil%20et%20Filston.pdf",
     summary: "Le parcours d'Ezze, sa rencontre avec Gil et Filston, puis leur arrivée commune à la taverne relient une nouvelle trajectoire vive à la Communauté des Papillons.",
     accessKey: "ChapPando17"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2018%20-%20Rumeurs.pdf",
+    summary: "À la taverne, la mémoire ancienne devient direction : Bichette, Luna Queen et Méli Mélo sont évoquées à l'ouest, tandis qu'une rumeur conduit le groupe et Ezze vers le Vert et vers le Capitaine.",
+    accessKey: "ChapPando18"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2019%20-%20Le%20Vert.pdf",
+    summary: "En route vers le Vert, le groupe traverse le Sombrail, affronte Aligaphoques, Aligaroi et Serpensouffres, voit Ab'Youbi imposer une autre autorité du vivant, puis retrouve Eben au cœur de la forêt.",
+    accessKey: "ChapPando19"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2020%20-%20Eben.pdf",
+    summary: "Le duel entre Shan et Eben transforme un traumatisme en rééquilibrage, avant que le groupe ne découvre enfin le Capitaine captif au centre de ruines vidées dans le Vert.",
+    accessKey: "ChapPando20"
   }
 ];
 
@@ -3146,6 +3641,61 @@ const timelineEvents = [
     era: "Jour 10",
     title: "Arrivée d'Ezze, Gil et Filston",
     summary: "Ezze retrouve Gil et Filston à la taverne, observe la Communauté des Papillons et choisit de rester, comme si sa route venait enfin de rejoindre un point plus vaste."
+  },
+  {
+    era: "Jour 10",
+    title: "Rumeur du Vert et nouvelle route vers le Capitaine",
+    summary: "À la taverne, Ezze partage la rumeur d'un homme retenu au coeur du Vert, et la quête bascule : retrouver le Capitaine devient une priorité commune."
+  },
+  {
+    era: "Jour 10",
+    title: "Bichette, Luna Queen et Méli Mélo nommées à l'ouest",
+    summary: "Brad et Bradlette orientent le groupe vers la Sombra, où Bichette, Reine du Blanc, ainsi que Luna Queen et Méli Mélo pourraient lire le déséquilibre autrement."
+  },
+  {
+    era: "Jour 11",
+    title: "Départ de la taverne et suivi d'Ab'Youbi",
+    summary: "Le groupe quitte le Sombrail, suivi à distance par Ab'Youbi, tandis que Syne et sa boîte disparaissent déjà hors de la taverne."
+  },
+  {
+    era: "Jour 11",
+    title: "Lumineaux et attaque des Aligaphoques",
+    summary: "Au-dessus du Sombrail, les Lumineaux suspendent brièvement la tension avant qu'un Aligaphoque puis tout un groupe ne surgissent du fleuve."
+  },
+  {
+    era: "Jour 11",
+    title: "Ab'Youbi fait céder l'Aligaroi",
+    summary: "L'Aligaroi émerge comme une autorité du fleuve, puis recule sans combat lorsque Ab'Youbi vient poser sur lui une puissance plus ancienne."
+  },
+  {
+    era: "Jour 12",
+    title: "Entrée dans le Vert",
+    summary: "Le groupe quitte le Sombrail et entre dans une forêt encore très vivante, dense, blessée mais résistante, où chaque présence semble lire son passage."
+  },
+  {
+    era: "Jour 12",
+    title: "Attaque des Serpensouffres",
+    summary: "Depuis la canopée du Vert, les Serpensouffres frappent par plongeon et souffle brûlant, obligeant le groupe à tenir sans se disperser."
+  },
+  {
+    era: "Jour 12",
+    title: "Reconnaissance par les peuples du Vert",
+    summary: "Macagardiens, Gorillanges et Nonstitis apparaissent comme les témoins organisés d'un territoire vivant, juste avant l'arrivée d'Eben."
+  },
+  {
+    era: "Jour 12",
+    title: "Duel de Shan et Eben",
+    summary: "Au coeur du Vert, Shan affronte enfin Eben, transforme sa rage en lecture du combat, puis obtient une reconnaissance plutôt qu'une simple victoire."
+  },
+  {
+    era: "Jour 12",
+    title: "Pierre d'Eben et nouveau Shan",
+    summary: "Après le duel, Eben remet à Shan une pierre du Vert, marquant moins une défaite qu'un équilibre enfin retrouvé entre eux."
+  },
+  {
+    era: "Jour 12",
+    title: "Découverte du Capitaine captif",
+    summary: "Plus loin, dans des ruines vidées, Franklin reconnaît enfin le Capitaine vivant mais retenu, ouvrant une nouvelle urgence au centre du récit."
   }
 ];
 
@@ -3761,8 +4311,10 @@ function renderTimeline() {
     if (normalizedEventText.includes("FRANKLIN")) contextCandidates.push({ href: "#fiches-franklin", label: "Voir Franklin" });
     if (normalizedEventText.includes("PASSAR")) contextCandidates.push({ href: "#lieux-passar", label: "Voir le Passar" });
     if (normalizedEventText.includes("BASSAI")) contextCandidates.push({ href: "#lieux-bassai", label: "Voir le Bassaï" });
-    if (normalizedEventText.includes("VEYRINE") || normalizedEventText.includes("CAPITAINE")) contextCandidates.push({ href: "#lieux-veyrine", label: "Voir le Veyrine" });
+    if (normalizedEventText.includes("VEYRINE")) contextCandidates.push({ href: "#lieux-veyrine", label: "Voir le Veyrine" });
+    if (normalizedEventText.includes("CAPITAINE")) contextCandidates.push({ href: "#fiches-capitaine", label: "Voir le Capitaine" });
     if (normalizedEventText.includes("VRAX")) contextCandidates.push({ href: "#lieux-vrax", label: "Voir le Vrax" });
+    if (normalizedEventText.includes("VERT")) contextCandidates.push({ href: "#lieux-vert", label: "Voir le Vert" });
     if (normalizedEventText.includes("CREATRICES") || normalizedEventText.includes("COEUR DU VRAX") || normalizedEventText.includes("PAPILLONS")) {
       contextCandidates.push({ href: "#lieux-coeur-du-vrax", label: "Lire le coeur du Vrax" });
     }
@@ -3786,6 +4338,15 @@ function renderTimeline() {
     if (normalizedEventText.includes("MITRA")) contextCandidates.push({ href: "#fiches-mitra-sesse", label: "Voir Mitra Séssé" });
     if (normalizedEventText.includes("PERQUIS")) contextCandidates.push({ href: "#fiches-papy-perquis", label: "Voir Papy Perquis" });
     if (normalizedEventText.includes("SOUF")) contextCandidates.push({ href: "#fiches-padre-souf", label: "Voir Padre Souf" });
+    if (normalizedEventText.includes("BICHETTE")) contextCandidates.push({ href: "#fiches-bichette", label: "Voir Bichette" });
+    if (normalizedEventText.includes("LUNA")) contextCandidates.push({ href: "#fiches-luna-queen", label: "Voir Luna Queen" });
+    if (normalizedEventText.includes("MELI") || normalizedEventText.includes("MELO")) contextCandidates.push({ href: "#fiches-meli-melo", label: "Voir Méli Mélo" });
+    if (normalizedEventText.includes("ALIGAPHOQUE")) contextCandidates.push({ href: "#creatures-fiche-aligaphoque", label: "Voir l'Aligaphoque" });
+    if (normalizedEventText.includes("ALIGAROI")) contextCandidates.push({ href: "#creatures-fiche-aligaroi", label: "Voir l'Aligaroi" });
+    if (normalizedEventText.includes("SERPENSOUFFRE")) contextCandidates.push({ href: "#creatures-fiche-serpensouffre", label: "Voir le Serpensouffre" });
+    if (normalizedEventText.includes("GORILLANGE")) contextCandidates.push({ href: "#creatures-fiche-gorillange", label: "Voir le Gorillange" });
+    if (normalizedEventText.includes("MACAGARDIEN")) contextCandidates.push({ href: "#creatures-fiche-macagardien", label: "Voir le Macagardien" });
+    if (normalizedEventText.includes("NONSTITI")) contextCandidates.push({ href: "#creatures-fiche-nonstiti", label: "Voir le Nonstiti" });
 
     const uniqueLinks = [];
     const seenLinks = new Set();
@@ -4281,7 +4842,10 @@ function renderRelations() {
       Syne: buildMediaPath("pandorus", "Syne.jpg"),
       "Mitra Séssé": buildMediaPath("pandorus", "Mitra Séssé.jpg"),
       "Papy Perquis": buildMediaPath("pandorus", "Papy Perquis.jpg"),
-      "Padre Souf": buildMediaPath("pandorus", "Padre Souf.png")
+      "Padre Souf": buildMediaPath("pandorus", "Padre Souf.png"),
+      Bichette: buildMediaPath("pandorus", "Bichette.png"),
+      "Luna Queen": buildMediaPath("pandorus", "Luna Queen.png"),
+      "Méli Mélo": buildMediaPath("pandorus", "Méli Mélo.png")
     };
     const portrait = portraitMap[nodeData.name];
     const portraitThumb = portrait
