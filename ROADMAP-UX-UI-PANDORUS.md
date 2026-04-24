@@ -22,6 +22,7 @@ L'objectif n'est plus d'ajouter des elements de maniere ponctuelle, mais de fair
 4. Uniformiser les comportements interactifs
 5. Consolider responsive et accessibilite
 6. Refactoriser progressivement le CSS et le JS
+7. Structurer les donnees pour faciliter les mises a jour narratives
 
 ---
 
@@ -489,6 +490,130 @@ Preserver la fluidite malgre l'enrichissement visuel.
 
 Moyenne
 
+### FE-06 - Structurer les donnees de contenu
+
+**Objectif**
+
+Sortir d'une logique ou tout le contenu narratif est maintenu dans un seul gros fichier JS, afin de rendre les ajouts de chapitres plus fiables, plus rapides et moins oublies.
+
+**Taches techniques**
+
+- separer les donnees par familles :
+  - personnages
+  - creatures
+  - lieux
+  - chronologie
+  - chapitres
+  - relations
+- definir une structure de donnees stable pour chaque famille
+- isoler les donnees du rendu d'interface
+- verifier que chaque fiche peut etre enrichie sans toucher a toute la logique du site
+
+**Criteres d'acceptation**
+
+- les ajouts de contenu ne demandent plus de fouiller l'ensemble de `app.js`
+- la maintenance devient plus sure lors de l'ajout de nouveaux chapitres
+- les oublis entre categories deviennent beaucoup moins probables
+
+**Priorite**
+
+Critique
+
+### FE-07 - Mettre en place une logique de mise a jour par chapitre
+
+**Objectif**
+
+Faire en sorte qu'un nouveau chapitre puisse etre integre avec une methode claire, repetable et verifiable.
+
+**Taches techniques**
+
+- definir une checklist d'integration pour chaque nouveau chapitre :
+  - chapitre PDF
+  - chronologie
+  - fiches personnages
+  - relations
+  - lieux
+  - creatures
+  - mysteres
+  - liens contextuels
+- documenter la procedure dans le projet
+- identifier les champs minimums a renseigner pour qu'une mise a jour soit consideree complete
+- prevoir une verification finale orientee contenu
+
+**Criteres d'acceptation**
+
+- chaque nouveau chapitre suit le meme pipeline de mise a jour
+- le risque d'oublier une section diminue fortement
+- la maintenance editoriale devient beaucoup plus professionnelle
+
+**Priorite**
+
+Critique
+
+### FE-08 - Introduire des statuts narratifs normalises
+
+**Objectif**
+
+Rendre les fiches plus lisibles et plus faciles a maintenir en standardisant l'etat narratif des personnages, lieux et creatures.
+
+**Taches techniques**
+
+- definir une liste restreinte de statuts :
+  - actif
+  - evoque
+  - disparu
+  - captif
+  - en veille
+  - a venir
+- appliquer ces statuts dans les fiches principales
+- reutiliser ces valeurs dans :
+  - fiches
+  - relations
+  - chronologie
+  - futurs filtres
+
+**Criteres d'acceptation**
+
+- l'etat d'un personnage ou d'un lieu est compris rapidement
+- la coherence editoriale progresse
+- les futures evolutions peuvent s'appuyer sur des champs stables
+
+**Priorite**
+
+Haute
+
+---
+
+## Phase 7 - Clarte narrative et parcours de lecture
+
+### UX-08 - Aligner toutes les timelines personnages sur la chronologie centrale
+
+**Objectif**
+
+Faire des fiches personnages un miroir exact, lisible et verifiable de la chronologie du récit.
+
+**Taches techniques**
+
+- harmoniser les labels temporels :
+  - jour
+  - nuit
+  - lendemain
+  - apres
+- verifier les derniers jalons de chaque personnage actif
+- eviter les formulations vagues quand un jour precis peut etre donne
+- assurer la coherence entre fiche personnage et chronologie generale
+
+**Criteres d'acceptation**
+
+- on peut répondre clairement a des questions du type :
+  - "que se passe-t-il pour Ezze au jour 11 ?"
+  - "ou en est Shan au jour 12 ?"
+- les fiches ne flottent plus par rapport au récit principal
+
+**Priorite**
+
+Critique
+
 ---
 
 ## Ordre d'execution recommande
@@ -503,13 +628,17 @@ Moyenne
 8. A11Y-01
 9. FE-03
 10. FE-04
-11. UI-04
-12. UI-05
-13. UI-06
-14. UX-04
-15. UX-05
-16. UX-06
-17. FE-05
+11. FE-06
+12. FE-07
+13. UX-08
+14. UI-04
+15. UI-05
+16. UI-06
+17. UX-04
+18. UX-05
+19. UX-06
+20. FE-05
+21. FE-08
 
 ## Definition du succes
 
@@ -521,4 +650,6 @@ La roadmap sera consideree comme bien executee si :
 - les comportements interactifs sont coherents
 - le mobile est propre et lisible
 - le CSS et le JS deviennent plus maintenables
+- l'ajout d'un nouveau chapitre suit une methode fiable et repetable
+- les fiches permettent de savoir rapidement ou en est chaque personnage
 - le site conserve l'ame Pandorus tout en gagnant en maturite produit
