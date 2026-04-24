@@ -1,0 +1,332 @@
+﻿export const timelineEvents = [
+  {
+    era: "Origines",
+    title: "Naissance du souffle primordial",
+    summary: "Avant toute forme stable, une pulsation et une lumiere originelles donnent naissance au monde de Pandorus."
+  },
+  {
+    era: "Origines",
+    title: "Formation des terres, des eaux et des plans du monde",
+    summary: "La matiere, la terre, l'eau et les differentes strates du monde se structurent peu a peu autour du battement initial."
+  },
+  {
+    era: "Ancien temps",
+    title: "Grande guerre contre l'homme sombre",
+    summary: "Une guerre ancienne ravage le monde, corrompt les terres et oppose les peuples a une force obscure menee par l'homme sombre."
+  },
+  {
+    era: "Ancien temps",
+    title: "Victoire inachevee et apparition des etoiles",
+    summary: "Le mal est brise sans être totalement detruit, les frontieres sont effacees et un monde reunifie emerge sous un ciel marque par les etoiles."
+  },
+  {
+    era: "Avant le récit",
+    title: "Enfance de Shan",
+    summary: "Shan grandit dans un apprentissage brutal de la survie et du combat, forme par ses parents chasseurs."
+  },
+  {
+    era: "Avant le récit",
+    title: "Mort des parents de Shan face a Eben",
+    summary: "L'affrontement contre Eben brise l'equilibre de l'enfance de Shan et l'entraine vers une vie solitaire."
+  },
+  {
+    era: "Avant le récit",
+    title: "Retrait d'Elrick pres de sa cabane",
+    summary: "Ancien combattant de la grande guerre, Elrick choisit une vie simple au contact du vivant, tout en percevant les signes d'un nouveau déséquilibre."
+  },
+  {
+    era: "Avant le récit",
+    title: "Expedition du Capitaine vers le Veyrine",
+    summary: "Le Capitaine et Franklin quittent le Passar pour comparer les fleuves et verifier si le déséquilibre du vivant depasse leur territoire."
+  },
+  {
+    era: "Avant le récit",
+    title: "Disparition du Capitaine",
+    summary: "Apres avoir percu une présence invisible durant l'expedition, le Capitaine renvoie Franklin et disparait seul, laissant une inquietude sans réponse."
+  },
+  {
+    era: "Il y a 9 ans",
+    title: "Naissance de Harry PY",
+    summary: "Le Vrax cree Harry PY comme première réponse consciente a une variation anormale et a une urgence encore invisible."
+  },
+  {
+    era: "Il y a 6 ans",
+    title: "Naissance de Gardien Isma",
+    summary: "Une seconde creation apparait pour completer Harry PY par la force, l'ancrage et la protection physique."
+  },
+  {
+    era: "Il y a 4 ans",
+    title: "Naissance de Wingard",
+    summary: "Le Vrax repond cette fois par le vent, le mouvement et une perturbation vivante encore difficile a contenir."
+  },
+  {
+    era: "Il y a 3 ans",
+    title: "Naissance de Lévy",
+    summary: "Face a un vide dans les flux du monde, Lévy nait pour reajuster ce que ni la force ni le chaos ne peuvent restaurer seuls."
+  },
+  {
+    era: "Il y a 3 ans",
+    title: "Formation des protecteurs du Vrax",
+    summary: "Harry PY, Gardien Isma, Wingard et Lévy deviennent une generation de réponse du Vrax chargee de protèger son equilibre et ses gardiennes."
+  },
+  {
+    era: "Jour 1",
+    title: "Reveil de Shaushana dans Le Passage",
+    summary: "Shaushana ouvre les yeux dans un monde déjà vivant et ressent immediatement le souffle profond qui le traverse."
+  },
+  {
+    era: "Jour 1",
+    title: "Attaque du Felou et rencontre avec Franklin",
+    summary: "Shaushana sauve Franklin d'un Felou, decouvre ses propres capacités et accepte de le suivre vers le bidonville du Passar."
+  },
+  {
+    era: "Jour 1",
+    title: "Route vers le Passar",
+    summary: "Shaushana et Franklin traversent plusieurs zones du monde, rencontrent creatures et papillons, puis approchent du bidonville."
+  },
+  {
+    era: "Jour 1",
+    title: "Premiere apparition de Shan",
+    summary: "Shan observe puis rejoint progressivement le duo, intrigue par Shaushana et attire par sa force singuliere."
+  },
+  {
+    era: "Jour 1",
+    title: "Retour de Franklin chez les siens",
+    summary: "Franklin retrouve Mike, Gerom et la vie du bidonville, refuge fragile construit autour du fleuve Passar et des creatures recueillies."
+  },
+  {
+    era: "Jour 1",
+    title: "Constat du déséquilibre du vivant",
+    summary: "Le groupe observe des animaux agressifs, des plantes affaiblies et des signes croissants d'une corruption du vivant."
+  },
+  {
+    era: "Jour 1",
+    title: "Affrontement entre Shan et Shaushana",
+    summary: "Shan provoque Shaushana, leur combat révèle leur puissance respective et scelle un nouveau lien entre eux."
+  },
+  {
+    era: "Jour 2",
+    title: "Attaque des Felous, Verdeflor et du Felours",
+    summary: "Le bidonville subit une attaque majeure de creatures anormalement coordonnees, et Mike est grievement blesse."
+  },
+  {
+    era: "Jour 2",
+    title: "Decision de partir vers le Vrax",
+    summary: "Pour comprendre l'origine du mal, Franklin, Shaushana et Shan quittent le bidonville et prennent la route du Vrax."
+  },
+  {
+    era: "Jour 3",
+    title: "Rencontre avec Elrick",
+    summary: "Le groupe trouve refuge chez Elrick, qui révèle l'existence de l'ancienne guerre et le retour possible d'un peril enfoui."
+  },
+  {
+    era: "Jour 4",
+    title: "Depart de chez Elrick",
+    summary: "Mieux prepares et lourdement marques par les révélations d'Elrick, les voyageurs reprennent leur route vers le Bassaï puis le Vrax."
+  },
+  {
+    era: "Jour 4",
+    title: "Traversée du fleuve Bassaï",
+    summary: "La traversee met le groupe a l'epreuve, entre papillons d'eau, creatures du fleuve et manifestations d'un monde conscient."
+  },
+  {
+    era: "Jour 5",
+    title: "Entree dans le Vrax",
+    summary: "Le territoire du Vrax se révèle comme un espace vivant, dense et attentif, ou les regles habituelles cessent de suffire."
+  },
+  {
+    era: "Jour 5",
+    title: "Veille d'Ossah Lyla et de Nastaz",
+    summary: "Ossah Lyla le jour puis Nastaz la nuit mesurent l'alteration du Vrax et donnent une profondeur plus consciente a la réponse du territoire."
+  },
+  {
+    era: "Jour 5",
+    title: "Les protecteurs du Vrax sentent l'intrusion",
+    summary: "Pendant leur propre affrontement, Lévy, Gardien Isma et Wingard percoivent l'arrivee du groupe de Shaushana comme une nouvelle variable dans un equilibre déjà fragile."
+  },
+  {
+    era: "Jour 5",
+    title: "Capture de Franklin",
+    summary: "Lévy fixe le terrain, Wingard referme l'espace et Gardien Isma saisit Franklin, qui semble porter quelque chose de singulier pour le Vrax."
+  },
+  {
+    era: "Jour 5",
+    title: "Franklin reconnu comme héritier d'une ancienne lignée du Vrax",
+    summary: "Au coeur du territoire, les protecteurs comprennent que Franklin porte la trace d'une ancienne generation liee au Vrax, ce qui explique sa capture et l'attention qu'il suscite."
+  },
+  {
+    era: "Jour 5",
+    title: "Affrontement contre les Guéplynx et progression vers le coeur du Vrax",
+    summary: "Shan et Shaushana franchissent une nouvelle profondeur du Vrax, affrontent des Guéplynx coordonnes et comprennent que le territoire les guide vers un centre plus ancien."
+  },
+  {
+    era: "Jour 5",
+    title: "Intervention d'Ossah Lyla et de Nastaz",
+    summary: "Les deux creatrices interrompent l'escalade entre le groupe de Shaushana et les protecteurs du Vrax, puis imposent un autre niveau de lecture du monde."
+  },
+  {
+    era: "Jour 5",
+    title: "Révélation des papillons et du cimetière silencieux",
+    summary: "Les creatrices expliquent que les papillons portent une essence vitale pour Pandorus, puis montrent un lieu ou ils s'eteignent sans cause visible, preuve concrete d'une alteration plus profonde."
+  },
+  {
+    era: "Jour 6",
+    title: "Éveil du lien de Franklin avec le Vrax",
+    summary: "Au contact du coeur du Vrax, Franklin commence a repondre autrement au territoire et sent naitre en lui un lien qui ne releve plus seulement de la survie."
+  },
+  {
+    era: "Jour 6",
+    title: "Nouvelle direction vers le sud",
+    summary: "Les creatrices orientent le groupe vers le fleuve Sylvae et la pointe de la mer du Sphinx pandorien, ou Harry PY observe déjà une zone de decomposition du vivant."
+  },
+  {
+    era: "Jour 6",
+    title: "Départ avec Lévy",
+    summary: "Au matin, Lévy quitte le coeur du Vrax pour accompagner Shaushana, Shan et Franklin vers cette nouvelle etape du récit."
+  },
+  {
+    era: "Jour 7",
+    title: "Traversée de la zone altérée au sud du Vrax",
+    summary: "En quittant le Vrax, le groupe découvre une terre qui tient encore debout sans tenir vraiment, où le vivant persiste sans sa cohérence première."
+  },
+  {
+    era: "Jour 7",
+    title: "Papillons vidés et Renastar touché",
+    summary: "Les papillons morts puis le Renastar qui s'éteint entre les mains de Shaushana révèlent que ce n'est plus seulement la vie qui meurt, mais la création elle-même qui est atteinte."
+  },
+  {
+    era: "Jour 7",
+    title: "Découverte du village des Renards",
+    summary: "Le groupe atteint un village déjà frappé, où les renards veillent leurs morts et où Tsune, Hez et Javier tiennent encore une communauté blessée."
+  },
+  {
+    era: "Jour 7",
+    title: "Retrouvailles avec Harry PY",
+    summary: "Au coeur du village meurtri, Harry PY retrouve Lévy et comprend que l'attaque du sud confirme une altération plus vaste encore que celle du Vrax."
+  },
+  {
+    era: "Jour 7",
+    title: "Assaut du village et révélation de Kuji et Elennya",
+    summary: "Poiscailles et Chauve-Souloups ouvrent une attaque multi-axes avant que Kuji et Elennya n'imposent leur volonté hostile et leur vision d'un monde à remplacer."
+  },
+  {
+    era: "Jour 7",
+    title: "Mort de Hez",
+    summary: "Hez tombe face à Kuji, faisant du village des Renards un lieu de deuil irréversible et donnant au groupe une preuve concrète de la gravité du conflit."
+  },
+  {
+    era: "Jour 8",
+    title: "Rituel du village et veille des renards",
+    summary: "Le village enterre Hez et les renards morts dans un rituel de fidélité silencieuse qui transforme la perte en mémoire portée collectivement."
+  },
+  {
+    era: "Jour 8",
+    title: "Naissance de la Communauté des Papillons",
+    summary: "Autour de Shaushana, Shan, Franklin, Lévy, Tsune et des survivants du village, une nouvelle réponse collective prend forme contre ce qui cherche à effacer le vivant."
+  },
+  {
+    era: "Jour 8",
+    title: "Retour d'Harry PY vers le Vrax",
+    summary: "Harry PY repart transmettre aux créatrices ce qu'il a compris du sud, pendant que Javier reste veiller le village blessé."
+  },
+  {
+    era: "Jour 8",
+    title: "Nouvelle direction vers l'embouchure du Sombrail",
+    summary: "Tsune oriente le groupe vers une taverne tenue par d'anciens survivants à l'embouchure du Sombrail, prochaine étape d'une quête devenue plus vaste et plus consciente."
+  },
+  {
+    era: "Jour 9",
+    title: "Route vers la taverne du Sombrail",
+    summary: "La Communauté des Papillons quitte le village des Renards et traverse des zones où le vivant perd encore sa cohérence, confirmant que le dérèglement s'étend."
+  },
+  {
+    era: "Jour 9",
+    title: "Papillon vidé et créature sans présence",
+    summary: "Le groupe retrouve de nouveaux signes d'arrachement du vivant: papillon vidé, terre instable et corps de créature intact mais déjà absent."
+  },
+  {
+    era: "Jour 10",
+    title: "Entrée dans la taverne du Sombrail",
+    summary: "Shaushana, Shan, Franklin, Lévy et Tsune atteignent la taverne, un lieu de bois ancien où chaque regard semble peser la raison de leur venue."
+  },
+  {
+    era: "Jour 10",
+    title: "Rencontre avec Brad, Bradlette et Ab'Youbi",
+    summary: "Les gardiens de la taverne reconnaissent le décalage du groupe et commencent à relier leur route à la mémoire d'Elrick et des Briscards."
+  },
+  {
+    era: "Jour 10",
+    title: "Souvenir des Briscards et origine des étoiles",
+    summary: "Brad ouvre un passage de mémoire où apparaissent Elrick jeune, Mitra Séssé, Papy Perquis et Padre Souf, au moment où l'homme sombre est contenu puis dispersé dans une nuit devenue porteuse d'étoiles."
+  },
+  {
+    era: "Jour 10",
+    title: "Syne et la boîte éveillée",
+    summary: "Au fond de la taverne, Syne impose une limite calme autour d'une boîte qui frémit, révélant une présence retenue qui ne doit pas encore être vue."
+  },
+  {
+    era: "Jour 10",
+    title: "Brad évoque une créatrice à l'ouest",
+    summary: "Après la mémoire ancienne, Brad et Bradlette orientent la Communauté vers une présence capable de voir avant que le monde ne bascule."
+  },
+  {
+    era: "Jour 10",
+    title: "Arrivée d'Ezze, Gil et Filston",
+    summary: "Ezze retrouve Gil et Filston à la taverne, observe la Communauté des Papillons et choisit de rester, comme si sa route venait enfin de rejoindre un point plus vaste."
+  },
+  {
+    era: "Jour 10",
+    title: "Rumeur du Vert et nouvelle route vers le Capitaine",
+    summary: "À la taverne, Ezze partage la rumeur d'un homme retenu au coeur du Vert, et la quête bascule : retrouver le Capitaine devient une priorité commune."
+  },
+  {
+    era: "Jour 10",
+    title: "Bichette, Luna Queen et Méli Mélo nommées à l'ouest",
+    summary: "Brad et Bradlette orientent le groupe vers la Sombra, où Bichette, Reine du Blanc, ainsi que Luna Queen et Méli Mélo pourraient lire le déséquilibre autrement."
+  },
+  {
+    era: "Jour 11",
+    title: "Départ de la taverne et suivi d'Ab'Youbi",
+    summary: "Le groupe quitte le Sombrail, suivi à distance par Ab'Youbi, tandis que Syne et sa boîte disparaissent déjà hors de la taverne."
+  },
+  {
+    era: "Jour 11",
+    title: "Lumineaux et attaque des Aligaphoques",
+    summary: "Au-dessus du Sombrail, les Lumineaux suspendent brièvement la tension avant qu'un Aligaphoque puis tout un groupe ne surgissent du fleuve."
+  },
+  {
+    era: "Jour 11",
+    title: "Ab'Youbi fait céder l'Aligaroi",
+    summary: "L'Aligaroi émerge comme une autorité du fleuve, puis recule sans combat lorsque Ab'Youbi vient poser sur lui une puissance plus ancienne."
+  },
+  {
+    era: "Jour 12",
+    title: "Entrée dans le Vert",
+    summary: "Le groupe quitte le Sombrail et entre dans une forêt encore très vivante, dense, blessée mais résistante, où chaque présence semble lire son passage."
+  },
+  {
+    era: "Jour 12",
+    title: "Attaque des Serpensouffres",
+    summary: "Depuis la canopée du Vert, les Serpensouffres frappent par plongeon et souffle brûlant, obligeant le groupe à tenir sans se disperser."
+  },
+  {
+    era: "Jour 12",
+    title: "Reconnaissance par les peuples du Vert",
+    summary: "Macagardiens, Gorillanges et Nonstitis apparaissent comme les témoins organisés d'un territoire vivant, juste avant l'arrivée d'Eben."
+  },
+  {
+    era: "Jour 12",
+    title: "Duel de Shan et Eben",
+    summary: "Au coeur du Vert, Shan affronte enfin Eben, transforme sa rage en lecture du combat, puis obtient une reconnaissance plutôt qu'une simple victoire."
+  },
+  {
+    era: "Jour 12",
+    title: "Pierre d'Eben et nouveau Shan",
+    summary: "Après le duel, Eben remet à Shan une pierre du Vert, marquant moins une défaite qu'un équilibre enfin retrouvé entre eux."
+  },
+  {
+    era: "Jour 12",
+    title: "Découverte du Capitaine captif",
+    summary: "Plus loin, dans des ruines vidées, Franklin reconnaît enfin le Capitaine vivant mais retenu, ouvrant une nouvelle urgence au centre du récit."
+  }
+];
