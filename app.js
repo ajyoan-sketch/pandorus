@@ -2327,7 +2327,9 @@ const additionalCharacterFiches = [
     timeline: [
       { era: "Avant la taverne", title: "Départ et routes solitaires", summary: "Ezze traverse Pandorus en suivant son instinct, sa vitesse et les signes faibles du terrain." },
       { era: "Jour 9", title: "Rencontre avec Gil et Filston", summary: "Leur regard décalé sur le monde ouvre chez lui une question qu'il ne peut plus ignorer." },
-      { era: "Jour 10", title: "Arrivée à la taverne", summary: "Ezze rejoint Gil et Filston au Sombrail et choisit de rester face à la Communauté des Papillons." }
+      { era: "Jour 10", title: "Arrivée à la taverne", summary: "Ezze rejoint Gil et Filston au Sombrail et choisit de rester face à la Communauté des Papillons." },
+      { era: "Jour 10", title: "Rumeur du Vert", summary: "À la taverne, Ezze relie ses propres observations à la rumeur d'un homme retenu au coeur du Vert et contribue à réorienter la quête." },
+      { era: "Jour 11", title: "Départ vers le Sombrail profond", summary: "Après la taverne, Ezze quitte le lieu avec le groupe et transforme enfin son instinct de fuite en direction commune." }
     ]
   },
   {
@@ -2365,7 +2367,9 @@ const additionalCharacterFiches = [
     timeline: [
       { era: "Jour 9", title: "Rencontre avec Ezze", summary: "Gil et Filston troublent Ezze par leur regard différent sur la réalité de Pandorus." },
       { era: "Jour 9", title: "Sol vidé", summary: "Filston manque d'être pris par une anomalie du terrain avant qu'Ezze ne l'arrache au danger." },
-      { era: "Jour 10", title: "Arrivée commune", summary: "Ils rejoignent Ezze à la taverne et entrent dans le même lieu que la Communauté des Papillons." }
+      { era: "Jour 10", title: "Arrivée commune", summary: "Ils rejoignent Ezze à la taverne et entrent dans le même lieu que la Communauté des Papillons." },
+      { era: "Jour 10", title: "Ouverture du réel", summary: "Dans la taverne, leurs paroles sur d'autres mondes cessent d'être de simples étrangetés et élargissent réellement la lecture du groupe." },
+      { era: "Jour 11", title: "Après la taverne", summary: "Même hors du premier plan, leur présence continue d'avoir un effet : ils laissent à Ezze une question du monde plus vaste que sa route seule." }
     ]
   },
   {
@@ -2402,7 +2406,9 @@ const additionalCharacterFiches = [
     timeline: [
       { era: "Jour 10", title: "Accueil de la Communauté", summary: "Brad et Bradlette reconnaissent le décalage du groupe dès son entrée dans la taverne." },
       { era: "Jour 10", title: "Souvenir des Briscards", summary: "Brad ouvre un passage de mémoire vers l'origine ancienne du déséquilibre." },
-      { era: "Jour 10", title: "Nouvelle direction", summary: "Ils orientent la quête vers une créatrice capable de voir avant que le monde ne bascule." }
+      { era: "Jour 10", title: "Nouvelle direction", summary: "Ils orientent la quête vers une créatrice capable de voir avant que le monde ne bascule." },
+      { era: "Jour 10", title: "Priorité du Vert", summary: "Avec Ezze et Franklin, ils aident à faire passer la recherche du Capitaine avant la route de la Sombra, sans effacer cette dernière." },
+      { era: "Jour 11", title: "Parole laissée en veille", summary: "Une fois le groupe parti, leur mémoire et leur orientation continuent d'agir comme une boussole pour la suite du récit." }
     ]
   },
   {
@@ -2439,7 +2445,9 @@ const additionalCharacterFiches = [
     timeline: [
       { era: "Jour 10", title: "Veille dans l'ombre", summary: "Ab'Youbi reconnaît ce que le groupe porte avant même que les mots ne soient posés." },
       { era: "Jour 10", title: "Lecture de l'ancien déséquilibre", summary: "Il nomme une altération qui modifie le monde jusqu'à lui faire perdre son point d'équilibre." },
-      { era: "Jour 10", title: "Reconnaissance de Syne", summary: "Il comprend que la boîte de Syne contient une présence qu'il ne faut pas forcer." }
+      { era: "Jour 10", title: "Reconnaissance de Syne", summary: "Il comprend que la boîte de Syne contient une présence qu'il ne faut pas forcer." },
+      { era: "Jour 11", title: "Suivi du groupe", summary: "Ab'Youbi quitte la taverne à distance du groupe, comme s'il refusait de laisser le Sombrail et le Vert être traversés sans veille." },
+      { era: "Jour 11", title: "Retrait de l'Aligaroi", summary: "Au bord du Sombrail, il fait céder l'Aligaroi sans combat et révèle une autorité plus ancienne que la simple puissance." }
     ]
   },
   {
@@ -2476,7 +2484,8 @@ const additionalCharacterFiches = [
     timeline: [
       { era: "Jour 10", title: "Présence au fond de la taverne", summary: "Syne apparaît comme une figure silencieuse gardant une boîte fermée." },
       { era: "Jour 10", title: "Premier frémissement", summary: "Un mouvement étouffé se fait entendre dans la boîte, révélant que ce qu'elle contient n'est pas inerte." },
-      { era: "Jour 10", title: "Limite posée", summary: "Syne rappelle que certaines choses ne doivent pas encore être vues." }
+      { era: "Jour 10", title: "Limite posée", summary: "Syne rappelle que certaines choses ne doivent pas encore être vues." },
+      { era: "Jour 11", title: "Départ discret", summary: "Au moment où le groupe quitte la taverne, Syne et sa boîte disparaissent déjà du lieu, comme si leur propre route suivait une logique séparée." }
     ]
   },
   {
@@ -2512,7 +2521,8 @@ const additionalCharacterFiches = [
     ],
     timeline: [
       { era: "Ancien temps", title: "Résistance des Briscards", summary: "Mitra Séssé apparaît parmi ceux qui tiennent lorsque le déséquilibre ancien s'installe." },
-      { era: "Jour 10", title: "Retour par la mémoire", summary: "La taverne permet à la Communauté des Papillons de le voir comme une présence réelle du passé." }
+      { era: "Jour 10", title: "Retour par la mémoire", summary: "La taverne permet à la Communauté des Papillons de le voir comme une présence réelle du passé." },
+      { era: "Jour 11", title: "Mémoire active", summary: "Une fois la route relancée vers le Vert, Mitra Séssé cesse d'être un simple souvenir : il devient un précédent concret pour ceux qui avancent à leur tour." }
     ]
   },
   {
@@ -2548,7 +2558,8 @@ const additionalCharacterFiches = [
     ],
     timeline: [
       { era: "Ancien temps", title: "Gamin Perquis", summary: "Il participe à la lecture des premiers signes du déséquilibre parmi les Briscards." },
-      { era: "Jour 10", title: "Mémoire réactivée", summary: "Son rôle revient dans le souvenir partagé à la taverne." }
+      { era: "Jour 10", title: "Mémoire réactivée", summary: "Son rôle revient dans le souvenir partagé à la taverne." },
+      { era: "Jour 11", title: "Analyse léguée", summary: "Quand le groupe choisit le Vert avant la Sombra, la mémoire de Papy Perquis reste comme une invitation à lire avant de frapper." }
     ]
   },
   {
@@ -2584,7 +2595,8 @@ const additionalCharacterFiches = [
     ],
     timeline: [
       { era: "Ancien temps", title: "Filston Souf", summary: "Il apparaît dans la mémoire ancienne parmi ceux qui tiennent face au premier grand dérèglement." },
-      { era: "Jour 10", title: "Retour du nom", summary: "La taverne rend visible son ancien nom et sa place dans la continuité des Briscards." }
+      { era: "Jour 10", title: "Retour du nom", summary: "La taverne rend visible son ancien nom et sa place dans la continuité des Briscards." },
+      { era: "Jour 11", title: "Continuité de veille", summary: "Son souvenir accompagne le départ du groupe comme la preuve qu'une ancienne résistance peut encore nourrir la route présente." }
     ]
   },
   {
@@ -2696,7 +2708,9 @@ const additionalCharacterFiches = [
       { title: "Méli Mélo", text: "Méli Mélo complète autour d'elle une ligne de veille plus discrète." }
     ],
     timeline: [
-      { era: "Jour 10", title: "Nom donné par Brad", summary: "Bichette est évoquée comme la créatrice à l'ouest capable d'offrir une lecture plus fine du basculement." }
+      { era: "Jour 10", title: "Nom donné par Brad", summary: "Bichette est évoquée comme la créatrice à l'ouest capable d'offrir une lecture plus fine du basculement." },
+      { era: "Jour 10", title: "Horizon maintenu", summary: "Même lorsque le groupe choisit d'abord le Vert à cause du Capitaine, Bichette reste la grande direction stratégique laissée en veille." },
+      { era: "Jour 12", title: "Après le Vert", summary: "La traversée du Vert renforce encore le poids de son nom : plus le monde se révèle complexe, plus la route vers la Sombra paraît nécessaire." }
     ]
   },
   {
@@ -2730,7 +2744,9 @@ const additionalCharacterFiches = [
       { title: "Méli Mélo", text: "Toutes deux sont nommées comme des présences complémentaires autour de la Sombra." }
     ],
     timeline: [
-      { era: "Jour 10", title: "Évoquée à la taverne", summary: "Son nom entre dans le récit par la parole de Brad et Bradlette, avec la Sombra comme horizon." }
+      { era: "Jour 10", title: "Évoquée à la taverne", summary: "Son nom entre dans le récit par la parole de Brad et Bradlette, avec la Sombra comme horizon." },
+      { era: "Jour 10", title: "Présence gardée en réserve", summary: "Luna Queen demeure hors champ, mais son nom suffit déjà à faire comprendre que l'ouest n'est pas vide : il est organisé." },
+      { era: "Jour 12", title: "Nécessité croissante", summary: "À mesure que le Vert révèle ses propres souverainetés, la perspective d'une rencontre avec Luna Queen gagne en importance pour la suite." }
     ]
   },
   {
@@ -2764,7 +2780,9 @@ const additionalCharacterFiches = [
       { title: "Luna Queen", text: "Elles sont évoquées ensemble comme des présences complémentaires de la Sombra." }
     ],
     timeline: [
-      { era: "Jour 10", title: "Évoquée à la taverne", summary: "Son nom rejoint ceux de Bichette et Luna Queen comme nouvelle direction stratégique du récit." }
+      { era: "Jour 10", title: "Évoquée à la taverne", summary: "Son nom rejoint ceux de Bichette et Luna Queen comme nouvelle direction stratégique du récit." },
+      { era: "Jour 10", title: "Troisième point d'équilibre", summary: "Sa mention confirme que la Sombra repose sur plusieurs présences complémentaires et non sur une seule figure isolée." },
+      { era: "Jour 12", title: "Attente de l'ouest", summary: "Après la priorité donnée au Vert, Méli Mélo reste l'un des noms qui continuent d'ouvrir l'étape suivante de la route." }
     ]
   }
 ];
