@@ -1,6 +1,7 @@
 ﻿import { createAdditionalCharacterFiches } from "./assets/data/characters.js";
 import { timelineEvents } from "./assets/data/timeline.js";
 import { createLocationFiches } from "./assets/data/locations.js";
+import { createCreatureFiches } from "./assets/data/creatures.js";
 
 const maps = [
   "./media/cartes/Constellations.jpg",
@@ -1425,7 +1426,10 @@ const ficheHashPanelMap = {
   "#fiches-meli-melo": "meli-melo-panel"
 };
 
-const creatureFiches = [
+const creatureFiches = createCreatureFiches(buildMediaPath);
+
+/* Legacy inlined creature data kept temporarily for safety during refactor.
+const __legacyCreatureFiches = [
   {
     slug: "aligaphoque",
     name: "Aligaphoque",
@@ -1866,6 +1870,7 @@ const creatureFiches = [
     ]
   }
 ];
+*/
 
 let currentMapIndex = 0;
 let pinnedMapInfoIndex = null;
@@ -3089,6 +3094,116 @@ function renderCreatureImages() {
   });
 }
 
+const relationPortraitMap = {
+  Shaushana: buildMediaPath("pandorus", "Shaushana.jpg"),
+  Shan: buildMediaPath("pandorus", "Shan.jpg"),
+  Franklin: buildMediaPath("pandorus", "Franklin.png"),
+  Mike: buildMediaPath("pandorus", "Mike.png"),
+  "Gérôm": buildMediaPath("pandorus", "Gérôm.png"),
+  Elrick: buildMediaPath("pandorus", "Elrick.png"),
+  Eben: buildMediaPath("pandorus", "Eben.jpg"),
+  Capitaine: buildMediaPath("pandorus", "Capitaine.png"),
+  "Harry PY": buildMediaPath("pandorus", "Harry PY.png"),
+  "Gardien Isma": buildMediaPath("pandorus", "Gardien Isma.png"),
+  Wingard: buildMediaPath("pandorus", "Wingard.png"),
+  "Lévy": buildMediaPath("pandorus", "Lévy.png"),
+  "Ossah Lyla": buildMediaPath("pandorus", "Ossah Lyla.png"),
+  Nastaz: buildMediaPath("pandorus", "Nastaz.png"),
+  Tsune: buildMediaPath("pandorus", "Tsune.jpg"),
+  Hez: buildMediaPath("pandorus", "Hez.jpg"),
+  Javier: buildMediaPath("pandorus", "Javier.png"),
+  Kuji: buildMediaPath("pandorus", "Kuji.png"),
+  Elennya: buildMediaPath("pandorus", "Elennya.png"),
+  Ezze: buildMediaPath("pandorus", "Ezze.png"),
+  "Gil et Filston": buildMediaPath("pandorus", "Gil et Filston.jpg"),
+  "Brad et Bradlette": buildMediaPath("pandorus", "Brad et Bradlette.jpg"),
+  "Ab'Youbi": buildMediaPath("pandorus", "AbYoubi.png"),
+  Syne: buildMediaPath("pandorus", "Syne.jpg"),
+  "Mitra Séssé": buildMediaPath("pandorus", "Mitra Séssé.jpg"),
+  "Papy Perquis": buildMediaPath("pandorus", "Papy Perquis.jpg"),
+  "Padre Souf": buildMediaPath("pandorus", "Padre Souf.png"),
+  Bichette: buildMediaPath("pandorus", "Bichette.png"),
+  "Luna Queen": buildMediaPath("pandorus", "Luna Queen.png"),
+  "Méli Mélo": buildMediaPath("pandorus", "Méli Mélo.png")
+};
+
+function renderLandingPulse() {
+  const pulse = document.getElementById("landing-pulse");
+  if (!pulse) return;
+
+  const latestChapters = chapters.slice(-3).reverse();
+  const latestEvents = timelineEvents
+    .filter((event) => /Jour\s+\d+/i.test(event.era || "") || /Après le Jour/i.test(event.era || ""))
+    .slice(-3)
+    .reverse();
+
+  pulse.innerHTML = `
+    <article class="landing-pulse-card">
+      <p class="landing-pulse-kicker">Dernières portes</p>
+      <h3>Chapitres récents</h3>
+      <div class="landing-pulse-list">
+        ${latestChapters.map((chapter) => `
+          <a class="landing-pulse-item" href="#chapitres">
+            <strong>${decodeChapterName(chapter.path)}</strong>
+            <span>${chapter.summary}</span>
+          </a>
+        `).join("")}
+      </div>
+    </article>
+    <article class="landing-pulse-card">
+      <p class="landing-pulse-kicker">Fronts actifs</p>
+      <h3>Ce qui bouge maintenant</h3>
+      <div class="landing-pulse-list">
+        ${latestEvents.map((event) => `
+          <a class="landing-pulse-item" href="#chronologie">
+            <strong>${event.era} · ${event.title}</strong>
+            <span>${event.summary}</span>
+          </a>
+        `).join("")}
+      </div>
+    </article>
+  `;
+}
+
+function renderRelationsOverview(nodes) {
+  const overview = document.getElementById("relations-overview");
+  if (!overview) return;
+
+  const totalLinks = nodes.reduce((sum, node) => sum + node.links.length, 0);
+  const typeCounts = nodes.reduce((map, node) => {
+    node.links.forEach((link) => {
+      map[link.type] = (map[link.type] || 0) + 1;
+    });
+    return map;
+  }, {});
+
+  const topTypes = Object.entries(typeCounts).sort((a, b) => b[1] - a[1]).slice(0, 3);
+  const hubs = [...nodes].sort((a, b) => b.links.length - a.links.length).slice(0, 3);
+
+  overview.innerHTML = `
+    <article class="relations-overview-card">
+      <p class="relations-overview-kicker">Cartographie visible</p>
+      <h4>${nodes.length} noeuds actifs</h4>
+      <p>${totalLinks} liens lisibles dans l'état actuel du récit.</p>
+    </article>
+    <article class="relations-overview-card">
+      <p class="relations-overview-kicker">Forces dominantes</p>
+      <div class="relations-overview-tags">
+        ${topTypes.map(([label, count]) => `<span>${label} · ${count}</span>`).join("")}
+      </div>
+    </article>
+    <article class="relations-overview-card relations-overview-card-wide">
+      <p class="relations-overview-kicker">Centres de gravité</p>
+      <div class="relations-hub-list">
+        ${hubs.map((node) => {
+          const href = characterRouteMap[slugifyValue(node.name)] || "#relations";
+          return `<a class="relations-hub" href="${href}"><strong>${node.name}</strong><span>${node.links.length} liens cartographiés</span></a>`;
+        }).join("")}
+      </div>
+    </article>
+  `;
+}
+
 function renderRelations() {
   const grid = document.getElementById("relations-grid");
   if (!grid) return;
@@ -3101,6 +3216,8 @@ function renderRelations() {
     return matchesLetter && matchesSearch;
   });
 
+  renderRelationsOverview(filteredNodes);
+
   if (!filteredNodes.length) {
     const emptyState = document.createElement("div");
     emptyState.className = "empty-state";
@@ -3112,42 +3229,11 @@ function renderRelations() {
   filteredNodes.forEach((nodeData) => {
     const card = document.createElement("article");
     card.className = "relation-card";
-    const portraitMap = {
-      Shaushana: buildMediaPath("pandorus", "Shaushana.jpg"),
-      Shan: buildMediaPath("pandorus", "Shan.jpg"),
-      Franklin: buildMediaPath("pandorus", "Franklin.png"),
-      Mike: buildMediaPath("pandorus", "Mike.png"),
-      "Gérôm": buildMediaPath("pandorus", "Gérôm.png"),
-      Elrick: buildMediaPath("pandorus", "Elrick.png"),
-      Eben: buildMediaPath("pandorus", "Eben.jpg"),
-      Capitaine: buildMediaPath("pandorus", "Capitaine.png"),
-      "Harry PY": buildMediaPath("pandorus", "Harry PY.png"),
-      "Gardien Isma": buildMediaPath("pandorus", "Gardien Isma.png"),
-      Wingard: buildMediaPath("pandorus", "Wingard.png"),
-      "Lévy": buildMediaPath("pandorus", "Lévy.png"),
-      "Ossah Lyla": buildMediaPath("pandorus", "Ossah Lyla.png"),
-      Nastaz: buildMediaPath("pandorus", "Nastaz.png"),
-      Tsune: buildMediaPath("pandorus", "Tsune.jpg"),
-      Hez: buildMediaPath("pandorus", "Hez.jpg"),
-      Javier: buildMediaPath("pandorus", "Javier.png"),
-      Kuji: buildMediaPath("pandorus", "Kuji.png"),
-      Elennya: buildMediaPath("pandorus", "Elennya.png"),
-      Ezze: buildMediaPath("pandorus", "Ezze.png"),
-      "Gil et Filston": buildMediaPath("pandorus", "Gil et Filston.jpg"),
-      "Brad et Bradlette": buildMediaPath("pandorus", "Brad et Bradlette.jpg"),
-      "Ab'Youbi": buildMediaPath("pandorus", "AbYoubi.png"),
-      Syne: buildMediaPath("pandorus", "Syne.jpg"),
-      "Mitra Séssé": buildMediaPath("pandorus", "Mitra Séssé.jpg"),
-      "Papy Perquis": buildMediaPath("pandorus", "Papy Perquis.jpg"),
-      "Padre Souf": buildMediaPath("pandorus", "Padre Souf.png"),
-      Bichette: buildMediaPath("pandorus", "Bichette.png"),
-      "Luna Queen": buildMediaPath("pandorus", "Luna Queen.png"),
-      "Méli Mélo": buildMediaPath("pandorus", "Méli Mélo.png")
-    };
-    const portrait = portraitMap[nodeData.name];
+    const portrait = relationPortraitMap[nodeData.name];
     const portraitThumb = portrait
       ? `<div class="relation-thumb"><img src="${portrait}" alt="${nodeData.name}" loading="lazy" decoding="async"></div>`
       : "";
+    const relationTypes = [...new Set(nodeData.links.map((link) => link.type))].slice(0, 3);
 
     if (portrait) {
       card.style.setProperty("--relation-portrait", `url("${portrait}")`);
@@ -3169,8 +3255,14 @@ function renderRelations() {
     card.innerHTML = `
       <div class="relation-card-header">
         ${portraitThumb}
-        <h4>${nodeData.name}</h4>
-        <p class="relation-role">${nodeData.role}</p>
+        <div class="relation-card-heading">
+          <h4>${nodeData.name}</h4>
+          <p class="relation-role">${nodeData.role}</p>
+          <p class="relation-count">${nodeData.links.length} liens cartographiés</p>
+        </div>
+      </div>
+      <div class="relation-type-tags">
+        ${relationTypes.map((type) => `<span>${type}</span>`).join("")}
       </div>
       <div class="context-links compact relation-context-links">
         ${characterRouteMap[slugifyValue(nodeData.name)] ? `<a class="button tiny secondary context-link" href="${characterRouteMap[slugifyValue(nodeData.name)]}">Ouvrir la fiche</a>` : ""}
@@ -3570,6 +3662,7 @@ function showSectionFromHash() {
 
 window.addEventListener("hashchange", showSectionFromHash);
 renderLandingMarquee();
+renderLandingPulse();
 startLandingOracleRotation();
 initChapterViewer();
 initCharacterAlphabetFilter();

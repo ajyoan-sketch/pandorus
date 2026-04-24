@@ -723,6 +723,64 @@ h4 {
   border-bottom: 1px solid rgba(43, 33, 22, 0.28);
 }
 
+.landing-pulse {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.landing-pulse-card {
+  position: relative;
+  padding: 16px 18px;
+  border: 1px solid rgba(120, 93, 42, 0.16);
+  border-radius: 20px;
+  background:
+    radial-gradient(circle at top left, rgba(239, 218, 159, 0.16), transparent 34%),
+    linear-gradient(180deg, rgba(255, 251, 243, 0.96), rgba(245, 234, 206, 0.88));
+  box-shadow: 0 14px 28px rgba(86, 60, 19, 0.08);
+}
+
+.landing-pulse-kicker {
+  margin: 0 0 8px;
+  font-size: 0.76rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8a6a2d;
+}
+
+.landing-pulse-card h3 {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.landing-pulse-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.landing-pulse-item {
+  display: grid;
+  gap: 4px;
+  padding: 10px 12px;
+  border: 1px solid rgba(122, 95, 40, 0.12);
+  border-radius: 16px;
+  background: rgba(255, 250, 241, 0.74);
+  color: #2b2116;
+  text-decoration: none;
+}
+
+.landing-pulse-item strong {
+  font-size: 0.96rem;
+}
+
+.landing-pulse-item span {
+  color: #5c4d38;
+  font-size: 0.94rem;
+}
+
 .landing-actions .button {
   padding: 10px 16px;
   border-color: #8a6e36;
@@ -1772,6 +1830,75 @@ h4 {
   z-index: 1;
 }
 
+.relations-overview {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.relations-overview-card {
+  padding: 16px 18px;
+  border: 1px solid rgba(138, 103, 43, 0.16);
+  border-radius: 20px;
+  background:
+    radial-gradient(circle at top right, rgba(235, 212, 155, 0.16), transparent 30%),
+    linear-gradient(180deg, rgba(255, 251, 243, 0.96), rgba(244, 233, 207, 0.9));
+  box-shadow: 0 14px 26px rgba(88, 60, 19, 0.08);
+}
+
+.relations-overview-card h4 {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.relations-overview-kicker {
+  margin: 0 0 8px;
+  font-size: 0.76rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8a6a2d;
+}
+
+.relations-overview-card-wide {
+  grid-column: span 1;
+}
+
+.relations-overview-tags,
+.relation-type-tags,
+.relations-hub-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.relations-overview-tags span,
+.relation-type-tags span,
+.relations-hub {
+  padding: 8px 12px;
+  border: 1px solid rgba(145, 109, 46, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 252, 244, 0.78);
+  color: #5f4727;
+  text-decoration: none;
+}
+
+.relations-hub {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2px;
+  border-radius: 16px;
+}
+
+.relations-hub span {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #786248;
+  font-size: 0.85rem;
+}
+
 .chronology-intro-copy p:last-child,
 .relations-intro-copy p:last-child {
   margin-bottom: 0;
@@ -2274,19 +2401,21 @@ h4 {
   position: relative;
   z-index: 1;
   margin-bottom: 14px;
-  text-align: center;
   padding: 12px 12px;
   border: 1px solid rgba(128, 98, 46, 0.12);
   border-radius: 18px;
   background: rgba(255, 249, 237, 0.62);
   backdrop-filter: blur(3px);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.66);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  align-items: center;
 }
 
 .relation-thumb {
   width: 82px;
   height: 82px;
-  margin: 0 auto 10px;
   padding: 4px;
   border: 1px solid rgba(121, 93, 44, 0.28);
   border-radius: 999px;
@@ -2305,9 +2434,25 @@ h4 {
   background: rgba(255, 255, 255, 0.45);
 }
 
+.relation-card-heading h4 {
+  margin: 0;
+}
+
 .relation-role {
   margin: 6px 0 0;
   color: var(--muted);
+}
+
+.relation-count {
+  margin: 6px 0 0;
+  font-size: 0.86rem;
+  color: #7b6242;
+}
+
+.relation-type-tags {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 12px;
 }
 
 .relation-links {
@@ -3437,6 +3582,11 @@ h4 {
 
   .landing-stats,
   .landing-entry-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .landing-pulse,
+  .relations-overview {
     grid-template-columns: 1fr;
   }
 
