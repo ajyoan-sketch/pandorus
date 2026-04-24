@@ -3590,7 +3590,6 @@ function showSectionFromHash() {
     if (creatures) creatures.hidden = false;
     if (mysteres) mysteres.hidden = true;
     if (cartes) cartes.hidden = true;
-    renderCreatureImages();
 
     if (isCreatureFicheHash && typeof window.activateCreaturePanel === "function") {
       const targetSlug = currentHash.replace("#creatures-fiche-", "");
@@ -3601,12 +3600,6 @@ function showSectionFromHash() {
         syncCreatureFicheFilter();
       }
       window.activateCreaturePanel(`creature-panel-${targetSlug}`);
-      const targetSection = document.getElementById("creatures-fiches");
-      if (targetSection) {
-        window.requestAnimationFrame(() => {
-          targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
-        });
-      }
     } else {
       initCreatureAlphabetFilter();
       syncCreatureFicheFilter();
