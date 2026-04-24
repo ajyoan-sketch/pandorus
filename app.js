@@ -876,7 +876,7 @@ const locationFiches = [
   }
 ].map((fiche) => ({
   ...fiche,
-  image: locationImageMap[fiche.slug] || locationHeroImage
+  image: getLocationImage(fiche.slug)
 }));
 
 const locationHashPanelMap = Object.fromEntries(
@@ -1395,22 +1395,25 @@ function buildMediaPath(folder, fileName) {
   return `./media/${folder}/${safeFileName}`;
 }
 
-const locationHeroImage = buildMediaPath("lieux", "Photo de Garde.png");
+function getLocationImage(slug) {
+  const locationHeroImage = buildMediaPath("lieux", "Photo de Garde.png");
+  const locationImageMap = {
+    passage: buildMediaPath("lieux", "Le Passage.png"),
+    passar: buildMediaPath("lieux", "Passar.png"),
+    "bidonville-du-passar": buildMediaPath("lieux", "Bidonville du Passar.png"),
+    veyrine: buildMediaPath("lieux", "Veyrine.png"),
+    bassai: buildMediaPath("lieux", "Bassaï.png"),
+    vrax: buildMediaPath("lieux", "Le Vrax.png"),
+    "coeur-du-vrax": buildMediaPath("lieux", "Coeur Du Vrax.png"),
+    "fleuve-sylvae": buildMediaPath("lieux", "Sylvae.png"),
+    "mer-du-sphinx-pandorien": buildMediaPath("lieux", "Mer du Sphinx Pandorien.png"),
+    "village-des-renards": buildMediaPath("lieux", "Village des Renards.png"),
+    "embouchure-du-sombrail": buildMediaPath("lieux", "Embouchure du Sombrail.png"),
+    "taverne-du-sombrail": buildMediaPath("lieux", "Taverne du Sombrail.png")
+  };
 
-const locationImageMap = {
-  passage: buildMediaPath("lieux", "Le Passage.png"),
-  passar: buildMediaPath("lieux", "Passar.png"),
-  "bidonville-du-passar": buildMediaPath("lieux", "Bidonville du Passar.png"),
-  veyrine: buildMediaPath("lieux", "Veyrine.png"),
-  bassai: buildMediaPath("lieux", "Bassaï.png"),
-  vrax: buildMediaPath("lieux", "Le Vrax.png"),
-  "coeur-du-vrax": buildMediaPath("lieux", "Coeur Du Vrax.png"),
-  "fleuve-sylvae": buildMediaPath("lieux", "Sylvae.png"),
-  "mer-du-sphinx-pandorien": buildMediaPath("lieux", "Mer du Sphinx Pandorien.png"),
-  "village-des-renards": buildMediaPath("lieux", "Village des Renards.png"),
-  "embouchure-du-sombrail": buildMediaPath("lieux", "Embouchure du Sombrail.png"),
-  "taverne-du-sombrail": buildMediaPath("lieux", "Taverne du Sombrail.png")
-};
+  return locationImageMap[slug] || locationHeroImage;
+}
 
 function stripAccents(value) {
   return (value || "")
