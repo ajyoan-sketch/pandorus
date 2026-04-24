@@ -3848,50 +3848,62 @@ function startLandingOracleRotation() {
   }, 5200);
 }
 
+let introAnimationStarted = false;
+
+function forceDismissIntroOverlay() {
+  const overlay = document.getElementById("intro-overlay");
+  if (!overlay) return;
+
+  overlay.classList.add("is-hidden");
+  document.body.classList.remove("intro-playing");
+
+  window.setTimeout(() => {
+    overlay.remove();
+  }, 900);
+}
+
 function runIntroAnimation() {
   const overlay = document.getElementById("intro-overlay");
   const introLogo = document.getElementById("intro-logo");
 
-  if (!overlay || !introLogo) return;
+  if (!overlay || !introLogo || introAnimationStarted) return;
+  introAnimationStarted = true;
 
   document.body.classList.add("intro-playing");
 
   window.requestAnimationFrame(() => {
-    introLogo.animate(
-      [
+    if (typeof introLogo.animate === "function") {
+      introLogo.animate(
+        [
+          {
+            transform: "scale(1.18)",
+            opacity: 0
+          },
+          {
+            transform: "scale(1)",
+            opacity: 1,
+            offset: 0.32
+          },
+          {
+            transform: "scale(1)",
+            opacity: 1
+          },
+          {
+            transform: "scale(0.62)",
+            opacity: 0
+          }
+        ],
         {
-          transform: "scale(1.18)",
-          opacity: 0
-        },
-        {
-          transform: "scale(1)",
-          opacity: 1,
-          offset: 0.32
-        },
-        {
-          transform: "scale(1)",
-          opacity: 1
-        },
-        {
-          transform: "scale(0.62)",
-          opacity: 0
+          duration: 2200,
+          easing: "cubic-bezier(0.22, 1, 0.36, 1)",
+          fill: "forwards"
         }
-      ],
-      {
-        duration: 2200,
-        easing: "cubic-bezier(0.22, 1, 0.36, 1)",
-        fill: "forwards"
-      }
-    );
+      );
+    }
 
     window.setTimeout(() => {
-      overlay.classList.add("is-hidden");
-      document.body.classList.remove("intro-playing");
+      forceDismissIntroOverlay();
     }, 1850);
-
-    window.setTimeout(() => {
-      overlay.remove();
-    }, 2700);
   });
 }
 
@@ -4700,7 +4712,15 @@ initCharacterAlphabetFilter();
 initCreatureAlphabetFilter();
 initRelationFilters();
 showSectionFromHash();
-window.addEventListener("load", runIntroAnimation);
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", runIntroAnimation, { once: true });
+} else {
+  runIntroAnimation();
+}
+
+window.addEventListener("load", runIntroAnimation, { once: true });
+window.setTimeout(forceDismissIntroOverlay, 3200);
 
 
 
