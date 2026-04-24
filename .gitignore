@@ -1,1 +1,5 @@
 .vercel
+
+# Temporary chapter extraction files used for local analysis only
+Chapitre *.txt
+chapter-*-extract.txt

@@ -1904,7 +1904,7 @@ const additionalCharacterFiches = [
     ],
     timeline: [
       { era: "Il y a 9 ans", title: "Naissance de Harry PY", summary: "Le Vrax cree Harry PY comme première réponse consciente a une variation anormale et a une urgence encore invisible." },
-      { era: "Il y a 6 a 3 ans", title: "Centre du groupe protecteur", summary: "Les naissances suivantes s'organisent autour de lui et le Vrax commence a fonctionner en generation de réponse." },
+      { era: "Il y a 6 à 3 ans", title: "Centre du groupe protecteur", summary: "Les naissances suivantes s'organisent autour de lui et le Vrax commence a fonctionner en generation de réponse." },
       { era: "Jour 5", title: "Perception du groupe de Shaushana", summary: "Harry PY fait partie des protecteurs qui reagissent a l'intrusion du groupe dans le Vrax." },
       { era: "Jour 6", title: "Veille au sud", summary: "Les creatrices révèlent qu'Harry PY observe déjà une autre zone touchee par l'alteration, vers le fleuve Sylvae et la mer du Sphinx pandorien." }
     ]
@@ -1942,7 +1942,7 @@ const additionalCharacterFiches = [
     ],
     timeline: [
       { era: "Il y a 6 ans", title: "Naissance de Gardien Isma", summary: "Le Vrax cree Gardien Isma comme réponse plus dense et plus physique au déséquilibre grandissant." },
-      { era: "Il y a 6 a 3 ans", title: "Mise en place du role de protecteur", summary: "Il devient le point fixe et l'appui principal du groupe ne autour de Harry PY." },
+      { era: "Il y a 6 à 3 ans", title: "Mise en place du role de protecteur", summary: "Il devient le point fixe et l'appui principal du groupe ne autour de Harry PY." },
       { era: "Jour 5", title: "Capture de Franklin", summary: "Gardien Isma traverse le chaos et saisit Franklin au moment le plus critique de l'interception." }
     ]
   },
@@ -1979,7 +1979,7 @@ const additionalCharacterFiches = [
     ],
     timeline: [
       { era: "Il y a 4 ans", title: "Naissance de Wingard", summary: "Le Vrax cree Wingard quand une simple tenue de ligne ne suffit plus a repondre a l'instabilite croissante." },
-      { era: "Il y a 4 a 3 ans", title: "Apprentissage du chaos", summary: "Son energie devient progressivement moins destructrice et plus dirigee." },
+      { era: "Il y a 4 à 3 ans", title: "Apprentissage du chaos", summary: "Son energie devient progressivement moins destructrice et plus dirigee." },
       { era: "Jour 5", title: "Encerclement du groupe", summary: "Wingard ferme l'espace, casse les appuis et empeche toute réponse immediate a la prise de Franklin." }
     ]
   },
@@ -2056,7 +2056,7 @@ const additionalCharacterFiches = [
     ],
     timeline: [
       { era: "Avant le récit", title: "Veille diurne du Vrax", summary: "Ossah Lyla lit le Vrax au jour et detecte les premières dissonances qui menacent son equilibre." },
-      { era: "Il y a 9 a 3 ans", title: "Temoin des naissances", summary: "Elle accompagne la formation progressive de la generation des protecteurs du Vrax." },
+      { era: "Il y a 9 à 3 ans", title: "Temoin des naissances", summary: "Elle accompagne la formation progressive de la generation des protecteurs du Vrax." },
       { era: "Jour 5", title: "Intervention des creatrices", summary: "Ossah Lyla interrompt l'escalade entre le groupe et les protecteurs, puis révèle la logique profonde du Vrax." },
       { era: "Jour 5", title: "Révélation des papillons", summary: "Elle montre le cimetière silencieux des papillons et explique que leur essence est indispensable a l'equilibre du monde." }
     ]
@@ -2095,7 +2095,7 @@ const additionalCharacterFiches = [
     ],
     timeline: [
       { era: "Avant le récit", title: "Veille nocturne du Vrax", summary: "La nuit, Nastaz analyse le vivant et mesure l'ampleur exacte des alterations a venir." },
-      { era: "Il y a 9 a 3 ans", title: "Comprehension des naissances", summary: "Elle identifie chaque nouvelle creation comme une réponse complementaire du Vrax face au déséquilibre." },
+      { era: "Il y a 9 à 3 ans", title: "Comprehension des naissances", summary: "Elle identifie chaque nouvelle creation comme une réponse complementaire du Vrax face au déséquilibre." },
       { era: "Jour 5", title: "Intervention nocturne", summary: "Nastaz se révèle aux cotes d'Ossah Lyla et impose une lecture plus froide, plus nette et plus strategique de la crise." },
       { era: "Jour 6", title: "Orientation de la quête", summary: "Elle confirme que la suite ne se trouve plus dans le seul Vrax et oriente le groupe vers la zone alteree du sud." }
     ]
@@ -2325,7 +2325,7 @@ const additionalCharacterFiches = [
       { title: "Taverne du Sombrail", text: "Le premier lieu où son mouvement naturel se suspend assez longtemps pour devenir une vraie présence." }
     ],
     timeline: [
-      { era: "Avant la taverne", title: "Départ et routes solitaires", summary: "Ezze traverse Pandorus en suivant son instinct, sa vitesse et les signes faibles du terrain." },
+      { era: "Avant le Jour 9", title: "Départ et routes solitaires", summary: "Ezze traverse Pandorus en suivant son instinct, sa vitesse et les signes faibles du terrain." },
       { era: "Jour 9", title: "Rencontre avec Gil et Filston", summary: "Leur regard décalé sur le monde ouvre chez lui une question qu'il ne peut plus ignorer." },
       { era: "Jour 10", title: "Arrivée à la taverne", summary: "Ezze rejoint Gil et Filston au Sombrail et choisit de rester face à la Communauté des Papillons." },
       { era: "Jour 10", title: "Rumeur du Vert", summary: "À la taverne, Ezze relie ses propres observations à la rumeur d'un homme retenu au coeur du Vert et contribue à réorienter la quête." },
@@ -2640,7 +2640,7 @@ const additionalCharacterFiches = [
       { title: "Ab'Youbi", text: "Tous deux appartiennent à des présences anciennes que le groupe ne comprend pas encore totalement, chacune liée à un territoire vivant." }
     ],
     timeline: [
-      { era: "Ancien temps du Vert", title: "Accession à la royauté", summary: "Eben renverse l'ancien chef des singes et devient une autorité reconnue par le Vert." },
+      { era: "Avant le récit", title: "Accession à la royauté", summary: "Eben renverse l'ancien chef des singes et devient une autorité reconnue par le Vert." },
       { era: "Avant le récit", title: "Confrontation fatale", summary: "Les parents de Shan meurent en l'affrontant, tandis que l'enfant est épargné." },
       { era: "Jour 12", title: "Duel avec Shan", summary: "Au coeur du Vert, Eben affronte Shan jusqu'à transformer leur lien en reconnaissance plutôt qu'en pure vengeance." },
       { era: "Jour 12", title: "Pierre du Vert", summary: "Avant d'être entouré par les siens, Eben laisse à Shan une pierre marquée du Vert, signe que le combat a produit une reconnaissance plus qu'une défaite." }
