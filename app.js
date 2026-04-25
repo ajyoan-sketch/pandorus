@@ -2,6 +2,7 @@
 import { timelineEvents } from "./assets/data/timeline.js";
 import { createLocationFiches } from "./assets/data/locations.js";
 import { createCreatureFiches } from "./assets/data/creatures.js";
+import { createPandorusTestData } from "./assets/data/test.js";
 
 const maps = [
   "./media/cartes/Constellations.jpg",
@@ -654,6 +655,7 @@ const sectionWhispers = {
   personnages: "Les présences du monde, vues dans leur ensemble.",
   lieux: "Les territoires, fleuves et seuils qui donnent sa respiration au récit.",
   creatures: "Le vivant dans sa beauté, sa peur et son instinct.",
+  test: "Un miroir pandorien fait de choix, de seuils et d'affinités.",
   mysteres: "Ce qui résiste encore à une lecture pleine.",
   cartes: "Les formes du monde, des cieux et des territoires conscients."
 };
@@ -1449,6 +1451,7 @@ const ficheHashPanelMap = {
 };
 
 const creatureFiches = createCreatureFiches(buildMediaPath);
+const pandorusTest = createPandorusTestData(buildMediaPath);
 
 /* Legacy inlined creature data kept temporarily for safety during refactor.
 const __legacyCreatureFiches = [
@@ -1909,9 +1912,12 @@ let currentCreatureFiche = creatureFiches[0]?.slug || "";
 let currentRelationLetter = "all";
 let currentRelationSearch = "";
 let currentLocationSearch = "";
+let currentTestQuestionIndex = 0;
+let pandorusTestAnswers = [];
 let ficheUiInitialized = false;
 let creatureFichesInitialized = false;
 let locationFichesInitialized = false;
+let pandorusTestInitialized = false;
 
 const chapters = [
   {
@@ -2716,6 +2722,7 @@ function getSectionKeyFromHash(hashValue) {
   if (hashValue === "#personnages") return "personnages";
   if (hashValue === "#lieux" || Boolean(locationHashPanelMap[hashValue])) return "lieux";
   if (hashValue === "#creatures" || hashValue.startsWith("#creatures-fiche-")) return "creatures";
+  if (hashValue === "#test") return "test";
   if (hashValue === "#mysteres") return "mysteres";
   if (hashValue === "#cartes") return "cartes";
   return "home";
@@ -3487,6 +3494,251 @@ function ensureLocationFichesInitialized() {
   locationFichesInitialized = true;
 }
 
+function buildTestTraitSummary(traitScores) {
+  return Object.entries(traitScores)
+    .sort((left, right) => right[1] - left[1])
+    .slice(0, 3)
+    .filter(([, value]) => value > 0)
+    .map(([trait]) => pandorusTest.traitLabels[trait] || trait);
+}
+
+function computePandorusTestResult() {
+  const traitScores = {};
+
+  Object.keys(pandorusTest.traitLabels).forEach((trait) => {
+    traitScores[trait] = 0;
+  });
+
+  pandorusTestAnswers.forEach((answerIndex, questionIndex) => {
+    if (answerIndex === null || answerIndex === undefined) return;
+    const option = pandorusTest.questions[questionIndex]?.options[answerIndex];
+    if (!option) return;
+
+    Object.entries(option.weights).forEach(([trait, value]) => {
+      traitScores[trait] = (traitScores[trait] || 0) + value;
+    });
+  });
+
+  const rankedResults = pandorusTest.results
+    .map((result) => {
+      let score = 0;
+
+      Object.entries(result.traits).forEach(([trait, value]) => {
+        score += (traitScores[trait] || 0) * value;
+      });
+
+      return {
+        ...result,
+        score
+      };
+    })
+    .sort((left, right) => right.score - left.score);
+
+  const topScore = rankedResults[0]?.score || 1;
+  const topThree = rankedResults.slice(0, 3).map((result, index) => ({
+    ...result,
+    affinity: Math.max(
+      18,
+      Math.min(
+        100,
+        index === 0
+          ? 100
+          : Math.round((result.score / topScore) * 100)
+      )
+    )
+  }));
+
+  return {
+    winner: rankedResults[0],
+    topThree,
+    traitScores,
+    dominantTraits: buildTestTraitSummary(traitScores)
+  };
+}
+
+function updatePandorusTestProgress() {
+  const progressLabel = document.getElementById("test-progress-label");
+  const progressBar = document.getElementById("test-progress-bar");
+  const nextButton = document.getElementById("test-next");
+  const prevButton = document.getElementById("test-prev");
+  const questionCount = pandorusTest.questions.length;
+  const isComplete = pandorusTestAnswers.every((answer) => answer !== null && answer !== undefined);
+  const isLastQuestion = currentTestQuestionIndex === questionCount - 1;
+  const answeredCount = pandorusTestAnswers.filter((answer) => answer !== null && answer !== undefined).length;
+
+  if (progressLabel) {
+    progressLabel.textContent = `Question ${currentTestQuestionIndex + 1} sur ${questionCount}`;
+  }
+
+  if (progressBar) {
+    const progress = ((currentTestQuestionIndex + 1) / questionCount) * 100;
+    progressBar.style.width = `${progress}%`;
+  }
+
+  if (prevButton) {
+    prevButton.disabled = currentTestQuestionIndex === 0;
+  }
+
+  if (nextButton) {
+    nextButton.textContent = isLastQuestion ? "Voir mon résultat" : "Suivant";
+    nextButton.disabled = pandorusTestAnswers[currentTestQuestionIndex] === null || pandorusTestAnswers[currentTestQuestionIndex] === undefined;
+    if (isLastQuestion && isComplete && answeredCount === questionCount) {
+      nextButton.disabled = false;
+    }
+  }
+}
+
+function renderPandorusTestQuestion() {
+  const shell = document.getElementById("test-question-shell");
+  const resultNode = document.getElementById("test-result");
+  if (!shell) return;
+
+  const question = pandorusTest.questions[currentTestQuestionIndex];
+  if (!question) return;
+
+  shell.innerHTML = "";
+  if (resultNode) {
+    resultNode.hidden = true;
+    resultNode.innerHTML = "";
+  }
+
+  const card = document.createElement("article");
+  card.className = "test-question-card";
+
+  const kicker = document.createElement("p");
+  kicker.className = "eyebrow";
+  kicker.textContent = "Question sensible";
+
+  const title = document.createElement("h4");
+  title.className = "test-question-title";
+  title.textContent = question.prompt;
+
+  const options = document.createElement("div");
+  options.className = "test-options";
+
+  question.options.forEach((option, optionIndex) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = `test-option${pandorusTestAnswers[currentTestQuestionIndex] === optionIndex ? " active" : ""}`;
+    button.innerHTML = `
+      <span class="test-option-index">${optionIndex + 1}</span>
+      <span class="test-option-label">${option.label}</span>
+    `;
+    button.addEventListener("click", () => {
+      pandorusTestAnswers[currentTestQuestionIndex] = optionIndex;
+      renderPandorusTestQuestion();
+      updatePandorusTestProgress();
+    });
+    options.appendChild(button);
+  });
+
+  card.appendChild(kicker);
+  card.appendChild(title);
+  card.appendChild(options);
+  shell.appendChild(card);
+
+  updatePandorusTestProgress();
+}
+
+function renderPandorusTestResult() {
+  const resultNode = document.getElementById("test-result");
+  const shell = document.getElementById("test-question-shell");
+  if (!resultNode || !shell) return;
+
+  const result = computePandorusTestResult();
+  const winner = result.winner;
+  if (!winner) return;
+
+  const affinities = result.topThree
+    .map((entry) => `
+      <article class="overview-card">
+        <h4>${entry.name}</h4>
+        <p>${entry.affinity}% d'affinité</p>
+      </article>
+    `)
+    .join("");
+
+  const dominantTraits = result.dominantTraits.length
+    ? result.dominantTraits.join(" · ")
+    : "Affinité sensible encore mouvante";
+
+  shell.innerHTML = `
+    <article class="test-question-card test-question-card-complete">
+      <p class="eyebrow">Lecture terminée</p>
+      <h4 class="test-question-title">Ton résultat est prêt.</h4>
+      <p class="test-result-lead">
+        Tes réponses dessinent surtout cette ligne de force : ${dominantTraits}.
+      </p>
+    </article>
+  `;
+
+  resultNode.hidden = false;
+  resultNode.innerHTML = `
+    <div class="test-result-hero">
+      <div class="test-result-portrait">
+        <img src="${winner.image}" alt="${winner.name}" loading="lazy" decoding="async">
+      </div>
+      <div class="test-result-copy">
+        <p class="eyebrow">Affinité dominante</p>
+        <h3>${winner.name}</h3>
+        <p class="hero-text">${winner.intro}</p>
+        <div class="context-links">
+          <a class="button tiny secondary context-link" href="${winner.href}">Ouvrir la fiche</a>
+        </div>
+      </div>
+    </div>
+    <section class="section">
+      <div class="section-heading">
+        <h3>Affinités proches</h3>
+      </div>
+      <div class="fiche-list">
+        ${affinities}
+      </div>
+    </section>
+  `;
+
+  updatePandorusTestProgress();
+}
+
+function initPandorusTest() {
+  if (pandorusTestInitialized) return;
+
+  pandorusTestAnswers = Array(pandorusTest.questions.length).fill(null);
+
+  const prevButton = document.getElementById("test-prev");
+  const nextButton = document.getElementById("test-next");
+  const restartButton = document.getElementById("test-restart");
+
+  prevButton?.addEventListener("click", () => {
+    if (currentTestQuestionIndex === 0) return;
+    currentTestQuestionIndex -= 1;
+    renderPandorusTestQuestion();
+  });
+
+  nextButton?.addEventListener("click", () => {
+    const isLastQuestion = currentTestQuestionIndex === pandorusTest.questions.length - 1;
+    const hasAnswer = pandorusTestAnswers[currentTestQuestionIndex] !== null && pandorusTestAnswers[currentTestQuestionIndex] !== undefined;
+    if (!hasAnswer) return;
+
+    if (isLastQuestion) {
+      renderPandorusTestResult();
+      return;
+    }
+
+    currentTestQuestionIndex += 1;
+    renderPandorusTestQuestion();
+  });
+
+  restartButton?.addEventListener("click", () => {
+    pandorusTestAnswers = Array(pandorusTest.questions.length).fill(null);
+    currentTestQuestionIndex = 0;
+    renderPandorusTestQuestion();
+  });
+
+  renderPandorusTestQuestion();
+  pandorusTestInitialized = true;
+}
+
 function showSectionFromHash() {
   const home = document.getElementById("home");
   const fiches = document.getElementById("fiches");
@@ -3496,6 +3748,7 @@ function showSectionFromHash() {
   const personnages = document.getElementById("personnages");
   const lieux = document.getElementById("lieux");
   const creatures = document.getElementById("creatures");
+  const test = document.getElementById("test");
   const mysteres = document.getElementById("mysteres");
   const cartes = document.getElementById("cartes");
   const currentHash = window.location.hash;
@@ -3520,6 +3773,7 @@ function showSectionFromHash() {
     if (personnages) personnages.hidden = true;
     if (lieux) lieux.hidden = true;
     if (creatures) creatures.hidden = true;
+    if (test) test.hidden = true;
     if (mysteres) mysteres.hidden = true;
     if (cartes) cartes.hidden = true;
     if (typeof window.activateFichePanel === "function") {
@@ -3537,6 +3791,7 @@ function showSectionFromHash() {
     if (personnages) personnages.hidden = true;
     if (lieux) lieux.hidden = true;
     if (creatures) creatures.hidden = true;
+    if (test) test.hidden = true;
     if (mysteres) mysteres.hidden = true;
     if (cartes) cartes.hidden = true;
     renderTimeline();
@@ -3553,6 +3808,7 @@ function showSectionFromHash() {
     if (personnages) personnages.hidden = true;
     if (lieux) lieux.hidden = true;
     if (creatures) creatures.hidden = true;
+    if (test) test.hidden = true;
     if (mysteres) mysteres.hidden = true;
     if (cartes) cartes.hidden = true;
     renderChapters();
@@ -3569,6 +3825,7 @@ function showSectionFromHash() {
     if (personnages) personnages.hidden = true;
     if (lieux) lieux.hidden = true;
     if (creatures) creatures.hidden = true;
+    if (test) test.hidden = true;
     if (mysteres) mysteres.hidden = true;
     if (cartes) cartes.hidden = true;
     renderRelations();
@@ -3585,6 +3842,7 @@ function showSectionFromHash() {
     if (personnages) personnages.hidden = false;
     if (lieux) lieux.hidden = true;
     if (creatures) creatures.hidden = true;
+    if (test) test.hidden = true;
     if (mysteres) mysteres.hidden = true;
     if (cartes) cartes.hidden = true;
     renderPandorusImages();
@@ -3606,6 +3864,7 @@ function showSectionFromHash() {
     if (personnages) personnages.hidden = true;
     if (lieux) lieux.hidden = false;
     if (creatures) creatures.hidden = true;
+    if (test) test.hidden = true;
     if (mysteres) mysteres.hidden = true;
     if (cartes) cartes.hidden = true;
     if (typeof window.activateLocationPanel === "function") {
@@ -3625,6 +3884,7 @@ function showSectionFromHash() {
     if (personnages) personnages.hidden = true;
     if (lieux) lieux.hidden = true;
     if (creatures) creatures.hidden = false;
+    if (test) test.hidden = true;
     if (mysteres) mysteres.hidden = true;
     if (cartes) cartes.hidden = true;
 
@@ -3645,6 +3905,23 @@ function showSectionFromHash() {
     return;
   }
 
+  if (currentHash === "#test") {
+    initPandorusTest();
+    if (home) home.hidden = true;
+    if (fiches) fiches.hidden = true;
+    if (relations) relations.hidden = true;
+    if (chronologie) chronologie.hidden = true;
+    if (chapitres) chapitres.hidden = true;
+    if (personnages) personnages.hidden = true;
+    if (lieux) lieux.hidden = true;
+    if (creatures) creatures.hidden = true;
+    if (test) test.hidden = false;
+    if (mysteres) mysteres.hidden = true;
+    if (cartes) cartes.hidden = true;
+    refreshLoreLinks();
+    return;
+  }
+
   if (currentHash === "#mysteres") {
     if (home) home.hidden = true;
     if (fiches) fiches.hidden = true;
@@ -3654,6 +3931,7 @@ function showSectionFromHash() {
     if (personnages) personnages.hidden = true;
     if (lieux) lieux.hidden = true;
     if (creatures) creatures.hidden = true;
+    if (test) test.hidden = true;
     if (mysteres) mysteres.hidden = false;
     if (cartes) cartes.hidden = true;
     refreshLoreLinks();
@@ -3669,6 +3947,7 @@ function showSectionFromHash() {
     if (personnages) personnages.hidden = true;
     if (lieux) lieux.hidden = true;
     if (creatures) creatures.hidden = true;
+    if (test) test.hidden = true;
     if (mysteres) mysteres.hidden = true;
     if (cartes) cartes.hidden = false;
     initMapsCarousel();
@@ -3685,6 +3964,7 @@ function showSectionFromHash() {
   if (personnages) personnages.hidden = true;
   if (lieux) lieux.hidden = true;
   if (creatures) creatures.hidden = true;
+  if (test) test.hidden = true;
   if (mysteres) mysteres.hidden = true;
   if (cartes) cartes.hidden = true;
   refreshLoreLinks();

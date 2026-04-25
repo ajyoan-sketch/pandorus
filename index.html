@@ -58,6 +58,7 @@
           <a href="#personnages">Personnages</a>
           <a href="#lieux">Lieux</a>
           <a href="#creatures">Créatures</a>
+          <a href="#test">Test</a>
           <a href="#mysteres">Mystères</a>
           <a href="#cartes">Cartes</a>
         </div>
@@ -1601,6 +1602,54 @@
         <section id="creatures-fiches" class="section creature-fiches-section">
           <div id="creatures-fiches-tabs" class="fiche-tabs" role="tablist" aria-label="Fiches du bestiaire"></div>
           <div id="creatures-fiches-panels"></div>
+        </section>
+      </section>
+
+      <section id="test" class="section" hidden>
+        <div class="section-heading">
+          <h3>Test</h3>
+        </div>
+        <div class="test-intro">
+          <div class="test-intro-copy">
+            <p class="eyebrow">Affinité Pandorus</p>
+            <p class="hero-text">
+              Vingt-cinq questions, quatre chemins possibles à chaque fois, et une seule idée :
+              découvrir quelle présence de Pandorus te ressemble le plus vraiment.
+            </p>
+            <p>
+              Le test ne cherche pas un profil générique. Il s'appuie sur les choix, les tensions,
+              les fidélités, les deuils, les instincts et les façons d'habiter le monde qui traversent
+              les personnages du site.
+            </p>
+          </div>
+          <div class="test-intro-seals" aria-hidden="true">
+            <span>Instinct</span>
+            <span>Mémoire</span>
+            <span>Veille</span>
+            <span>Direction</span>
+          </div>
+        </div>
+
+        <section class="test-shell">
+          <div class="test-progress-card">
+            <div class="test-progress-head">
+              <p class="eyebrow">Progression</p>
+              <p id="test-progress-label" class="test-progress-label">Question 1 sur 25</p>
+            </div>
+            <div class="test-progress-track" aria-hidden="true">
+              <span id="test-progress-bar" class="test-progress-bar"></span>
+            </div>
+          </div>
+
+          <div id="test-question-shell" class="test-question-shell"></div>
+
+          <div class="test-actions">
+            <button id="test-prev" class="button tiny secondary" type="button">Précédent</button>
+            <button id="test-next" class="button tiny secondary" type="button">Suivant</button>
+            <button id="test-restart" class="button tiny secondary" type="button">Recommencer</button>
+          </div>
+
+          <section id="test-result" class="test-result" hidden></section>
         </section>
       </section>
 
