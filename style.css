@@ -3963,6 +3963,47 @@ h4 {
   gap: 18px;
 }
 
+.test-mode-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.test-mode-card {
+  display: grid;
+  gap: 12px;
+  min-height: 230px;
+  padding: 24px;
+  border: 1px solid rgba(99, 80, 43, 0.16);
+  border-radius: 26px;
+  background:
+    radial-gradient(circle at top right, rgba(197, 169, 107, 0.16), transparent 42%),
+    rgba(255, 250, 242, 0.96);
+  color: var(--ink-strong);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.test-mode-card:hover,
+.test-mode-card:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(133, 108, 54, 0.4);
+  box-shadow: 0 18px 34px rgba(77, 60, 28, 0.12);
+  outline: none;
+}
+
+.test-mode-card h4 {
+  margin: 0;
+  font-size: clamp(1.3rem, 1.8vw, 1.65rem);
+}
+
+.test-mode-card p {
+  margin: 0;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
 .test-progress-card,
 .test-question-card,
 .test-result {
@@ -4124,6 +4165,10 @@ h4 {
 @media (max-width: 900px) {
   .test-intro,
   .test-result-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .test-mode-grid {
     grid-template-columns: 1fr;
   }
 

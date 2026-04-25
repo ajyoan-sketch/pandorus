@@ -1914,6 +1914,7 @@ let currentRelationSearch = "";
 let currentLocationSearch = "";
 let currentTestQuestionIndex = 0;
 let pandorusTestAnswers = [];
+let currentTestMode = null;
 let ficheUiInitialized = false;
 let creatureFichesInitialized = false;
 let locationFichesInitialized = false;
@@ -3494,24 +3495,30 @@ function ensureLocationFichesInitialized() {
   locationFichesInitialized = true;
 }
 
+function getActivePandorusTestConfig() {
+  return pandorusTest[currentTestMode || "character"];
+}
+
 function buildTestTraitSummary(traitScores) {
+  const activeTest = getActivePandorusTestConfig();
   return Object.entries(traitScores)
     .sort((left, right) => right[1] - left[1])
     .slice(0, 3)
     .filter(([, value]) => value > 0)
-    .map(([trait]) => pandorusTest.traitLabels[trait] || trait);
+    .map(([trait]) => activeTest.traitLabels[trait] || trait);
 }
 
 function computePandorusTestResult() {
+  const activeTest = getActivePandorusTestConfig();
   const traitScores = {};
 
-  Object.keys(pandorusTest.traitLabels).forEach((trait) => {
+  Object.keys(activeTest.traitLabels).forEach((trait) => {
     traitScores[trait] = 0;
   });
 
   pandorusTestAnswers.forEach((answerIndex, questionIndex) => {
     if (answerIndex === null || answerIndex === undefined) return;
-    const option = pandorusTest.questions[questionIndex]?.options[answerIndex];
+    const option = activeTest.questions[questionIndex]?.options[answerIndex];
     if (!option) return;
 
     Object.entries(option.weights).forEach(([trait, value]) => {
@@ -3519,7 +3526,7 @@ function computePandorusTestResult() {
     });
   });
 
-  const rankedResults = pandorusTest.results
+  const rankedResults = activeTest.results
     .map((result) => {
       let score = 0;
 
@@ -3557,11 +3564,12 @@ function computePandorusTestResult() {
 }
 
 function updatePandorusTestProgress() {
+  const activeTest = getActivePandorusTestConfig();
   const progressLabel = document.getElementById("test-progress-label");
   const progressBar = document.getElementById("test-progress-bar");
   const nextButton = document.getElementById("test-next");
   const prevButton = document.getElementById("test-prev");
-  const questionCount = pandorusTest.questions.length;
+  const questionCount = activeTest.questions.length;
   const isComplete = pandorusTestAnswers.every((answer) => answer !== null && answer !== undefined);
   const isLastQuestion = currentTestQuestionIndex === questionCount - 1;
   const answeredCount = pandorusTestAnswers.filter((answer) => answer !== null && answer !== undefined).length;
@@ -3589,11 +3597,12 @@ function updatePandorusTestProgress() {
 }
 
 function renderPandorusTestQuestion() {
+  const activeTest = getActivePandorusTestConfig();
   const shell = document.getElementById("test-question-shell");
   const resultNode = document.getElementById("test-result");
   if (!shell) return;
 
-  const question = pandorusTest.questions[currentTestQuestionIndex];
+  const question = activeTest.questions[currentTestQuestionIndex];
   if (!question) return;
 
   shell.innerHTML = "";
@@ -3703,20 +3712,65 @@ function renderPandorusTestResult() {
 function initPandorusTest() {
   if (pandorusTestInitialized) return;
 
-  pandorusTestAnswers = Array(pandorusTest.questions.length).fill(null);
-
   const prevButton = document.getElementById("test-prev");
   const nextButton = document.getElementById("test-next");
   const restartButton = document.getElementById("test-restart");
+  const shell = document.getElementById("test-question-shell");
+  const resultNode = document.getElementById("test-result");
+
+  function renderModeSelector() {
+    currentTestMode = null;
+    currentTestQuestionIndex = 0;
+    pandorusTestAnswers = [];
+    if (resultNode) {
+      resultNode.hidden = true;
+      resultNode.innerHTML = "";
+    }
+    if (!shell) return;
+
+    shell.innerHTML = `
+      <div class="test-mode-grid">
+        <button class="test-mode-card" type="button" data-test-mode="character">
+          <span class="eyebrow">Voie humaine</span>
+          <h4>Quel personnage de Pandorus es-tu ?</h4>
+          <p>25 questions pour lire ta manière de protéger, d'aimer, de choisir, de tenir et d'habiter le monde.</p>
+        </button>
+        <button class="test-mode-card" type="button" data-test-mode="creature">
+          <span class="eyebrow">Voie animale</span>
+          <h4>Quelle créature de Pandorus es-tu ?</h4>
+          <p>15 questions plus instinctives pour révéler ton territoire, ton surgissement, ta majesté ou ton mystère.</p>
+        </button>
+      </div>
+    `;
+
+    shell.querySelectorAll("[data-test-mode]").forEach((button) => {
+      button.addEventListener("click", () => {
+        currentTestMode = button.getAttribute("data-test-mode");
+        const activeTest = getActivePandorusTestConfig();
+        pandorusTestAnswers = Array(activeTest.questions.length).fill(null);
+        currentTestQuestionIndex = 0;
+        renderPandorusTestQuestion();
+      });
+    });
+
+    if (prevButton) prevButton.disabled = true;
+    if (nextButton) {
+      nextButton.textContent = "Suivant";
+      nextButton.disabled = true;
+    }
+  }
 
   prevButton?.addEventListener("click", () => {
+    if (!currentTestMode) return;
     if (currentTestQuestionIndex === 0) return;
     currentTestQuestionIndex -= 1;
     renderPandorusTestQuestion();
   });
 
   nextButton?.addEventListener("click", () => {
-    const isLastQuestion = currentTestQuestionIndex === pandorusTest.questions.length - 1;
+    if (!currentTestMode) return;
+    const activeTest = getActivePandorusTestConfig();
+    const isLastQuestion = currentTestQuestionIndex === activeTest.questions.length - 1;
     const hasAnswer = pandorusTestAnswers[currentTestQuestionIndex] !== null && pandorusTestAnswers[currentTestQuestionIndex] !== undefined;
     if (!hasAnswer) return;
 
@@ -3730,12 +3784,10 @@ function initPandorusTest() {
   });
 
   restartButton?.addEventListener("click", () => {
-    pandorusTestAnswers = Array(pandorusTest.questions.length).fill(null);
-    currentTestQuestionIndex = 0;
-    renderPandorusTestQuestion();
+    renderModeSelector();
   });
 
-  renderPandorusTestQuestion();
+  renderModeSelector();
   pandorusTestInitialized = true;
 }
 
