@@ -398,11 +398,12 @@ export function createLocationFiches(buildMediaPath) {
     biography: [
       "Le Vert s'impose d'abord comme une zone encore très vivante, où le dérèglement existe sans avoir totalement gagné. Les sons, l'humidité, la densité des arbres et la multiplicité des espèces y donnent l'impression d'une vie plus ancienne que les routes humaines.",
       "En s'y enfonçant, le groupe découvre une hiérarchie animale et territoriale plus subtile qu'une simple hostilité : Serpensouffres dans la hauteur, peuples singes en veille, puis Eben comme centre d'équilibre reconnu par le lieu.",
-      "Le Vert devient alors le théâtre d'une bascule majeure : Shan y retrouve Eben, comprend autrement ce qui a fondé sa violence, puis transforme leur affrontement en reconnaissance réciproque plutôt qu'en simple destruction."
+      "Le Vert devient alors le théâtre d'une bascule majeure : Shan y retrouve Eben, comprend autrement ce qui a fondé sa violence, puis transforme leur affrontement en reconnaissance réciproque plutôt qu'en simple destruction.",
+      "Mais le lieu ne se réduit pas à cette réconciliation sauvage. Plus loin, il garde aussi les ruines où le Capitaine est libéré, puis enterré, preuve que le Vert reste à la fois un royaume encore vivant et une terre déjà traversée par le retrait du monde."
     ],
     summary: [
       "Le Vert est le lieu où le vivant résiste encore par sa propre souveraineté.",
-      "Il relie la quête du Capitaine, la blessure de Shan et une autre forme de puissance du monde, moins humaine, mais pleinement consciente."
+      "Il relie la quête du Capitaine, la blessure de Shan, le deuil du groupe et une autre forme de puissance du monde, moins humaine, mais pleinement consciente."
     ],
     profile: [
       { title: "Texture du lieu", text: "Feuillages épais, sol respirant, vie animale organisée et pression ancienne." },
@@ -429,11 +430,12 @@ export function createLocationFiches(buildMediaPath) {
     biography: [
       "Les ruines apparaissent après le duel entre Shan et Eben, comme si le groupe devait d'abord rééquilibrer un lien ancien avant d'accéder à cette vérité-là. Le silence y est plus inquiétant que la violence directe.",
       "Les murs brisés, le sol desséché et l'absence anormale de vie y signalent une autre forme d'atteinte du monde : non plus l'agression frontale, mais le retrait, l'assèchement, la captivité.",
-      "C'est là que Franklin reconnaît enfin le Capitaine, maintenu vivant mais brisé, transformant une disparition lointaine en présence retrouvée et ouvrant une nouvelle urgence pour le groupe."
+      "C'est là que Franklin reconnaît enfin le Capitaine, maintenu vivant mais brisé, transformant une disparition lointaine en présence retrouvée et ouvrant une nouvelle urgence pour le groupe.",
+      "Les ruines deviennent ensuite un lieu de bataille contre Nogard et Bouldouger, puis un lieu de mort et de sépulture. La parole du Capitaine, son sacrifice et son enterrement y laissent une mémoire plus dense encore que leur vide initial."
     ],
     summary: [
       "Les ruines du Vert convertissent la rumeur en preuve.",
-      "Elles montrent que le dérèglement du monde n'enlève pas seulement la vie : il retient, use et suspend certaines présences au bord de l'effacement."
+      "Elles montrent que le dérèglement du monde n'enlève pas seulement la vie : il retient, use, infecte et transforme même la délivrance en champ de guerre."
     ],
     profile: [
       { title: "Texture du lieu", text: "Ruines ouvertes, sol sec, silence comprimé et gémissement retenu." },
@@ -451,30 +453,31 @@ export function createLocationFiches(buildMediaPath) {
     name: "Sombra",
     tone: "threshold",
     category: "Direction de l'ouest",
-    intro: "La Sombra n'est pas encore traversée, mais elle entre dans le récit comme une terre d'observation et de lecture, liée à Bichette, Reine du Blanc, et à ses gardiennes.",
+    intro: "La Sombra cesse d'être une simple direction et devient un seuil réellement franchi, terre d'observation et de lecture liée à Bichette, Reine du Blanc, et à ses gardiennes.",
     meta: [
       { label: "Atmosphère", value: "Ouest lointain, veille blanche, compréhension en réserve" },
-      { label: "Fonction", value: "Prochaine orientation stratégique" },
-      { label: "Présences", value: "Bichette, Luna Queen, Méli Mélo" }
+      { label: "Fonction", value: "Seuil occidental de compréhension" },
+      { label: "Présences", value: "Will le Tigre Bois, Bichette, Luna Queen, Méli Mélo" }
     ],
     biography: [
-      "Brad et Bradlette nomment la Sombra comme une direction plutôt que comme une promesse de salut. Ce n'est pas un refuge évident, mais un lieu où certaines figures peuvent encore lire ce qui vient avant qu'il ne s'impose pleinement au monde.",
-      "Bichette, Reine du Blanc, y est évoquée avec Luna Queen et Méli Mélo comme une triade de veille, de perception et d'équilibre plus fin que la seule force de combat.",
-      "Même si le groupe choisit d'abord de passer par le Vert à cause du Capitaine et d'Eben, la Sombra reste inscrite comme l'une des prochaines étapes majeures de la route."
+      "Brad et Bradlette nomment d'abord la Sombra comme une direction plutôt que comme une promesse de salut. Ce n'est pas un refuge évident, mais un lieu où certaines figures peuvent lire ce qui vient avant qu'il ne s'impose pleinement au monde.",
+      "Après la mort du Capitaine, la route s'ouvre enfin. Le groupe traverse les approches de l'ouest sous la veille du KingKoala, puis rencontre Will le Tigre Bois, gardien de seuil qui mesure leur passage avant de les laisser entrer.",
+      "À l'intérieur de la Sombra, Luna Queen et Méli Mélo cessent d'être de simples noms. Elles deviennent les premières présences concrètes d'un territoire déjà habité par une lecture plus blanche du monde, juste avant l'approche de Bichette."
     ],
     summary: [
-      "La Sombra ouvre l'ouest du récit.",
-      "Elle promet moins une bataille qu'une compréhension, et pourrait devenir le lieu où les lignes du monde se lisent avant de se rompre."
+      "La Sombra ouvre réellement l'ouest du récit.",
+      "Elle promet moins une bataille qu'une compréhension, et devient déjà le lieu où les lignes du monde se lisent avant de se rompre."
     ],
     profile: [
-      { title: "Texture du lieu", text: "Horizon occidental, lumière tenue, présence blanche et lecture du monde." },
-      { title: "Rôle narratif", text: "Déplacer la quête de la survie immédiate vers une recherche plus fine de compréhension." },
-      { title: "Point de tension", text: "Le groupe sait désormais qu'il devra y aller, mais le monde l'oblige d'abord à passer par d'autres nœuds plus urgents." }
+      { title: "Texture du lieu", text: "Horizon occidental, lumière tenue, gardiens de seuil et présence blanche tournée vers la lecture du monde." },
+      { title: "Rôle narratif", text: "Déplacer la quête de la survie immédiate vers une recherche plus fine de compréhension, après le deuil et la guerre du Vert." },
+      { title: "Point de tension", text: "Le groupe y entre enfin, mais avec le parasite, le deuil du Capitaine et la certitude que l'ouest lit déjà plus qu'il ne révèle encore." }
     ],
     contextLinks: [
       { href: "#fiches-bichette", label: "Voir Bichette" },
       { href: "#fiches-luna-queen", label: "Voir Luna Queen" },
-      { href: "#fiches-meli-melo", label: "Voir Méli Mélo" }
+      { href: "#fiches-meli-melo", label: "Voir Méli Mélo" },
+      { href: "#chronologie", label: "Lire l'entrée dans la Sombra" }
     ]
   }
   ].map((fiche) => ({

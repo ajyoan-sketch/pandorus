@@ -45,6 +45,51 @@
     ]
   },
   {
+    slug: "bouldouger",
+    name: "Bouldouger",
+    image: buildMediaPath("pandorus", "Bouldouger.png"),
+    family: "Force de rupture",
+    status: "Créature clairement présente dans le récit",
+    habitat: "Ruines vidées, zones de guerre ouverte et retours brutaux du dérèglement",
+    summary: "Bouldouger n'entre pas dans le récit comme un simple monstre massif, mais comme une percussion consciente qui revient achever ce que les ruines du Vert avaient commencé à retenir.",
+    biography: [
+      "Le Capitaine le nomme avant même son retour, comme une certitude plus lourde qu'une peur. Quand Bouldouger apparaît, il confirme que certaines forces du dérèglement n'attaquent pas pour se nourrir seulement, mais pour rompre les derniers appuis humains encore debout.",
+      "Sa charge vise Franklin et le groupe avec une brutalité ciblée. Même repoussé, il ne ressemble jamais à une bête perdue : il agit comme un organe d'assaut d'un conflit plus vaste, jusqu'à être finalement repris dans une masse de toiles qui le soustrait plutôt qu'elle ne le vainc."
+    ],
+    profile: [
+      { title: "Nature", text: "Créature d'impact, massive, pensée comme une force de brisure plus que comme un simple prédateur." },
+      { title: "Niveau de menace", text: "Extrême dès qu'un espace se referme ou qu'un groupe doit tenir une position." },
+      { title: "Dans le récit", text: "Bouldouger transforme la découverte du Capitaine en guerre immédiate et confirme un changement d'échelle du danger." }
+    ],
+    timeline: [
+      { era: "Fin du Jour 12", title: "Nom lancé par le Capitaine", summary: "Le Capitaine révèle que Bouldouger fait partie des forces revenues autour des ruines du Vert." },
+      { era: "Nuit du Jour 12", title: "Assaut des ruines", summary: "Bouldouger revient avec Nogard, Felous et Guéplynx pour écraser le groupe autour du Capitaine." },
+      { era: "Nuit du Jour 12", title: "Retrait sous les toiles", summary: "Au plus fort du combat, il disparaît dans une reprise de toiles et d'araignées, comme s'il était récupéré plutôt que vaincu." }
+    ]
+  },
+  {
+    slug: "canidaigle",
+    name: "Canidaigle",
+    image: buildMediaPath("creatures", "Canidaigle.png"),
+    family: "Veilleur funèbre",
+    status: "Créature clairement présente dans le récit",
+    habitat: "Ciels du Vert, lisières hautes et lieux marqués par le deuil",
+    summary: "Le Canidaigle n'attaque pas dans ces chapitres : il descend comme une plainte vivante, faisant du ciel lui-même un témoin du sacrifice du Capitaine.",
+    biography: [
+      "Les Canidaigles apparaissent après la mort du Capitaine, dans un moment où le combat vient à peine de retomber. Leur présence change immédiatement la lecture de la scène : le ciel ne reste pas neutre, il prend part au deuil.",
+      "Ils ne se comportent ni comme des charognards ni comme des renforts. Ils donnent au Vert une voix de lamentation, preuve que certaines créatures du monde répondent aussi à la perte et pas seulement à la violence."
+    ],
+    profile: [
+      { title: "Nature", text: "Créature aérienne noble, liée à la hauteur, à la veille et aux bascules du vivant." },
+      { title: "Niveau de menace", text: "Faible dans cette apparition précise, mais forte par sa charge symbolique." },
+      { title: "Dans le récit", text: "Le Canidaigle transforme la mort du Capitaine en événement reconnu par plus que les seuls humains." }
+    ],
+    timeline: [
+      { era: "Nuit du Jour 12", title: "Descente de deuil", summary: "Des Canidaigles se rassemblent après la mort du Capitaine et donnent au combat une résonance funèbre." },
+      { era: "Jour 13", title: "Mémoire du ciel", summary: "Leur passage continue de peser sur la sépulture du Capitaine comme une reconnaissance venue d'en haut." }
+    ]
+  },
+  {
     slug: "croconha",
     name: "Croconha",
     image: buildMediaPath("creatures", "Croconha.png"),
@@ -156,6 +201,28 @@
     ]
   },
   {
+    slug: "kingkoala",
+    name: "KingKoala",
+    image: buildMediaPath("creatures", "KingKoala.png"),
+    family: "Gardien de passage",
+    status: "Créature clairement présente dans le récit",
+    habitat: "Approches de la Sombra, arbres de l'ouest et routes de veille",
+    summary: "KingKoala impose une protection calme sur la route de la Sombra, comme si l'ouest répondait déjà au groupe avant même son entrée véritable.",
+    biography: [
+      "Après la sépulture du Capitaine, le groupe reprend la route vers l'ouest et tombe sur KingKoala. Rien dans sa présence ne ressemble à une embuscade : il garde, jauge et accompagne.",
+      "Cette apparition prépare la Sombra autrement que par le combat. Avec lui, le récit montre qu'une créature peut tester un passage par sa seule majesté tranquille et faire sentir qu'un autre ordre de veille commence."
+    ],
+    profile: [
+      { title: "Nature", text: "Créature de garde, massive, calme et territoriale, plus protectrice qu'agressive dans ce passage." },
+      { title: "Niveau de menace", text: "Élevé si le seuil était rompu, mais contenu tant que le groupe reste lisible pour le territoire." },
+      { title: "Dans le récit", text: "KingKoala annonce que la Sombra possède déjà ses propres gardes et sa propre manière de reconnaître les voyageurs." }
+    ],
+    timeline: [
+      { era: "Jour 13", title: "Veille sur la route de l'ouest", summary: "KingKoala accompagne silencieusement la progression du groupe vers la Sombra." },
+      { era: "Jour 13", title: "Protection sans heurt", summary: "Sa présence transforme la traversée en seuil gardé plutôt qu'en marche livrée au hasard." }
+    ]
+  },
+  {
     slug: "luminael",
     name: "Luminael",
     image: buildMediaPath("creatures", "Luminaël.png"),
@@ -243,6 +310,29 @@
     ]
   },
   {
+    slug: "nogard",
+    name: "Nogard",
+    image: buildMediaPath("pandorus", "Nogard.jpg"),
+    family: "Agent du dérèglement",
+    status: "Créature clairement présente dans le récit",
+    habitat: "Ruines vides, abords du Vert et lignes de guerre du vivant corrompu",
+    summary: "Nogard agit moins comme une bête que comme un relais conscient du dérèglement, capable de capturer, d'espionner et de revenir au combat avec une méthode froide.",
+    biography: [
+      "Le Capitaine le reconnaît au coeur de sa captivité. Nogard n'est pas une silhouette secondaire des ruines : il revient, écoute, transporte Bouldouger et prend part à la logique du parasite destinée à infecter plus loin encore.",
+      "Quand il réapparaît de nuit, sa présence confirme que le groupe n'affronte plus seulement des créatures poussées à l'agression, mais des agents capables de surveiller, d'organiser et d'insister jusqu'à la mise à mort."
+    ],
+    profile: [
+      { title: "Nature", text: "Présence hostile mobile, plus proche d'un relais tactique du dérèglement que d'un animal ordinaire." },
+      { title: "Niveau de menace", text: "Très élevé, surtout lorsqu'il agit avec d'autres forces comme Bouldouger." },
+      { title: "Dans le récit", text: "Nogard donne un visage plus net à l'ennemi des ruines et fait le lien entre captivité, parasite et guerre ouverte." }
+    ],
+    timeline: [
+      { era: "Fin du Jour 12", title: "Nom du geôlier", summary: "Le Capitaine désigne Nogard comme l'une des présences revenues autour de sa captivité." },
+      { era: "Nuit du Jour 12", title: "Retour au combat", summary: "Nogard revient avec Bouldouger et les créatures d'assaut pour écraser les survivants des ruines." },
+      { era: "Nuit du Jour 12", title: "Mort face à Tsune et Lévy", summary: "Tsune et Lévy réussissent à abattre Nogard au coeur du combat, ouvrant une première brèche dans l'assaut." }
+    ]
+  },
+  {
     slug: "nonstiti",
     name: "Nonstiti",
     image: buildMediaPath("creatures", "Nonstiti.png"),
@@ -261,6 +351,29 @@
     ],
     timeline: [
       { era: "Jour 12", title: "Présence autour d'Eben", summary: "Les Nonstitis apparaissent avec les autres peuples du Vert lors de la reconnaissance du groupe." }
+    ]
+  },
+  {
+    slug: "parasite",
+    name: "Parasite",
+    image: buildMediaPath("creatures", "Parasite.png"),
+    family: "Forme d'infection",
+    status: "Créature clairement présente dans le récit",
+    habitat: "Objet porté, hôte potentiel et zones promises à l'infection du vivant",
+    summary: "Le Parasite n'est pas montré comme une bête de plein jour, mais comme une menace de contamination pensée pour prendre un lieu de l'intérieur.",
+    biography: [
+      "Le mot surgit d'abord dans la bouche du Capitaine à travers ses souvenirs de captivité, puis devient une réalité concrète quand il transmet au groupe l'objet qu'il fallait soustraire aux ruines.",
+      "Le Parasite fait basculer le récit vers une peur plus fine : il ne s'agit plus seulement d'être attaqué par des créatures, mais d'être infecté, occupé ou remplacé de l'intérieur, jusqu'à contaminer des lieux entiers comme le Creux."
+    ],
+    profile: [
+      { title: "Nature", text: "Forme d'infection ou de prise interne, plus proche d'une menace de contamination que d'un prédateur direct." },
+      { title: "Niveau de menace", text: "Extrême, parce qu'il agit par propagation et non par simple affrontement." },
+      { title: "Dans le récit", text: "Le Parasite transforme la mort du Capitaine en transmission vitale et fait comprendre que la guerre vise aussi l'intérieur du vivant." }
+    ],
+    timeline: [
+      { era: "Fin du Jour 12", title: "Nom du danger", summary: "Le Capitaine révèle que le Parasite devait servir à infecter le Creux et d'autres zones du monde." },
+      { era: "Nuit du Jour 12", title: "Transmission à sauver", summary: "Avant de mourir, le Capitaine confie le Parasite au groupe pour empêcher son retour aux mains de l'ennemi." },
+      { era: "Jour 13", title: "Menace portée en route", summary: "Le Parasite accompagne désormais la route vers la Sombra comme un fardeau de compréhension et de danger." }
     ]
   },
   {

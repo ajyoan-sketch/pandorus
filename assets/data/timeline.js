@@ -328,5 +328,55 @@
     era: "Jour 12",
     title: "Découverte du Capitaine captif",
     summary: "Plus loin, dans des ruines vidées, Franklin reconnaît enfin le Capitaine vivant mais retenu, ouvrant une nouvelle urgence au centre du récit."
+  },
+  {
+    era: "Fin du Jour 12",
+    title: "Parole brisée du Capitaine",
+    summary: "Libéré au coeur des ruines, le Capitaine révèle une captivité habitée par Nogard, par Bouldouger, par des bêtes changées et par le souvenir d'un parasite destiné au Creux."
+  },
+  {
+    era: "Nuit du Jour 12",
+    title: "Retour de Bouldouger et de Nogard",
+    summary: "La nuit retombe à peine que Bouldouger et Nogard reviennent avec Felous et Guéplynx, transformant les ruines du Vert en champ de bataille ouvert."
+  },
+  {
+    era: "Nuit du Jour 12",
+    title: "Mort de Nogard et sacrifice du Capitaine",
+    summary: "Tsune et Lévy abattent Nogard, mais le Capitaine tombe à son tour après avoir transmis le parasite à Shaushana pour qu'il ne retombe pas entre de mauvaises mains."
+  },
+  {
+    era: "Nuit du Jour 12",
+    title: "Canidaigles en deuil et retrait de Bouldouger",
+    summary: "Des Canidaigles descendent comme une plainte du ciel autour du corps du Capitaine, tandis que Bouldouger finit repris par une masse de toiles et d'araignées."
+  },
+  {
+    era: "Jour 13",
+    title: "Sépulture du Capitaine dans le Vert",
+    summary: "Au matin, le groupe enterre le Capitaine dans le Vert et constate l'absence anormale des papillons, comme si même l'hommage du vivant hésitait encore à revenir."
+  },
+  {
+    era: "Jour 13",
+    title: "Ab'Youbi rouvre la route de la Sombra",
+    summary: "Près de la tombe, Ab'Youbi rappelle que la place est déjà prise ailleurs et pousse la Communauté à reprendre la direction de la Sombra vers Bichette."
+  },
+  {
+    era: "Jour 13",
+    title: "Passage sous la garde du KingKoala",
+    summary: "Sur la route de l'ouest, un KingKoala accompagne silencieusement la progression du groupe et impose une protection plus tranquille que guerrière."
+  },
+  {
+    era: "Nuit du Jour 13",
+    title: "Veille avant la Sombra",
+    summary: "Le groupe campe une dernière nuit avant le seuil occidental, portant encore le deuil du Capitaine tout en sentant déjà la lecture plus blanche de la Sombra approcher."
+  },
+  {
+    era: "Jour 14",
+    title: "Will le Tigre Bois laisse franchir le seuil",
+    summary: "À l'entrée de la Sombra, Will le Tigre Bois mesure le groupe, le met brièvement à l'épreuve puis l'autorise à avancer vers les présences qu'il protège."
+  },
+  {
+    era: "Jour 14",
+    title: "Entrée dans la Sombra et rencontre des gardiennes",
+    summary: "Le groupe gagne enfin la Sombra, croise Luna Queen et Méli Mélo, puis atteint l'approche immédiate de Bichette, nouvelle lecture vivante du déséquilibre."
   }
 ];

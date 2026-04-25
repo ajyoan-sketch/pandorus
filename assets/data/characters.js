@@ -149,7 +149,9 @@
       { era: "Il y a 3 ans", title: "Naissance de Lévy", summary: "Le Vrax cree Lévy face a une absence dans ses flux, une fracture que les autres réponses ne peuvent absorber seules." },
       { era: "Il y a 3 ans", title: "Formation du groupe complet", summary: "Avec Lévy, la generation des protecteurs du Vrax atteint une forme d'equilibre fonctionnel." },
       { era: "Jour 5", title: "Fixation du terrain", summary: "Lévy perturbe les appuis du groupe de Shaushana et participe directement a la prise de Franklin." },
-      { era: "Jour 6", title: "Depart avec le groupe", summary: "Au matin, Lévy quitte le coeur du Vrax pour accompagner le groupe vers la nouvelle zone de rupture du vivant." }
+      { era: "Jour 6", title: "Depart avec le groupe", summary: "Au matin, Lévy quitte le coeur du Vrax pour accompagner le groupe vers la nouvelle zone de rupture du vivant." },
+      { era: "Nuit du Jour 12", title: "Ajustement fatal contre Nogard", summary: "Dans les ruines du Vert, Lévy ouvre avec Tsune la chute de Nogard et prouve que sa lecture du vide peut aussi devenir arme décisive." },
+      { era: "Jour 14", title: "Passage vers la Sombra", summary: "Toujours accordé aux ruptures du monde, Lévy poursuit la route jusqu'à la Sombra où une autre forme de lecture l'attend." }
     ]
   },
   {
@@ -266,7 +268,9 @@
       { era: "Jour 7", title: "Seuil du village", summary: "Tsune intercepte le groupe à l'entrée du village des Renards, d'abord par méfiance puis par lecture." },
       { era: "Jour 7", title: "Défense contre l'assaut", summary: "Il combat les vagues de créatures puis se heurte directement à Kuji dans la bulle du village." },
       { era: "Jour 7", title: "Mort de Hez", summary: "La perte de Hez scelle chez Tsune un point de non-retour dans sa manière de porter la lutte." },
-      { era: "Jour 8", title: "Communauté des Papillons", summary: "Tsune accepte de ne plus défendre seulement un lieu, mais une réponse plus large à ce qui cherche à remplacer le vivant." }
+      { era: "Jour 8", title: "Communauté des Papillons", summary: "Tsune accepte de ne plus défendre seulement un lieu, mais une réponse plus large à ce qui cherche à remplacer le vivant." },
+      { era: "Nuit du Jour 12", title: "Chute de Nogard", summary: "Dans les ruines du Vert, Tsune abat Nogard avec Lévy et transforme son deuil ancien en geste décisif contre l'ennemi revenu." },
+      { era: "Jour 14", title: "Entrée gardée dans la Sombra", summary: "Après la sépulture du Capitaine et la route vers l'ouest, Tsune franchit la Sombra avec la même vigilance de seuil qui le définissait déjà au village." }
     ]
   },
   {
@@ -562,11 +566,12 @@
     biography: [
       "Dans l'ombre de la taverne, Ab'Youbi observe moins les corps que ce qui les entoure. Ses yeux rouges semblent lire les variations, les traces et les désalignements laissés par ce que le groupe a traversé.",
       "Il reconnaît silencieusement la gravité de la Communauté des Papillons, puis valide la mémoire ouverte par Brad comme une réalité encore active plutôt qu'un simple récit.",
-      "Face à Syne et à la boîte, son attitude change à peine, mais cette retenue suffit: il sait que certaines forces ne doivent pas être provoquées pour être comprises."
+      "Face à Syne et à la boîte, son attitude change à peine, mais cette retenue suffit: il sait que certaines forces ne doivent pas être provoquées pour être comprises.",
+      "Plus tard, il suit la route du Vert à distance, fait plier l'Aligaroi, puis réapparaît près de la tombe du Capitaine. Sa parole relance alors la marche vers la Sombra, comme s'il veillait non sur un lieu fixe, mais sur les seuils que le groupe doit traverser."
     ],
     summary: [
       "Ab'Youbi apporte à la taverne une veille plus obscure, plus ancienne et plus perceptive.",
-      "Il confirme que ce qui revient n'a jamais vraiment disparu, mais s'est transformé et dispersé."
+      "Il confirme que ce qui revient n'a jamais vraiment disparu, mais s'est transformé, dispersé et déjà positionné sur d'autres seuils du monde."
     ],
     profile: [
       { title: "Caractère", text: "Silencieux, profond, extrêmement attentif, sans besoin de démonstration." },
@@ -576,7 +581,8 @@
     relations: [
       { title: "Brad et Bradlette", text: "Ils maintiennent avec lui une veille tacite sur l'équilibre de la taverne." },
       { title: "Syne", text: "Il reconnaît le danger contenu autour d'elle sans chercher à l'affronter." },
-      { title: "Communauté des Papillons", text: "Il lit dans le groupe une trace plus vaste que leur simple présence physique." }
+      { title: "Communauté des Papillons", text: "Il lit dans le groupe une trace plus vaste que leur simple présence physique." },
+      { title: "Bichette", text: "Près de la tombe du Capitaine, il rouvre clairement la route de Bichette comme prochaine lecture nécessaire du monde." }
     ],
     timeline: [
       { era: "Jour 10", title: "Veille dans l'ombre", summary: "Ab'Youbi reconnaît ce que le groupe porte avant même que les mots ne soient posés." },
@@ -586,7 +592,9 @@
       { era: "Jour 11", title: "Retrait de l'Aligaroi", summary: "Au bord du fleuve, il fait céder l'Aligaroi sans combat et révèle une autorité plus ancienne que la simple puissance." },
       { era: "Nuit du Jour 11", title: "Veille silencieuse", summary: "La nuit, Ab'Youbi reste à distance du camp sans jamais disparaître, comme une présence qui protège sans rejoindre." },
       { era: "Jour 12", title: "Présence dans le territoire ancien", summary: "Le lendemain, il entre dans le Vert comme dans un lieu déjà connu et observe sans intervenir l'approche d'Eben et le duel de Shan." },
-      { era: "Jour 12", title: "Parole d'équilibre", summary: "Quand Shan veut prolonger la violence, Ab'Youbi l'arrête et rappelle qu'Eben n'était pas la cause première du drame ancien." }
+      { era: "Jour 12", title: "Parole d'équilibre", summary: "Quand Shan veut prolonger la violence, Ab'Youbi l'arrête et rappelle qu'Eben n'était pas la cause première du drame ancien." },
+      { era: "Jour 13", title: "Présence à la tombe", summary: "Après la mort du Capitaine, Ab'Youbi vient près de la sépulture et replace la perte dans une lecture plus vaste du monde en cours de déplacement." },
+      { era: "Jour 13", title: "Route rouverte vers la Sombra", summary: "Il pousse le groupe à reprendre la route de la Sombra et de Bichette, comme si la prochaine réponse devait désormais se lire à l'ouest." }
     ]
   },
   {
@@ -792,28 +800,33 @@
       "Avant meme que le groupe principal ne prenne la route du Vrax, le Capitaine comprend que ce qui atteint le Passar ne ressemble pas a une simple crise locale. Il lie le sort du fleuve a quelque chose de plus profond qui traverse déjà le vivant.",
       "Avec Franklin, il part jusqu'au Veyrine pour comparer, verifier et chercher une origine a cette alteration. Cette expedition fait de lui l'un des premiers personnages a sortir du cadre immediat de la survie pour entrer dans une logique d'enquete du monde.",
       "Au cours du voyage, le Capitaine percoit brusquement une présence invisible, ordonne a Franklin de rentrer, puis disparait seul. Son absence laisse derriere elle une inquietude durable et donne a la quete du groupe une profondeur plus ancienne.",
-      "Au terme des chapitres du Vert, la rumeur portée par Ezze devient preuve: le groupe retrouve le Capitaine vivant, attaché au coeur de ruines vidées. Sa survie transforme son absence en urgence nouvelle."
+      "Au terme des chapitres du Vert, la rumeur portée par Ezze devient preuve: le groupe retrouve le Capitaine vivant, attaché au coeur de ruines vidées. Sa survie transforme son absence en urgence nouvelle.",
+      "Mais le Capitaine ne revient pas seulement avec un corps brisé. Il apporte des noms, des images et une transmission : Nogard, Bouldouger, des bêtes changées, le projet d'un parasite, puis finalement son propre sacrifice pour que ce danger ne reparte pas avec l'ennemi."
     ],
     summary: [
       "Le Capitaine représente la première tentative consciente de comprendre le déséquilibre du vivant plutôt que d'en subir seulement les effets.",
-      "Sa disparition ouvrait une quête; sa réapparition captive la relance sur un plan plus grave encore."
+      "Sa disparition ouvrait une quête; sa réapparition captive la relance sur un plan plus grave encore avant de la transformer, par sa mort, en deuil moteur pour la suite."
     ],
     profile: [
       { title: "Caractere", text: "Calme, concret, responsable, avec une lecture serieuse des signes faibles du terrain." },
       { title: "Forces", text: "Experience du fleuve, sang-froid, capacité a prendre une decision rapide face a l'invisible." },
-      { title: "Faiblesses", text: "Longtemps absent du récit, il revient au moment où son corps porte déjà la trace d'une captivité prolongée." }
+      { title: "Faiblesses", text: "Longtemps absent du récit, il revient au moment où son corps porte déjà la trace d'une captivité prolongée et d'une guerre qu'il n'a pas pu éviter seul." }
     ],
     relations: [
       { title: "Franklin", text: "Franklin garde de lui l'image d'un guide qui a vu avant les autres qu'il fallait chercher plus loin." },
       { title: "Passar", text: "Le Capitaine est intimement relie au fleuve et a la responsabilite de comprendre ce qui le menace." },
       { title: "Veyrine", text: "Le voyage vers le Veyrine marque sa dernière grande initiative libre avant sa disparition." },
-      { title: "Ruines du Vert", text: "Le lieu où sa disparition cesse d'être une hypothèse pour devenir une réalité retrouvée." }
+      { title: "Ruines du Vert", text: "Le lieu où sa disparition cesse d'être une hypothèse pour devenir une réalité retrouvée." },
+      { title: "Nogard et Bouldouger", text: "Par sa parole brisée, le Capitaine donne enfin un nom clair aux forces qui ont tenu sa captivité et relancé la guerre." }
     ],
     timeline: [
       { era: "Avant le récit", title: "Lecture du déséquilibre", summary: "Le Capitaine comprend que l'etat du Passar traduit une alteration plus vaste du vivant." },
       { era: "Avant le récit", title: "Expedition vers le Veyrine", summary: "Avec Franklin, il part comparer les fleuves pour trouver une logique a la crise qui gagne le monde." },
       { era: "Avant le récit", title: "Disparition", summary: "Apres avoir percu une présence invisible, il renvoie Franklin au Passar et disparait seul, laissant une question ouverte." },
-      { era: "Jour 12", title: "Retrouvé captif", summary: "Au centre de ruines vidées dans le Vert, le groupe retrouve enfin le Capitaine vivant mais retenu." }
+      { era: "Jour 12", title: "Retrouvé captif", summary: "Au centre de ruines vidées dans le Vert, le groupe retrouve enfin le Capitaine vivant mais retenu." },
+      { era: "Fin du Jour 12", title: "Transmission du danger", summary: "Le Capitaine révèle ce qu'il a vu pendant sa captivité: Nogard, Bouldouger, des créatures changées et le risque d'un parasite destiné à infecter plus loin encore." },
+      { era: "Nuit du Jour 12", title: "Dernier combat", summary: "Quand l'ennemi revient aux ruines, le Capitaine tient encore assez pour transmettre le parasite et protéger le groupe." },
+      { era: "Nuit du Jour 12", title: "Mort du Capitaine", summary: "Le Capitaine tombe pendant l'assaut, laissant au groupe une perte directe et une direction plus grave que sa simple absence." }
     ]
   },
   {
@@ -822,7 +835,7 @@
     name: "Bichette",
     image: buildMediaPath("pandorus", "Bichette.png"),
     category: "Reine du Blanc",
-    intro: "Bichette est une présence encore lointaine du récit, mais déjà centrale dans la direction ouverte par Brad : une figure de lecture, de veille et d'équilibre installée dans la Sombra.",
+    intro: "Bichette n'est plus seulement une présence lointaine : la route atteint désormais sa Sombra, où sa lecture du monde devient l'attente concrète du groupe.",
     meta: [
       { label: "Statut", value: "Créatrice évoquée à l'ouest" },
       { label: "Titre", value: "Reine du Blanc" },
@@ -830,11 +843,11 @@
     ],
     biography: [
       "Brad et Bradlette nomment Bichette sans emphase, comme on nomme quelqu'un de réel, pas une légende. Sa force ne semble pas tenir à l'affrontement direct, mais à une capacité de voir, de comprendre et de lire ce qui revient dans le monde.",
-      "La Sombra devient ainsi le territoire associé à sa présence, un ouest encore hors champ où la lecture du dérèglement pourrait être plus fine que dans les lieux déjà traversés.",
-      "Même sans être encore rencontrée, Bichette modifie déjà la trajectoire du groupe : elle donne un horizon stratégique nouveau, au-delà du seul réflexe de survie."
+      "Après le Vert et la mort du Capitaine, la route vers la Sombra se rouvre enfin. Bichette cesse alors d'être une simple orientation stratégique : elle devient la présence que tout le groupe approche désormais concrètement.",
+      "Même avant la rencontre pleine, sa proximité change déjà la lecture du récit. L'ouest n'est plus une promesse lointaine, mais un lieu atteint où une autre forme de veille attend d'être entendue."
     ],
     summary: [
-      "Bichette est la prochaine grande figure annoncée du récit.",
+      "Bichette n'est plus seulement annoncée : elle devient la grande présence désormais approchée du récit.",
       "Elle promet moins une guerre qu'une compréhension plus aiguë de ce qui revient altérer Pandorus."
     ],
     profile: [
@@ -850,7 +863,8 @@
     timeline: [
       { era: "Jour 10", title: "Nom donné par Brad", summary: "Bichette est évoquée comme la créatrice à l'ouest capable d'offrir une lecture plus fine du basculement." },
       { era: "Jour 10", title: "Horizon maintenu", summary: "Même lorsque le groupe choisit d'abord le Vert à cause du Capitaine, Bichette reste la grande direction stratégique laissée en veille." },
-      { era: "Après le Jour 12", title: "Après le Vert", summary: "La traversée du Vert renforce encore le poids de son nom : plus le monde se révèle complexe, plus la route vers la Sombra paraît nécessaire." }
+      { era: "Jour 13", title: "Route rouverte", summary: "Après la sépulture du Capitaine, le nom de Bichette redevient la direction immédiate donnée par Ab'Youbi." },
+      { era: "Jour 14", title: "Présence approchée", summary: "À l'intérieur de la Sombra, le groupe atteint enfin l'approche de Bichette après avoir franchi les gardiens du seuil." }
     ]
   },
   {
@@ -859,16 +873,16 @@
     name: "Luna Queen",
     image: buildMediaPath("pandorus", "Luna Queen.png"),
     category: "Gardienne de la Sombra",
-    intro: "Luna Queen est liée à Bichette et à la Sombra comme une présence de veille encore hors champ, mais déjà intégrée à la prochaine direction du groupe.",
+    intro: "Luna Queen n'est plus seulement liée à la Sombra de loin : elle devient l'une des gardiennes effectivement rencontrées au seuil de l'ouest.",
     meta: [
       { label: "Statut", value: "Figure liée à Bichette" },
       { label: "Ancrage", value: "Sombra" },
       { label: "Lien majeur", value: "Bichette et Méli Mélo" }
     ],
     biography: [
-      "Luna Queen n'est pas encore rencontrée directement, mais son nom entre dans le récit avec celui de Bichette comme une présence déjà reconnue par Brad et Bradlette.",
-      "Elle participe à dessiner une triade de veille autour de la Sombra, moins tournée vers la guerre frontale que vers la lecture, la compréhension et l'équilibre.",
-      "Son importance est donc narrative avant d'être événementielle : elle prépare le groupe à un autre type de rencontre et de savoir."
+      "Luna Queen entre d'abord dans le récit par la parole de Brad et Bradlette, comme une présence déjà reconnue autour de Bichette et de la Sombra.",
+      "Lorsque le groupe atteint enfin l'ouest, elle cesse d'être seulement un nom. Sa présence confirme que la Sombra repose bien sur plusieurs gardiennes capables de lire le monde autrement que par la seule guerre.",
+      "Elle garde ainsi une part de mystère, mais son rôle devient concret : accueillir, jauger et inscrire le groupe dans une autre qualité de seuil."
     ],
     summary: [
       "Luna Queen élargit la Sombra en véritable réseau de présences, pas en simple destination unique.",
@@ -886,7 +900,7 @@
     timeline: [
       { era: "Jour 10", title: "Évoquée à la taverne", summary: "Son nom entre dans le récit par la parole de Brad et Bradlette, avec la Sombra comme horizon." },
       { era: "Jour 10", title: "Présence gardée en réserve", summary: "Luna Queen demeure hors champ, mais son nom suffit déjà à faire comprendre que l'ouest n'est pas vide : il est organisé." },
-      { era: "Après le Jour 12", title: "Nécessité croissante", summary: "À mesure que le Vert révèle ses propres souverainetés, la perspective d'une rencontre avec Luna Queen gagne en importance pour la suite." }
+      { era: "Jour 14", title: "Rencontre dans la Sombra", summary: "À l'entrée profonde de la Sombra, Luna Queen apparaît enfin comme l'une des gardiennes concrètes du lieu." }
     ]
   },
   {
@@ -895,16 +909,16 @@
     name: "Méli Mélo",
     image: buildMediaPath("pandorus", "Méli Mélo.png"),
     category: "Gardienne de la Sombra",
-    intro: "Méli Mélo est l'autre nom associé à Bichette dans l'ouverture vers la Sombra, présence encore lointaine mais déjà intégrée à la prochaine logique du récit.",
+    intro: "Méli Mélo n'est plus seulement un nom lié à Bichette : elle fait désormais partie des présences effectivement rencontrées à la Sombra.",
     meta: [
       { label: "Statut", value: "Figure liée à Bichette" },
       { label: "Ancrage", value: "Sombra" },
       { label: "Lien majeur", value: "Bichette et Luna Queen" }
     ],
     biography: [
-      "Comme Luna Queen, Méli Mélo n'est pas encore rencontrée directement. Son importance vient du fait qu'elle n'est pas citée comme un décor lointain, mais comme une présence réelle de la prochaine étape.",
-      "Elle participe à transformer la Sombra en territoire organisé, habité par des figures capables d'une lecture du monde différente de celle des routes déjà traversées.",
-      "Son apparition dans le récit reste donc discrète, mais structurante : elle annonce que l'ouest ne sera pas un simple détour, mais une strate entière du monde."
+      "Comme Luna Queen, Méli Mélo entre d'abord dans le récit comme une présence réelle de la prochaine étape, et non comme un décor lointain.",
+      "Quand la Sombra est enfin atteinte, elle devient l'une des premières figures concrètes rencontrées à l'ouest. Sa présence confirme que ce territoire pense, veille et accueille selon une logique déjà établie.",
+      "Son apparition reste discrète, mais elle n'est plus seulement préparatoire : elle inscrit le groupe dans une strate entière du monde déjà habitée par des lectrices du déséquilibre."
     ],
     summary: [
       "Méli Mélo renforce l'idée que la Sombra abrite plusieurs points d'équilibre.",
@@ -922,7 +936,7 @@
     timeline: [
       { era: "Jour 10", title: "Évoquée à la taverne", summary: "Son nom rejoint ceux de Bichette et Luna Queen comme nouvelle direction stratégique du récit." },
       { era: "Jour 10", title: "Troisième point d'équilibre", summary: "Sa mention confirme que la Sombra repose sur plusieurs présences complémentaires et non sur une seule figure isolée." },
-      { era: "Après le Jour 12", title: "Attente de l'ouest", summary: "Après la priorité donnée au Vert, Méli Mélo reste l'un des noms qui continuent d'ouvrir l'étape suivante de la route." }
+      { era: "Jour 14", title: "Rencontre à l'ouest", summary: "À l'intérieur de la Sombra, Méli Mélo apparaît avec Luna Queen comme l'une des présences qui précèdent l'approche de Bichette." }
     ]
   }
   ];

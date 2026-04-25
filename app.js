@@ -542,6 +542,14 @@ const creatureContextMap = {
     { href: "#lieux-embouchure-du-sombrail", label: "Lire le Sombrail" },
     { href: "#fiches-abyoubi", label: "Voir Ab'Youbi" }
   ],
+  "bouldouger": [
+    { href: "#lieux-ruines-du-vert", label: "Lire les ruines du Vert" },
+    { href: "#chronologie", label: "Voir la guerre des ruines" }
+  ],
+  "canidaigle": [
+    { href: "#lieux-vert", label: "Lire le Vert" },
+    { href: "#chronologie", label: "Voir le deuil du Capitaine" }
+  ],
   "croconha": [
     { href: "#lieux-bassai", label: "Voir le Bassaï" },
     { href: "#chronologie", label: "Lire les traverses" }
@@ -562,6 +570,10 @@ const creatureContextMap = {
     { href: "#lieux-coeur-du-vrax", label: "Lire le coeur du Vrax" },
     { href: "#chronologie", label: "Voir l'affrontement" }
   ],
+  "kingkoala": [
+    { href: "#lieux-sombra", label: "Voir la Sombra" },
+    { href: "#chronologie", label: "Lire la route de l'ouest" }
+  ],
   "luminael": [
     { href: "#lieux-passage", label: "Relire Le Passage" },
     { href: "#cartes", label: "Voir les cartes" }
@@ -578,9 +590,17 @@ const creatureContextMap = {
     { href: "#mysteres", label: "Voir les mystères" },
     { href: "#chronologie", label: "Lire les signes d'altération" }
   ],
+  "nogard": [
+    { href: "#lieux-ruines-du-vert", label: "Lire les ruines du Vert" },
+    { href: "#chronologie", label: "Voir la chute de Nogard" }
+  ],
   "nonstiti": [
     { href: "#lieux-vert", label: "Lire le Vert" },
     { href: "#chronologie", label: "Voir l'entrée dans le Vert" }
+  ],
+  "parasite": [
+    { href: "#fiches-capitaine", label: "Voir le Capitaine" },
+    { href: "#chronologie", label: "Lire la transmission" }
   ],
   "renastar": [
     { href: "#lieux-passage", label: "Relire Le Passage" },
@@ -929,13 +949,14 @@ const relationNodes = [
   },
   {
     name: "Capitaine",
-    role: "Guide absent du Passar",
+    role: "Guide retrouvé puis sacrifié",
     links: [
       { target: "Franklin", type: "Expédition", description: "Le Capitaine emmene Franklin jusqu'au Veyrine pour verifier si le déséquilibre du Passar touche aussi d'autres eaux." },
       { target: "Passar", type: "Responsabilité", description: "Sa lecture du fleuve et du vivant fait de lui l'un des premiers adultes a prendre la corruption du monde au serieux." },
       { target: "Veyrine", type: "Quête de réponse", description: "Le voyage vers le Veyrine marque son dernier grand geste connu avant sa disparition." },
       { target: "Déséquilibre du vivant", type: "Pressentiment", description: "Le Capitaine semble percevoir une présence invisible avant d'ordonner a Franklin de rentrer et de disparaitre seul." },
-      { target: "Ruines du Vert", type: "Captivité", description: "La rumeur du Vert se révèle juste : le Capitaine est retrouvé vivant mais retenu dans une zone vidée, au centre de ruines anciennes." }
+      { target: "Ruines du Vert", type: "Captivité", description: "La rumeur du Vert se révèle juste : le Capitaine est retrouvé vivant mais retenu dans une zone vidée, au centre de ruines anciennes." },
+      { target: "Nogard et Bouldouger", type: "Transmission finale", description: "Avant de mourir, le Capitaine donne enfin un nom clair aux forces qui ont tenu sa captivité et relancé la guerre." }
     ]
   },
   {
@@ -1096,7 +1117,8 @@ const relationNodes = [
       { target: "Brad et Bradlette", type: "Équilibre du lieu", description: "Avec eux, Ab'Youbi participe à la tenue profonde de la taverne du Sombrail." },
       { target: "Syne", type: "Reconnaissance", description: "Il reconnaît la force contenue autour de Syne sans chercher à la provoquer." },
       { target: "Communauté des Papillons", type: "Lecture des traces", description: "Il perçoit ce que le groupe porte, ce qui le suit et ce qui se désaligne autour de lui." },
-      { target: "Aligaroi", type: "Autorité reconnue", description: "Au bord du Sombrail, Ab'Youbi fait céder l'Aligaroi sans combat, comme si une ancienneté commune se reconnaissait entre eux." }
+      { target: "Aligaroi", type: "Autorité reconnue", description: "Au bord du Sombrail, Ab'Youbi fait céder l'Aligaroi sans combat, comme si une ancienneté commune se reconnaissait entre eux." },
+      { target: "Bichette", type: "Route rouverte", description: "Près de la tombe du Capitaine, Ab'Youbi rouvre explicitement la direction de Bichette et de la Sombra." }
     ]
   },
   {
@@ -1139,8 +1161,8 @@ const relationNodes = [
     name: "Bichette",
     role: "Reine du Blanc",
     links: [
-      { target: "Sombra", type: "Ancrage", description: "Bichette est nommée comme la grande présence de la Sombra, lieu de lecture et de veille plus que de domination." },
-      { target: "Luna Queen", type: "Gardienne liée", description: "Luna Queen fait partie des figures qui prolongent ou accompagnent son équilibre." },
+      { target: "Sombra", type: "Ancrage", description: "Bichette n'est plus seulement promise à la Sombra : le groupe en atteint désormais réellement le seuil." },
+      { target: "Luna Queen", type: "Gardienne liée", description: "Luna Queen fait partie des figures concrètement rencontrées qui prolongent ou accompagnent son équilibre." },
       { target: "Méli Mélo", type: "Gardienne liée", description: "Méli Mélo complète autour d'elle une forme de veille plus fine que la seule force." }
     ]
   },
@@ -1148,18 +1170,18 @@ const relationNodes = [
     name: "Luna Queen",
     role: "Gardienne de la Sombra",
     links: [
-      { target: "Bichette", type: "Veille partagée", description: "Luna Queen est évoquée comme l'une des gardiennes liées à Bichette dans la Sombra." },
+      { target: "Bichette", type: "Veille partagée", description: "Luna Queen est désormais rencontrée comme l'une des gardiennes liées à Bichette dans la Sombra." },
       { target: "Méli Mélo", type: "Complément", description: "Avec Méli Mélo, elle forme une présence secondaire mais stratégique autour de la Reine du Blanc." },
-      { target: "Sombra", type: "Territoire", description: "Sa présence appartient aux terres de l'ouest vers lesquelles Brad réoriente le groupe." }
+      { target: "Sombra", type: "Territoire", description: "Sa présence appartient aux terres de l'ouest que le groupe traverse enfin après le Vert." }
     ]
   },
   {
     name: "Méli Mélo",
     role: "Gardienne de la Sombra",
     links: [
-      { target: "Bichette", type: "Veille partagée", description: "Méli Mélo est nommée comme une gardienne liée à Bichette et à la lecture de la Sombra." },
+      { target: "Bichette", type: "Veille partagée", description: "Méli Mélo est désormais rencontrée comme une gardienne liée à Bichette et à la lecture de la Sombra." },
       { target: "Luna Queen", type: "Complément", description: "Elle prolonge avec Luna Queen une même ligne de présence autour de l'ouest." },
-      { target: "Sombra", type: "Territoire", description: "Sa place se dessine dans la prochaine grande direction du récit, encore hors champ mais déjà décisive." }
+      { target: "Sombra", type: "Territoire", description: "Sa place se lit maintenant dans une Sombra réellement atteinte par le groupe." }
     ]
   }
 ];
@@ -1991,6 +2013,21 @@ const chapters = [
     path: "./media/chapitres/Chapitre%2020%20-%20Eben.pdf",
     summary: "Le duel entre Shan et Eben transforme un traumatisme en rééquilibrage, avant que le groupe ne découvre enfin le Capitaine captif au centre de ruines vidées dans le Vert.",
     accessKey: "ChapPando20"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2021%20-%20Le%20Capitaine.pdf",
+    summary: "Dans les ruines du Vert, le Capitaine retrouvé révèle sa captivité, nomme Nogard, Bouldouger et le parasite, puis transforme la délivrance en nouvelle urgence de guerre.",
+    accessKey: "ChapPando21"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2022%20-%20Bouldouger%2C%20Nogard%20et%20le%20Parasite.pdf",
+    summary: "La nuit des ruines explose : Nogard et Bouldouger reviennent, Tsune et Lévy abattent Nogard, le Capitaine se sacrifie et le parasite est arraché aux mains de l'ennemi.",
+    accessKey: "ChapPando22"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2023%20-%20La%20Sombra.pdf",
+    summary: "Après la sépulture du Capitaine, Ab'Youbi renvoie le groupe vers la Sombra, où KingKoala, Will le Tigre Bois, Luna Queen et Méli Mélo ouvrent enfin l'approche de Bichette.",
+    accessKey: "ChapPando23"
   }
 ];
 
