@@ -55,8 +55,8 @@ export function createPandorusTestData(buildMediaPath) {
     {
       prompt: "Quel type de force vous impressionne le plus ?",
       options: [
-        { label: "La force qui protège sans se raconter.", weights: { protect: 2, compassion: 1, loyalty: 1 } },
-        { label: "La force qui comprend avant d'agir.", weights: { insight: 2, memory: 1, balance: 1 } },
+        { label: "La force qui protège sans se raconter.", weights: { protect: 2, loyalty: 1, resilience: 1, balance: 1 } },
+        { label: "La force qui comprend avant d'agir.", weights: { insight: 2, memory: 1, balance: 1, mystery: 1 } },
         { label: "La force qui casse tout ce qui l'empêche d'avancer.", weights: { ferocity: 2, instinct: 1, freedom: 1 } },
         { label: "La force qui reste impossible à lire jusqu'au bout.", weights: { mystery: 2, curiosity: 1, insight: 1 } }
       ]
@@ -82,9 +82,9 @@ export function createPandorusTestData(buildMediaPath) {
     {
       prompt: "Une parole ancienne vous contredit, mais elle vient de quelqu'un que vous respectez. Vous...",
       options: [
-        { label: "Écoutez jusqu'au bout avant de répondre.", weights: { memory: 2, balance: 1, compassion: 1 } },
+        { label: "Écoutez jusqu'au bout avant de répondre.", weights: { memory: 2, balance: 2, insight: 1 } },
         { label: "Testez la parole contre le réel avant d'y croire.", weights: { insight: 2, curiosity: 1, leadership: 1 } },
-        { label: "Acceptez qu'une expérience plus vieille voie plus loin que vous.", weights: { loyalty: 1, memory: 2, mystery: 1 } },
+        { label: "Acceptez qu'une expérience plus vieille voie plus loin que vous.", weights: { loyalty: 1, memory: 2, mystery: 1, balance: 1 } },
         { label: "Refusez d'obéir si votre instinct dit autre chose.", weights: { instinct: 2, freedom: 1, ferocity: 1 } }
       ]
     },
@@ -100,10 +100,10 @@ export function createPandorusTestData(buildMediaPath) {
     {
       prompt: "Si vous devez veiller une nuit entière pendant que les autres dorment, vous êtes plutôt...",
       options: [
-        { label: "Immobile, attentif, presque invisible.", weights: { mystery: 2, insight: 1, resilience: 1 } },
-        { label: "Calme, protecteur, tourné vers ceux qui se reposent.", weights: { protect: 2, compassion: 1, loyalty: 1 } },
+        { label: "Immobile, attentif, presque invisible.", weights: { mystery: 2, insight: 2, resilience: 1, balance: 1 } },
+        { label: "Calme, protecteur, tourné vers ceux qui se reposent.", weights: { protect: 2, loyalty: 2, resilience: 1 } },
         { label: "Tendu, prêt à bondir au moindre bruit.", weights: { instinct: 2, ferocity: 1, resilience: 1 } },
-        { label: "Pensif, traversé par ce que tout cela signifie.", weights: { memory: 2, curiosity: 1, balance: 1 } }
+        { label: "Pensif, traversé par ce que tout cela signifie.", weights: { memory: 2, curiosity: 1, balance: 1, insight: 1 } }
       ]
     },
     {
@@ -119,9 +119,9 @@ export function createPandorusTestData(buildMediaPath) {
       prompt: "Le monde semble perdre sa cohérence. Ce qui vous trouble le plus, c'est...",
       options: [
         { label: "Que les êtres changent sans comprendre pourquoi.", weights: { compassion: 2, mystery: 1, insight: 1 } },
-        { label: "Que les repères anciens cessent de répondre.", weights: { memory: 2, resilience: 1, balance: 1 } },
+        { label: "Que les repères anciens cessent de répondre.", weights: { memory: 2, resilience: 1, balance: 1, mystery: 1 } },
         { label: "Que plus rien ne puisse être tenu par la seule force.", weights: { ferocity: 2, leadership: 1, resilience: 1 } },
-        { label: "Qu'il y ait derrière tout cela une volonté qui pense.", weights: { insight: 2, mystery: 1, curiosity: 1 } }
+        { label: "Qu'il y ait derrière tout cela une volonté qui pense.", weights: { insight: 2, mystery: 2, curiosity: 1, memory: 1 } }
       ]
     },
     {
@@ -163,17 +163,17 @@ export function createPandorusTestData(buildMediaPath) {
     {
       prompt: "Une personne venue d'ailleurs dit quelque chose d'impossible, mais vous sentez qu'elle n'est pas folle. Vous...",
       options: [
-        { label: "Écoutez jusqu'au bout. L'impossible fait partie du monde.", weights: { mystery: 2, curiosity: 1, insight: 1 } },
+        { label: "Écoutez jusqu'au bout. L'impossible fait partie du monde.", weights: { mystery: 2, curiosity: 1, insight: 2, balance: 1 } },
         { label: "Cherchez la cohérence derrière ses mots.", weights: { insight: 2, curiosity: 1, balance: 1 } },
         { label: "Jugez surtout à sa manière d'être, pas à ce qu'elle raconte.", weights: { instinct: 1, compassion: 2, insight: 1 } },
-        { label: "Restez prudent, mais gardez l'information en mémoire.", weights: { memory: 2, resilience: 1, mystery: 1 } }
+        { label: "Restez prudent, mais gardez l'information en mémoire.", weights: { memory: 2, resilience: 1, mystery: 1, balance: 1, insight: 1 } }
       ]
     },
     {
       prompt: "Votre plus grande qualité dans une crise est probablement...",
       options: [
-        { label: "Je tiens.", weights: { resilience: 2, protect: 1, loyalty: 1 } },
-        { label: "Je vois.", weights: { insight: 2, mystery: 1, memory: 1 } },
+        { label: "Je tiens.", weights: { resilience: 2, protect: 1, loyalty: 2, balance: 1 } },
+        { label: "Je vois.", weights: { insight: 2, mystery: 1, memory: 2, balance: 1 } },
         { label: "J'agis.", weights: { instinct: 2, ferocity: 1, leadership: 1 } },
         { label: "Je relie.", weights: { compassion: 2, balance: 1, loyalty: 1 } }
       ]
@@ -183,7 +183,7 @@ export function createPandorusTestData(buildMediaPath) {
       options: [
         { label: "Reste près des autres, même sans trouver les mots.", weights: { compassion: 2, loyalty: 1, protect: 1 } },
         { label: "Transforme la perte en direction.", weights: { leadership: 2, resilience: 1, memory: 1 } },
-        { label: "Garde le silence, mais ne lâche rien du réel.", weights: { mystery: 2, resilience: 1, balance: 1 } },
+        { label: "Garde le silence, mais ne lâche rien du réel.", weights: { mystery: 1, resilience: 2, balance: 2, loyalty: 1 } },
         { label: "Porte la douleur comme une énergie de combat.", weights: { ferocity: 2, instinct: 1, loyalty: 1 } }
       ]
     },
@@ -218,17 +218,17 @@ export function createPandorusTestData(buildMediaPath) {
       prompt: "Face à un grand choix, vous faites le plus confiance...",
       options: [
         { label: "À mon instinct immédiat.", weights: { instinct: 2, freedom: 1, ferocity: 1 } },
-        { label: "À ce que j'ai appris des anciens et des pertes.", weights: { memory: 2, insight: 1, resilience: 1 } },
+        { label: "À ce que j'ai appris des anciens et des pertes.", weights: { memory: 2, insight: 1, resilience: 1, loyalty: 1 } },
         { label: "À ce qui protège le mieux les autres.", weights: { protect: 2, compassion: 1, loyalty: 1 } },
-        { label: "À la part en moi qui sent l'équilibre ou son absence.", weights: { balance: 2, mystery: 1, insight: 1 } }
+        { label: "À la part en moi qui sent l'équilibre ou son absence.", weights: { balance: 2, mystery: 1, insight: 2, memory: 1 } }
       ]
     },
     {
       prompt: "Quel type de rôle vous conviendrait le mieux dans Pandorus ?",
       options: [
-        { label: "Veilleur ou veilleuse d'un seuil.", weights: { mystery: 2, protect: 1, insight: 1 } },
+        { label: "Veilleur ou veilleuse d'un seuil.", weights: { mystery: 2, protect: 1, insight: 1, resilience: 1, loyalty: 1 } },
         { label: "Explorateur ou éclaireur en mouvement.", weights: { freedom: 2, curiosity: 1, instinct: 1 } },
-        { label: "Passeur ou passeuse de mémoire.", weights: { memory: 2, compassion: 1, insight: 1 } },
+        { label: "Passeur ou passeuse de mémoire.", weights: { memory: 2, insight: 1, mystery: 1, balance: 1 } },
         { label: "Point de lutte quand tout cède.", weights: { ferocity: 2, resilience: 1, leadership: 1 } }
       ]
     },
@@ -259,7 +259,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-shaushana",
       image: buildMediaPath("pandorus", "Shaushana.jpg"),
       intro: "Tu avances comme une présence de cohérence. Tu ne te contentes pas d'exister dans le monde : tu le sens, tu l'écoutes et tu aides ce qui vacille à ne pas se rompre.",
-      traits: { protect: 2, instinct: 2, insight: 5, memory: 2, resilience: 2, ferocity: 0, balance: 5, loyalty: 2, curiosity: 1, mystery: 5, leadership: 1, freedom: 0, compassion: 3 }
+      traits: { protect: 2, instinct: 1, insight: 5, memory: 2, resilience: 2, ferocity: 0, balance: 5, loyalty: 2, curiosity: 1, mystery: 5, leadership: 1, freedom: 0, compassion: 2 }
     },
     {
       slug: "shan",
@@ -275,7 +275,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-franklin",
       image: buildMediaPath("pandorus", "Franklin.png"),
       intro: "Tu gardes une mesure humaine là où tout devient immense. Tu relies les autres, tu tiens par la loyauté, et tu transformes peu à peu la peur en vraie direction.",
-      traits: { protect: 4, instinct: 3, insight: 3, memory: 3, resilience: 4, ferocity: 1, balance: 2, loyalty: 5, curiosity: 4, mystery: 1, leadership: 2, freedom: 1, compassion: 4 }
+      traits: { protect: 4, instinct: 2, insight: 2, memory: 3, resilience: 4, ferocity: 1, balance: 2, loyalty: 5, curiosity: 3, mystery: 1, leadership: 2, freedom: 1, compassion: 4 }
     },
     {
       slug: "mike",
@@ -283,7 +283,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-mike",
       image: buildMediaPath("pandorus", "Mike.png"),
       intro: "Tu portes une fragilité vraie, mais jamais vide. Chez toi, la douceur n'est pas faiblesse : c'est ce qui rappelle pourquoi il faut encore protéger quelque chose.",
-      traits: { protect: 2, instinct: 0, insight: 1, memory: 2, resilience: 2, ferocity: 0, balance: 2, loyalty: 5, curiosity: 1, mystery: 0, leadership: 0, freedom: 0, compassion: 5 }
+      traits: { protect: 3, instinct: 0, insight: 1, memory: 2, resilience: 3, ferocity: 0, balance: 2, loyalty: 5, curiosity: 1, mystery: 0, leadership: 0, freedom: 0, compassion: 5 }
     },
     {
       slug: "gerom",
@@ -291,7 +291,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-gerom",
       image: buildMediaPath("pandorus", "Gérôm.png"),
       intro: "Tu es un appui calme. On peut s'appuyer sur toi quand tout se trouble, parce que tu restes stable, protecteur et digne sans jamais avoir besoin d'en faire trop.",
-      traits: { protect: 4, instinct: 1, insight: 1, memory: 2, resilience: 5, ferocity: 1, balance: 4, loyalty: 5, curiosity: 0, mystery: 0, leadership: 1, freedom: 0, compassion: 3 }
+      traits: { protect: 5, instinct: 1, insight: 1, memory: 2, resilience: 5, ferocity: 1, balance: 4, loyalty: 5, curiosity: 0, mystery: 0, leadership: 1, freedom: 0, compassion: 4 }
     },
     {
       slug: "elrick",
@@ -323,7 +323,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-bouldouger",
       image: buildMediaPath("pandorus", "Bouldouger.png"),
       intro: "Tu es une force de rupture. Chez toi, tout passe par l'impact, la pression et la capacité à faire sauter les derniers équilibres quand le conflit a déjà commencé.",
-      traits: { protect: 0, instinct: 4, insight: 0, memory: 1, resilience: 5, ferocity: 5, balance: 0, loyalty: 1, curiosity: 0, mystery: 1, leadership: 2, freedom: 2, compassion: 0 }
+      traits: { protect: 0, instinct: 4, insight: 0, memory: 1, resilience: 5, ferocity: 5, balance: 0, loyalty: 0, curiosity: 0, mystery: 1, leadership: 3, freedom: 1, compassion: 0 }
     },
     {
       slug: "harry-py",
@@ -355,7 +355,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-levy",
       image: buildMediaPath("pandorus", "Lévy.png"),
       intro: "Tu agis là où les autres ne voient encore qu'un malaise diffus. Tu ajustes, tu rééquilibres, tu lis les absences et tu sais intervenir dans les fractures les moins visibles.",
-      traits: { protect: 0, instinct: 0, insight: 5, memory: 3, resilience: 2, ferocity: 0, balance: 5, loyalty: 1, curiosity: 2, mystery: 5, leadership: 1, freedom: 0, compassion: 0 }
+      traits: { protect: 0, instinct: 0, insight: 5, memory: 5, resilience: 3, ferocity: 0, balance: 5, loyalty: 0, curiosity: 1, mystery: 4, leadership: 1, freedom: 0, compassion: 0 }
     },
     {
       slug: "ossah-lyla",
@@ -363,7 +363,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-ossah-lyla",
       image: buildMediaPath("pandorus", "Ossah Lyla.png"),
       intro: "Tu protèges par la douceur, la lecture fine et le lien au vivant. Chez toi, la force ressemble à une présence qui apaise, révèle et maintient l'équilibre profond du monde.",
-      traits: { protect: 2, instinct: 1, insight: 3, memory: 2, resilience: 2, ferocity: 0, balance: 5, loyalty: 2, curiosity: 1, mystery: 2, leadership: 1, freedom: 0, compassion: 5 }
+      traits: { protect: 2, instinct: 1, insight: 2, memory: 2, resilience: 2, ferocity: 0, balance: 4, loyalty: 2, curiosity: 1, mystery: 2, leadership: 1, freedom: 0, compassion: 5 }
     },
     {
       slug: "nastaz",
@@ -387,7 +387,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-hez",
       image: buildMediaPath("pandorus", "Hez.jpg"),
       intro: "Tu incarnes une force sobre et digne. Tu tiens, tu protèges, tu restes présent au milieu du chaos, et c'est justement cette absence d'effets qui donne tant de poids à ta fidélité.",
-      traits: { protect: 3, instinct: 0, insight: 1, memory: 2, resilience: 5, ferocity: 1, balance: 2, loyalty: 5, curiosity: 0, mystery: 0, leadership: 1, freedom: 0, compassion: 2 }
+      traits: { protect: 4, instinct: 0, insight: 1, memory: 2, resilience: 5, ferocity: 1, balance: 3, loyalty: 5, curiosity: 0, mystery: 1, leadership: 2, freedom: 0, compassion: 1 }
     },
     {
       slug: "javier",
@@ -419,7 +419,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-ezze",
       image: buildMediaPath("pandorus", "Ezze.png"),
       intro: "Tu es fait pour le mouvement. Tu sens les anomalies avant de les comprendre vraiment, tu avances vite, et ton énergie vient autant de l'instinct que du refus de rester figé.",
-      traits: { protect: 0, instinct: 5, insight: 1, memory: 1, resilience: 2, ferocity: 1, balance: 0, loyalty: 1, curiosity: 5, mystery: 3, leadership: 0, freedom: 5, compassion: 1 }
+      traits: { protect: 0, instinct: 5, insight: 1, memory: 1, resilience: 2, ferocity: 1, balance: 0, loyalty: 1, curiosity: 5, mystery: 4, leadership: 0, freedom: 5, compassion: 1 }
     },
     {
       slug: "gil-et-filston",
@@ -427,7 +427,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-gil-et-filston",
       image: buildMediaPath("pandorus", "Gil et Filston.jpg"),
       intro: "Tu gardes une curiosité vivante même quand tout se dérègle. Tu observes, tu questionnes, tu ne fermes pas trop vite les possibles, et cette ouverture t'amène souvent vers des vérités plus étranges que prévues.",
-      traits: { protect: 1, instinct: 1, insight: 3, memory: 2, resilience: 1, ferocity: 0, balance: 2, loyalty: 2, curiosity: 5, mystery: 3, leadership: 0, freedom: 3, compassion: 4 }
+      traits: { protect: 1, instinct: 1, insight: 2, memory: 2, resilience: 1, ferocity: 0, balance: 1, loyalty: 2, curiosity: 5, mystery: 4, leadership: 0, freedom: 2, compassion: 3 }
     },
     {
       slug: "brad-et-bradlette",
@@ -435,7 +435,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-brad-et-bradlette",
       image: buildMediaPath("pandorus", "Brad et Bradlette.jpg"),
       intro: "Tu sais tenir un lieu, les êtres qui y passent et la mémoire qui y veille. Chez toi, l'accueil n'est jamais simple décoration : c'est une manière profonde de garder le monde habitable.",
-      traits: { protect: 3, instinct: 1, insight: 4, memory: 4, resilience: 3, ferocity: 0, balance: 4, loyalty: 4, curiosity: 1, mystery: 2, leadership: 2, freedom: 0, compassion: 5 }
+      traits: { protect: 3, instinct: 1, insight: 3, memory: 4, resilience: 3, ferocity: 0, balance: 3, loyalty: 3, curiosity: 1, mystery: 2, leadership: 2, freedom: 0, compassion: 4 }
     },
     {
       slug: "abyoubi",
@@ -443,7 +443,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-abyoubi",
       image: buildMediaPath("pandorus", "AbYoubi.png"),
       intro: "Tu perçois l'invisible, les traces, les écarts. Tu ne te livres pas facilement, mais ta présence pèse lourd, parce qu'elle sait reconnaître ce que les autres ne voient pas encore.",
-      traits: { protect: 0, instinct: 0, insight: 5, memory: 5, resilience: 2, ferocity: 0, balance: 3, loyalty: 1, curiosity: 2, mystery: 5, leadership: 1, freedom: 0, compassion: 0 }
+      traits: { protect: 0, instinct: 0, insight: 5, memory: 4, resilience: 2, ferocity: 0, balance: 2, loyalty: 1, curiosity: 3, mystery: 5, leadership: 1, freedom: 0, compassion: 0 }
     },
     {
       slug: "syne",
@@ -451,7 +451,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-syne",
       image: buildMediaPath("pandorus", "Syne.jpg"),
       intro: "Tu tiens quelque chose que les autres ne peuvent pas lire d'un regard. Tu imposes une limite calme, une retenue mystérieuse, et une autorité qui n'a pas besoin de se hausser pour être réelle.",
-      traits: { protect: 2, instinct: 1, insight: 3, memory: 2, resilience: 2, ferocity: 0, balance: 4, loyalty: 1, curiosity: 1, mystery: 5, leadership: 1, freedom: 2, compassion: 1 }
+      traits: { protect: 1, instinct: 1, insight: 2, memory: 2, resilience: 2, ferocity: 0, balance: 4, loyalty: 1, curiosity: 1, mystery: 5, leadership: 1, freedom: 1, compassion: 1 }
     },
     {
       slug: "mitra-sesse",
@@ -522,81 +522,81 @@ export function createPandorusTestData(buildMediaPath) {
     {
       prompt: "Dans ton milieu naturel, tu imposes surtout...",
       options: [
-        { label: "Une présence écrasante dès le premier instant.", weights: { aggression: 2, majesty: 1, territory: 1 } },
+        { label: "Une présence écrasante dès le premier instant.", weights: { aggression: 2, majesty: 1, surge: 1 } },
         { label: "Une approche qu'on ne voit qu'au dernier moment.", weights: { stealth: 2, surge: 1, intelligence: 1 } },
-        { label: "Une impression de beauté qui trouble avant de menacer.", weights: { grace: 2, mystery: 1, verticality: 1 } },
-        { label: "Une résistance presque impossible à déloger.", weights: { endurance: 2, territory: 1, majesty: 1 } }
+        { label: "Une impression de beauté qui trouble avant de menacer.", weights: { grace: 1, verticality: 1, majesty: 2, loyalty: 1 } },
+        { label: "Une résistance presque impossible à déloger.", weights: { endurance: 2, territory: 1, intelligence: 1 } }
       ]
     },
     {
       prompt: "Quand un intrus entre sur ton territoire, ton premier réflexe est...",
       options: [
-        { label: "Le charger frontalement.", weights: { aggression: 2, territory: 2 } },
+        { label: "Le charger frontalement.", weights: { aggression: 2, surge: 1, territory: 1 } },
         { label: "Le contourner jusqu'à ce qu'il perde ses appuis.", weights: { stealth: 2, intelligence: 1, surge: 1 } },
-        { label: "Le jauger d'abord, comme un vrai gardien.", weights: { intelligence: 2, majesty: 1, territory: 1 } },
-        { label: "Attendre que le lieu lui-même le fasse hésiter.", weights: { mystery: 2, territory: 1, endurance: 1 } }
+        { label: "Le jauger d'abord, comme un vrai gardien.", weights: { intelligence: 2, majesty: 1, territory: 1, loyalty: 1 } },
+        { label: "Attendre que le lieu lui-même le fasse hésiter.", weights: { territory: 2, endurance: 1, stealth: 1 } }
       ]
     },
     {
       prompt: "Ton lien au groupe ressemble le plus à...",
       options: [
         { label: "Une meute soudée qui avance ensemble.", weights: { loyalty: 2, aggression: 1, territory: 1 } },
-        { label: "Une vigilance commune, mais chacun garde sa singularité.", weights: { intelligence: 2, mystery: 1, loyalty: 1 } },
-        { label: "Une solitude naturelle, même entourée.", weights: { stealth: 2, mystery: 1, majesty: 1 } },
-        { label: "Un peuple vivant qui répond à un centre.", weights: { loyalty: 2, majesty: 1, territory: 1 } }
+        { label: "Une vigilance commune, mais chacun garde sa singularité.", weights: { intelligence: 2, territory: 1, loyalty: 1 } },
+        { label: "Une solitude naturelle, même entourée.", weights: { stealth: 2, majesty: 1, endurance: 1 } },
+        { label: "Un peuple vivant qui répond à un centre.", weights: { loyalty: 2, majesty: 1, territory: 1, intelligence: 1 } }
       ]
     },
     {
       prompt: "Tu préfères frapper...",
       options: [
-        { label: "Au sol, dans l'impact et la masse.", weights: { aggression: 2, endurance: 1, territory: 1 } },
-        { label: "Depuis l'eau, le dessous ou le bord.", weights: { surge: 2, stealth: 1, aggression: 1 } },
+        { label: "Au sol, dans l'impact et la masse.", weights: { aggression: 2, surge: 1, endurance: 1 } },
+        { label: "Depuis l'eau, le dessous ou le bord.", weights: { surge: 2, stealth: 1, aggression: 1, loyalty: 1 } },
         { label: "Depuis le haut, en plongeant.", weights: { verticality: 2, surge: 1, grace: 1 } },
-        { label: "Par la pression lente, sans précipiter le choc.", weights: { endurance: 2, mystery: 1, intelligence: 1 } }
+        { label: "Par la pression lente, sans précipiter le choc.", weights: { endurance: 2, intelligence: 1, territory: 1 } }
       ]
     },
     {
       prompt: "Ce qui te définit le mieux, c'est...",
       options: [
-        { label: "La faim de passage et de percée.", weights: { aggression: 2, surge: 1, freedom: 0 } },
-        { label: "La lecture fine du terrain.", weights: { intelligence: 2, territory: 1, stealth: 1 } },
-        { label: "La beauté ou l'étrangeté qu'on n'oublie pas.", weights: { grace: 2, mystery: 2 } },
+        { label: "La faim de passage et de percée.", weights: { aggression: 2, surge: 2, stealth: 1, intelligence: 1 } },
+        { label: "La lecture fine du terrain.", weights: { intelligence: 2, territory: 1, stealth: 1, loyalty: 1 } },
+        { label: "La beauté ou l'étrangeté qu'on n'oublie pas.", weights: { grace: 2, majesty: 1, verticality: 1 } },
         { label: "La capacité à rester quand tout fuit.", weights: { endurance: 2, territory: 1, majesty: 1 } }
       ]
     },
     {
       prompt: "Ton rapport au monde vivant est plutôt...",
       options: [
-        { label: "Je protège un équilibre ancien.", weights: { majesty: 2, intelligence: 1, territory: 1 } },
-        { label: "Je réagis comme un prédateur pur.", weights: { aggression: 2, surge: 1, stealth: 1 } },
-        { label: "J'incarne une part lumineuse ou fragile du vivant.", weights: { grace: 2, mystery: 1, verticality: 1 } },
-        { label: "Je porte déjà une altération du monde.", weights: { corruption: 2, aggression: 1, mystery: 1 } }
+        { label: "Je protège un équilibre ancien.", weights: { majesty: 2, intelligence: 1, territory: 1, loyalty: 1 } },
+        { label: "Je réagis comme un prédateur pur.", weights: { aggression: 2, surge: 1, stealth: 1, territory: 1 } },
+        { label: "J'incarne une part lumineuse ou fragile du vivant.", weights: { grace: 1, verticality: 1, loyalty: 1, majesty: 1 } },
+        { label: "Je porte déjà une altération du monde.", weights: { corruption: 2, aggression: 1, stealth: 1 } }
       ]
     },
     {
       prompt: "Si on te voit à distance, on pense d'abord...",
       options: [
-        { label: "Danger immédiat.", weights: { aggression: 2, surge: 1, territory: 1 } },
-        { label: "Silhouette étrange qu'on comprend mal.", weights: { mystery: 2, stealth: 1, grace: 1 } },
-        { label: "Présence noble ou sacrée.", weights: { majesty: 2, grace: 1, intelligence: 1 } },
+        { label: "Danger immédiat.", weights: { aggression: 2, surge: 1, territory: 1, endurance: 1 } },
+        { label: "Silhouette étrange qu'on comprend mal.", weights: { stealth: 2, grace: 1, intelligence: 1 } },
+        { label: "Présence noble ou sacrée.", weights: { majesty: 2, grace: 1, loyalty: 1, verticality: 1, territory: 1 } },
         { label: "Sentinelle du lieu.", weights: { territory: 2, intelligence: 1, endurance: 1 } }
       ]
     },
     {
       prompt: "Dans une forêt dense, tu es plus à l'aise...",
       options: [
-        { label: "Au sommet, invisible entre les hauteurs.", weights: { verticality: 2, stealth: 1, grace: 1 } },
-        { label: "Au cœur des troncs, maître du territoire.", weights: { territory: 2, endurance: 1, majesty: 1 } },
+        { label: "Au sommet, invisible entre les hauteurs.", weights: { verticality: 2, stealth: 1, grace: 1, surge: 1 } },
+        { label: "Au cœur des troncs, maître du territoire.", weights: { territory: 2, endurance: 1, majesty: 1, loyalty: 1 } },
         { label: "Dans les surgissements rapides entre les branches.", weights: { surge: 2, intelligence: 1, loyalty: 1 } },
-        { label: "Comme une présence qu'on sent avant de la voir.", weights: { mystery: 2, majesty: 1, stealth: 1 } }
+        { label: "Comme une présence qu'on sent avant de la voir.", weights: { stealth: 2, territory: 1, majesty: 1 } }
       ]
     },
     {
       prompt: "Ce qui t'attire le plus dans un affrontement, c'est...",
       options: [
-        { label: "Rompre l'élan adverse d'un coup.", weights: { aggression: 2, surge: 1, endurance: 1 } },
-        { label: "Laisser l'autre s'épuiser dans un terrain que je connais mieux.", weights: { intelligence: 2, territory: 1, endurance: 1 } },
-        { label: "Apparaître au moment le plus impossible.", weights: { stealth: 2, mystery: 1, verticality: 1 } },
+        { label: "Rompre l'élan adverse d'un coup.", weights: { aggression: 2, surge: 1, endurance: 1, territory: 1 } },
+        { label: "Laisser l'autre s'épuiser dans un terrain que je connais mieux.", weights: { intelligence: 2, territory: 1, endurance: 1, loyalty: 1 } },
+        { label: "Apparaître au moment le plus impossible.", weights: { stealth: 2, surge: 1, verticality: 1 } },
         { label: "Imposer une majesté qui change le combat avant même le choc.", weights: { majesty: 2, grace: 1, territory: 1 } }
       ]
     },
@@ -604,44 +604,44 @@ export function createPandorusTestData(buildMediaPath) {
       prompt: "Si tu devais garder un seuil, ce serait en étant...",
       options: [
         { label: "Un barrage vivant.", weights: { endurance: 2, territory: 2 } },
-        { label: "Une ombre qui contrôle les angles.", weights: { stealth: 2, intelligence: 1, mystery: 1 } },
-        { label: "Une présence qui juge avant de laisser passer.", weights: { majesty: 2, intelligence: 1, territory: 1 } },
-        { label: "Une anomalie troublante que nul n'oublie.", weights: { mystery: 2, corruption: 1, grace: 1 } }
+        { label: "Une ombre qui contrôle les angles.", weights: { stealth: 2, intelligence: 1, territory: 1 } },
+        { label: "Une présence qui juge avant de laisser passer.", weights: { majesty: 2, intelligence: 1, territory: 1, loyalty: 1 } },
+        { label: "Une anomalie troublante que nul n'oublie.", weights: { corruption: 1, stealth: 1, grace: 1, intelligence: 1 } }
       ]
     },
     {
       prompt: "Quand tu te déplaces, ton énergie est plutôt...",
       options: [
-        { label: "Lourde et irrésistible.", weights: { endurance: 2, aggression: 1, majesty: 1 } },
-        { label: "Rapide, vive, bondissante.", weights: { surge: 2, loyalty: 1, intelligence: 1 } },
-        { label: "Fluide, presque élégante.", weights: { grace: 2, verticality: 1, mystery: 1 } },
-        { label: "Sinueuse, imprévisible.", weights: { stealth: 2, mystery: 1, corruption: 1 } }
+        { label: "Lourde et irrésistible.", weights: { endurance: 2, aggression: 1, majesty: 1, territory: 1 } },
+        { label: "Rapide, vive, bondissante.", weights: { surge: 2, aggression: 1, stealth: 1 } },
+        { label: "Fluide, presque élégante.", weights: { grace: 2, verticality: 1, surge: 1 } },
+        { label: "Sinueuse, imprévisible.", weights: { stealth: 2, surge: 1, corruption: 1 } }
       ]
     },
     {
       prompt: "Quel défaut te ressemble le plus ?",
       options: [
-        { label: "Je prends trop de place.", weights: { aggression: 2, majesty: 1, territory: 1 } },
-        { label: "Je reste trop insaisissable.", weights: { stealth: 2, mystery: 2 } },
-        { label: "Je peux devenir inquiétant sans le vouloir.", weights: { mystery: 1, corruption: 2, majesty: 1 } },
-        { label: "Je ne lâche jamais mon terrain.", weights: { territory: 2, endurance: 1, loyalty: 1 } }
+        { label: "Je prends trop de place.", weights: { aggression: 2, majesty: 1, endurance: 1 } },
+        { label: "Je reste trop insaisissable.", weights: { stealth: 2, intelligence: 1, surge: 1 } },
+        { label: "Je peux devenir inquiétant sans le vouloir.", weights: { corruption: 2, stealth: 1, aggression: 1 } },
+        { label: "Je ne lâche jamais mon terrain.", weights: { territory: 2, endurance: 1, loyalty: 1, intelligence: 1 } }
       ]
     },
     {
       prompt: "Tu serais le plus redoutable...",
       options: [
         { label: "Dans une attaque de groupe coordonnée.", weights: { loyalty: 2, aggression: 1, intelligence: 1 } },
-        { label: "Seul, en terrain sacré ou fermé.", weights: { territory: 2, majesty: 1, endurance: 1 } },
-        { label: "Dans un décor où on ne sait pas d'où tu vas venir.", weights: { stealth: 2, surge: 1, mystery: 1 } },
-        { label: "Quand ton apparence suffit déjà à troubler.", weights: { grace: 1, mystery: 2, corruption: 1 } }
+        { label: "Seul, en terrain sacré ou fermé.", weights: { territory: 2, majesty: 1, endurance: 1, stealth: 1 } },
+        { label: "Dans un décor où on ne sait pas d'où tu vas venir.", weights: { stealth: 2, surge: 1, intelligence: 1 } },
+        { label: "Quand ton apparence suffit déjà à troubler.", weights: { grace: 1, majesty: 2, territory: 1 } }
       ]
     },
     {
       prompt: "Au fond, ce qui te guide le plus est...",
       options: [
-        { label: "L'instinct de chasse ou de frappe.", weights: { aggression: 2, surge: 1, stealth: 1 } },
-        { label: "La garde d'un lieu ou d'un équilibre.", weights: { territory: 2, intelligence: 1, majesty: 1 } },
-        { label: "La présence étrange que tu imposes au monde.", weights: { mystery: 2, grace: 1, corruption: 1 } },
+        { label: "L'instinct de chasse ou de frappe.", weights: { aggression: 2, surge: 1, stealth: 1, intelligence: 1 } },
+        { label: "La garde d'un lieu ou d'un équilibre.", weights: { territory: 2, intelligence: 1, majesty: 1, loyalty: 1 } },
+        { label: "La présence étrange que tu imposes au monde.", weights: { grace: 1, corruption: 1, stealth: 1, territory: 1 } },
         { label: "La fidélité à une meute, un peuple ou un centre.", weights: { loyalty: 2, endurance: 1, majesty: 1 } }
       ]
     },
@@ -649,29 +649,74 @@ export function createPandorusTestData(buildMediaPath) {
       prompt: "La trace que tu laisserais dans Pandorus serait surtout...",
       options: [
         { label: "Une peur nette.", weights: { aggression: 2, corruption: 1, surge: 1 } },
-        { label: "Un passage gardé.", weights: { territory: 2, intelligence: 1, endurance: 1 } },
-        { label: "Une image inoubliable.", weights: { grace: 2, mystery: 1, majesty: 1 } },
-        { label: "Le sentiment qu'un territoire entier était vivant.", weights: { majesty: 2, loyalty: 1, territory: 1 } }
+        { label: "Un passage gardé.", weights: { territory: 2, intelligence: 1, endurance: 1, stealth: 1 } },
+        { label: "Une image inoubliable.", weights: { grace: 1, majesty: 2, verticality: 1, loyalty: 1 } },
+        { label: "Le sentiment qu'un territoire entier était vivant.", weights: { majesty: 2, loyalty: 1, territory: 1, intelligence: 1 } }
+      ]
+    },
+    {
+      prompt: "Dans la chasse, ta vraie signature est plutôt...",
+      options: [
+        { label: "La morsure vive, nerveuse, répétée.", weights: { aggression: 2, surge: 2, stealth: 1 } },
+        { label: "L'encerclement patient, presque méthodique.", weights: { intelligence: 2, loyalty: 2, territory: 1 } },
+        { label: "L'attente lourde près d'un passage obligé.", weights: { endurance: 2, territory: 2, stealth: 1 } },
+        { label: "La chute venue d'en haut, brutale et brève.", weights: { verticality: 2, surge: 2, aggression: 1 } }
+      ]
+    },
+    {
+      prompt: "Le terrain où tu te sens le plus vrai est...",
+      options: [
+        { label: "Les bords d'eau, les boues, les ruptures de rive.", weights: { surge: 2, territory: 1, stealth: 1, endurance: 1 } },
+        { label: "Les hauteurs, les branches, les angles de ciel.", weights: { verticality: 2, grace: 1, surge: 1, majesty: 1 } },
+        { label: "Le cœur d'un domaine que nul ne déloge.", weights: { territory: 2, majesty: 1, endurance: 1, loyalty: 1 } },
+        { label: "Les couloirs mouvants où l'on traque à plusieurs.", weights: { loyalty: 2, intelligence: 2, stealth: 1 } }
+      ]
+    },
+    {
+      prompt: "Face à une proie qui hésite, tu préfères...",
+      options: [
+        { label: "Bondir tout de suite et casser sa décision.", weights: { aggression: 2, surge: 2, intelligence: 1 } },
+        { label: "La pousser là où ton terrain la condamne.", weights: { territory: 2, intelligence: 2, endurance: 1 } },
+        { label: "La laisser sentir trop tard que tu étais déjà là.", weights: { stealth: 2, surge: 1, mystery: 1, territory: 1 } },
+        { label: "La dominer par présence avant même le choc.", weights: { majesty: 2, endurance: 1, loyalty: 1, grace: 1 } }
+      ]
+    },
+    {
+      prompt: "Quand le monde devient hostile, tu redeviens surtout...",
+      options: [
+        { label: "Une bête de guet qui tient coûte que coûte.", weights: { endurance: 2, territory: 2, loyalty: 1 } },
+        { label: "Une trajectoire rapide, difficile à saisir.", weights: { surge: 2, stealth: 2, aggression: 1 } },
+        { label: "Un centre de groupe qui rassemble et coordonne.", weights: { loyalty: 2, intelligence: 2, majesty: 1 } },
+        { label: "Un signe venu du haut, dangereux et souverain.", weights: { verticality: 2, majesty: 2, aggression: 1 } }
+      ]
+    },
+    {
+      prompt: "Si l'on suivait tes traces après ton passage, on trouverait surtout...",
+      options: [
+        { label: "Des marques brèves, nerveuses, puis plus rien.", weights: { stealth: 2, surge: 2, intelligence: 1 } },
+        { label: "Un sol retourné, des appuis rompus, une poussée massive.", weights: { aggression: 2, endurance: 2, territory: 1 } },
+        { label: "Des signes de ronde, de veille, de surveillance collective.", weights: { loyalty: 2, intelligence: 2, territory: 1 } },
+        { label: "Une impression de surplomb, de passage aérien ou sacré.", weights: { verticality: 2, majesty: 2, grace: 1 } }
       ]
     }
   ];
 
   const creatureResults = [
-    { slug: "aligaphoque", name: "Aligaphoque", href: "#creatures-fiche-aligaphoque", image: buildMediaPath("creatures", "Aligaphoque.png"), intro: "Tu frappes comme une embuscade lourde venue du fleuve : brutal, soudain, impossible à ignorer.", traits: { aggression: 5, stealth: 2, grace: 0, endurance: 4, territory: 3, loyalty: 2, mystery: 0, intelligence: 1, verticality: 0, surge: 5, majesty: 1, corruption: 0 } },
-    { slug: "aligaroi", name: "Aligaroi", href: "#creatures-fiche-aligaroi", image: buildMediaPath("creatures", "Aligaroi.png"), intro: "Tu imposes une souveraineté du milieu. On ne te confond pas avec une simple bête : tu fais loi là où tu apparais.", traits: { aggression: 1, stealth: 0, grace: 0, endurance: 4, territory: 5, loyalty: 0, mystery: 3, intelligence: 3, verticality: 0, surge: 1, majesty: 5, corruption: 0 } },
-    { slug: "canidaigle", name: "Canidaigle", href: "#creatures-fiche-canidaigle", image: buildMediaPath("creatures", "Canidaigle.png"), intro: "Tu viens du haut avec noblesse et gravité. Il y a chez toi à la fois l'élan du ciel et quelque chose de funèbre et fidèle.", traits: { aggression: 1, stealth: 1, grace: 4, endurance: 1, territory: 1, loyalty: 4, mystery: 2, intelligence: 1, verticality: 5, surge: 1, majesty: 4, corruption: 0 } },
-    { slug: "felou", name: "Félou", href: "#creatures-fiche-felou", image: buildMediaPath("creatures", "Félou.png"), intro: "Tu es nerveux, direct, rapide à agir. Quand tu frappes, tout passe par l'instinct et la tension du moment.", traits: { aggression: 4, stealth: 2, grace: 0, endurance: 2, territory: 2, loyalty: 1, mystery: 0, intelligence: 1, verticality: 0, surge: 4, majesty: 0, corruption: 1 } },
-    { slug: "felours", name: "Félours", href: "#creatures-fiche-felours", image: buildMediaPath("creatures", "Felours.png"), intro: "Tu es une masse de percussion. On te reconnaît à la violence de l'impact et à la pression que tu imposes.", traits: { aggression: 5, stealth: 0, grace: 0, endurance: 5, territory: 1, loyalty: 0, mystery: 0, intelligence: 0, verticality: 0, surge: 1, majesty: 1, corruption: 0 } },
-    { slug: "gorillange", name: "Gorillange", href: "#creatures-fiche-gorillange", image: buildMediaPath("creatures", "Gorillange.png"), intro: "Tu relèves du peuple et de la puissance. Il y a chez toi la force, mais aussi l'appartenance à un ordre collectif plus grand.", traits: { aggression: 2, stealth: 0, grace: 0, endurance: 4, territory: 4, loyalty: 5, mystery: 0, intelligence: 2, verticality: 0, surge: 1, majesty: 3, corruption: 0 } },
-    { slug: "gueplynx", name: "Guéplynx", href: "#creatures-fiche-gueplynx", image: buildMediaPath("creatures", "Gueplynx.png"), intro: "Tu es fait pour la coordination et la traque. Tu n'avances jamais seul dans ta logique : tu enfermes, tu lis et tu épuises.", traits: { aggression: 2, stealth: 4, grace: 0, endurance: 2, territory: 3, loyalty: 5, mystery: 0, intelligence: 5, verticality: 0, surge: 2, majesty: 0, corruption: 0 } },
-    { slug: "kingkoala", name: "KingKoala", href: "#creatures-fiche-kingkoala", image: buildMediaPath("creatures", "KingKoala.png"), intro: "Tu imposes une garde calme, massive, presque royale. Chez toi, la force n'a pas besoin de hurler pour être décisive.", traits: { aggression: 0, stealth: 0, grace: 1, endurance: 5, territory: 4, loyalty: 2, mystery: 1, intelligence: 1, verticality: 0, surge: 0, majesty: 5, corruption: 0 } },
-    { slug: "lumineau", name: "Lumineau", href: "#creatures-fiche-lumineau", image: buildMediaPath("creatures", "Lumineau.png"), intro: "Tu es grâce fragile, éclat suspendu, beauté qui reste vive même dans un monde déjà blessé.", traits: { aggression: 0, stealth: 1, grace: 5, endurance: 0, territory: 0, loyalty: 1, mystery: 2, intelligence: 1, verticality: 4, surge: 0, majesty: 2, corruption: 0 } },
-    { slug: "macagardien", name: "Macagardien", href: "#creatures-fiche-macagardien", image: buildMediaPath("creatures", "Macagardien.png"), intro: "Tu observes avant tout. Tu fais partie de ceux qui gardent, testent et jugent sans se jeter dans le bruit immédiatement.", traits: { aggression: 1, stealth: 3, grace: 0, endurance: 2, territory: 5, loyalty: 4, mystery: 1, intelligence: 5, verticality: 3, surge: 1, majesty: 0, corruption: 0 } },
+    { slug: "aligaphoque", name: "Aligaphoque", href: "#creatures-fiche-aligaphoque", image: buildMediaPath("creatures", "Aligaphoque.png"), intro: "Tu frappes comme une embuscade lourde venue du fleuve : brutal, soudain, impossible à ignorer.", traits: { aggression: 4, stealth: 1, grace: 0, endurance: 1, territory: 1, loyalty: 1, mystery: 0, intelligence: 0, verticality: 0, surge: 4, majesty: 0, corruption: 0 } },
+    { slug: "aligaroi", name: "Aligaroi", href: "#creatures-fiche-aligaroi", image: buildMediaPath("creatures", "Aligaroi.png"), intro: "Tu imposes une souveraineté du milieu. On ne te confond pas avec une simple bête : tu fais loi là où tu apparais.", traits: { aggression: 0, stealth: 0, grace: 0, endurance: 3, territory: 4, loyalty: 0, mystery: 1, intelligence: 2, verticality: 0, surge: 0, majesty: 4, corruption: 0 } },
+    { slug: "canidaigle", name: "Canidaigle", href: "#creatures-fiche-canidaigle", image: buildMediaPath("creatures", "Canidaigle.png"), intro: "Tu viens du haut avec noblesse et gravité. Il y a chez toi à la fois l'élan du ciel et quelque chose de funèbre et fidèle.", traits: { aggression: 1, stealth: 1, grace: 3, endurance: 1, territory: 1, loyalty: 5, mystery: 1, intelligence: 1, verticality: 5, surge: 3, majesty: 5, corruption: 0 } },
+    { slug: "felou", name: "Félou", href: "#creatures-fiche-felou", image: buildMediaPath("creatures", "Félou.png"), intro: "Tu es nerveux, direct, rapide à agir. Quand tu frappes, tout passe par l'instinct et la tension du moment.", traits: { aggression: 4, stealth: 3, grace: 0, endurance: 1, territory: 1, loyalty: 1, mystery: 0, intelligence: 2, verticality: 0, surge: 5, majesty: 0, corruption: 0 }, scoreBias: -4 },
+    { slug: "felours", name: "Félours", href: "#creatures-fiche-felours", image: buildMediaPath("creatures", "Felours.png"), intro: "Tu es une masse de percussion. On te reconnaît à la violence de l'impact et à la pression que tu imposes.", traits: { aggression: 5, stealth: 0, grace: 0, endurance: 5, territory: 1, loyalty: 0, mystery: 0, intelligence: 0, verticality: 0, surge: 3, majesty: 1, corruption: 0 } },
+    { slug: "gorillange", name: "Gorillange", href: "#creatures-fiche-gorillange", image: buildMediaPath("creatures", "Gorillange.png"), intro: "Tu relèves du peuple et de la puissance. Il y a chez toi la force, mais aussi l'appartenance à un ordre collectif plus grand.", traits: { aggression: 2, stealth: 0, grace: 0, endurance: 4, territory: 4, loyalty: 5, mystery: 0, intelligence: 3, verticality: 0, surge: 2, majesty: 3, corruption: 0 }, scoreBias: -8 },
+    { slug: "gueplynx", name: "Guéplynx", href: "#creatures-fiche-gueplynx", image: buildMediaPath("creatures", "Gueplynx.png"), intro: "Tu es fait pour la coordination et la traque. Tu n'avances jamais seul dans ta logique : tu enfermes, tu lis et tu épuises.", traits: { aggression: 2, stealth: 4, grace: 0, endurance: 2, territory: 3, loyalty: 5, mystery: 0, intelligence: 4, verticality: 0, surge: 3, majesty: 0, corruption: 0 }, scoreBias: -5 },
+    { slug: "kingkoala", name: "KingKoala", href: "#creatures-fiche-kingkoala", image: buildMediaPath("creatures", "KingKoala.png"), intro: "Tu imposes une garde calme, massive, presque royale. Chez toi, la force n'a pas besoin de hurler pour être décisive.", traits: { aggression: 0, stealth: 0, grace: 1, endurance: 3, territory: 3, loyalty: 2, mystery: 1, intelligence: 1, verticality: 0, surge: 0, majesty: 3, corruption: 0 } },
+    { slug: "lumineau", name: "Lumineau", href: "#creatures-fiche-lumineau", image: buildMediaPath("creatures", "Lumineau.png"), intro: "Tu es grâce fragile, éclat suspendu, beauté qui reste vive même dans un monde déjà blessé.", traits: { aggression: 0, stealth: 1, grace: 3, endurance: 0, territory: 0, loyalty: 1, mystery: 0, intelligence: 1, verticality: 2, surge: 0, majesty: 1, corruption: 0 } },
+    { slug: "macagardien", name: "Macagardien", href: "#creatures-fiche-macagardien", image: buildMediaPath("creatures", "Macagardien.png"), intro: "Tu observes avant tout. Tu fais partie de ceux qui gardent, testent et jugent sans se jeter dans le bruit immédiatement.", traits: { aggression: 1, stealth: 3, grace: 0, endurance: 2, territory: 5, loyalty: 4, mystery: 1, intelligence: 5, verticality: 3, surge: 2, majesty: 0, corruption: 0 } },
     { slug: "nogard", name: "Nogard", href: "#creatures-fiche-nogard", image: buildMediaPath("pandorus", "Nogard.jpg"), intro: "Tu es mobile, dérangeant, hostile avec méthode. Tu tiens plus de l'agent du trouble que du simple animal.", traits: { aggression: 3, stealth: 2, grace: 0, endurance: 2, territory: 1, loyalty: 1, mystery: 2, intelligence: 4, verticality: 0, surge: 3, majesty: 0, corruption: 4 } },
-    { slug: "nonstiti", name: "Nonstiti", href: "#creatures-fiche-nonstiti", image: buildMediaPath("creatures", "Nonstiti.png"), intro: "Tu es rapide, vif, impossible à fixer longtemps. Tu participes à un regard collectif plus qu'à une domination solitaire.", traits: { aggression: 1, stealth: 2, grace: 0, endurance: 1, territory: 3, loyalty: 5, mystery: 0, intelligence: 3, verticality: 2, surge: 4, majesty: 0, corruption: 0 } },
-    { slug: "parasite", name: "Parasite", href: "#creatures-fiche-parasite", image: buildMediaPath("creatures", "Parasite.png"), intro: "Tu appartiens à ce qui agit de l'intérieur. Tu es inquiétant non par la taille, mais par l'altération que tu promets.", traits: { aggression: 0, stealth: 4, grace: 0, endurance: 1, territory: 0, loyalty: 0, mystery: 5, intelligence: 1, verticality: 0, surge: 1, majesty: 0, corruption: 5 } },
-    { slug: "poiscaille", name: "Poiscaille", href: "#creatures-fiche-poiscaille", image: buildMediaPath("creatures", "Poiscaille.png"), intro: "Tu frappes vite, par vagues, depuis les bords et les zones humides. Tu es fait pour l'usure et la saturation.", traits: { aggression: 3, stealth: 1, grace: 0, endurance: 1, territory: 2, loyalty: 4, mystery: 0, intelligence: 1, verticality: 0, surge: 5, majesty: 0, corruption: 1 } },
-    { slug: "serpensouffre", name: "Serpensouffre", href: "#creatures-fiche-serpensouffre", image: buildMediaPath("creatures", "Serpensouffre.png"), intro: "Tu règnes depuis le haut, dans la frappe verticale et l'impression d'un danger qui tombe du ciel sans prévenir.", traits: { aggression: 4, stealth: 2, grace: 1, endurance: 2, territory: 3, loyalty: 1, mystery: 2, intelligence: 1, verticality: 5, surge: 4, majesty: 1, corruption: 0 } }
+    { slug: "nonstiti", name: "Nonstiti", href: "#creatures-fiche-nonstiti", image: buildMediaPath("creatures", "Nonstiti.png"), intro: "Tu es rapide, vif, impossible à fixer longtemps. Tu participes à un regard collectif plus qu'à une domination solitaire.", traits: { aggression: 1, stealth: 3, grace: 0, endurance: 1, territory: 2, loyalty: 5, mystery: 0, intelligence: 3, verticality: 2, surge: 5, majesty: 0, corruption: 0 } },
+    { slug: "parasite", name: "Parasite", href: "#creatures-fiche-parasite", image: buildMediaPath("creatures", "Parasite.png"), intro: "Tu appartiens à ce qui agit de l'intérieur. Tu es inquiétant non par la taille, mais par l'altération que tu promets.", traits: { aggression: 0, stealth: 3, grace: 0, endurance: 1, territory: 0, loyalty: 0, mystery: 4, intelligence: 1, verticality: 0, surge: 1, majesty: 0, corruption: 4 } },
+    { slug: "poiscaille", name: "Poiscaille", href: "#creatures-fiche-poiscaille", image: buildMediaPath("creatures", "Poiscaille.png"), intro: "Tu frappes vite, par vagues, depuis les bords et les zones humides. Tu es fait pour l'usure et la saturation.", traits: { aggression: 4, stealth: 1, grace: 0, endurance: 1, territory: 2, loyalty: 5, mystery: 0, intelligence: 1, verticality: 0, surge: 5, majesty: 0, corruption: 1 } },
+    { slug: "serpensouffre", name: "Serpensouffre", href: "#creatures-fiche-serpensouffre", image: buildMediaPath("creatures", "Serpensouffre.png"), intro: "Tu règnes depuis le haut, dans la frappe verticale et l'impression d'un danger qui tombe du ciel sans prévenir.", traits: { aggression: 4, stealth: 2, grace: 1, endurance: 2, territory: 3, loyalty: 1, mystery: 1, intelligence: 1, verticality: 5, surge: 5, majesty: 3, corruption: 0 }, scoreBias: -3 }
   ];
 
   return {
@@ -683,7 +728,16 @@ export function createPandorusTestData(buildMediaPath) {
     creature: {
       traitLabels: creatureTraitLabels,
       questions: creatureQuestions,
-      results: creatureResults
+      results: creatureResults,
+      scoreTuning: {
+        overlapWeight: 6,
+        exactTopWeight: 10,
+        exactTopPairWeight: 12,
+        sharedTopWeight: 3,
+        specificityWeight: 8,
+        mismatchWeight: 18,
+        genericPenaltyWeight: 2.4
+      }
     }
   };
 }

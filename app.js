@@ -3559,6 +3559,14 @@ function computePandorusProfileSpecificity(profileValues) {
 
 function computePandorusTestResult() {
   const activeTest = getActivePandorusTestConfig();
+  const scoreTuning = activeTest.scoreTuning || {};
+  const overlapWeight = scoreTuning.overlapWeight ?? 8;
+  const exactTopWeight = scoreTuning.exactTopWeight ?? 12;
+  const exactTopPairWeight = scoreTuning.exactTopPairWeight ?? 16;
+  const sharedTopWeight = scoreTuning.sharedTopWeight ?? 4;
+  const specificityWeight = scoreTuning.specificityWeight ?? 6;
+  const mismatchWeight = scoreTuning.mismatchWeight ?? 16;
+  const genericPenaltyWeight = scoreTuning.genericPenaltyWeight ?? 1.6;
   const traitKeys = Object.keys(activeTest.traitLabels);
   const traitScores = {};
 
@@ -3607,17 +3615,18 @@ function computePandorusTestResult() {
       const mismatchPenalty = traitKeys.reduce((sum, trait, index) => {
         return sum + Math.max(0, resultNormalizedVector[index] - playerNormalizedVector[index] * 1.2);
       }, 0);
-      const genericPenalty = Math.max(0, 11 - specificity * 3) * 1.6;
+      const genericPenalty = Math.max(0, 11 - specificity * 3) * genericPenaltyWeight;
       const score =
         cosineSimilarity * 92
         - distributionDistance * 26
-        + dominantOverlap * 8
-        + exactTopMatch * 12
-        + exactTopPairMatch * 16
-        + weightedSharedTopTraits * 4
-        + specificity * 6
-        - mismatchPenalty * 16
-        - genericPenalty;
+        + dominantOverlap * overlapWeight
+        + exactTopMatch * exactTopWeight
+        + exactTopPairMatch * exactTopPairWeight
+        + weightedSharedTopTraits * sharedTopWeight
+        + specificity * specificityWeight
+        - mismatchPenalty * mismatchWeight
+        - genericPenalty
+        + (result.scoreBias || 0);
 
       return {
         ...result,
