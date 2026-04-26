@@ -259,7 +259,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-shaushana",
       image: buildMediaPath("pandorus", "Shaushana.jpg"),
       intro: "Tu avances comme une présence de cohérence. Tu ne te contentes pas d'exister dans le monde : tu le sens, tu l'écoutes et tu aides ce qui vacille à ne pas se rompre.",
-      traits: { protect: 4, instinct: 4, insight: 5, memory: 2, resilience: 3, ferocity: 1, balance: 5, loyalty: 3, curiosity: 2, mystery: 4, leadership: 2, freedom: 1, compassion: 4 }
+      traits: { protect: 2, instinct: 2, insight: 5, memory: 2, resilience: 2, ferocity: 0, balance: 5, loyalty: 2, curiosity: 1, mystery: 5, leadership: 1, freedom: 0, compassion: 3 }
     },
     {
       slug: "shan",
@@ -283,7 +283,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-mike",
       image: buildMediaPath("pandorus", "Mike.png"),
       intro: "Tu portes une fragilité vraie, mais jamais vide. Chez toi, la douceur n'est pas faiblesse : c'est ce qui rappelle pourquoi il faut encore protéger quelque chose.",
-      traits: { protect: 3, instinct: 1, insight: 1, memory: 2, resilience: 3, ferocity: 0, balance: 2, loyalty: 5, curiosity: 1, mystery: 0, leadership: 0, freedom: 0, compassion: 5 }
+      traits: { protect: 2, instinct: 0, insight: 1, memory: 2, resilience: 2, ferocity: 0, balance: 2, loyalty: 5, curiosity: 1, mystery: 0, leadership: 0, freedom: 0, compassion: 5 }
     },
     {
       slug: "gerom",
@@ -291,7 +291,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-gerom",
       image: buildMediaPath("pandorus", "Gérôm.png"),
       intro: "Tu es un appui calme. On peut s'appuyer sur toi quand tout se trouble, parce que tu restes stable, protecteur et digne sans jamais avoir besoin d'en faire trop.",
-      traits: { protect: 4, instinct: 2, insight: 2, memory: 2, resilience: 4, ferocity: 1, balance: 4, loyalty: 5, curiosity: 1, mystery: 0, leadership: 2, freedom: 1, compassion: 3 }
+      traits: { protect: 4, instinct: 1, insight: 1, memory: 2, resilience: 5, ferocity: 1, balance: 4, loyalty: 5, curiosity: 0, mystery: 0, leadership: 1, freedom: 0, compassion: 3 }
     },
     {
       slug: "elrick",
@@ -307,7 +307,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-eben",
       image: buildMediaPath("pandorus", "Eben.jpg"),
       intro: "Tu n'es pas fait pour suivre des cadres étroits. Il y a chez toi une souveraineté instinctive, une puissance qui ne crie pas, et une façon d'imposer le respect avant même les mots.",
-      traits: { protect: 1, instinct: 5, insight: 3, memory: 1, resilience: 4, ferocity: 4, balance: 5, loyalty: 1, curiosity: 1, mystery: 2, leadership: 4, freedom: 4, compassion: 1 }
+      traits: { protect: 0, instinct: 5, insight: 1, memory: 1, resilience: 4, ferocity: 4, balance: 3, loyalty: 1, curiosity: 1, mystery: 2, leadership: 4, freedom: 4, compassion: 0 }
     },
     {
       slug: "capitaine",
@@ -315,7 +315,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-capitaine",
       image: buildMediaPath("pandorus", "Capitaine.png"),
       intro: "Tu es de ceux qui prennent les signes au sérieux avant les autres. Tu avances par responsabilité, tu protèges en décidant, et tu acceptes le poids d'une route quand personne ne veut encore la voir.",
-      traits: { protect: 4, instinct: 2, insight: 3, memory: 3, resilience: 4, ferocity: 2, balance: 2, loyalty: 3, curiosity: 3, mystery: 1, leadership: 4, freedom: 1, compassion: 2 }
+      traits: { protect: 3, instinct: 1, insight: 3, memory: 3, resilience: 4, ferocity: 2, balance: 1, loyalty: 3, curiosity: 4, mystery: 1, leadership: 5, freedom: 0, compassion: 1 }
     },
     {
       slug: "harry-py",
@@ -323,7 +323,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-harry-py",
       image: buildMediaPath("pandorus", "Harry PY.png"),
       intro: "Tu perçois avant beaucoup d'autres. Ta force est moins spectaculaire que profonde : tu lis les ruptures, tu sens les vides, et tu deviens naturellement un centre autour duquel les autres s'organisent.",
-      traits: { protect: 2, instinct: 2, insight: 5, memory: 3, resilience: 2, ferocity: 0, balance: 4, loyalty: 2, curiosity: 3, mystery: 4, leadership: 3, freedom: 1, compassion: 2 }
+      traits: { protect: 1, instinct: 1, insight: 5, memory: 3, resilience: 2, ferocity: 0, balance: 3, loyalty: 2, curiosity: 3, mystery: 5, leadership: 2, freedom: 0, compassion: 1 }
     },
     {
       slug: "gardien-isma",
@@ -339,7 +339,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-wingard",
       image: buildMediaPath("pandorus", "Wingard.png"),
       intro: "Tu es mouvement, décalage, vitesse. Tu déranges l'ordre des choses avant de le laisser se recomposer autrement, et ta liberté vaut souvent autant que ta force.",
-      traits: { protect: 1, instinct: 4, insight: 1, memory: 0, resilience: 2, ferocity: 3, balance: 1, loyalty: 2, curiosity: 3, mystery: 2, leadership: 1, freedom: 5, compassion: 1 }
+      traits: { protect: 0, instinct: 4, insight: 1, memory: 0, resilience: 2, ferocity: 3, balance: 0, loyalty: 1, curiosity: 3, mystery: 1, leadership: 0, freedom: 5, compassion: 0 }
     },
     {
       slug: "levy",
@@ -347,7 +347,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-levy",
       image: buildMediaPath("pandorus", "Lévy.png"),
       intro: "Tu agis là où les autres ne voient encore qu'un malaise diffus. Tu ajustes, tu rééquilibres, tu lis les absences et tu sais intervenir dans les fractures les moins visibles.",
-      traits: { protect: 3, instinct: 2, insight: 5, memory: 3, resilience: 2, ferocity: 1, balance: 4, loyalty: 3, curiosity: 2, mystery: 4, leadership: 1, freedom: 1, compassion: 2 }
+      traits: { protect: 0, instinct: 0, insight: 5, memory: 3, resilience: 2, ferocity: 0, balance: 5, loyalty: 1, curiosity: 2, mystery: 5, leadership: 1, freedom: 0, compassion: 0 }
     },
     {
       slug: "ossah-lyla",
@@ -355,7 +355,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-ossah-lyla",
       image: buildMediaPath("pandorus", "Ossah Lyla.png"),
       intro: "Tu protèges par la douceur, la lecture fine et le lien au vivant. Chez toi, la force ressemble à une présence qui apaise, révèle et maintient l'équilibre profond du monde.",
-      traits: { protect: 4, instinct: 2, insight: 4, memory: 3, resilience: 2, ferocity: 0, balance: 5, loyalty: 2, curiosity: 2, mystery: 4, leadership: 2, freedom: 1, compassion: 5 }
+      traits: { protect: 2, instinct: 1, insight: 3, memory: 2, resilience: 2, ferocity: 0, balance: 5, loyalty: 2, curiosity: 1, mystery: 2, leadership: 1, freedom: 0, compassion: 5 }
     },
     {
       slug: "nastaz",
@@ -379,7 +379,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-hez",
       image: buildMediaPath("pandorus", "Hez.jpg"),
       intro: "Tu incarnes une force sobre et digne. Tu tiens, tu protèges, tu restes présent au milieu du chaos, et c'est justement cette absence d'effets qui donne tant de poids à ta fidélité.",
-      traits: { protect: 4, instinct: 1, insight: 1, memory: 2, resilience: 4, ferocity: 1, balance: 3, loyalty: 5, curiosity: 0, mystery: 0, leadership: 2, freedom: 0, compassion: 4 }
+      traits: { protect: 3, instinct: 0, insight: 1, memory: 2, resilience: 5, ferocity: 1, balance: 2, loyalty: 5, curiosity: 0, mystery: 0, leadership: 1, freedom: 0, compassion: 2 }
     },
     {
       slug: "javier",
@@ -411,7 +411,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-ezze",
       image: buildMediaPath("pandorus", "Ezze.png"),
       intro: "Tu es fait pour le mouvement. Tu sens les anomalies avant de les comprendre vraiment, tu avances vite, et ton énergie vient autant de l'instinct que du refus de rester figé.",
-      traits: { protect: 1, instinct: 4, insight: 1, memory: 1, resilience: 3, ferocity: 1, balance: 1, loyalty: 2, curiosity: 4, mystery: 2, leadership: 1, freedom: 5, compassion: 2 }
+      traits: { protect: 0, instinct: 5, insight: 1, memory: 1, resilience: 2, ferocity: 1, balance: 0, loyalty: 1, curiosity: 5, mystery: 3, leadership: 0, freedom: 5, compassion: 1 }
     },
     {
       slug: "gil-et-filston",
@@ -435,7 +435,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-abyoubi",
       image: buildMediaPath("pandorus", "AbYoubi.png"),
       intro: "Tu perçois l'invisible, les traces, les écarts. Tu ne te livres pas facilement, mais ta présence pèse lourd, parce qu'elle sait reconnaître ce que les autres ne voient pas encore.",
-      traits: { protect: 2, instinct: 1, insight: 5, memory: 4, resilience: 3, ferocity: 1, balance: 4, loyalty: 1, curiosity: 2, mystery: 5, leadership: 2, freedom: 0, compassion: 1 }
+      traits: { protect: 0, instinct: 0, insight: 5, memory: 5, resilience: 2, ferocity: 0, balance: 3, loyalty: 1, curiosity: 2, mystery: 5, leadership: 1, freedom: 0, compassion: 0 }
     },
     {
       slug: "syne",
@@ -451,7 +451,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-mitra-sesse",
       image: buildMediaPath("pandorus", "Mitra Séssé.jpg"),
       intro: "Tu portes quelque chose des résistances anciennes. Tu tiens dans la durée, tu relies le présent à un courage plus vieux, et tu sais que certaines luttes demandent mémoire autant que force.",
-      traits: { protect: 2, instinct: 1, insight: 2, memory: 5, resilience: 3, ferocity: 2, balance: 2, loyalty: 3, curiosity: 1, mystery: 1, leadership: 3, freedom: 0, compassion: 1 }
+      traits: { protect: 1, instinct: 1, insight: 1, memory: 5, resilience: 4, ferocity: 3, balance: 1, loyalty: 3, curiosity: 1, mystery: 1, leadership: 4, freedom: 0, compassion: 0 }
     },
     {
       slug: "papy-perquis",
@@ -459,7 +459,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-papy-perquis",
       image: buildMediaPath("pandorus", "Papy Perquis.jpg"),
       intro: "Tu analyses, tu questionnes, tu cherches des formes dans ce qui paraît confus. Ta force est de donner des mots et des lignes là où d'autres ne voient encore qu'une masse trouble.",
-      traits: { protect: 1, instinct: 0, insight: 5, memory: 5, resilience: 2, ferocity: 0, balance: 2, loyalty: 1, curiosity: 3, mystery: 1, leadership: 2, freedom: 0, compassion: 1 }
+      traits: { protect: 0, instinct: 0, insight: 5, memory: 5, resilience: 1, ferocity: 0, balance: 1, loyalty: 1, curiosity: 4, mystery: 1, leadership: 1, freedom: 0, compassion: 0 }
     },
     {
       slug: "padre-souf",
@@ -467,7 +467,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-padre-souf",
       image: buildMediaPath("pandorus", "Padre Souf.png"),
       intro: "Tu gardes une forme d'ancienne tenue. Chez toi, la fidélité, la mémoire et la continuité comptent plus que l'éclat, et c'est précisément cela qui te rend solide dans le temps long.",
-      traits: { protect: 2, instinct: 1, insight: 1, memory: 4, resilience: 3, ferocity: 1, balance: 2, loyalty: 4, curiosity: 0, mystery: 2, leadership: 2, freedom: 0, compassion: 3 }
+      traits: { protect: 1, instinct: 0, insight: 1, memory: 5, resilience: 3, ferocity: 0, balance: 2, loyalty: 5, curiosity: 0, mystery: 3, leadership: 1, freedom: 0, compassion: 2 }
     },
     {
       slug: "bichette",
@@ -475,7 +475,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-bichette",
       image: buildMediaPath("pandorus", "Bichette.png"),
       intro: "Tu es fait pour voir plus finement que les autres. Tu n'écrases pas le monde : tu le lis, tu l'équilibres, et tu offres une compréhension plus claire là où tout risquait de se réduire à la guerre.",
-      traits: { protect: 3, instinct: 1, insight: 5, memory: 2, resilience: 2, ferocity: 0, balance: 5, loyalty: 1, curiosity: 2, mystery: 4, leadership: 3, freedom: 1, compassion: 4 }
+      traits: { protect: 2, instinct: 0, insight: 5, memory: 2, resilience: 2, ferocity: 0, balance: 5, loyalty: 1, curiosity: 2, mystery: 3, leadership: 4, freedom: 0, compassion: 3 }
     },
     {
       slug: "luna-queen",
@@ -483,7 +483,7 @@ export function createPandorusTestData(buildMediaPath) {
       href: "#fiches-luna-queen",
       image: buildMediaPath("pandorus", "Luna Queen.png"),
       intro: "Tu gardes un seuil avec grâce et retenue. On sent chez toi une vigilance réelle, une présence d'équilibre, et une manière de protéger sans bruit ce qui mérite d'être préservé.",
-      traits: { protect: 4, instinct: 1, insight: 3, memory: 1, resilience: 2, ferocity: 0, balance: 4, loyalty: 3, curiosity: 1, mystery: 3, leadership: 2, freedom: 1, compassion: 3 }
+      traits: { protect: 4, instinct: 0, insight: 2, memory: 1, resilience: 2, ferocity: 0, balance: 4, loyalty: 3, curiosity: 1, mystery: 2, leadership: 1, freedom: 0, compassion: 3 }
     },
     {
       slug: "meli-melo",
@@ -650,19 +650,19 @@ export function createPandorusTestData(buildMediaPath) {
 
   const creatureResults = [
     { slug: "aligaphoque", name: "Aligaphoque", href: "#creatures-fiche-aligaphoque", image: buildMediaPath("creatures", "Aligaphoque.png"), intro: "Tu frappes comme une embuscade lourde venue du fleuve : brutal, soudain, impossible à ignorer.", traits: { aggression: 5, stealth: 2, grace: 0, endurance: 4, territory: 3, loyalty: 2, mystery: 0, intelligence: 1, verticality: 0, surge: 5, majesty: 1, corruption: 0 } },
-    { slug: "aligaroi", name: "Aligaroi", href: "#creatures-fiche-aligaroi", image: buildMediaPath("creatures", "Aligaroi.png"), intro: "Tu imposes une souveraineté du milieu. On ne te confond pas avec une simple bête : tu fais loi là où tu apparais.", traits: { aggression: 3, stealth: 1, grace: 1, endurance: 5, territory: 5, loyalty: 0, mystery: 2, intelligence: 3, verticality: 0, surge: 2, majesty: 5, corruption: 0 } },
+    { slug: "aligaroi", name: "Aligaroi", href: "#creatures-fiche-aligaroi", image: buildMediaPath("creatures", "Aligaroi.png"), intro: "Tu imposes une souveraineté du milieu. On ne te confond pas avec une simple bête : tu fais loi là où tu apparais.", traits: { aggression: 1, stealth: 0, grace: 0, endurance: 4, territory: 5, loyalty: 0, mystery: 3, intelligence: 3, verticality: 0, surge: 1, majesty: 5, corruption: 0 } },
     { slug: "bouldouger", name: "Bouldouger", href: "#creatures-fiche-bouldouger", image: buildMediaPath("pandorus", "Bouldouger.png"), intro: "Tu es la rupture pure, la charge qui écrase et change immédiatement l'échelle d'un affrontement.", traits: { aggression: 5, stealth: 0, grace: 0, endurance: 5, territory: 2, loyalty: 1, mystery: 1, intelligence: 1, verticality: 0, surge: 4, majesty: 3, corruption: 2 } },
-    { slug: "canidaigle", name: "Canidaigle", href: "#creatures-fiche-canidaigle", image: buildMediaPath("creatures", "Canidaigle.png"), intro: "Tu viens du haut avec noblesse et gravité. Il y a chez toi à la fois l'élan du ciel et quelque chose de funèbre et fidèle.", traits: { aggression: 1, stealth: 1, grace: 4, endurance: 2, territory: 2, loyalty: 3, mystery: 2, intelligence: 2, verticality: 5, surge: 2, majesty: 4, corruption: 0 } },
+    { slug: "canidaigle", name: "Canidaigle", href: "#creatures-fiche-canidaigle", image: buildMediaPath("creatures", "Canidaigle.png"), intro: "Tu viens du haut avec noblesse et gravité. Il y a chez toi à la fois l'élan du ciel et quelque chose de funèbre et fidèle.", traits: { aggression: 1, stealth: 1, grace: 4, endurance: 1, territory: 1, loyalty: 4, mystery: 2, intelligence: 1, verticality: 5, surge: 1, majesty: 4, corruption: 0 } },
     { slug: "felou", name: "Félou", href: "#creatures-fiche-felou", image: buildMediaPath("creatures", "Félou.png"), intro: "Tu es nerveux, direct, rapide à agir. Quand tu frappes, tout passe par l'instinct et la tension du moment.", traits: { aggression: 4, stealth: 2, grace: 0, endurance: 2, territory: 2, loyalty: 1, mystery: 0, intelligence: 1, verticality: 0, surge: 4, majesty: 0, corruption: 1 } },
-    { slug: "felours", name: "Félours", href: "#creatures-fiche-felours", image: buildMediaPath("creatures", "Felours.png"), intro: "Tu es une masse de percussion. On te reconnaît à la violence de l'impact et à la pression que tu imposes.", traits: { aggression: 5, stealth: 0, grace: 0, endurance: 4, territory: 2, loyalty: 1, mystery: 0, intelligence: 0, verticality: 0, surge: 2, majesty: 1, corruption: 1 } },
+    { slug: "felours", name: "Félours", href: "#creatures-fiche-felours", image: buildMediaPath("creatures", "Felours.png"), intro: "Tu es une masse de percussion. On te reconnaît à la violence de l'impact et à la pression que tu imposes.", traits: { aggression: 5, stealth: 0, grace: 0, endurance: 5, territory: 1, loyalty: 0, mystery: 0, intelligence: 0, verticality: 0, surge: 1, majesty: 1, corruption: 0 } },
     { slug: "gorillange", name: "Gorillange", href: "#creatures-fiche-gorillange", image: buildMediaPath("creatures", "Gorillange.png"), intro: "Tu relèves du peuple et de la puissance. Il y a chez toi la force, mais aussi l'appartenance à un ordre collectif plus grand.", traits: { aggression: 2, stealth: 0, grace: 0, endurance: 4, territory: 4, loyalty: 5, mystery: 0, intelligence: 2, verticality: 0, surge: 1, majesty: 3, corruption: 0 } },
-    { slug: "gueplynx", name: "Guéplynx", href: "#creatures-fiche-gueplynx", image: buildMediaPath("creatures", "Gueplynx.png"), intro: "Tu es fait pour la coordination et la traque. Tu n'avances jamais seul dans ta logique : tu enfermes, tu lis et tu épuises.", traits: { aggression: 3, stealth: 3, grace: 0, endurance: 2, territory: 3, loyalty: 5, mystery: 0, intelligence: 4, verticality: 0, surge: 3, majesty: 0, corruption: 0 } },
-    { slug: "kingkoala", name: "KingKoala", href: "#creatures-fiche-kingkoala", image: buildMediaPath("creatures", "KingKoala.png"), intro: "Tu imposes une garde calme, massive, presque royale. Chez toi, la force n'a pas besoin de hurler pour être décisive.", traits: { aggression: 1, stealth: 0, grace: 1, endurance: 5, territory: 4, loyalty: 2, mystery: 1, intelligence: 2, verticality: 1, surge: 0, majesty: 5, corruption: 0 } },
+    { slug: "gueplynx", name: "Guéplynx", href: "#creatures-fiche-gueplynx", image: buildMediaPath("creatures", "Gueplynx.png"), intro: "Tu es fait pour la coordination et la traque. Tu n'avances jamais seul dans ta logique : tu enfermes, tu lis et tu épuises.", traits: { aggression: 2, stealth: 4, grace: 0, endurance: 2, territory: 3, loyalty: 5, mystery: 0, intelligence: 5, verticality: 0, surge: 2, majesty: 0, corruption: 0 } },
+    { slug: "kingkoala", name: "KingKoala", href: "#creatures-fiche-kingkoala", image: buildMediaPath("creatures", "KingKoala.png"), intro: "Tu imposes une garde calme, massive, presque royale. Chez toi, la force n'a pas besoin de hurler pour être décisive.", traits: { aggression: 0, stealth: 0, grace: 1, endurance: 5, territory: 4, loyalty: 2, mystery: 1, intelligence: 1, verticality: 0, surge: 0, majesty: 5, corruption: 0 } },
     { slug: "lumineau", name: "Lumineau", href: "#creatures-fiche-lumineau", image: buildMediaPath("creatures", "Lumineau.png"), intro: "Tu es grâce fragile, éclat suspendu, beauté qui reste vive même dans un monde déjà blessé.", traits: { aggression: 0, stealth: 1, grace: 5, endurance: 0, territory: 0, loyalty: 1, mystery: 2, intelligence: 1, verticality: 4, surge: 0, majesty: 2, corruption: 0 } },
-    { slug: "macagardien", name: "Macagardien", href: "#creatures-fiche-macagardien", image: buildMediaPath("creatures", "Macagardien.png"), intro: "Tu observes avant tout. Tu fais partie de ceux qui gardent, testent et jugent sans se jeter dans le bruit immédiatement.", traits: { aggression: 1, stealth: 2, grace: 0, endurance: 2, territory: 4, loyalty: 4, mystery: 1, intelligence: 4, verticality: 3, surge: 1, majesty: 1, corruption: 0 } },
+    { slug: "macagardien", name: "Macagardien", href: "#creatures-fiche-macagardien", image: buildMediaPath("creatures", "Macagardien.png"), intro: "Tu observes avant tout. Tu fais partie de ceux qui gardent, testent et jugent sans se jeter dans le bruit immédiatement.", traits: { aggression: 1, stealth: 3, grace: 0, endurance: 2, territory: 5, loyalty: 4, mystery: 1, intelligence: 5, verticality: 3, surge: 1, majesty: 0, corruption: 0 } },
     { slug: "nogard", name: "Nogard", href: "#creatures-fiche-nogard", image: buildMediaPath("pandorus", "Nogard.jpg"), intro: "Tu es mobile, dérangeant, hostile avec méthode. Tu tiens plus de l'agent du trouble que du simple animal.", traits: { aggression: 3, stealth: 2, grace: 0, endurance: 2, territory: 1, loyalty: 1, mystery: 2, intelligence: 4, verticality: 0, surge: 3, majesty: 0, corruption: 4 } },
     { slug: "nonstiti", name: "Nonstiti", href: "#creatures-fiche-nonstiti", image: buildMediaPath("creatures", "Nonstiti.png"), intro: "Tu es rapide, vif, impossible à fixer longtemps. Tu participes à un regard collectif plus qu'à une domination solitaire.", traits: { aggression: 1, stealth: 2, grace: 0, endurance: 1, territory: 3, loyalty: 5, mystery: 0, intelligence: 3, verticality: 2, surge: 4, majesty: 0, corruption: 0 } },
-    { slug: "parasite", name: "Parasite", href: "#creatures-fiche-parasite", image: buildMediaPath("creatures", "Parasite.png"), intro: "Tu appartiens à ce qui agit de l'intérieur. Tu es inquiétant non par la taille, mais par l'altération que tu promets.", traits: { aggression: 1, stealth: 3, grace: 0, endurance: 1, territory: 0, loyalty: 0, mystery: 4, intelligence: 2, verticality: 0, surge: 1, majesty: 0, corruption: 5 } },
+    { slug: "parasite", name: "Parasite", href: "#creatures-fiche-parasite", image: buildMediaPath("creatures", "Parasite.png"), intro: "Tu appartiens à ce qui agit de l'intérieur. Tu es inquiétant non par la taille, mais par l'altération que tu promets.", traits: { aggression: 0, stealth: 4, grace: 0, endurance: 1, territory: 0, loyalty: 0, mystery: 5, intelligence: 1, verticality: 0, surge: 1, majesty: 0, corruption: 5 } },
     { slug: "poiscaille", name: "Poiscaille", href: "#creatures-fiche-poiscaille", image: buildMediaPath("creatures", "Poiscaille.png"), intro: "Tu frappes vite, par vagues, depuis les bords et les zones humides. Tu es fait pour l'usure et la saturation.", traits: { aggression: 3, stealth: 1, grace: 0, endurance: 1, territory: 2, loyalty: 4, mystery: 0, intelligence: 1, verticality: 0, surge: 5, majesty: 0, corruption: 1 } },
     { slug: "serpensouffre", name: "Serpensouffre", href: "#creatures-fiche-serpensouffre", image: buildMediaPath("creatures", "Serpensouffre.png"), intro: "Tu règnes depuis le haut, dans la frappe verticale et l'impression d'un danger qui tombe du ciel sans prévenir.", traits: { aggression: 4, stealth: 2, grace: 1, endurance: 2, territory: 3, loyalty: 1, mystery: 2, intelligence: 1, verticality: 5, surge: 4, majesty: 1, corruption: 0 } }
   ];

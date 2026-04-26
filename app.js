@@ -1919,6 +1919,7 @@ let ficheUiInitialized = false;
 let creatureFichesInitialized = false;
 let locationFichesInitialized = false;
 let pandorusTestInitialized = false;
+let pandorusTestReturnArmed = false;
 
 const chapters = [
   {
@@ -3508,11 +3509,57 @@ function buildTestTraitSummary(traitScores) {
     .map(([trait]) => activeTest.traitLabels[trait] || trait);
 }
 
+function buildPandorusTestRarityMap(activeTest) {
+  const traitKeys = Object.keys(activeTest.traitLabels);
+  const totals = Object.fromEntries(traitKeys.map((trait) => [trait, 0]));
+
+  activeTest.results.forEach((result) => {
+    traitKeys.forEach((trait) => {
+      totals[trait] += result.traits[trait] || 0;
+    });
+  });
+
+  const meanTotal = Object.values(totals).reduce((sum, value) => sum + value, 0) / Math.max(1, traitKeys.length);
+
+  return Object.fromEntries(
+    traitKeys.map((trait) => [
+      trait,
+      Math.sqrt(meanTotal / Math.max(1, totals[trait]))
+    ])
+  );
+}
+
+function normalizePandorusTraitVector(vector) {
+  const total = vector.reduce((sum, value) => sum + value, 0) || 1;
+  return vector.map((value) => value / total);
+}
+
+function getPandorusVectorMagnitude(vector) {
+  return Math.sqrt(vector.reduce((sum, value) => sum + value * value, 0)) || 1;
+}
+
+function getPandorusTopTraits(traitScores, rarityMap, limit = 4) {
+  return Object.keys(traitScores)
+    .sort((left, right) => {
+      const leftScore = (traitScores[left] || 0) * (rarityMap[left] || 1);
+      const rightScore = (traitScores[right] || 0) * (rarityMap[right] || 1);
+      return rightScore - leftScore;
+    })
+    .slice(0, limit);
+}
+
+function computePandorusProfileSpecificity(profileValues) {
+  const mean = profileValues.reduce((sum, value) => sum + value, 0) / Math.max(1, profileValues.length);
+  const variance = profileValues.reduce((sum, value) => sum + (value - mean) * (value - mean), 0) / Math.max(1, profileValues.length);
+  return Math.sqrt(variance);
+}
+
 function computePandorusTestResult() {
   const activeTest = getActivePandorusTestConfig();
+  const traitKeys = Object.keys(activeTest.traitLabels);
   const traitScores = {};
 
-  Object.keys(activeTest.traitLabels).forEach((trait) => {
+  traitKeys.forEach((trait) => {
     traitScores[trait] = 0;
   });
 
@@ -3526,13 +3573,48 @@ function computePandorusTestResult() {
     });
   });
 
+  const rarityMap = buildPandorusTestRarityMap(activeTest);
+  const playerWeightedVector = traitKeys.map((trait) => (traitScores[trait] || 0) * (rarityMap[trait] || 1));
+  const playerNormalizedVector = normalizePandorusTraitVector(playerWeightedVector);
+  const playerMagnitude = getPandorusVectorMagnitude(playerNormalizedVector);
+  const playerTopTraits = getPandorusTopTraits(traitScores, rarityMap, 5);
+
   const rankedResults = activeTest.results
     .map((result) => {
-      let score = 0;
-
-      Object.entries(result.traits).forEach(([trait, value]) => {
-        score += (traitScores[trait] || 0) * value;
-      });
+      const resultWeightedVector = traitKeys.map((trait) => ((result.traits[trait] || 0) * (rarityMap[trait] || 1)));
+      const resultNormalizedVector = normalizePandorusTraitVector(resultWeightedVector);
+      const resultMagnitude = getPandorusVectorMagnitude(resultNormalizedVector);
+      const dotProduct = resultNormalizedVector.reduce(
+        (sum, value, index) => sum + value * playerNormalizedVector[index],
+        0
+      );
+      const cosineSimilarity = dotProduct / (resultMagnitude * playerMagnitude);
+      const distributionDistance = resultNormalizedVector.reduce(
+        (sum, value, index) => sum + Math.abs(value - playerNormalizedVector[index]),
+        0
+      ) / 2;
+      const resultTopTraits = getPandorusTopTraits(result.traits, rarityMap, 5);
+      const dominantOverlap = playerTopTraits.filter((trait) => resultTopTraits.includes(trait)).length;
+      const exactTopMatch = resultTopTraits[0] === playerTopTraits[0] ? 1 : 0;
+      const exactTopPairMatch = exactTopMatch && resultTopTraits[1] === playerTopTraits[1] ? 1 : 0;
+      const weightedSharedTopTraits = playerTopTraits
+        .slice(0, 3)
+        .reduce((sum, trait, index) => sum + (resultTopTraits.includes(trait) ? 3 - index : 0), 0);
+      const specificity = computePandorusProfileSpecificity(Object.values(result.traits));
+      const mismatchPenalty = traitKeys.reduce((sum, trait, index) => {
+        return sum + Math.max(0, resultNormalizedVector[index] - playerNormalizedVector[index] * 1.2);
+      }, 0);
+      const genericPenalty = Math.max(0, 11 - specificity * 3) * 1.6;
+      const score =
+        cosineSimilarity * 92
+        - distributionDistance * 26
+        + dominantOverlap * 8
+        + exactTopMatch * 12
+        + exactTopPairMatch * 16
+        + weightedSharedTopTraits * 4
+        + specificity * 6
+        - mismatchPenalty * 16
+        - genericPenalty;
 
       return {
         ...result,
@@ -3542,15 +3624,17 @@ function computePandorusTestResult() {
     .sort((left, right) => right.score - left.score);
 
   const topScore = rankedResults[0]?.score || 1;
+  const referenceScore = rankedResults[Math.min(5, rankedResults.length - 1)]?.score ?? rankedResults[rankedResults.length - 1]?.score ?? 0;
+  const spread = Math.max(1, topScore - referenceScore);
   const topThree = rankedResults.slice(0, 3).map((result, index) => ({
     ...result,
     affinity: Math.max(
-      18,
+      52,
       Math.min(
         100,
         index === 0
           ? 100
-          : Math.round((result.score / topScore) * 100)
+          : Math.round(100 - (((topScore - result.score) / spread) * 32))
       )
     )
   }));
@@ -3561,6 +3645,34 @@ function computePandorusTestResult() {
     traitScores,
     dominantTraits: buildTestTraitSummary(traitScores)
   };
+}
+
+function ensurePandorusTestReturnButton() {
+  let button = document.getElementById("test-return-button");
+  if (!button) {
+    button = document.createElement("button");
+    button.id = "test-return-button";
+    button.type = "button";
+    button.className = "test-return-button";
+    button.hidden = true;
+    button.innerHTML = `
+      <span aria-hidden="true">←</span>
+      <span>Retour au test</span>
+    `;
+    button.addEventListener("click", () => {
+      window.location.hash = "#test";
+    });
+    document.body.appendChild(button);
+  }
+
+  return button;
+}
+
+function updatePandorusTestReturnButton() {
+  const button = ensurePandorusTestReturnButton();
+  const currentHash = window.location.hash || "#home";
+  const shouldShow = pandorusTestReturnArmed && currentHash !== "#test" && currentHash !== "#home";
+  button.hidden = !shouldShow;
 }
 
 function updatePandorusTestProgress() {
@@ -3658,11 +3770,18 @@ function renderPandorusTestResult() {
   const winner = result.winner;
   if (!winner) return;
 
+  const winnerAffinity = result.topThree[0]?.affinity || 100;
   const affinities = result.topThree
+    .slice(1, 3)
     .map((entry) => `
-      <article class="overview-card">
+      <article class="overview-card test-affinity-card">
+        <p class="eyebrow">Affinité proche</p>
         <h4>${entry.name}</h4>
-        <p>${entry.affinity}% d'affinité</p>
+        <p class="test-affinity-score">Affinité ${entry.affinity}</p>
+        <p>${entry.intro}</p>
+        <div class="context-links compact">
+          <a class="button tiny secondary context-link" href="${entry.href}" data-test-return="true">Ouvrir la fiche</a>
+        </div>
       </article>
     `)
     .join("");
@@ -3690,23 +3809,25 @@ function renderPandorusTestResult() {
       <div class="test-result-copy">
         <p class="eyebrow">Affinité dominante</p>
         <h3>${winner.name}</h3>
+        <p class="test-affinity-score test-affinity-score-main">Affinité ${winnerAffinity}</p>
         <p class="hero-text">${winner.intro}</p>
         <div class="context-links">
-          <a class="button tiny secondary context-link" href="${winner.href}">Ouvrir la fiche</a>
+          <a class="button tiny secondary context-link" href="${winner.href}" data-test-return="true">Ouvrir la fiche</a>
         </div>
       </div>
     </div>
-    <section class="section">
+    <section class="section test-affinity-section">
       <div class="section-heading">
         <h3>Affinités proches</h3>
       </div>
-      <div class="fiche-list">
+      <div class="fiche-list test-affinity-grid">
         ${affinities}
       </div>
     </section>
   `;
 
   updatePandorusTestProgress();
+  updatePandorusTestReturnButton();
 }
 
 function initPandorusTest() {
@@ -3784,7 +3905,16 @@ function initPandorusTest() {
   });
 
   restartButton?.addEventListener("click", () => {
+    pandorusTestReturnArmed = false;
     renderModeSelector();
+    updatePandorusTestReturnButton();
+  });
+
+  document.addEventListener("click", (event) => {
+    const link = event.target.closest("[data-test-return='true']");
+    if (!link) return;
+    pandorusTestReturnArmed = true;
+    updatePandorusTestReturnButton();
   });
 
   renderModeSelector();
@@ -3807,6 +3937,7 @@ function showSectionFromHash() {
   const isCreatureFicheHash = currentHash.startsWith("#creatures-fiche-");
   const isLocationHash = currentHash === "#lieux" || Boolean(locationHashPanelMap[currentHash]);
 
+  updatePandorusTestReturnButton();
   updateSectionWhisper();
 
   if (
