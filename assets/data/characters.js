@@ -830,6 +830,43 @@
     ]
   },
   {
+    slug: "bouldouger",
+    hash: "#fiches-bouldouger",
+    name: "Bouldouger",
+    image: buildMediaPath("pandorus", "Bouldouger.png"),
+    category: "Force de rupture",
+    intro: "Bouldouger n'entre pas dans le récit comme une simple bête du bestiaire, mais comme une présence d'assaut consciente, liée à la guerre des ruines du Vert.",
+    meta: [
+      { label: "Statut", value: "Adversaire majeur des ruines du Vert" },
+      { label: "Spécialité", value: "Charge, brisure, guerre de percussion" },
+      { label: "Lien majeur", value: "Nogard, Capitaine et parasite" }
+    ],
+    biography: [
+      "Le Capitaine prononce son nom avant même son retour, comme s'il ne décrivait pas une créature quelconque, mais l'une des présences précises qui ont structuré sa captivité. Bouldouger appartient ainsi moins au registre du monstre anonyme qu'à celui des forces identifiées du conflit.",
+      "Quand il reparaît dans les ruines du Vert, sa brutalité vise des cibles claires et agit dans une logique d'assaut. Il ne surgit pas comme un simple prédateur en chasse, mais comme une pièce lourde d'une guerre qui reprend autour du groupe.",
+      "Sa présence aux côtés de Nogard et des autres forces relance brutalement le récit vers un affrontement ouvert. Même lorsqu'il disparaît sous les toiles, le geste ressemble davantage à un retrait orchestré qu'à une défaite animale ordinaire."
+    ],
+    summary: [
+      "Bouldouger marque le passage entre la découverte du Capitaine et la guerre immédiate des ruines du Vert.",
+      "Il agit comme une force nommée et reconnue du conflit, pas comme une simple créature isolée du bestiaire."
+    ],
+    profile: [
+      { title: "Caractère", text: "Massif, frontal, destructeur, mais inscrit dans une logique de guerre plus que dans une simple faim animale." },
+      { title: "Forces", text: "Charge dévastatrice, pression de siège, capacité à rompre les derniers appuis d'un groupe." },
+      { title: "Place dans le récit", text: "Il confirme que l'ennemi des ruines du Vert possède des figures identifiables et organisées." }
+    ],
+    relations: [
+      { title: "Capitaine", text: "Le Capitaine est celui qui donne enfin son nom au groupe au moment où la captivité devient transmission." },
+      { title: "Nogard", text: "Bouldouger revient dans la même offensive que Nogard, comme une autre face de la guerre relancée aux ruines." },
+      { title: "Ruines du Vert", text: "C'est dans ce lieu que sa présence devient concrète et fait basculer le groupe dans un affrontement de grande ampleur." }
+    ],
+    timeline: [
+      { era: "Fin du Jour 12", title: "Nom révélé", summary: "Le Capitaine révèle que Bouldouger fait partie des forces revenues autour des ruines du Vert." },
+      { era: "Nuit du Jour 12", title: "Assaut des ruines", summary: "Bouldouger revient avec Nogard et les forces d'assaut pour écraser le groupe autour du Capitaine." },
+      { era: "Nuit du Jour 12", title: "Retrait sous les toiles", summary: "Au plus fort du combat, il disparaît dans une reprise de toiles et d'araignées, comme s'il était récupéré plutôt que simplement repoussé." }
+    ]
+  },
+  {
     slug: "bichette",
     hash: "#fiches-bichette",
     name: "Bichette",

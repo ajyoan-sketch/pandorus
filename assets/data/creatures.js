@@ -45,29 +45,6 @@
     ]
   },
   {
-    slug: "bouldouger",
-    name: "Bouldouger",
-    image: buildMediaPath("pandorus", "Bouldouger.png"),
-    family: "Force de rupture",
-    status: "Créature clairement présente dans le récit",
-    habitat: "Ruines vidées, zones de guerre ouverte et retours brutaux du dérèglement",
-    summary: "Bouldouger n'entre pas dans le récit comme un simple monstre massif, mais comme une percussion consciente qui revient achever ce que les ruines du Vert avaient commencé à retenir.",
-    biography: [
-      "Le Capitaine le nomme avant même son retour, comme une certitude plus lourde qu'une peur. Quand Bouldouger apparaît, il confirme que certaines forces du dérèglement n'attaquent pas pour se nourrir seulement, mais pour rompre les derniers appuis humains encore debout.",
-      "Sa charge vise Franklin et le groupe avec une brutalité ciblée. Même repoussé, il ne ressemble jamais à une bête perdue : il agit comme un organe d'assaut d'un conflit plus vaste, jusqu'à être finalement repris dans une masse de toiles qui le soustrait plutôt qu'elle ne le vainc."
-    ],
-    profile: [
-      { title: "Nature", text: "Créature d'impact, massive, pensée comme une force de brisure plus que comme un simple prédateur." },
-      { title: "Niveau de menace", text: "Extrême dès qu'un espace se referme ou qu'un groupe doit tenir une position." },
-      { title: "Dans le récit", text: "Bouldouger transforme la découverte du Capitaine en guerre immédiate et confirme un changement d'échelle du danger." }
-    ],
-    timeline: [
-      { era: "Fin du Jour 12", title: "Nom lancé par le Capitaine", summary: "Le Capitaine révèle que Bouldouger fait partie des forces revenues autour des ruines du Vert." },
-      { era: "Nuit du Jour 12", title: "Assaut des ruines", summary: "Bouldouger revient avec Nogard, Felous et Guéplynx pour écraser le groupe autour du Capitaine." },
-      { era: "Nuit du Jour 12", title: "Retrait sous les toiles", summary: "Au plus fort du combat, il disparaît dans une reprise de toiles et d'araignées, comme s'il était récupéré plutôt que vaincu." }
-    ]
-  },
-  {
     slug: "canidaigle",
     name: "Canidaigle",
     image: buildMediaPath("creatures", "Canidaigle.png"),

@@ -318,6 +318,14 @@ export function createPandorusTestData(buildMediaPath) {
       traits: { protect: 3, instinct: 1, insight: 3, memory: 3, resilience: 4, ferocity: 2, balance: 1, loyalty: 3, curiosity: 4, mystery: 1, leadership: 5, freedom: 0, compassion: 1 }
     },
     {
+      slug: "bouldouger",
+      name: "Bouldouger",
+      href: "#fiches-bouldouger",
+      image: buildMediaPath("pandorus", "Bouldouger.png"),
+      intro: "Tu es une force de rupture. Chez toi, tout passe par l'impact, la pression et la capacité à faire sauter les derniers équilibres quand le conflit a déjà commencé.",
+      traits: { protect: 0, instinct: 4, insight: 0, memory: 1, resilience: 5, ferocity: 5, balance: 0, loyalty: 1, curiosity: 0, mystery: 1, leadership: 2, freedom: 2, compassion: 0 }
+    },
+    {
       slug: "harry-py",
       name: "Harry PY",
       href: "#fiches-harry-py",
@@ -651,7 +659,6 @@ export function createPandorusTestData(buildMediaPath) {
   const creatureResults = [
     { slug: "aligaphoque", name: "Aligaphoque", href: "#creatures-fiche-aligaphoque", image: buildMediaPath("creatures", "Aligaphoque.png"), intro: "Tu frappes comme une embuscade lourde venue du fleuve : brutal, soudain, impossible à ignorer.", traits: { aggression: 5, stealth: 2, grace: 0, endurance: 4, territory: 3, loyalty: 2, mystery: 0, intelligence: 1, verticality: 0, surge: 5, majesty: 1, corruption: 0 } },
     { slug: "aligaroi", name: "Aligaroi", href: "#creatures-fiche-aligaroi", image: buildMediaPath("creatures", "Aligaroi.png"), intro: "Tu imposes une souveraineté du milieu. On ne te confond pas avec une simple bête : tu fais loi là où tu apparais.", traits: { aggression: 1, stealth: 0, grace: 0, endurance: 4, territory: 5, loyalty: 0, mystery: 3, intelligence: 3, verticality: 0, surge: 1, majesty: 5, corruption: 0 } },
-    { slug: "bouldouger", name: "Bouldouger", href: "#creatures-fiche-bouldouger", image: buildMediaPath("pandorus", "Bouldouger.png"), intro: "Tu es la rupture pure, la charge qui écrase et change immédiatement l'échelle d'un affrontement.", traits: { aggression: 5, stealth: 0, grace: 0, endurance: 5, territory: 2, loyalty: 1, mystery: 1, intelligence: 1, verticality: 0, surge: 4, majesty: 3, corruption: 2 } },
     { slug: "canidaigle", name: "Canidaigle", href: "#creatures-fiche-canidaigle", image: buildMediaPath("creatures", "Canidaigle.png"), intro: "Tu viens du haut avec noblesse et gravité. Il y a chez toi à la fois l'élan du ciel et quelque chose de funèbre et fidèle.", traits: { aggression: 1, stealth: 1, grace: 4, endurance: 1, territory: 1, loyalty: 4, mystery: 2, intelligence: 1, verticality: 5, surge: 1, majesty: 4, corruption: 0 } },
     { slug: "felou", name: "Félou", href: "#creatures-fiche-felou", image: buildMediaPath("creatures", "Félou.png"), intro: "Tu es nerveux, direct, rapide à agir. Quand tu frappes, tout passe par l'instinct et la tension du moment.", traits: { aggression: 4, stealth: 2, grace: 0, endurance: 2, territory: 2, loyalty: 1, mystery: 0, intelligence: 1, verticality: 0, surge: 4, majesty: 0, corruption: 1 } },
     { slug: "felours", name: "Félours", href: "#creatures-fiche-felours", image: buildMediaPath("creatures", "Felours.png"), intro: "Tu es une masse de percussion. On te reconnaît à la violence de l'impact et à la pression que tu imposes.", traits: { aggression: 5, stealth: 0, grace: 0, endurance: 5, territory: 1, loyalty: 0, mystery: 0, intelligence: 0, verticality: 0, surge: 1, majesty: 1, corruption: 0 } },

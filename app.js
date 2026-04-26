@@ -301,6 +301,7 @@ const characterRouteMap = {
   "elrick-jeune": "#fiches-elrick",
   eben: "#fiches-eben",
   capitaine: "#fiches-capitaine",
+  bouldouger: "#fiches-bouldouger",
   "harry-py": "#fiches-harry-py",
   "pandorus-games-harry-py": "#fiches-harry-py",
   "gardien-isma": "#fiches-gardien-isma",
@@ -343,6 +344,7 @@ const characterPrimaryLocationMap = {
   elrick: "#lieux-bassai",
   eben: "#lieux-vert",
   capitaine: "#lieux-ruines-du-vert",
+  bouldouger: "#lieux-ruines-du-vert",
   "harry-py": "#lieux-fleuve-sylvae",
   "gardien-isma": "#lieux-vrax",
   wingard: "#lieux-vrax",
@@ -452,6 +454,11 @@ const additionalFicheContextMap = {
     { href: "#mysteres", label: "Ouvrir le mystère" },
     { href: "#lieux-ruines-du-vert", label: "Lire les ruines du Vert" }
   ],
+  bouldouger: [
+    { href: "#lieux-ruines-du-vert", label: "Lire les ruines du Vert" },
+    { href: "#chronologie", label: "Voir la guerre des ruines" },
+    { href: "#fiches-capitaine", label: "Relire le Capitaine" }
+  ],
   tsune: [
     { href: "#relations", label: "Voir ses liens" },
     { href: "#lieux-village-renards", label: "Lire le village des Renards" },
@@ -542,10 +549,6 @@ const creatureContextMap = {
   "aligaroi": [
     { href: "#lieux-embouchure-du-sombrail", label: "Lire le Sombrail" },
     { href: "#fiches-abyoubi", label: "Voir Ab'Youbi" }
-  ],
-  "bouldouger": [
-    { href: "#lieux-ruines-du-vert", label: "Lire les ruines du Vert" },
-    { href: "#chronologie", label: "Voir la guerre des ruines" }
   ],
   "canidaigle": [
     { href: "#lieux-vert", label: "Lire le Vert" },
