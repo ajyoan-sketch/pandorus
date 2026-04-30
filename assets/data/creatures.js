@@ -486,6 +486,28 @@
     ]
   },
   {
+    slug: "lion-garouh",
+    name: "Lion-Garouh",
+    image: buildMediaPath("creatures", "Lion-Garouh.png"),
+    family: "Créature sauvage de guerre",
+    status: "Créature présente dans le récit",
+    habitat: "Approches de la Sombra, fronts de rupture et zones de pression",
+    summary: "Le Lion-Garouh n'entre pas comme un simple fauve du bestiaire. Il accompagne Syne dans la Sombra et donne à sa venue une force d'assaut plus directe, plus sauvage et plus organisée.",
+    biography: [
+      "Le Lion-Garouh apparaît dans la Sombra au moment où Syne revient réclamer le parasite. Sa présence prouve que son avancée ne repose pas seulement sur la boîte ou sur une parole de contrôle, mais aussi sur des forces capables d'imposer physiquement une reprise.",
+      "Ce n'est pas un animal isolé lancé au hasard. Dans cette scène, il fait partie d'une arrivée construite, avec Verdeflors et autres présences de pression, comme si Syne avançait déjà avec sa propre ligne d'appui."
+    ],
+    profile: [
+      { title: "Nature", text: "Créature féline de guerre, plus sauvage que cérémonielle, faite pour la pression et l'irruption." },
+      { title: "Niveau de menace", text: "Très élevé lorsqu'il agit au service d'une volonté plus structurée." },
+      { title: "Rôle narratif", text: "Renforcer l'idée que l'arrivée de Syne dans la Sombra n'est pas seulement symbolique, mais déjà soutenue par une force offensive." }
+    ],
+    timeline: [
+      { era: "Jour 14", title: "Arrivée dans la Sombra", summary: "Le Lion-Garouh accompagne l'irruption de Syne dans la Sombra, au moment où le parasite réagit et où la lecture de Bichette est interrompue." },
+      { era: "Jour 14", title: "Force d'appui de Syne", summary: "Sa présence confirme que Syne avance avec des créatures capables de soutenir une reprise plus brutale du contrôle." }
+    ]
+  },
+  {
     slug: "poiscaille",
     name: "Poiscaille",
     image: buildMediaPath("creatures", "Poiscaille.png"),

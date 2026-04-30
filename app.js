@@ -587,6 +587,11 @@ const creatureContextMap = {
     { href: "#lieux-sombra", label: "Voir la Sombra" },
     { href: "#chronologie", label: "Lire la route de l'ouest" }
   ],
+  "lion-garouh": [
+    { href: "#fiches-syne", label: "Voir Syne" },
+    { href: "#lieux-sombra", label: "Voir la Sombra" },
+    { href: "#chronologie", label: "Voir l'irruption de Syne" }
+  ],
   "luminael": [
     { href: "#lieux-passage", label: "Relire Le Passage" },
     { href: "#cartes", label: "Voir les cartes" }
