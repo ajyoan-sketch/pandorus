@@ -20,6 +20,11 @@
     summary: "Le mal est brise sans être totalement detruit, les frontieres sont effacees et un monde reunifie emerge sous un ciel marque par les etoiles."
   },
   {
+    era: "Ancien temps",
+    title: "La nuit brisee tient encore par la lumière lunaire",
+    summary: "Après la guerre ancienne, le ciel et la nuit ne se maintiennent plus seuls. Une continuité plus fragile demeure autour de Bichette et de Zaïnob."
+  },
+  {
     era: "Avant le récit",
     title: "Enfance de Shan",
     summary: "Shan grandit dans un apprentissage brutal de la survie et du combat, forme par ses parents chasseurs."
@@ -68,6 +73,16 @@
     era: "Il y a 3 ans",
     title: "Formation des protecteurs du Vrax",
     summary: "Harry PY, Gardien Isma, Wingard et Lévy deviennent une generation de réponse du Vrax chargee de protèger son equilibre et ses gardiennes."
+  },
+  {
+    era: "Il y a 10 ans",
+    title: "Naissance de Luna Queen",
+    summary: "Dans la continuité lunaire tenue autour de Bichette et de Zaïnob, Luna Queen naît dix ans avant l'éveil de Shaushana."
+  },
+  {
+    era: "Il y a 7 ans",
+    title: "Naissance de Méli Mélo",
+    summary: "Sept ans avant l'éveil de Shaushana, Méli Mélo apparaît à son tour, plus mobile et plus rythmée dans cette même continuité."
   },
   {
     era: "Jour 1",
@@ -378,5 +393,35 @@
     era: "Jour 14",
     title: "Entrée dans la Sombra et rencontre des gardiennes",
     summary: "Le groupe gagne enfin la Sombra, croise Luna Queen et Méli Mélo, puis atteint l'approche immédiate de Bichette, nouvelle lecture vivante du déséquilibre."
+  },
+  {
+    era: "Jour 14",
+    title: "Bichette lit le groupe",
+    summary: "Dans la Sombra, Bichette lit chaque présence sans la réduire, reconnaît chez Franklin une continuité nette et sent chez Ezze une vibration qui transforme ce qu'il reçoit."
+  },
+  {
+    era: "Jour 14",
+    title: "Shaushana demeure hors de lecture ordinaire",
+    summary: "Lorsque Bichette approche Shaushana, une limite se pose d'elle-même : ce qu'elle est ne passe pas par cette lecture, non par vide, mais par autre nature."
+  },
+  {
+    era: "Jour 14",
+    title: "Bichette nomme les dérèglements",
+    summary: "Bichette explique que ce qui gagne le monde n'est pas une simple destruction, mais un dérèglement du vivant appelé à s'étendre s'il n'est pas contenu."
+  },
+  {
+    era: "Jour 14",
+    title: "Lien révélé entre Ab'Youbi et Zaïnob",
+    summary: "Au cœur de la lecture, Bichette dévoile qu'entre Ab'Youbi et Zaïnob existe un lien du sang, celui d'un père et de sa fille."
+  },
+  {
+    era: "Jour 14",
+    title: "Arrivée de Syne dans la Sombra",
+    summary: "Syne rejoint le groupe avec sa boîte, dit avoir suivi leur trajectoire et réclame désormais le parasite comme s'il lui appartenait."
+  },
+  {
+    era: "Jour 14",
+    title: "Papillons altérés et flammes éteintes",
+    summary: "Quand les papillons se dérèglent et s'embrasent anormalement, Ab'Youbi ouvre plus profondément son regard rouge et fait tomber leur feu d'un seul geste."
   }
 ];

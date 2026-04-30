@@ -274,17 +274,17 @@ const livingMapRegions = [
   {
     slug: "sombra",
     name: "Sombra",
-    kicker: "Direction de l'ouest",
-    mood: "Veille blanche, lecture, créatrices en retrait",
-    text: "La Sombra n'est pas encore atteinte, mais elle devient une direction majeure du récit : le lieu où Bichette, Reine du Blanc, ainsi que Luna Queen et Méli Mélo pourraient offrir une lecture plus fine du dérèglement qui revient.",
+    kicker: "Seuil occidental",
+    mood: "Veille blanche, lecture, affrontement de seuil",
+    text: "La Sombra n'est plus une simple direction. Le groupe l'atteint enfin, y rencontre Bichette, Zaïnob, Luna Queen et Méli Mélo, puis y voit Syne venir réclamer le parasite au cœur même d'une lecture du dérèglement.",
     paths: [
       {
         title: "Fonction",
-        text: "Ouvrir la prochaine grande étape stratégique au-delà du Vert et du Sombrail."
+        text: "Faire passer la quête d'une simple orientation à une lecture vécue, immédiatement menacée par le retour de Syne."
       },
       {
         title: "Présences liées",
-        text: "Bichette, Luna Queen, Méli Mélo, Brad, Bradlette, la Communauté des Papillons."
+        text: "Bichette, Zaïnob, Luna Queen, Méli Mélo, Syne, Ab'Youbi et la Communauté des Papillons."
       }
     ]
   }
@@ -330,6 +330,8 @@ const characterRouteMap = {
   "papy-perquis": "#fiches-papy-perquis",
   "padre-souf": "#fiches-padre-souf",
   bichette: "#fiches-bichette",
+  zainob: "#fiches-zainob",
+  "zaïnob": "#fiches-zainob",
   "luna-queen": "#fiches-luna-queen",
   "meli-melo": "#fiches-meli-melo",
   "méli-mélo": "#fiches-meli-melo"
@@ -363,13 +365,15 @@ const characterPrimaryLocationMap = {
   "brad-et-bradlette": "#lieux-taverne-du-sombrail",
   brad: "#lieux-taverne-du-sombrail",
   bradlette: "#lieux-taverne-du-sombrail",
-  abyoubi: "#lieux-taverne-du-sombrail",
-  "ab-youbi": "#lieux-taverne-du-sombrail",
-  syne: "#lieux-taverne-du-sombrail",
+  abyoubi: "#lieux-sombra",
+  "ab-youbi": "#lieux-sombra",
+  syne: "#lieux-sombra",
   "mitra-sesse": "#lieux-taverne-du-sombrail",
   "papy-perquis": "#lieux-taverne-du-sombrail",
   "padre-souf": "#lieux-taverne-du-sombrail",
   bichette: "#lieux-sombra",
+  zainob: "#lieux-sombra",
+  "zaïnob": "#lieux-sombra",
   "luna-queen": "#lieux-sombra",
   "meli-melo": "#lieux-sombra",
   "méli-mélo": "#lieux-sombra",
@@ -501,12 +505,12 @@ const additionalFicheContextMap = {
   ],
   abyoubi: [
     { href: "#relations", label: "Voir ses liens" },
-    { href: "#lieux-vert", label: "Voir son passage dans le Vert" },
+    { href: "#lieux-sombra", label: "Lire la Sombra" },
     { href: "#mysteres", label: "Ouvrir les mystères" }
   ],
   syne: [
     { href: "#relations", label: "Voir ses liens" },
-    { href: "#lieux-taverne-du-sombrail", label: "Lire la taverne" },
+    { href: "#lieux-sombra", label: "Voir la Sombra" },
     { href: "#mysteres", label: "Lire le mystère de la boîte" }
   ],
   "mitra-sesse": [
@@ -527,6 +531,11 @@ const additionalFicheContextMap = {
   bichette: [
     { href: "#lieux-sombra", label: "Voir la Sombra" },
     { href: "#mysteres", label: "Lire la nouvelle direction" },
+    { href: "#relations", label: "Voir ses liens" }
+  ],
+  zainob: [
+    { href: "#lieux-sombra", label: "Voir la Sombra" },
+    { href: "#chronologie", label: "Suivre sa continuité" },
     { href: "#relations", label: "Voir ses liens" }
   ],
   "luna-queen": [
@@ -878,7 +887,8 @@ const relationNodes = [
       { target: "Ossah Lyla", type: "Reconnaissance", description: "Au coeur du Vrax, Ossah Lyla lit chez Shaushana une présence déjà reliee aux papillons, au vivant et a une ancienne nécessité du monde." },
       { target: "Nastaz", type: "Lecture lucide", description: "Nastaz ne la traite pas comme une simple intruse: elle voit en Shaushana une figure impliquee dans ce qui vient, et non un danger ordinaire." },
       { target: "Tsune", type: "Alliance nouvelle", description: "Au village des renards, Tsune reconnait en Shaushana un point d'equilibre fiable et rejoint naturellement la direction qu'elle contribue a tenir." },
-      { target: "Kuji", type: "Opposition idéologique", description: "Face a Kuji, Shaushana perçoit une volonté qui ne veut pas seulement corrompre le vivant, mais le remplacer par un ordre controle." }
+      { target: "Kuji", type: "Opposition idéologique", description: "Face a Kuji, Shaushana perçoit une volonté qui ne veut pas seulement corrompre le vivant, mais le remplacer par un ordre controle." },
+      { target: "Bichette", type: "Lecture impossible", description: "Dans la Sombra, Bichette reconnait qu'elle ne peut pas lire Shaushana comme les autres et comprend que sa nature passe par un autre seuil." }
     ]
   },
   {
@@ -911,7 +921,8 @@ const relationNodes = [
       { target: "Ossah Lyla", type: "Révélation", description: "Ossah Lyla confirme que Franklin porte la trace d'une ancienne lignee du Vrax et qu'il n'est pas la par accident." },
       { target: "Nastaz", type: "Mise en garde", description: "Nastaz comprend que son lien peut l'aider autant que le destabiliser si Franklin avance sans saisir ce que le Vrax réveille en lui." },
       { target: "Tsune", type: "Convergence", description: "Au village des renards, Franklin comprend avec Tsune que leur réponse ne peut plus rester locale ou séparée." },
-      { target: "Kuji", type: "Menace consciente", description: "Kuji fait comprendre a Franklin que ce qu'ils affrontent n'est plus un dérèglement aveugle, mais une volonté organisee." }
+      { target: "Kuji", type: "Menace consciente", description: "Kuji fait comprendre a Franklin que ce qu'ils affrontent n'est plus un dérèglement aveugle, mais une volonté organisee." },
+      { target: "Bichette", type: "Lecture de continuité", description: "Dans la Sombra, Bichette sent chez Franklin une ligne droite, presque continue, qui confirme qu'il porte quelque chose d'essentiel sans en faire un chef." }
     ]
   },
   {
@@ -1123,7 +1134,8 @@ const relationNodes = [
       { target: "Syne", type: "Reconnaissance", description: "Il reconnaît la force contenue autour de Syne sans chercher à la provoquer." },
       { target: "Communauté des Papillons", type: "Lecture des traces", description: "Il perçoit ce que le groupe porte, ce qui le suit et ce qui se désaligne autour de lui." },
       { target: "Aligaroi", type: "Autorité reconnue", description: "Au bord du Sombrail, Ab'Youbi fait céder l'Aligaroi sans combat, comme si une ancienneté commune se reconnaissait entre eux." },
-      { target: "Bichette", type: "Route rouverte", description: "Près de la tombe du Capitaine, Ab'Youbi rouvre explicitement la direction de Bichette et de la Sombra." }
+      { target: "Bichette", type: "Route rouverte", description: "Près de la tombe du Capitaine, Ab'Youbi rouvre explicitement la direction de Bichette et de la Sombra." },
+      { target: "Zaïnob", type: "Lien du sang", description: "Dans la Sombra, Bichette révèle qu'Ab'Youbi et Zaïnob sont liés comme un père et sa fille." }
     ]
   },
   {
@@ -1132,7 +1144,9 @@ const relationNodes = [
     links: [
       { target: "Ab'Youbi", type: "Respect de seuil", description: "Ab'Youbi comprend que la présence retenue par Syne appartient à une limite qu'il faut reconnaître." },
       { target: "Brad et Bradlette", type: "Présence acceptée", description: "La taverne adapte son rythme à Syne sans avoir besoin de la nommer." },
-      { target: "Taverne du Sombrail", type: "Mystère central", description: "Syne transforme la taverne en lieu d'attente, de retenue et de menace contenue." }
+      { target: "Taverne du Sombrail", type: "Mystère central", description: "Syne transforme la taverne en lieu d'attente, de retenue et de menace contenue." },
+      { target: "Shaushana", type: "Parasite revendiqué", description: "Dans la Sombra, Syne revient pour reprendre le parasite que Shaushana porte désormais." },
+      { target: "Bichette", type: "Opposition de seuil", description: "Syne considère Bichette comme une présence capable de gêner des plans plus vastes et accepte une confrontation plus frontale." }
     ]
   },
   {
@@ -1167,8 +1181,21 @@ const relationNodes = [
     role: "Reine du Blanc",
     links: [
       { target: "Sombra", type: "Ancrage", description: "Bichette n'est plus seulement promise à la Sombra : le groupe en atteint désormais réellement le seuil." },
+      { target: "Zaïnob", type: "Continuité lunaire", description: "Après la guerre ancienne, Bichette reconnaît en Zaïnob le passage vivant par lequel la lumière lunaire continue de tenir." },
       { target: "Luna Queen", type: "Gardienne liée", description: "Luna Queen fait partie des figures concrètement rencontrées qui prolongent ou accompagnent son équilibre." },
-      { target: "Méli Mélo", type: "Gardienne liée", description: "Méli Mélo complète autour d'elle une forme de veille plus fine que la seule force." }
+      { target: "Méli Mélo", type: "Gardienne liée", description: "Méli Mélo complète autour d'elle une forme de veille plus fine que la seule force." },
+      { target: "Shaushana", type: "Limite reconnue", description: "Face à Shaushana, Bichette rencontre une limite réelle de sa lecture et comprend qu'elle n'est pas simplement illisible, mais autre." },
+      { target: "Syne", type: "Seuil menacé", description: "Lorsque Syne arrive pour reprendre le parasite, Bichette devient l'un des pôles qui empêchent encore la scène de céder entièrement." }
+    ]
+  },
+  {
+    name: "Zaïnob",
+    role: "Gardienne lunaire de la Sombra",
+    links: [
+      { target: "Bichette", type: "Continuité tenue", description: "Bichette reconnaît en Zaïnob le passage vivant qui permet encore à la lumière lunaire de traverser la nuit brisée." },
+      { target: "Luna Queen", type: "Naissance tenue", description: "Luna Queen naît dans la continuité que Zaïnob maintient sans la forcer." },
+      { target: "Méli Mélo", type: "Naissance tenue", description: "Méli Mélo naît à son tour dans cette même continuité, mais selon une modalité plus vive et plus mobile." },
+      { target: "Ab'Youbi", type: "Lien du sang", description: "Bichette révèle au groupe que Zaïnob et Ab'Youbi sont liés comme une fille et son père." }
     ]
   },
   {
@@ -1176,6 +1203,7 @@ const relationNodes = [
     role: "Gardienne de la Sombra",
     links: [
       { target: "Bichette", type: "Veille partagée", description: "Luna Queen est désormais rencontrée comme l'une des gardiennes liées à Bichette dans la Sombra." },
+      { target: "Zaïnob", type: "Continuité de naissance", description: "Sa naissance s'enracine dans la continuité lunaire que Zaïnob maintient." },
       { target: "Méli Mélo", type: "Complément", description: "Avec Méli Mélo, elle forme une présence secondaire mais stratégique autour de la Reine du Blanc." },
       { target: "Sombra", type: "Territoire", description: "Sa présence appartient aux terres de l'ouest que le groupe traverse enfin après le Vert." }
     ]
@@ -1185,6 +1213,7 @@ const relationNodes = [
     role: "Gardienne de la Sombra",
     links: [
       { target: "Bichette", type: "Veille partagée", description: "Méli Mélo est désormais rencontrée comme une gardienne liée à Bichette et à la lecture de la Sombra." },
+      { target: "Zaïnob", type: "Continuité de naissance", description: "Zaïnob maintient la continuité plus ancienne dans laquelle Méli Mélo apparaît à son tour." },
       { target: "Luna Queen", type: "Complément", description: "Elle prolonge avec Luna Queen une même ligne de présence autour de l'ouest." },
       { target: "Sombra", type: "Territoire", description: "Sa place se lit maintenant dans une Sombra réellement atteinte par le groupe." }
     ]
@@ -1236,7 +1265,15 @@ function buildLoreLinkEntries() {
     ["Lévy", "#fiches-levy"],
     ["Levy", "#fiches-levy"],
     ["Ossah Lyla", "#fiches-ossah-lyla"],
-    ["Nastaz", "#fiches-nastaz"]
+    ["Nastaz", "#fiches-nastaz"],
+    ["Bichette", "#fiches-bichette"],
+    ["Zaïnob", "#fiches-zainob"],
+    ["Zainob", "#fiches-zainob"],
+    ["Luna Queen", "#fiches-luna-queen"],
+    ["Méli Mélo", "#fiches-meli-melo"],
+    ["Meli Melo", "#fiches-meli-melo"],
+    ["Ab'Youbi", "#fiches-abyoubi"],
+    ["Syne", "#fiches-syne"]
   ].forEach(([label, href]) => rawEntries.push({ label, href }));
 
   creatureFiches.forEach((fiche) => {
@@ -2039,6 +2076,16 @@ const chapters = [
     path: "./media/chapitres/Chapitre%2023%20-%20La%20Sombra.pdf",
     summary: "Après la sépulture du Capitaine, Ab'Youbi renvoie le groupe vers la Sombra, où KingKoala, Will le Tigre Bois, Luna Queen et Méli Mélo ouvrent enfin l'approche de Bichette.",
     accessKey: "ChapPando23"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2024%20-%20Bichette%20et%20les%20Gardiennes.pdf",
+    summary: "Le passé de la Sombra s'éclaire : après la guerre ancienne, Bichette et Zaïnob tiennent la continuité lunaire du monde, d'où naissent Luna Queen puis Méli Mélo.",
+    accessKey: "ChapPando24"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2025%20-%20Nouvelles.pdf",
+    summary: "Dans la Sombra, Bichette lit enfin le groupe, révèle le lien du sang entre Ab'Youbi et Zaïnob, bute sur le mystère de Shaushana, puis Syne surgit pour reprendre le parasite.",
+    accessKey: "ChapPando25"
   }
 ];
 
@@ -2685,6 +2732,7 @@ function renderTimeline() {
     if (normalizedEventText.includes("BRAD")) contextCandidates.push({ href: "#fiches-brad-et-bradlette", label: "Voir Brad et Bradlette" });
     if (normalizedEventText.includes("AB'YOUBI") || normalizedEventText.includes("ABYOUBI")) contextCandidates.push({ href: "#fiches-abyoubi", label: "Voir Ab'Youbi" });
     if (normalizedEventText.includes("SYNE")) contextCandidates.push({ href: "#fiches-syne", label: "Voir Syne" });
+    if (normalizedEventText.includes("ZAINOB")) contextCandidates.push({ href: "#fiches-zainob", label: "Voir Zaïnob" });
     if (normalizedEventText.includes("MITRA")) contextCandidates.push({ href: "#fiches-mitra-sesse", label: "Voir Mitra Séssé" });
     if (normalizedEventText.includes("PERQUIS")) contextCandidates.push({ href: "#fiches-papy-perquis", label: "Voir Papy Perquis" });
     if (normalizedEventText.includes("SOUF")) contextCandidates.push({ href: "#fiches-padre-souf", label: "Voir Padre Souf" });

@@ -442,7 +442,8 @@
       "Ezze part jeune, non par fuite, mais parce que l'immobilité lui donne l'impression de perdre quelque chose. Son rapport au monde passe par le mouvement: avancer, observer, éviter, réagir avant que les autres n'aient fini de comprendre.",
       "Au fil de ses routes, il perçoit des zones où le monde ne répond plus correctement. Il ne sait pas encore nommer le déséquilibre, mais il le lit dans les silences, les sols fragiles et les variations invisibles.",
       "Sa rencontre avec Gil et Filston l'oblige à ralentir intérieurement. Leur manière de voir Pandorus comme un monde qui n'est peut-être pas fermé ouvre en lui une question plus vaste que sa propre course.",
-      "À la taverne du Sombrail, Ezze retrouve Gil et Filston, puis aperçoit la Communauté des Papillons. Pour une fois, il ne passe pas: il reste, comme si toutes les trajectoires qu'il avait suivies convergeaient enfin."
+      "À la taverne du Sombrail, Ezze retrouve Gil et Filston, puis aperçoit la Communauté des Papillons. Pour une fois, il ne passe pas: il reste, comme si toutes les trajectoires qu'il avait suivies convergeaient enfin.",
+      "Dans la Sombra, Bichette le lit comme une présence qui ne garde pas ce qu'elle reçoit intact, mais le fait vibrer autrement. Cette reconnaissance confirme qu'Ezze n'est pas seulement rapide: il transforme déjà ce que le monde lui confie."
     ],
     summary: [
       "Ezze incarne la vitesse, l'intuition et la lecture instinctive d'un monde qui se dérègle.",
@@ -466,7 +467,8 @@
       { era: "Jour 11", title: "Guide du fleuve", summary: "Sur les berges du Sombrail, Ezze lit le terrain, choisit les appuis et devient naturellement celui qui ouvre le passage." },
       { era: "Nuit du Jour 11", title: "Pause sans fuite", summary: "Au camp, pour la première fois, Ezze ne cherche pas seulement à repartir : il reste avec le groupe et commence à accepter d'en faire réellement partie." },
       { era: "Jour 12", title: "Entrée dans la forêt vivante", summary: "Le lendemain, Ezze guide encore le groupe jusqu'au Vert, évite les attaques, protège Filston et assiste au face-à-face avec Eben sans chercher à reprendre le contrôle." },
-      { era: "Jour 12", title: "Vers le Capitaine", summary: "Après le duel entre Shan et Eben, Ezze poursuit la marche avec les autres jusqu'aux ruines où la rumeur sur le Capitaine devient enfin une preuve." }
+      { era: "Jour 12", title: "Vers le Capitaine", summary: "Après le duel entre Shan et Eben, Ezze poursuit la marche avec les autres jusqu'aux ruines où la rumeur sur le Capitaine devient enfin une preuve." },
+      { era: "Jour 14", title: "Lecture par Bichette", summary: "Dans la Sombra, Bichette sent chez Ezze une présence mobile qui fait vibrer autrement ce qu'elle reçoit du monde." }
     ]
   },
   {
@@ -485,7 +487,8 @@
       "Gil parle beaucoup, mais pas pour occuper le silence: ses mots cherchent à vérifier la réalité même de ce qu'il voit. Il affirme venir d'un endroit où Pandorus n'existe pas, ce qui déstabilise Ezze plus profondément qu'une provocation ordinaire.",
       "Filston observe avec une curiosité directe, presque pure. Ses questions touchent des points que les autres évitent, notamment cette impression que le monde va parfois trop vite, trop lentement, ou qu'il décale sans prévenir.",
       "Avec Ezze, ils traversent une zone instable où le sol se vide sous les pas de Filston. Ezze le sauve par instinct, et leur lien se fixe dans cette expérience du danger.",
-      "À la taverne du Sombrail, leurs routes rejoignent celle d'Ezze et croisent la Communauté des Papillons, comme si leur regard extérieur devait entrer dans le même réseau d'événements."
+      "À la taverne du Sombrail, leurs routes rejoignent celle d'Ezze et croisent la Communauté des Papillons, comme si leur regard extérieur devait entrer dans le même réseau d'événements.",
+      "Dans la Sombra, ils restent moins au centre de l'affrontement que d'autres, mais ils deviennent des témoins précieux d'une scène que même leurs questions les plus audacieuses n'avaient pas vraiment préparés à voir."
     ],
     summary: [
       "Gil et Filston ouvrent une autre lecture de Pandorus: celle d'un monde peut-être relié à d'autres réalités.",
@@ -509,7 +512,8 @@
       { era: "Jour 11", title: "Traversée avec le groupe", summary: "Sur la route du Sombrail, Gil observe tout comme un système à comprendre, tandis que Filston reste traversé d'émerveillement malgré le danger." },
       { era: "Nuit du Jour 11", title: "Après les attaques", summary: "La nuit venue, Gil veille sur Filston et tous deux commencent à mesurer que ce qu'ils observent n'est plus un simple décalage de réalité, mais une crise du vivant." },
       { era: "Jour 12", title: "Témoins du duel", summary: "Dans le Vert, ils assistent à l'attaque des Serpensouffres, à l'apparition d'Eben et au combat de Shan, en comprenant que certaines vérités ne s'expliquent qu'en étant traversées." },
-      { era: "Jour 12", title: "Preuve finale du chapitre", summary: "Ils suivent le groupe jusqu'aux ruines et voient la rumeur prendre corps avec la découverte du Capitaine captif." }
+      { era: "Jour 12", title: "Preuve finale du chapitre", summary: "Ils suivent le groupe jusqu'aux ruines et voient la rumeur prendre corps avec la découverte du Capitaine captif." },
+      { era: "Jour 14", title: "Témoins de la Sombra", summary: "Dans la Sombra, Gil et Filston assistent à une lecture du monde qui déplace encore leur compréhension des frontières du réel." }
     ]
   },
   {
@@ -567,11 +571,13 @@
       "Dans l'ombre de la taverne, Ab'Youbi observe moins les corps que ce qui les entoure. Ses yeux rouges semblent lire les variations, les traces et les désalignements laissés par ce que le groupe a traversé.",
       "Il reconnaît silencieusement la gravité de la Communauté des Papillons, puis valide la mémoire ouverte par Brad comme une réalité encore active plutôt qu'un simple récit.",
       "Face à Syne et à la boîte, son attitude change à peine, mais cette retenue suffit: il sait que certaines forces ne doivent pas être provoquées pour être comprises.",
-      "Plus tard, il suit la route du Vert à distance, fait plier l'Aligaroi, puis réapparaît près de la tombe du Capitaine. Sa parole relance alors la marche vers la Sombra, comme s'il veillait non sur un lieu fixe, mais sur les seuils que le groupe doit traverser."
+      "Plus tard, il suit la route du Vert à distance, fait plier l'Aligaroi, puis réapparaît près de la tombe du Capitaine. Sa parole relance alors la marche vers la Sombra, comme s'il veillait non sur un lieu fixe, mais sur les seuils que le groupe doit traverser.",
+      "Dans la Sombra, sa retenue prend une autre densité encore. Bichette lit entre lui et Zaïnob un lien du sang que personne n'avait nommé jusque-là, révélant que sa veille n'était pas seulement celle d'un passage: elle touchait déjà sa propre lignée."
     ],
     summary: [
       "Ab'Youbi apporte à la taverne une veille plus obscure, plus ancienne et plus perceptive.",
-      "Il confirme que ce qui revient n'a jamais vraiment disparu, mais s'est transformé, dispersé et déjà positionné sur d'autres seuils du monde."
+      "Il confirme que ce qui revient n'a jamais vraiment disparu, mais s'est transformé, dispersé et déjà positionné sur d'autres seuils du monde.",
+      "La rencontre de la Sombra révèle aussi qu'il n'est pas extérieur à ce qu'il veille: Zaïnob est sa fille."
     ],
     profile: [
       { title: "Caractère", text: "Silencieux, profond, extrêmement attentif, sans besoin de démonstration." },
@@ -582,7 +588,8 @@
       { title: "Brad et Bradlette", text: "Ils maintiennent avec lui une veille tacite sur l'équilibre de la taverne." },
       { title: "Syne", text: "Il reconnaît le danger contenu autour d'elle sans chercher à l'affronter." },
       { title: "Communauté des Papillons", text: "Il lit dans le groupe une trace plus vaste que leur simple présence physique." },
-      { title: "Bichette", text: "Près de la tombe du Capitaine, il rouvre clairement la route de Bichette comme prochaine lecture nécessaire du monde." }
+      { title: "Bichette", text: "Près de la tombe du Capitaine, il rouvre clairement la route de Bichette comme prochaine lecture nécessaire du monde." },
+      { title: "Zaïnob", text: "Dans la Sombra, Bichette révèle entre eux un lien du sang : Zaïnob est sa fille." }
     ],
     timeline: [
       { era: "Jour 10", title: "Veille dans l'ombre", summary: "Ab'Youbi reconnaît ce que le groupe porte avant même que les mots ne soient posés." },
@@ -594,7 +601,9 @@
       { era: "Jour 12", title: "Présence dans le territoire ancien", summary: "Le lendemain, il entre dans le Vert comme dans un lieu déjà connu et observe sans intervenir l'approche d'Eben et le duel de Shan." },
       { era: "Jour 12", title: "Parole d'équilibre", summary: "Quand Shan veut prolonger la violence, Ab'Youbi l'arrête et rappelle qu'Eben n'était pas la cause première du drame ancien." },
       { era: "Jour 13", title: "Présence à la tombe", summary: "Après la mort du Capitaine, Ab'Youbi vient près de la sépulture et replace la perte dans une lecture plus vaste du monde en cours de déplacement." },
-      { era: "Jour 13", title: "Route rouverte vers la Sombra", summary: "Il pousse le groupe à reprendre la route de la Sombra et de Bichette, comme si la prochaine réponse devait désormais se lire à l'ouest." }
+      { era: "Jour 13", title: "Route rouverte vers la Sombra", summary: "Il pousse le groupe à reprendre la route de la Sombra et de Bichette, comme si la prochaine réponse devait désormais se lire à l'ouest." },
+      { era: "Jour 14", title: "Retrouvailles dans la Sombra", summary: "Face à Bichette et aux gardiennes, Ab'Youbi laisse apparaître un lien plus intime avec l'ouest lorsque Zaïnob est reconnue comme sa fille." },
+      { era: "Jour 14", title: "Extinction des flammes", summary: "Quand Syne surgit et que les papillons s'altèrent, Ab'Youbi ouvre plus profondément son regard rouge et fait tomber d'un seul geste les flammes anormales." }
     ]
   },
   {
@@ -603,7 +612,7 @@
     name: "Syne",
     image: buildMediaPath("pandorus", "Syne.jpg"),
     category: "Gardienne de la boîte",
-    intro: "Syne est la femme blonde de la taverne, calme et presque hors du lieu, gardant une boîte dont la présence retenue commence à s'éveiller.",
+    intro: "Syne n'est plus seulement la femme blonde de la taverne : elle suit désormais le groupe jusqu'à la Sombra, gardant sa boîte et revendiquant ouvertement le parasite.",
     meta: [
       { label: "Statut", value: "Présence énigmatique de la taverne" },
       { label: "Spécialité", value: "Contrôle, retenue, seuil du visible" },
@@ -612,11 +621,12 @@
     biography: [
       "Syne reste assise au fond de la taverne, droite, immobile, entourée d'un espace que les autres évitent sans avoir besoin d'en parler. Sa présence ne cherche pas à dominer, mais elle déplace l'équilibre du lieu.",
       "Devant elle repose une boîte fermée, silencieuse, trop importante pour être un simple objet. Lorsqu'un frottement se fait entendre à l'intérieur, toute la taverne comprend que ce qu'elle garde n'est pas inerte.",
-      "Syne ne menace personne. Elle affirme seulement qu'il n'y a rien à craindre tant que personne ne cherche à voir ce qui n'est pas encore destiné à être vu, imposant une limite calme et absolue."
+      "Syne ne menace personne. Elle affirme seulement qu'il n'y a rien à craindre tant que personne ne cherche pas à voir ce qui n'est pas encore destiné à être vu, imposant une limite calme et absolue.",
+      "Lorsqu'elle réapparaît dans la Sombra, son calme change de nature. Elle dit avoir suivi la trajectoire du groupe, réclame le parasite comme s'il lui appartenait, et vient accompagnée de Verdeflors et de Lions-Garouh pour reprendre ce qui, selon elle, doit rester dans l'ombre."
     ],
     summary: [
       "Syne introduit un mystère nouveau: une présence contenue, retenue au seuil de l'existence visible.",
-      "Elle n'est pas encore une adversaire ni une alliée claire, mais elle devient immédiatement impossible à ignorer."
+      "Elle n'est plus une simple énigme de taverne: dans la Sombra, elle assume une logique de contrôle, de récupération et d'effacement des anomalies."
     ],
     profile: [
       { title: "Caractère", text: "Calme, stable, presque détachée, avec une maîtrise froide du moment." },
@@ -626,13 +636,17 @@
     relations: [
       { title: "Ab'Youbi", text: "Il reconnaît autour d'elle une force ou une limite qui ne doit pas être forcée." },
       { title: "Brad et Bradlette", text: "Ils adaptent toute la taverne à sa présence sans jamais la nommer directement." },
-      { title: "Communauté des Papillons", text: "Son existence ajoute à leur route un mystère qui dépasse leur objectif immédiat." }
+      { title: "Communauté des Papillons", text: "Son existence ajoute à leur route un mystère qui dépasse leur objectif immédiat." },
+      { title: "Shaushana", text: "Dans la Sombra, Syne veut reprendre le parasite que Shaushana porte et considère sa présence comme une anomalie dangereuse." },
+      { title: "Bichette", text: "Syne identifie Bichette comme une présence capable de contrarier des plans plus vastes et choisit l'affrontement de seuil." }
     ],
     timeline: [
       { era: "Jour 10", title: "Présence au fond de la taverne", summary: "Syne apparaît comme une figure silencieuse gardant une boîte fermée." },
       { era: "Jour 10", title: "Premier frémissement", summary: "Un mouvement étouffé se fait entendre dans la boîte, révélant que ce qu'elle contient n'est pas inerte." },
       { era: "Jour 10", title: "Limite posée", summary: "Syne rappelle que certaines choses ne doivent pas encore être vues." },
-      { era: "Fin du Jour 10", title: "Départ discret", summary: "Au moment où le groupe quitte la taverne, Syne et sa boîte disparaissent déjà du lieu, comme si leur propre route suivait une logique séparée." }
+      { era: "Fin du Jour 10", title: "Départ discret", summary: "Au moment où le groupe quitte la taverne, Syne et sa boîte disparaissent déjà du lieu, comme si leur propre route suivait une logique séparée." },
+      { era: "Jour 14", title: "Retour dans la Sombra", summary: "Syne rejoint la Sombra après le groupe, disant avoir suivi des trajectoires qu'il ne fallait pas laisser dériver trop loin." },
+      { era: "Jour 14", title: "Réclamation du parasite", summary: "Face à Shaushana et Bichette, Syne nomme le parasite comme sien et tente de reprendre la main sur ce qu'elle juge devoir rester contenu." }
     ]
   },
   {
@@ -872,36 +886,86 @@
     name: "Bichette",
     image: buildMediaPath("pandorus", "Bichette.png"),
     category: "Reine du Blanc",
-    intro: "Bichette n'est plus seulement une présence lointaine : la route atteint désormais sa Sombra, où sa lecture du monde devient l'attente concrète du groupe.",
+    intro: "Bichette n'est plus seulement une présence lointaine : la route atteint sa Sombra, où sa lecture du monde devient enfin une rencontre réelle.",
     meta: [
-      { label: "Statut", value: "Créatrice évoquée à l'ouest" },
+      { label: "Statut", value: "Lectrice souveraine de la Sombra" },
       { label: "Titre", value: "Reine du Blanc" },
-      { label: "Lien majeur", value: "Sombra, Luna Queen et Méli Mélo" }
+      { label: "Lien majeur", value: "Zaïnob, Luna Queen et Méli Mélo" }
     ],
     biography: [
       "Brad et Bradlette nomment Bichette sans emphase, comme on nomme quelqu'un de réel, pas une légende. Sa force ne semble pas tenir à l'affrontement direct, mais à une capacité de voir, de comprendre et de lire ce qui revient dans le monde.",
       "Après le Vert et la mort du Capitaine, la route vers la Sombra se rouvre enfin. Bichette cesse alors d'être une simple orientation stratégique : elle devient la présence que tout le groupe approche désormais concrètement.",
-      "Même avant la rencontre pleine, sa proximité change déjà la lecture du récit. L'ouest n'est plus une promesse lointaine, mais un lieu atteint où une autre forme de veille attend d'être entendue."
+      "Même avant la rencontre pleine, sa proximité change déjà la lecture du récit. L'ouest n'est plus une promesse lointaine, mais un lieu atteint où une autre forme de veille attend d'être entendue.",
+      "Dans la Sombra, Bichette lit les présences du groupe sans les réduire. Elle reconnaît chez Franklin une continuité droite, sent chez Ezze une vibration mobile, nomme les dérèglements comme autre chose qu'une simple destruction, mais s'arrête devant Shaushana: ce qu'elle est ne passe pas par sa propre lecture.",
+      "Son histoire s'enracine aussi plus loin encore. Après l'ancienne guerre, alors que le ciel et la nuit cessent de tenir d'eux-mêmes, Bichette laisse la continuité se faire autour d'une autre gardienne: Zaïnob, passage vivant de la lumière lunaire. C'est dans cette continuité que naissent ensuite Luna Queen et Méli Mélo."
     ],
     summary: [
-      "Bichette n'est plus seulement annoncée : elle devient la grande présence désormais approchée du récit.",
-      "Elle promet moins une guerre qu'une compréhension plus aiguë de ce qui revient altérer Pandorus."
+      "Bichette n'est plus seulement annoncée : elle devient la grande présence désormais rencontrée du récit.",
+      "Elle ne traite pas le déséquilibre comme une guerre simple. Elle le nomme comme un dérèglement du vivant et du monde, et révèle en même temps les limites mêmes de sa propre lecture face à Shaushana."
     ],
     profile: [
       { title: "Nature", text: "Présence de lecture, de veille et d'équilibre occidental." },
-      { title: "Rôle", text: "Ouvrir la prochaine grande étape après le Sombrail et le Vert." },
-      { title: "Mystère", text: "On sait qu'elle voit beaucoup, mais pas encore jusqu'où ni à quel prix." }
+      { title: "Rôle", text: "Lire les dérèglements, reconnaître les seuils et orienter le groupe sans le réduire." },
+      { title: "Mystère", text: "Même si elle lit loin, elle avoue une limite claire face à Shaushana, preuve que tout ne passe pas par elle." }
     ],
     relations: [
       { title: "Sombra", text: "La Sombra est le territoire auquel son nom est désormais lié." },
-      { title: "Luna Queen", text: "Luna Queen fait partie des gardiennes ou présences associées à Bichette." },
-      { title: "Méli Mélo", text: "Méli Mélo complète autour d'elle une ligne de veille plus discrète." }
+      { title: "Zaïnob", text: "Zaïnob agit comme un passage vivant de la lumière lunaire autour duquel Bichette laisse se poursuivre la continuité du monde." },
+      { title: "Luna Queen", text: "Luna Queen naît dix ans avant l'éveil de Shaushana dans la continuité tenue par Bichette et Zaïnob." },
+      { title: "Méli Mélo", text: "Méli Mélo naît sept ans avant l'éveil de Shaushana et complète autour d'elle une autre ligne de mouvement et de veille." },
+      { title: "Shaushana", text: "Bichette reconnaît en elle une présence qu'elle ne peut pas lire comme les autres, non par manque, mais parce que sa nature passe ailleurs." }
     ],
     timeline: [
+      { era: "Ancien temps", title: "Après la guerre ancienne", summary: "Bichette participe à la continuité d'un monde dont la nuit ne tient plus d'elle-même après la chute de l'homme sombre." },
+      { era: "Il y a 10 ans", title: "Naissance de Luna Queen", summary: "Autour de Bichette et de Zaïnob, une première gardienne naît dans la continuité de la lumière lunaire." },
+      { era: "Il y a 7 ans", title: "Naissance de Méli Mélo", summary: "Une seconde présence naît dans cette même trame, plus vive, plus rythmée, plus circulante." },
       { era: "Jour 10", title: "Nom donné par Brad", summary: "Bichette est évoquée comme la créatrice à l'ouest capable d'offrir une lecture plus fine du basculement." },
       { era: "Jour 10", title: "Horizon maintenu", summary: "Même lorsque le groupe choisit d'abord le Vert à cause du Capitaine, Bichette reste la grande direction stratégique laissée en veille." },
       { era: "Jour 13", title: "Route rouverte", summary: "Après la sépulture du Capitaine, le nom de Bichette redevient la direction immédiate donnée par Ab'Youbi." },
-      { era: "Jour 14", title: "Présence approchée", summary: "À l'intérieur de la Sombra, le groupe atteint enfin l'approche de Bichette après avoir franchi les gardiens du seuil." }
+      { era: "Jour 14", title: "Lecture du groupe", summary: "À l'intérieur de la Sombra, Bichette lit un à un les membres du groupe et nomme plus clairement le dérèglement qui gagne le monde." },
+      { era: "Jour 14", title: "Limite devant Shaushana", summary: "En approchant Shaushana, Bichette s'arrête devant une lumière et une injonction qui lui disent que ce qu'elle est ne passe pas par elle." },
+      { era: "Jour 14", title: "Seuil contre Syne", summary: "Quand Syne surgit pour reprendre le parasite, Bichette devient l'un des pôles qui empêchent encore la Sombra de céder à cette reprise." }
+    ]
+  },
+  {
+    slug: "zainob",
+    hash: "#fiches-zainob",
+    name: "Zaïnob",
+    image: buildMediaPath("pandorus", "Zaïnob.jpg"),
+    category: "Gardienne lunaire de la Sombra",
+    intro: "Zaïnob n'est pas seulement une gardienne de plus : elle apparaît comme le passage vivant par lequel la lumière lunaire continue de tenir après la guerre ancienne.",
+    meta: [
+      { label: "Statut", value: "Gardienne lunaire de la Sombra" },
+      { label: "Spécialité", value: "Tenue de la lumière, seuil, continuité" },
+      { label: "Lien majeur", value: "Bichette, Luna Queen, Méli Mélo, Ab'Youbi" }
+    ],
+    biography: [
+      "Zaïnob se tient à la Sombra comme une présence droite, contenante, à la fois proche de Bichette et distincte d'elle. Sa fonction ne ressemble pas à une simple défense : elle maintient un passage, une cohérence, une tenue lumineuse que d'autres présences prolongent ensuite.",
+      "Après l'ancienne guerre, lorsque le ciel et la nuit se fragmentent, Zaïnob devient le point par lequel la lumière lunaire peut encore traverser le monde sans se rompre complètement. Bichette ne force pas cette continuité : elle la reconnaît, et Zaïnob la tient.",
+      "Autour de cette tenue naissent Luna Queen puis Méli Mélo, chacune selon une modalité différente de la même continuité. Dans le présent du récit, Zaïnob reste celle qui contient, forme et stabilise ces deux présences sans jamais les aplatir.",
+      "Lorsque la Communauté des Papillons arrive enfin dans la Sombra, Bichette révèle qu'Ab'Youbi et Zaïnob ne sont pas seulement liés par la veille ou par le lieu : ils le sont par le sang, comme un père et sa fille."
+    ],
+    summary: [
+      "Zaïnob donne à la Sombra une profondeur plus ancienne que le simple accueil du groupe.",
+      "Elle relie Bichette à la continuité lunaire du monde, à la naissance de Luna Queen et de Méli Mélo, et à la lignée cachée d'Ab'Youbi."
+    ],
+    profile: [
+      { title: "Caractère", text: "Droite, contenante, peu démonstrative, mais essentielle dans ce qu'elle maintient." },
+      { title: "Forces", text: "Tenue de seuil, cohérence lumineuse, capacité à laisser passer sans laisser céder." },
+      { title: "Mystère", text: "Tout son passé n'est pas encore ouvert, mais sa place dans la continuité du monde est désormais nette." }
+    ],
+    relations: [
+      { title: "Bichette", text: "Bichette reconnaît en Zaïnob le passage vivant par lequel la lumière lunaire peut encore tenir dans le monde." },
+      { title: "Luna Queen", text: "Zaïnob contient et forme sa stabilité sans effacer sa singularité." },
+      { title: "Méli Mélo", text: "Elle tient aussi son mouvement et sa vivacité dans une même continuité plus ancienne." },
+      { title: "Ab'Youbi", text: "Leur lien du sang est révélé dans la Sombra : Zaïnob est sa fille." }
+    ],
+    timeline: [
+      { era: "Ancien temps", title: "Après la guerre ancienne", summary: "Lorsque le ciel et la nuit cessent de tenir d'eux-mêmes, Zaïnob devient un passage vivant de la lumière lunaire." },
+      { era: "Il y a 10 ans", title: "Naissance de Luna Queen", summary: "Dans la continuité tenue autour d'elle, Luna Queen apparaît comme une première forme plus stable de veille." },
+      { era: "Il y a 7 ans", title: "Naissance de Méli Mélo", summary: "Méli Mélo naît à son tour dans cette même ligne, plus mobile et plus rythmée." },
+      { era: "Jour 14", title: "Rencontre dans la Sombra", summary: "Le groupe atteint enfin Zaïnob au cœur de la Sombra, comme une présence déjà installée dans une veille plus ancienne que leur propre quête." },
+      { era: "Jour 14", title: "Lien révélé avec Ab'Youbi", summary: "Bichette dévoile qu'entre Zaïnob et Ab'Youbi existe un lien du sang, celui d'un père et de sa fille." }
     ]
   },
   {
@@ -910,34 +974,37 @@
     name: "Luna Queen",
     image: buildMediaPath("pandorus", "Luna Queen.png"),
     category: "Gardienne de la Sombra",
-    intro: "Luna Queen n'est plus seulement liée à la Sombra de loin : elle devient l'une des gardiennes effectivement rencontrées au seuil de l'ouest.",
+    intro: "Luna Queen n'est plus seulement liée à la Sombra de loin : elle devient l'une des gardiennes effectivement rencontrées au seuil de l'ouest, née bien avant l'éveil de Shaushana dans une continuité lunaire plus ancienne.",
     meta: [
-      { label: "Statut", value: "Figure liée à Bichette" },
+      { label: "Statut", value: "Gardienne lunaire de la Sombra" },
       { label: "Ancrage", value: "Sombra" },
-      { label: "Lien majeur", value: "Bichette et Méli Mélo" }
+      { label: "Lien majeur", value: "Bichette, Zaïnob et Méli Mélo" }
     ],
     biography: [
       "Luna Queen entre d'abord dans le récit par la parole de Brad et Bradlette, comme une présence déjà reconnue autour de Bichette et de la Sombra.",
-      "Lorsque le groupe atteint enfin l'ouest, elle cesse d'être seulement un nom. Sa présence confirme que la Sombra repose bien sur plusieurs gardiennes capables de lire le monde autrement que par la seule guerre.",
-      "Elle garde ainsi une part de mystère, mais son rôle devient concret : accueillir, jauger et inscrire le groupe dans une autre qualité de seuil."
+      "Bien avant cela pourtant, elle naît dix ans avant l'éveil de Shaushana dans la continuité tenue entre Bichette et Zaïnob. Elle porte une forme plus stable, plus posée, presque flottante de cette lumière qui n'a pas cessé de traverser la nuit brisée.",
+      "Lorsque le groupe atteint enfin l'ouest, elle cesse d'être seulement un nom. Sa présence confirme que la Sombra repose bien sur plusieurs gardiennes capables de lire le monde autrement que par la seule guerre."
     ],
     summary: [
       "Luna Queen élargit la Sombra en véritable réseau de présences, pas en simple destination unique.",
-      "Elle annonce une strate plus fine du récit, où l'ouest comptera autant par ce qu'il lit que par ce qu'il protège."
+      "Sa naissance ancienne et sa tenue plus souveraine lui donnent une place centrale dans l'équilibre lunaire de l'ouest."
     ],
     profile: [
-      { title: "Nature", text: "Présence de veille liée à la Sombra." },
-      { title: "Rôle", text: "Compléter l'horizon ouvert par Bichette." },
-      { title: "Mystère", text: "Sa fonction exacte reste encore entièrement à révéler." }
+      { title: "Nature", text: "Présence de veille lunaire liée à la Sombra." },
+      { title: "Rôle", text: "Porter une stabilité souveraine dans la continuité tenue par Bichette et Zaïnob." },
+      { title: "Mystère", text: "On comprend mieux sa naissance, mais pas encore toute la portée de son action." }
     ],
     relations: [
       { title: "Bichette", text: "Luna Queen est liée à la Reine du Blanc dans la même direction occidentale." },
-      { title: "Méli Mélo", text: "Toutes deux sont nommées comme des présences complémentaires autour de la Sombra." }
+      { title: "Zaïnob", text: "Zaïnob tient la continuité dans laquelle Luna Queen naît puis demeure formée." },
+      { title: "Méli Mélo", text: "Toutes deux sont complémentaires autour de la Sombra, l'une plus stable, l'autre plus mobile." }
     ],
     timeline: [
+      { era: "Il y a 10 ans", title: "Naissance de Luna Queen", summary: "Dix ans avant l'éveil de Shaushana, Luna Queen naît dans la continuité lunaire tenue par Bichette et Zaïnob." },
       { era: "Jour 10", title: "Évoquée à la taverne", summary: "Son nom entre dans le récit par la parole de Brad et Bradlette, avec la Sombra comme horizon." },
       { era: "Jour 10", title: "Présence gardée en réserve", summary: "Luna Queen demeure hors champ, mais son nom suffit déjà à faire comprendre que l'ouest n'est pas vide : il est organisé." },
-      { era: "Jour 14", title: "Rencontre dans la Sombra", summary: "À l'entrée profonde de la Sombra, Luna Queen apparaît enfin comme l'une des gardiennes concrètes du lieu." }
+      { era: "Jour 14", title: "Rencontre dans la Sombra", summary: "À l'entrée profonde de la Sombra, Luna Queen apparaît enfin comme l'une des gardiennes concrètes du lieu." },
+      { era: "Jour 14", title: "Lecture plus fine du seuil", summary: "Aux côtés de Bichette et de Zaïnob, elle inscrit le groupe dans une autre qualité de présence, plus tenue, plus silencieuse." }
     ]
   },
   {
@@ -946,34 +1013,37 @@
     name: "Méli Mélo",
     image: buildMediaPath("pandorus", "Méli Mélo.png"),
     category: "Gardienne de la Sombra",
-    intro: "Méli Mélo n'est plus seulement un nom lié à Bichette : elle fait désormais partie des présences effectivement rencontrées à la Sombra.",
+    intro: "Méli Mélo n'est plus seulement un nom lié à Bichette : elle fait désormais partie des présences effectivement rencontrées à la Sombra, née elle aussi bien avant l'éveil de Shaushana dans une continuité plus mobile.",
     meta: [
-      { label: "Statut", value: "Figure liée à Bichette" },
+      { label: "Statut", value: "Gardienne mouvante de la Sombra" },
       { label: "Ancrage", value: "Sombra" },
-      { label: "Lien majeur", value: "Bichette et Luna Queen" }
+      { label: "Lien majeur", value: "Bichette, Zaïnob et Luna Queen" }
     ],
     biography: [
       "Comme Luna Queen, Méli Mélo entre d'abord dans le récit comme une présence réelle de la prochaine étape, et non comme un décor lointain.",
-      "Quand la Sombra est enfin atteinte, elle devient l'une des premières figures concrètes rencontrées à l'ouest. Sa présence confirme que ce territoire pense, veille et accueille selon une logique déjà établie.",
-      "Son apparition reste discrète, mais elle n'est plus seulement préparatoire : elle inscrit le groupe dans une strate entière du monde déjà habitée par des lectrices du déséquilibre."
+      "Sept ans avant l'éveil de Shaushana, elle naît dans la même continuité que Luna Queen, mais sous une forme plus mouvante, plus rythmée, presque dansante. Là où Luna Queen tient, Méli Mélo circule.",
+      "Quand la Sombra est enfin atteinte, elle devient l'une des premières figures concrètes rencontrées à l'ouest. Sa présence confirme que ce territoire pense, veille et accueille selon une logique déjà établie."
     ],
     summary: [
       "Méli Mélo renforce l'idée que la Sombra abrite plusieurs points d'équilibre.",
-      "Elle prépare une étape du récit où la compréhension pourrait compter autant que le combat."
+      "Sa naissance ancienne et son énergie plus vive donnent à l'ouest une respiration moins solennelle, mais tout aussi essentielle."
     ],
     profile: [
-      { title: "Nature", text: "Présence de veille encore hors champ, liée à la Sombra." },
-      { title: "Rôle", text: "Compléter la ligne ouverte par Bichette et Luna Queen." },
-      { title: "Mystère", text: "On ignore encore sa forme d'action, mais non sa place future dans la trajectoire du groupe." }
+      { title: "Nature", text: "Présence de veille mouvante liée à la Sombra." },
+      { title: "Rôle", text: "Compléter la ligne ouverte par Bichette, Zaïnob et Luna Queen par le mouvement et le rythme." },
+      { title: "Mystère", text: "On comprend mieux son origine, mais pas encore toute la finesse de sa manière d'agir." }
     ],
     relations: [
       { title: "Bichette", text: "Méli Mélo est liée à la Reine du Blanc dans la direction ouverte à l'ouest." },
-      { title: "Luna Queen", text: "Elles sont évoquées ensemble comme des présences complémentaires de la Sombra." }
+      { title: "Zaïnob", text: "Zaïnob tient et forme sa vivacité dans une même continuité lunaire." },
+      { title: "Luna Queen", text: "Elles sont complémentaires de la Sombra, l'une en mouvement, l'autre en stabilité." }
     ],
     timeline: [
+      { era: "Il y a 7 ans", title: "Naissance de Méli Mélo", summary: "Sept ans avant l'éveil de Shaushana, Méli Mélo naît dans la continuité tenue par Bichette et Zaïnob." },
       { era: "Jour 10", title: "Évoquée à la taverne", summary: "Son nom rejoint ceux de Bichette et Luna Queen comme nouvelle direction stratégique du récit." },
       { era: "Jour 10", title: "Troisième point d'équilibre", summary: "Sa mention confirme que la Sombra repose sur plusieurs présences complémentaires et non sur une seule figure isolée." },
-      { era: "Jour 14", title: "Rencontre à l'ouest", summary: "À l'intérieur de la Sombra, Méli Mélo apparaît avec Luna Queen comme l'une des présences qui précèdent l'approche de Bichette." }
+      { era: "Jour 14", title: "Rencontre à l'ouest", summary: "À l'intérieur de la Sombra, Méli Mélo apparaît avec Luna Queen comme l'une des présences qui précèdent l'approche de Bichette." },
+      { era: "Jour 14", title: "Veille en mouvement", summary: "Autour de Bichette et de Zaïnob, Méli Mélo fait sentir une autre qualité du seuil: moins figée, plus circulante, mais tout aussi vive." }
     ]
   }
   ];

@@ -366,7 +366,8 @@ export function createLocationFiches(buildMediaPath) {
     biography: [
       "La Communauté des Papillons y entre après une traversée lourde d'anomalies, guidée par la piste ouverte par Tsune. Le lieu n'est ni accueillant ni hostile: il impose son rythme et reconnaît ceux qui n'arrivent pas par hasard.",
       "Brad et Bradlette y maintiennent un équilibre fragile, tandis qu'Ab'Youbi observe ce que les autres ne voient pas. Au fond de la salle, Syne garde une boîte dont la présence ne semble pas inerte.",
-      "La taverne devient surtout un passage de mémoire: Brad entraîne le groupe dans le souvenir des Briscards, d'Elrick jeune, de Mitra Séssé, de Papy Perquis et de Padre Souf, jusqu'à l'origine du ciel assombri et des étoiles comme traces de l'ancien combat."
+      "La taverne devient surtout un passage de mémoire: Brad entraîne le groupe dans le souvenir des Briscards, d'Elrick jeune, de Mitra Séssé, de Papy Perquis et de Padre Souf, jusqu'à l'origine du ciel assombri et des étoiles comme traces de l'ancien combat.",
+      "Même quand la Communauté quitte le lieu pour le Vert, la taverne ne cesse pas d'agir. C'est depuis elle que Syne repart avec sa boîte, et c'est depuis elle que l'ouest continue de peser sur la suite jusqu'à la Sombra."
     ],
     summary: [
       "La taverne du Sombrail transforme la quête en enquête de mémoire.",
@@ -375,7 +376,7 @@ export function createLocationFiches(buildMediaPath) {
     profile: [
       { title: "Texture du lieu", text: "Tables marquées, lanternes tremblantes, chaleur dense et silence qui écoute." },
       { title: "Rôle narratif", text: "Relier la Communauté des Papillons aux survivants, aux Briscards et à l'origine ancienne du déséquilibre." },
-      { title: "Point de tension", text: "Syne et sa boîte introduisent une présence retenue qui ne doit pas encore être vue." }
+      { title: "Point de tension", text: "Syne et sa boîte introduisent une présence retenue qui ne reste pas derrière : elle suit plus tard le groupe jusque dans la Sombra." }
     ],
     contextLinks: [
       { href: "#fiches-brad-et-bradlette", label: "Voir Brad et Bradlette" },
@@ -452,29 +453,32 @@ export function createLocationFiches(buildMediaPath) {
     slug: "sombra",
     name: "Sombra",
     tone: "threshold",
-    category: "Direction de l'ouest",
-    intro: "La Sombra cesse d'être une simple direction et devient un seuil réellement franchi, terre d'observation et de lecture liée à Bichette, Reine du Blanc, et à ses gardiennes.",
+    category: "Seuil occidental vivant",
+    intro: "La Sombra cesse d'être une simple direction et devient un seuil réellement franchi, terre d'observation, de lecture et de confrontation liée à Bichette, à Zaïnob et à leurs gardiennes.",
     meta: [
-      { label: "Atmosphère", value: "Ouest lointain, veille blanche, compréhension en réserve" },
-      { label: "Fonction", value: "Seuil occidental de compréhension" },
-      { label: "Présences", value: "Will le Tigre Bois, Bichette, Luna Queen, Méli Mélo" }
+      { label: "Atmosphère", value: "Ouest lointain, veille blanche, clairière de lecture et tension contenue" },
+      { label: "Fonction", value: "Seuil occidental de compréhension et de confrontation" },
+      { label: "Présences", value: "Will le Tigre Bois, Bichette, Zaïnob, Luna Queen, Méli Mélo, Syne" }
     ],
     biography: [
       "Brad et Bradlette nomment d'abord la Sombra comme une direction plutôt que comme une promesse de salut. Ce n'est pas un refuge évident, mais un lieu où certaines figures peuvent lire ce qui vient avant qu'il ne s'impose pleinement au monde.",
       "Après la mort du Capitaine, la route s'ouvre enfin. Le groupe traverse les approches de l'ouest sous la veille du KingKoala, puis rencontre Will le Tigre Bois, gardien de seuil qui mesure leur passage avant de les laisser entrer.",
-      "À l'intérieur de la Sombra, Luna Queen et Méli Mélo cessent d'être de simples noms. Elles deviennent les premières présences concrètes d'un territoire déjà habité par une lecture plus blanche du monde, juste avant l'approche de Bichette."
+      "À l'intérieur de la Sombra, Luna Queen et Méli Mélo cessent d'être de simples noms. Elles deviennent les premières présences concrètes d'un territoire déjà habité par une lecture plus blanche du monde, juste avant l'approche de Bichette et de Zaïnob.",
+      "Bichette y lit le groupe, nomme les dérèglements comme autre chose qu'une simple destruction et révèle à la fois un lien du sang entre Ab'Youbi et Zaïnob, et une limite nette de sa propre lecture devant Shaushana.",
+      "La scène bascule lorsque Syne surgit à son tour avec sa boîte, des Verdeflors et des Lions-Garouh. Le parasite réagit dans la poche de Shaushana, les papillons s'altèrent, puis Ab'Youbi éteint leurs flammes anormales d'un seul regard."
     ],
     summary: [
       "La Sombra ouvre réellement l'ouest du récit.",
-      "Elle promet moins une bataille qu'une compréhension, et devient déjà le lieu où les lignes du monde se lisent avant de se rompre."
+      "Elle promet moins une bataille simple qu'une compréhension, mais montre aussitôt que toute lecture vraie du monde s'accompagne déjà d'une nouvelle menace."
     ],
     profile: [
-      { title: "Texture du lieu", text: "Horizon occidental, lumière tenue, gardiens de seuil et présence blanche tournée vers la lecture du monde." },
-      { title: "Rôle narratif", text: "Déplacer la quête de la survie immédiate vers une recherche plus fine de compréhension, après le deuil et la guerre du Vert." },
-      { title: "Point de tension", text: "Le groupe y entre enfin, mais avec le parasite, le deuil du Capitaine et la certitude que l'ouest lit déjà plus qu'il ne révèle encore." }
+      { title: "Texture du lieu", text: "Horizon occidental, lumière tenue, gardiens de seuil, clairières de lecture et tension de rupture." },
+      { title: "Rôle narratif", text: "Déplacer la quête de la survie immédiate vers une recherche plus fine de compréhension, puis la confronter aussitôt à Syne et au parasite." },
+      { title: "Point de tension", text: "Le groupe y entre enfin, mais avec le parasite, le deuil du Capitaine et la preuve que l'ouest lit déjà plus qu'il ne protège encore." }
     ],
     contextLinks: [
       { href: "#fiches-bichette", label: "Voir Bichette" },
+      { href: "#fiches-zainob", label: "Voir Zaïnob" },
       { href: "#fiches-luna-queen", label: "Voir Luna Queen" },
       { href: "#fiches-meli-melo", label: "Voir Méli Mélo" },
       { href: "#chronologie", label: "Lire l'entrée dans la Sombra" }
