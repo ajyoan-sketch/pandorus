@@ -2004,12 +2004,12 @@ const chapters = [
   },
   {
     path: "./media/chapitres/Chapitre%208%20-%20Du%20Bassa%C3%AF%20au%20Vrax.pdf",
-    summary: "La traversee du Bassai et l'entree dans le Vrax confrontent le groupe a de nouvelles forces, jusqu'a l'enlevement brutal de Franklin.",
+    summary: "Après le départ d'Elrick, le groupe traverse le Bassaï, affronte les présences du fleuve, pénètre dans le Vrax puis découvre Lévy, Gardien Isma et Wingard avant l'enlèvement brutal de Franklin.",
     accessKey: "ChapPando8"
   },
   {
     path: "./media/chapitres/Chapitre%209%20-%20Les%20Gamins%20du%20Vrax.pdf",
-    summary: "Le chapitre révèle la naissance et le role des jeunes protecteurs du Vrax, jusqu'a leur interception du groupe et a la capture brutale de Franklin.",
+    summary: "Le chapitre révèle Ossah Lyla, Nastaz et la naissance des Gamins du Vrax comme réponse du territoire vivant face au déséquilibre qui revient.",
     accessKey: "ChapPando9"
   },
   {
