@@ -725,31 +725,42 @@ h4 {
 
 .daily-word-card {
   position: relative;
-  margin-top: 18px;
+  margin: 14px auto 22px;
+  max-width: min(1120px, 100%);
   padding: 0;
-  border: 1px solid rgba(110, 83, 36, 0.18);
+  border: 1px solid rgba(110, 83, 36, 0.24);
   border-radius: 24px;
   overflow: hidden;
   background:
-    radial-gradient(circle at top left, rgba(247, 221, 168, 0.22), transparent 28%),
-    radial-gradient(circle at bottom right, rgba(160, 132, 69, 0.16), transparent 32%),
-    linear-gradient(180deg, rgba(255, 252, 246, 0.98), rgba(244, 232, 204, 0.9));
-  box-shadow: 0 18px 36px rgba(86, 60, 19, 0.1);
+    radial-gradient(circle at top left, rgba(247, 221, 168, 0.28), transparent 26%),
+    radial-gradient(circle at center right, rgba(193, 166, 104, 0.16), transparent 28%),
+    linear-gradient(180deg, rgba(255, 252, 246, 0.98), rgba(244, 232, 204, 0.92));
+  box-shadow: 0 20px 40px rgba(86, 60, 19, 0.12);
   animation: cardRise 1s ease both;
+}
+
+.daily-word-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 8px;
+  background: linear-gradient(180deg, rgba(154, 119, 53, 0.9), rgba(91, 66, 28, 0.9));
 }
 
 .daily-word-shell {
   position: relative;
   display: grid;
-  gap: 12px;
-  padding: 20px 22px 18px;
+  grid-template-columns: minmax(0, 0.9fr) minmax(260px, 0.45fr);
+  gap: 18px 22px;
+  align-items: center;
+  padding: 18px 22px 18px 28px;
 }
 
 .daily-word-shell::before {
   content: "Papillon";
   position: absolute;
   top: 14px;
-  right: 18px;
+  right: 22px;
   font-size: 0.74rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -769,28 +780,35 @@ h4 {
   border: 0;
   padding: 0;
   color: #2d2012;
+  font-size: clamp(1.05rem, 1.2vw, 1.24rem);
 }
 
 .daily-word-quote {
   margin: 0;
-  padding: 16px 18px;
+  padding: 14px 16px;
   border-left: 3px solid rgba(128, 96, 40, 0.38);
   border-radius: 16px;
   background: rgba(255, 249, 238, 0.76);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  grid-column: 1 / 2;
 }
 
 .daily-word-quote p {
   margin: 0;
-  font-size: 1.02rem;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.62;
   color: #433222;
 }
 
 .daily-word-meta {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 10px 12px;
-  align-items: center;
+  min-height: 100%;
+  padding: 10px 0 10px 8px;
 }
 
 .daily-word-family,
@@ -814,6 +832,24 @@ h4 {
   background: rgba(255, 250, 240, 0.86);
   border: 1px solid rgba(128, 96, 40, 0.16);
   color: #5a4832;
+}
+
+@media (max-width: 980px) {
+  .daily-word-shell {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 18px 18px 16px 24px;
+  }
+
+  .daily-word-quote {
+    grid-column: auto;
+  }
+
+  .daily-word-meta {
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+  }
 }
 
 .landing-pulse {
