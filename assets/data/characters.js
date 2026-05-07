@@ -611,42 +611,165 @@
     hash: "#fiches-syne",
     name: "Syne",
     image: buildMediaPath("pandorus", "Syne.jpg"),
-    category: "Gardienne de la boîte",
-    intro: "Syne n'est plus seulement la femme blonde de la taverne : elle suit désormais le groupe jusqu'à la Sombra, gardant sa boîte et revendiquant ouvertement le parasite.",
+    category: "Messagère de la Terre des Insectes",
+    intro: "Syne n'est plus seulement la femme blonde de la taverne : son histoire remonte au fleuve Arkains, à Jacob, à la Terre des Insectes et à une mission qui la mène jusqu'à la Sombra avec sa boîte et ses renforts.",
     meta: [
-      { label: "Statut", value: "Présence énigmatique de la taverne" },
-      { label: "Spécialité", value: "Contrôle, retenue, seuil du visible" },
-      { label: "Objet majeur", value: "La boîte fermée" }
+      { label: "Statut", value: "Agente du réseau de la Terre des Insectes" },
+      { label: "Spécialité", value: "Contrôle, mission, pression retenue" },
+      { label: "Objet majeur", value: "La boîte gardée jusqu'à la Sombra" }
     ],
     biography: [
-      "Syne reste assise au fond de la taverne, droite, immobile, entourée d'un espace que les autres évitent sans avoir besoin d'en parler. Sa présence ne cherche pas à dominer, mais elle déplace l'équilibre du lieu.",
-      "Devant elle repose une boîte fermée, silencieuse, trop importante pour être un simple objet. Lorsqu'un frottement se fait entendre à l'intérieur, toute la taverne comprend que ce qu'elle garde n'est pas inerte.",
-      "Syne ne menace personne. Elle affirme seulement qu'il n'y a rien à craindre tant que personne ne cherche pas à voir ce qui n'est pas encore destiné à être vu, imposant une limite calme et absolue.",
-      "Lorsqu'elle réapparaît dans la Sombra, son calme change de nature. Elle dit avoir suivi la trajectoire du groupe, réclame le parasite comme s'il lui appartenait, et vient accompagnée de Verdeflors et de Lions-Garouh pour reprendre ce qui, selon elle, doit rester dans l'ombre."
+      "Syne grandit d'abord comme une enfant douce dans un village paisible près du fleuve Arkains. Toute petite encore, elle remarque dans les bois une présence solitaire que personne d'autre ne veut approcher, un garçon sauvage qu'elle finit par rejoindre en secret.",
+      "Ce garçon s'appelle Jacob. Syne le nourrit, lui parle et reste auprès de lui quand les autres ne voient bientôt plus en lui qu'une menace. À mesure que les années passent, Jacob change, se ferme, se durcit et devient pour les villageois une masse de force monstrueuse que l'on finit par appeler Bulldozer Jacob.",
+      "Lorsque cette altération ne peut plus être cachée, Syne quitte le monde ordinaire avec lui. Leur exil les mène jusqu'à la Terre des Insectes, où un homme calme, lié à un frelon noir, lui ouvre une autre lecture : un monde peut être jugé trop abîmé pour être seulement sauvé, et devoir être remplacé dans sa forme même.",
+      "À partir de là, Syne rejoint une ligne plus vaste où gravitent Kuji, Mathéo, Nogard, Bouldouger et Cendr'oïde. On lui demande d'observer, de suivre, d'infecter ou de récupérer, jusqu'au jour où elle reçoit une mission nette : retrouver le parasite, effacer Shaushana si elle demeure une anomalie, puis faire disparaître Bichette si elle s'interpose.",
+      "Dans la taverne du Sombrail, elle apparaît d'abord comme une présence calme au fond de la salle, gardant une boîte trop vivante pour n'être qu'un objet. Mais à la Sombra, ce calme devient une manœuvre entière : Verdeflors sous le sol, Lions-Garouh dans les bois, parasite réactif, papillons altérés, puis la boîte qu'elle ouvre enfin au grand jour."
     ],
     summary: [
-      "Syne introduit un mystère nouveau: une présence contenue, retenue au seuil de l'existence visible.",
-      "Elle n'est plus une simple énigme de taverne: dans la Sombra, elle assume une logique de contrôle, de récupération et d'effacement des anomalies."
+      "Syne relie désormais l'ouest du récit à une histoire bien plus ancienne faite d'attachement, d'altération et de bascule idéologique.",
+      "Elle n'est plus seulement une énigme de taverne: elle porte une mission, un réseau et une boîte dont l'ouverture fait entrer la Sombra dans une nouvelle phase du conflit."
     ],
     profile: [
-      { title: "Caractère", text: "Calme, stable, presque détachée, avec une maîtrise froide du moment." },
-      { title: "Forces", text: "Contrôle de la tension, autorité silencieuse, capacité à maintenir ce qui est contenu." },
-      { title: "Mystère", text: "La nature exacte de sa boîte et de ce qui s'y éveille reste inconnue." }
+      { title: "Caractère", text: "Calme, tenue, presque tendre par instants, mais engagée dans une logique devenue beaucoup plus dure." },
+      { title: "Forces", text: "Maîtrise de la tension, obéissance stratégique, capacité à avancer avec des renforts sans perdre son calme." },
+      { title: "Mystère", text: "La boîte s'ouvre enfin, mais ce qu'elle libère ne dit pas encore toute la vérité du lien entre Syne et Jacob." }
     ],
     relations: [
+      { title: "Bulldozer Jacob", text: "Syne le découvre enfant près de l'Arkains, le protège contre tous, puis traverse avec lui la bascule qui mène hors du monde commun." },
+      { title: "Mathéo", text: "Dans la Terre des Insectes, Mathéo fait partie des présences qui l'intègrent dans un réseau d'observation, de préparation et de rupture." },
+      { title: "Cendr'oïde", text: "Cendr'oïde appartient à la même ligne que Syne, plus froide et plus stratégique que purement frontale." },
       { title: "Ab'Youbi", text: "Il reconnaît autour d'elle une force ou une limite qui ne doit pas être forcée." },
-      { title: "Brad et Bradlette", text: "Ils adaptent toute la taverne à sa présence sans jamais la nommer directement." },
-      { title: "Communauté des Papillons", text: "Son existence ajoute à leur route un mystère qui dépasse leur objectif immédiat." },
-      { title: "Shaushana", text: "Dans la Sombra, Syne veut reprendre le parasite que Shaushana porte et considère sa présence comme une anomalie dangereuse." },
-      { title: "Bichette", text: "Syne identifie Bichette comme une présence capable de contrarier des plans plus vastes et choisit l'affrontement de seuil." }
+      { title: "Shaushana", text: "Dans la Sombra, Syne veut reprendre le parasite que Shaushana porte et reçoit même l'ordre de l'effacer si elle reste hors de contrôle." },
+      { title: "Bichette", text: "Syne sait que Bichette peut contrarier la reprise et l'identifie comme une présence à faire disparaître si elle s'interpose." }
     ],
     timeline: [
+      { era: "Avant le récit", title: "Enfance au fleuve Arkains", summary: "Syne grandit dans un village paisible près de l'Arkains avant que son regard ne s'accroche à une présence solitaire dans les bois." },
+      { era: "Avant le récit", title: "Rencontre de Jacob", summary: "Encore enfant, elle rejoint en secret Jacob, garçon sauvage qu'elle nourrit, écoute et refuse d'abandonner." },
+      { era: "Avant le récit", title: "Jacob devient Bulldozer Jacob", summary: "À mesure qu'il s'altère et effraie les autres, Jacob devient pour le village une force monstrueuse à laquelle Syne reste pourtant fidèle." },
+      { era: "Avant le récit", title: "Départ vers la Terre des Insectes", summary: "Quand le lien avec le village se rompt, Syne part avec Jacob et atteint la Terre des Insectes." },
+      { era: "Avant le récit", title: "Entrée dans le réseau du frelon", summary: "Un homme lié à un frelon noir lui ouvre une autre doctrine du monde, bientôt prolongée par Mathéo, Cendr'oïde, Nogard, Bouldouger et d'autres présences de préparation." },
       { era: "Jour 10", title: "Présence au fond de la taverne", summary: "Syne apparaît comme une figure silencieuse gardant une boîte fermée." },
       { era: "Jour 10", title: "Premier frémissement", summary: "Un mouvement étouffé se fait entendre dans la boîte, révélant que ce qu'elle contient n'est pas inerte." },
       { era: "Jour 10", title: "Limite posée", summary: "Syne rappelle que certaines choses ne doivent pas encore être vues." },
       { era: "Fin du Jour 10", title: "Départ discret", summary: "Au moment où le groupe quitte la taverne, Syne et sa boîte disparaissent déjà du lieu, comme si leur propre route suivait une logique séparée." },
       { era: "Jour 14", title: "Retour dans la Sombra", summary: "Syne rejoint la Sombra après le groupe, disant avoir suivi des trajectoires qu'il ne fallait pas laisser dériver trop loin." },
-      { era: "Jour 14", title: "Réclamation du parasite", summary: "Face à Shaushana et Bichette, Syne nomme le parasite comme sien et tente de reprendre la main sur ce qu'elle juge devoir rester contenu." }
+      { era: "Jour 14", title: "Réclamation du parasite", summary: "Face à Shaushana et Bichette, Syne nomme le parasite comme sien et tente de reprendre la main sur ce qu'elle juge devoir rester contenu." },
+      { era: "Jour 14", title: "Renforts dévoilés", summary: "Des Verdeflors surgissent du sol et des Lions-Garouh des bois, montrant que Syne n'est pas venue seule mais avec une ligne entière d'appui." },
+      { era: "Jour 14", title: "Boîte ouverte", summary: "Syne ouvre enfin la boîte dans la Sombra et appelle calmement ce qu'elle a gardé jusque-là hors du visible." }
+    ]
+  },
+  {
+    slug: "bulldozer-jacob",
+    hash: "#fiches-bulldozer-jacob",
+    name: "Bulldozer Jacob",
+    image: buildMediaPath("pandorus", "Bulldozer Jacob.jpg"),
+    category: "Compagnon altéré",
+    intro: "Jacob n'est pas une créature du bestiaire : c'est un garçon sauvage trouvé par Syne près de l'Arkains, puis une force altérée que le monde finit par appeler Bulldozer Jacob.",
+    meta: [
+      { label: "Statut", value: "Présence altérée liée à Syne" },
+      { label: "Origine", value: "Bois du fleuve Arkains" },
+      { label: "Lien majeur", value: "Syne et la boîte" }
+    ],
+    biography: [
+      "Syne rencontre Jacob alors qu'elle est encore enfant. Il vit seul dans les bois près du fleuve Arkains, presque muet, déjà séparé des autres, mais pas encore perdu pour elle.",
+      "Pendant des années, Syne revient le voir, lui apporte de quoi vivre et maintient autour de lui un lien que personne d'autre n'accepte. Plus Jacob change, plus le village prend peur; plus le village prend peur, plus Syne reste auprès de lui.",
+      "Avec le temps, Jacob cesse d'être seulement un garçon caché. Son corps, sa force et sa manière d'avancer finissent par lui valoir un nouveau nom : Bulldozer Jacob. Ce n'est plus seulement une solitude, c'est déjà une percée monstrueuse du vivant altéré.",
+      "Le chapitre 26 n'épuise pas encore toute sa vérité présente, mais il relie très fortement son histoire à la boîte que Syne garde puis ouvre dans la Sombra, comme si son destin ancien n'avait jamais quitté sa route."
+    ],
+    summary: [
+      "Bulldozer Jacob relie l'histoire intime de Syne à une altération longue, humaine avant d'être monstrueuse.",
+      "Il donne à la boîte de la Sombra une profondeur affective et tragique que la simple menace ne suffisait pas à porter."
+    ],
+    profile: [
+      { title: "Caractère", text: "D'abord silencieux et retiré, puis de plus en plus fermé, lourd et traversé par une force qui dépasse le langage." },
+      { title: "Forces", text: "Puissance brute, endurance, capacité à percer ou écraser ce qui lui résiste." },
+      { title: "Mystère", text: "Le lien exact entre Jacob et ce que Syne ouvre dans la boîte reste encore volontairement incomplet." }
+    ],
+    relations: [
+      { title: "Syne", text: "Elle reste la seule présence qui le choisit et le traverse sans l'abandonner, depuis l'enfance jusqu'à l'exil." },
+      { title: "Fleuve Arkains", text: "C'est près de l'Arkains que Jacob est trouvé, comme un enfant déjà rejeté hors du monde ordinaire." },
+      { title: "Terre des Insectes", text: "L'exil de Syne et Jacob vers la Terre des Insectes transforme leur histoire intime en trajectoire liée à un réseau plus vaste." }
+    ],
+    timeline: [
+      { era: "Avant le récit", title: "Enfant dans les bois", summary: "Jacob vit seul près du fleuve Arkains quand Syne le remarque et commence à le rejoindre en secret." },
+      { era: "Avant le récit", title: "Lien avec Syne", summary: "Syne le nourrit, lui parle et maintient avec lui un attachement que le village ne comprend pas." },
+      { era: "Avant le récit", title: "Naissance de Bulldozer Jacob", summary: "Sa mutation s'aggrave jusqu'à faire de lui une force monstrueuse que les autres ne savent plus appeler autrement." },
+      { era: "Avant le récit", title: "Exil", summary: "Syne quitte alors le village avec lui et rejoint la Terre des Insectes." },
+      { era: "Jour 14", title: "Présence rappelée par la boîte", summary: "Lorsque Syne ouvre la boîte dans la Sombra, tout le passé de Jacob revient peser sur la scène sans encore se livrer totalement." }
+    ]
+  },
+  {
+    slug: "matheo",
+    hash: "#fiches-matheo",
+    name: "Mathéo",
+    image: buildMediaPath("pandorus", "Mathéo.png"),
+    category: "Relais de la Terre des Insectes",
+    intro: "Mathéo apparaît comme l'une des figures que Syne rejoint après son départ vers la Terre des Insectes, lié à une ligne d'observation et de préparation hostile au monde actuel.",
+    meta: [
+      { label: "Statut", value: "Figure du réseau hostile" },
+      { label: "Ancrage", value: "Terre des Insectes" },
+      { label: "Lien majeur", value: "Syne, Bouldouger et Cendr'oïde" }
+    ],
+    biography: [
+      "Mathéo fait partie des présences que Syne rencontre lorsqu'elle quitte la vie ordinaire pour rejoindre la Terre des Insectes. Il n'est pas présenté comme un simple passant du décor, mais comme un maillon d'un réseau déjà structuré.",
+      "Autour de lui, la logique n'est plus celle de la survie immédiate ou de la veille sensible. Il s'agit d'observer, d'infecter, de préparer et de pousser le monde à céder pour qu'autre chose prenne sa place.",
+      "Son image associée à l'araignée renforce cette impression de trame, de patience et de prise progressive. Mathéo appartient moins au choc frontal qu'à la construction d'un piège plus large."
+    ],
+    summary: [
+      "Mathéo donne au camp de Syne une profondeur organisationnelle supplémentaire.",
+      "Il inscrit la Terre des Insectes dans une logique de réseau, de patience et de préparation hostile."
+    ],
+    profile: [
+      { title: "Caractère", text: "Patient, structuré, plus tisseur que chargeur." },
+      { title: "Forces", text: "Préparation, réseau, lecture lente des points à faire céder." },
+      { title: "Mystère", text: "Son rôle exact dans les opérations futures reste encore à ouvrir." }
+    ],
+    relations: [
+      { title: "Syne", text: "Mathéo fait partie des figures qui l'accueillent dans la Terre des Insectes et prolongent sa mission." },
+      { title: "Cendr'oïde", text: "Tous deux appartiennent à la même ligne de préparation plus froide que frontale." },
+      { title: "Bouldouger", text: "Ils relèvent du même camp, mais avec des fonctions très différentes : trame pour l'un, percussion pour l'autre." }
+    ],
+    timeline: [
+      { era: "Avant le récit", title: "Présence de la Terre des Insectes", summary: "Mathéo apparaît dans le réseau que Syne rejoint après son exil avec Jacob." },
+      { era: "Avant le récit", title: "Logique de préparation", summary: "Il participe à une ligne où l'on observe, infiltre et prépare la rupture plutôt qu'on ne la subit." },
+      { era: "Lecture d'ensemble", title: "Camp de Syne élargi", summary: "Sa simple existence montre que Syne n'agit pas seule mais dans un ensemble déjà structuré." }
+    ]
+  },
+  {
+    slug: "cendroide",
+    hash: "#fiches-cendroide",
+    name: "Cendr'oïde",
+    image: buildMediaPath("pandorus", "Cendr'oïde.png"),
+    category: "Figure froide du réseau",
+    intro: "Cendr'oïde appartient au même ensemble que Syne dans la Terre des Insectes, moins comme une brute d'assaut que comme une présence de préparation et de remplacement.",
+    meta: [
+      { label: "Statut", value: "Figure du réseau hostile" },
+      { label: "Ancrage", value: "Terre des Insectes" },
+      { label: "Lien majeur", value: "Syne, Mathéo et Bouldouger" }
+    ],
+    biography: [
+      "Cendr'oïde apparaît dans le sillage de Syne lorsque le chapitre 26 élargit enfin le réseau qui entoure la Terre des Insectes. Son nom, sa silhouette et sa place suggèrent une présence moins animale que recomposée, plus tenue que spontanée.",
+      "Là où Bouldouger pèse par la rupture et où d'autres figures avancent par le choc, Cendr'oïde relève plutôt d'une logique plus froide : maintien du plan, relais du camp, progression de l'altération sans bruit inutile.",
+      "Sa présence suffit à montrer que la ligne ennemie n'est pas faite d'un seul type de force. Elle combine charge, patience, infection, observation et recomposition."
+    ],
+    summary: [
+      "Cendr'oïde apporte au camp de Syne une couleur plus froide et plus construite.",
+      "Il élargit la menace au-delà de la seule brutalité, vers une logique de remplacement silencieux."
+    ],
+    profile: [
+      { title: "Caractère", text: "Froid, tenu, peu démonstratif, inscrit dans la continuité d'un plan." },
+      { title: "Forces", text: "Discipline, tenue du camp, accompagnement d'une altération plus méthodique." },
+      { title: "Mystère", text: "On sait qu'il appartient au réseau, mais pas encore jusqu'où va son rôle." }
+    ],
+    relations: [
+      { title: "Syne", text: "Cendr'oïde appartient au même réseau qu'elle et prolonge la logique plus large de sa mission." },
+      { title: "Mathéo", text: "Leur proximité suggère une même strate de préparation plus calme que frontale." },
+      { title: "Bouldouger", text: "Face à la percussion brute de Bouldouger, Cendr'oïde représente une autre qualité de menace, plus froide et plus tenue." }
+    ],
+    timeline: [
+      { era: "Avant le récit", title: "Présence du réseau", summary: "Cendr'oïde fait partie des figures rencontrées par Syne dans la Terre des Insectes." },
+      { era: "Avant le récit", title: "Préparation hostile", summary: "Il s'inscrit dans une ligne qui observe, prépare et accompagne les ruptures du monde." },
+      { era: "Lecture d'ensemble", title: "Menace méthodique", summary: "Sa présence montre que le camp adverse sait aussi avancer par discipline et recomposition, pas seulement par violence." }
     ]
   },
   {

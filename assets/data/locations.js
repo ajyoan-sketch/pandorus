@@ -13,6 +13,8 @@
     "village-des-renards": buildMediaPath("lieux", "Village des Renards.jpg"),
     "embouchure-du-sombrail": buildMediaPath("lieux", "Embouchure du Sombrail.jpg"),
     "taverne-du-sombrail": buildMediaPath("lieux", "Taverne du Sombrail.jpg"),
+    "fleuve-arkains": locationHeroImage,
+    "terre-des-insectes": locationHeroImage,
     vert: buildMediaPath("lieux", "Le Vert.png"),
     "ruines-du-vert": buildMediaPath("lieux", "Les Ruines du Vert.png")
   };
@@ -386,6 +388,69 @@ export function createLocationFiches(buildMediaPath) {
     ]
   },
   {
+    slug: "fleuve-arkains",
+    name: "Fleuve Arkains",
+    tone: "threshold",
+    category: "Origine intime",
+    intro: "Le fleuve Arkains n'entre pas par la guerre mais par l'enfance. Il devient le premier bord du monde de Syne, le lieu où une douceur de départ rencontre déjà une présence rejetée dans les bois.",
+    meta: [
+      { label: "Atmosphère", value: "Eaux tranquilles, lisière boisée, paix ancienne troublée" },
+      { label: "Fonction", value: "Origine de Syne et de Jacob" },
+      { label: "Présences", value: "Syne, Jacob, village oublié" }
+    ],
+    biography: [
+      "Avant la taverne, la Sombra et la Terre des Insectes, l'Arkains désigne un monde encore simple: un village, un fleuve, des bois proches et une enfance qui semble pouvoir rester douce.",
+      "C'est pourtant là que Syne aperçoit Jacob, garçon sauvage tenu hors du regard des autres. Le lieu devient alors moins un décor paisible qu'un point de fracture intime entre la peur collective et un attachement que rien ne parvient à faire céder.",
+      "L'Arkains garde ainsi la première vérité de Syne: elle n'entre pas dans la dureté par goût du froid, mais à partir d'un lien qu'elle refuse d'abandonner quand le monde ordinaire se retire."
+    ],
+    summary: [
+      "Le fleuve Arkains ouvre le passé de Syne avant toute logique de mission ou de réseau.",
+      "Il transforme sa dureté présente en prolongement d'une fidélité très ancienne."
+    ],
+    profile: [
+      { title: "Texture du lieu", text: "Berges calmes, bois voisins, lumière douce fissurée par une présence cachée." },
+      { title: "Rôle narratif", text: "Donner à Syne et à Jacob une origine humaine et affective, avant l'altération et l'exil." },
+      { title: "Point de tension", text: "Sous sa paix apparente, l'Arkains est déjà le lieu où le rejet du monde commence." }
+    ],
+    contextLinks: [
+      { href: "#fiches-syne", label: "Voir Syne" },
+      { href: "#fiches-bulldozer-jacob", label: "Voir Bulldozer Jacob" },
+      { href: "#chronologie", label: "Lire l'origine à l'Arkains" }
+    ]
+  },
+  {
+    slug: "terre-des-insectes",
+    name: "Terre des Insectes",
+    tone: "memory",
+    category: "Réseau hostile",
+    intro: "La Terre des Insectes n'est pas encore un grand front traversé par le groupe, mais elle apparaît désormais comme un pôle majeur du camp adverse: le lieu où Syne, Jacob et d'autres figures trouvent une autre doctrine du monde.",
+    meta: [
+      { label: "Atmosphère", value: "Présence d'insectes, réseau, patience, menace en préparation" },
+      { label: "Fonction", value: "Refuge d'exil puis matrice hostile" },
+      { label: "Présences", value: "Syne, Bulldozer Jacob, Mathéo, Cendr'oïde, Bouldouger" }
+    ],
+    biography: [
+      "Syne et Jacob atteignent la Terre des Insectes après avoir quitté l'Arkains. Le lieu ne se présente pas comme un simple refuge, mais comme un territoire déjà traversé par une autre compréhension du monde et du déséquilibre.",
+      "C'est là qu'un homme lié à un frelon noir fait basculer Syne vers une logique plus dure: ce qui dérègle le vivant n'a peut-être pas à être seulement contenu, mais prolongé, orienté ou utilisé pour qu'un autre monde prenne sa place.",
+      "Mathéo, Cendr'oïde, Bouldouger et d'autres figures s'y lisent comme les maillons d'un réseau. La Terre des Insectes devient alors moins un décor qu'une fabrique de missions, de pressions lentes, de parasitages et de retours calculés vers l'ouest."
+    ],
+    summary: [
+      "La Terre des Insectes donne enfin un vrai point d'origine au camp de Syne.",
+      "Elle relie la fidélité ancienne à Jacob à une stratégie beaucoup plus vaste de remplacement du monde."
+    ],
+    profile: [
+      { title: "Texture du lieu", text: "Territoire bourdonnant, organisation cachée, patience et surveillance." },
+      { title: "Rôle narratif", text: "Donner au camp adverse une base idéologique et relationnelle, au-delà des seules apparitions de terrain." },
+      { title: "Point de tension", text: "Ce lieu ne frappe pas toujours frontalement: il prépare, observe et renvoie ses figures au moment exact où elles doivent agir." }
+    ],
+    contextLinks: [
+      { href: "#fiches-syne", label: "Voir Syne" },
+      { href: "#fiches-matheo", label: "Voir Mathéo" },
+      { href: "#fiches-cendroide", label: "Voir Cendr'oïde" },
+      { href: "#chronologie", label: "Lire la Terre des Insectes" }
+    ]
+  },
+  {
     slug: "vert",
     name: "Le Vert",
     tone: "vrax",
@@ -465,16 +530,17 @@ export function createLocationFiches(buildMediaPath) {
       "Après la mort du Capitaine, la route s'ouvre enfin. Le groupe traverse les approches de l'ouest sous la veille du KingKoala, puis rencontre Will le Tigre Bois, gardien de seuil qui mesure leur passage avant de les laisser entrer.",
       "À l'intérieur de la Sombra, Luna Queen et Méli Mélo cessent d'être de simples noms. Elles deviennent les premières présences concrètes d'un territoire déjà habité par une lecture plus blanche du monde, juste avant l'approche de Bichette et de Zaïnob.",
       "Bichette y lit le groupe, nomme les dérèglements comme autre chose qu'une simple destruction et révèle à la fois un lien du sang entre Ab'Youbi et Zaïnob, et une limite nette de sa propre lecture devant Shaushana.",
-      "La scène bascule lorsque Syne surgit à son tour avec sa boîte, des Verdeflors et des Lions-Garouh. Le parasite réagit dans la poche de Shaushana, les papillons s'altèrent, puis Ab'Youbi éteint leurs flammes anormales d'un seul regard."
+      "La scène bascule lorsque Syne surgit à son tour avec sa boîte, des Verdeflors et des Lions-Garouh. Le parasite réagit dans la poche de Shaushana, les papillons s'altèrent, puis Ab'Youbi éteint leurs flammes anormales d'un seul regard.",
+      "Au terme de cette montée, Syne ouvre enfin la boîte dans la Sombra elle-même. Le lieu cesse alors d'être un simple espace de lecture: il devient l'endroit où un passé caché et une menace tenue entrent réellement dans le visible."
     ],
     summary: [
       "La Sombra ouvre réellement l'ouest du récit.",
-      "Elle promet moins une bataille simple qu'une compréhension, mais montre aussitôt que toute lecture vraie du monde s'accompagne déjà d'une nouvelle menace."
+      "Elle promet moins une bataille simple qu'une compréhension, mais montre aussitôt que toute lecture vraie du monde s'accompagne déjà d'une nouvelle menace, désormais ouverte."
     ],
     profile: [
       { title: "Texture du lieu", text: "Horizon occidental, lumière tenue, gardiens de seuil, clairières de lecture et tension de rupture." },
       { title: "Rôle narratif", text: "Déplacer la quête de la survie immédiate vers une recherche plus fine de compréhension, puis la confronter aussitôt à Syne et au parasite." },
-      { title: "Point de tension", text: "Le groupe y entre enfin, mais avec le parasite, le deuil du Capitaine et la preuve que l'ouest lit déjà plus qu'il ne protège encore." }
+      { title: "Point de tension", text: "Le groupe y entre enfin, mais avec le parasite, le deuil du Capitaine et une boîte ouverte qui transforme la lecture en confrontation immédiate." }
     ],
     contextLinks: [
       { href: "#fiches-bichette", label: "Voir Bichette" },

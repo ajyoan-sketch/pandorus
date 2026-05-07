@@ -85,6 +85,31 @@
     summary: "Sept ans avant l'éveil de Shaushana, Méli Mélo apparaît à son tour, plus mobile et plus rythmée dans cette même continuité."
   },
   {
+    era: "Avant le récit",
+    title: "Enfance de Syne près du fleuve Arkains",
+    summary: "Syne grandit dans un village paisible au bord de l'Arkains, avant que son attention ne soit happée par une présence solitaire dans les bois."
+  },
+  {
+    era: "Avant le récit",
+    title: "Rencontre de Jacob dans les bois",
+    summary: "Encore enfant, Syne rejoint en secret Jacob, garçon sauvage qu'elle nourrit, écoute et refuse de laisser aux peurs du village."
+  },
+  {
+    era: "Avant le récit",
+    title: "Jacob devient Bulldozer Jacob",
+    summary: "À mesure qu'il se transforme, Jacob devient pour les autres une force monstrueuse, jusqu'à recevoir le nom de Bulldozer Jacob."
+  },
+  {
+    era: "Avant le récit",
+    title: "Départ vers la Terre des Insectes",
+    summary: "Lorsque le lien avec le village se brise, Syne quitte l'Arkains avec Jacob et rejoint la Terre des Insectes."
+  },
+  {
+    era: "Avant le récit",
+    title: "Syne entre dans le réseau du frelon",
+    summary: "Un homme lié à un frelon noir, puis des figures comme Mathéo, Bouldouger et Cendr'oïde, font entrer Syne dans une logique d'observation, d'infection et de remplacement."
+  },
+  {
     era: "Jour 1",
     title: "Reveil de Shaushana dans Le Passage",
     summary: "Shaushana ouvre les yeux dans un monde déjà vivant et ressent immediatement le souffle profond qui le traverse."
@@ -423,5 +448,15 @@
     era: "Jour 14",
     title: "Papillons altérés et flammes éteintes",
     summary: "Quand les papillons se dérèglent et s'embrasent anormalement, Ab'Youbi ouvre plus profondément son regard rouge et fait tomber leur feu d'un seul geste."
+  },
+  {
+    era: "Jour 14",
+    title: "Verdeflors et Lions-Garouh encerclent la scène",
+    summary: "Au geste de Syne, des Verdeflors montent du sol tandis que des Lions-Garouh émergent des lisières, révélant que la reprise du parasite s'appuie déjà sur un dispositif entier."
+  },
+  {
+    era: "Jour 14",
+    title: "La boîte de Syne s'ouvre enfin",
+    summary: "Au cœur de la Sombra, Syne ouvre enfin la boîte qu'elle gardait depuis la taverne et appelle calmement ce qu'elle retenait hors du visible."
   }
 ];

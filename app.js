@@ -276,7 +276,7 @@ const livingMapRegions = [
     name: "Sombra",
     kicker: "Seuil occidental",
     mood: "Veille blanche, lecture, affrontement de seuil",
-    text: "La Sombra n'est plus une simple direction. Le groupe l'atteint enfin, y rencontre Bichette, Zaïnob, Luna Queen et Méli Mélo, puis y voit Syne venir réclamer le parasite au cœur même d'une lecture du dérèglement.",
+    text: "La Sombra n'est plus une simple direction. Le groupe l'atteint enfin, y rencontre Bichette, Zaïnob, Luna Queen et Méli Mélo, puis y voit Syne venir réclamer le parasite, faire surgir ses renforts et ouvrir enfin la boîte qu'elle retenait.",
     paths: [
       {
         title: "Fonction",
@@ -325,6 +325,13 @@ const characterRouteMap = {
   abyoubi: "#fiches-abyoubi",
   "ab-youbi": "#fiches-abyoubi",
   syne: "#fiches-syne",
+  jacob: "#fiches-bulldozer-jacob",
+  "bulldozer-jacob": "#fiches-bulldozer-jacob",
+  matheo: "#fiches-matheo",
+  "mathéo": "#fiches-matheo",
+  cendroide: "#fiches-cendroide",
+  "cendr-oide": "#fiches-cendroide",
+  "cendr'oïde": "#fiches-cendroide",
   "mitra-sesse": "#fiches-mitra-sesse",
   "mitra-séssé": "#fiches-mitra-sesse",
   "papy-perquis": "#fiches-papy-perquis",
@@ -368,6 +375,13 @@ const characterPrimaryLocationMap = {
   abyoubi: "#lieux-sombra",
   "ab-youbi": "#lieux-sombra",
   syne: "#lieux-sombra",
+  jacob: "#lieux-terre-des-insectes",
+  "bulldozer-jacob": "#lieux-terre-des-insectes",
+  matheo: "#lieux-terre-des-insectes",
+  "mathéo": "#lieux-terre-des-insectes",
+  cendroide: "#lieux-terre-des-insectes",
+  "cendr-oide": "#lieux-terre-des-insectes",
+  "cendr'oïde": "#lieux-terre-des-insectes",
   "mitra-sesse": "#lieux-taverne-du-sombrail",
   "papy-perquis": "#lieux-taverne-du-sombrail",
   "padre-souf": "#lieux-taverne-du-sombrail",
@@ -381,7 +395,10 @@ const characterPrimaryLocationMap = {
   vert: "#lieux-vert",
   "ruines-du-vert": "#lieux-ruines-du-vert",
   sombra: "#lieux-sombra",
-  "taverne-du-sombrail": "#lieux-taverne-du-sombrail"
+  "taverne-du-sombrail": "#lieux-taverne-du-sombrail",
+  arkains: "#lieux-fleuve-arkains",
+  "fleuve-arkains": "#lieux-fleuve-arkains",
+  "terre-des-insectes": "#lieux-terre-des-insectes"
 };
 
 const staticFicheContextMap = {
@@ -513,6 +530,21 @@ const additionalFicheContextMap = {
     { href: "#lieux-sombra", label: "Voir la Sombra" },
     { href: "#mysteres", label: "Lire le mystère de la boîte" }
   ],
+  "bulldozer-jacob": [
+    { href: "#fiches-syne", label: "Voir Syne" },
+    { href: "#lieux-terre-des-insectes", label: "Voir la Terre des Insectes" },
+    { href: "#mysteres", label: "Lire le mystère de la boîte" }
+  ],
+  matheo: [
+    { href: "#fiches-syne", label: "Voir Syne" },
+    { href: "#lieux-terre-des-insectes", label: "Voir la Terre des Insectes" },
+    { href: "#relations", label: "Voir ses liens" }
+  ],
+  cendroide: [
+    { href: "#fiches-syne", label: "Voir Syne" },
+    { href: "#lieux-terre-des-insectes", label: "Voir la Terre des Insectes" },
+    { href: "#relations", label: "Voir ses liens" }
+  ],
   "mitra-sesse": [
     { href: "#relations", label: "Voir ses liens" },
     { href: "#mysteres", label: "Lire les Briscards" },
@@ -641,7 +673,8 @@ const creatureContextMap = {
     { href: "#chronologie", label: "Lire les épreuves" }
   ],
   "verdeflor": [
-    { href: "#lieux-passage", label: "Relire Le Passage" },
+    { href: "#fiches-syne", label: "Voir Syne" },
+    { href: "#lieux-sombra", label: "Voir la Sombra" },
     { href: "#mysteres", label: "Voir les mystères" }
   ],
   "poiscaille": [
@@ -1147,11 +1180,39 @@ const relationNodes = [
     name: "Syne",
     role: "Gardienne de la boîte",
     links: [
+      { target: "Bulldozer Jacob", type: "Lien fondateur", description: "Syne découvre Jacob enfant près de l'Arkains, le nourrit, le protège puis quitte le monde ordinaire avec lui lorsque sa mutation devient irréversible." },
+      { target: "Mathéo", type: "Réseau commun", description: "Dans la Terre des Insectes, Syne rejoint autour de Mathéo une ligne d'observation et de pression qui ne veut plus sauver le monde tel qu'il est." },
+      { target: "Cendr'oïde", type: "Même camp", description: "Cendr'oïde appartient à la même constellation d'agents que Syne, chargés d'observer, d'infecter et de préparer d'autres bascules." },
       { target: "Ab'Youbi", type: "Respect de seuil", description: "Ab'Youbi comprend que la présence retenue par Syne appartient à une limite qu'il faut reconnaître." },
-      { target: "Brad et Bradlette", type: "Présence acceptée", description: "La taverne adapte son rythme à Syne sans avoir besoin de la nommer." },
-      { target: "Taverne du Sombrail", type: "Mystère central", description: "Syne transforme la taverne en lieu d'attente, de retenue et de menace contenue." },
-      { target: "Shaushana", type: "Parasite revendiqué", description: "Dans la Sombra, Syne revient pour reprendre le parasite que Shaushana porte désormais." },
-      { target: "Bichette", type: "Opposition de seuil", description: "Syne considère Bichette comme une présence capable de gêner des plans plus vastes et accepte une confrontation plus frontale." }
+      { target: "Shaushana", type: "Cible prioritaire", description: "Syne reçoit l'ordre de récupérer le parasite et d'effacer Shaushana si elle reste un point d'anomalie impossible à lire." },
+      { target: "Bichette", type: "Obstacle à supprimer", description: "Dans la Sombra, Bichette devient pour Syne une présence capable de contrarier le plan au point d'être désignée comme une disparition acceptable." }
+    ]
+  },
+  {
+    name: "Bulldozer Jacob",
+    role: "Compagnon altéré de Syne",
+    links: [
+      { target: "Syne", type: "Attachement absolu", description: "Syne est la seule présence qui traverse son altération sans le fuir et l'emporte avec elle hors du monde commun." },
+      { target: "Fleuve Arkains", type: "Origine", description: "C'est près de l'Arkains que Jacob est découvert enfant, seul, sauvage et déjà séparé des autres." },
+      { target: "Terre des Insectes", type: "Exil", description: "Le voyage vers la Terre des Insectes transforme Jacob d'énigme locale en pièce d'un monde plus vaste et plus hostile." }
+    ]
+  },
+  {
+    name: "Mathéo",
+    role: "Relais de la Terre des Insectes",
+    links: [
+      { target: "Syne", type: "Intégration", description: "Mathéo fait partie des premières présences que Syne rejoint lorsqu'elle quitte son ancienne vie pour entrer dans un réseau d'observation et de remplacement." },
+      { target: "Bouldouger", type: "Même front", description: "Mathéo et Bouldouger appartiennent à la même ligne d'êtres chargés de préparer, infecter et accompagner les ruptures." },
+      { target: "Cendr'oïde", type: "Convergence", description: "Avec Cendr'oïde, il compose l'une des figures latérales du groupe qui gravite autour de Syne et de la Terre des Insectes." }
+    ]
+  },
+  {
+    name: "Cendr'oïde",
+    role: "Présence froide de préparation",
+    links: [
+      { target: "Syne", type: "Même dessein", description: "Cendr'oïde fait partie du même réseau que Syne et partage une logique de préparation silencieuse plutôt qu'une violence immédiatement démonstrative." },
+      { target: "Mathéo", type: "Ligne commune", description: "Tous deux apparaissent comme des figures du même ensemble hostile issu de la Terre des Insectes." },
+      { target: "Bouldouger", type: "Complément de force", description: "Là où Bouldouger incarne la percussion, Cendr'oïde relève d'une présence plus froide, plus tenue et plus programmatique." }
     ]
   },
   {
@@ -1278,7 +1339,13 @@ function buildLoreLinkEntries() {
     ["Méli Mélo", "#fiches-meli-melo"],
     ["Meli Melo", "#fiches-meli-melo"],
     ["Ab'Youbi", "#fiches-abyoubi"],
-    ["Syne", "#fiches-syne"]
+    ["Syne", "#fiches-syne"],
+    ["Bulldozer Jacob", "#fiches-bulldozer-jacob"],
+    ["Jacob", "#fiches-bulldozer-jacob"],
+    ["Mathéo", "#fiches-matheo"],
+    ["Matheo", "#fiches-matheo"],
+    ["Cendr'oïde", "#fiches-cendroide"],
+    ["Cendroide", "#fiches-cendroide"]
   ].forEach(([label, href]) => rawEntries.push({ label, href }));
 
   creatureFiches.forEach((fiche) => {
@@ -1310,6 +1377,9 @@ function buildLoreLinkEntries() {
     ["Vert", "#lieux-vert"],
     ["Ruines du Vert", "#lieux-ruines-du-vert"],
     ["Sombra", "#lieux-sombra"],
+    ["Fleuve Arkains", "#lieux-fleuve-arkains"],
+    ["Arkains", "#lieux-fleuve-arkains"],
+    ["Terre des Insectes", "#lieux-terre-des-insectes"],
     ["la taverne", "#lieux-taverne-du-sombrail"],
     ["taverne", "#lieux-taverne-du-sombrail"],
     ["Briscards", "#mysteres"],
@@ -2091,6 +2161,11 @@ const chapters = [
     path: "./media/chapitres/Chapitre%2025%20-%20Nouvelles.pdf",
     summary: "Dans la Sombra, Bichette lit enfin le groupe, révèle le lien du sang entre Ab'Youbi et Zaïnob, bute sur le mystère de Shaushana, puis Syne surgit pour reprendre le parasite.",
     accessKey: "ChapPando25"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2026%20-%20Syne%20et%20son%20ami.pdf",
+    summary: "Le passé de Syne se dévoile depuis l'Arkains, Jacob devient Bulldozer Jacob, la Terre des Insectes révèle son réseau, puis la Sombra voit surgir Verdeflors, Lions-Garouh et la boîte enfin ouverte.",
+    accessKey: "ChapPando26"
   }
 ];
 
@@ -2723,6 +2798,8 @@ function renderTimeline() {
     if (normalizedEventText.includes("SYLVAE") || normalizedEventText.includes("SUD")) {
       contextCandidates.push({ href: "#lieux-fleuve-sylvae", label: "Voir le fleuve Sylvae" });
     }
+    if (normalizedEventText.includes("ARKAINS")) contextCandidates.push({ href: "#lieux-fleuve-arkains", label: "Voir le fleuve Arkains" });
+    if (normalizedEventText.includes("INSECTES")) contextCandidates.push({ href: "#lieux-terre-des-insectes", label: "Voir la Terre des Insectes" });
     if (normalizedEventText.includes("TSUNE")) contextCandidates.push({ href: "#fiches-tsune", label: "Voir Tsune" });
     if (normalizedEventText.includes("HEZ")) contextCandidates.push({ href: "#fiches-hez", label: "Voir Hez" });
     if (normalizedEventText.includes("JAVIER")) contextCandidates.push({ href: "#fiches-javier", label: "Voir Javier" });
@@ -2737,6 +2814,9 @@ function renderTimeline() {
     if (normalizedEventText.includes("BRAD")) contextCandidates.push({ href: "#fiches-brad-et-bradlette", label: "Voir Brad et Bradlette" });
     if (normalizedEventText.includes("AB'YOUBI") || normalizedEventText.includes("ABYOUBI")) contextCandidates.push({ href: "#fiches-abyoubi", label: "Voir Ab'Youbi" });
     if (normalizedEventText.includes("SYNE")) contextCandidates.push({ href: "#fiches-syne", label: "Voir Syne" });
+    if (normalizedEventText.includes("JACOB")) contextCandidates.push({ href: "#fiches-bulldozer-jacob", label: "Voir Bulldozer Jacob" });
+    if (normalizedEventText.includes("MATHEO")) contextCandidates.push({ href: "#fiches-matheo", label: "Voir Mathéo" });
+    if (normalizedEventText.includes("CENDR")) contextCandidates.push({ href: "#fiches-cendroide", label: "Voir Cendr'oïde" });
     if (normalizedEventText.includes("ZAINOB")) contextCandidates.push({ href: "#fiches-zainob", label: "Voir Zaïnob" });
     if (normalizedEventText.includes("MITRA")) contextCandidates.push({ href: "#fiches-mitra-sesse", label: "Voir Mitra Séssé" });
     if (normalizedEventText.includes("PERQUIS")) contextCandidates.push({ href: "#fiches-papy-perquis", label: "Voir Papy Perquis" });
@@ -2750,6 +2830,8 @@ function renderTimeline() {
     if (normalizedEventText.includes("GORILLANGE")) contextCandidates.push({ href: "#creatures-fiche-gorillange", label: "Voir le Gorillange" });
     if (normalizedEventText.includes("MACAGARDIEN")) contextCandidates.push({ href: "#creatures-fiche-macagardien", label: "Voir le Macagardien" });
     if (normalizedEventText.includes("NONSTITI")) contextCandidates.push({ href: "#creatures-fiche-nonstiti", label: "Voir le Nonstiti" });
+    if (normalizedEventText.includes("VERDEFLOR")) contextCandidates.push({ href: "#creatures-fiche-verdeflor", label: "Voir le Verdeflor" });
+    if (normalizedEventText.includes("LION-GAROUH") || normalizedEventText.includes("LION GAROUH")) contextCandidates.push({ href: "#creatures-fiche-lion-garouh", label: "Voir le Lion-Garouh" });
 
     const uniqueLinks = [];
     const seenLinks = new Set();
