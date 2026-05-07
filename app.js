@@ -3,6 +3,7 @@ import { timelineEvents } from "./assets/data/timeline.js";
 import { createLocationFiches } from "./assets/data/locations.js";
 import { createCreatureFiches } from "./assets/data/creatures.js";
 import { createPandorusTestData } from "./assets/data/test.js";
+import { dailyWords } from "./assets/data/daily-words.js";
 
 const maps = [
   "./media/cartes/Constellations.jpg",
@@ -2888,6 +2889,35 @@ function renderLandingOracle() {
   `;
 }
 
+function getDailyWordEntry(date = new Date()) {
+  if (!dailyWords.length) return null;
+  const startOfYear = new Date(date.getFullYear(), 0, 1);
+  const startOfToday = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+  const dayOfYear = Math.floor((startOfToday - startOfYear) / 86400000);
+  const index = ((dayOfYear * 37) + date.getFullYear()) % dailyWords.length;
+  return dailyWords[index];
+}
+
+function renderDailyWord() {
+  const card = document.getElementById("daily-word");
+  const entry = getDailyWordEntry();
+  if (!card || !entry) return;
+
+  card.innerHTML = `
+    <div class="daily-word-shell">
+      <p class="daily-word-kicker">Parole du jour</p>
+      <h3>Papillon, mémoire et vivant</h3>
+      <blockquote class="daily-word-quote">
+        <p>${entry.text}</p>
+      </blockquote>
+      <div class="daily-word-meta">
+        <span class="daily-word-family">${entry.family}</span>
+        <span class="daily-word-source">${entry.source}</span>
+      </div>
+    </div>
+  `;
+}
+
 function startLandingOracleRotation() {
   renderLandingOracle();
   if (landingOracleInterval || landingOracleEntries.length < 2) return;
@@ -4302,6 +4332,7 @@ function showSectionFromHash() {
 
 window.addEventListener("hashchange", showSectionFromHash);
 renderLandingMarquee();
+renderDailyWord();
 renderLandingPulse();
 startLandingOracleRotation();
 initChapterViewer();
