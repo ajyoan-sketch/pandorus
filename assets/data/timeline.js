@@ -458,5 +458,95 @@
     era: "Jour 14",
     title: "La boîte de Syne s'ouvre enfin",
     summary: "Au cœur de la Sombra, Syne ouvre enfin la boîte qu'elle gardait depuis la taverne et appelle calmement ce qu'elle retenait hors du visible."
+  },
+  {
+    era: "Jour 14",
+    title: "Jacob surgit de la boîte",
+    summary: "Bulldozer Jacob sort enfin de la boîte au cœur de la Sombra, donnant un corps réel à la présence que Syne retenait depuis la taverne."
+  },
+  {
+    era: "Jour 14",
+    title: "Ab'Youbi brûle les frelons dans l'arbre",
+    summary: "Quand les frelons s'abattent sur la clairière, Ab'Youbi les attire jusqu'à la couronne d'un arbre géant et les détruit par sa puissance rouge."
+  },
+  {
+    era: "Jour 14",
+    title: "Lévy et Tsune tiennent le siège végétal",
+    summary: "Pendant que les Verdeflors envahissent la Sombra, Lévy déplace le sol et les racines, tandis que Tsune ouvre des lignes de coupe nettes jusque vers Franklin."
+  },
+  {
+    era: "Jour 14",
+    title: "Shan et Shaushana brisent ensemble les Lions-Garouh",
+    summary: "Face aux assauts du Lion-Garouh, Shan et Shaushana atteignent une vraie synergie de combat qui transforme la clairière en terrain de réponse plutôt qu'en débordement."
+  },
+  {
+    era: "Jour 14",
+    title: "Bichette couvre Gil et Filston",
+    summary: "Bichette déploie un voile blanc et des papillons autour de Gil et Filston pour les soustraire à l'onde de destruction."
+  },
+  {
+    era: "Jour 14",
+    title: "Ezze libère Zaïnob",
+    summary: "Au milieu du chaos, Ezze arrache Zaïnob à l'emprise végétale et lui permet de revenir dans la bataille."
+  },
+  {
+    era: "Jour 14",
+    title: "Zaïnob frappe Syne dans une rage lunaire",
+    summary: "Une fois libérée, Zaïnob laisse éclater une magie noire et lunaire contre Syne, jusqu'à ce que Jacob la fasse tomber pour protéger celle qu'il suit encore."
+  },
+  {
+    era: "Jour 14",
+    title: "Méli Mélo est gravement blessée",
+    summary: "Le dernier Verdeflor encore vivant atteint Méli Mélo de plein fouet avant qu'Ezze ne l'abatte et ne la porte en urgence jusqu'à Bichette."
+  },
+  {
+    era: "Jour 14",
+    title: "Luna Queen veut tuer Syne",
+    summary: "En voyant Méli Mélo s'effondrer, Luna Queen bascule dans une colère lunaire totale et fond sur Syne jusqu'à ce que Bichette l'arrête d'un seul ordre."
+  },
+  {
+    era: "Jour 14",
+    title: "Bichette refuse le cœur noir",
+    summary: "Alors que Jacob emporte Syne hors de la clairière, Bichette affirme qu'ils n'ont pas le cœur noir, empêchant la bataille de se refermer sur une haine simple."
+  },
+  {
+    era: "Jours 15 à 17",
+    title: "Trois jours de soins dans la Sombra",
+    summary: "Pendant trois jours, la Sombra se répare, les papillons reviennent, Franklin aide sans relâche et Méli Mélo demeure la grande inquiétude de l'après-bataille."
+  },
+  {
+    era: "Jour 18",
+    title: "Assemblée des papillons autour de Bichette",
+    summary: "Le quatrième jour après la bataille, une grande réunion de papillons accompagne la parole de Bichette devant le groupe rassemblé."
+  },
+  {
+    era: "Jour 18",
+    title: "Bichette purifie le Parasite",
+    summary: "Bichette déploie de grandes ailes lumineuses, purifie le Parasite et révèle qu'il n'était pas mauvais en lui-même, mais tordu par une volonté étrangère."
+  },
+  {
+    era: "Jour 18",
+    title: "L'ouest seul est déjà frappé",
+    summary: "Bichette précise que le dérèglement atteint pour l'instant surtout l'ouest, tandis que l'est résiste encore et ne doit pas sombrer dans une panique trop tôt."
+  },
+  {
+    era: "Jour 18",
+    title: "Le Vrax tient encore",
+    summary: "Bichette affirme qu'Ossah Lyla et Nastaz tiennent toujours le Vrax, puis envoie sa lumière jusque là-bas pour brûler d'éventuels parasites cachés."
+  },
+  {
+    era: "Jour 18",
+    title: "Insect Master est nommé",
+    summary: "Bichette désigne Insect Master, grand créateur de la Terre des Insectes, comme l'esprit probable du réseau qui tord le vivant derrière Syne, Jacob, Mathéo, Cendr'oïde, Nogard, Bouldouger et Barbo."
+  },
+  {
+    era: "Jour 18",
+    title: "Nouvelle route vers le Creux",
+    summary: "Avant la Terre des Insectes, Bichette oriente désormais la Communauté des Papillons vers le Creux, où O'Sama, Bella et Balak'Oss peuvent aider à lire ce qui vient."
+  },
+  {
+    era: "Jour 18",
+    title: "Ab'Youbi rejoint la route",
+    summary: "Après la parole de Bichette, Ab'Youbi décide d'accompagner le groupe jusqu'au Creux et au-delà, comme si le détour n'était plus possible."
   }
 ];

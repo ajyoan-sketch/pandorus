@@ -151,7 +151,9 @@
       { era: "Jour 5", title: "Fixation du terrain", summary: "Lévy perturbe les appuis du groupe de Shaushana et participe directement a la prise de Franklin." },
       { era: "Jour 6", title: "Depart avec le groupe", summary: "Au matin, Lévy quitte le coeur du Vrax pour accompagner le groupe vers la nouvelle zone de rupture du vivant." },
       { era: "Nuit du Jour 12", title: "Ajustement fatal contre Nogard", summary: "Dans les ruines du Vert, Lévy ouvre avec Tsune la chute de Nogard et prouve que sa lecture du vide peut aussi devenir arme décisive." },
-      { era: "Jour 14", title: "Passage vers la Sombra", summary: "Toujours accordé aux ruptures du monde, Lévy poursuit la route jusqu'à la Sombra où une autre forme de lecture l'attend." }
+      { era: "Jour 14", title: "Passage vers la Sombra", summary: "Toujours accordé aux ruptures du monde, Lévy poursuit la route jusqu'à la Sombra où une autre forme de lecture l'attend." },
+      { era: "Jour 14", title: "Sol et racines contre les Verdeflors", summary: "Dans la bataille de la Sombra, Lévy déplace les appuis du terrain et retient la poussée végétale des Verdeflors." },
+      { era: "Jour 18", title: "Le Vrax toujours vivant", summary: "Lorsque Bichette affirme qu'Ossah Lyla et Nastaz tiennent encore le Vrax, Lévy se retrouve indirectement rattaché à ce foyer qui continue de résister." }
     ]
   },
   {
@@ -270,7 +272,8 @@
       { era: "Jour 7", title: "Mort de Hez", summary: "La perte de Hez scelle chez Tsune un point de non-retour dans sa manière de porter la lutte." },
       { era: "Jour 8", title: "Communauté des Papillons", summary: "Tsune accepte de ne plus défendre seulement un lieu, mais une réponse plus large à ce qui cherche à remplacer le vivant." },
       { era: "Nuit du Jour 12", title: "Chute de Nogard", summary: "Dans les ruines du Vert, Tsune abat Nogard avec Lévy et transforme son deuil ancien en geste décisif contre l'ennemi revenu." },
-      { era: "Jour 14", title: "Entrée gardée dans la Sombra", summary: "Après la sépulture du Capitaine et la route vers l'ouest, Tsune franchit la Sombra avec la même vigilance de seuil qui le définissait déjà au village." }
+      { era: "Jour 14", title: "Entrée gardée dans la Sombra", summary: "Après la sépulture du Capitaine et la route vers l'ouest, Tsune franchit la Sombra avec la même vigilance de seuil qui le définissait déjà au village." },
+      { era: "Jour 14", title: "Lame contre les Verdeflors", summary: "Quand la clairière bascule dans la bataille, Tsune devient l'une des meilleures réponses du groupe face aux Verdeflors et protège Franklin au plus près." }
     ]
   },
   {
@@ -443,7 +446,8 @@
       "Au fil de ses routes, il perçoit des zones où le monde ne répond plus correctement. Il ne sait pas encore nommer le déséquilibre, mais il le lit dans les silences, les sols fragiles et les variations invisibles.",
       "Sa rencontre avec Gil et Filston l'oblige à ralentir intérieurement. Leur manière de voir Pandorus comme un monde qui n'est peut-être pas fermé ouvre en lui une question plus vaste que sa propre course.",
       "À la taverne du Sombrail, Ezze retrouve Gil et Filston, puis aperçoit la Communauté des Papillons. Pour une fois, il ne passe pas: il reste, comme si toutes les trajectoires qu'il avait suivies convergeaient enfin.",
-      "Dans la Sombra, Bichette le lit comme une présence qui ne garde pas ce qu'elle reçoit intact, mais le fait vibrer autrement. Cette reconnaissance confirme qu'Ezze n'est pas seulement rapide: il transforme déjà ce que le monde lui confie."
+      "Dans la Sombra, Bichette le lit comme une présence qui ne garde pas ce qu'elle reçoit intact, mais le fait vibrer autrement. Cette reconnaissance confirme qu'Ezze n'est pas seulement rapide: il transforme déjà ce que le monde lui confie.",
+      "Quand la bataille éclate enfin autour de Syne, de Jacob, des Verdeflors et des Lions-Garouh, Ezze devient l'une des présences les plus mobiles du front. Il sauve Franklin, libère Zaïnob, abat le dernier Verdeflor et porte Méli Mélo jusqu'à Bichette."
     ],
     summary: [
       "Ezze incarne la vitesse, l'intuition et la lecture instinctive d'un monde qui se dérègle.",
@@ -468,7 +472,10 @@
       { era: "Nuit du Jour 11", title: "Pause sans fuite", summary: "Au camp, pour la première fois, Ezze ne cherche pas seulement à repartir : il reste avec le groupe et commence à accepter d'en faire réellement partie." },
       { era: "Jour 12", title: "Entrée dans la forêt vivante", summary: "Le lendemain, Ezze guide encore le groupe jusqu'au Vert, évite les attaques, protège Filston et assiste au face-à-face avec Eben sans chercher à reprendre le contrôle." },
       { era: "Jour 12", title: "Vers le Capitaine", summary: "Après le duel entre Shan et Eben, Ezze poursuit la marche avec les autres jusqu'aux ruines où la rumeur sur le Capitaine devient enfin une preuve." },
-      { era: "Jour 14", title: "Lecture par Bichette", summary: "Dans la Sombra, Bichette sent chez Ezze une présence mobile qui fait vibrer autrement ce qu'elle reçoit du monde." }
+      { era: "Jour 14", title: "Lecture par Bichette", summary: "Dans la Sombra, Bichette sent chez Ezze une présence mobile qui fait vibrer autrement ce qu'elle reçoit du monde." },
+      { era: "Jour 14", title: "Course dans la bataille", summary: "Au milieu de la bataille de la Sombra, Ezze sauve Franklin, libère Zaïnob et refuse de laisser la clairière se refermer sur les plus fragiles." },
+      { era: "Jour 14", title: "Méli Mélo arrachée au pire", summary: "Après la blessure de Méli Mélo, Ezze abat le dernier Verdeflor et la porte jusqu'à Bichette." },
+      { era: "Jour 18", title: "Nouvelle route vers le Creux", summary: "Quand Bichette ouvre la route du Creux, Ezze reste l'une des présences les plus naturellement accordées au mouvement qui vient." }
     ]
   },
   {
@@ -572,7 +579,8 @@
       "Il reconnaît silencieusement la gravité de la Communauté des Papillons, puis valide la mémoire ouverte par Brad comme une réalité encore active plutôt qu'un simple récit.",
       "Face à Syne et à la boîte, son attitude change à peine, mais cette retenue suffit: il sait que certaines forces ne doivent pas être provoquées pour être comprises.",
       "Plus tard, il suit la route du Vert à distance, fait plier l'Aligaroi, puis réapparaît près de la tombe du Capitaine. Sa parole relance alors la marche vers la Sombra, comme s'il veillait non sur un lieu fixe, mais sur les seuils que le groupe doit traverser.",
-      "Dans la Sombra, sa retenue prend une autre densité encore. Bichette révèle entre elle et Ab'Youbi un lien du sang que personne n'avait nommé jusque-là, montrant que sa veille n'était pas seulement celle d'un passage: elle touchait déjà sa propre lignée."
+      "Dans la Sombra, sa retenue prend une autre densité encore. Bichette révèle entre elle et Ab'Youbi un lien du sang que personne n'avait nommé jusque-là, montrant que sa veille n'était pas seulement celle d'un passage: elle touchait déjà sa propre lignée.",
+      "Quand les frelons s'abattent sur la clairière, Ab'Youbi cesse de rester au bord. Il attire leur masse jusqu'à la cime d'un arbre immense et les réduit en feu rouge, avant de choisir ensuite d'accompagner lui-même la prochaine route."
     ],
     summary: [
       "Ab'Youbi apporte à la taverne une veille plus obscure, plus ancienne et plus perceptive.",
@@ -603,7 +611,9 @@
       { era: "Jour 13", title: "Présence à la tombe", summary: "Après la mort du Capitaine, Ab'Youbi vient près de la sépulture et replace la perte dans une lecture plus vaste du monde en cours de déplacement." },
       { era: "Jour 13", title: "Route rouverte vers la Sombra", summary: "Il pousse le groupe à reprendre la route de la Sombra et de Bichette, comme si la prochaine réponse devait désormais se lire à l'ouest." },
       { era: "Jour 14", title: "Retrouvailles dans la Sombra", summary: "Face à Bichette et aux gardiennes, Ab'Youbi laisse apparaître un lien plus intime avec l'ouest lorsque Bichette est reconnue comme sa fille." },
-      { era: "Jour 14", title: "Extinction des flammes", summary: "Quand Syne surgit et que les papillons s'altèrent, Ab'Youbi ouvre plus profondément son regard rouge et fait tomber d'un seul geste les flammes anormales." }
+      { era: "Jour 14", title: "Extinction des flammes", summary: "Quand Syne surgit et que les papillons s'altèrent, Ab'Youbi ouvre plus profondément son regard rouge et fait tomber d'un seul geste les flammes anormales." },
+      { era: "Jour 14", title: "Frelons brûlés dans la cime", summary: "Au plus fort de la bataille, Ab'Youbi attire les frelons jusqu'à un arbre géant et les détruit par une poussée rouge qui inverse leur assaut." },
+      { era: "Jour 18", title: "Départ assumé vers le Creux", summary: "Après la parole de Bichette, Ab'Youbi décide de suivre lui-même la route du Creux et de la Terre des Insectes." }
     ]
   },
   {
@@ -623,7 +633,8 @@
       "Ce garçon s'appelle Jacob. Syne le nourrit, lui parle et reste auprès de lui quand les autres ne voient bientôt plus en lui qu'une menace. À mesure que les années passent, Jacob change, se ferme, se durcit et devient pour les villageois une masse de force monstrueuse que l'on finit par appeler Bulldozer Jacob.",
       "Lorsque cette altération ne peut plus être cachée, Syne quitte le monde ordinaire avec lui. Leur exil les mène jusqu'à la Terre des Insectes, où un homme calme, lié à un frelon noir, lui ouvre une autre lecture : un monde peut être jugé trop abîmé pour être seulement sauvé, et devoir être remplacé dans sa forme même.",
       "À partir de là, Syne rejoint une ligne plus vaste où gravitent Kuji, Mathéo, Nogard, Bouldouger et Cendr'oïde. On lui demande d'observer, de suivre, d'infecter ou de récupérer, jusqu'au jour où elle reçoit une mission nette : retrouver le parasite, effacer Shaushana si elle demeure une anomalie, puis faire disparaître Bichette si elle s'interpose.",
-      "Dans la taverne du Sombrail, elle apparaît d'abord comme une présence calme au fond de la salle, gardant une boîte trop vivante pour n'être qu'un objet. Mais à la Sombra, ce calme devient une manœuvre entière : Verdeflors sous le sol, Lions-Garouh dans les bois, parasite réactif, papillons altérés, puis la boîte qu'elle ouvre enfin au grand jour."
+      "Dans la taverne du Sombrail, elle apparaît d'abord comme une présence calme au fond de la salle, gardant une boîte trop vivante pour n'être qu'un objet. Mais à la Sombra, ce calme devient une manœuvre entière : Verdeflors sous le sol, Lions-Garouh dans les bois, parasite réactif, papillons altérés, puis la boîte qu'elle ouvre enfin au grand jour.",
+      "La bataille fissure pourtant la lecture la plus simple d'elle-même. Jacob la protège jusqu'au bout, Bichette refuse de la réduire à un cœur noir, et les révélations suivantes montrent que Syne n'est peut-être pas l'origine du mal qu'elle sert, mais seulement l'une de ses courroies humaines."
     ],
     summary: [
       "Syne relie désormais l'ouest du récit à une histoire bien plus ancienne faite d'attachement, d'altération et de bascule idéologique.",
@@ -655,7 +666,10 @@
       { era: "Jour 14", title: "Retour dans la Sombra", summary: "Syne rejoint la Sombra après le groupe, disant avoir suivi des trajectoires qu'il ne fallait pas laisser dériver trop loin." },
       { era: "Jour 14", title: "Réclamation du parasite", summary: "Face à Shaushana et Bichette, Syne nomme le parasite comme sien et tente de reprendre la main sur ce qu'elle juge devoir rester contenu." },
       { era: "Jour 14", title: "Renforts dévoilés", summary: "Des Verdeflors surgissent du sol et des Lions-Garouh des bois, montrant que Syne n'est pas venue seule mais avec une ligne entière d'appui." },
-      { era: "Jour 14", title: "Boîte ouverte", summary: "Syne ouvre enfin la boîte dans la Sombra et appelle calmement ce qu'elle a gardé jusque-là hors du visible." }
+      { era: "Jour 14", title: "Boîte ouverte", summary: "Syne ouvre enfin la boîte dans la Sombra et appelle calmement ce qu'elle a gardé jusque-là hors du visible." },
+      { era: "Jour 14", title: "Jacob la protège", summary: "Quand Zaïnob déchaîne sa rage contre elle, Jacob intervient et la retire du front malgré l'effondrement général de la clairière." },
+      { era: "Jour 14", title: "Bichette refuse la haine simple", summary: "Alors que Luna Queen voudrait la tuer, Syne est pourtant épargnée lorsque Bichette affirme qu'elle et Jacob n'ont pas le cœur noir." },
+      { era: "Jour 18", title: "Simple rouage d'un mal plus vaste", summary: "Dans sa parole après la bataille, Bichette affirme que Syne n'est pas la source du dérèglement, mais une part d'un réseau plus haut menant jusqu'à Insect Master." }
     ]
   },
   {
@@ -674,7 +688,8 @@
       "Syne rencontre Jacob alors qu'elle est encore enfant. Il vit seul dans les bois près du fleuve Arkains, presque muet, déjà séparé des autres, mais pas encore perdu pour elle.",
       "Pendant des années, Syne revient le voir, lui apporte de quoi vivre et maintient autour de lui un lien que personne d'autre n'accepte. Plus Jacob change, plus le village prend peur; plus le village prend peur, plus Syne reste auprès de lui.",
       "Avec le temps, Jacob cesse d'être seulement un garçon caché. Son corps, sa force et sa manière d'avancer finissent par lui valoir un nouveau nom : Bulldozer Jacob. Ce n'est plus seulement une solitude, c'est déjà une percée monstrueuse du vivant altéré.",
-      "Le chapitre 26 n'épuise pas encore toute sa vérité présente, mais il relie très fortement son histoire à la boîte que Syne garde puis ouvre dans la Sombra, comme si son destin ancien n'avait jamais quitté sa route."
+      "Quand Syne ouvre enfin la boîte dans la Sombra, Jacob surgit réellement au cœur du combat et devient l'une des présences les plus décisives de la bataille.",
+      "Jacob ne se contente pas d'écraser. Il protège Syne, fait tomber Zaïnob lorsqu'elle la submerge et l'emporte hors de la clairière quand tout menace de basculer en exécution pure."
     ],
     summary: [
       "Bulldozer Jacob relie l'histoire intime de Syne à une altération longue, humaine avant d'être monstrueuse.",
@@ -695,7 +710,9 @@
       { era: "Avant le récit", title: "Lien avec Syne", summary: "Syne le nourrit, lui parle et maintient avec lui un attachement que le village ne comprend pas." },
       { era: "Avant le récit", title: "Naissance de Bulldozer Jacob", summary: "Sa mutation s'aggrave jusqu'à faire de lui une force monstrueuse que les autres ne savent plus appeler autrement." },
       { era: "Avant le récit", title: "Exil", summary: "Syne quitte alors le village avec lui et rejoint la Terre des Insectes." },
-      { era: "Jour 14", title: "Présence rappelée par la boîte", summary: "Lorsque Syne ouvre la boîte dans la Sombra, tout le passé de Jacob revient peser sur la scène sans encore se livrer totalement." }
+      { era: "Jour 14", title: "Sortie de la boîte", summary: "Lorsque Syne ouvre la boîte dans la Sombra, Jacob surgit enfin au grand jour comme une force tenue jusque-là hors du visible." },
+      { era: "Jour 14", title: "Protection de Syne", summary: "Pendant la bataille, Jacob s'oppose à Zaïnob pour protéger Syne et l'emporte avec lui hors de la clairière." },
+      { era: "Jour 18", title: "Pas la source, mais un rouage", summary: "Bichette affirme ensuite que Jacob et Syne ne sont pas l'origine du mal, mais des figures prises dans un dispositif plus large." }
     ]
   },
   {
@@ -1020,7 +1037,8 @@
       "Après le Vert et la mort du Capitaine, la route vers la Sombra se rouvre enfin. Bichette cesse alors d'être une simple orientation stratégique : elle devient la présence que tout le groupe approche désormais concrètement.",
       "Même avant la rencontre pleine, sa proximité change déjà la lecture du récit. L'ouest n'est plus une promesse lointaine, mais un lieu atteint où une autre forme de veille attend d'être entendue.",
       "Dans la Sombra, Bichette lit les présences du groupe sans les réduire. Elle reconnaît chez Franklin une continuité droite, sent chez Ezze une vibration mobile, nomme les dérèglements comme autre chose qu'une simple destruction, mais s'arrête devant Shaushana: ce qu'elle est ne passe pas par sa propre lecture.",
-      "Son histoire s'enracine aussi plus loin encore. Après l'ancienne guerre, alors que le ciel et la nuit cessent de tenir d'eux-mêmes, Bichette laisse la continuité se faire autour d'une autre gardienne: Zaïnob, passage vivant de la lumière lunaire. C'est dans cette continuité que naissent ensuite Luna Queen et Méli Mélo."
+      "Son histoire s'enracine aussi plus loin encore. Après l'ancienne guerre, alors que le ciel et la nuit cessent de tenir d'eux-mêmes, Bichette laisse la continuité se faire autour d'une autre gardienne: Zaïnob, passage vivant de la lumière lunaire. C'est dans cette continuité que naissent ensuite Luna Queen et Méli Mélo.",
+      "Lorsque la bataille éclate avec Jacob, les frelons, les Verdeflors et les Lions-Garouh, Bichette ne se contente pas de tenir le seuil. Elle protège, interrompt la vengeance pure, puis redevient quelques jours plus tard celle qui purifie le Parasite et redonne une direction au monde."
     ],
     summary: [
       "Bichette n'est plus seulement annoncée : elle devient la grande présence désormais rencontrée du récit.",
@@ -1047,7 +1065,10 @@
       { era: "Jour 13", title: "Route rouverte", summary: "Après la sépulture du Capitaine, le nom de Bichette redevient la direction immédiate donnée par Ab'Youbi." },
       { era: "Jour 14", title: "Lecture du groupe", summary: "À l'intérieur de la Sombra, Bichette lit un à un les membres du groupe et nomme plus clairement le dérèglement qui gagne le monde." },
       { era: "Jour 14", title: "Limite devant Shaushana", summary: "En approchant Shaushana, Bichette s'arrête devant une lumière et une injonction qui lui disent que ce qu'elle est ne passe pas par elle." },
-      { era: "Jour 14", title: "Seuil contre Syne", summary: "Quand Syne surgit pour reprendre le parasite, Bichette devient l'un des pôles qui empêchent encore la Sombra de céder à cette reprise." }
+      { era: "Jour 14", title: "Seuil contre Syne", summary: "Quand Syne surgit pour reprendre le parasite, Bichette devient l'un des pôles qui empêchent encore la Sombra de céder à cette reprise." },
+      { era: "Jour 14", title: "Le cœur noir refusé", summary: "À la fin de la bataille, Bichette interdit que la rage décide seule et affirme que Syne et Jacob n'ont pas le cœur noir." },
+      { era: "Jour 18", title: "Purification du Parasite", summary: "Trois jours après le combat, Bichette purifie le Parasite sous une grande levée de lumière et de papillons." },
+      { era: "Jour 18", title: "Parole sur l'ouest et le Vrax", summary: "Elle affirme que seul l'ouest est déjà frappé, que le Vrax tient encore et que la réponse doit désormais passer par le Creux puis la Terre des Insectes." }
     ]
   },
   {
@@ -1066,7 +1087,8 @@
       "Zaïnob se tient à la Sombra comme une présence droite, contenante, à la fois proche de Bichette et distincte d'elle. Sa fonction ne ressemble pas à une simple défense : elle maintient un passage, une cohérence, une tenue lumineuse que d'autres présences prolongent ensuite.",
       "Après l'ancienne guerre, lorsque le ciel et la nuit se fragmentent, Zaïnob devient le point par lequel la lumière lunaire peut encore traverser le monde sans se rompre complètement. Bichette ne force pas cette continuité : elle la reconnaît, et Zaïnob la tient.",
       "Autour de cette tenue naissent Luna Queen puis Méli Mélo, chacune selon une modalité différente de la même continuité. Dans le présent du récit, Zaïnob reste celle qui contient, forme et stabilise ces deux présences sans jamais les aplatir.",
-      "Lorsque la Communauté des Papillons arrive enfin dans la Sombra, Zaïnob demeure liée au lieu et à la continuité lunaire, mais c'est Bichette qu'Ab'Youbi découvre liée à lui par le sang, comme une fille à son père."
+      "Lorsque la Communauté des Papillons arrive enfin dans la Sombra, Zaïnob demeure liée au lieu et à la continuité lunaire, mais c'est Bichette qu'Ab'Youbi découvre liée à lui par le sang, comme une fille à son père.",
+      "Quand la bataille éclate, Zaïnob n'est plus seulement gardienne de continuité. Arrachée à l'emprise du siège par Ezze, elle se déchaîne ensuite contre Syne avec une violence noire et lunaire que Jacob seul interrompt."
     ],
     summary: [
       "Zaïnob donne à la Sombra une profondeur plus ancienne que le simple accueil du groupe.",
@@ -1088,7 +1110,9 @@
       { era: "Il y a 10 ans", title: "Naissance de Luna Queen", summary: "Dans la continuité tenue autour d'elle, Luna Queen apparaît comme une première forme plus stable de veille." },
       { era: "Il y a 7 ans", title: "Naissance de Méli Mélo", summary: "Méli Mélo naît à son tour dans cette même ligne, plus mobile et plus rythmée." },
       { era: "Jour 14", title: "Rencontre dans la Sombra", summary: "Le groupe atteint enfin Zaïnob au cœur de la Sombra, comme une présence déjà installée dans une veille plus ancienne que leur propre quête." },
-      { era: "Jour 14", title: "Continuité maintenue", summary: "Dans la Sombra, Zaïnob demeure l'une des gardiennes de la continuité lunaire, sans être la fille révélée d'Ab'Youbi." }
+      { era: "Jour 14", title: "Continuité maintenue", summary: "Dans la Sombra, Zaïnob demeure l'une des gardiennes de la continuité lunaire, sans être la fille révélée d'Ab'Youbi." },
+      { era: "Jour 14", title: "Libérée puis déchaînée", summary: "Quand Ezze la dégage des lianes et du siège, Zaïnob frappe Syne avec une violence lunaire devenue presque noire." },
+      { era: "Jour 14", title: "Jacob la fait tomber", summary: "Jacob interrompt sa rage en la mettant brutalement hors de combat pour emporter Syne." }
     ]
   },
   {
@@ -1106,7 +1130,8 @@
     biography: [
       "Luna Queen entre d'abord dans le récit par la parole de Brad et Bradlette, comme une présence déjà reconnue autour de Bichette et de la Sombra.",
       "Bien avant cela pourtant, elle naît dix ans avant l'éveil de Shaushana dans la continuité tenue entre Bichette et Zaïnob. Elle porte une forme plus stable, plus posée, presque flottante de cette lumière qui n'a pas cessé de traverser la nuit brisée.",
-      "Lorsque le groupe atteint enfin l'ouest, elle cesse d'être seulement un nom. Sa présence confirme que la Sombra repose bien sur plusieurs gardiennes capables de lire le monde autrement que par la seule guerre."
+      "Lorsque le groupe atteint enfin l'ouest, elle cesse d'être seulement un nom. Sa présence confirme que la Sombra repose bien sur plusieurs gardiennes capables de lire le monde autrement que par la seule guerre.",
+      "Mais quand Méli Mélo s'effondre sous le coup du dernier Verdeflor, Luna Queen bascule dans une rage totale et lunaire qui manque de tuer Syne avant l'ordre de Bichette."
     ],
     summary: [
       "Luna Queen élargit la Sombra en véritable réseau de présences, pas en simple destination unique.",
@@ -1127,7 +1152,8 @@
       { era: "Jour 10", title: "Évoquée à la taverne", summary: "Son nom entre dans le récit par la parole de Brad et Bradlette, avec la Sombra comme horizon." },
       { era: "Jour 10", title: "Présence gardée en réserve", summary: "Luna Queen demeure hors champ, mais son nom suffit déjà à faire comprendre que l'ouest n'est pas vide : il est organisé." },
       { era: "Jour 14", title: "Rencontre dans la Sombra", summary: "À l'entrée profonde de la Sombra, Luna Queen apparaît enfin comme l'une des gardiennes concrètes du lieu." },
-      { era: "Jour 14", title: "Lecture plus fine du seuil", summary: "Aux côtés de Bichette et de Zaïnob, elle inscrit le groupe dans une autre qualité de présence, plus tenue, plus silencieuse." }
+      { era: "Jour 14", title: "Lecture plus fine du seuil", summary: "Aux côtés de Bichette et de Zaïnob, elle inscrit le groupe dans une autre qualité de présence, plus tenue, plus silencieuse." },
+      { era: "Jour 14", title: "Colère pour Méli Mélo", summary: "Lorsque Méli Mélo est touchée, Luna Queen se jette sur Syne avec une violence presque irrévocable jusqu'à l'interruption de Bichette." }
     ]
   },
   {
@@ -1145,7 +1171,8 @@
     biography: [
       "Comme Luna Queen, Méli Mélo entre d'abord dans le récit comme une présence réelle de la prochaine étape, et non comme un décor lointain.",
       "Sept ans avant l'éveil de Shaushana, elle naît dans la même continuité que Luna Queen, mais sous une forme plus mouvante, plus rythmée, presque dansante. Là où Luna Queen tient, Méli Mélo circule.",
-      "Quand la Sombra est enfin atteinte, elle devient l'une des premières figures concrètes rencontrées à l'ouest. Sa présence confirme que ce territoire pense, veille et accueille selon une logique déjà établie."
+      "Quand la Sombra est enfin atteinte, elle devient l'une des premières figures concrètes rencontrées à l'ouest. Sa présence confirme que ce territoire pense, veille et accueille selon une logique déjà établie.",
+      "La bataille lui donne aussitôt un autre poids. Engagée très tôt contre Jacob, elle finit gravement blessée par le dernier Verdeflor avant d'être portée jusqu'à Bichette, faisant d'elle la grande inquiétude des jours de guérison."
     ],
     summary: [
       "Méli Mélo renforce l'idée que la Sombra abrite plusieurs points d'équilibre.",
@@ -1166,7 +1193,213 @@
       { era: "Jour 10", title: "Évoquée à la taverne", summary: "Son nom rejoint ceux de Bichette et Luna Queen comme nouvelle direction stratégique du récit." },
       { era: "Jour 10", title: "Troisième point d'équilibre", summary: "Sa mention confirme que la Sombra repose sur plusieurs présences complémentaires et non sur une seule figure isolée." },
       { era: "Jour 14", title: "Rencontre à l'ouest", summary: "À l'intérieur de la Sombra, Méli Mélo apparaît avec Luna Queen comme l'une des présences qui précèdent l'approche de Bichette." },
-      { era: "Jour 14", title: "Veille en mouvement", summary: "Autour de Bichette et de Zaïnob, Méli Mélo fait sentir une autre qualité du seuil: moins figée, plus circulante, mais tout aussi vive." }
+      { era: "Jour 14", title: "Veille en mouvement", summary: "Autour de Bichette et de Zaïnob, Méli Mélo fait sentir une autre qualité du seuil: moins figée, plus circulante, mais tout aussi vive." },
+      { era: "Jour 14", title: "Blessure de la bataille", summary: "Le dernier Verdeflor la frappe violemment avant qu'Ezze ne l'arrache au front et ne la rapporte à Bichette." },
+      { era: "Jours 15 à 17", title: "Grande inquiétude de la Sombra", summary: "Pendant les jours de réparation, Méli Mélo demeure la blessure la plus sensible laissée par la bataille." }
+    ]
+  },
+  {
+    slug: "will-le-tigre-bois",
+    hash: "#fiches-will-le-tigre-bois",
+    name: "Will le Tigre Bois",
+    image: buildMediaPath("pandorus", "Will le Tigre Bois.jpg"),
+    category: "Gardien de seuil",
+    intro: "Will le Tigre Bois garde la première lisière de la Sombra. Il n'est pas un simple combattant du passage, mais une lumière voulue par Bichette pour éprouver, mesurer puis laisser franchir.",
+    meta: [
+      { label: "Statut", value: "Gardien vivant de la Sombra" },
+      { label: "Ancrage", value: "Seuil occidental" },
+      { label: "Lien majeur", value: "Bichette et la Sombra" }
+    ],
+    biography: [
+      "Will apparaît au bord de la Sombra comme une présence de seuil, plus proche d'une mesure vivante que d'un simple accueil. Il teste le groupe sans cruauté, pour savoir s'il peut réellement approcher ce que l'ouest garde.",
+      "Sa force n'est pas celle d'un chef qui expose son autorité. Elle tient plutôt à une justesse de lecture : il voit vite qui arrive, ce que cela porte et jusqu'où cela peut avancer.",
+      "Quand Bichette reparle de lui après la bataille, elle le désigne comme une lumière qu'elle a voulu montrer au groupe. Cette phrase le déplace: Will n'est pas seulement un gardien fonctionnel, mais un signe de ce que l'ouest sait encore offrir du vivant."
+    ],
+    summary: [
+      "Will le Tigre Bois incarne la première lumière armée de la Sombra.",
+      "Il fait comprendre que l'ouest n'accueille pas sans lire."
+    ],
+    profile: [
+      { title: "Nature", text: "Gardien de seuil, vif, boisé, plus lecteur qu'agresseur." },
+      { title: "Rôle", text: "Mesurer le passage vers la Sombra avant l'approche de Bichette." },
+      { title: "Mystère", text: "Bichette le nomme comme une lumière à voir, signe qu'il porte peut-être plus que sa fonction immédiate." }
+    ],
+    relations: [
+      { title: "Bichette", text: "Bichette présente Will comme une lumière qu'elle a voulu montrer au groupe." },
+      { title: "Sombra", text: "Will appartient au premier seuil vivant de la Sombra et en contrôle l'accès." }
+    ],
+    timeline: [
+      { era: "Jour 14", title: "Gardien du seuil", summary: "Will mesure la Communauté des Papillons à l'entrée de la Sombra avant de la laisser avancer." },
+      { era: "Jour 18", title: "Lumière nommée par Bichette", summary: "Après la bataille, Bichette rappelle que Will faisait partie de ce qu'elle voulait révéler au groupe dans l'ouest." }
+    ]
+  },
+  {
+    slug: "insect-master",
+    hash: "#fiches-insect-master",
+    name: "Insect Master",
+    image: buildMediaPath("pandorus", "Insect Master.png"),
+    category: "Grand créateur dévoyé",
+    intro: "Insect Master surgit comme la grande figure encore absente qui pèse pourtant déjà sur l'ouest. Ancien créateur de la Terre des Insectes, il est désormais soupçonné d'être l'esprit qui tord le vivant par parasites, relais et remodelages.",
+    meta: [
+      { label: "Statut", value: "Créateur soupçonné d'orchestrer le dérèglement occidental" },
+      { label: "Ancrage", value: "Terre des Insectes" },
+      { label: "Lien majeur", value: "Syne, Jacob, Barbo et le réseau insecte" }
+    ],
+    biography: [
+      "Bichette ne le présente pas comme un simple ennemi de passage. Insect Master appartenait d'abord à la logique des grands créateurs, capables de maintenir l'équilibre d'un territoire vivant.",
+      "Quelque chose s'est pourtant rompu dans sa lecture. Les papillons lui apparaissent comme trop fragiles, trop légers, presque impropres à tenir un monde blessé. À partir de là, sa réponse ne cherche plus à accompagner le vivant mais à le remodeler.",
+      "Derrière Syne, Jacob, Mathéo, Cendr'oïde, Bouldouger, Nogard et Barbo, Insect Master devient ainsi la première grande intelligence nommée d'un réseau hostile déjà vaste."
+    ],
+    summary: [
+      "Insect Master donne enfin un visage plus haut au camp adverse.",
+      "Il transforme la Terre des Insectes en foyer idéologique du dérèglement."
+    ],
+    profile: [
+      { title: "Nature", text: "Ancien créateur devenu maître d'un réagencement hostile du vivant." },
+      { title: "Rôle", text: "Centraliser, orienter et légitimer la logique des parasites et du remplacement." },
+      { title: "Mystère", text: "On connaît désormais son nom et sa terre, mais pas encore toute l'étendue réelle de sa puissance." }
+    ],
+    relations: [
+      { title: "Syne", text: "Bichette le désigne comme le maître probable du réseau dans lequel Syne agit." },
+      { title: "Terre des Insectes", text: "Il est lié au territoire comme un ancien gardien devenu centre de dérive." },
+      { title: "Barbo", text: "Barbo appartient au même horizon hiérarchique trouble, peut-être à un étage encore plus opaque du même système." }
+    ],
+    timeline: [
+      { era: "Avant le récit", title: "Créateur de la Terre des Insectes", summary: "Insect Master maintenait autrefois l'équilibre de son territoire comme l'un des grands créateurs." },
+      { era: "Avant le récit", title: "Bascule contre les papillons", summary: "Sa lecture du monde se détourne de la fragilité des papillons et s'oriente vers une logique plus dure de remodelage." },
+      { era: "Jour 18", title: "Nom enfin donné", summary: "Bichette nomme Insect Master comme source probable du réseau qui agit derrière Syne et le Parasite." }
+    ]
+  },
+  {
+    slug: "barbo",
+    hash: "#fiches-barbo",
+    name: "Barbo",
+    image: buildMediaPath("pandorus", "Barbo.png"),
+    category: "Présence d'étage supérieur",
+    intro: "Barbo n'entre pas encore dans le récit comme une figure affrontée, mais comme un nom qui trouble aussitôt la lecture. Même parmi les ennemis déjà connus, il relève d'un étage plus haut, plus collant et plus dérangeant.",
+    meta: [
+      { label: "Statut", value: "Figure nommée du réseau hostile" },
+      { label: "Ancrage", value: "Proximité de la Terre des Insectes" },
+      { label: "Lien majeur", value: "Insect Master" }
+    ],
+    biography: [
+      "Lorsque Bichette énumère les figures gravitant autour de Syne et de Jacob, le nom de Barbo ne sonne pas comme les autres. Il apparaît comme une présence plus étrange, plus poisseuse, presque d'un autre étage dans l'architecture du mal.",
+      "On ne le connaît pas encore par l'affrontement ni par la parole directe. C'est précisément ce qui le rend inquiétant: il entre dans le site comme une menace déjà placée au-dessus du visible immédiat."
+    ],
+    summary: [
+      "Barbo ajoute une profondeur hiérarchique trouble au camp adverse.",
+      "Sa simple nomination suffit à suggérer que la Terre des Insectes n'est pas le dernier plafond du conflit."
+    ],
+    profile: [
+      { title: "Nature", text: "Présence obscure et collante, plus hiérarchique que frontale à ce stade." },
+      { title: "Rôle", text: "Élargir la menace au-delà des figures déjà rencontrées sur le terrain." },
+      { title: "Mystère", text: "On ignore encore sa forme exacte, son pouvoir et sa place réelle au-dessus du réseau." }
+    ],
+    relations: [
+      { title: "Insect Master", text: "Barbo apparaît dans le même horizon de menace qu'Insect Master, mais comme une présence peut-être encore plus opaque." },
+      { title: "Terre des Insectes", text: "Son nom surgit lorsque Bichette dévoile la hiérarchie réelle du réseau venu de la Terre des Insectes." }
+    ],
+    timeline: [
+      { era: "Jour 18", title: "Nom de l'étage supérieur", summary: "Bichette nomme Barbo comme une présence plus haute et plus étrange dans l'organisation hostile." }
+    ]
+  },
+  {
+    slug: "o-sama",
+    hash: "#fiches-o-sama",
+    name: "O'Sama",
+    image: buildMediaPath("pandorus", "O'Sama.jpg"),
+    category: "Veilleur du Creux",
+    intro: "O'Sama fait partie des trois présences que Bichette désigne comme prochains relais du voyage. Dans le Creux, il appartient à ceux qui sentent déjà venir le dérèglement au lieu de le découvrir trop tard.",
+    meta: [
+      { label: "Statut", value: "Ressource alliée à rencontrer" },
+      { label: "Ancrage", value: "Le Creux" },
+      { label: "Lien majeur", value: "Bella et Balak'Oss" }
+    ],
+    biography: [
+      "O'Sama n'entre pas encore par une grande scène propre. Il existe d'abord comme un nom de confiance prononcé par Bichette au moment où la route doit s'affiner.",
+      "Dans le Creux, il compte parmi ceux qui perçoivent déjà les dérèglements et peuvent aider le groupe à les lire autrement avant la Terre des Insectes. Cette fonction suffit à le rendre stratégique bien avant sa rencontre."
+    ],
+    summary: [
+      "O'Sama prépare la prochaine alliance du récit.",
+      "Il fait du Creux un vrai lieu de veille, pas une simple étape de transition."
+    ],
+    profile: [
+      { title: "Nature", text: "Présence alliée du Creux, liée à la perception et à la veille." },
+      { title: "Rôle", text: "Aider le groupe à entrer dans une compréhension plus profonde du dérèglement." },
+      { title: "Mystère", text: "On ne sait pas encore quelle forme prendra exactement son aide sur le terrain." }
+    ],
+    relations: [
+      { title: "Bella", text: "Bella et O'Sama appartiennent au même noyau de veille du Creux." },
+      { title: "Balak'Oss", text: "Avec Balak'Oss, il forme le trio que Bichette désigne comme prochain relais vivant." }
+    ],
+    timeline: [
+      { era: "Jour 18", title: "Nom donné par Bichette", summary: "Bichette désigne O'Sama comme l'une des trois ressources à rejoindre d'abord au Creux." }
+    ]
+  },
+  {
+    slug: "bella",
+    hash: "#fiches-bella",
+    name: "Bella",
+    image: buildMediaPath("pandorus", "Bella.jpg"),
+    category: "Veilleuse du Creux",
+    intro: "Bella appartient elle aussi au prochain cercle d'alliés annoncé par Bichette. Dans le Creux, elle compte parmi les présences capables de sentir ce qui se dérègle avant son plein déploiement.",
+    meta: [
+      { label: "Statut", value: "Ressource alliée à rencontrer" },
+      { label: "Ancrage", value: "Le Creux" },
+      { label: "Lien majeur", value: "O'Sama et Balak'Oss" }
+    ],
+    biography: [
+      "Bella n'est pas encore développée par une scène directe, mais sa place est claire: elle fait partie du trio vivant que la route doit désormais rejoindre avant d'affronter la Terre des Insectes.",
+      "Son nom suffit à annoncer que le Creux n'est pas vide ni passif. C'est un territoire où des présences lisent déjà le mal en marche et peuvent aider le groupe à ne pas entrer aveuglément dans la phase suivante."
+    ],
+    summary: [
+      "Bella donne au Creux une dimension d'alliance concrète.",
+      "Elle annonce une nouvelle forme de soutien plus discrète, plus profonde et plus préparée."
+    ],
+    profile: [
+      { title: "Nature", text: "Présence alliée du Creux, liée à la veille et à la survie lucide." },
+      { title: "Rôle", text: "Faire du Creux un vrai relais avant la Terre des Insectes." },
+      { title: "Mystère", text: "Le récit n'a pas encore montré sa manière exacte d'agir ni ce qu'elle voit déjà." }
+    ],
+    relations: [
+      { title: "O'Sama", text: "Bella partage avec O'Sama la même lecture du Creux et des dérèglements qui y transitent." },
+      { title: "Balak'Oss", text: "Le trio qu'elle forme avec lui et O'Sama devient la prochaine ressource désignée par Bichette." }
+    ],
+    timeline: [
+      { era: "Jour 18", title: "Bella est nommée", summary: "Au moment de rouvrir la route, Bichette fait de Bella l'une des présences qu'il faut rejoindre au Creux." }
+    ]
+  },
+  {
+    slug: "balak-oss",
+    hash: "#fiches-balak-oss",
+    name: "Balak'Oss",
+    image: buildMediaPath("pandorus", "Balak'Oss.jpg"),
+    category: "Voyageur du Creux",
+    intro: "Balak'Oss complète le trio du Creux. Là où O'Sama et Bella évoquent surtout la veille, lui porte aussi l'idée du déplacement, du passage difficile et du guidage dans une zone déjà travaillée par le mal.",
+    meta: [
+      { label: "Statut", value: "Ressource alliée à rencontrer" },
+      { label: "Ancrage", value: "Le Creux" },
+      { label: "Lien majeur", value: "O'Sama et Bella" }
+    ],
+    biography: [
+      "Balak'Oss est nommé comme voyageur, ce qui le distingue d'emblée dans la prochaine étape. Il semble appartenir aux présences capables non seulement de sentir le dérèglement, mais aussi d'ouvrir des passages à travers lui.",
+      "Sa future importance tient précisément à cela: le groupe ne doit pas seulement comprendre le Creux, il doit le traverser sans offrir au mal la facilité qu'il attend."
+    ],
+    summary: [
+      "Balak'Oss donne au Creux une dimension de route active.",
+      "Il annonce un appui plus mobile pour la phase qui mène vers Insect Master."
+    ],
+    profile: [
+      { title: "Nature", text: "Présence alliée du Creux, plus mobile, plus passeuse que purement sédentaire." },
+      { title: "Rôle", text: "Aider le groupe à avancer dans une zone déjà menacée sans s'y perdre." },
+      { title: "Mystère", text: "Sa manière d'ouvrir la route reste encore entièrement à découvrir." }
+    ],
+    relations: [
+      { title: "O'Sama", text: "Balak'Oss complète avec O'Sama la ligne de veille du Creux." },
+      { title: "Bella", text: "Avec Bella, il forme l'un des futurs appuis majeurs du groupe dans la prochaine étape." }
+    ],
+    timeline: [
+      { era: "Jour 18", title: "Voyageur annoncé", summary: "Bichette nomme Balak'Oss parmi les présences du Creux à rejoindre avant la Terre des Insectes." }
     ]
   }
   ];

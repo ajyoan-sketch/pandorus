@@ -340,7 +340,8 @@
     summary: "Le Parasite n'est pas montré comme une bête de plein jour, mais comme une menace de contamination pensée pour prendre un lieu de l'intérieur.",
     biography: [
       "Le mot surgit d'abord dans la bouche du Capitaine à travers ses souvenirs de captivité, puis devient une réalité concrète quand il transmet au groupe l'objet qu'il fallait soustraire aux ruines.",
-      "Le Parasite fait basculer le récit vers une peur plus fine : il ne s'agit plus seulement d'être attaqué par des créatures, mais d'être infecté, occupé ou remplacé de l'intérieur, jusqu'à contaminer des lieux entiers comme le Creux."
+      "Le Parasite fait basculer le récit vers une peur plus fine : il ne s'agit plus seulement d'être attaqué par des créatures, mais d'être infecté, occupé ou remplacé de l'intérieur, jusqu'à contaminer des lieux entiers comme le Creux.",
+      "Dans la Sombra, il devient enfin plus qu'un objet de transmission. Bichette le purifie et révèle qu'il n'était pas mauvais en lui-même, mais tordu par une volonté étrangère qui l'avait retourné contre le vivant."
     ],
     profile: [
       { title: "Nature", text: "Forme d'infection ou de prise interne, plus proche d'une menace de contamination que d'un prédateur direct." },
@@ -350,7 +351,8 @@
     timeline: [
       { era: "Fin du Jour 12", title: "Nom du danger", summary: "Le Capitaine révèle que le Parasite devait servir à infecter le Creux et d'autres zones du monde." },
       { era: "Nuit du Jour 12", title: "Transmission à sauver", summary: "Avant de mourir, le Capitaine confie le Parasite au groupe pour empêcher son retour aux mains de l'ennemi." },
-      { era: "Jour 13", title: "Menace portée en route", summary: "Le Parasite accompagne désormais la route vers la Sombra comme un fardeau de compréhension et de danger." }
+      { era: "Jour 13", title: "Menace portée en route", summary: "Le Parasite accompagne désormais la route vers la Sombra comme un fardeau de compréhension et de danger." },
+      { era: "Jour 18", title: "Purification par Bichette", summary: "Dans la Sombra réparée, Bichette purifie le Parasite et montre qu'il relevait d'une corruption imposée plus que d'une nature mauvaise." }
     ]
   },
   {
@@ -473,7 +475,8 @@
     biography: [
       "Verdeflor intervient lors de l'attaque contre le Passar, aux cotes des Felous et du Felours. Sa présence est importante car elle elargit la crise du vivant: ce ne sont pas seulement des predateurs qui se dereglent, mais aussi des formes liees a la vegetation elle-meme.",
       "Avec Verdeflor, on comprend que la corruption touche des couches differentes de la vie pandorienne. La menace n'est plus seulement animale; elle atteint aussi ce qui pousse, s'etend et devrait normalement participer a l'equilibre du monde.",
-      "Le chapitre 26 lui donne une seconde lecture: Verdeflor n'est pas seulement un symptôme ancien du dérèglement, il devient aussi l'un des appuis amenés par Syne jusque dans la Sombra, comme une force de siège végétal au service d'une volonté plus structurée."
+      "Le chapitre 26 lui donne une seconde lecture: Verdeflor n'est pas seulement un symptôme ancien du dérèglement, il devient aussi l'un des appuis amenés par Syne jusque dans la Sombra, comme une force de siège végétal au service d'une volonté plus structurée.",
+      "Dans la grande bataille de la Sombra, les Verdeflors envahissent le terrain jusqu'à frapper gravement Méli Mélo, preuve qu'ils ne servent plus seulement à ouvrir un front mais à briser les équilibres les plus sensibles du lieu."
     ],
     profile: [
       { title: "Nature", text: "Creature vegetale offensive, liee a la propagation, a l'emprise ou a l'envahissement." },
@@ -484,6 +487,7 @@
       { era: "Jour 2", title: "Assaut du Passar", summary: "Verdeflor participe a l'attaque coordonnee contre le bidonville." },
       { era: "Jour 2", title: "Signe d'une corruption plus profonde", summary: "Son apparition montre que le mal agit au-dela des seuls predateurs et atteint la trame meme du vivant." },
       { era: "Jour 14", title: "Remontée dans la Sombra", summary: "À l'appel de Syne, des Verdeflors émergent du sol de la Sombra et transforment la clairière en zone de pression." },
+      { era: "Jour 14", title: "Blessure de Méli Mélo", summary: "Le dernier Verdeflor encore debout frappe gravement Méli Mélo avant d'être abattu par Ezze." },
       { era: "Lecture d'ensemble", title: "Le vivant se deregle avant la réponse du Vrax", summary: "Verdeflor se lit comme un symptome de corruption touchant les couches les plus profondes du monde." }
     ]
   },
@@ -498,7 +502,7 @@
     biography: [
       "Le Lion-Garouh apparaît dans la Sombra au moment où Syne revient réclamer le parasite. Sa présence prouve que son avancée ne repose pas seulement sur la boîte ou sur une parole de contrôle, mais aussi sur des forces capables d'imposer physiquement une reprise.",
       "Ce n'est pas un animal isolé lancé au hasard. Dans cette scène, il fait partie d'une arrivée construite, avec Verdeflors et autres présences de pression, comme si Syne avançait déjà avec sa propre ligne d'appui.",
-      "Le chapitre 26 confirme ainsi que le Lion-Garouh n'est pas seulement une bête surgie du décor. Il relève d'un cortège préparé, capable d'encercler, de tendre le seuil et d'accompagner l'ouverture de la boîte."
+      "Le Lion-Garouh devient ensuite l'un des pôles les plus sauvages de la bataille. Face à lui, Shan et Shaushana trouvent une vraie synergie de combat qui fait de cette créature l'étalon d'une violence désormais structurée."
     ],
     profile: [
       { title: "Nature", text: "Créature féline de guerre, plus sauvage que cérémonielle, faite pour la pression et l'irruption." },
@@ -507,7 +511,8 @@
     ],
     timeline: [
       { era: "Jour 14", title: "Arrivée dans la Sombra", summary: "Le Lion-Garouh accompagne l'irruption de Syne dans la Sombra, au moment où le parasite réagit et où la lecture de Bichette est interrompue." },
-      { era: "Jour 14", title: "Force d'appui de Syne", summary: "Sa présence confirme que Syne avance avec des créatures capables de soutenir une reprise plus brutale du contrôle." }
+      { era: "Jour 14", title: "Force d'appui de Syne", summary: "Sa présence confirme que Syne avance avec des créatures capables de soutenir une reprise plus brutale du contrôle." },
+      { era: "Jour 14", title: "Affrontement avec Shan et Shaushana", summary: "Dans la clairière de la Sombra, le Lion-Garouh pousse Shan et Shaushana à unir pleinement leur manière de combattre." }
     ]
   },
   {

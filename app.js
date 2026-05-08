@@ -333,6 +333,17 @@ const characterRouteMap = {
   cendroide: "#fiches-cendroide",
   "cendr-oide": "#fiches-cendroide",
   "cendr'oïde": "#fiches-cendroide",
+  "o-sama": "#fiches-o-sama",
+  osama: "#fiches-o-sama",
+  "o'sama": "#fiches-o-sama",
+  bella: "#fiches-bella",
+  "balak-oss": "#fiches-balak-oss",
+  "balak'oss": "#fiches-balak-oss",
+  barbo: "#fiches-barbo",
+  "insect-master": "#fiches-insect-master",
+  insectmaster: "#fiches-insect-master",
+  will: "#fiches-will-le-tigre-bois",
+  "will-le-tigre-bois": "#fiches-will-le-tigre-bois",
   "mitra-sesse": "#fiches-mitra-sesse",
   "mitra-séssé": "#fiches-mitra-sesse",
   "papy-perquis": "#fiches-papy-perquis",
@@ -383,6 +394,17 @@ const characterPrimaryLocationMap = {
   cendroide: "#lieux-terre-des-insectes",
   "cendr-oide": "#lieux-terre-des-insectes",
   "cendr'oïde": "#lieux-terre-des-insectes",
+  "o-sama": "#lieux-creux",
+  osama: "#lieux-creux",
+  "o'sama": "#lieux-creux",
+  bella: "#lieux-creux",
+  "balak-oss": "#lieux-creux",
+  "balak'oss": "#lieux-creux",
+  barbo: "#lieux-terre-des-insectes",
+  "insect-master": "#lieux-terre-des-insectes",
+  insectmaster: "#lieux-terre-des-insectes",
+  will: "#lieux-sombra",
+  "will-le-tigre-bois": "#lieux-sombra",
   "mitra-sesse": "#lieux-taverne-du-sombrail",
   "papy-perquis": "#lieux-taverne-du-sombrail",
   "padre-souf": "#lieux-taverne-du-sombrail",
@@ -399,7 +421,9 @@ const characterPrimaryLocationMap = {
   "taverne-du-sombrail": "#lieux-taverne-du-sombrail",
   arkains: "#lieux-fleuve-arkains",
   "fleuve-arkains": "#lieux-fleuve-arkains",
-  "terre-des-insectes": "#lieux-terre-des-insectes"
+  "terre-des-insectes": "#lieux-terre-des-insectes",
+  creux: "#lieux-creux",
+  "le-creux": "#lieux-creux"
 };
 
 const staticFicheContextMap = {
@@ -545,6 +569,36 @@ const additionalFicheContextMap = {
     { href: "#fiches-syne", label: "Voir Syne" },
     { href: "#lieux-terre-des-insectes", label: "Voir la Terre des Insectes" },
     { href: "#relations", label: "Voir ses liens" }
+  ],
+  "o-sama": [
+    { href: "#lieux-creux", label: "Voir le Creux" },
+    { href: "#chronologie", label: "Lire le prochain cap" },
+    { href: "#mysteres", label: "Voir les nouvelles forces" }
+  ],
+  bella: [
+    { href: "#lieux-creux", label: "Voir le Creux" },
+    { href: "#chronologie", label: "Lire le prochain cap" },
+    { href: "#relations", label: "Voir ses liens" }
+  ],
+  "balak-oss": [
+    { href: "#lieux-creux", label: "Voir le Creux" },
+    { href: "#chronologie", label: "Lire le prochain cap" },
+    { href: "#relations", label: "Voir ses liens" }
+  ],
+  barbo: [
+    { href: "#lieux-terre-des-insectes", label: "Voir la Terre des Insectes" },
+    { href: "#mysteres", label: "Voir les nouvelles forces" },
+    { href: "#chronologie", label: "Lire la menace supérieure" }
+  ],
+  "insect-master": [
+    { href: "#lieux-terre-des-insectes", label: "Voir la Terre des Insectes" },
+    { href: "#mysteres", label: "Voir les nouvelles forces" },
+    { href: "#relations", label: "Voir ses liens" }
+  ],
+  "will-le-tigre-bois": [
+    { href: "#lieux-sombra", label: "Voir la Sombra" },
+    { href: "#chronologie", label: "Lire le seuil de l'ouest" },
+    { href: "#fiches-bichette", label: "Voir Bichette" }
   ],
   "mitra-sesse": [
     { href: "#relations", label: "Voir ses liens" },
@@ -1284,6 +1338,61 @@ const relationNodes = [
       { target: "Luna Queen", type: "Complément", description: "Elle prolonge avec Luna Queen une même ligne de présence autour de l'ouest." },
       { target: "Sombra", type: "Territoire", description: "Sa place se lit maintenant dans une Sombra réellement atteinte par le groupe." }
     ]
+  },
+  {
+    name: "Will le Tigre Bois",
+    role: "Gardien de seuil voulu",
+    links: [
+      { target: "Bichette", type: "Émanation guidée", description: "Bichette explique finalement que Will est une lumière qu'elle a voulu leur faire voir, première étape concrète de la Sombra." },
+      { target: "Sombra", type: "Premier seuil", description: "Will tient l'entrée de la Sombra et mesure ceux qui peuvent réellement la franchir." },
+      { target: "Communauté des Papillons", type: "Épreuve douce", description: "Il confronte le groupe à un premier test sans haine, comme une vérification d'accord plutôt qu'une simple défense." }
+    ]
+  },
+  {
+    name: "Insect Master",
+    role: "Créateur dévoyé des insectes",
+    links: [
+      { target: "Terre des Insectes", type: "Règne", description: "Insect Master règne sur la Terre des Insectes et en maintenait autrefois l'équilibre avant de basculer vers une logique de remodelage." },
+      { target: "Syne", type: "Maître supposé", description: "Bichette pense que le maître de Syne n'est autre qu'Insect Master lui-même, derrière la logique des parasites et des infiltrations." },
+      { target: "Papillons", type: "Mépris ancien", description: "Il ne comprenait pas la place décisive des papillons, qu'il jugeait trop fragiles pour tenir un rôle majeur dans l'équilibre du monde." },
+      { target: "Barbo", type: "Hiérarchie obscure", description: "Autour d'Insect Master gravitent déjà des figures plus étranges encore, comme Barbo, signes d'une architecture hostile plus haute et plus vaste." }
+    ]
+  },
+  {
+    name: "Barbo",
+    role: "Présence collante d'étage supérieur",
+    links: [
+      { target: "Insect Master", type: "Voisinage trouble", description: "Barbo apparaît dans le même horizon de menace qu'Insect Master, mais comme une présence encore moins lisible et plus dérangeante." },
+      { target: "Terre des Insectes", type: "Ombre proche", description: "Bichette le situe dans la même zone de progression hostile, bien qu'il semble relever d'un niveau encore supérieur." },
+      { target: "Pandorus", type: "Anomalie", description: "Sa nature n'appartient pas tout à fait au monde tel qu'il est connu, ce qui en fait une anomalie différente des autres adversaires nommés." }
+    ]
+  },
+  {
+    name: "O'Sama",
+    role: "Veilleur du Creux",
+    links: [
+      { target: "Bella", type: "Compagne", description: "O'Sama et Bella appartiennent au même noyau de veille du Creux, capable d'observer les dérèglements depuis les profondeurs." },
+      { target: "Balak'Oss", type: "Allié", description: "Avec Balak'Oss, ils forment le trio que Bichette désigne comme prochaine ressource avant la Terre des Insectes." },
+      { target: "Creux", type: "Ancrage", description: "Le Creux est leur terre, sombre et profonde, d'où ils perçoivent depuis longtemps la progression des parasites et des altérations." }
+    ]
+  },
+  {
+    name: "Bella",
+    role: "Veilleuse du Creux",
+    links: [
+      { target: "O'Sama", type: "Union de veille", description: "Bella partage avec O'Sama la même lecture du Creux et la même attention aux dérèglements qui y transitent." },
+      { target: "Balak'Oss", type: "Alliance", description: "Le trio qu'elle forme avec O'Sama et Balak'Oss est pensé comme prochain relais concret de la route du groupe." },
+      { target: "Creux", type: "Territoire", description: "Bella appartient à ces profondeurs du Creux où la survie et la perception du mal ont pris de l'avance sur le reste du monde." }
+    ]
+  },
+  {
+    name: "Balak'Oss",
+    role: "Voyageur du Creux",
+    links: [
+      { target: "O'Sama", type: "Compagnon de route", description: "Balak'Oss complète avec O'Sama et Bella la ligne du Creux que le groupe doit désormais rejoindre." },
+      { target: "Bella", type: "Alliance de veille", description: "Leur lien s'inscrit dans une même compréhension des dérèglements et des zones déjà touchées." },
+      { target: "Creux", type: "Parcours", description: "Balak'Oss appartient à un territoire plus mobile et plus difficile, ce qui fait de lui un appui important pour les étapes suivantes." }
+    ]
   }
 ];
 
@@ -1346,7 +1455,15 @@ function buildLoreLinkEntries() {
     ["Mathéo", "#fiches-matheo"],
     ["Matheo", "#fiches-matheo"],
     ["Cendr'oïde", "#fiches-cendroide"],
-    ["Cendroide", "#fiches-cendroide"]
+    ["Cendroide", "#fiches-cendroide"],
+    ["Will le Tigre Bois", "#fiches-will-le-tigre-bois"],
+    ["Insect Master", "#fiches-insect-master"],
+    ["Barbo", "#fiches-barbo"],
+    ["O'Sama", "#fiches-o-sama"],
+    ["Osama", "#fiches-o-sama"],
+    ["Bella", "#fiches-bella"],
+    ["Balak'Oss", "#fiches-balak-oss"],
+    ["Balak Oss", "#fiches-balak-oss"]
   ].forEach(([label, href]) => rawEntries.push({ label, href }));
 
   creatureFiches.forEach((fiche) => {
@@ -1381,6 +1498,8 @@ function buildLoreLinkEntries() {
     ["Fleuve Arkains", "#lieux-fleuve-arkains"],
     ["Arkains", "#lieux-fleuve-arkains"],
     ["Terre des Insectes", "#lieux-terre-des-insectes"],
+    ["Le Creux", "#lieux-creux"],
+    ["Creux", "#lieux-creux"],
     ["la taverne", "#lieux-taverne-du-sombrail"],
     ["taverne", "#lieux-taverne-du-sombrail"],
     ["Briscards", "#mysteres"],
@@ -2167,6 +2286,16 @@ const chapters = [
     path: "./media/chapitres/Chapitre%2026%20-%20Syne%20et%20son%20ami.pdf",
     summary: "Le passé de Syne se dévoile depuis l'Arkains, Jacob devient Bulldozer Jacob, la Terre des Insectes révèle son réseau, puis la Sombra voit surgir Verdeflors, Lions-Garouh et la boîte enfin ouverte.",
     accessKey: "ChapPando26"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2027%20-%20La%20lumi%C3%A8re%2C%20la%20Lune%20et%20les%20monstres.pdf",
+    summary: "Dans la Sombra, Jacob sort enfin de la boîte, la bataille éclate contre frelons, Verdeflors et Lion-Garouh, Zaïnob se déchaîne, Méli Mélo est gravement touchée et Bichette refuse de laisser la haine décider seule.",
+    accessKey: "ChapPando27"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2028%20-%20Les%20terres%20qui%20respirent%20encore.pdf",
+    summary: "Après la bataille, Bichette purifie le parasite, révèle que seul l'ouest est déjà dérangé, affirme que le Vrax résiste encore, nomme Insect Master et oriente désormais la route vers le Creux.",
+    accessKey: "ChapPando28"
   }
 ];
 
@@ -2819,12 +2948,19 @@ function renderTimeline() {
     if (normalizedEventText.includes("MATHEO")) contextCandidates.push({ href: "#fiches-matheo", label: "Voir Mathéo" });
     if (normalizedEventText.includes("CENDR")) contextCandidates.push({ href: "#fiches-cendroide", label: "Voir Cendr'oïde" });
     if (normalizedEventText.includes("ZAINOB")) contextCandidates.push({ href: "#fiches-zainob", label: "Voir Zaïnob" });
+    if (normalizedEventText.includes("WILL")) contextCandidates.push({ href: "#fiches-will-le-tigre-bois", label: "Voir Will le Tigre Bois" });
+    if (normalizedEventText.includes("INSECT MASTER")) contextCandidates.push({ href: "#fiches-insect-master", label: "Voir Insect Master" });
+    if (normalizedEventText.includes("BARBO")) contextCandidates.push({ href: "#fiches-barbo", label: "Voir Barbo" });
+    if (normalizedEventText.includes("O'SAMA") || normalizedEventText.includes("OSAMA")) contextCandidates.push({ href: "#fiches-o-sama", label: "Voir O'Sama" });
+    if (normalizedEventText.includes("BELLA")) contextCandidates.push({ href: "#fiches-bella", label: "Voir Bella" });
+    if (normalizedEventText.includes("BALAK")) contextCandidates.push({ href: "#fiches-balak-oss", label: "Voir Balak'Oss" });
     if (normalizedEventText.includes("MITRA")) contextCandidates.push({ href: "#fiches-mitra-sesse", label: "Voir Mitra Séssé" });
     if (normalizedEventText.includes("PERQUIS")) contextCandidates.push({ href: "#fiches-papy-perquis", label: "Voir Papy Perquis" });
     if (normalizedEventText.includes("SOUF")) contextCandidates.push({ href: "#fiches-padre-souf", label: "Voir Padre Souf" });
     if (normalizedEventText.includes("BICHETTE")) contextCandidates.push({ href: "#fiches-bichette", label: "Voir Bichette" });
     if (normalizedEventText.includes("LUNA")) contextCandidates.push({ href: "#fiches-luna-queen", label: "Voir Luna Queen" });
     if (normalizedEventText.includes("MELI") || normalizedEventText.includes("MELO")) contextCandidates.push({ href: "#fiches-meli-melo", label: "Voir Méli Mélo" });
+    if (normalizedEventText.includes("CREUX")) contextCandidates.push({ href: "#lieux-creux", label: "Voir le Creux" });
     if (normalizedEventText.includes("ALIGAPHOQUE")) contextCandidates.push({ href: "#creatures-fiche-aligaphoque", label: "Voir l'Aligaphoque" });
     if (normalizedEventText.includes("ALIGAROI")) contextCandidates.push({ href: "#creatures-fiche-aligaroi", label: "Voir l'Aligaroi" });
     if (normalizedEventText.includes("SERPENSOUFFRE")) contextCandidates.push({ href: "#creatures-fiche-serpensouffre", label: "Voir le Serpensouffre" });

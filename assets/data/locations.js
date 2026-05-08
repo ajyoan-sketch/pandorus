@@ -15,6 +15,7 @@
     "taverne-du-sombrail": buildMediaPath("lieux", "Taverne du Sombrail.jpg"),
     "fleuve-arkains": locationHeroImage,
     "terre-des-insectes": locationHeroImage,
+    creux: locationHeroImage,
     vert: buildMediaPath("lieux", "Le Vert.png"),
     "ruines-du-vert": buildMediaPath("lieux", "Les Ruines du Vert.png")
   };
@@ -427,12 +428,13 @@ export function createLocationFiches(buildMediaPath) {
     meta: [
       { label: "Atmosphère", value: "Présence d'insectes, réseau, patience, menace en préparation" },
       { label: "Fonction", value: "Refuge d'exil puis matrice hostile" },
-      { label: "Présences", value: "Syne, Bulldozer Jacob, Mathéo, Cendr'oïde, Bouldouger" }
+      { label: "Présences", value: "Syne, Bulldozer Jacob, Mathéo, Cendr'oïde, Bouldouger, Insect Master, Barbo" }
     ],
     biography: [
       "Syne et Jacob atteignent la Terre des Insectes après avoir quitté l'Arkains. Le lieu ne se présente pas comme un simple refuge, mais comme un territoire déjà traversé par une autre compréhension du monde et du déséquilibre.",
       "C'est là qu'un homme lié à un frelon noir fait basculer Syne vers une logique plus dure: ce qui dérègle le vivant n'a peut-être pas à être seulement contenu, mais prolongé, orienté ou utilisé pour qu'un autre monde prenne sa place.",
-      "Mathéo, Cendr'oïde, Bouldouger et d'autres figures s'y lisent comme les maillons d'un réseau. La Terre des Insectes devient alors moins un décor qu'une fabrique de missions, de pressions lentes, de parasitages et de retours calculés vers l'ouest."
+      "Les chapitres les plus récents donnent enfin un nom plus net à ce centre: Insect Master, ancien grand créateur de la Terre des Insectes, désormais soupçonné de piloter la logique des parasites et du remodelage.",
+      "Mathéo, Cendr'oïde, Bouldouger, Jacob, Syne et même Barbo s'y lisent alors comme les maillons d'un réseau. La Terre des Insectes devient moins un décor qu'une fabrique de missions, de pressions lentes, de parasitages et de retours calculés vers l'ouest."
     ],
     summary: [
       "La Terre des Insectes donne enfin un vrai point d'origine au camp de Syne.",
@@ -440,14 +442,47 @@ export function createLocationFiches(buildMediaPath) {
     ],
     profile: [
       { title: "Texture du lieu", text: "Territoire bourdonnant, organisation cachée, patience et surveillance." },
-      { title: "Rôle narratif", text: "Donner au camp adverse une base idéologique et relationnelle, au-delà des seules apparitions de terrain." },
+      { title: "Rôle narratif", text: "Donner au camp adverse une base idéologique, hiérarchique et relationnelle, au-delà des seules apparitions de terrain." },
       { title: "Point de tension", text: "Ce lieu ne frappe pas toujours frontalement: il prépare, observe et renvoie ses figures au moment exact où elles doivent agir." }
     ],
     contextLinks: [
       { href: "#fiches-syne", label: "Voir Syne" },
+      { href: "#fiches-insect-master", label: "Voir Insect Master" },
+      { href: "#fiches-barbo", label: "Voir Barbo" },
       { href: "#fiches-matheo", label: "Voir Mathéo" },
-      { href: "#fiches-cendroide", label: "Voir Cendr'oïde" },
-      { href: "#chronologie", label: "Lire la Terre des Insectes" }
+      { href: "#fiches-cendroide", label: "Voir Cendr'oïde" }
+    ]
+  },
+  {
+    slug: "creux",
+    name: "Le Creux",
+    tone: "threshold",
+    category: "Relais profond",
+    intro: "Le Creux n'est pas encore traversé par la Communauté des Papillons, mais il devient le prochain nœud vivant du voyage: un territoire plus enfoui, déjà traversé par les dérèglements et gardé par des présences qui les sentent venir.",
+    meta: [
+      { label: "Atmosphère", value: "Profondeur, respiration basse, veille discrète" },
+      { label: "Fonction", value: "Prochaine étape avant la Terre des Insectes" },
+      { label: "Présences", value: "O'Sama, Bella, Balak'Oss" }
+    ],
+    biography: [
+      "Le Creux apparaît d'abord dans la bouche du Capitaine comme l'un des territoires visés par le Parasite. Il gagne ensuite une autre densité quand Bichette en fait la prochaine destination indispensable du groupe.",
+      "Ce lieu ne se présente pas comme une simple halte. O'Sama, Bella et Balak'Oss y perçoivent déjà les dérèglements et peuvent aider la route à entrer dans une lecture plus profonde avant la Terre des Insectes.",
+      "Le Creux devient donc un passage obligé entre la guérison relative offerte par la Sombra et le front plus hostile qui attend vers Insect Master. Il promet moins un repos qu'un affinement de la compréhension."
+    ],
+    summary: [
+      "Le Creux devient la prochaine terre de veille du récit.",
+      "Il relie la menace du Parasite, la parole de Bichette et les futurs alliés capables de lire le mal avant qu'il ne frappe à plein."
+    ],
+    profile: [
+      { title: "Texture du lieu", text: "Profondeur calme, sensation d'enfouissement, souffle retenu mais vivant." },
+      { title: "Rôle narratif", text: "Faire le lien entre la Sombra et la Terre des Insectes par une étape de veille et de reconnaissance plus fine." },
+      { title: "Point de tension", text: "Le Parasite y était destiné, preuve que ce territoire compte déjà dans la stratégie de l'ennemi." }
+    ],
+    contextLinks: [
+      { href: "#fiches-o-sama", label: "Voir O'Sama" },
+      { href: "#fiches-bella", label: "Voir Bella" },
+      { href: "#fiches-balak-oss", label: "Voir Balak'Oss" },
+      { href: "#chronologie", label: "Lire la route vers le Creux" }
     ]
   },
   {
@@ -523,7 +558,7 @@ export function createLocationFiches(buildMediaPath) {
     meta: [
       { label: "Atmosphère", value: "Ouest lointain, veille blanche, clairière de lecture et tension contenue" },
       { label: "Fonction", value: "Seuil occidental de compréhension et de confrontation" },
-      { label: "Présences", value: "Will le Tigre Bois, Bichette, Zaïnob, Luna Queen, Méli Mélo, Syne" }
+      { label: "Présences", value: "Will le Tigre Bois, Bichette, Zaïnob, Luna Queen, Méli Mélo, Syne, Jacob, Ab'Youbi" }
     ],
     biography: [
       "Brad et Bradlette nomment d'abord la Sombra comme une direction plutôt que comme une promesse de salut. Ce n'est pas un refuge évident, mais un lieu où certaines figures peuvent lire ce qui vient avant qu'il ne s'impose pleinement au monde.",
@@ -531,23 +566,24 @@ export function createLocationFiches(buildMediaPath) {
       "À l'intérieur de la Sombra, Luna Queen et Méli Mélo cessent d'être de simples noms. Elles deviennent les premières présences concrètes d'un territoire déjà habité par une lecture plus blanche du monde, juste avant l'approche de Bichette et de Zaïnob.",
       "Bichette y lit le groupe, nomme les dérèglements comme autre chose qu'une simple destruction et révèle à la fois un lien du sang entre elle et Ab'Youbi, et une limite nette de sa propre lecture devant Shaushana.",
       "La scène bascule lorsque Syne surgit à son tour avec sa boîte, des Verdeflors et des Lions-Garouh. Le parasite réagit dans la poche de Shaushana, les papillons s'altèrent, puis Ab'Youbi éteint leurs flammes anormales d'un seul regard.",
-      "Au terme de cette montée, Syne ouvre enfin la boîte dans la Sombra elle-même. Le lieu cesse alors d'être un simple espace de lecture: il devient l'endroit où un passé caché et une menace tenue entrent réellement dans le visible."
+      "Au terme de cette montée, Jacob jaillit de la boîte et la bataille emporte toute la clairière. Zaïnob se déchaîne, Méli Mélo est gravement blessée, Luna Queen veut tuer Syne, puis Bichette arrête le massacre avant que Jacob n'emporte Syne hors du lieu.",
+      "Trois jours plus tard, la Sombra devient aussi un lieu de réparation et de révélation. Bichette y purifie le Parasite, affirme que l'ouest seul est déjà touché, maintient le lien avec le Vrax et renvoie désormais le groupe vers le Creux puis vers la Terre des Insectes."
     ],
     summary: [
       "La Sombra ouvre réellement l'ouest du récit.",
-      "Elle promet moins une bataille simple qu'une compréhension, mais montre aussitôt que toute lecture vraie du monde s'accompagne déjà d'une nouvelle menace, désormais ouverte."
+      "Elle devient à la fois champ de bataille, lieu de guérison et centre de réorientation majeure contre ce qui tord le vivant."
     ],
     profile: [
       { title: "Texture du lieu", text: "Horizon occidental, lumière tenue, gardiens de seuil, clairières de lecture et tension de rupture." },
-      { title: "Rôle narratif", text: "Déplacer la quête de la survie immédiate vers une recherche plus fine de compréhension, puis la confronter aussitôt à Syne et au parasite." },
-      { title: "Point de tension", text: "Le groupe y entre enfin, mais avec le parasite, le deuil du Capitaine et une boîte ouverte qui transforme la lecture en confrontation immédiate." }
+      { title: "Rôle narratif", text: "Déplacer la quête de la survie immédiate vers une recherche plus fine de compréhension, puis la confronter à une vraie bataille et à une relance stratégique plus vaste." },
+      { title: "Point de tension", text: "La Sombra soigne et révèle, mais elle prouve aussi que le conflit a déjà changé d'échelle et de profondeur." }
     ],
     contextLinks: [
       { href: "#fiches-bichette", label: "Voir Bichette" },
       { href: "#fiches-zainob", label: "Voir Zaïnob" },
+      { href: "#fiches-will-le-tigre-bois", label: "Voir Will le Tigre Bois" },
       { href: "#fiches-luna-queen", label: "Voir Luna Queen" },
-      { href: "#fiches-meli-melo", label: "Voir Méli Mélo" },
-      { href: "#chronologie", label: "Lire l'entrée dans la Sombra" }
+      { href: "#fiches-meli-melo", label: "Voir Méli Mélo" }
     ]
   }
   ].map((fiche) => ({
