@@ -529,7 +529,7 @@ export function createLocationFiches(buildMediaPath) {
       "Brad et Bradlette nomment d'abord la Sombra comme une direction plutôt que comme une promesse de salut. Ce n'est pas un refuge évident, mais un lieu où certaines figures peuvent lire ce qui vient avant qu'il ne s'impose pleinement au monde.",
       "Après la mort du Capitaine, la route s'ouvre enfin. Le groupe traverse les approches de l'ouest sous la veille du KingKoala, puis rencontre Will le Tigre Bois, gardien de seuil qui mesure leur passage avant de les laisser entrer.",
       "À l'intérieur de la Sombra, Luna Queen et Méli Mélo cessent d'être de simples noms. Elles deviennent les premières présences concrètes d'un territoire déjà habité par une lecture plus blanche du monde, juste avant l'approche de Bichette et de Zaïnob.",
-      "Bichette y lit le groupe, nomme les dérèglements comme autre chose qu'une simple destruction et révèle à la fois un lien du sang entre Ab'Youbi et Zaïnob, et une limite nette de sa propre lecture devant Shaushana.",
+      "Bichette y lit le groupe, nomme les dérèglements comme autre chose qu'une simple destruction et révèle à la fois un lien du sang entre elle et Ab'Youbi, et une limite nette de sa propre lecture devant Shaushana.",
       "La scène bascule lorsque Syne surgit à son tour avec sa boîte, des Verdeflors et des Lions-Garouh. Le parasite réagit dans la poche de Shaushana, les papillons s'altèrent, puis Ab'Youbi éteint leurs flammes anormales d'un seul regard.",
       "Au terme de cette montée, Syne ouvre enfin la boîte dans la Sombra elle-même. Le lieu cesse alors d'être un simple espace de lecture: il devient l'endroit où un passé caché et une menace tenue entrent réellement dans le visible."
     ],

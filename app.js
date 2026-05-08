@@ -1174,7 +1174,7 @@ const relationNodes = [
       { target: "Communauté des Papillons", type: "Lecture des traces", description: "Il perçoit ce que le groupe porte, ce qui le suit et ce qui se désaligne autour de lui." },
       { target: "Aligaroi", type: "Autorité reconnue", description: "Au bord du Sombrail, Ab'Youbi fait céder l'Aligaroi sans combat, comme si une ancienneté commune se reconnaissait entre eux." },
       { target: "Bichette", type: "Route rouverte", description: "Près de la tombe du Capitaine, Ab'Youbi rouvre explicitement la direction de Bichette et de la Sombra." },
-      { target: "Zaïnob", type: "Lien du sang", description: "Dans la Sombra, Bichette révèle qu'Ab'Youbi et Zaïnob sont liés comme un père et sa fille." }
+      { target: "Bichette", type: "Lien du sang", description: "Dans la Sombra, Bichette révèle qu'Ab'Youbi et elle sont liés comme un père et sa fille." }
     ]
   },
   {
@@ -1262,7 +1262,7 @@ const relationNodes = [
       { target: "Bichette", type: "Continuité tenue", description: "Bichette reconnaît en Zaïnob le passage vivant qui permet encore à la lumière lunaire de traverser la nuit brisée." },
       { target: "Luna Queen", type: "Naissance tenue", description: "Luna Queen naît dans la continuité que Zaïnob maintient sans la forcer." },
       { target: "Méli Mélo", type: "Naissance tenue", description: "Méli Mélo naît à son tour dans cette même continuité, mais selon une modalité plus vive et plus mobile." },
-      { target: "Ab'Youbi", type: "Lien du sang", description: "Bichette révèle au groupe que Zaïnob et Ab'Youbi sont liés comme une fille et son père." }
+      { target: "Bichette", type: "Filiation révélée", description: "Le groupe comprend que Bichette et Ab'Youbi sont liés comme une fille et son père, ce qui rebat la lecture de la Sombra." }
     ]
   },
   {
@@ -2160,7 +2160,7 @@ const chapters = [
   },
   {
     path: "./media/chapitres/Chapitre%2025%20-%20Nouvelles.pdf",
-    summary: "Dans la Sombra, Bichette lit enfin le groupe, révèle le lien du sang entre Ab'Youbi et Zaïnob, bute sur le mystère de Shaushana, puis Syne surgit pour reprendre le parasite.",
+    summary: "Dans la Sombra, Bichette lit enfin le groupe, révèle le lien du sang entre elle et Ab'Youbi, bute sur le mystère de Shaushana, puis Syne surgit pour reprendre le parasite.",
     accessKey: "ChapPando25"
   },
   {

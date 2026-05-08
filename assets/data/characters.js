@@ -572,12 +572,12 @@
       "Il reconnaît silencieusement la gravité de la Communauté des Papillons, puis valide la mémoire ouverte par Brad comme une réalité encore active plutôt qu'un simple récit.",
       "Face à Syne et à la boîte, son attitude change à peine, mais cette retenue suffit: il sait que certaines forces ne doivent pas être provoquées pour être comprises.",
       "Plus tard, il suit la route du Vert à distance, fait plier l'Aligaroi, puis réapparaît près de la tombe du Capitaine. Sa parole relance alors la marche vers la Sombra, comme s'il veillait non sur un lieu fixe, mais sur les seuils que le groupe doit traverser.",
-      "Dans la Sombra, sa retenue prend une autre densité encore. Bichette lit entre lui et Zaïnob un lien du sang que personne n'avait nommé jusque-là, révélant que sa veille n'était pas seulement celle d'un passage: elle touchait déjà sa propre lignée."
+      "Dans la Sombra, sa retenue prend une autre densité encore. Bichette révèle entre elle et Ab'Youbi un lien du sang que personne n'avait nommé jusque-là, montrant que sa veille n'était pas seulement celle d'un passage: elle touchait déjà sa propre lignée."
     ],
     summary: [
       "Ab'Youbi apporte à la taverne une veille plus obscure, plus ancienne et plus perceptive.",
       "Il confirme que ce qui revient n'a jamais vraiment disparu, mais s'est transformé, dispersé et déjà positionné sur d'autres seuils du monde.",
-      "La rencontre de la Sombra révèle aussi qu'il n'est pas extérieur à ce qu'il veille: Zaïnob est sa fille."
+      "La rencontre de la Sombra révèle aussi qu'il n'est pas extérieur à ce qu'il veille: Bichette est sa fille."
     ],
     profile: [
       { title: "Caractère", text: "Silencieux, profond, extrêmement attentif, sans besoin de démonstration." },
@@ -589,7 +589,7 @@
       { title: "Syne", text: "Il reconnaît le danger contenu autour d'elle sans chercher à l'affronter." },
       { title: "Communauté des Papillons", text: "Il lit dans le groupe une trace plus vaste que leur simple présence physique." },
       { title: "Bichette", text: "Près de la tombe du Capitaine, il rouvre clairement la route de Bichette comme prochaine lecture nécessaire du monde." },
-      { title: "Zaïnob", text: "Dans la Sombra, Bichette révèle entre eux un lien du sang : Zaïnob est sa fille." }
+      { title: "Bichette", text: "Dans la Sombra, la lecture révèle entre eux un lien du sang : Bichette est sa fille." }
     ],
     timeline: [
       { era: "Jour 10", title: "Veille dans l'ombre", summary: "Ab'Youbi reconnaît ce que le groupe porte avant même que les mots ne soient posés." },
@@ -602,7 +602,7 @@
       { era: "Jour 12", title: "Parole d'équilibre", summary: "Quand Shan veut prolonger la violence, Ab'Youbi l'arrête et rappelle qu'Eben n'était pas la cause première du drame ancien." },
       { era: "Jour 13", title: "Présence à la tombe", summary: "Après la mort du Capitaine, Ab'Youbi vient près de la sépulture et replace la perte dans une lecture plus vaste du monde en cours de déplacement." },
       { era: "Jour 13", title: "Route rouverte vers la Sombra", summary: "Il pousse le groupe à reprendre la route de la Sombra et de Bichette, comme si la prochaine réponse devait désormais se lire à l'ouest." },
-      { era: "Jour 14", title: "Retrouvailles dans la Sombra", summary: "Face à Bichette et aux gardiennes, Ab'Youbi laisse apparaître un lien plus intime avec l'ouest lorsque Zaïnob est reconnue comme sa fille." },
+      { era: "Jour 14", title: "Retrouvailles dans la Sombra", summary: "Face à Bichette et aux gardiennes, Ab'Youbi laisse apparaître un lien plus intime avec l'ouest lorsque Bichette est reconnue comme sa fille." },
       { era: "Jour 14", title: "Extinction des flammes", summary: "Quand Syne surgit et que les papillons s'altèrent, Ab'Youbi ouvre plus profondément son regard rouge et fait tomber d'un seul geste les flammes anormales." }
     ]
   },
@@ -1066,11 +1066,11 @@
       "Zaïnob se tient à la Sombra comme une présence droite, contenante, à la fois proche de Bichette et distincte d'elle. Sa fonction ne ressemble pas à une simple défense : elle maintient un passage, une cohérence, une tenue lumineuse que d'autres présences prolongent ensuite.",
       "Après l'ancienne guerre, lorsque le ciel et la nuit se fragmentent, Zaïnob devient le point par lequel la lumière lunaire peut encore traverser le monde sans se rompre complètement. Bichette ne force pas cette continuité : elle la reconnaît, et Zaïnob la tient.",
       "Autour de cette tenue naissent Luna Queen puis Méli Mélo, chacune selon une modalité différente de la même continuité. Dans le présent du récit, Zaïnob reste celle qui contient, forme et stabilise ces deux présences sans jamais les aplatir.",
-      "Lorsque la Communauté des Papillons arrive enfin dans la Sombra, Bichette révèle qu'Ab'Youbi et Zaïnob ne sont pas seulement liés par la veille ou par le lieu : ils le sont par le sang, comme un père et sa fille."
+      "Lorsque la Communauté des Papillons arrive enfin dans la Sombra, Zaïnob demeure liée au lieu et à la continuité lunaire, mais c'est Bichette qu'Ab'Youbi découvre liée à lui par le sang, comme une fille à son père."
     ],
     summary: [
       "Zaïnob donne à la Sombra une profondeur plus ancienne que le simple accueil du groupe.",
-      "Elle relie Bichette à la continuité lunaire du monde, à la naissance de Luna Queen et de Méli Mélo, et à la lignée cachée d'Ab'Youbi."
+      "Elle relie Bichette à la continuité lunaire du monde, à la naissance de Luna Queen et de Méli Mélo, sans être elle-même l'enfant révélée d'Ab'Youbi."
     ],
     profile: [
       { title: "Caractère", text: "Droite, contenante, peu démonstrative, mais essentielle dans ce qu'elle maintient." },
@@ -1081,14 +1081,14 @@
       { title: "Bichette", text: "Bichette reconnaît en Zaïnob le passage vivant par lequel la lumière lunaire peut encore tenir dans le monde." },
       { title: "Luna Queen", text: "Zaïnob contient et forme sa stabilité sans effacer sa singularité." },
       { title: "Méli Mélo", text: "Elle tient aussi son mouvement et sa vivacité dans une même continuité plus ancienne." },
-      { title: "Ab'Youbi", text: "Leur lien du sang est révélé dans la Sombra : Zaïnob est sa fille." }
+      { title: "Ab'Youbi", text: "Zaïnob lui est liée par la veille de la Sombra et par la continuité qu'ils traversent, mais pas par la filiation." }
     ],
     timeline: [
       { era: "Ancien temps", title: "Après la guerre ancienne", summary: "Lorsque le ciel et la nuit cessent de tenir d'eux-mêmes, Zaïnob devient un passage vivant de la lumière lunaire." },
       { era: "Il y a 10 ans", title: "Naissance de Luna Queen", summary: "Dans la continuité tenue autour d'elle, Luna Queen apparaît comme une première forme plus stable de veille." },
       { era: "Il y a 7 ans", title: "Naissance de Méli Mélo", summary: "Méli Mélo naît à son tour dans cette même ligne, plus mobile et plus rythmée." },
       { era: "Jour 14", title: "Rencontre dans la Sombra", summary: "Le groupe atteint enfin Zaïnob au cœur de la Sombra, comme une présence déjà installée dans une veille plus ancienne que leur propre quête." },
-      { era: "Jour 14", title: "Lien révélé avec Ab'Youbi", summary: "Bichette dévoile qu'entre Zaïnob et Ab'Youbi existe un lien du sang, celui d'un père et de sa fille." }
+      { era: "Jour 14", title: "Continuité maintenue", summary: "Dans la Sombra, Zaïnob demeure l'une des gardiennes de la continuité lunaire, sans être la fille révélée d'Ab'Youbi." }
     ]
   },
   {

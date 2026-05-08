@@ -436,8 +436,8 @@
   },
   {
     era: "Jour 14",
-    title: "Lien révélé entre Ab'Youbi et Zaïnob",
-    summary: "Au cœur de la lecture, Bichette dévoile qu'entre Ab'Youbi et Zaïnob existe un lien du sang, celui d'un père et de sa fille."
+    title: "Lien révélé entre Ab'Youbi et Bichette",
+    summary: "Au cœur de la lecture, Bichette dévoile qu'entre elle et Ab'Youbi existe un lien du sang, celui d'un père et de sa fille."
   },
   {
     era: "Jour 14",
