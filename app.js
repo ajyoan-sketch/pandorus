@@ -4235,6 +4235,9 @@ function renderPandorusTestResult() {
     .slice(1, 3)
     .map((entry) => `
       <article class="overview-card test-affinity-card">
+        <div class="test-affinity-thumb">
+          <img src="${entry.image}" alt="${entry.name}" loading="lazy" decoding="async">
+        </div>
         <p class="eyebrow">Affinité proche</p>
         <h4>${entry.name}</h4>
         <p class="test-affinity-score">Affinité ${entry.affinity}</p>
