@@ -3,3 +3,8 @@
 # Temporary chapter extraction files used for local analysis only
 Chapitre *.txt
 chapter-*-extract.txt
+
+# Local generated reports and browser/PDF scratch space
+.tmp-edge-pdf/
+TEST-STATS-PANDORUS.*
+~$ST-STATS-PANDORUS.html

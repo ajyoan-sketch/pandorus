@@ -13,6 +13,19 @@
   <div id="intro-overlay" class="intro-overlay" aria-hidden="true">
     <img id="intro-logo" class="intro-logo" src="./media/logo/logo.jpg" alt="Logo Pandorus" fetchpriority="high" decoding="async">
   </div>
+  <script>
+    window.setTimeout(() => {
+      const overlay = document.getElementById("intro-overlay");
+      if (!overlay) return;
+
+      overlay.classList.add("is-hidden");
+      document.body.classList.remove("intro-playing");
+
+      window.setTimeout(() => {
+        overlay.remove();
+      }, 900);
+    }, 4200);
+  </script>
   <div id="top" class="page-shell">
     <header class="hero">
       <nav class="topbar">
@@ -55,6 +68,7 @@
           <a href="#relations">Arbre de Relation</a>
           <a href="#chronologie">Chronologie</a>
           <a href="#chapitres">Chapitres</a>
+          <a href="#bd">BD</a>
           <a href="#personnages">Personnages</a>
           <a href="#lieux">Lieux</a>
           <a href="#creatures">Créatures</a>
@@ -1567,6 +1581,28 @@
           </div>
           <iframe id="chapter-viewer-frame" class="chapter-viewer-frame" title="Lecteur de chapitre"></iframe>
         </section>
+      </section>
+
+      <section id="bd" class="section" hidden>
+        <div class="section-heading">
+          <h3>BD</h3>
+        </div>
+        <div class="bd-intro">
+          <div class="bd-intro-copy">
+            <p class="eyebrow">Archives dessinées</p>
+            <p class="hero-text">
+              Les planches de Pandorus ouvrent une autre manière d'entrer dans le monde :
+              plus visuelle, plus immédiate, comme une mémoire retrouvée image après image.
+            </p>
+          </div>
+          <div class="bd-intro-seals" aria-hidden="true">
+            <span>Genèse</span>
+            <span>Origine</span>
+            <span>Image</span>
+          </div>
+        </div>
+        <div id="bd-tabs" class="bd-tabs" role="tablist" aria-label="Catégories BD"></div>
+        <div id="bd-gallery" class="bd-gallery"></div>
       </section>
 
       <section id="personnages" class="section" hidden>

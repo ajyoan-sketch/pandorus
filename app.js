@@ -13,6 +13,19 @@ const maps = [
   "./media/cartes/Terre%20Pandorienne.jpg"
 ];
 
+const comicCollections = [
+  {
+    id: "genese",
+    title: "Genèse",
+    kicker: "Origine dessinée",
+    description: "Première archive BD de Pandorus, à lire dans l'ordre des planches numérotées.",
+    pages: Array.from({ length: 13 }, (_, index) => ({
+      number: index + 1,
+      fileName: `${index}.png`
+    }))
+  }
+];
+
 const constellationCards = [
   {
     title: "Les Constellations Jumelles : Myrmex",
@@ -757,6 +770,7 @@ const sectionWhispers = {
   relations: "Ce qui lie, protège, transmet ou oppose.",
   chronologie: "Le temps où Pandorus se révèle, se fracture et répond.",
   chapitres: "Les portes du récit, ouvertes une à une.",
+  bd: "Les planches dessinées de Pandorus, rangées comme une archive visuelle.",
   personnages: "Les présences du monde, vues dans leur ensemble.",
   lieux: "Les territoires, fleuves et seuils qui donnent sa respiration au récit.",
   creatures: "Le vivant dans sa beauté, sa peur et son instinct.",
@@ -3027,6 +3041,7 @@ function getSectionKeyFromHash(hashValue) {
   if (hashValue === "#fiches" || Boolean(ficheHashPanelMap[hashValue])) return "fiches";
   if (hashValue === "#chronologie") return "chronologie";
   if (hashValue === "#chapitres") return "chapitres";
+  if (hashValue === "#bd") return "bd";
   if (hashValue === "#relations") return "relations";
   if (hashValue === "#personnages") return "personnages";
   if (hashValue === "#lieux" || Boolean(locationHashPanelMap[hashValue])) return "lieux";
@@ -3207,6 +3222,54 @@ function renderChapters() {
       openChapterInViewer(chapter.path);
     });
     list.appendChild(node);
+  });
+}
+
+function renderComics(activeCollectionId = comicCollections[0]?.id) {
+  const tabs = document.getElementById("bd-tabs");
+  const gallery = document.getElementById("bd-gallery");
+  if (!tabs || !gallery || !comicCollections.length) return;
+
+  const activeCollection = comicCollections.find((collection) => collection.id === activeCollectionId) || comicCollections[0];
+
+  tabs.innerHTML = comicCollections.map((collection) => `
+    <button
+      class="bd-tab${collection.id === activeCollection.id ? " active" : ""}"
+      type="button"
+      role="tab"
+      aria-selected="${collection.id === activeCollection.id ? "true" : "false"}"
+      data-bd-collection="${collection.id}"
+    >
+      <span>${collection.title}</span>
+      <small>${collection.pages.length} planches</small>
+    </button>
+  `).join("");
+
+  gallery.innerHTML = `
+    <article class="bd-collection-head">
+      <p class="eyebrow">${activeCollection.kicker}</p>
+      <h4>${activeCollection.title}</h4>
+      <p>${activeCollection.description}</p>
+    </article>
+    <div class="bd-pages">
+      ${activeCollection.pages.map((page) => {
+        const src = buildMediaPath(`bd/${activeCollection.id}`, page.fileName);
+        return `
+          <figure class="bd-page-card">
+            <a href="${src}" target="_blank" rel="noreferrer" aria-label="Ouvrir ${activeCollection.title}, planche ${page.number}">
+              <img src="${src}" alt="${activeCollection.title} - planche ${page.number}" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Planche ${page.number}</figcaption>
+          </figure>
+        `;
+      }).join("")}
+    </div>
+  `;
+
+  tabs.querySelectorAll("[data-bd-collection]").forEach((button) => {
+    button.addEventListener("click", () => {
+      renderComics(button.dataset.bdCollection);
+    });
   });
 }
 
@@ -4329,6 +4392,7 @@ function showSectionFromHash() {
   const creatures = document.getElementById("creatures");
   const test = document.getElementById("test");
   const mysteres = document.getElementById("mysteres");
+  const bd = document.getElementById("bd");
   const cartes = document.getElementById("cartes");
   const currentHash = window.location.hash;
   const isCreatureFicheHash = currentHash.startsWith("#creatures-fiche-");
@@ -4336,6 +4400,7 @@ function showSectionFromHash() {
 
   updatePandorusTestReturnButton();
   updateSectionWhisper();
+  if (bd) bd.hidden = true;
 
   if (
     currentHash === "#fiches" ||
@@ -4514,6 +4579,24 @@ function showSectionFromHash() {
     if (test) test.hidden = true;
     if (mysteres) mysteres.hidden = false;
     if (cartes) cartes.hidden = true;
+    refreshLoreLinks();
+    return;
+  }
+
+  if (currentHash === "#bd") {
+    if (home) home.hidden = true;
+    if (fiches) fiches.hidden = true;
+    if (relations) relations.hidden = true;
+    if (chronologie) chronologie.hidden = true;
+    if (chapitres) chapitres.hidden = true;
+    if (personnages) personnages.hidden = true;
+    if (lieux) lieux.hidden = true;
+    if (creatures) creatures.hidden = true;
+    if (test) test.hidden = true;
+    if (mysteres) mysteres.hidden = true;
+    if (bd) bd.hidden = false;
+    if (cartes) cartes.hidden = true;
+    renderComics();
     refreshLoreLinks();
     return;
   }
