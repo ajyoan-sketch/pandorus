@@ -2173,6 +2173,8 @@ let currentCreatureLetter = "all";
 let currentFicheLetter = "all";
 let currentLocationLetter = "all";
 let currentCreatureFiche = creatureFiches[0]?.slug || "";
+let currentComicCollectionId = null;
+let currentComicPageIndex = 0;
 let currentRelationLetter = "all";
 let currentRelationSearch = "";
 let currentLocationSearch = "";
@@ -3225,52 +3227,130 @@ function renderChapters() {
   });
 }
 
-function renderComics(activeCollectionId = comicCollections[0]?.id) {
-  const tabs = document.getElementById("bd-tabs");
+function getActiveComicCollection() {
+  return comicCollections.find((collection) => collection.id === currentComicCollectionId) || null;
+}
+
+function closeComicReader() {
+  const reader = document.getElementById("bd-reader");
+  if (!reader) return;
+
+  reader.hidden = true;
+  document.body.classList.remove("bd-reader-open");
+}
+
+function openComicReader(pageIndex) {
+  const reader = document.getElementById("bd-reader");
+  const image = document.getElementById("bd-reader-image");
+  const caption = document.getElementById("bd-reader-caption");
+  const prevButton = document.getElementById("bd-reader-prev");
+  const nextButton = document.getElementById("bd-reader-next");
+  const activeCollection = getActiveComicCollection();
+  if (!reader || !image || !caption || !prevButton || !nextButton || !activeCollection) return;
+
+  currentComicPageIndex = Math.max(0, Math.min(pageIndex, activeCollection.pages.length - 1));
+  const page = activeCollection.pages[currentComicPageIndex];
+  const src = buildMediaPath(`bd/${activeCollection.id}`, page.fileName);
+
+  image.src = src;
+  image.alt = `${activeCollection.title} - planche ${page.number}`;
+  caption.textContent = `${activeCollection.title} · Planche ${page.number} / ${activeCollection.pages.length}`;
+  prevButton.disabled = currentComicPageIndex === 0;
+  nextButton.disabled = currentComicPageIndex === activeCollection.pages.length - 1;
+  reader.hidden = false;
+  document.body.classList.add("bd-reader-open");
+}
+
+function moveComicReader(direction) {
+  const activeCollection = getActiveComicCollection();
+  if (!activeCollection) return;
+
+  openComicReader(currentComicPageIndex + direction);
+}
+
+function renderComics(activeCollectionId = currentComicCollectionId) {
+  const collectionsNode = document.getElementById("bd-collections");
   const gallery = document.getElementById("bd-gallery");
-  if (!tabs || !gallery || !comicCollections.length) return;
+  const closeButton = document.getElementById("bd-reader-close");
+  const prevButton = document.getElementById("bd-reader-prev");
+  const nextButton = document.getElementById("bd-reader-next");
+  if (!collectionsNode || !gallery || !comicCollections.length) return;
 
-  const activeCollection = comicCollections.find((collection) => collection.id === activeCollectionId) || comicCollections[0];
+  currentComicCollectionId = activeCollectionId || null;
+  const activeCollection = getActiveComicCollection();
 
-  tabs.innerHTML = comicCollections.map((collection) => `
+  collectionsNode.innerHTML = comicCollections.map((collection) => `
     <button
-      class="bd-tab${collection.id === activeCollection.id ? " active" : ""}"
+      class="bd-collection-card${activeCollection?.id === collection.id ? " active" : ""}"
       type="button"
-      role="tab"
-      aria-selected="${collection.id === activeCollection.id ? "true" : "false"}"
       data-bd-collection="${collection.id}"
     >
-      <span>${collection.title}</span>
+      <span class="bd-collection-kicker">${collection.kicker}</span>
+      <strong>${collection.title}</strong>
       <small>${collection.pages.length} planches</small>
     </button>
   `).join("");
 
-  gallery.innerHTML = `
+  if (!activeCollection) {
+    gallery.innerHTML = "";
+    closeComicReader();
+  } else {
+    gallery.innerHTML = `
     <article class="bd-collection-head">
       <p class="eyebrow">${activeCollection.kicker}</p>
       <h4>${activeCollection.title}</h4>
       <p>${activeCollection.description}</p>
+      <button class="button tiny secondary" type="button" data-bd-back="true">Retour aux BD</button>
     </article>
     <div class="bd-pages">
       ${activeCollection.pages.map((page) => {
         const src = buildMediaPath(`bd/${activeCollection.id}`, page.fileName);
         return `
           <figure class="bd-page-card">
-            <a href="${src}" target="_blank" rel="noreferrer" aria-label="Ouvrir ${activeCollection.title}, planche ${page.number}">
+            <button type="button" data-bd-page="${page.number - 1}" aria-label="Ouvrir ${activeCollection.title}, planche ${page.number}">
               <img src="${src}" alt="${activeCollection.title} - planche ${page.number}" loading="lazy" decoding="async">
-            </a>
+            </button>
             <figcaption>Planche ${page.number}</figcaption>
           </figure>
         `;
       }).join("")}
     </div>
   `;
+  }
 
-  tabs.querySelectorAll("[data-bd-collection]").forEach((button) => {
+  collectionsNode.querySelectorAll("[data-bd-collection]").forEach((button) => {
     button.addEventListener("click", () => {
+      currentComicCollectionId = button.dataset.bdCollection;
       renderComics(button.dataset.bdCollection);
     });
   });
+
+  gallery.querySelector("[data-bd-back='true']")?.addEventListener("click", () => {
+    currentComicCollectionId = null;
+    closeComicReader();
+    renderComics();
+  });
+
+  gallery.querySelectorAll("[data-bd-page]").forEach((button) => {
+    button.addEventListener("click", () => {
+      openComicReader(Number(button.dataset.bdPage || 0));
+    });
+  });
+
+  if (closeButton && !closeButton.dataset.bdReaderBound) {
+    closeButton.dataset.bdReaderBound = "true";
+    closeButton.addEventListener("click", closeComicReader);
+  }
+
+  if (prevButton && !prevButton.dataset.bdReaderBound) {
+    prevButton.dataset.bdReaderBound = "true";
+    prevButton.addEventListener("click", () => moveComicReader(-1));
+  }
+
+  if (nextButton && !nextButton.dataset.bdReaderBound) {
+    nextButton.dataset.bdReaderBound = "true";
+    nextButton.addEventListener("click", () => moveComicReader(1));
+  }
 }
 
 function renderMaps() {
@@ -4599,6 +4679,8 @@ function showSectionFromHash() {
     if (mysteres) mysteres.hidden = true;
     if (bd) bd.hidden = false;
     if (cartes) cartes.hidden = true;
+    currentComicCollectionId = null;
+    closeComicReader();
     renderComics();
     refreshLoreLinks();
     return;
@@ -4637,6 +4719,18 @@ function showSectionFromHash() {
 }
 
 window.addEventListener("hashchange", showSectionFromHash);
+window.addEventListener("keydown", (event) => {
+  const reader = document.getElementById("bd-reader");
+  if (!reader || reader.hidden) return;
+
+  if (event.key === "Escape") {
+    closeComicReader();
+  } else if (event.key === "ArrowLeft") {
+    moveComicReader(-1);
+  } else if (event.key === "ArrowRight") {
+    moveComicReader(1);
+  }
+});
 renderLandingMarquee();
 renderDailyWord();
 renderLandingPulse();

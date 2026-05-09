@@ -1601,8 +1601,17 @@
             <span>Image</span>
           </div>
         </div>
-        <div id="bd-tabs" class="bd-tabs" role="tablist" aria-label="Catégories BD"></div>
+        <div id="bd-collections" class="bd-collections" aria-label="Catégories BD"></div>
         <div id="bd-gallery" class="bd-gallery"></div>
+        <div id="bd-reader" class="bd-reader" hidden>
+          <button id="bd-reader-close" class="bd-reader-close" type="button" aria-label="Fermer la planche">×</button>
+          <button id="bd-reader-prev" class="bd-reader-arrow bd-reader-arrow-left" type="button" aria-label="Planche précédente">‹</button>
+          <figure class="bd-reader-frame">
+            <img id="bd-reader-image" alt="" decoding="async">
+            <figcaption id="bd-reader-caption"></figcaption>
+          </figure>
+          <button id="bd-reader-next" class="bd-reader-arrow bd-reader-arrow-right" type="button" aria-label="Planche suivante">›</button>
+        </div>
       </section>
 
       <section id="personnages" class="section" hidden>
