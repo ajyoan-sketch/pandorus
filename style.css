@@ -4306,39 +4306,48 @@ body.bd-reader-open {
   top: 18px;
   left: 18px;
   display: inline-flex;
+  align-items: center;
+  gap: 10px;
   overflow: hidden;
   border: 1px solid rgba(255, 248, 232, 0.28);
   border-radius: 999px;
   background: rgba(255, 248, 232, 0.12);
+  padding: 0 0 0 14px;
+}
+
+.bd-reader-tool-label {
+  color: #fff8e8;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.bd-reader-tools input[type="range"] {
+  width: min(28vw, 260px);
+  min-width: 140px;
+  accent-color: #fff1bf;
+  cursor: pointer;
 }
 
 .bd-reader-tools button {
   display: inline-grid;
   place-items: center;
-  min-width: 46px;
+  min-width: 64px;
   min-height: 42px;
   padding: 0 14px;
   border: 0;
-  border-right: 1px solid rgba(255, 248, 232, 0.18);
+  border-left: 1px solid rgba(255, 248, 232, 0.18);
   background: transparent;
   color: #fff8e8;
   font-weight: 700;
   cursor: pointer;
 }
 
-.bd-reader-tools button:last-child {
-  border-right: 0;
-}
-
 .bd-reader-tools button:hover,
 .bd-reader-tools button:focus-visible {
   background: rgba(255, 248, 232, 0.16);
   outline: none;
-}
-
-.bd-reader-tools button[disabled] {
-  opacity: 0.36;
-  cursor: default;
 }
 
 .bd-reader-arrow:hover,
@@ -4692,6 +4701,10 @@ body.bd-reader-open {
     top: 14px;
     left: 14px;
   }
+
+  .bd-reader-tools input[type="range"] {
+    width: 180px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -4724,9 +4737,18 @@ body.bd-reader-open {
   }
 
   .bd-reader-tools button {
-    min-width: 40px;
+    min-width: 58px;
     min-height: 38px;
     padding: 0 11px;
+  }
+
+  .bd-reader-tool-label {
+    display: none;
+  }
+
+  .bd-reader-tools input[type="range"] {
+    width: 42vw;
+    min-width: 120px;
   }
 
   .bd-reader-arrow-left {

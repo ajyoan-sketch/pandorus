@@ -3244,8 +3244,7 @@ function updateComicZoom(nextZoom = currentComicZoom) {
   const reader = document.getElementById("bd-reader");
   const frame = document.querySelector(".bd-reader-frame");
   const label = document.getElementById("bd-reader-zoom-label");
-  const zoomOut = document.getElementById("bd-reader-zoom-out");
-  const zoomIn = document.getElementById("bd-reader-zoom-in");
+  const slider = document.getElementById("bd-reader-zoom-slider");
   if (!reader) return;
 
   currentComicZoom = Math.max(1, Math.min(2.5, nextZoom));
@@ -3253,8 +3252,7 @@ function updateComicZoom(nextZoom = currentComicZoom) {
   reader.classList.toggle("is-zoomed", currentComicZoom > 1);
 
   if (label) label.textContent = `${Math.round(currentComicZoom * 100)}%`;
-  if (zoomOut) zoomOut.disabled = currentComicZoom <= 1;
-  if (zoomIn) zoomIn.disabled = currentComicZoom >= 2.5;
+  if (slider) slider.value = Math.round(currentComicZoom * 100).toString();
   if (frame && currentComicZoom === 1) {
     frame.scrollTop = 0;
     frame.scrollLeft = 0;
@@ -3297,9 +3295,9 @@ function renderComics(activeCollectionId = currentComicCollectionId) {
   const closeButton = document.getElementById("bd-reader-close");
   const prevButton = document.getElementById("bd-reader-prev");
   const nextButton = document.getElementById("bd-reader-next");
-  const zoomOutButton = document.getElementById("bd-reader-zoom-out");
+  const zoomSlider = document.getElementById("bd-reader-zoom-slider");
   const zoomResetButton = document.getElementById("bd-reader-zoom-reset");
-  const zoomInButton = document.getElementById("bd-reader-zoom-in");
+  const reader = document.getElementById("bd-reader");
   if (!collectionsNode || !gallery || !comicCollections.length) return;
 
   currentComicCollectionId = activeCollectionId || null;
@@ -3378,9 +3376,11 @@ function renderComics(activeCollectionId = currentComicCollectionId) {
     nextButton.addEventListener("click", () => moveComicReader(1));
   }
 
-  if (zoomOutButton && !zoomOutButton.dataset.bdReaderBound) {
-    zoomOutButton.dataset.bdReaderBound = "true";
-    zoomOutButton.addEventListener("click", () => updateComicZoom(currentComicZoom - 0.25));
+  if (zoomSlider && !zoomSlider.dataset.bdReaderBound) {
+    zoomSlider.dataset.bdReaderBound = "true";
+    zoomSlider.addEventListener("input", () => {
+      updateComicZoom(Number(zoomSlider.value) / 100);
+    });
   }
 
   if (zoomResetButton && !zoomResetButton.dataset.bdReaderBound) {
@@ -3388,9 +3388,14 @@ function renderComics(activeCollectionId = currentComicCollectionId) {
     zoomResetButton.addEventListener("click", () => updateComicZoom(1));
   }
 
-  if (zoomInButton && !zoomInButton.dataset.bdReaderBound) {
-    zoomInButton.dataset.bdReaderBound = "true";
-    zoomInButton.addEventListener("click", () => updateComicZoom(currentComicZoom + 0.25));
+  if (reader && !reader.dataset.bdWheelBound) {
+    reader.dataset.bdWheelBound = "true";
+    reader.addEventListener("wheel", (event) => {
+      if (event.ctrlKey) return;
+      event.preventDefault();
+      const direction = event.deltaY > 0 ? -1 : 1;
+      updateComicZoom(currentComicZoom + direction * 0.05);
+    }, { passive: false });
   }
 }
 
@@ -4771,9 +4776,9 @@ window.addEventListener("keydown", (event) => {
   } else if (event.key === "ArrowRight") {
     moveComicReader(1);
   } else if (event.key === "+" || event.key === "=") {
-    updateComicZoom(currentComicZoom + 0.25);
+    updateComicZoom(currentComicZoom + 0.05);
   } else if (event.key === "-") {
-    updateComicZoom(currentComicZoom - 0.25);
+    updateComicZoom(currentComicZoom - 0.05);
   } else if (event.key === "0") {
     updateComicZoom(1);
   }

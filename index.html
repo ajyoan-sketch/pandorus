@@ -1606,11 +1606,11 @@
         <div id="bd-reader" class="bd-reader" hidden>
           <button id="bd-reader-close" class="bd-reader-close" type="button" aria-label="Fermer la planche">×</button>
           <div class="bd-reader-tools" aria-label="Zoom de lecture">
-            <button id="bd-reader-zoom-out" type="button" aria-label="Réduire la planche">−</button>
+            <span class="bd-reader-tool-label">Zoom</span>
+            <input id="bd-reader-zoom-slider" type="range" min="100" max="250" step="1" value="100" aria-label="Agrandir ou réduire la planche">
             <button id="bd-reader-zoom-reset" type="button" aria-label="Revenir à la taille normale">
               <span id="bd-reader-zoom-label">100%</span>
             </button>
-            <button id="bd-reader-zoom-in" type="button" aria-label="Agrandir la planche">+</button>
           </div>
           <button id="bd-reader-prev" class="bd-reader-arrow bd-reader-arrow-left" type="button" aria-label="Planche précédente">‹</button>
           <figure class="bd-reader-frame">
