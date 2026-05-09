@@ -4216,6 +4216,7 @@ body.bd-reader-open {
 }
 
 .bd-reader {
+  --bd-reader-zoom: 1;
   position: fixed;
   inset: 0;
   z-index: 80;
@@ -4236,8 +4237,11 @@ body.bd-reader-open {
   display: grid;
   justify-items: center;
   gap: 12px;
+  overflow: auto;
   max-height: calc(100vh - 56px);
   margin: 0;
+  padding: 4px;
+  scrollbar-color: rgba(255, 248, 232, 0.42) rgba(255, 248, 232, 0.08);
 }
 
 .bd-reader-frame img {
@@ -4248,6 +4252,16 @@ body.bd-reader-open {
   border-radius: 14px;
   background: #f7f0df;
   box-shadow: 0 28px 60px rgba(0, 0, 0, 0.36);
+}
+
+.bd-reader.is-zoomed .bd-reader-frame {
+  justify-items: start;
+}
+
+.bd-reader.is-zoomed .bd-reader-frame img {
+  width: calc(100% * var(--bd-reader-zoom));
+  max-width: none;
+  max-height: none;
 }
 
 .bd-reader-frame figcaption {
@@ -4285,6 +4299,46 @@ body.bd-reader-open {
   height: 46px;
   border-radius: 50%;
   font-size: 1.6rem;
+}
+
+.bd-reader-tools {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  display: inline-flex;
+  overflow: hidden;
+  border: 1px solid rgba(255, 248, 232, 0.28);
+  border-radius: 999px;
+  background: rgba(255, 248, 232, 0.12);
+}
+
+.bd-reader-tools button {
+  display: inline-grid;
+  place-items: center;
+  min-width: 46px;
+  min-height: 42px;
+  padding: 0 14px;
+  border: 0;
+  border-right: 1px solid rgba(255, 248, 232, 0.18);
+  background: transparent;
+  color: #fff8e8;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.bd-reader-tools button:last-child {
+  border-right: 0;
+}
+
+.bd-reader-tools button:hover,
+.bd-reader-tools button:focus-visible {
+  background: rgba(255, 248, 232, 0.16);
+  outline: none;
+}
+
+.bd-reader-tools button[disabled] {
+  opacity: 0.36;
+  cursor: default;
 }
 
 .bd-reader-arrow:hover,
@@ -4633,6 +4687,11 @@ body.bd-reader-open {
     height: 48px;
     font-size: 2rem;
   }
+
+  .bd-reader-tools {
+    top: 14px;
+    left: 14px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -4652,10 +4711,22 @@ body.bd-reader-open {
       "prev next";
     align-content: center;
     gap: 12px;
+    padding-top: 76px;
   }
 
   .bd-reader-frame {
     grid-area: frame;
+    max-height: calc(100vh - 162px);
+  }
+
+  .bd-reader-frame img {
+    max-height: calc(100vh - 212px);
+  }
+
+  .bd-reader-tools button {
+    min-width: 40px;
+    min-height: 38px;
+    padding: 0 11px;
   }
 
   .bd-reader-arrow-left {

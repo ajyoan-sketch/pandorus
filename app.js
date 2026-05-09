@@ -2175,6 +2175,7 @@ let currentLocationLetter = "all";
 let currentCreatureFiche = creatureFiches[0]?.slug || "";
 let currentComicCollectionId = null;
 let currentComicPageIndex = 0;
+let currentComicZoom = 1;
 let currentRelationLetter = "all";
 let currentRelationSearch = "";
 let currentLocationSearch = "";
@@ -3239,7 +3240,28 @@ function closeComicReader() {
   document.body.classList.remove("bd-reader-open");
 }
 
-function openComicReader(pageIndex) {
+function updateComicZoom(nextZoom = currentComicZoom) {
+  const reader = document.getElementById("bd-reader");
+  const frame = document.querySelector(".bd-reader-frame");
+  const label = document.getElementById("bd-reader-zoom-label");
+  const zoomOut = document.getElementById("bd-reader-zoom-out");
+  const zoomIn = document.getElementById("bd-reader-zoom-in");
+  if (!reader) return;
+
+  currentComicZoom = Math.max(1, Math.min(2.5, nextZoom));
+  reader.style.setProperty("--bd-reader-zoom", currentComicZoom.toString());
+  reader.classList.toggle("is-zoomed", currentComicZoom > 1);
+
+  if (label) label.textContent = `${Math.round(currentComicZoom * 100)}%`;
+  if (zoomOut) zoomOut.disabled = currentComicZoom <= 1;
+  if (zoomIn) zoomIn.disabled = currentComicZoom >= 2.5;
+  if (frame && currentComicZoom === 1) {
+    frame.scrollTop = 0;
+    frame.scrollLeft = 0;
+  }
+}
+
+function openComicReader(pageIndex, resetZoom = true) {
   const reader = document.getElementById("bd-reader");
   const image = document.getElementById("bd-reader-image");
   const caption = document.getElementById("bd-reader-caption");
@@ -3259,13 +3281,14 @@ function openComicReader(pageIndex) {
   nextButton.disabled = currentComicPageIndex === activeCollection.pages.length - 1;
   reader.hidden = false;
   document.body.classList.add("bd-reader-open");
+  updateComicZoom(resetZoom ? 1 : currentComicZoom);
 }
 
 function moveComicReader(direction) {
   const activeCollection = getActiveComicCollection();
   if (!activeCollection) return;
 
-  openComicReader(currentComicPageIndex + direction);
+  openComicReader(currentComicPageIndex + direction, false);
 }
 
 function renderComics(activeCollectionId = currentComicCollectionId) {
@@ -3274,6 +3297,9 @@ function renderComics(activeCollectionId = currentComicCollectionId) {
   const closeButton = document.getElementById("bd-reader-close");
   const prevButton = document.getElementById("bd-reader-prev");
   const nextButton = document.getElementById("bd-reader-next");
+  const zoomOutButton = document.getElementById("bd-reader-zoom-out");
+  const zoomResetButton = document.getElementById("bd-reader-zoom-reset");
+  const zoomInButton = document.getElementById("bd-reader-zoom-in");
   if (!collectionsNode || !gallery || !comicCollections.length) return;
 
   currentComicCollectionId = activeCollectionId || null;
@@ -3350,6 +3376,21 @@ function renderComics(activeCollectionId = currentComicCollectionId) {
   if (nextButton && !nextButton.dataset.bdReaderBound) {
     nextButton.dataset.bdReaderBound = "true";
     nextButton.addEventListener("click", () => moveComicReader(1));
+  }
+
+  if (zoomOutButton && !zoomOutButton.dataset.bdReaderBound) {
+    zoomOutButton.dataset.bdReaderBound = "true";
+    zoomOutButton.addEventListener("click", () => updateComicZoom(currentComicZoom - 0.25));
+  }
+
+  if (zoomResetButton && !zoomResetButton.dataset.bdReaderBound) {
+    zoomResetButton.dataset.bdReaderBound = "true";
+    zoomResetButton.addEventListener("click", () => updateComicZoom(1));
+  }
+
+  if (zoomInButton && !zoomInButton.dataset.bdReaderBound) {
+    zoomInButton.dataset.bdReaderBound = "true";
+    zoomInButton.addEventListener("click", () => updateComicZoom(currentComicZoom + 0.25));
   }
 }
 
@@ -4729,6 +4770,12 @@ window.addEventListener("keydown", (event) => {
     moveComicReader(-1);
   } else if (event.key === "ArrowRight") {
     moveComicReader(1);
+  } else if (event.key === "+" || event.key === "=") {
+    updateComicZoom(currentComicZoom + 0.25);
+  } else if (event.key === "-") {
+    updateComicZoom(currentComicZoom - 0.25);
+  } else if (event.key === "0") {
+    updateComicZoom(1);
   }
 });
 renderLandingMarquee();
