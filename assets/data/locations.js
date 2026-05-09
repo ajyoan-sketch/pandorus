@@ -15,6 +15,7 @@
     "taverne-du-sombrail": buildMediaPath("lieux", "Taverne du Sombrail.jpg"),
     "fleuve-arkains": locationHeroImage,
     "terre-des-insectes": locationHeroImage,
+    "verdanor-sud": locationHeroImage,
     creux: locationHeroImage,
     vert: buildMediaPath("lieux", "Le Vert.png"),
     "ruines-du-vert": buildMediaPath("lieux", "Les Ruines du Vert.png")
@@ -454,29 +455,61 @@ export function createLocationFiches(buildMediaPath) {
     ]
   },
   {
+    slug: "verdanor-sud",
+    name: "Verdanor Sud",
+    tone: "river",
+    category: "Fleuve-frontière",
+    intro: "Le Verdanor Sud apparaît comme une frontière vivante entre la Sombra et le Creux. Immense, sombre et traversé de lueurs vertes, bleues et argentées, il ne se traverse pas seulement : il juge le passage.",
+    meta: [
+      { label: "Atmosphère", value: "Eaux profondes, brume bleutée, lueurs sous-marines" },
+      { label: "Fonction", value: "Frontière protectrice du Creux et de la Sombra" },
+      { label: "Présences", value: "Carpélions, communauté des Papillons" }
+    ],
+    biography: [
+      "Après avoir quitté la Sombra au lever du jour, le groupe entend d'abord le Verdanor Sud comme un grondement immense, presque une respiration du monde. L'air se charge d'eau, la brume devient bleutée et les arbres s'ouvrent sur un fleuve plus vaste que tout ce qu'ils ont connu.",
+      "Sous sa surface sombre circulent des lueurs vivantes. Lorsque les Carpélions apparaissent, le fleuve cesse d'être un simple obstacle: il devient un seuil gardé par des créatures anciennes qui lisent le groupe avant de l'autoriser à traverser.",
+      "Le Verdanor Sud protège le Creux depuis longtemps. Sa puissance n'est pas brutale, mais ancienne, calme et souveraine, comme si le monde avait placé là une frontière capable de reconnaître ceux qui viennent avec une intention juste."
+    ],
+    summary: [
+      "Le Verdanor Sud est le grand fleuve-frontière entre la Sombra et le Creux.",
+      "Sa traversée marque l'entrée dans une phase plus profonde, plus humide et plus ancienne du monde."
+    ],
+    profile: [
+      { title: "Texture du lieu", text: "Eaux noires lumineuses, brume, courant profond et silence presque sacré." },
+      { title: "Rôle narratif", text: "Faire passer le groupe d'une Sombra réparée vers un Creux encore protégé." },
+      { title: "Point de tension", text: "Le fleuve laisse passer parce que les Carpélions l'acceptent; un autre groupe aurait pu y être arrêté." }
+    ],
+    contextLinks: [
+      { href: "#creatures-fiche-carpelion", label: "Voir le Carpélion" },
+      { href: "#lieux-creux", label: "Voir le Creux" },
+      { href: "#chronologie", label: "Lire la traversée" }
+    ]
+  },
+  {
     slug: "creux",
     name: "Le Creux",
     tone: "threshold",
-    category: "Relais profond",
-    intro: "Le Creux n'est pas encore traversé par la Communauté des Papillons, mais il devient le prochain nœud vivant du voyage: un territoire plus enfoui, déjà traversé par les dérèglements et gardé par des présences qui les sentent venir.",
+    category: "Refuge profond",
+    intro: "Le Creux est une région enfouie sous une forêt gigantesque, protégée par sa profondeur, ses créatures et un village qui a fait du vivant une loi commune. On y descend comme dans une mémoire encore respirante.",
     meta: [
-      { label: "Atmosphère", value: "Profondeur, respiration basse, veille discrète" },
-      { label: "Fonction", value: "Prochaine étape avant la Terre des Insectes" },
-      { label: "Présences", value: "O'Sama, Bella, Balak'Oss" }
+      { label: "Atmosphère", value: "Forêt immense, lanternes, brume, chants de Corbec" },
+      { label: "Fonction", value: "Refuge, relais et zone de veille avant la Terre des Insectes" },
+      { label: "Présences", value: "O'Sama, Bella, Balak'Oss, Corbec, Oursarune, Renardou Roux, Eléphantaupes" }
     ],
     biography: [
-      "Le Creux apparaît d'abord dans la bouche du Capitaine comme l'un des territoires visés par le Parasite. Il gagne ensuite une autre densité quand Bichette en fait la prochaine destination indispensable du groupe.",
-      "Ce lieu ne se présente pas comme une simple halte. O'Sama, Bella et Balak'Oss y perçoivent déjà les dérèglements et peuvent aider la route à entrer dans une lecture plus profonde avant la Terre des Insectes.",
-      "Le Creux devient donc un passage obligé entre la guérison relative offerte par la Sombra et le front plus hostile qui attend vers Insect Master. Il promet moins un repos qu'un affinement de la compréhension."
+      "Le Creux apparaît d'abord comme une destination stratégique, mais le voyage lui donne enfin son corps: une forêt qui descend, des arbres si hauts qu'ils masquent le ciel, des racines immenses, une humidité profonde et des chants de Corbec qui circulent d'arbre en arbre.",
+      "Le lieu n'est pas oppressant malgré sa profondeur. Les Oursarune y choisissent leur roi dans une brutalité sans haine, les Renardou Roux approchent le groupe avec douceur, et les Eléphantaupes appartiennent depuis longtemps à la reconstruction du village.",
+      "Au fond du Creux, le groupe trouve un village de lanternes, de maisons de bois et de passerelles, organisé autour d'O'Sama et Bella. Ce refuge n'est pas une fuite du monde: il a survécu à l'ancienne guerre, puis s'est mis à observer les dérèglements avant que le reste de Pandorus n'en comprenne l'ampleur.",
+      "Avec l'arrivée de la Communauté des Papillons, le Creux devient le prochain vrai relais du récit. Il accueille la fatigue du groupe, mais prépare déjà la route vers la Terre des Insectes et Insect Master."
     ],
     summary: [
-      "Le Creux devient la prochaine terre de veille du récit.",
-      "Il relie la menace du Parasite, la parole de Bichette et les futurs alliés capables de lire le mal avant qu'il ne frappe à plein."
+      "Le Creux est un refuge vivant, profond et habité, où humains et créatures coexistent plus naturellement qu'ailleurs.",
+      "Il relie la parole de Bichette, les nouveaux alliés et la prochaine marche vers la Terre des Insectes."
     ],
     profile: [
-      { title: "Texture du lieu", text: "Profondeur calme, sensation d'enfouissement, souffle retenu mais vivant." },
-      { title: "Rôle narratif", text: "Faire le lien entre la Sombra et la Terre des Insectes par une étape de veille et de reconnaissance plus fine." },
-      { title: "Point de tension", text: "Le Parasite y était destiné, preuve que ce territoire compte déjà dans la stratégie de l'ennemi." }
+      { title: "Texture du lieu", text: "Forêt descendante, lanternes chaudes, chants d'oiseaux, racines immenses et village au fond du monde." },
+      { title: "Rôle narratif", text: "Faire le lien entre la Sombra et la Terre des Insectes par une étape de refuge, de mémoire et de reconnaissance plus fine." },
+      { title: "Point de tension", text: "Le Creux reste préservé, mais O'Sama et Balak'Oss savent déjà que cette protection ne durera pas seule." }
     ],
     contextLinks: [
       { href: "#fiches-o-sama", label: "Voir O'Sama" },

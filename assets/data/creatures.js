@@ -558,6 +558,156 @@
       { era: "Jour 7", title: "Plongeon sur le village", summary: "Les Chauve-Souloups frappent depuis les hauteurs et compliquent immédiatement la défense du village." },
       { era: "Lecture du sud", title: "Attaque multi-axes", summary: "Avec elles, le groupe comprend que les offensives du sud sont pensées pour saturer l'espace et épuiser les protecteurs." }
     ]
+  },
+  {
+    slug: "carpelion",
+    name: "Carpélion",
+    image: buildMediaPath("creatures", "Carpélion.png"),
+    family: "Gardien aquatique",
+    status: "Créature clairement présente dans le récit",
+    habitat: "Profondeurs lumineuses du Verdanor Sud",
+    summary: "Le Carpélion est une créature majestueuse du Verdanor Sud, à la fois carpe immense et lion ancien, gardien silencieux du passage vers le Creux.",
+    biography: [
+      "Les Carpélions émergent lorsque la Communauté atteint le Verdanor Sud. Leurs silhouettes immenses tournent d'abord sous l'eau, traçant des lueurs vertes, bleues et argentées dans les profondeurs du fleuve.",
+      "Leur présence n'est pas agressive. Ils lisent le groupe, reconnaissent quelque chose en lui, puis s'écartent pour autoriser la traversée. Ils apparaissent ainsi comme les gardiens calmes d'une frontière vivante."
+    ],
+    profile: [
+      { title: "Nature", text: "Créature aquatique noble, ancienne, lumineuse et protectrice." },
+      { title: "Niveau de menace", text: "Très élevé si le passage est refusé, mais paisible face à une intention reconnue." },
+      { title: "Rôle narratif", text: "Transformer le Verdanor Sud en seuil vivant plutôt qu'en simple fleuve." }
+    ],
+    timeline: [
+      { era: "Jour 19", title: "Apparition dans le Verdanor Sud", summary: "Trois Carpélions émergent des profondeurs lumineuses et observent la Communauté des Papillons." },
+      { era: "Jour 19", title: "Passage autorisé", summary: "Ils s'écartent du passage principal et laissent le groupe traverser le fleuve." }
+    ]
+  },
+  {
+    slug: "corbec",
+    name: "Corbec",
+    image: buildMediaPath("creatures", "Corbec.png"),
+    family: "Oiseau du Creux",
+    status: "Créature clairement présente dans le récit",
+    habitat: "Hauteurs du Creux, branches immenses et village profond",
+    summary: "Le Corbec accompagne le Creux par ses chants mélancoliques, comme une mémoire sonore qui circule entre les arbres géants.",
+    biography: [
+      "Les Corbec apparaissent lorsque le groupe commence à descendre dans le Creux. Leurs silhouettes noires traversent les hauteurs, leurs becs semblent démesurés et leurs chants résonnent d'arbre en arbre.",
+      "Ils appartiennent à la respiration du lieu. Durant l'histoire d'O'Sama, leur retour après la guerre marque aussi le retour progressif du vivant dans un Creux reconstruit."
+    ],
+    profile: [
+      { title: "Nature", text: "Oiseau noir au chant profond, lié à la mémoire et aux hauteurs du Creux." },
+      { title: "Niveau de menace", text: "Faible à ce stade, davantage signe du lieu que menace directe." },
+      { title: "Rôle narratif", text: "Donner au Creux une voix, une mélancolie et une continuité après les destructions anciennes." }
+    ],
+    timeline: [
+      { era: "Jour 19", title: "Chants dans la descente", summary: "Les Corbec annoncent l'entrée dans le Creux par leurs chants suspendus dans les hauteurs." },
+      { era: "Après l'ancienne guerre", title: "Retour au refuge", summary: "Leur retour fait partie des signes que le Creux se reconstruit autour d'O'Sama." }
+    ]
+  },
+  {
+    slug: "oursarune",
+    name: "Oursarune",
+    image: buildMediaPath("creatures", "Oursarune.png"),
+    family: "Créature royale du Creux",
+    status: "Créature clairement présente dans le récit",
+    habitat: "Clairières profondes du Creux",
+    summary: "L'Oursarune est une masse vivante marquée de runes lumineuses, capable de violence immense mais liée à une loi naturelle sans haine.",
+    biography: [
+      "Dans le Creux, la Communauté observe une meute d'Oursarune rassemblée autour d'un combat entre deux mâles. Leurs fourrures portent des lignes lumineuses qui pulsent avec leur respiration.",
+      "Le combat est brutal, capable de fendre les arbres, mais il ne contient pas de cruauté. Quand l'un cède, la meute reconnaît le vainqueur, et le groupe comprend que cette violence obéit à une loi du vivant."
+    ],
+    profile: [
+      { title: "Nature", text: "Créature massive, royale, marquée par des runes naturelles lumineuses." },
+      { title: "Niveau de menace", text: "Extrême en affrontement, mais réglé par une loi de territoire et de reconnaissance." },
+      { title: "Rôle narratif", text: "Montrer que le Creux porte une sauvagerie juste, distincte de la corruption du vivant." }
+    ],
+    timeline: [
+      { era: "Jour 19", title: "Choix du roi", summary: "La meute d'Oursarune choisit son roi dans un combat violent mais sans haine." }
+    ]
+  },
+  {
+    slug: "renardou-roux",
+    name: "Renardou Roux",
+    image: buildMediaPath("creatures", "Renardou Roux.png"),
+    family: "Créature douce du Creux",
+    status: "Créature clairement présente dans le récit",
+    habitat: "Fougères, racines et approches du village du Creux",
+    summary: "Le Renardou Roux est une petite présence paisible du Creux, curieuse, douce et naturellement accordée à Tsune.",
+    biography: [
+      "À l'approche du village du Creux, plusieurs Renardou Roux sortent des fougères et s'approchent du groupe. Leur fourrure rousse prend la lumière du soir, et leur attitude n'a rien d'agressif.",
+      "Leur lien avec Tsune se lit presque sans parole. L'un vient frotter sa tête contre sa main, tandis que d'autres entourent le groupe avec confiance, montrant le visage le plus apaisé du Creux."
+    ],
+    profile: [
+      { title: "Nature", text: "Petite créature rousse, curieuse, douce et sensible aux présences calmes." },
+      { title: "Niveau de menace", text: "Faible dans la scène connue, surtout liée à l'apaisement du lieu." },
+      { title: "Rôle narratif", text: "Faire sentir que le Creux n'est pas seulement profond et sauvage, mais aussi accueillant." }
+    ],
+    timeline: [
+      { era: "Jour 19", title: "Rencontre au soir", summary: "Les Renardou Roux approchent le groupe près du village et se montrent particulièrement confiants avec Tsune." }
+    ]
+  },
+  {
+    slug: "elephantaupe",
+    name: "Eléphantaupe",
+    image: buildMediaPath("creatures", "Eléphantaupe.png"),
+    family: "Créature ouvrière du Creux",
+    status: "Créature liée au Creux",
+    habitat: "Sols profonds, chemins effondrés et zones de reconstruction du Creux",
+    summary: "L'Eléphantaupe appartient aux grandes forces utiles du Creux, capable de dégager le terrain, de reconstruire et même de traverser les terres pour ramener Bella vers le refuge.",
+    biography: [
+      "Les Eléphantaupes apparaissent surtout dans l'histoire d'O'Sama. Elles aident à dégager les portions de terrain après les glissements de terre et reviennent parmi les premières créatures lors de la reconstruction du Creux.",
+      "O'Sama les envoie aussi chercher Bella, preuve qu'elles ne sont pas seulement des forces de travail, mais des présences intégrées à la protection collective du village."
+    ],
+    profile: [
+      { title: "Nature", text: "Créature puissante du sol, liée au creusement, au transport et à la reconstruction." },
+      { title: "Niveau de menace", text: "Inconnu comme menace; très élevée comme force de terrain." },
+      { title: "Rôle narratif", text: "Montrer que le Creux vit avec ses créatures au lieu de simplement les subir." }
+    ],
+    timeline: [
+      { era: "Après l'ancienne guerre", title: "Retour au Creux", summary: "Les Eléphantaupes participent à la reconstruction et reviennent dans le village protégé par O'Sama." },
+      { era: "Avant le récit", title: "Bella ramenée au refuge", summary: "O'Sama envoie plusieurs Eléphantaupes chercher Bella et la conduire au Creux." }
+    ]
+  },
+  {
+    slug: "poisson-du-verdanor",
+    name: "Poisson du Verdanor",
+    image: buildMediaPath("creatures", "Poisson du Verdanor.png"),
+    family: "Faune aquatique du Verdanor",
+    status: "Espèce visible dans le bestiaire",
+    habitat: "Eaux du Verdanor Sud",
+    summary: "Le Poisson du Verdanor enrichit la vie du grand fleuve, rappelant que ses profondeurs ne sont pas seulement gardées par les Carpélions mais habitées par tout un écosystème.",
+    biography: [
+      "Le Verdanor Sud apparaît comme un fleuve vivant, traversé de lueurs, de courants et de profondeurs presque sacrées. Le Poisson du Verdanor s'inscrit dans cette respiration aquatique.",
+      "Même sans scène centrale encore détaillée, il donne au fleuve une densité de faune et prépare l'idée que ce territoire d'eau possède ses propres équilibres."
+    ],
+    profile: [
+      { title: "Nature", text: "Créature aquatique liée aux courants profonds du Verdanor." },
+      { title: "Niveau de menace", text: "Inconnu à ce stade." },
+      { title: "Rôle narratif", text: "Élargir le Verdanor Sud en véritable milieu vivant, pas seulement en passage." }
+    ],
+    timeline: [
+      { era: "Bestiaire", title: "Faune du Verdanor", summary: "Le Poisson du Verdanor complète la lecture du fleuve comme écosystème lumineux et profond." }
+    ]
+  },
+  {
+    slug: "tortanguille",
+    name: "Tortanguille",
+    image: buildMediaPath("creatures", "Tortanguille.png"),
+    family: "Créature aquatique hybride",
+    status: "Espèce visible dans le bestiaire",
+    habitat: "Eaux épaisses, berges et zones lentes du Verdanor ou de fleuves profonds",
+    summary: "La Tortanguille prolonge le bestiaire aquatique de Pandorus par une forme hybride, à la fois protégée, sinueuse et adaptée aux eaux lourdes.",
+    biography: [
+      "La Tortanguille n'a pas encore de scène centrale, mais son image s'accorde avec l'ouverture du Verdanor Sud et des milieux aquatiques plus profonds.",
+      "Elle ajoute une créature de bord, de carapace et de mouvement sinueux, utile pour donner aux fleuves de Pandorus une faune plus variée et plus étrange."
+    ],
+    profile: [
+      { title: "Nature", text: "Créature hybride entre protection lourde et déplacement sinueux." },
+      { title: "Niveau de menace", text: "Inconnu à ce stade." },
+      { title: "Rôle narratif", text: "Renforcer la diversité aquatique du monde pandorien." }
+    ],
+    timeline: [
+      { era: "Bestiaire", title: "Faune aquatique hybride", summary: "La Tortanguille ajoute une ligne plus étrange et défensive aux créatures des eaux." }
+    ]
   }
 
   ];

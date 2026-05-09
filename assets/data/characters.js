@@ -1309,31 +1309,42 @@
     name: "O'Sama",
     image: buildMediaPath("pandorus", "O'Sama.jpg"),
     category: "Veilleur du Creux",
-    intro: "O'Sama fait partie des trois présences que Bichette désigne comme prochains relais du voyage. Dans le Creux, il appartient à ceux qui sentent déjà venir le dérèglement au lieu de le découvrir trop tard.",
+    intro: "O'Sama est le cœur protecteur du Creux : un géant doux, marqué par l'ancienne guerre, capable de lire les cœurs grâce à une bague vivante et de protéger sans jamais réduire un être à son apparence.",
     meta: [
-      { label: "Statut", value: "Ressource alliée à rencontrer" },
+      { label: "Statut", value: "Chef protecteur du Creux" },
       { label: "Ancrage", value: "Le Creux" },
-      { label: "Lien majeur", value: "Bella et Balak'Oss" }
+      { label: "Lien majeur", value: "Bella, Balak'Oss et la bague des cœurs" }
     ],
     biography: [
-      "O'Sama n'entre pas encore par une grande scène propre. Il existe d'abord comme un nom de confiance prononcé par Bichette au moment où la route doit s'affiner.",
-      "Dans le Creux, il compte parmi ceux qui perçoivent déjà les dérèglements et peuvent aider le groupe à les lire autrement avant la Terre des Insectes. Cette fonction suffit à le rendre stratégique bien avant sa rencontre."
+      "O'Sama naît dans le Creux, au milieu d'un village où les habitants et les créatures vivent ensemble sans hiérarchie brutale. Très jeune, sa taille et sa force impressionnent déjà, mais sa première nature reste la douceur, l'aide et la protection.",
+      "Quand l'ancienne guerre atteint les frontières du Creux, il prend les armes pour défendre son peuple, ses arbres et les créatures du lieu. Au cœur d'un combat contre un être venu d'ailleurs, il récupère une bague vivante capable de lire les cœurs, les blessures, les intentions et la lumière qui demeure dans les êtres.",
+      "Après la guerre, O'Sama reconstruit le Creux maison après maison, soigne les créatures, ramène les Eléphantaupes, les Corbec et les Oursarune vers le village, puis devient sans le chercher le centre moral du refuge.",
+      "Il sauve Bella d'un clan qui l'avait convaincue que les faibles devaient souffrir, lui offre une autre loi du vivant, puis construit avec elle un foyer. Plus tard, il accueille Balak'Oss, voyageur aux yeux blancs, et trouve en lui une autre manière de lire le monde.",
+      "Lorsque les dérèglements se multiplient, O'Sama enquête avec Balak'Oss et comprend peu à peu que la Terre des Insectes est liée aux parasites et aux altérations. Prévenu par Bichette, il attend finalement la Communauté des Papillons au fond du Creux."
     ],
     summary: [
-      "O'Sama prépare la prochaine alliance du récit.",
-      "Il fait du Creux un vrai lieu de veille, pas une simple étape de transition."
+      "O'Sama donne au Creux son cœur, sa force et sa loi de protection.",
+      "Sa bague transforme sa puissance en lecture intime du vivant, ce qui fait de lui un allié essentiel contre le dérèglement."
     ],
     profile: [
-      { title: "Nature", text: "Présence alliée du Creux, liée à la perception et à la veille." },
-      { title: "Rôle", text: "Aider le groupe à entrer dans une compréhension plus profonde du dérèglement." },
-      { title: "Mystère", text: "On ne sait pas encore quelle forme prendra exactement son aide sur le terrain." }
+      { title: "Caractère", text: "Immense, calme, protecteur, profondément juste, incapable de confondre faiblesse et absence de valeur." },
+      { title: "Forces", text: "Puissance physique, autorité douce, lecture des cœurs par la bague, connaissance du Creux et des créatures." },
+      { title: "Mystère", text: "La bague ouvre une lecture très fine des êtres, mais son origine et ses limites restent encore à explorer." }
     ],
     relations: [
-      { title: "Bella", text: "Bella et O'Sama appartiennent au même noyau de veille du Creux." },
-      { title: "Balak'Oss", text: "Avec Balak'Oss, il forme le trio que Bichette désigne comme prochain relais vivant." }
+      { title: "Bella", text: "O'Sama la sauve d'une loi de violence, puis devient son foyer, son allié et son mari." },
+      { title: "Balak'Oss", text: "Il accueille le jeune voyageur sans le juger et partage avec lui une même attention au vivant." },
+      { title: "Bichette", text: "Leurs présences se connaissent à distance, et Bichette lui demande d'attendre les alliés qui approchent." }
     ],
     timeline: [
-      { era: "Jour 18", title: "Nom donné par Bichette", summary: "Bichette désigne O'Sama comme l'une des trois ressources à rejoindre d'abord au Creux." }
+      { era: "Avant le récit", title: "Enfance dans le Creux", summary: "O'Sama grandit comme un enfant immense mais doux, naturellement tourné vers l'aide et la protection." },
+      { era: "Ancienne guerre", title: "Défense du Creux", summary: "Il prend les armes pour empêcher la guerre d'engloutir son village et ses créatures." },
+      { era: "Ancienne guerre", title: "Bague des cœurs", summary: "Après avoir vaincu un être venu d'ailleurs, O'Sama récupère une bague capable de lire ce que les êtres portent réellement en eux." },
+      { era: "Après la guerre", title: "Reconstruction du refuge", summary: "Il reconstruit le Creux, ramène les créatures et fait du village un lieu où chaque vivant peut retrouver sa place." },
+      { era: "Avant le récit", title: "Bella sauvée", summary: "O'Sama fait venir Bella au Creux et lui montre qu'aucune faiblesse ne justifie la souffrance imposée." },
+      { era: "Il y a 5 ans", title: "Arrivée de Balak'Oss", summary: "Le jeune voyageur aux yeux blancs arrive au Creux et devient peu à peu un point fixe du village." },
+      { era: "Avant le Jour 19", title: "Enquête sur les dérèglements", summary: "Avec Balak'Oss, O'Sama relie les anomalies, les parasites et les insectes à la Terre des Insectes." },
+      { era: "Jour 19", title: "Accueil du groupe", summary: "Prévenu par Bichette, O'Sama attend la Communauté des Papillons devant son foyer et lit les cœurs qui arrivent." }
     ]
   },
   {
@@ -1342,31 +1353,38 @@
     name: "Bella",
     image: buildMediaPath("pandorus", "Bella.jpg"),
     category: "Veilleuse du Creux",
-    intro: "Bella appartient elle aussi au prochain cercle d'alliés annoncé par Bichette. Dans le Creux, elle compte parmi les présences capables de sentir ce qui se dérègle avant son plein déploiement.",
+    intro: "Bella est la douceur reconstruite du Creux. Arrachée à un clan qui la jugeait faible, elle devient auprès d'O'Sama une présence de soin, d'écoute et de dignité retrouvée.",
     meta: [
-      { label: "Statut", value: "Ressource alliée à rencontrer" },
+      { label: "Statut", value: "Cœur humain du Creux" },
       { label: "Ancrage", value: "Le Creux" },
       { label: "Lien majeur", value: "O'Sama et Balak'Oss" }
     ],
     biography: [
-      "Bella n'est pas encore développée par une scène directe, mais sa place est claire: elle fait partie du trio vivant que la route doit désormais rejoindre avant d'affronter la Terre des Insectes.",
-      "Son nom suffit à annoncer que le Creux n'est pas vide ni passif. C'est un territoire où des présences lisent déjà le mal en marche et peuvent aider le groupe à ne pas entrer aveuglément dans la phase suivante."
+      "Bella vient d'un clan où seuls les forts étaient respectés. Humiliée et blessée pendant des années, elle avait fini par croire que sa souffrance était normale, comme si la faiblesse devait forcément payer sa place.",
+      "O'Sama envoie des Eléphantaupes la chercher et l'accueille au Creux sans lui imposer une nouvelle vie par la force. Là, personne ne la frappe, personne ne la rabaisse, et Bella apprend lentement qu'un être peut exister autrement que sous la loi du plus fort.",
+      "Elle devient ensuite indispensable au village. Elle prend des nouvelles, aide les familles, écoute les malades, accompagne les enfants et les anciens, jusqu'à devenir une présence vers laquelle les habitants se tournent naturellement.",
+      "Avec O'Sama, son lien se transforme en foyer. Bella n'est pas définie par la violence qu'elle a subie, mais par ce qu'elle reconstruit: une douceur lucide, capable de voir la fatigue du groupe dès son arrivée."
     ],
     summary: [
-      "Bella donne au Creux une dimension d'alliance concrète.",
-      "Elle annonce une nouvelle forme de soutien plus discrète, plus profonde et plus préparée."
+      "Bella donne au Creux sa chaleur la plus humaine.",
+      "Elle incarne une force discrète : celle de survivre à une loi injuste sans la reproduire."
     ],
     profile: [
-      { title: "Nature", text: "Présence alliée du Creux, liée à la veille et à la survie lucide." },
-      { title: "Rôle", text: "Faire du Creux un vrai relais avant la Terre des Insectes." },
-      { title: "Mystère", text: "Le récit n'a pas encore montré sa manière exacte d'agir ni ce qu'elle voit déjà." }
+      { title: "Caractère", text: "Douce, attentive, intelligente, marquée par la souffrance mais tournée vers le soin." },
+      { title: "Forces", text: "Écoute, observation des êtres, lien social, capacité à rendre un lieu habitable." },
+      { title: "Blessure", text: "Son ancien clan lui a fait croire que la faiblesse méritait la douleur, croyance que le Creux défait peu à peu." }
     ],
     relations: [
-      { title: "O'Sama", text: "Bella partage avec O'Sama la même lecture du Creux et des dérèglements qui y transitent." },
-      { title: "Balak'Oss", text: "Le trio qu'elle forme avec lui et O'Sama devient la prochaine ressource désignée par Bichette." }
+      { title: "O'Sama", text: "Il la sauve sans la posséder, l'entraîne sans l'écraser, puis devient son mari et son allié." },
+      { title: "Balak'Oss", text: "Elle l'accueille dans le foyer du Creux comme une présence étrange mais jamais rejetée." },
+      { title: "Creux", text: "Bella rend visible la loi profonde du village: aucun vivant ne perd sa valeur parce qu'il est blessé." }
     ],
     timeline: [
-      { era: "Jour 18", title: "Bella est nommée", summary: "Au moment de rouvrir la route, Bichette fait de Bella l'une des présences qu'il faut rejoindre au Creux." }
+      { era: "Avant le récit", title: "Vie sous la loi du plus fort", summary: "Bella grandit dans un clan qui la rabaisse et la frappe parce qu'elle n'est pas assez forte selon ses règles." },
+      { era: "Avant le récit", title: "Arrivée au Creux", summary: "O'Sama envoie des Eléphantaupes la chercher et lui offre un lieu où personne ne la juge par sa faiblesse." },
+      { era: "Avant le récit", title: "Dignité reconstruite", summary: "Bella apprend peu à peu à vivre sans baisser les yeux et devient une présence essentielle du village." },
+      { era: "Avant le Jour 19", title: "Foyer avec O'Sama", summary: "Au fil des années, elle devient la femme d'O'Sama et l'une des figures centrales du Creux." },
+      { era: "Jour 19", title: "Accueil de la Communauté", summary: "Elle accueille le groupe avec une chaleur simple qui apaise immédiatement la fatigue de la route." }
     ]
   },
   {
@@ -1375,31 +1393,37 @@
     name: "Balak'Oss",
     image: buildMediaPath("pandorus", "Balak'Oss.jpg"),
     category: "Voyageur du Creux",
-    intro: "Balak'Oss complète le trio du Creux. Là où O'Sama et Bella évoquent surtout la veille, lui porte aussi l'idée du déplacement, du passage difficile et du guidage dans une zone déjà travaillée par le mal.",
+    intro: "Balak'Oss est le voyageur aux yeux blancs du Creux. Curieux, impossible à saisir tout à fait, il relie les terres par ses récits et repère avant beaucoup d'autres les dérèglements qui montent.",
     meta: [
-      { label: "Statut", value: "Ressource alliée à rencontrer" },
+      { label: "Statut", value: "Voyageur et éclaireur du Creux" },
       { label: "Ancrage", value: "Le Creux" },
       { label: "Lien majeur", value: "O'Sama et Bella" }
     ],
     biography: [
-      "Balak'Oss est nommé comme voyageur, ce qui le distingue d'emblée dans la prochaine étape. Il semble appartenir aux présences capables non seulement de sentir le dérèglement, mais aussi d'ouvrir des passages à travers lui.",
-      "Sa future importance tient précisément à cela: le groupe ne doit pas seulement comprendre le Creux, il doit le traverser sans offrir au mal la facilité qu'il attend."
+      "Balak'Oss arrive au Creux très jeune, avec son bâton, ses yeux entièrement blancs et déjà beaucoup trop de monde dans le regard pour son âge. Ailleurs, son apparence le faisait fuir ou rejeter; au Creux, il est simplement accueilli.",
+      "Le soir de son arrivée, il parle plus qu'à son habitude et mêle ses récits de routes aux souvenirs d'O'Sama. Quelque chose naît alors entre eux: Balak'Oss voit le monde, O'Sama le protège, et tous deux respectent le vivant.",
+      "Balak'Oss repart souvent, revient toujours, et finit par considérer le Creux comme son point fixe. Ses récits changent pourtant avec les années: insectes devenus agressifs, espèces paisibles modifiées, végétations mortes puis repoussées autrement.",
+      "Avec O'Sama, il enquête alors sur les anomalies et comprend que la Terre des Insectes revient trop souvent autour des zones instables. Quand la Communauté arrive enfin, son surgissement entre Shan et Shaushana rappelle qu'il garde une manière d'entrer dans le monde par surprise."
     ],
     summary: [
-      "Balak'Oss donne au Creux une dimension de route active.",
-      "Il annonce un appui plus mobile pour la phase qui mène vers Insect Master."
+      "Balak'Oss est la mémoire mobile du Creux.",
+      "Ses voyages transforment les signes dispersés du monde en piste vers la Terre des Insectes."
     ],
     profile: [
-      { title: "Nature", text: "Présence alliée du Creux, plus mobile, plus passeuse que purement sédentaire." },
-      { title: "Rôle", text: "Aider le groupe à avancer dans une zone déjà menacée sans s'y perdre." },
-      { title: "Mystère", text: "Sa manière d'ouvrir la route reste encore entièrement à découvrir." }
+      { title: "Caractère", text: "Curieux, imprévisible, très jeune en apparence mais chargé de routes et d'observations." },
+      { title: "Forces", text: "Voyage, observation, mémoire des régions, capacité à relier des anomalies éloignées." },
+      { title: "Mystère", text: "Ses yeux blancs, sa discrétion et sa manière d'apparaître sans bruit gardent encore une part d'inconnu." }
     ],
     relations: [
-      { title: "O'Sama", text: "Balak'Oss complète avec O'Sama la ligne de veille du Creux." },
-      { title: "Bella", text: "Avec Bella, il forme l'un des futurs appuis majeurs du groupe dans la prochaine étape." }
+      { title: "O'Sama", text: "O'Sama devient son point fixe, non comme un maître, mais comme un protecteur qui comprend son respect du vivant." },
+      { title: "Bella", text: "Bella participe au foyer qui permet à Balak'Oss de revenir sans être rejeté." },
+      { title: "Terre des Insectes", text: "Ses voyages l'amènent à relier les anomalies du monde à cette région, avant même la route du groupe." }
     ],
     timeline: [
-      { era: "Jour 18", title: "Voyageur annoncé", summary: "Bichette nomme Balak'Oss parmi les présences du Creux à rejoindre avant la Terre des Insectes." }
+      { era: "Il y a 5 ans", title: "Arrivée au Creux", summary: "Balak'Oss arrive avec son bâton et ses yeux blancs, puis trouve enfin un lieu qui ne le rejette pas." },
+      { era: "Avant le récit", title: "Voyages et retours", summary: "Il parcourt les régions, revient au Creux avec des récits et commence à faire du village son point fixe." },
+      { era: "Avant le Jour 19", title: "Anomalies reliées", summary: "Ses observations sur les insectes, les parasites et les comportements altérés aident O'Sama à soupçonner la Terre des Insectes." },
+      { era: "Jour 19", title: "Apparition entre Shan et Shaushana", summary: "Lorsque le groupe arrive, Balak'Oss surgit sans bruit entre eux et se présente avec une légèreté presque déconcertante." }
     ]
   }
   ];

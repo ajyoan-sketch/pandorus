@@ -893,21 +893,34 @@ const pandorusImages = pandorusImageFiles.map((fileName) => {
 const creatureImageFiles = [
   "Aligaphoque.png",
   "Aligaroi.png",
+  "Canidaigle.png",
+  "Carpélion.png",
+  "Chauve-Souloup.png",
+  "Corbec.png",
   "Croconha.png",
+  "Eléphantaupe.png",
   "Félou.png",
   "Felours.png",
   "Gorillange.png",
   "Gueplynx.png",
+  "KingKoala.png",
+  "Lion-Garouh.png",
   "Luminaël.png",
   "Lumineau.png",
   "Macagardien.png",
   "Nignoble.png",
   "Nonstiti.png",
+  "Oursarune.png",
+  "Parasite.png",
+  "Poiscaille.png",
+  "Poisson du Verdanor.png",
+  "Renardou Roux.png",
   "Renastar.png",
   "Reptidile.png",
   "Scarabeast.png",
   "Serpensouffre.png",
   "Serpours.png",
+  "Tortanguille.png",
   "Verdeflor.png"
 ];
 
@@ -1498,6 +1511,8 @@ function buildLoreLinkEntries() {
     ["Fleuve Arkains", "#lieux-fleuve-arkains"],
     ["Arkains", "#lieux-fleuve-arkains"],
     ["Terre des Insectes", "#lieux-terre-des-insectes"],
+    ["Verdanor Sud", "#lieux-verdanor-sud"],
+    ["Le Verdanor Sud", "#lieux-verdanor-sud"],
     ["Le Creux", "#lieux-creux"],
     ["Creux", "#lieux-creux"],
     ["la taverne", "#lieux-taverne-du-sombrail"],
@@ -2296,6 +2311,16 @@ const chapters = [
     path: "./media/chapitres/Chapitre%2028%20-%20Les%20terres%20qui%20respirent%20encore.pdf",
     summary: "Après la bataille, Bichette purifie le parasite, révèle que seul l'ouest est déjà dérangé, affirme que le Vrax résiste encore, nomme Insect Master et oriente désormais la route vers le Creux.",
     accessKey: "ChapPando28"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2029%20-%20Le%20Verdanor%20Sud%20et%20le%20Creux.pdf",
+    summary: "La Communauté quitte la Sombra, traverse le Verdanor Sud sous la garde des Carpélions, descend dans le Creux et découvre Corbec, Oursarune, Renardou Roux puis le village d'O'Sama et Bella.",
+    accessKey: "ChapPando29"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2030%20-%20O%27Sama%2C%20Bella%20et%20Balak%27Oss.pdf",
+    summary: "Le Creux révèle son histoire : O'Sama protège et reconstruit son peuple, sauve Bella, accueille Balak'Oss, enquête sur les dérèglements et attend les alliés annoncés par Bichette.",
+    accessKey: "ChapPando30"
   }
 ];
 
@@ -2925,9 +2950,10 @@ function renderTimeline() {
     if (normalizedEventText.includes("CREATRICES") || normalizedEventText.includes("COEUR DU VRAX") || normalizedEventText.includes("PAPILLONS")) {
       contextCandidates.push({ href: "#lieux-coeur-du-vrax", label: "Lire le coeur du Vrax" });
     }
-    if (normalizedEventText.includes("SYLVAE") || normalizedEventText.includes("SUD")) {
+    if (normalizedEventText.includes("SYLVAE")) {
       contextCandidates.push({ href: "#lieux-fleuve-sylvae", label: "Voir le fleuve Sylvae" });
     }
+    if (normalizedEventText.includes("VERDANOR")) contextCandidates.push({ href: "#lieux-verdanor-sud", label: "Voir le Verdanor Sud" });
     if (normalizedEventText.includes("ARKAINS")) contextCandidates.push({ href: "#lieux-fleuve-arkains", label: "Voir le fleuve Arkains" });
     if (normalizedEventText.includes("INSECTES")) contextCandidates.push({ href: "#lieux-terre-des-insectes", label: "Voir la Terre des Insectes" });
     if (normalizedEventText.includes("TSUNE")) contextCandidates.push({ href: "#fiches-tsune", label: "Voir Tsune" });
@@ -2969,6 +2995,11 @@ function renderTimeline() {
     if (normalizedEventText.includes("NONSTITI")) contextCandidates.push({ href: "#creatures-fiche-nonstiti", label: "Voir le Nonstiti" });
     if (normalizedEventText.includes("VERDEFLOR")) contextCandidates.push({ href: "#creatures-fiche-verdeflor", label: "Voir le Verdeflor" });
     if (normalizedEventText.includes("LION-GAROUH") || normalizedEventText.includes("LION GAROUH")) contextCandidates.push({ href: "#creatures-fiche-lion-garouh", label: "Voir le Lion-Garouh" });
+    if (normalizedEventText.includes("CARPELION")) contextCandidates.push({ href: "#creatures-fiche-carpelion", label: "Voir le Carpélion" });
+    if (normalizedEventText.includes("CORBEC")) contextCandidates.push({ href: "#creatures-fiche-corbec", label: "Voir le Corbec" });
+    if (normalizedEventText.includes("OURSARUNE")) contextCandidates.push({ href: "#creatures-fiche-oursarune", label: "Voir l'Oursarune" });
+    if (normalizedEventText.includes("RENARDOU")) contextCandidates.push({ href: "#creatures-fiche-renardou-roux", label: "Voir le Renardou Roux" });
+    if (normalizedEventText.includes("ELEPHANTAUPE")) contextCandidates.push({ href: "#creatures-fiche-elephantaupe", label: "Voir l'Éléphantaupe" });
 
     const uniqueLinks = [];
     const seenLinks = new Set();

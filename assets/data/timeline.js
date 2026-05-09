@@ -548,5 +548,60 @@
     era: "Jour 18",
     title: "Ab'Youbi rejoint la route",
     summary: "Après la parole de Bichette, Ab'Youbi décide d'accompagner le groupe jusqu'au Creux et au-delà, comme si le détour n'était plus possible."
+  },
+  {
+    era: "Jour 19",
+    title: "Départ de la Sombra réparée",
+    summary: "Au matin, la Communauté des Papillons quitte la Sombra encore marquée par la bataille, mais déjà apaisée par les soins de Bichette et de ses papillons."
+  },
+  {
+    era: "Jour 19",
+    title: "Le Verdanor Sud apparaît",
+    summary: "Le groupe atteint le Verdanor Sud, fleuve immense aux eaux sombres traversées de lueurs vertes, bleues et argentées."
+  },
+  {
+    era: "Jour 19",
+    title: "Les Carpélions autorisent le passage",
+    summary: "Trois Carpélions émergent des profondeurs du Verdanor Sud, lisent silencieusement le groupe puis s'écartent pour ouvrir la traversée."
+  },
+  {
+    era: "Jour 19",
+    title: "Descente dans le Creux",
+    summary: "Après le fleuve, la forêt change: les arbres deviennent gigantesques, le sol descend et les chants des Corbec annoncent l'entrée dans le Creux."
+  },
+  {
+    era: "Jour 19",
+    title: "Loi des Oursarune",
+    summary: "Le groupe observe une meute d'Oursarune choisir son roi dans un combat brutal mais sans haine, révélant une nature dure et juste."
+  },
+  {
+    era: "Jour 19",
+    title: "Renardou Roux au crépuscule",
+    summary: "À l'approche du village, des Renardou Roux s'avancent paisiblement autour du groupe, notamment auprès de Tsune."
+  },
+  {
+    era: "Jour 19",
+    title: "Arrivée au village du Creux",
+    summary: "Au fond du Creux, la Communauté découvre le village de lanternes et rencontre enfin O'Sama, Bella et Balak'Oss."
+  },
+  {
+    era: "Avant le récit",
+    title: "O'Sama protège puis reconstruit le Creux",
+    summary: "Né dans le Creux, O'Sama défend son peuple durant l'ancienne guerre, récupère la bague capable de lire les cœurs puis reconstruit le refuge avec ses habitants et ses créatures."
+  },
+  {
+    era: "Avant le récit",
+    title: "Bella trouve une autre loi du vivant",
+    summary: "Arrachée à un clan qui la jugeait faible, Bella est accueillie au Creux par O'Sama et découvre qu'aucune vie ne mérite d'être écrasée pour sa fragilité."
+  },
+  {
+    era: "Il y a 5 ans",
+    title: "Balak'Oss revient toujours au Creux",
+    summary: "Le jeune voyageur aux yeux blancs arrive au village, repart souvent, revient toujours et fait peu à peu du Creux son foyer."
+  },
+  {
+    era: "Avant le Jour 19",
+    title: "Anomalies reliées à la Terre des Insectes",
+    summary: "Les voyages de Balak'Oss et la bague d'O'Sama relient les comportements étranges, les parasites et les insectes aux dérèglements venus de la Terre des Insectes."
   }
 ];
