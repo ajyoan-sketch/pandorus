@@ -500,8 +500,122 @@ export function createPandorusTestData(buildMediaPath) {
       image: buildMediaPath("pandorus", "Méli Mélo.png"),
       intro: "Tu avances avec une intelligence plus souple, plus vive, parfois plus imprévisible qu'il n'y paraît. Tu gardes l'ouverture, la sensibilité et l'étrangeté vivante qui empêchent le monde de devenir trop simple.",
       traits: { protect: 1, instinct: 1, insight: 3, memory: 1, resilience: 1, ferocity: 0, balance: 3, loyalty: 2, curiosity: 4, mystery: 4, leadership: 1, freedom: 2, compassion: 4 }
+    },
+    {
+      slug: "bulldozer-jacob",
+      name: "Bulldozer Jacob",
+      href: "#fiches-bulldozer-jacob",
+      image: buildMediaPath("pandorus", "Bulldozer Jacob.jpg"),
+      intro: "Tu portes une puissance massive, mais traversée par une loyauté plus profonde qu'elle n'en a l'air. Tu peux briser une ligne entière, pourtant ce qui te définit vraiment reste la fidélité à ce que tu refuses de perdre.",
+      traits: { protect: 2, instinct: 4, insight: 1, memory: 2, resilience: 5, ferocity: 4, balance: 1, loyalty: 4, curiosity: 0, mystery: 2, leadership: 2, freedom: 1, compassion: 1 }
+    },
+    {
+      slug: "matheo",
+      name: "Mathéo",
+      href: "#fiches-matheo",
+      image: buildMediaPath("pandorus", "Mathéo.png"),
+      intro: "Tu appartiens aux présences discrètes qui retiennent plus qu'elles ne montrent. Tu observes, tu encaisses, et ta force se révèle souvent dans les moments où le groupe a besoin d'un appui sans bruit.",
+      traits: { protect: 2, instinct: 1, insight: 2, memory: 3, resilience: 3, ferocity: 0, balance: 3, loyalty: 4, curiosity: 2, mystery: 1, leadership: 1, freedom: 1, compassion: 3 }
+    },
+    {
+      slug: "cendroide",
+      name: "Cendr'oïde",
+      href: "#fiches-cendroide",
+      image: buildMediaPath("pandorus", "Cendr'oïde.png"),
+      intro: "Tu as quelque chose d'ancien, de brûlé et de reconstruit. Tu ne brilles pas par facilité : tu tiens dans la cendre, tu transformes l'épreuve en présence et tu gardes une part de mystère intacte.",
+      traits: { protect: 1, instinct: 1, insight: 2, memory: 4, resilience: 5, ferocity: 2, balance: 2, loyalty: 2, curiosity: 1, mystery: 4, leadership: 1, freedom: 0, compassion: 1 }
+    },
+    {
+      slug: "zainob",
+      name: "Zaïnob",
+      href: "#fiches-zainob",
+      image: buildMediaPath("pandorus", "Zaïnob.jpg"),
+      intro: "Tu es un passage tenu. Chez toi, la stabilité n'efface pas l'intensité : elle la contient, jusqu'au moment où ce qui devait rester lumière devient aussi une force capable de frapper.",
+      traits: { protect: 4, instinct: 1, insight: 3, memory: 3, resilience: 4, ferocity: 2, balance: 4, loyalty: 3, curiosity: 0, mystery: 3, leadership: 2, freedom: 0, compassion: 2 }
+    },
+    {
+      slug: "will-le-tigre-bois",
+      name: "Will le Tigre Bois",
+      href: "#fiches-will-le-tigre-bois",
+      image: buildMediaPath("pandorus", "Will le Tigre Bois.jpg"),
+      intro: "Tu gardes les seuils avec une vigilance vive. Tu ne cherches pas à dominer tout le monde, mais à reconnaître qui peut passer, qui menace, et où le vivant doit rester intact.",
+      traits: { protect: 3, instinct: 4, insight: 3, memory: 1, resilience: 3, ferocity: 3, balance: 2, loyalty: 2, curiosity: 1, mystery: 2, leadership: 1, freedom: 3, compassion: 1 }
+    },
+    {
+      slug: "insect-master",
+      name: "Insect Master",
+      href: "#fiches-insect-master",
+      image: buildMediaPath("pandorus", "Insect Master.png"),
+      intro: "Tu comprends les systèmes, les essaims et les forces qui déplacent le monde de l'intérieur. Ta lecture est puissante, mais elle peut devenir dangereuse si elle préfère l'ordre à la fragilité du vivant.",
+      traits: { protect: 0, instinct: 1, insight: 5, memory: 4, resilience: 3, ferocity: 3, balance: 0, loyalty: 1, curiosity: 4, mystery: 5, leadership: 5, freedom: 0, compassion: 0 }
+    },
+    {
+      slug: "barbo",
+      name: "Barbo",
+      href: "#fiches-barbo",
+      image: buildMediaPath("pandorus", "Barbo.png"),
+      intro: "Tu restes au-dessus ou derrière les choses, comme une présence opaque dont on sent le poids avant d'en comprendre la forme. Tu avances par influence, hiérarchie et trouble silencieux.",
+      traits: { protect: 0, instinct: 0, insight: 3, memory: 2, resilience: 3, ferocity: 2, balance: 0, loyalty: 0, curiosity: 2, mystery: 5, leadership: 5, freedom: 0, compassion: 0 }
+    },
+    {
+      slug: "o-sama",
+      name: "O'Sama",
+      href: "#fiches-o-sama",
+      image: buildMediaPath("pandorus", "O'Sama.jpg"),
+      intro: "Tu incarnes une protection immense, calme et juste. Ta force n'a rien à prouver : elle sert à offrir un refuge, à lire les cœurs et à rappeler que la faiblesse ne retire jamais la valeur d'un être.",
+      traits: { protect: 5, instinct: 2, insight: 4, memory: 3, resilience: 5, ferocity: 2, balance: 4, loyalty: 4, curiosity: 1, mystery: 3, leadership: 5, freedom: 0, compassion: 5 }
+    },
+    {
+      slug: "bella",
+      name: "Bella",
+      href: "#fiches-bella",
+      image: buildMediaPath("pandorus", "Bella.jpg"),
+      intro: "Tu sais ce que coûte la blessure, et c'est justement pour cela que tu rends les lieux plus habitables. Ta douceur n'est pas naïve : elle écoute, soigne et redonne de la dignité.",
+      traits: { protect: 2, instinct: 0, insight: 3, memory: 3, resilience: 4, ferocity: 0, balance: 4, loyalty: 4, curiosity: 2, mystery: 1, leadership: 1, freedom: 0, compassion: 5 }
+    },
+    {
+      slug: "balak-oss",
+      name: "Balak'Oss",
+      href: "#fiches-balak-oss",
+      image: buildMediaPath("pandorus", "Balak'Oss.jpg"),
+      intro: "Tu avances comme un voyageur d'anomalies. Tu sembles léger, presque insaisissable, mais tu relies les régions, les signes et les déséquilibres mieux que beaucoup de présences plus bruyantes.",
+      traits: { protect: 1, instinct: 2, insight: 4, memory: 4, resilience: 2, ferocity: 0, balance: 2, loyalty: 2, curiosity: 5, mystery: 5, leadership: 1, freedom: 5, compassion: 2 }
     }
   ];
+
+  const characterScoreBiases = {
+    shaushana: -6.47,
+    franklin: 6.52,
+    mike: 15.53,
+    capitaine: 27.65,
+    bouldouger: 24.08,
+    "gardien-isma": 8.08,
+    wingard: 6.21,
+    levy: 7.67,
+    "ossah-lyla": 1.25,
+    tsune: 3.98,
+    hez: 32.33,
+    kuji: 17.64,
+    "gil-et-filston": 10.38,
+    abyoubi: 7.53,
+    syne: 8.78,
+    "mitra-sesse": 34.76,
+    "papy-perquis": 19,
+    "padre-souf": 32.21,
+    "bulldozer-jacob": 8.74,
+    matheo: 17.61,
+    cendroide: 17.56,
+    zainob: 4.67,
+    "will-le-tigre-bois": -15.55,
+    "insect-master": 10.49,
+    barbo: 26.84,
+    bella: 10.08,
+    nastaz: -2.23
+  };
+
+  results.forEach((result) => {
+    result.scoreBias = characterScoreBiases[result.slug] ?? result.scoreBias ?? 0;
+  });
 
   const creatureTraitLabels = {
     aggression: "Percussion",
@@ -716,8 +830,57 @@ export function createPandorusTestData(buildMediaPath) {
     { slug: "nonstiti", name: "Nonstiti", href: "#creatures-fiche-nonstiti", image: buildMediaPath("creatures", "Nonstiti.png"), intro: "Tu es rapide, vif, impossible à fixer longtemps. Tu participes à un regard collectif plus qu'à une domination solitaire.", traits: { aggression: 1, stealth: 3, grace: 0, endurance: 1, territory: 2, loyalty: 5, mystery: 0, intelligence: 3, verticality: 2, surge: 5, majesty: 0, corruption: 0 } },
     { slug: "parasite", name: "Parasite", href: "#creatures-fiche-parasite", image: buildMediaPath("creatures", "Parasite.png"), intro: "Tu appartiens à ce qui agit de l'intérieur. Tu es inquiétant non par la taille, mais par l'altération que tu promets.", traits: { aggression: 0, stealth: 3, grace: 0, endurance: 1, territory: 0, loyalty: 0, mystery: 4, intelligence: 1, verticality: 0, surge: 1, majesty: 0, corruption: 4 } },
     { slug: "poiscaille", name: "Poiscaille", href: "#creatures-fiche-poiscaille", image: buildMediaPath("creatures", "Poiscaille.png"), intro: "Tu frappes vite, par vagues, depuis les bords et les zones humides. Tu es fait pour l'usure et la saturation.", traits: { aggression: 4, stealth: 1, grace: 0, endurance: 1, territory: 2, loyalty: 5, mystery: 0, intelligence: 1, verticality: 0, surge: 5, majesty: 0, corruption: 1 } },
-    { slug: "serpensouffre", name: "Serpensouffre", href: "#creatures-fiche-serpensouffre", image: buildMediaPath("creatures", "Serpensouffre.png"), intro: "Tu règnes depuis le haut, dans la frappe verticale et l'impression d'un danger qui tombe du ciel sans prévenir.", traits: { aggression: 4, stealth: 2, grace: 1, endurance: 2, territory: 3, loyalty: 1, mystery: 1, intelligence: 1, verticality: 5, surge: 5, majesty: 3, corruption: 0 }, scoreBias: -3 }
+    { slug: "serpensouffre", name: "Serpensouffre", href: "#creatures-fiche-serpensouffre", image: buildMediaPath("creatures", "Serpensouffre.png"), intro: "Tu règnes depuis le haut, dans la frappe verticale et l'impression d'un danger qui tombe du ciel sans prévenir.", traits: { aggression: 4, stealth: 2, grace: 1, endurance: 2, territory: 3, loyalty: 1, mystery: 1, intelligence: 1, verticality: 5, surge: 5, majesty: 3, corruption: 0 }, scoreBias: -3 },
+    { slug: "croconha", name: "Croconha", href: "#creatures-fiche-croconha", image: buildMediaPath("creatures", "Croconha.png"), intro: "Tu appartiens aux bords dangereux, aux marais et aux ruptures de rive. Tu es une menace basse, patiente, faite pour surgir quand le terrain cesse d'être sûr.", traits: { aggression: 4, stealth: 2, grace: 0, endurance: 3, territory: 3, loyalty: 0, mystery: 1, intelligence: 1, verticality: 0, surge: 3, majesty: 1, corruption: 0 } },
+    { slug: "luminael", name: "Luminaël", href: "#creatures-fiche-luminael", image: buildMediaPath("creatures", "Luminaël.png"), intro: "Tu es une clarté qui oriente plus qu'elle ne frappe. Ta présence rappelle qu'un monde vivant porte aussi des signes de douceur, de lumière et de calme fragile.", traits: { aggression: 0, stealth: 1, grace: 5, endurance: 1, territory: 1, loyalty: 2, mystery: 2, intelligence: 2, verticality: 3, surge: 0, majesty: 2, corruption: 0 } },
+    { slug: "nignoble", name: "Nignoble", href: "#creatures-fiche-nignoble", image: buildMediaPath("creatures", "Nignoble.png"), intro: "Tu portes une inquiétude latente. On ne sait pas toujours si tu viens d'un instinct sauvage ou d'une zone déjà abîmée du vivant.", traits: { aggression: 2, stealth: 4, grace: 0, endurance: 2, territory: 2, loyalty: 0, mystery: 4, intelligence: 1, verticality: 0, surge: 2, majesty: 0, corruption: 3 } },
+    { slug: "renastar", name: "Renastar", href: "#creatures-fiche-renastar", image: buildMediaPath("creatures", "Renastar.png"), intro: "Tu es une ligne libre dans les grands espaces. Tu représentes la vitesse, l'élan et la beauté d'un vivant qui refuse de se laisser enfermer.", traits: { aggression: 1, stealth: 2, grace: 4, endurance: 2, territory: 1, loyalty: 2, mystery: 1, intelligence: 2, verticality: 1, surge: 4, majesty: 2, corruption: 0 } },
+    { slug: "reptidile", name: "Reptidile", href: "#creatures-fiche-reptidile", image: buildMediaPath("creatures", "Reptidile.png"), intro: "Tu tiens d'une faune ancienne, résistante et territoriale. Tu n'as pas besoin de vitesse spectaculaire : ton danger vient de ta patience et de ton ancrage.", traits: { aggression: 3, stealth: 1, grace: 0, endurance: 5, territory: 4, loyalty: 0, mystery: 1, intelligence: 1, verticality: 0, surge: 1, majesty: 1, corruption: 0 } },
+    { slug: "scarabeast", name: "Scarabeast", href: "#creatures-fiche-scarabeast", image: buildMediaPath("creatures", "Scarabeast.png"), intro: "Tu es carapace, défense et obstination. Tu avances comme une chose difficile à arrêter, moins par rage que par résistance pure.", traits: { aggression: 2, stealth: 0, grace: 0, endurance: 5, territory: 3, loyalty: 1, mystery: 1, intelligence: 1, verticality: 0, surge: 1, majesty: 2, corruption: 0 } },
+    { slug: "serpours", name: "Serpours", href: "#creatures-fiche-serpours", image: buildMediaPath("creatures", "Serpours.png"), intro: "Tu mélanges la masse et le sinueux. On croit pouvoir lire ta force, puis ton mouvement change les règles au dernier moment.", traits: { aggression: 3, stealth: 2, grace: 0, endurance: 4, territory: 3, loyalty: 0, mystery: 2, intelligence: 1, verticality: 0, surge: 2, majesty: 2, corruption: 0 } },
+    { slug: "verdeflor", name: "Verdeflor", href: "#creatures-fiche-verdeflor", image: buildMediaPath("creatures", "Verdeflor.png"), intro: "Tu es la preuve qu'une emprise peut pousser depuis le sol. Tu ne frappes pas seulement : tu envahis, tu enlaces et tu fais sentir que le vivant lui-même peut être retourné.", traits: { aggression: 2, stealth: 2, grace: 1, endurance: 3, territory: 5, loyalty: 1, mystery: 2, intelligence: 1, verticality: 1, surge: 2, majesty: 1, corruption: 5 } },
+    { slug: "lion-garouh", name: "Lion-Garouh", href: "#creatures-fiche-lion-garouh", image: buildMediaPath("creatures", "Lion-Garouh.png"), intro: "Tu es une irruption de guerre, féline et sauvage. Ta force met la pression d'un seul coup, surtout lorsqu'elle sert une volonté plus organisée.", traits: { aggression: 5, stealth: 1, grace: 1, endurance: 3, territory: 2, loyalty: 2, mystery: 1, intelligence: 1, verticality: 0, surge: 4, majesty: 3, corruption: 2 } },
+    { slug: "chauve-souloup", name: "Chauve-Souloup", href: "#creatures-fiche-chauve-souloup", image: buildMediaPath("creatures", "Chauve-Souloup.png"), intro: "Tu attaques par le ciel, le trouble et la saturation. Tu es moins une masse qu'une pression nerveuse qui complique toutes les défenses.", traits: { aggression: 3, stealth: 3, grace: 1, endurance: 1, territory: 1, loyalty: 3, mystery: 1, intelligence: 2, verticality: 4, surge: 4, majesty: 0, corruption: 1 } },
+    { slug: "carpelion", name: "Carpélion", href: "#creatures-fiche-carpelion", image: buildMediaPath("creatures", "Carpélion.png"), intro: "Tu es gardien lumineux d'un fleuve vivant. Tu ne menaces pas par faim, mais par souveraineté : tu reconnais les intentions avant d'autoriser le passage.", traits: { aggression: 0, stealth: 1, grace: 4, endurance: 3, territory: 5, loyalty: 2, mystery: 3, intelligence: 4, verticality: 0, surge: 1, majesty: 5, corruption: 0 } },
+    { slug: "corbec", name: "Corbec", href: "#creatures-fiche-corbec", image: buildMediaPath("creatures", "Corbec.png"), intro: "Tu es voix noire, mémoire suspendue et présence de hauteur. Tu ne domines pas par violence, mais par le chant profond que tu laisses dans le lieu.", traits: { aggression: 0, stealth: 3, grace: 2, endurance: 1, territory: 2, loyalty: 2, mystery: 5, intelligence: 3, verticality: 4, surge: 1, majesty: 2, corruption: 0 } },
+    { slug: "oursarune", name: "Oursarune", href: "#creatures-fiche-oursarune", image: buildMediaPath("creatures", "Oursarune.png"), intro: "Tu portes une royauté sauvage, rude et juste. Ta puissance peut être terrible, mais elle obéit à une loi de reconnaissance plutôt qu'à une haine aveugle.", traits: { aggression: 4, stealth: 0, grace: 1, endurance: 5, territory: 5, loyalty: 3, mystery: 3, intelligence: 2, verticality: 0, surge: 2, majesty: 5, corruption: 0 } },
+    { slug: "renardou-roux", name: "Renardou Roux", href: "#creatures-fiche-renardou-roux", image: buildMediaPath("creatures", "Renardou Roux.png"), intro: "Tu es curiosité douce, approche prudente et confiance offerte quand le monde paraît enfin calme. Ta force est petite, mais elle rend un refuge immédiatement plus vivant.", traits: { aggression: 0, stealth: 3, grace: 3, endurance: 1, territory: 1, loyalty: 3, mystery: 1, intelligence: 3, verticality: 0, surge: 3, majesty: 0, corruption: 0 } },
+    { slug: "elephantaupe", name: "Eléphantaupe", href: "#creatures-fiche-elephantaupe", image: buildMediaPath("creatures", "Eléphantaupe.png"), intro: "Tu es une force du sol, du creusement et de la reconstruction. Tu ne fais pas qu'avancer : tu ouvres des chemins, portes les vivants et rends un lieu habitable.", traits: { aggression: 1, stealth: 1, grace: 0, endurance: 5, territory: 5, loyalty: 4, mystery: 1, intelligence: 2, verticality: 0, surge: 1, majesty: 3, corruption: 0 } },
+    { slug: "poisson-du-verdanor", name: "Poisson du Verdanor", href: "#creatures-fiche-poisson-du-verdanor", image: buildMediaPath("creatures", "Poisson du Verdanor.png"), intro: "Tu appartiens aux courants profonds, aux reflets et aux passages discrets. Tu fais sentir qu'un fleuve est un monde entier, même loin des grandes menaces.", traits: { aggression: 0, stealth: 3, grace: 4, endurance: 1, territory: 2, loyalty: 2, mystery: 2, intelligence: 1, verticality: 0, surge: 3, majesty: 1, corruption: 0 } },
+    { slug: "tortanguille", name: "Tortanguille", href: "#creatures-fiche-tortanguille", image: buildMediaPath("creatures", "Tortanguille.png"), intro: "Tu combines protection lourde et mouvement sinueux. Tu sembles lent à lire, puis tu changes de direction comme une défense qui aurait appris à glisser.", traits: { aggression: 1, stealth: 2, grace: 1, endurance: 5, territory: 3, loyalty: 1, mystery: 2, intelligence: 1, verticality: 0, surge: 2, majesty: 2, corruption: 0 } }
   ];
+
+  const creatureScoreBiases = {
+    aligaphoque: 13.54,
+    aligaroi: 7.24,
+    felou: -4,
+    felours: 15.31,
+    gorillange: -8,
+    gueplynx: -14.4,
+    kingkoala: 7.26,
+    lumineau: 23.31,
+    macagardien: -14.33,
+    nogard: 26.25,
+    parasite: 50.71,
+    poiscaille: 6.83,
+    serpensouffre: -3,
+    luminael: 22,
+    nignoble: 26.4,
+    reptidile: 12.04,
+    scarabeast: 14.56,
+    serpours: 10.09,
+    verdeflor: 16.23,
+    corbec: 17.23,
+    "renardou-roux": 9.54,
+    elephantaupe: -7.07,
+    "poisson-du-verdanor": 20.77,
+    nonstiti: -1.14,
+    croconha: -0.96
+  };
+
+  creatureResults.forEach((result) => {
+    result.scoreBias = creatureScoreBiases[result.slug] ?? result.scoreBias ?? 0;
+  });
 
   return {
     character: {
