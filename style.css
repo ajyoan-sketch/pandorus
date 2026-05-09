@@ -4256,12 +4256,21 @@ body.bd-reader-open {
 
 .bd-reader.is-zoomed .bd-reader-frame {
   justify-items: start;
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+}
+
+.bd-reader.is-zoomed .bd-reader-frame.is-dragging {
+  cursor: grabbing;
 }
 
 .bd-reader.is-zoomed .bd-reader-frame img {
   width: calc(100% * var(--bd-reader-zoom));
   max-width: none;
   max-height: none;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 .bd-reader-frame figcaption {

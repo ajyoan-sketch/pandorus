@@ -3254,6 +3254,7 @@ function updateComicZoom(nextZoom = currentComicZoom) {
   if (label) label.textContent = `${Math.round(currentComicZoom * 100)}%`;
   if (slider) slider.value = Math.round(currentComicZoom * 100).toString();
   if (frame && currentComicZoom === 1) {
+    frame.classList.remove("is-dragging");
     frame.scrollTop = 0;
     frame.scrollLeft = 0;
   }
@@ -3298,6 +3299,7 @@ function renderComics(activeCollectionId = currentComicCollectionId) {
   const zoomSlider = document.getElementById("bd-reader-zoom-slider");
   const zoomResetButton = document.getElementById("bd-reader-zoom-reset");
   const reader = document.getElementById("bd-reader");
+  const readerFrame = document.querySelector(".bd-reader-frame");
   if (!collectionsNode || !gallery || !comicCollections.length) return;
 
   currentComicCollectionId = activeCollectionId || null;
@@ -3396,6 +3398,47 @@ function renderComics(activeCollectionId = currentComicCollectionId) {
       const direction = event.deltaY > 0 ? -1 : 1;
       updateComicZoom(currentComicZoom + direction * 0.05);
     }, { passive: false });
+  }
+
+  if (readerFrame && !readerFrame.dataset.bdDragBound) {
+    readerFrame.dataset.bdDragBound = "true";
+    let isDragging = false;
+    let startX = 0;
+    let startY = 0;
+    let startScrollLeft = 0;
+    let startScrollTop = 0;
+
+    const stopDragging = (event) => {
+      if (!isDragging) return;
+      isDragging = false;
+      readerFrame.classList.remove("is-dragging");
+      if (event?.pointerId !== undefined && readerFrame.hasPointerCapture?.(event.pointerId)) {
+        readerFrame.releasePointerCapture(event.pointerId);
+      }
+    };
+
+    readerFrame.addEventListener("pointerdown", (event) => {
+      if (currentComicZoom <= 1 || event.button !== 0) return;
+      event.preventDefault();
+      isDragging = true;
+      startX = event.clientX;
+      startY = event.clientY;
+      startScrollLeft = readerFrame.scrollLeft;
+      startScrollTop = readerFrame.scrollTop;
+      readerFrame.classList.add("is-dragging");
+      readerFrame.setPointerCapture?.(event.pointerId);
+    });
+
+    readerFrame.addEventListener("pointermove", (event) => {
+      if (!isDragging) return;
+      event.preventDefault();
+      readerFrame.scrollLeft = startScrollLeft - (event.clientX - startX);
+      readerFrame.scrollTop = startScrollTop - (event.clientY - startY);
+    });
+
+    readerFrame.addEventListener("pointerup", stopDragging);
+    readerFrame.addEventListener("pointercancel", stopDragging);
+    readerFrame.addEventListener("pointerleave", stopDragging);
   }
 }
 
