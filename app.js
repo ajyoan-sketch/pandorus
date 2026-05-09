@@ -2843,12 +2843,13 @@ function renderTimeline() {
   const overview = document.getElementById("timeline-overview");
   if (!list) return;
 
+  const orderedTimelineEvents = getOrderedTimelineEvents();
   list.innerHTML = "";
   if (overview) {
     overview.innerHTML = "";
 
-    const eraCount = new Set(timelineEvents.map((event) => event.era)).size;
-    const activeThreats = timelineEvents.filter((event) => {
+    const eraCount = new Set(orderedTimelineEvents.map((event) => event.era)).size;
+    const activeThreats = orderedTimelineEvents.filter((event) => {
       const combined = `${event.title} ${event.summary}`.toLowerCase();
       return combined.includes("attaque")
         || combined.includes("guerre")
@@ -2862,13 +2863,13 @@ function renderTimeline() {
     [
       {
         label: "Jalons",
-        value: String(timelineEvents.length),
+        value: String(orderedTimelineEvents.length),
         note: "Moments qui structurent le monde et le récit."
       },
       {
         label: "Temps traverses",
         value: String(eraCount),
-        note: "Des origines du souffle jusqu'aux portes du Vrax."
+        note: "Des origines du souffle jusqu'au Creux."
       },
       {
         label: "Lignes de tension",
@@ -2887,7 +2888,7 @@ function renderTimeline() {
     });
   }
 
-  timelineEvents.forEach((event) => {
+  orderedTimelineEvents.forEach((event) => {
     const node = timelineTemplate.content.cloneNode(true);
     const article = node.querySelector(".timeline-item");
     const content = node.querySelector(".timeline-content");
@@ -3513,7 +3514,7 @@ function renderLandingPulse() {
   if (!pulse) return;
 
   const latestChapters = chapters.slice(-3).reverse();
-  const latestEvents = timelineEvents
+  const latestEvents = getOrderedTimelineEvents()
     .filter((event) => /Jour\s+\d+/i.test(event.era || "") || /Après le Jour/i.test(event.era || ""))
     .slice(-3)
     .reverse();
@@ -3829,6 +3830,58 @@ function ensureLocationFichesInitialized() {
   initLocationFilters();
   refreshLoreLinks();
   locationFichesInitialized = true;
+}
+
+function getTimelineEraSortValue(event, fallbackIndex = 0) {
+  const era = event.era || "";
+  const normalizedEra = normalizeForLetter(era);
+  const title = normalizeForLetter(event.title || "");
+  const summary = normalizeForLetter(event.summary || "");
+  const combined = `${title} ${summary}`;
+
+  if (event.order !== undefined) return event.order;
+  if (normalizedEra === "ORIGINES") return fallbackIndex;
+  if (normalizedEra === "ANCIEN TEMPS") return 1000 + fallbackIndex / 1000;
+
+  if (combined.includes("O SAMA PROTEGE PUIS RECONSTRUIT LE CREUX")) return 1500;
+  if (combined.includes("LA NUIT BRISEE")) return 1600;
+
+  const yearsMatch = normalizedEra.match(/IL Y A\s+(\d+)\s+ANS/i);
+  if (yearsMatch) {
+    const yearsAgo = Number(yearsMatch[1]);
+    return 3000 - yearsAgo * 10 + fallbackIndex / 1000;
+  }
+
+  if (normalizedEra === "AVANT LE RECIT") return 4000 + fallbackIndex / 1000;
+
+  const beforeDayMatch = normalizedEra.match(/AVANT LE JOUR\s+(\d+)/i);
+  if (beforeDayMatch) {
+    return 10000 + Number(beforeDayMatch[1]) * 100 - 10 + fallbackIndex / 1000;
+  }
+
+  const dayRangeMatch = normalizedEra.match(/JOURS?\s+(\d+)\s+A\s+(\d+)/i);
+  if (dayRangeMatch) {
+    return 10000 + Number(dayRangeMatch[1]) * 100 + fallbackIndex / 1000;
+  }
+
+  const dayMatch = normalizedEra.match(/JOUR\s+(\d+)/i);
+  if (dayMatch) {
+    let offset = 0;
+    if (normalizedEra.includes("FIN DU JOUR")) offset = 70;
+    if (normalizedEra.includes("NUIT DU JOUR")) offset = 80;
+    return 10000 + Number(dayMatch[1]) * 100 + offset + fallbackIndex / 1000;
+  }
+
+  return 90000 + fallbackIndex / 1000;
+}
+
+function getOrderedTimelineEvents() {
+  return timelineEvents
+    .map((event, index) => ({
+      ...event,
+      timelineSortValue: getTimelineEraSortValue(event, index)
+    }))
+    .sort((left, right) => left.timelineSortValue - right.timelineSortValue);
 }
 
 function getActivePandorusTestConfig() {

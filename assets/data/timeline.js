@@ -585,11 +585,13 @@
     summary: "Au fond du Creux, la Communauté découvre le village de lanternes et rencontre enfin O'Sama, Bella et Balak'Oss."
   },
   {
-    era: "Avant le récit",
+    order: 1500,
+    era: "Après l'ancienne guerre",
     title: "O'Sama protège puis reconstruit le Creux",
     summary: "Né dans le Creux, O'Sama défend son peuple durant l'ancienne guerre, récupère la bague capable de lire les cœurs puis reconstruit le refuge avec ses habitants et ses créatures."
   },
   {
+    order: 2945,
     era: "Avant le récit",
     title: "Bella trouve une autre loi du vivant",
     summary: "Arrachée à un clan qui la jugeait faible, Bella est accueillie au Creux par O'Sama et découvre qu'aucune vie ne mérite d'être écrasée pour sa fragilité."
