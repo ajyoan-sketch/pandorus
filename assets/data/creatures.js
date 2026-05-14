@@ -708,6 +708,75 @@
     timeline: [
       { era: "Bestiaire", title: "Faune aquatique hybride", summary: "La Tortanguille ajoute une ligne plus étrange et défensive aux créatures des eaux." }
     ]
+  },
+  {
+    slug: "mouchard",
+    name: "Mouchard",
+    image: buildMediaPath("creatures", "Mouchard.png"),
+    family: "Sentinelle insecte",
+    status: "Créature clairement présente dans le récit",
+    habitat: "Territoires rongés entre le Creux, la Source Pandorielle et la Terre des Insectes",
+    summary: "Le Mouchard est une sentinelle insecte sans regard visible, capable de chercher les présences par le son, les vibrations et les micro-ruptures du terrain.",
+    biography: [
+      "Les Mouchards apparaissent lorsque la route quitte la protection du Creux et s'approche des terres dominées par les insectes. Leur présence ne fonctionne pas comme une attaque immédiate, mais comme une écoute.",
+      "Leur corps de mouche déformée, leurs plaques fermées à la place des yeux et leur manière de pivoter au moindre bruit en font des guetteurs presque plus inquiétants que des prédateurs. Ils ne regardent pas: ils sentent le monde qui bouge.",
+      "Face à eux, le groupe comprend que la Terre des Insectes possède déjà un réseau de surveillance. Le danger n'est pas seulement d'être vu, mais d'être perçu par le sol, les racines et les vibrations."
+    ],
+    profile: [
+      { title: "Nature", text: "Créature de veille, aveugle en apparence, réglée sur les sons et les secousses du terrain." },
+      { title: "Niveau de menace", text: "Élevé comme alerte: un Mouchard peut transformer un simple bruit en détection collective." },
+      { title: "Rôle narratif", text: "Faire sentir que la Terre des Insectes observe avant même de frapper." }
+    ],
+    timeline: [
+      { era: "Nuit du Jour 20", title: "Sentinelles autour du camp", summary: "Les Mouchards frôlent le camp et cherchent le groupe par les vibrations plutôt que par la vue." },
+      { era: "Lecture du territoire", title: "Surveillance sans regard", summary: "Leur présence révèle que le réseau insecte commence avant la frontière visible de la Terre des Insectes." }
+    ]
+  },
+  {
+    slug: "dardaignee",
+    name: "Dardaignée",
+    image: buildMediaPath("creatures", "Dardaignée.png"),
+    family: "Prédateur insectoïde massif",
+    status: "Créature clairement présente dans le récit",
+    habitat: "Forêts rongées et zones d'approche de la Terre des Insectes",
+    summary: "La Dardaignée est une créature de choc, entre araignée géante et menace à dard, faite pour bloquer le passage et imposer une violence territoriale.",
+    biography: [
+      "Les Dardaignées surgissent dans les terres déjà déformées par la présence insecte. Leurs membres crochus, leur masse basse et leur dard recourbé donnent au combat une brutalité immédiate.",
+      "Elles ne se comportent pas comme de simples bêtes affamées. Leur attaque s'accorde aux autres insectes, coupe la progression et semble mesurer la réponse du groupe autant qu'elle cherche à le blesser.",
+      "Face à elles, O'Sama impose sa puissance de protecteur, Bella frappe les articulations avec une précision calme et Balak'Oss transforme son bâton et les racines en force d'arrêt. La Dardaignée devient ainsi le premier vrai mur vivant de la route."
+    ],
+    profile: [
+      { title: "Nature", text: "Prédateur massif à crochets et dard, adapté au blocage et à l'impact." },
+      { title: "Niveau de menace", text: "Très élevé en frontal, surtout lorsqu'elle agit avec d'autres créatures coordonnées." },
+      { title: "Rôle narratif", text: "Donner au territoire insecte une force physique capable de tester les nouveaux alliés du Creux." }
+    ],
+    timeline: [
+      { era: "Jour 21", title: "Mur de crochets et de dards", summary: "Les Dardaignées barrent la route et forcent O'Sama, Bella et Balak'Oss à entrer pleinement dans le combat." },
+      { era: "Lecture du territoire", title: "Avertissement coordonné", summary: "Leur retrait laisse comprendre que l'assaut sert aussi à prévenir et à jauger la Communauté." }
+    ]
+  },
+  {
+    slug: "poux-religieux",
+    name: "Poux-Religieux",
+    image: buildMediaPath("creatures", "Poux-Religieux.png"),
+    family: "Insecte de frappe coordonnée",
+    status: "Créature clairement présente dans le récit",
+    habitat: "Branches basses, sols rongés et approches de la Terre des Insectes",
+    summary: "Le Poux-Religieux est une créature nerveuse et coordonnée, qui frappe par bonds secs, ruptures de rythme et attaques de groupe.",
+    biography: [
+      "Les Poux-Religieux surgissent avec une violence différente de celle des Dardaignées. Ils ne pèsent pas seulement par la masse, mais par des sauts brutaux, des accélérations cassées et une coordination qui rend leur mouvement difficile à lire.",
+      "Leur forme mêle l'aspect parasite du pou et la posture tranchante d'une mante. Ils donnent à la route une sensation d'embuscade permanente, comme si chaque branche pouvait devenir un point de jaillissement.",
+      "Tsune les coupe avec précision, Shan protège Franklin au plus près et Lévy utilise les racines pour empêcher leurs bonds d'enfermer le groupe. Par eux, la Terre des Insectes montre qu'elle sait frapper vite, en nombre et sans perdre son rythme collectif."
+    ],
+    profile: [
+      { title: "Nature", text: "Insecte hybride, nerveux, bondissant et lié à l'assaut coordonné." },
+      { title: "Niveau de menace", text: "Élevé en groupe, surtout lorsqu'il utilise les hauteurs et les ruptures de rythme." },
+      { title: "Rôle narratif", text: "Montrer que le danger insecte n'est pas seulement massif, mais aussi rapide, collectif et presque musical dans sa violence." }
+    ],
+    timeline: [
+      { era: "Jour 21", title: "Bonds coordonnés", summary: "Les Poux-Religieux attaquent en saccades et obligent le groupe à défendre plusieurs angles à la fois." },
+      { era: "Lecture du territoire", title: "Rythme hostile", summary: "Leur manière de se retirer avec les autres créatures donne au combat la forme d'un avertissement organisé." }
+    ]
   }
 
   ];

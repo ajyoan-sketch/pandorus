@@ -752,6 +752,18 @@ const creatureContextMap = {
   "chauve-souloup": [
     { href: "#lieux-village-des-renards", label: "Lire le village des Renards" },
     { href: "#chronologie", label: "Voir l'assaut du village" }
+  ],
+  "mouchard": [
+    { href: "#lieux-terre-des-insectes", label: "Voir la Terre des Insectes" },
+    { href: "#chronologie", label: "Lire l'approche insecte" }
+  ],
+  "dardaignee": [
+    { href: "#lieux-terre-des-insectes", label: "Voir la Terre des Insectes" },
+    { href: "#chronologie", label: "Lire l'affrontement" }
+  ],
+  "poux-religieux": [
+    { href: "#lieux-terre-des-insectes", label: "Voir la Terre des Insectes" },
+    { href: "#chronologie", label: "Lire l'affrontement" }
   ]
 };
 
@@ -2338,6 +2350,11 @@ const chapters = [
     path: "./media/chapitres/Chapitre%2030%20-%20O%27Sama%2C%20Bella%20et%20Balak%27Oss.pdf",
     summary: "Le Creux révèle son histoire : O'Sama protège et reconstruit son peuple, sauve Bella, accueille Balak'Oss, enquête sur les dérèglements et attend les alliés annoncés par Bichette.",
     accessKey: "ChapPando30"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2031%20-%20D%C3%A9part%20vers%20la%20Terre%20des%20Insectes.pdf",
+    summary: "La Communauté quitte le Creux avec O'Sama, Bella et Balak'Oss, traverse un territoire déjà rongé par les insectes, échappe aux Mouchards, affronte Dardaignées et Poux-Religieux, puis atteint la Source Pandorielle avant d'entrer dans la Terre des Insectes.",
+    accessKey: "ChapPando31"
   }
 ];
 
@@ -2971,6 +2988,7 @@ function renderTimeline() {
     if (normalizedEventText.includes("SYLVAE")) {
       contextCandidates.push({ href: "#lieux-fleuve-sylvae", label: "Voir le fleuve Sylvae" });
     }
+    if (normalizedEventText.includes("SOURCE PANDORIELLE")) contextCandidates.push({ href: "#lieux-source-pandorielle", label: "Voir la Source Pandorielle" });
     if (normalizedEventText.includes("VERDANOR")) contextCandidates.push({ href: "#lieux-verdanor-sud", label: "Voir le Verdanor Sud" });
     if (normalizedEventText.includes("ARKAINS")) contextCandidates.push({ href: "#lieux-fleuve-arkains", label: "Voir le fleuve Arkains" });
     if (normalizedEventText.includes("INSECTES")) contextCandidates.push({ href: "#lieux-terre-des-insectes", label: "Voir la Terre des Insectes" });
@@ -3018,6 +3036,9 @@ function renderTimeline() {
     if (normalizedEventText.includes("OURSARUNE")) contextCandidates.push({ href: "#creatures-fiche-oursarune", label: "Voir l'Oursarune" });
     if (normalizedEventText.includes("RENARDOU")) contextCandidates.push({ href: "#creatures-fiche-renardou-roux", label: "Voir le Renardou Roux" });
     if (normalizedEventText.includes("ELEPHANTAUPE")) contextCandidates.push({ href: "#creatures-fiche-elephantaupe", label: "Voir l'Éléphantaupe" });
+    if (normalizedEventText.includes("MOUCHARD")) contextCandidates.push({ href: "#creatures-fiche-mouchard", label: "Voir le Mouchard" });
+    if (normalizedEventText.includes("DARDAIGNEE")) contextCandidates.push({ href: "#creatures-fiche-dardaignee", label: "Voir la Dardaignée" });
+    if (normalizedEventText.includes("POUX-RELIGIEUX") || normalizedEventText.includes("POUX RELIGIEUX")) contextCandidates.push({ href: "#creatures-fiche-poux-religieux", label: "Voir le Poux-Religieux" });
 
     const uniqueLinks = [];
     const seenLinks = new Set();

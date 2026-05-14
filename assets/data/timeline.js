@@ -585,6 +585,51 @@
     summary: "Au fond du Creux, la Communauté découvre le village de lanternes et rencontre enfin O'Sama, Bella et Balak'Oss."
   },
   {
+    era: "Nuit du Jour 19",
+    title: "Repos vivant dans le Creux",
+    summary: "Le village offre au groupe une nuit de réparation: Bella organise les soins, Balak'Oss allège les tensions et le Creux respire encore correctement malgré les papillons présents."
+  },
+  {
+    era: "Nuit du Jour 19",
+    title: "Shaushana garde une question ouverte",
+    summary: "Pendant que le groupe reprend souffle, Shaushana reste troublée par ce que Bichette n'a pas pu lire en elle."
+  },
+  {
+    era: "Jour 20",
+    title: "Départ du Creux",
+    summary: "O'Sama, Bella et Balak'Oss quittent le refuge avec la Communauté des Papillons pour ouvrir la route vers la Terre des Insectes."
+  },
+  {
+    era: "Jour 20",
+    title: "Le territoire commence à ressentir le groupe",
+    summary: "Avant même la frontière, les arbres rongés, les galeries, les toiles et les vibrations montrent que la présence insecte organise déjà le terrain."
+  },
+  {
+    era: "Nuit du Jour 20",
+    title: "Les Mouchards frôlent le camp",
+    summary: "Sans feu et presque sans bruit, le groupe échappe aux Mouchards, sentinelles aveugles qui cherchent les présences par le son et les vibrations."
+  },
+  {
+    era: "Jour 21",
+    title: "Dardaignées et Poux-Religieux bloquent la route",
+    summary: "Les créatures insectes attaquent en coordination: O'Sama encaisse, Bella vise les articulations, Balak'Oss frappe avec les racines, tandis que Shan, Tsune, Lévy, Ezze et Shaushana tiennent la ligne."
+  },
+  {
+    era: "Jour 21",
+    title: "La Source Pandorielle apparaît",
+    summary: "Après l'assaut, la Communauté atteint une source lumineuse où les courants bleus, la brume et les silhouettes immenses sous l'eau ouvrent un seuil vers la Terre des Insectes."
+  },
+  {
+    era: "Nuit du Jour 21",
+    title: "Radeaux au bord de la Source",
+    summary: "Le groupe construit des radeaux: O'Sama coupe les troncs, Balak'Oss les tire, Bella prépare les liens et Ab'Youbi participe en silence aux cordes."
+  },
+  {
+    era: "Jour 22",
+    title: "Entrée dans la Terre des Insectes",
+    summary: "Avant l'aube, les radeaux suivent les courants de la Source Pandorielle jusqu'à une rive sans chant ni vent, où le sol vibre comme une respiration souterraine."
+  },
+  {
     order: 1500,
     era: "Après l'ancienne guerre",
     title: "O'Sama protège puis reconstruit le Creux",

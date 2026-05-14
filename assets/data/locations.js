@@ -15,6 +15,7 @@
     "taverne-du-sombrail": buildMediaPath("lieux", "Taverne du Sombrail.jpg"),
     "fleuve-arkains": locationHeroImage,
     "terre-des-insectes": locationHeroImage,
+    "source-pandorielle": locationHeroImage,
     "verdanor-sud": locationHeroImage,
     creux: locationHeroImage,
     vert: buildMediaPath("lieux", "Le Vert.png"),
@@ -425,33 +426,35 @@ export function createLocationFiches(buildMediaPath) {
     name: "Terre des Insectes",
     tone: "memory",
     category: "Réseau hostile",
-    intro: "La Terre des Insectes n'est pas encore un grand front traversé par le groupe, mais elle apparaît désormais comme un pôle majeur du camp adverse: le lieu où Syne, Jacob et d'autres figures trouvent une autre doctrine du monde.",
+    intro: "La Terre des Insectes n'est plus seulement un nom au loin. La Communauté en atteint enfin la rive nord, après un territoire déjà rongé, surveillé et parcouru de vibrations qui donnent l'impression que le sol respire sous les pas.",
     meta: [
-      { label: "Atmosphère", value: "Présence d'insectes, réseau, patience, menace en préparation" },
-      { label: "Fonction", value: "Refuge d'exil puis matrice hostile" },
-      { label: "Présences", value: "Syne, Bulldozer Jacob, Mathéo, Cendr'oïde, Bouldouger, Insect Master, Barbo" }
+      { label: "Atmosphère", value: "Silence, vibrations, surveillance, insectes coordonnés" },
+      { label: "Fonction", value: "Refuge d'exil, matrice hostile et territoire d'entrée" },
+      { label: "Présences", value: "Syne, Bulldozer Jacob, Mathéo, Cendr'oïde, Insect Master, Barbo, Mouchards, Dardaignées, Poux-Religieux" }
     ],
     biography: [
       "Syne et Jacob atteignent la Terre des Insectes après avoir quitté l'Arkains. Le lieu ne se présente pas comme un simple refuge, mais comme un territoire déjà traversé par une autre compréhension du monde et du déséquilibre.",
       "C'est là qu'un homme lié à un frelon noir fait basculer Syne vers une logique plus dure: ce qui dérègle le vivant n'a peut-être pas à être seulement contenu, mais prolongé, orienté ou utilisé pour qu'un autre monde prenne sa place.",
       "Les chapitres les plus récents donnent enfin un nom plus net à ce centre: Insect Master, ancien grand créateur de la Terre des Insectes, désormais soupçonné de piloter la logique des parasites et du remodelage.",
-      "Mathéo, Cendr'oïde, Bouldouger, Jacob, Syne et même Barbo s'y lisent alors comme les maillons d'un réseau. La Terre des Insectes devient moins un décor qu'une fabrique de missions, de pressions lentes, de parasitages et de retours calculés vers l'ouest."
+      "Mathéo, Cendr'oïde, Bouldouger, Jacob, Syne et même Barbo s'y lisent alors comme les maillons d'un réseau. La Terre des Insectes devient moins un décor qu'une fabrique de missions, de pressions lentes, de parasitages et de retours calculés vers l'ouest.",
+      "La route qui y mène confirme cette nature. Avant même la rive nord, les arbres sont rongés, les galeries se multiplient, les toiles barrent le passage et les créatures ne surgissent pas au hasard: les Mouchards écoutent le sol, les Dardaignées et les Poux-Religieux frappent comme un avertissement collectif.",
+      "L'arrivée par la Source Pandorielle donne au lieu une gravité plus ancienne encore. Après l'eau lumineuse et les ombres immenses sous les radeaux, la rive de la Terre des Insectes oppose un silence sans vent, sans chant, presque entier."
     ],
     summary: [
-      "La Terre des Insectes donne enfin un vrai point d'origine au camp de Syne.",
-      "Elle relie la fidélité ancienne à Jacob à une stratégie beaucoup plus vaste de remplacement du monde."
+      "La Terre des Insectes donne un vrai point d'origine au camp de Syne et à la logique des parasites.",
+      "Elle devient aussi un territoire concrètement traversé, où la surveillance du vivant se ressent avant même l'affrontement."
     ],
     profile: [
-      { title: "Texture du lieu", text: "Territoire bourdonnant, organisation cachée, patience et surveillance." },
+      { title: "Texture du lieu", text: "Silence tendu, galeries, vibrations basses, toiles, racines rongées et surveillance sans regard." },
       { title: "Rôle narratif", text: "Donner au camp adverse une base idéologique, hiérarchique et relationnelle, au-delà des seules apparitions de terrain." },
-      { title: "Point de tension", text: "Ce lieu ne frappe pas toujours frontalement: il prépare, observe et renvoie ses figures au moment exact où elles doivent agir." }
+      { title: "Point de tension", text: "Ce lieu ne frappe pas toujours frontalement: il observe, teste et laisse parfois repartir comme si l'avertissement comptait plus que la mort immédiate." }
     ],
     contextLinks: [
       { href: "#fiches-syne", label: "Voir Syne" },
       { href: "#fiches-insect-master", label: "Voir Insect Master" },
-      { href: "#fiches-barbo", label: "Voir Barbo" },
-      { href: "#fiches-matheo", label: "Voir Mathéo" },
-      { href: "#fiches-cendroide", label: "Voir Cendr'oïde" }
+      { href: "#lieux-source-pandorielle", label: "Voir la Source Pandorielle" },
+      { href: "#creatures-fiche-mouchard", label: "Voir le Mouchard" },
+      { href: "#chronologie", label: "Lire l'entrée en territoire insecte" }
     ]
   },
   {
@@ -500,11 +503,12 @@ export function createLocationFiches(buildMediaPath) {
       "Le Creux apparaît d'abord comme une destination stratégique, mais le voyage lui donne enfin son corps: une forêt qui descend, des arbres si hauts qu'ils masquent le ciel, des racines immenses, une humidité profonde et des chants de Corbec qui circulent d'arbre en arbre.",
       "Le lieu n'est pas oppressant malgré sa profondeur. Les Oursarune y choisissent leur roi dans une brutalité sans haine, les Renardou Roux approchent le groupe avec douceur, et les Eléphantaupes appartiennent depuis longtemps à la reconstruction du village.",
       "Au fond du Creux, le groupe trouve un village de lanternes, de maisons de bois et de passerelles, organisé autour d'O'Sama et Bella. Ce refuge n'est pas une fuite du monde: il a survécu à l'ancienne guerre, puis s'est mis à observer les dérèglements avant que le reste de Pandorus n'en comprenne l'ampleur.",
-      "Avec l'arrivée de la Communauté des Papillons, le Creux devient le prochain vrai relais du récit. Il accueille la fatigue du groupe, mais prépare déjà la route vers la Terre des Insectes et Insect Master."
+      "Avec l'arrivée de la Communauté des Papillons, le Creux devient le prochain vrai relais du récit. Il accueille la fatigue du groupe, nourrit une nuit de réparation et permet à chacun de reprendre souffle avant la route.",
+      "Lorsque le départ vient, le refuge ne se referme pas derrière eux: O'Sama, Bella et Balak'Oss quittent le village avec la Communauté, transformant le Creux en point de passage vivant vers la Source Pandorielle et la Terre des Insectes."
     ],
     summary: [
       "Le Creux est un refuge vivant, profond et habité, où humains et créatures coexistent plus naturellement qu'ailleurs.",
-      "Il relie la parole de Bichette, les nouveaux alliés et la prochaine marche vers la Terre des Insectes."
+      "Il relie la parole de Bichette, les nouveaux alliés, la réparation du groupe et le départ vers la Terre des Insectes."
     ],
     profile: [
       { title: "Texture du lieu", text: "Forêt descendante, lanternes chaudes, chants d'oiseaux, racines immenses et village au fond du monde." },
@@ -516,6 +520,38 @@ export function createLocationFiches(buildMediaPath) {
       { href: "#fiches-bella", label: "Voir Bella" },
       { href: "#fiches-balak-oss", label: "Voir Balak'Oss" },
       { href: "#chronologie", label: "Lire la route vers le Creux" }
+    ]
+  },
+  {
+    slug: "source-pandorielle",
+    name: "Source Pandorielle",
+    tone: "river",
+    category: "Seuil d'eau vivante",
+    intro: "La Source Pandorielle est une eau de passage et de profondeur. Lumineuse, brumeuse, habitée par des silhouettes immenses, elle porte la Communauté jusqu'à la rive de la Terre des Insectes sans jamais devenir une simple route.",
+    meta: [
+      { label: "Atmosphère", value: "Eau lumineuse, brume, courants bleus, silence ancien" },
+      { label: "Fonction", value: "Seuil vers la Terre des Insectes" },
+      { label: "Présences", value: "Communauté des Papillons, O'Sama, Bella, Balak'Oss, silhouettes sous-marines" }
+    ],
+    biography: [
+      "La Source Pandorielle apparaît après la traversée des territoires déjà marqués par les insectes. Au lieu d'une simple rivière, le groupe découvre une eau qui semble émettre sa propre lumière, avec des courants bleus sous la surface et une brume qui rend les distances incertaines.",
+      "Ezze comprend que les courants peuvent porter les radeaux si le groupe reste dans leur ligne. O'Sama coupe les troncs, Balak'Oss les tire, Bella prépare les liens et même les gestes les plus simples deviennent une manière d'entrer dans un seuil plus grand que soi.",
+      "Sous l'eau, des formes gigantesques passent sans se montrer vraiment. La Source ne rassure pas; elle autorise. Elle donne le passage, mais rappelle que Pandorus garde encore des profondeurs que personne ne maîtrise.",
+      "Lorsque les radeaux quittent la rive avant l'aube, la Source conduit la Communauté vers une terre sans chant et sans vent. Elle devient ainsi le dernier souffle vivant avant la pression muette de la Terre des Insectes."
+    ],
+    summary: [
+      "La Source Pandorielle est le grand seuil aquatique avant la Terre des Insectes.",
+      "Elle donne à la route une beauté inquiète, entre protection, profondeur et passage vers un territoire beaucoup moins accueillant."
+    ],
+    profile: [
+      { title: "Texture du lieu", text: "Lumière sous l'eau, brume épaisse, courants lisibles et silhouettes énormes sous les radeaux." },
+      { title: "Rôle narratif", text: "Faire passer le groupe d'une marche terrestre hostile à une entrée presque rituelle vers la Terre des Insectes." },
+      { title: "Point de tension", text: "La Source porte, mais elle ne se laisse pas comprendre entièrement; ce qui vit sous elle reste immense et silencieux." }
+    ],
+    contextLinks: [
+      { href: "#lieux-terre-des-insectes", label: "Voir la Terre des Insectes" },
+      { href: "#fiches-ezze", label: "Voir Ezze" },
+      { href: "#chronologie", label: "Lire la traversée" }
     ]
   },
   {

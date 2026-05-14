@@ -447,11 +447,12 @@
       "Sa rencontre avec Gil et Filston l'oblige à ralentir intérieurement. Leur manière de voir Pandorus comme un monde qui n'est peut-être pas fermé ouvre en lui une question plus vaste que sa propre course.",
       "À la taverne du Sombrail, Ezze retrouve Gil et Filston, puis aperçoit la Communauté des Papillons. Pour une fois, il ne passe pas: il reste, comme si toutes les trajectoires qu'il avait suivies convergeaient enfin.",
       "Dans la Sombra, Bichette le lit comme une présence qui ne garde pas ce qu'elle reçoit intact, mais le fait vibrer autrement. Cette reconnaissance confirme qu'Ezze n'est pas seulement rapide: il transforme déjà ce que le monde lui confie.",
-      "Quand la bataille éclate enfin autour de Syne, de Jacob, des Verdeflors et des Lions-Garouh, Ezze devient l'une des présences les plus mobiles du front. Il sauve Franklin, libère Zaïnob, abat le dernier Verdeflor et porte Méli Mélo jusqu'à Bichette."
+      "Quand la bataille éclate enfin autour de Syne, de Jacob, des Verdeflors et des Lions-Garouh, Ezze devient l'une des présences les plus mobiles du front. Il sauve Franklin, libère Zaïnob, abat le dernier Verdeflor et porte Méli Mélo jusqu'à Bichette.",
+      "Sur la route de la Terre des Insectes, son instinct change de nature: il ne sert plus seulement à avancer vite, mais à sentir les rythmes du danger, à imposer le silence face aux Mouchards et à lire les courants de la Source Pandorielle."
     ],
     summary: [
       "Ezze incarne la vitesse, l'intuition et la lecture instinctive d'un monde qui se dérègle.",
-      "Son arrivée à la taverne le place au contact direct de la Communauté des Papillons et d'une mémoire plus grande que sa propre route."
+      "Sa route avec la Communauté transforme son mouvement en lecture utile des seuils, des pièges et des courants."
     ],
     profile: [
       { title: "Caractère", text: "Vif, provocateur, curieux, difficile à fixer, mais plus sensible au monde qu'il ne le montre." },
@@ -475,7 +476,9 @@
       { era: "Jour 14", title: "Lecture par Bichette", summary: "Dans la Sombra, Bichette sent chez Ezze une présence mobile qui fait vibrer autrement ce qu'elle reçoit du monde." },
       { era: "Jour 14", title: "Course dans la bataille", summary: "Au milieu de la bataille de la Sombra, Ezze sauve Franklin, libère Zaïnob et refuse de laisser la clairière se refermer sur les plus fragiles." },
       { era: "Jour 14", title: "Méli Mélo arrachée au pire", summary: "Après la blessure de Méli Mélo, Ezze abat le dernier Verdeflor et la porte jusqu'à Bichette." },
-      { era: "Jour 18", title: "Nouvelle route vers le Creux", summary: "Quand Bichette ouvre la route du Creux, Ezze reste l'une des présences les plus naturellement accordées au mouvement qui vient." }
+      { era: "Jour 18", title: "Nouvelle route vers le Creux", summary: "Quand Bichette ouvre la route du Creux, Ezze reste l'une des présences les plus naturellement accordées au mouvement qui vient." },
+      { era: "Nuit du Jour 20", title: "Silence face aux Mouchards", summary: "Aux abords du territoire insecte, Ezze comprend que le moindre bruit peut trahir le groupe et impose une lecture plus silencieuse du danger." },
+      { era: "Jour 21", title: "Courants de la Source", summary: "Devant la Source Pandorielle, il lit les lignes d'eau capables de porter les radeaux vers la Terre des Insectes." }
     ]
   },
   {
@@ -1320,7 +1323,8 @@
       "Quand l'ancienne guerre atteint les frontières du Creux, il prend les armes pour défendre son peuple, ses arbres et les créatures du lieu. Au cœur d'un combat contre un être venu d'ailleurs, il récupère une bague vivante capable de lire les cœurs, les blessures, les intentions et la lumière qui demeure dans les êtres.",
       "Après la guerre, O'Sama reconstruit le Creux maison après maison, soigne les créatures, ramène les Eléphantaupes, les Corbec et les Oursarune vers le village, puis devient sans le chercher le centre moral du refuge.",
       "Il sauve Bella d'un clan qui l'avait convaincue que les faibles devaient souffrir, lui offre une autre loi du vivant, puis construit avec elle un foyer. Plus tard, il accueille Balak'Oss, voyageur aux yeux blancs, et trouve en lui une autre manière de lire le monde.",
-      "Lorsque les dérèglements se multiplient, O'Sama enquête avec Balak'Oss et comprend peu à peu que la Terre des Insectes est liée aux parasites et aux altérations. Prévenu par Bichette, il attend finalement la Communauté des Papillons au fond du Creux."
+      "Lorsque les dérèglements se multiplient, O'Sama enquête avec Balak'Oss et comprend peu à peu que la Terre des Insectes est liée aux parasites et aux altérations. Prévenu par Bichette, il attend finalement la Communauté des Papillons au fond du Creux.",
+      "Après avoir offert au groupe le repos du refuge, il reprend lui-même la route. Sa force devient alors un rempart direct face aux créatures insectes, puis un appui concret pour construire les radeaux de la Source Pandorielle."
     ],
     summary: [
       "O'Sama donne au Creux son cœur, sa force et sa loi de protection.",
@@ -1344,7 +1348,9 @@
       { era: "Avant le récit", title: "Bella sauvée", summary: "O'Sama fait venir Bella au Creux et lui montre qu'aucune faiblesse ne justifie la souffrance imposée." },
       { era: "Il y a 5 ans", title: "Arrivée de Balak'Oss", summary: "Le jeune voyageur aux yeux blancs arrive au Creux et devient peu à peu un point fixe du village." },
       { era: "Avant le Jour 19", title: "Enquête sur les dérèglements", summary: "Avec Balak'Oss, O'Sama relie les anomalies, les parasites et les insectes à la Terre des Insectes." },
-      { era: "Jour 19", title: "Accueil du groupe", summary: "Prévenu par Bichette, O'Sama attend la Communauté des Papillons devant son foyer et lit les cœurs qui arrivent." }
+      { era: "Jour 19", title: "Accueil du groupe", summary: "Prévenu par Bichette, O'Sama attend la Communauté des Papillons devant son foyer et lit les cœurs qui arrivent." },
+      { era: "Jour 20", title: "Départ avec la Communauté", summary: "Il quitte le Creux avec Bella et Balak'Oss pour guider le groupe vers la Terre des Insectes." },
+      { era: "Jour 21", title: "Rempart contre les Dardaignées", summary: "Face aux créatures insectes, O'Sama encaisse, bloque et protège la progression par sa puissance calme." }
     ]
   },
   {
@@ -1363,7 +1369,8 @@
       "Bella vient d'un clan où seuls les forts étaient respectés. Humiliée et blessée pendant des années, elle avait fini par croire que sa souffrance était normale, comme si la faiblesse devait forcément payer sa place.",
       "O'Sama envoie des Eléphantaupes la chercher et l'accueille au Creux sans lui imposer une nouvelle vie par la force. Là, personne ne la frappe, personne ne la rabaisse, et Bella apprend lentement qu'un être peut exister autrement que sous la loi du plus fort.",
       "Elle devient ensuite indispensable au village. Elle prend des nouvelles, aide les familles, écoute les malades, accompagne les enfants et les anciens, jusqu'à devenir une présence vers laquelle les habitants se tournent naturellement.",
-      "Avec O'Sama, son lien se transforme en foyer. Bella n'est pas définie par la violence qu'elle a subie, mais par ce qu'elle reconstruit: une douceur lucide, capable de voir la fatigue du groupe dès son arrivée."
+      "Avec O'Sama, son lien se transforme en foyer. Bella n'est pas définie par la violence qu'elle a subie, mais par ce qu'elle reconstruit: une douceur lucide, capable de voir la fatigue du groupe dès son arrivée.",
+      "Quand la route reprend, sa douceur ne disparaît pas derrière le combat. Elle soigne, observe, coupe avec précision quand il le faut et prépare les liens des radeaux avec la même attention qu'elle met à tenir un foyer."
     ],
     summary: [
       "Bella donne au Creux sa chaleur la plus humaine.",
@@ -1384,7 +1391,9 @@
       { era: "Avant le récit", title: "Arrivée au Creux", summary: "O'Sama envoie des Eléphantaupes la chercher et lui offre un lieu où personne ne la juge par sa faiblesse." },
       { era: "Avant le récit", title: "Dignité reconstruite", summary: "Bella apprend peu à peu à vivre sans baisser les yeux et devient une présence essentielle du village." },
       { era: "Avant le Jour 19", title: "Foyer avec O'Sama", summary: "Au fil des années, elle devient la femme d'O'Sama et l'une des figures centrales du Creux." },
-      { era: "Jour 19", title: "Accueil de la Communauté", summary: "Elle accueille le groupe avec une chaleur simple qui apaise immédiatement la fatigue de la route." }
+      { era: "Jour 19", title: "Accueil de la Communauté", summary: "Elle accueille le groupe avec une chaleur simple qui apaise immédiatement la fatigue de la route." },
+      { era: "Jour 20", title: "Veille sur les corps fatigués", summary: "Au départ du Creux, Bella accompagne le groupe en gardant son attention sur les blessures, les silences et les gestes utiles." },
+      { era: "Jour 21", title: "Précision au combat", summary: "Face aux insectes, elle vise les articulations et prouve que sa force tient autant à la précision qu'à la douceur." }
     ]
   },
   {
@@ -1403,7 +1412,8 @@
       "Balak'Oss arrive au Creux très jeune, avec son bâton, ses yeux entièrement blancs et déjà beaucoup trop de monde dans le regard pour son âge. Ailleurs, son apparence le faisait fuir ou rejeter; au Creux, il est simplement accueilli.",
       "Le soir de son arrivée, il parle plus qu'à son habitude et mêle ses récits de routes aux souvenirs d'O'Sama. Quelque chose naît alors entre eux: Balak'Oss voit le monde, O'Sama le protège, et tous deux respectent le vivant.",
       "Balak'Oss repart souvent, revient toujours, et finit par considérer le Creux comme son point fixe. Ses récits changent pourtant avec les années: insectes devenus agressifs, espèces paisibles modifiées, végétations mortes puis repoussées autrement.",
-      "Avec O'Sama, il enquête alors sur les anomalies et comprend que la Terre des Insectes revient trop souvent autour des zones instables. Quand la Communauté arrive enfin, son surgissement entre Shan et Shaushana rappelle qu'il garde une manière d'entrer dans le monde par surprise."
+      "Avec O'Sama, il enquête alors sur les anomalies et comprend que la Terre des Insectes revient trop souvent autour des zones instables. Quand la Communauté arrive enfin, son surgissement entre Shan et Shaushana rappelle qu'il garde une manière d'entrer dans le monde par surprise.",
+      "Sur la route, son humour devient une arme douce contre la tension, mais il sait aussi se taire quand le territoire écoute. Il tire les troncs, frappe avec les racines et transforme son étrangeté en appui solide."
     ],
     summary: [
       "Balak'Oss est la mémoire mobile du Creux.",
@@ -1423,7 +1433,9 @@
       { era: "Il y a 5 ans", title: "Arrivée au Creux", summary: "Balak'Oss arrive avec son bâton et ses yeux blancs, puis trouve enfin un lieu qui ne le rejette pas." },
       { era: "Avant le récit", title: "Voyages et retours", summary: "Il parcourt les régions, revient au Creux avec des récits et commence à faire du village son point fixe." },
       { era: "Avant le Jour 19", title: "Anomalies reliées", summary: "Ses observations sur les insectes, les parasites et les comportements altérés aident O'Sama à soupçonner la Terre des Insectes." },
-      { era: "Jour 19", title: "Apparition entre Shan et Shaushana", summary: "Lorsque le groupe arrive, Balak'Oss surgit sans bruit entre eux et se présente avec une légèreté presque déconcertante." }
+      { era: "Jour 19", title: "Apparition entre Shan et Shaushana", summary: "Lorsque le groupe arrive, Balak'Oss surgit sans bruit entre eux et se présente avec une légèreté presque déconcertante." },
+      { era: "Jour 20", title: "Tension allégée", summary: "Au Creux puis sur la route, son humour relâche la peur sans nier le danger qui approche." },
+      { era: "Jour 21", title: "Force au seuil", summary: "Face aux créatures insectes et aux radeaux de la Source Pandorielle, Balak'Oss devient un appui physique autant qu'un éclaireur." }
     ]
   }
   ];
