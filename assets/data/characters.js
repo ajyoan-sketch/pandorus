@@ -129,11 +129,13 @@
       "Lévy nait il y a trois ans, lorsque le Vrax rencontre une absence brutale dans ses flux, quelque chose que ni la force de Gardien, ni la lecture de Harry, ni le chaos de Wingard ne peuvent resoudre seuls.",
       "Plus fin, plus discret, Lévy n'impose pas. Il ajuste. Il dialogue avec la matiere, deplace, reequilibre, corrige ce qui cede, meme si la cicatrice du monde ne disparait jamais totalement.",
       "Il joue un role determinant pendant l'interception du groupe. Il fixe le sol, ralentit les appuis et sent en Franklin quelque chose de different avant de laisser la nécessité l'emporter.",
-      "Apres l'intervention d'Ossah Lyla et de Nastaz, c'est pourtant lui que les creatrices choisissent pour quitter le coeur du Vrax et accompagner Shaushana, Shan et Franklin vers le sud, preuve qu'il n'est pas seulement une defense du territoire mais déjà un passeur."
+      "Apres l'intervention d'Ossah Lyla et de Nastaz, c'est pourtant lui que les creatrices choisissent pour quitter le coeur du Vrax et accompagner Shaushana, Shan et Franklin vers le sud, preuve qu'il n'est pas seulement une defense du territoire mais déjà un passeur.",
+      "Dans la Terre des Insectes, sa lecture gagne une gravité nouvelle. Il distingue la lumière rose du réseau insecte, force les racines d'un canyon de ruches noires à répondre, puis reste marqué par la mort de Tsune qu'il n'a pas pu empêcher."
     ],
     summary: [
       "Lévy est le protecteur du lien et de la reparation partielle. Il intervient la ou le monde n'est plus seulement agresse, mais rompu.",
-      "Sa présence fait entrer le récit dans une logique plus fine: celle d'un Vrax qui ne reagit plus seulement par la force, mais aussi par l'ajustement."
+      "Sa présence fait entrer le récit dans une logique plus fine: celle d'un Vrax qui ne reagit plus seulement par la force, mais aussi par l'ajustement.",
+      "Dans la Terre des Insectes, il devient aussi celui qui sent la différence entre l'emprise hostile et l'appel plus ancien de la lumière rose."
     ],
     profile: [
       { title: "Caractere", text: "Silencieux, precis, presque absorbe par ce qu'il percoit sous la surface visible." },
@@ -153,7 +155,10 @@
       { era: "Nuit du Jour 12", title: "Ajustement fatal contre Nogard", summary: "Dans les ruines du Vert, Lévy ouvre avec Tsune la chute de Nogard et prouve que sa lecture du vide peut aussi devenir arme décisive." },
       { era: "Jour 14", title: "Passage vers la Sombra", summary: "Toujours accordé aux ruptures du monde, Lévy poursuit la route jusqu'à la Sombra où une autre forme de lecture l'attend." },
       { era: "Jour 14", title: "Sol et racines contre les Verdeflors", summary: "Dans la bataille de la Sombra, Lévy déplace les appuis du terrain et retient la poussée végétale des Verdeflors." },
-      { era: "Jour 18", title: "Le Vrax toujours vivant", summary: "Lorsque Bichette affirme qu'Ossah Lyla et Nastaz tiennent encore le Vrax, Lévy se retrouve indirectement rattaché à ce foyer qui continue de résister." }
+      { era: "Jour 18", title: "Le Vrax toujours vivant", summary: "Lorsque Bichette affirme qu'Ossah Lyla et Nastaz tiennent encore le Vrax, Lévy se retrouve indirectement rattaché à ce foyer qui continue de résister." },
+      { era: "Jour 22", title: "Lumière rose sous le territoire", summary: "Dans la Terre des Insectes, Lévy perçoit une présence souterraine qui ne relève pas du réseau insecte." },
+      { era: "Jour 22", title: "Canyon des ruches noires", summary: "Face aux guêpes et aux créatures de Kuji, il force le territoire à répondre par des racines massives." },
+      { era: "Jour 22", title: "Mort de Tsune", summary: "Après la frappe de Kuji, Lévy reste face à une perte qu'aucune racine ne peut réparer." }
     ]
   },
   {
@@ -249,11 +254,13 @@
     biography: [
       "Tsune se dresse d'abord comme une méfiance incarnée entre le groupe et le cœur du village. Son apparence de renard-humain, sa lecture instantanée et sa hache tenue comme une extension naturelle de lui-même en font une figure de seuil plus qu'un simple habitant.",
       "Très vite pourtant, il comprend que Shaushana, Shan, Franklin et Lévy ne sont pas des intrus ordinaires. Son regard change sans perdre sa vigilance, et cette nuance suffit à ouvrir le village au groupe sans jamais effacer la tension du lieu.",
-      "Après la mort de Hez et la révélation de Kuji, Tsune cesse d'être seulement le défenseur d'un foyer. Il devient l'un de ceux qui acceptent qu'aucune réponse locale ne suffira plus, et rejoint ainsi la Communauté des Papillons dans une logique de route autant que de deuil."
+      "Après la mort de Hez et la révélation de Kuji, Tsune cesse d'être seulement le défenseur d'un foyer. Il devient l'un de ceux qui acceptent qu'aucune réponse locale ne suffira plus, et rejoint ainsi la Communauté des Papillons dans une logique de route autant que de deuil.",
+      "Dans la Terre des Insectes, son face-à-face avec Kuji lui donne enfin la vengeance qu'il portait depuis le village. Mais ce soulagement ne dure qu'un instant: Kuji survit assez pour le frapper mortellement, laissant à Lévy, Ab'Youbi et aux autres une perte aussi brutale que décisive."
     ],
     summary: [
       "Tsune passe du rôle de gardien méfiant à celui de membre essentiel d'une réponse collective nouvelle.",
-      "Sa trajectoire se construit autour de Hez, du village des Renards et de la direction ouverte contre Kuji."
+      "Sa trajectoire se construit autour de Hez, du village des Renards et de la direction ouverte contre Kuji.",
+      "Il meurt après avoir cru la vengeance accomplie, faisant de son dernier combat une victoire déchirée."
     ],
     profile: [
       { title: "Caractère", text: "Vif, tendu, loyal et beaucoup plus fin dans sa lecture qu'il ne le montre d'abord." },
@@ -273,7 +280,9 @@
       { era: "Jour 8", title: "Communauté des Papillons", summary: "Tsune accepte de ne plus défendre seulement un lieu, mais une réponse plus large à ce qui cherche à remplacer le vivant." },
       { era: "Nuit du Jour 12", title: "Chute de Nogard", summary: "Dans les ruines du Vert, Tsune abat Nogard avec Lévy et transforme son deuil ancien en geste décisif contre l'ennemi revenu." },
       { era: "Jour 14", title: "Entrée gardée dans la Sombra", summary: "Après la sépulture du Capitaine et la route vers l'ouest, Tsune franchit la Sombra avec la même vigilance de seuil qui le définissait déjà au village." },
-      { era: "Jour 14", title: "Lame contre les Verdeflors", summary: "Quand la clairière bascule dans la bataille, Tsune devient l'une des meilleures réponses du groupe face aux Verdeflors et protège Franklin au plus près." }
+      { era: "Jour 14", title: "Lame contre les Verdeflors", summary: "Quand la clairière bascule dans la bataille, Tsune devient l'une des meilleures réponses du groupe face aux Verdeflors et protège Franklin au plus près." },
+      { era: "Jour 22", title: "Revanche contre Kuji", summary: "Dans un canyon de ruches noires, Tsune abat les créatures de Kuji et croit enfin venger Hez et le village des Renards." },
+      { era: "Jour 22", title: "Dernière frappe de Kuji", summary: "Kuji surgit une dernière fois et transperce Tsune avant de disparaître, laissant la Communauté face à une nouvelle mort." }
     ]
   },
   {
@@ -367,7 +376,8 @@
     biography: [
       "Kuji apparaît à la limite du village avec une assurance qui tranche avec toutes les menaces précédentes. Son corps, sa maîtrise et sa parole montrent immédiatement qu'il n'est ni une simple créature ni un simple bandit du monde altéré.",
       "Dans le combat, il encaisse, contrôle et décide. Il ne cherche pas seulement à vaincre: il montre qu'il appartient déjà à une logique supérieure de domination, appuyée par Elennya et par une lecture du vivant comme matière à corriger.",
-      "Ses mots rendent la menace plus nette encore. Pour lui, le monde libre, instable et foisonnant de Pandorus n'est pas une richesse, mais un système trop lâche à remplacer par autre chose. En tuant Hez, il transforme cette idée en preuve irréversible."
+      "Ses mots rendent la menace plus nette encore. Pour lui, le monde libre, instable et foisonnant de Pandorus n'est pas une richesse, mais un système trop lâche à remplacer par autre chose. En tuant Hez, il transforme cette idée en preuve irréversible.",
+      "Dans la Terre des Insectes, il retrouve Tsune dans un canyon de ruches noires. Vaincu une première fois, il garde assez de cruauté et de vitesse pour porter une dernière frappe mortelle avant de disparaître dans les guêpes."
     ],
     summary: [
       "Kuji est la première grande figure hostile qui pense, parle et assume clairement une vision du monde opposée à celle des héros.",
@@ -388,7 +398,9 @@
       { era: "Jour 7", title: "Révélation au village", summary: "Kuji se montre au groupe comme une présence calme, consciente et déjà sûre de sa propre logique." },
       { era: "Jour 7", title: "Combat du village", summary: "Il domine le combat central, résiste à Tsune et Hez, puis impose une rupture totale dans le rapport de force." },
       { era: "Jour 7", title: "Mort de Hez", summary: "En tuant Hez, Kuji transforme l'attaque en point de non-retour moral et narratif." },
-      { era: "Jour 8", title: "Volonté reconnue", summary: "À travers lui, le groupe comprend que la menace cherche à remplacer le monde plutôt qu'à le blesser seulement." }
+      { era: "Jour 8", title: "Volonté reconnue", summary: "À travers lui, le groupe comprend que la menace cherche à remplacer le monde plutôt qu'à le blesser seulement." },
+      { era: "Jour 22", title: "Canyon des ruches noires", summary: "Kuji affronte Tsune, Lévy et Ab'Youbi au milieu des ruches et des guêpes sombres." },
+      { era: "Jour 22", title: "Tsune transpercé", summary: "Alors qu'il semble vaincu, Kuji surgit une dernière fois et tue Tsune avant d'être emporté par les guêpes." }
     ]
   },
   {
@@ -406,7 +418,8 @@
     biography: [
       "Elennya apparaît au côté de Kuji comme une présence presque douce en surface, mais profondément étrangère dans son effet sur la matière, les appuis et l'air lui-même.",
       "Là où Kuji rompt frontalement, Elennya ralentit, enferme, dévie et casse les possibilités d'action. Elle ne se contente pas d'aider: elle restructure le champ du combat pour rendre la résistance plus difficile, plus tardive et plus coûteuse.",
-      "Sa présence confirme que l'adversité nouvelle n'agit pas seulement par force, mais par manipulation du terrain, des trajectoires et des conditions mêmes de la lutte."
+      "Sa présence confirme que l'adversité nouvelle n'agit pas seulement par force, mais par manipulation du terrain, des trajectoires et des conditions mêmes de la lutte.",
+      "Dans la forêt blanche de la Terre des Insectes, son rapport au camp adverse se fissure. Sous l'ordre de l'Alien, elle attaque Shan et Shaushana, mais retient ses coups, les avertit et laisse voir qu'elle n'a aucune envie d'être là."
     ],
     summary: [
       "Elennya donne à la menace un versant plus froid, plus technique et plus insidieux que la simple violence de Kuji.",
@@ -426,7 +439,46 @@
     timeline: [
       { era: "Jour 7", title: "Apparition au village", summary: "Elennya se révèle aux côtés de Kuji comme une force d'accompagnement et de déformation." },
       { era: "Jour 7", title: "Entrave du combat", summary: "Elle ralentit Tsune, brise la précision de Javier et rend le terrain du combat hostile jusque dans sa matière." },
-      { era: "Jour 7", title: "Retrait après la rupture", summary: "Avec Kuji, elle quitte le village sans fuite réelle, comme si rien n'avait pu la menacer." }
+      { era: "Jour 7", title: "Retrait après la rupture", summary: "Avec Kuji, elle quitte le village sans fuite réelle, comme si rien n'avait pu la menacer." },
+      { era: "Jour 22", title: "Forêt blanche", summary: "Face à Shan et Shaushana, Elennya combat sous l'ordre de l'Alien, mais ses hésitations révèlent une fracture intérieure." },
+      { era: "Jour 22", title: "Avertissement silencieux", summary: "Elle indique aux deux combattants de ne pas laisser l'Alien les toucher, puis disparaît après avoir été épargnée." }
+    ]
+  },
+  {
+    slug: "lalien",
+    hash: "#fiches-lalien",
+    name: "L'Alien",
+    image: buildMediaPath("pandorus", "L'alien.png"),
+    category: "Être venu d'ailleurs",
+    intro: "L'Alien est une présence étrangère aux règles de Pandorus. Son corps, ses gestes et sa parole donnent l'impression d'un monde extérieur qui observe le vivant sans jamais le comprendre vraiment.",
+    meta: [
+      { label: "Statut", value: "Figure hostile étrangère à Pandorus" },
+      { label: "Spécialité", value: "Distorsion, contrôle, pression mentale" },
+      { label: "Lien majeur", value: "Elennya et la Terre des Insectes" }
+    ],
+    biography: [
+      "L'Alien apparaît dans la forêt blanche aux côtés d'Elennya. Sa présence dérange immédiatement parce qu'elle ne suit pas tout à fait la logique du vivant pandorien: ses mouvements semblent décalés, son regard dissèque plus qu'il ne rencontre.",
+      "Il parle d'évolution avec une froideur vide, comme si les émotions, les créateurs et les attachements du monde n'étaient que des faiblesses à corriger. Son autorité sur Elennya révèle aussi une contrainte directe, presque humiliante, exercée sur ceux qui servent le camp adverse.",
+      "Face à Shan et Shaushana, il déforme l'espace, trouble les perceptions et tente de toucher l'esprit autant que le corps. Pourtant la lumière rose réagit à sa présence, et le combat montre qu'il peut être repoussé lorsque l'émotion devient force commune plutôt que faiblesse."
+    ],
+    summary: [
+      "L'Alien introduit une menace qui ne vient pas seulement de la Terre des Insectes, mais d'un dehors plus vaste.",
+      "Il révèle une strate de contrôle froide autour d'Elennya et une hostilité profonde envers la part émotionnelle du vivant."
+    ],
+    profile: [
+      { title: "Nature", text: "Être extérieur, à la présence presque artificielle, capable de distordre l'espace et la perception." },
+      { title: "Forces", text: "Contrôle, déplacement impossible à lire, pression mentale, mépris des émotions." },
+      { title: "Mystère", text: "Son monde, sa hiérarchie réelle et son lien exact avec Insect Master restent encore ouverts." }
+    ],
+    relations: [
+      { title: "Elennya", text: "Il lui impose d'obéir, ce qui révèle une domination plus froide que l'alliance." },
+      { title: "Shan et Shaushana", text: "Leur réponse commune le force à reculer et montre que son regard sur les émotions est incomplet." },
+      { title: "Lumière rose", text: "La présence souterraine réagit violemment lorsqu'il approche, comme si elle reconnaissait en lui une menace étrangère." }
+    ],
+    timeline: [
+      { era: "Jour 22", title: "Apparition dans la forêt blanche", summary: "L'Alien apparaît auprès d'Elennya et impose immédiatement une pression étrangère aux règles de Pandorus." },
+      { era: "Jour 22", title: "Distorsion du combat", summary: "Il trouble l'espace et les perceptions de Shan et Shaushana avant d'être repoussé par leur réponse commune." },
+      { era: "Jour 22", title: "Retrait par les insectes", summary: "Une nuée noire l'emporte hors de la forêt blanche avant que Shan puisse comprendre son monde." }
     ]
   },
   {
@@ -448,11 +500,13 @@
       "À la taverne du Sombrail, Ezze retrouve Gil et Filston, puis aperçoit la Communauté des Papillons. Pour une fois, il ne passe pas: il reste, comme si toutes les trajectoires qu'il avait suivies convergeaient enfin.",
       "Dans la Sombra, Bichette le lit comme une présence qui ne garde pas ce qu'elle reçoit intact, mais le fait vibrer autrement. Cette reconnaissance confirme qu'Ezze n'est pas seulement rapide: il transforme déjà ce que le monde lui confie.",
       "Quand la bataille éclate enfin autour de Syne, de Jacob, des Verdeflors et des Lions-Garouh, Ezze devient l'une des présences les plus mobiles du front. Il sauve Franklin, libère Zaïnob, abat le dernier Verdeflor et porte Méli Mélo jusqu'à Bichette.",
-      "Sur la route de la Terre des Insectes, son instinct change de nature: il ne sert plus seulement à avancer vite, mais à sentir les rythmes du danger, à imposer le silence face aux Mouchards et à lire les courants de la Source Pandorielle."
+      "Sur la route de la Terre des Insectes, son instinct change de nature: il ne sert plus seulement à avancer vite, mais à sentir les rythmes du danger, à imposer le silence face aux Mouchards et à lire les courants de la Source Pandorielle.",
+      "Lorsque le territoire sépare la Communauté, Ezze se retrouve seul dans un sanctuaire de toiles. Face à Mathéo et aux araignées, il ne fuit plus le piège: il apprend à utiliser sa structure, jusqu'à épuiser son adversaire au prix du poison et du sang."
     ],
     summary: [
       "Ezze incarne la vitesse, l'intuition et la lecture instinctive d'un monde qui se dérègle.",
-      "Sa route avec la Communauté transforme son mouvement en lecture utile des seuils, des pièges et des courants."
+      "Sa route avec la Communauté transforme son mouvement en lecture utile des seuils, des pièges et des courants.",
+      "Son duel contre Mathéo montre qu'il peut retourner un piège contre celui qui l'a tissé."
     ],
     profile: [
       { title: "Caractère", text: "Vif, provocateur, curieux, difficile à fixer, mais plus sensible au monde qu'il ne le montre." },
@@ -478,7 +532,9 @@
       { era: "Jour 14", title: "Méli Mélo arrachée au pire", summary: "Après la blessure de Méli Mélo, Ezze abat le dernier Verdeflor et la porte jusqu'à Bichette." },
       { era: "Jour 18", title: "Nouvelle route vers le Creux", summary: "Quand Bichette ouvre la route du Creux, Ezze reste l'une des présences les plus naturellement accordées au mouvement qui vient." },
       { era: "Nuit du Jour 20", title: "Silence face aux Mouchards", summary: "Aux abords du territoire insecte, Ezze comprend que le moindre bruit peut trahir le groupe et impose une lecture plus silencieuse du danger." },
-      { era: "Jour 21", title: "Courants de la Source", summary: "Devant la Source Pandorielle, il lit les lignes d'eau capables de porter les radeaux vers la Terre des Insectes." }
+      { era: "Jour 21", title: "Courants de la Source", summary: "Devant la Source Pandorielle, il lit les lignes d'eau capables de porter les radeaux vers la Terre des Insectes." },
+      { era: "Jour 22", title: "Seul dans le sanctuaire arachnéen", summary: "Séparé des autres, Ezze affronte Mathéo, les toiles et le poison dans une structure entièrement faite pour le piéger." },
+      { era: "Jour 22", title: "Piège retourné", summary: "Il utilise peu à peu les toiles contre Mathéo, jusqu'à ce que les deux combattants s'effondrent d'épuisement." }
     ]
   },
   {
@@ -583,12 +639,14 @@
       "Face à Syne et à la boîte, son attitude change à peine, mais cette retenue suffit: il sait que certaines forces ne doivent pas être provoquées pour être comprises.",
       "Plus tard, il suit la route du Vert à distance, fait plier l'Aligaroi, puis réapparaît près de la tombe du Capitaine. Sa parole relance alors la marche vers la Sombra, comme s'il veillait non sur un lieu fixe, mais sur les seuils que le groupe doit traverser.",
       "Dans la Sombra, sa retenue prend une autre densité encore. Bichette révèle entre elle et Ab'Youbi un lien du sang que personne n'avait nommé jusque-là, montrant que sa veille n'était pas seulement celle d'un passage: elle touchait déjà sa propre lignée.",
-      "Quand les frelons s'abattent sur la clairière, Ab'Youbi cesse de rester au bord. Il attire leur masse jusqu'à la cime d'un arbre immense et les réduit en feu rouge, avant de choisir ensuite d'accompagner lui-même la prochaine route."
+      "Quand les frelons s'abattent sur la clairière, Ab'Youbi cesse de rester au bord. Il attire leur masse jusqu'à la cime d'un arbre immense et les réduit en feu rouge, avant de choisir ensuite d'accompagner lui-même la prochaine route.",
+      "Dans la Terre des Insectes, il affronte la guerre du canyon aux côtés de Tsune et Lévy. Sa puissance reste droite, presque silencieuse, mais la mort de Tsune allume dans ses yeux une brûlure plus lourde que le simple combat."
     ],
     summary: [
       "Ab'Youbi apporte à la taverne une veille plus obscure, plus ancienne et plus perceptive.",
       "Il confirme que ce qui revient n'a jamais vraiment disparu, mais s'est transformé, dispersé et déjà positionné sur d'autres seuils du monde.",
-      "La rencontre de la Sombra révèle aussi qu'il n'est pas extérieur à ce qu'il veille: Bichette est sa fille."
+      "La rencontre de la Sombra révèle aussi qu'il n'est pas extérieur à ce qu'il veille: Bichette est sa fille.",
+      "La mort de Tsune dans la Terre des Insectes le place devant une perte qu'il porte sans la dire."
     ],
     profile: [
       { title: "Caractère", text: "Silencieux, profond, extrêmement attentif, sans besoin de démonstration." },
@@ -616,7 +674,9 @@
       { era: "Jour 14", title: "Retrouvailles dans la Sombra", summary: "Face à Bichette et aux gardiennes, Ab'Youbi laisse apparaître un lien plus intime avec l'ouest lorsque Bichette est reconnue comme sa fille." },
       { era: "Jour 14", title: "Extinction des flammes", summary: "Quand Syne surgit et que les papillons s'altèrent, Ab'Youbi ouvre plus profondément son regard rouge et fait tomber d'un seul geste les flammes anormales." },
       { era: "Jour 14", title: "Frelons brûlés dans la cime", summary: "Au plus fort de la bataille, Ab'Youbi attire les frelons jusqu'à un arbre géant et les détruit par une poussée rouge qui inverse leur assaut." },
-      { era: "Jour 18", title: "Départ assumé vers le Creux", summary: "Après la parole de Bichette, Ab'Youbi décide de suivre lui-même la route du Creux et de la Terre des Insectes." }
+      { era: "Jour 18", title: "Départ assumé vers le Creux", summary: "Après la parole de Bichette, Ab'Youbi décide de suivre lui-même la route du Creux et de la Terre des Insectes." },
+      { era: "Jour 22", title: "Canyon des ruches noires", summary: "Avec Tsune et Lévy, Ab'Youbi traverse l'assaut de Kuji, des guêpes et des créatures revenues." },
+      { era: "Jour 22", title: "Tsune porté hors du canyon", summary: "Après la frappe mortelle de Kuji, Ab'Youbi porte Tsune dans ses bras à travers la plaine révélée." }
     ]
   },
   {
@@ -733,11 +793,13 @@
     biography: [
       "Mathéo fait partie des présences que Syne rencontre lorsqu'elle quitte la vie ordinaire pour rejoindre la Terre des Insectes. Il n'est pas présenté comme un simple passant du décor, mais comme un maillon d'un réseau déjà structuré.",
       "Autour de lui, la logique n'est plus celle de la survie immédiate ou de la veille sensible. Il s'agit d'observer, d'infecter, de préparer et de pousser le monde à céder pour qu'autre chose prenne sa place.",
-      "Son image associée à l'araignée renforce cette impression de trame, de patience et de prise progressive. Mathéo appartient moins au choc frontal qu'à la construction d'un piège plus large."
+      "Son image associée à l'araignée renforce cette impression de trame, de patience et de prise progressive. Mathéo appartient moins au choc frontal qu'à la construction d'un piège plus large.",
+      "Dans le sanctuaire arachnéen, cette nature devient concrète. Mathéo descend au milieu des toiles, dirige les araignées et tente d'épuiser Ezze par le poison, mais finit lui aussi pris dans l'effondrement de son propre terrain."
     ],
     summary: [
       "Mathéo donne au camp de Syne une profondeur organisationnelle supplémentaire.",
-      "Il inscrit la Terre des Insectes dans une logique de réseau, de patience et de préparation hostile."
+      "Il inscrit la Terre des Insectes dans une logique de réseau, de patience et de préparation hostile.",
+      "Son affrontement avec Ezze révèle une proximité trouble entre deux êtres rapides, tenaces et difficiles à tuer."
     ],
     profile: [
       { title: "Caractère", text: "Patient, structuré, plus tisseur que chargeur." },
@@ -752,7 +814,9 @@
     timeline: [
       { era: "Avant le récit", title: "Présence de la Terre des Insectes", summary: "Mathéo apparaît dans le réseau que Syne rejoint après son exil avec Jacob." },
       { era: "Avant le récit", title: "Logique de préparation", summary: "Il participe à une ligne où l'on observe, infiltre et prépare la rupture plutôt qu'on ne la subit." },
-      { era: "Lecture d'ensemble", title: "Camp de Syne élargi", summary: "Sa simple existence montre que Syne n'agit pas seule mais dans un ensemble déjà structuré." }
+      { era: "Lecture d'ensemble", title: "Camp de Syne élargi", summary: "Sa simple existence montre que Syne n'agit pas seule mais dans un ensemble déjà structuré." },
+      { era: "Jour 22", title: "Sanctuaire arachnéen", summary: "Mathéo isole Ezze dans un territoire de toiles, d'araignées et de poison." },
+      { era: "Jour 22", title: "Effondrement du piège", summary: "Ezze retourne progressivement les toiles contre lui, jusqu'à ce que les deux combattants s'écroulent." }
     ]
   },
   {
@@ -770,11 +834,13 @@
     biography: [
       "Cendr'oïde apparaît dans le sillage de Syne lorsque le chapitre 26 élargit enfin le réseau qui entoure la Terre des Insectes. Son nom, sa silhouette et sa place suggèrent une présence moins animale que recomposée, plus tenue que spontanée.",
       "Là où Bouldouger pèse par la rupture et où d'autres figures avancent par le choc, Cendr'oïde relève plutôt d'une logique plus froide : maintien du plan, relais du camp, progression de l'altération sans bruit inutile.",
-      "Sa présence suffit à montrer que la ligne ennemie n'est pas faite d'un seul type de force. Elle combine charge, patience, infection, observation et recomposition."
+      "Sa présence suffit à montrer que la ligne ennemie n'est pas faite d'un seul type de force. Elle combine charge, patience, infection, observation et recomposition.",
+      "Dans les structures mécaniques englouties de la Terre des Insectes, Cendr'oïde révèle sa fonction la plus froide: calculer, neutraliser, adapter le combat sans colère. Il arrache le bras d'O'Sama avant d'être brisé par la rage du géant."
     ],
     summary: [
       "Cendr'oïde apporte au camp de Syne une couleur plus froide et plus construite.",
-      "Il élargit la menace au-delà de la seule brutalité, vers une logique de remplacement silencieux."
+      "Il élargit la menace au-delà de la seule brutalité, vers une logique de remplacement silencieux.",
+      "Son combat contre O'Sama et Bella montre qu'une menace mécanique peut provoquer une réponse profondément émotionnelle."
     ],
     profile: [
       { title: "Caractère", text: "Froid, tenu, peu démonstratif, inscrit dans la continuité d'un plan." },
@@ -789,7 +855,9 @@
     timeline: [
       { era: "Avant le récit", title: "Présence du réseau", summary: "Cendr'oïde fait partie des figures rencontrées par Syne dans la Terre des Insectes." },
       { era: "Avant le récit", title: "Préparation hostile", summary: "Il s'inscrit dans une ligne qui observe, prépare et accompagne les ruptures du monde." },
-      { era: "Lecture d'ensemble", title: "Menace méthodique", summary: "Sa présence montre que le camp adverse sait aussi avancer par discipline et recomposition, pas seulement par violence." }
+      { era: "Lecture d'ensemble", title: "Menace méthodique", summary: "Sa présence montre que le camp adverse sait aussi avancer par discipline et recomposition, pas seulement par violence." },
+      { era: "Jour 22", title: "Duel mécanique", summary: "Cendr'oïde affronte O'Sama et Bella dans des ruines métalliques englouties." },
+      { era: "Jour 22", title: "Bras d'O'Sama arraché", summary: "Il mutile O'Sama et projette Bella, avant d'être écrasé par une rage qu'il n'avait pas calculée." }
     ]
   },
   {
@@ -1001,11 +1069,13 @@
     biography: [
       "Le Capitaine prononce son nom avant même son retour, comme s'il ne décrivait pas une créature quelconque, mais l'une des présences précises qui ont structuré sa captivité. Bouldouger appartient ainsi moins au registre du monstre anonyme qu'à celui des forces identifiées du conflit.",
       "Quand il reparaît dans les ruines du Vert, sa brutalité vise des cibles claires et agit dans une logique d'assaut. Il ne surgit pas comme un simple prédateur en chasse, mais comme une pièce lourde d'une guerre qui reprend autour du groupe.",
-      "Sa présence aux côtés de Nogard et des autres forces relance brutalement le récit vers un affrontement ouvert. Même lorsqu'il disparaît sous les toiles, le geste ressemble davantage à un retrait orchestré qu'à une défaite animale ordinaire."
+      "Sa présence aux côtés de Nogard et des autres forces relance brutalement le récit vers un affrontement ouvert. Même lorsqu'il disparaît sous les toiles, le geste ressemble davantage à un retrait orchestré qu'à une défaite animale ordinaire.",
+      "Dans la Terre des Insectes, Bouldouger réapparaît au milieu d'un ancien campement dévoré. Sa cruauté rouvre la mémoire du Capitaine chez Franklin, mais provoque aussi la transformation prédatrice de Balak'Oss, qui finit par le tuer."
     ],
     summary: [
       "Bouldouger marque le passage entre la découverte du Capitaine et la guerre immédiate des ruines du Vert.",
-      "Il agit comme une force nommée et reconnue du conflit, pas comme une simple créature isolée du bestiaire."
+      "Il agit comme une force nommée et reconnue du conflit, pas comme une simple créature isolée du bestiaire.",
+      "Sa mort face à Balak'Oss transforme sa brutalité en révélateur d'une sauvagerie alliée jusque-là enfouie."
     ],
     profile: [
       { title: "Caractère", text: "Massif, frontal, destructeur, mais inscrit dans une logique de guerre plus que dans une simple faim animale." },
@@ -1020,7 +1090,9 @@
     timeline: [
       { era: "Fin du Jour 12", title: "Nom révélé", summary: "Le Capitaine révèle que Bouldouger fait partie des forces revenues autour des ruines du Vert." },
       { era: "Nuit du Jour 12", title: "Assaut des ruines", summary: "Bouldouger revient avec Nogard et les forces d'assaut pour écraser le groupe autour du Capitaine." },
-      { era: "Nuit du Jour 12", title: "Retrait sous les toiles", summary: "Au plus fort du combat, il disparaît dans une reprise de toiles et d'araignées, comme s'il était récupéré plutôt que simplement repoussé." }
+      { era: "Nuit du Jour 12", title: "Retrait sous les toiles", summary: "Au plus fort du combat, il disparaît dans une reprise de toiles et d'araignées, comme s'il était récupéré plutôt que simplement repoussé." },
+      { era: "Jour 22", title: "Ancien campement", summary: "Bouldouger affronte Franklin et Balak'Oss au milieu de ruines chargées de fumée, de chaînes et de souvenirs humains." },
+      { era: "Jour 22", title: "Tué par Balak'Oss transformé", summary: "La forme prédatrice de Balak'Oss le renverse et l'ouvre au terme d'un combat qui détruit le campement." }
     ]
   },
   {
@@ -1251,11 +1323,13 @@
     biography: [
       "Bichette ne le présente pas comme un simple ennemi de passage. Insect Master appartenait d'abord à la logique des grands créateurs, capables de maintenir l'équilibre d'un territoire vivant.",
       "Quelque chose s'est pourtant rompu dans sa lecture. Les papillons lui apparaissent comme trop fragiles, trop légers, presque impropres à tenir un monde blessé. À partir de là, sa réponse ne cherche plus à accompagner le vivant mais à le remodeler.",
-      "Derrière Syne, Jacob, Mathéo, Cendr'oïde, Bouldouger, Nogard et Barbo, Insect Master devient ainsi la première grande intelligence nommée d'un réseau hostile déjà vaste."
+      "Derrière Syne, Jacob, Mathéo, Cendr'oïde, Bouldouger, Nogard et Barbo, Insect Master devient ainsi la première grande intelligence nommée d'un réseau hostile déjà vaste.",
+      "Lorsque la Terre des Insectes s'effondre sous les pulsations de la lumière rose, il se montre enfin au-dessus de la plaine révélée. Sa présence calme, entourée d'insectes qui n'osent pas l'approcher, donne au conflit son prochain centre direct."
     ],
     summary: [
       "Insect Master donne enfin un visage plus haut au camp adverse.",
-      "Il transforme la Terre des Insectes en foyer idéologique du dérèglement."
+      "Il transforme la Terre des Insectes en foyer idéologique du dérèglement.",
+      "Son apparition devant les survivants marque le passage de l'épreuve territoriale au face-à-face avec le maître du lieu."
     ],
     profile: [
       { title: "Nature", text: "Ancien créateur devenu maître d'un réagencement hostile du vivant." },
@@ -1270,7 +1344,8 @@
     timeline: [
       { era: "Avant le récit", title: "Créateur de la Terre des Insectes", summary: "Insect Master maintenait autrefois l'équilibre de son territoire comme l'un des grands créateurs." },
       { era: "Avant le récit", title: "Bascule contre les papillons", summary: "Sa lecture du monde se détourne de la fragilité des papillons et s'oriente vers une logique plus dure de remodelage." },
-      { era: "Jour 18", title: "Nom enfin donné", summary: "Bichette nomme Insect Master comme source probable du réseau qui agit derrière Syne et le Parasite." }
+      { era: "Jour 18", title: "Nom enfin donné", summary: "Bichette nomme Insect Master comme source probable du réseau qui agit derrière Syne et le Parasite." },
+      { era: "Jour 22", title: "Apparition sur la plaine", summary: "Après l'effondrement du territoire, Insect Master apparaît enfin face aux survivants avec Syne, Jacob et Elennya." }
     ]
   },
   {
@@ -1311,6 +1386,10 @@
     hash: "#fiches-o-sama",
     name: "O'Sama",
     image: buildMediaPath("pandorus", "O'Sama.jpg"),
+    images: [
+      { src: buildMediaPath("pandorus", "O'Sama.jpg"), alt: "O'Sama", caption: "O'Sama" },
+      { src: buildMediaPath("pandorus", "O'sama bras coupé.png"), alt: "O'Sama bras coupé", caption: "O'Sama blessé" }
+    ],
     category: "Veilleur du Creux",
     intro: "O'Sama est le cœur protecteur du Creux : un géant doux, marqué par l'ancienne guerre, capable de lire les cœurs grâce à une bague vivante et de protéger sans jamais réduire un être à son apparence.",
     meta: [
@@ -1324,11 +1403,13 @@
       "Après la guerre, O'Sama reconstruit le Creux maison après maison, soigne les créatures, ramène les Eléphantaupes, les Corbec et les Oursarune vers le village, puis devient sans le chercher le centre moral du refuge.",
       "Il sauve Bella d'un clan qui l'avait convaincue que les faibles devaient souffrir, lui offre une autre loi du vivant, puis construit avec elle un foyer. Plus tard, il accueille Balak'Oss, voyageur aux yeux blancs, et trouve en lui une autre manière de lire le monde.",
       "Lorsque les dérèglements se multiplient, O'Sama enquête avec Balak'Oss et comprend peu à peu que la Terre des Insectes est liée aux parasites et aux altérations. Prévenu par Bichette, il attend finalement la Communauté des Papillons au fond du Creux.",
-      "Après avoir offert au groupe le repos du refuge, il reprend lui-même la route. Sa force devient alors un rempart direct face aux créatures insectes, puis un appui concret pour construire les radeaux de la Source Pandorielle."
+      "Après avoir offert au groupe le repos du refuge, il reprend lui-même la route. Sa force devient alors un rempart direct face aux créatures insectes, puis un appui concret pour construire les radeaux de la Source Pandorielle.",
+      "Dans la Terre des Insectes, il combat avec Bella comme dans une danse ancienne, jusqu'à ce que Cendr'oïde lui arrache un bras. La peur de perdre Bella fait basculer sa douceur en rage pure, mais son premier geste après la victoire reste de revenir vers elle."
     ],
     summary: [
       "O'Sama donne au Creux son cœur, sa force et sa loi de protection.",
-      "Sa bague transforme sa puissance en lecture intime du vivant, ce qui fait de lui un allié essentiel contre le dérèglement."
+      "Sa bague transforme sa puissance en lecture intime du vivant, ce qui fait de lui un allié essentiel contre le dérèglement.",
+      "Sa blessure face à Cendr'oïde révèle une puissance plus tragique: même mutilé, il reste d'abord protecteur."
     ],
     profile: [
       { title: "Caractère", text: "Immense, calme, protecteur, profondément juste, incapable de confondre faiblesse et absence de valeur." },
@@ -1350,7 +1431,9 @@
       { era: "Avant le Jour 19", title: "Enquête sur les dérèglements", summary: "Avec Balak'Oss, O'Sama relie les anomalies, les parasites et les insectes à la Terre des Insectes." },
       { era: "Jour 19", title: "Accueil du groupe", summary: "Prévenu par Bichette, O'Sama attend la Communauté des Papillons devant son foyer et lit les cœurs qui arrivent." },
       { era: "Jour 20", title: "Départ avec la Communauté", summary: "Il quitte le Creux avec Bella et Balak'Oss pour guider le groupe vers la Terre des Insectes." },
-      { era: "Jour 21", title: "Rempart contre les Dardaignées", summary: "Face aux créatures insectes, O'Sama encaisse, bloque et protège la progression par sa puissance calme." }
+      { era: "Jour 21", title: "Rempart contre les Dardaignées", summary: "Face aux créatures insectes, O'Sama encaisse, bloque et protège la progression par sa puissance calme." },
+      { era: "Jour 22", title: "Bras arraché par Cendr'oïde", summary: "Dans les ruines mécaniques de la Terre des Insectes, Cendr'oïde lui arrache un bras avant de viser Bella." },
+      { era: "Jour 22", title: "Rage protectrice", summary: "Croyant Bella morte, O'Sama brise Cendr'oïde dans une fureur monstrueuse puis revient aussitôt vers elle." }
     ]
   },
   {
@@ -1370,11 +1453,13 @@
       "O'Sama envoie des Eléphantaupes la chercher et l'accueille au Creux sans lui imposer une nouvelle vie par la force. Là, personne ne la frappe, personne ne la rabaisse, et Bella apprend lentement qu'un être peut exister autrement que sous la loi du plus fort.",
       "Elle devient ensuite indispensable au village. Elle prend des nouvelles, aide les familles, écoute les malades, accompagne les enfants et les anciens, jusqu'à devenir une présence vers laquelle les habitants se tournent naturellement.",
       "Avec O'Sama, son lien se transforme en foyer. Bella n'est pas définie par la violence qu'elle a subie, mais par ce qu'elle reconstruit: une douceur lucide, capable de voir la fatigue du groupe dès son arrivée.",
-      "Quand la route reprend, sa douceur ne disparaît pas derrière le combat. Elle soigne, observe, coupe avec précision quand il le faut et prépare les liens des radeaux avec la même attention qu'elle met à tenir un foyer."
+      "Quand la route reprend, sa douceur ne disparaît pas derrière le combat. Elle soigne, observe, coupe avec précision quand il le faut et prépare les liens des radeaux avec la même attention qu'elle met à tenir un foyer.",
+      "Face à Cendr'oïde, Bella révèle l'autre forme de son lien avec O'Sama: une coordination de combat presque dansée. Projetée et laissée immobile, elle survit assez pour ramener O'Sama à lui par une phrase simple, tendre et impossible à remplacer."
     ],
     summary: [
       "Bella donne au Creux sa chaleur la plus humaine.",
-      "Elle incarne une force discrète : celle de survivre à une loi injuste sans la reproduire."
+      "Elle incarne une force discrète : celle de survivre à une loi injuste sans la reproduire.",
+      "Dans la Terre des Insectes, sa survie garde O'Sama du gouffre où la rage aurait pu l'engloutir."
     ],
     profile: [
       { title: "Caractère", text: "Douce, attentive, intelligente, marquée par la souffrance mais tournée vers le soin." },
@@ -1393,7 +1478,9 @@
       { era: "Avant le Jour 19", title: "Foyer avec O'Sama", summary: "Au fil des années, elle devient la femme d'O'Sama et l'une des figures centrales du Creux." },
       { era: "Jour 19", title: "Accueil de la Communauté", summary: "Elle accueille le groupe avec une chaleur simple qui apaise immédiatement la fatigue de la route." },
       { era: "Jour 20", title: "Veille sur les corps fatigués", summary: "Au départ du Creux, Bella accompagne le groupe en gardant son attention sur les blessures, les silences et les gestes utiles." },
-      { era: "Jour 21", title: "Précision au combat", summary: "Face aux insectes, elle vise les articulations et prouve que sa force tient autant à la précision qu'à la douceur." }
+      { era: "Jour 21", title: "Précision au combat", summary: "Face aux insectes, elle vise les articulations et prouve que sa force tient autant à la précision qu'à la douceur." },
+      { era: "Jour 22", title: "Ballet avec O'Sama", summary: "Dans les ruines mécaniques, Bella combat autour d'O'Sama avec une précision née de leur longue confiance." },
+      { era: "Jour 22", title: "Survie au milieu des ruines", summary: "Projetée par Cendr'oïde, elle rouvre les yeux et ramène O'Sama à la tendresse malgré la mutilation." }
     ]
   },
   {
@@ -1401,6 +1488,10 @@
     hash: "#fiches-balak-oss",
     name: "Balak'Oss",
     image: buildMediaPath("pandorus", "Balak'Oss.jpg"),
+    images: [
+      { src: buildMediaPath("pandorus", "Balak'Oss.jpg"), alt: "Balak'Oss", caption: "Balak'Oss" },
+      { src: buildMediaPath("pandorus", "Balak'Oss Transformé.png"), alt: "Balak'Oss transformé", caption: "Balak'Oss transformé" }
+    ],
     category: "Voyageur du Creux",
     intro: "Balak'Oss est le voyageur aux yeux blancs du Creux. Curieux, impossible à saisir tout à fait, il relie les terres par ses récits et repère avant beaucoup d'autres les dérèglements qui montent.",
     meta: [
@@ -1413,11 +1504,13 @@
       "Le soir de son arrivée, il parle plus qu'à son habitude et mêle ses récits de routes aux souvenirs d'O'Sama. Quelque chose naît alors entre eux: Balak'Oss voit le monde, O'Sama le protège, et tous deux respectent le vivant.",
       "Balak'Oss repart souvent, revient toujours, et finit par considérer le Creux comme son point fixe. Ses récits changent pourtant avec les années: insectes devenus agressifs, espèces paisibles modifiées, végétations mortes puis repoussées autrement.",
       "Avec O'Sama, il enquête alors sur les anomalies et comprend que la Terre des Insectes revient trop souvent autour des zones instables. Quand la Communauté arrive enfin, son surgissement entre Shan et Shaushana rappelle qu'il garde une manière d'entrer dans le monde par surprise.",
-      "Sur la route, son humour devient une arme douce contre la tension, mais il sait aussi se taire quand le territoire écoute. Il tire les troncs, frappe avec les racines et transforme son étrangeté en appui solide."
+      "Sur la route, son humour devient une arme douce contre la tension, mais il sait aussi se taire quand le territoire écoute. Il tire les troncs, frappe avec les racines et transforme son étrangeté en appui solide.",
+      "Lorsque Bouldouger brise Franklin et réveille le souvenir du Capitaine, Balak'Oss laisse surgir une forme prédatrice immense, sombre et sauvage. Cette transformation sauve Franklin et tue Bouldouger, mais elle révèle aussi une rage capable de le dévorer lui-même."
     ],
     summary: [
       "Balak'Oss est la mémoire mobile du Creux.",
-      "Ses voyages transforment les signes dispersés du monde en piste vers la Terre des Insectes."
+      "Ses voyages transforment les signes dispersés du monde en piste vers la Terre des Insectes.",
+      "Sa transformation dans les ruines montre qu'il porte une force plus ancienne et plus dangereuse que son humour ne le laissait croire."
     ],
     profile: [
       { title: "Caractère", text: "Curieux, imprévisible, très jeune en apparence mais chargé de routes et d'observations." },
@@ -1435,7 +1528,10 @@
       { era: "Avant le Jour 19", title: "Anomalies reliées", summary: "Ses observations sur les insectes, les parasites et les comportements altérés aident O'Sama à soupçonner la Terre des Insectes." },
       { era: "Jour 19", title: "Apparition entre Shan et Shaushana", summary: "Lorsque le groupe arrive, Balak'Oss surgit sans bruit entre eux et se présente avec une légèreté presque déconcertante." },
       { era: "Jour 20", title: "Tension allégée", summary: "Au Creux puis sur la route, son humour relâche la peur sans nier le danger qui approche." },
-      { era: "Jour 21", title: "Force au seuil", summary: "Face aux créatures insectes et aux radeaux de la Source Pandorielle, Balak'Oss devient un appui physique autant qu'un éclaireur." }
+      { era: "Jour 21", title: "Force au seuil", summary: "Face aux créatures insectes et aux radeaux de la Source Pandorielle, Balak'Oss devient un appui physique autant qu'un éclaireur." },
+      { era: "Jour 22", title: "Protection de Franklin", summary: "Séparé avec Franklin, Balak'Oss l'arrache plusieurs fois aux coups de Bouldouger dans un ancien campement détruit." },
+      { era: "Jour 22", title: "Transformation prédatrice", summary: "Sous la pression de Bouldouger, son corps bascule en une forme sauvage immense qui renverse le combat." },
+      { era: "Jour 22", title: "Bouldouger abattu", summary: "Balak'Oss tue Bouldouger puis redevient lui-même, vidé, endormi contre Franklin." }
     ]
   }
   ];

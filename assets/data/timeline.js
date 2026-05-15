@@ -630,6 +630,61 @@
     summary: "Avant l'aube, les radeaux suivent les courants de la Source Pandorielle jusqu'à une rive sans chant ni vent, où le sol vibre comme une respiration souterraine."
   },
   {
+    era: "Jour 22",
+    title: "Marche sous surveillance",
+    summary: "La Communauté s'enfonce dans une Terre des Insectes faite de galeries, de toiles, d'alvéoles et de petits observateurs qui suivent chacun de ses pas."
+  },
+  {
+    era: "Jour 22",
+    title: "La lumière rose appelle sous les racines",
+    summary: "Lévy et Shaushana perçoivent une présence rose, épuisée mais vivante, qui tente de remonter sous le territoire sans être de nature insecte."
+  },
+  {
+    era: "Jour 22",
+    title: "Le nid réveille les nuées",
+    summary: "Dans un nid organique immense, la lumière rose provoque la réaction du réseau insecte; une voix inconnue les prévient avant que les nuées ne se déchaînent."
+  },
+  {
+    era: "Jour 22",
+    title: "La Communauté est séparée",
+    summary: "La Terre des Insectes engloutit les passages et isole les groupes: O'Sama avec Bella, Shan avec Shaushana, Balak'Oss avec Franklin, Tsune avec Lévy et Ab'Youbi, puis Ezze seul."
+  },
+  {
+    era: "Jour 22",
+    title: "Shan et Shaushana affrontent Elennya et l'Alien",
+    summary: "Dans une forêt blanche, Shan et Shaushana comprennent qu'Elennya combat sous contrainte et repoussent l'être venu d'ailleurs, dont le corps semble obéir à d'autres règles que Pandorus."
+  },
+  {
+    era: "Jour 22",
+    title: "O'Sama perd un bras face à Cendr'oïde",
+    summary: "Au milieu de structures mécaniques englouties, Cendr'oïde arrache le bras d'O'Sama et projette Bella, avant que la rage du chef du Creux ne le brise."
+  },
+  {
+    era: "Jour 22",
+    title: "Balak'Oss se transforme contre Bouldouger",
+    summary: "Pour protéger Franklin dans un ancien campement dévoré, Balak'Oss laisse surgir une forme prédatrice immense et tue Bouldouger après un combat ravageur."
+  },
+  {
+    era: "Jour 22",
+    title: "Tsune abat Kuji puis tombe",
+    summary: "Dans un canyon de ruches noires, Tsune, Lévy et Ab'Youbi détruisent les créatures de Kuji; mais Kuji survit assez pour transpercer Tsune avant de disparaître avec les guêpes."
+  },
+  {
+    era: "Jour 22",
+    title: "Ezze et Mathéo s'épuisent dans le sanctuaire arachnéen",
+    summary: "Pris dans les toiles et le poison, Ezze retourne peu à peu le piège de Mathéo contre lui jusqu'à ce que les deux combattants s'effondrent."
+  },
+  {
+    era: "Jour 22",
+    title: "La lumière rose fait tomber la Terre des Insectes",
+    summary: "Le territoire s'effondre vers les profondeurs tandis que la lumière rose apaise les vibrations et révèle une vaste plaine où les survivants réapparaissent."
+  },
+  {
+    era: "Jour 22",
+    title: "Insect Master apparaît devant les survivants",
+    summary: "Au-dessus de la plaine, Insect Master se montre enfin avec Syne, Jacob et Elennya, face à un groupe blessé, changé et endeuillé."
+  },
+  {
     order: 1500,
     era: "Après l'ancienne guerre",
     title: "O'Sama protège puis reconstruit le Creux",

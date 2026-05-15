@@ -329,6 +329,10 @@ const characterRouteMap = {
   javier: "#fiches-javier",
   kuji: "#fiches-kuji",
   elennya: "#fiches-elennya",
+  lalien: "#fiches-lalien",
+  "l-alien": "#fiches-lalien",
+  "l'alien": "#fiches-lalien",
+  alien: "#fiches-lalien",
   ezze: "#fiches-ezze",
   "gil-et-filston": "#fiches-gil-et-filston",
   gil: "#fiches-gil-et-filston",
@@ -542,6 +546,11 @@ const additionalFicheContextMap = {
     { href: "#relations", label: "Voir ses liens" },
     { href: "#mysteres", label: "Ouvrir les nouveaux mystères" },
     { href: "#lieux-embouchure-du-sombrail", label: "Voir la prochaine direction" }
+  ],
+  lalien: [
+    { href: "#fiches-elennya", label: "Voir Elennya" },
+    { href: "#lieux-terre-des-insectes", label: "Voir la Terre des Insectes" },
+    { href: "#chronologie", label: "Lire l'affrontement" }
   ],
   ezze: [
     { href: "#relations", label: "Voir ses liens" },
@@ -828,6 +837,7 @@ const pandorusImageFiles = [
   "AbYoubi.png",
   "Balade.jpg",
   "Balak'Oss.jpg",
+  "Balak'Oss Transformé.png",
   "Barbo.png",
   "Bella.jpg",
   "Bichette.png",
@@ -893,6 +903,7 @@ const pandorusImageFiles = [
   "Nastaz.png",
   "Nogard.jpg",
   "O'Sama.jpg",
+  "O'sama bras coupé.png",
   "Ossah Lyla.png",
   "Padre Souf.png",
   "Harry PY.png",
@@ -1187,7 +1198,8 @@ const relationNodes = [
       { target: "Javier", type: "Veille commune", description: "Tsune et Javier tiennent le village par des formes de vigilance complementaires, l'une mobile, l'autre perceptive." },
       { target: "Harry PY", type: "Reconnaissance", description: "Harry PY identifie en Tsune une force de terrain deja capable de porter une part de la reponse hors du Vrax." },
       { target: "Shaushana", type: "Confiance neuve", description: "Tsune accepte rapidement l'equilibre que Shaushana apporte au groupe et s'y associe sans besoin de longues paroles." },
-      { target: "Kuji", type: "Ennemi direct", description: "Tsune affronte Kuji au coeur meme de son village et ne transforme plus ensuite sa douleur qu'en direction." }
+      { target: "Kuji", type: "Ennemi direct", description: "Tsune affronte Kuji au coeur meme de son village puis dans la Terre des Insectes, où leur opposition se paie par sa mort." },
+      { target: "Lévy", type: "Dernier témoin", description: "Lévy est l'un de ceux qui restent auprès de Tsune lorsque la dernière frappe de Kuji transforme la revanche en deuil." }
     ]
   },
   {
@@ -1216,7 +1228,7 @@ const relationNodes = [
     links: [
       { target: "Elennya", type: "Alliance trouble", description: "Kuji agit avec Elennya dans une logique commune: pousser le vivant vers une autre forme, plus contrôlée, plus dure." },
       { target: "Hez", type: "Mise a mort", description: "En tuant Hez au centre du combat, Kuji impose un point de non-retour au village et au groupe." },
-      { target: "Tsune", type: "Opposition intime", description: "Tsune voit en Kuji la source directe de la perte qui frappe son village et de la direction qu'il doit désormais suivre." },
+      { target: "Tsune", type: "Opposition intime", description: "Tsune voit en Kuji la source directe de la perte qui frappe son village, jusqu'au combat final où Kuji le tue après avoir semblé vaincu." },
       { target: "Shaushana", type: "Opposition de principe", description: "Face a Shaushana, Kuji porte une lecture du monde qui nie la respiration libre du vivant au profit d'un ordre impose." },
       { target: "Harry PY", type: "Preuve du dessein", description: "Pour Harry PY, Kuji confirme qu'une volonté organisée dirige les attaques et les altérations du monde." }
     ]
@@ -1228,7 +1240,18 @@ const relationNodes = [
       { target: "Kuji", type: "Complément", description: "Elennya complete Kuji par une puissance plus insidieuse, plus froide et plus deformante." },
       { target: "Tsune", type: "Entrave", description: "Elle ralentit, enferme et empêche Tsune d'intervenir a temps lorsque le combat bascule." },
       { target: "Javier", type: "Contre-veillée", description: "Les déformations qu'elle impose a l'espace brisent même la precision de Javier." },
-      { target: "Shan", type: "Menace nouvelle", description: "Shan comprend avec Elennya qu'il existe des puissances qui cassent l'action avant meme le choc frontal." }
+      { target: "Shan", type: "Menace nouvelle", description: "Shan comprend avec Elennya qu'il existe des puissances qui cassent l'action avant meme le choc frontal." },
+      { target: "L'Alien", type: "Contrôle subi", description: "Dans la forêt blanche, Elennya obéit à l'Alien sans adhésion réelle et laisse voir une faille dans le camp adverse." }
+    ]
+  },
+  {
+    name: "L'Alien",
+    role: "Être venu d'ailleurs",
+    links: [
+      { target: "Elennya", type: "Domination", description: "L'Alien impose à Elennya une obéissance froide qui révèle qu'elle n'agit pas seulement par choix." },
+      { target: "Shan", type: "Opposition de perception", description: "Face à Shan, il tente de plier l'espace et l'esprit, mais découvre une résistance portée par l'attachement." },
+      { target: "Shaushana", type: "Anomalie observée", description: "Il la regarde comme un objet d'étude, sans comprendre que son lien au vivant excède sa logique." },
+      { target: "Lumière rose", type: "Réaction souterraine", description: "La présence enfouie réagit fortement à son approche, comme si elle reconnaissait une menace venue d'ailleurs." }
     ]
   },
   {
@@ -1237,7 +1260,8 @@ const relationNodes = [
     links: [
       { target: "Gil et Filston", type: "Rencontre décisive", description: "Gil et Filston obligent Ezze à rester face à une question plus grande que sa vitesse habituelle." },
       { target: "Taverne du Sombrail", type: "Point d'arrêt", description: "La taverne devient le premier lieu où Ezze choisit vraiment de rester." },
-      { target: "Shaushana", type: "Reconnaissance silencieuse", description: "En entrant dans la taverne, Ezze repère la Communauté des Papillons comme une anomalie majeure et sent que Shaushana y tient une place centrale." }
+      { target: "Shaushana", type: "Reconnaissance silencieuse", description: "En entrant dans la taverne, Ezze repère la Communauté des Papillons comme une anomalie majeure et sent que Shaushana y tient une place centrale." },
+      { target: "Mathéo", type: "Duel de piège", description: "Dans le sanctuaire arachnéen, Ezze et Mathéo se répondent par vitesse, poison, toiles et endurance jusqu'à l'épuisement." }
     ]
   },
   {
@@ -1297,7 +1321,8 @@ const relationNodes = [
     links: [
       { target: "Syne", type: "Intégration", description: "Mathéo fait partie des premières présences que Syne rejoint lorsqu'elle quitte son ancienne vie pour entrer dans un réseau d'observation et de remplacement." },
       { target: "Bouldouger", type: "Même front", description: "Mathéo et Bouldouger appartiennent à la même ligne d'êtres chargés de préparer, infecter et accompagner les ruptures." },
-      { target: "Cendr'oïde", type: "Convergence", description: "Avec Cendr'oïde, il compose l'une des figures latérales du groupe qui gravite autour de Syne et de la Terre des Insectes." }
+      { target: "Cendr'oïde", type: "Convergence", description: "Avec Cendr'oïde, il compose l'une des figures latérales du groupe qui gravite autour de Syne et de la Terre des Insectes." },
+      { target: "Ezze", type: "Duel arachnéen", description: "Mathéo piège Ezze dans son sanctuaire de toiles, mais finit lui aussi entraîné dans l'épuisement du combat." }
     ]
   },
   {
@@ -1306,7 +1331,9 @@ const relationNodes = [
     links: [
       { target: "Syne", type: "Même dessein", description: "Cendr'oïde fait partie du même réseau que Syne et partage une logique de préparation silencieuse plutôt qu'une violence immédiatement démonstrative." },
       { target: "Mathéo", type: "Ligne commune", description: "Tous deux apparaissent comme des figures du même ensemble hostile issu de la Terre des Insectes." },
-      { target: "Bouldouger", type: "Complément de force", description: "Là où Bouldouger incarne la percussion, Cendr'oïde relève d'une présence plus froide, plus tenue et plus programmatique." }
+      { target: "Bouldouger", type: "Complément de force", description: "Là où Bouldouger incarne la percussion, Cendr'oïde relève d'une présence plus froide, plus tenue et plus programmatique." },
+      { target: "O'Sama", type: "Mutilation", description: "Cendr'oïde arrache le bras d'O'Sama et révèle la limite de son calcul face à une rage née de l'amour." },
+      { target: "Bella", type: "Cible secondaire", description: "En projetant Bella, il déclenche chez O'Sama une fureur que sa logique mécanique ne peut plus contenir." }
     ]
   },
   {
@@ -1394,7 +1421,8 @@ const relationNodes = [
       { target: "Terre des Insectes", type: "Règne", description: "Insect Master règne sur la Terre des Insectes et en maintenait autrefois l'équilibre avant de basculer vers une logique de remodelage." },
       { target: "Syne", type: "Maître supposé", description: "Bichette pense que le maître de Syne n'est autre qu'Insect Master lui-même, derrière la logique des parasites et des infiltrations." },
       { target: "Papillons", type: "Mépris ancien", description: "Il ne comprenait pas la place décisive des papillons, qu'il jugeait trop fragiles pour tenir un rôle majeur dans l'équilibre du monde." },
-      { target: "Barbo", type: "Hiérarchie obscure", description: "Autour d'Insect Master gravitent déjà des figures plus étranges encore, comme Barbo, signes d'une architecture hostile plus haute et plus vaste." }
+      { target: "Barbo", type: "Hiérarchie obscure", description: "Autour d'Insect Master gravitent déjà des figures plus étranges encore, comme Barbo, signes d'une architecture hostile plus haute et plus vaste." },
+      { target: "Lumière rose", type: "Territoire contesté", description: "L'effondrement de la Terre des Insectes montre qu'une présence enfouie échappe à sa maîtrise complète du lieu." }
     ]
   },
   {
@@ -1412,7 +1440,8 @@ const relationNodes = [
     links: [
       { target: "Bella", type: "Compagne", description: "O'Sama et Bella appartiennent au même noyau de veille du Creux, capable d'observer les dérèglements depuis les profondeurs." },
       { target: "Balak'Oss", type: "Allié", description: "Avec Balak'Oss, ils forment le trio que Bichette désigne comme prochaine ressource avant la Terre des Insectes." },
-      { target: "Creux", type: "Ancrage", description: "Le Creux est leur terre, sombre et profonde, d'où ils perçoivent depuis longtemps la progression des parasites et des altérations." }
+      { target: "Creux", type: "Ancrage", description: "Le Creux est leur terre, sombre et profonde, d'où ils perçoivent depuis longtemps la progression des parasites et des altérations." },
+      { target: "Cendr'oïde", type: "Bras perdu", description: "Cendr'oïde mutile O'Sama, mais provoque aussi la rage qui le brise." }
     ]
   },
   {
@@ -1421,7 +1450,8 @@ const relationNodes = [
     links: [
       { target: "O'Sama", type: "Union de veille", description: "Bella partage avec O'Sama la même lecture du Creux et la même attention aux dérèglements qui y transitent." },
       { target: "Balak'Oss", type: "Alliance", description: "Le trio qu'elle forme avec O'Sama et Balak'Oss est pensé comme prochain relais concret de la route du groupe." },
-      { target: "Creux", type: "Territoire", description: "Bella appartient à ces profondeurs du Creux où la survie et la perception du mal ont pris de l'avance sur le reste du monde." }
+      { target: "Creux", type: "Territoire", description: "Bella appartient à ces profondeurs du Creux où la survie et la perception du mal ont pris de l'avance sur le reste du monde." },
+      { target: "Cendr'oïde", type: "Survie", description: "La frappe de Cendr'oïde la laisse presque immobile, mais sa survie ramène O'Sama à lui." }
     ]
   },
   {
@@ -1430,7 +1460,9 @@ const relationNodes = [
     links: [
       { target: "O'Sama", type: "Compagnon de route", description: "Balak'Oss complète avec O'Sama et Bella la ligne du Creux que le groupe doit désormais rejoindre." },
       { target: "Bella", type: "Alliance de veille", description: "Leur lien s'inscrit dans une même compréhension des dérèglements et des zones déjà touchées." },
-      { target: "Creux", type: "Parcours", description: "Balak'Oss appartient à un territoire plus mobile et plus difficile, ce qui fait de lui un appui important pour les étapes suivantes." }
+      { target: "Creux", type: "Parcours", description: "Balak'Oss appartient à un territoire plus mobile et plus difficile, ce qui fait de lui un appui important pour les étapes suivantes." },
+      { target: "Franklin", type: "Protection sauvage", description: "Face à Bouldouger, Balak'Oss se transforme pour protéger Franklin et briser la répétition de la peur du Capitaine." },
+      { target: "Bouldouger", type: "Prédateur libéré", description: "Bouldouger révèle la forme prédatrice de Balak'Oss, puis meurt sous ses griffes." }
     ]
   }
 ];
@@ -2355,6 +2387,16 @@ const chapters = [
     path: "./media/chapitres/Chapitre%2031%20-%20D%C3%A9part%20vers%20la%20Terre%20des%20Insectes.pdf",
     summary: "La Communauté quitte le Creux avec O'Sama, Bella et Balak'Oss, traverse un territoire déjà rongé par les insectes, échappe aux Mouchards, affronte Dardaignées et Poux-Religieux, puis atteint la Source Pandorielle avant d'entrer dans la Terre des Insectes.",
     accessKey: "ChapPando31"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2032%20-%20La%20Terre%20des%20insectes.pdf",
+    summary: "La Communauté s'enfonce dans la Terre des Insectes, découvre un territoire qui observe, une lumière rose prisonnière sous les racines et un nid immense qui finit par les séparer en groupes choisis.",
+    accessKey: "ChapPando32"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2033%20-%20Batailles.pdf",
+    summary: "Séparés par la Terre des Insectes, les alliés affrontent Elennya et l'Alien, Cendr'oïde, Bouldouger, Kuji et Mathéo, tandis que la lumière rose fait s'effondrer le territoire avant l'apparition d'Insect Master.",
+    accessKey: "ChapPando33"
   }
 ];
 
@@ -2420,12 +2462,30 @@ function renderAdditionalCharacterFiches() {
     panel.setAttribute("role", "tabpanel");
     panel.hidden = true;
     const contextLinks = buildContextLinksMarkup(additionalFicheContextMap[fiche.slug], "Parcours liés");
-    panel.innerHTML = `
-      <section class="section">
-        <div id="${fiche.hash.replace("#", "")}" class="fiche-grid">
+    const portraitMarkup = Array.isArray(fiche.images) && fiche.images.length
+      ? `
+          <div class="fiche-carousel" data-carousel="${fiche.slug}">
+            <div class="fiche-carousel-track">
+              ${fiche.images.map((image, index) => `
+                <figure class="fiche-carousel-slide${index === 0 ? " active" : ""}">
+                  <img src="${image.src}" alt="${image.alt || fiche.name}" loading="lazy" decoding="async">
+                  <figcaption>${image.caption || fiche.name}</figcaption>
+                </figure>
+              `).join("")}
+              <button class="fiche-carousel-button fiche-carousel-arrow fiche-carousel-arrow-left" type="button" data-carousel-prev="${fiche.slug}" aria-label="Image précédente">‹</button>
+              <button class="fiche-carousel-button fiche-carousel-arrow fiche-carousel-arrow-right" type="button" data-carousel-next="${fiche.slug}" aria-label="Image suivante">›</button>
+            </div>
+          </div>
+        `
+      : `
           <div class="fiche-portrait">
             <img src="${fiche.image}" alt="${fiche.name}">
           </div>
+        `;
+    panel.innerHTML = `
+      <section class="section">
+        <div id="${fiche.hash.replace("#", "")}" class="fiche-grid">
+          ${portraitMarkup}
           <div class="fiche-content">
             <p class="eyebrow">${fiche.category}</p>
             <h2>${fiche.name}</h2>
@@ -2862,13 +2922,6 @@ function initFicheCarousels() {
     });
 
     renderSlide(currentIndex);
-
-    if (slides.length > 1) {
-      window.setInterval(() => {
-        const nextIndex = currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
-        renderSlide(nextIndex);
-      }, 2000);
-    }
   });
 }
 
@@ -2993,6 +3046,7 @@ function renderTimeline() {
     if (normalizedEventText.includes("ARKAINS")) contextCandidates.push({ href: "#lieux-fleuve-arkains", label: "Voir le fleuve Arkains" });
     if (normalizedEventText.includes("INSECTES")) contextCandidates.push({ href: "#lieux-terre-des-insectes", label: "Voir la Terre des Insectes" });
     if (normalizedEventText.includes("TSUNE")) contextCandidates.push({ href: "#fiches-tsune", label: "Voir Tsune" });
+    if (normalizedEventText.includes("LEVY")) contextCandidates.push({ href: "#fiches-levy", label: "Voir Lévy" });
     if (normalizedEventText.includes("HEZ")) contextCandidates.push({ href: "#fiches-hez", label: "Voir Hez" });
     if (normalizedEventText.includes("JAVIER")) contextCandidates.push({ href: "#fiches-javier", label: "Voir Javier" });
     if (normalizedEventText.includes("KUJI")) contextCandidates.push({ href: "#fiches-kuji", label: "Voir Kuji" });
@@ -3009,6 +3063,8 @@ function renderTimeline() {
     if (normalizedEventText.includes("JACOB")) contextCandidates.push({ href: "#fiches-bulldozer-jacob", label: "Voir Bulldozer Jacob" });
     if (normalizedEventText.includes("MATHEO")) contextCandidates.push({ href: "#fiches-matheo", label: "Voir Mathéo" });
     if (normalizedEventText.includes("CENDR")) contextCandidates.push({ href: "#fiches-cendroide", label: "Voir Cendr'oïde" });
+    if (normalizedEventText.includes("BOULDOUGER")) contextCandidates.push({ href: "#fiches-bouldouger", label: "Voir Bouldouger" });
+    if (normalizedEventText.includes("ALIEN")) contextCandidates.push({ href: "#fiches-lalien", label: "Voir l'Alien" });
     if (normalizedEventText.includes("ZAINOB")) contextCandidates.push({ href: "#fiches-zainob", label: "Voir Zaïnob" });
     if (normalizedEventText.includes("WILL")) contextCandidates.push({ href: "#fiches-will-le-tigre-bois", label: "Voir Will le Tigre Bois" });
     if (normalizedEventText.includes("INSECT MASTER")) contextCandidates.push({ href: "#fiches-insect-master", label: "Voir Insect Master" });

@@ -428,9 +428,9 @@ export function createLocationFiches(buildMediaPath) {
     category: "Réseau hostile",
     intro: "La Terre des Insectes n'est plus seulement un nom au loin. La Communauté en atteint enfin la rive nord, après un territoire déjà rongé, surveillé et parcouru de vibrations qui donnent l'impression que le sol respire sous les pas.",
     meta: [
-      { label: "Atmosphère", value: "Silence, vibrations, surveillance, insectes coordonnés" },
-      { label: "Fonction", value: "Refuge d'exil, matrice hostile et territoire d'entrée" },
-      { label: "Présences", value: "Syne, Bulldozer Jacob, Mathéo, Cendr'oïde, Insect Master, Barbo, Mouchards, Dardaignées, Poux-Religieux" }
+      { label: "Atmosphère", value: "Silence, vibrations, surveillance, effondrement organique" },
+      { label: "Fonction", value: "Refuge d'exil, matrice hostile, piège et champ d'épreuves" },
+      { label: "Présences", value: "Insect Master, Syne, Jacob, Elennya, Mathéo, Cendr'oïde, Bouldouger, Kuji, lumière rose" }
     ],
     biography: [
       "Syne et Jacob atteignent la Terre des Insectes après avoir quitté l'Arkains. Le lieu ne se présente pas comme un simple refuge, mais comme un territoire déjà traversé par une autre compréhension du monde et du déséquilibre.",
@@ -438,16 +438,19 @@ export function createLocationFiches(buildMediaPath) {
       "Les chapitres les plus récents donnent enfin un nom plus net à ce centre: Insect Master, ancien grand créateur de la Terre des Insectes, désormais soupçonné de piloter la logique des parasites et du remodelage.",
       "Mathéo, Cendr'oïde, Bouldouger, Jacob, Syne et même Barbo s'y lisent alors comme les maillons d'un réseau. La Terre des Insectes devient moins un décor qu'une fabrique de missions, de pressions lentes, de parasitages et de retours calculés vers l'ouest.",
       "La route qui y mène confirme cette nature. Avant même la rive nord, les arbres sont rongés, les galeries se multiplient, les toiles barrent le passage et les créatures ne surgissent pas au hasard: les Mouchards écoutent le sol, les Dardaignées et les Poux-Religieux frappent comme un avertissement collectif.",
-      "L'arrivée par la Source Pandorielle donne au lieu une gravité plus ancienne encore. Après l'eau lumineuse et les ombres immenses sous les radeaux, la rive de la Terre des Insectes oppose un silence sans vent, sans chant, presque entier."
+      "L'arrivée par la Source Pandorielle donne au lieu une gravité plus ancienne encore. Après l'eau lumineuse et les ombres immenses sous les radeaux, la rive de la Terre des Insectes oppose un silence sans vent, sans chant, presque entier.",
+      "Plus loin, le territoire se révèle comme un organisme de séparation. Il montre ses nids, ses alvéoles, ses cocons, ses galeries et cette lumière rose enfouie qui ne ressemble pas au réseau insecte. Lorsque la lumière tente de remonter, la Terre des Insectes réagit comme si elle étouffait une présence prisonnière.",
+      "Les épreuves qui suivent ne sont pas distribuées au hasard: Shan et Shaushana dans la forêt blanche, O'Sama et Bella dans les structures mécaniques, Balak'Oss et Franklin dans un ancien campement, Tsune, Lévy et Ab'Youbi dans un canyon de ruches noires, Ezze dans le sanctuaire arachnéen. Le territoire choisit les blessures à rouvrir.",
+      "Quand la lumière rose traverse enfin toute la terre, les structures insectes s'effondrent et laissent place à une plaine nue. Ce n'est pas une victoire: c'est le moment où Insect Master se montre enfin, face à des survivants déjà changés."
     ],
     summary: [
       "La Terre des Insectes donne un vrai point d'origine au camp de Syne et à la logique des parasites.",
-      "Elle devient aussi un territoire concrètement traversé, où la surveillance du vivant se ressent avant même l'affrontement."
+      "Elle devient aussi un territoire concrètement traversé, puis un piège vivant qui sépare, éprouve et révèle les forces les plus enfouies du groupe."
     ],
     profile: [
-      { title: "Texture du lieu", text: "Silence tendu, galeries, vibrations basses, toiles, racines rongées et surveillance sans regard." },
-      { title: "Rôle narratif", text: "Donner au camp adverse une base idéologique, hiérarchique et relationnelle, au-delà des seules apparitions de terrain." },
-      { title: "Point de tension", text: "Ce lieu ne frappe pas toujours frontalement: il observe, teste et laisse parfois repartir comme si l'avertissement comptait plus que la mort immédiate." }
+      { title: "Texture du lieu", text: "Silence tendu, galeries, vibrations basses, toiles, ruches noires, ruines englouties et lumière rose sous les racines." },
+      { title: "Rôle narratif", text: "Transformer le camp adverse en territoire actif, capable de lire les groupes, de les séparer et d'orchestrer des affrontements presque personnels." },
+      { title: "Point de tension", text: "Ce lieu semble appartenir aux insectes, mais la lumière rose révèle qu'une autre présence y lutte encore sous la surface." }
     ],
     contextLinks: [
       { href: "#fiches-syne", label: "Voir Syne" },
