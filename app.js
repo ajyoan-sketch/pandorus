@@ -1547,6 +1547,15 @@ function buildMediaPath(folder, fileName) {
   return `./media/${folder}/${safeFileName}`;
 }
 
+const alphabeticalCollator = new Intl.Collator("fr", {
+  sensitivity: "base",
+  numeric: true
+});
+
+function sortByDisplayName(items, getName = (item) => item?.name || "") {
+  return [...items].sort((left, right) => alphabeticalCollator.compare(getName(left), getName(right)));
+}
+
 function stripAccents(value) {
   return (value || "")
     .normalize("NFD")
@@ -2302,7 +2311,7 @@ let currentCharacterLetter = "all";
 let currentCreatureLetter = "all";
 let currentFicheLetter = "all";
 let currentLocationLetter = "all";
-let currentCreatureFiche = creatureFiches[0]?.slug || "";
+let currentCreatureFiche = sortByDisplayName(creatureFiches)[0]?.slug || "";
 let currentComicCollectionId = null;
 let currentComicPageIndex = 0;
 let currentComicZoom = 1;
@@ -2505,7 +2514,7 @@ function renderAdditionalCharacterFiches() {
     return;
   }
 
-  additionalCharacterFiches.forEach((fiche) => {
+  sortByDisplayName(additionalCharacterFiches).forEach((fiche) => {
     const tab = document.createElement("button");
     tab.className = "fiche-tab";
     tab.type = "button";
@@ -2805,8 +2814,14 @@ function initLocationFilters() {
 }
 
 function initFicheTabs() {
-  const tabs = Array.from(document.querySelectorAll(".fiche-tab"));
-  const panels = Array.from(document.querySelectorAll(".fiche-panel"));
+  const tabsContainer = document.querySelector("#fiches .fiche-tabs");
+  if (tabsContainer) {
+    sortByDisplayName(Array.from(tabsContainer.querySelectorAll(".fiche-tab")), (tab) => tab.textContent || "")
+      .forEach((tab) => tabsContainer.appendChild(tab));
+  }
+
+  const tabs = Array.from(document.querySelectorAll("#fiches .fiche-tab"));
+  const panels = Array.from(document.querySelectorAll("#fiches .fiche-panel"));
   if (!tabs.length || !panels.length) return;
 
   function activatePanel(panelId) {
@@ -2826,7 +2841,7 @@ function initFicheTabs() {
   });
 
   window.activateFichePanel = activatePanel;
-  activatePanel(ficheHashPanelMap[window.location.hash] || "shan-panel");
+  activatePanel(ficheHashPanelMap[window.location.hash] || tabs[0].dataset.ficheTarget);
   initFicheAlphabetFilter(tabs, activatePanel);
 }
 
@@ -2838,7 +2853,9 @@ function renderCreatureFiches() {
   tabsContainer.innerHTML = "";
   panelsContainer.innerHTML = "";
 
-  creatureFiches.forEach((fiche, index) => {
+  const sortedCreatureFiches = sortByDisplayName(creatureFiches);
+
+  sortedCreatureFiches.forEach((fiche, index) => {
     const tab = document.createElement("button");
     tab.className = `fiche-tab${index === 0 ? " active" : ""}`;
     tab.type = "button";
@@ -3813,10 +3830,14 @@ function renderPandorusImages() {
 
   grid.innerHTML = "";
 
-  const visibleImages = pandorusImages.filter((path, index) => {
-    const imageName = getPandorusImageName(path, index);
-    return matchesLetterFilter(imageName, currentCharacterLetter);
-  });
+  const visibleImages = sortByDisplayName(
+    pandorusImages
+      .map((path, index) => ({
+        path,
+        name: getPandorusImageName(path, index)
+      }))
+      .filter((item) => matchesLetterFilter(item.name, currentCharacterLetter))
+  );
 
   if (!visibleImages.length) {
     const emptyState = document.createElement("div");
@@ -3826,12 +3847,13 @@ function renderPandorusImages() {
     return;
   }
 
-  visibleImages.forEach((path, index) => {
+  visibleImages.forEach((item) => {
     const node = imageTemplate.content.cloneNode(true);
     const image = node.querySelector("img");
     const link = node.querySelector(".image-link");
     const name = node.querySelector(".image-name");
-    const imageName = getPandorusImageName(path, index);
+    const path = item.path;
+    const imageName = item.name;
     const imageLink = getPandorusImageLink(path, imageName);
     image.src = path;
     image.alt = imageName;
@@ -3864,7 +3886,7 @@ function renderCreatureImages() {
     return;
   }
 
-  creatureFiches.forEach((fiche) => {
+  sortByDisplayName(creatureFiches).forEach((fiche) => {
     const node = imageTemplate.content.cloneNode(true);
     const image = node.querySelector("img");
     const link = node.querySelector(".image-link");
