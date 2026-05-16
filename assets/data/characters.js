@@ -457,6 +457,9 @@
       { label: "Lien majeur", value: "Elennya et la Terre des Insectes" }
     ],
     biography: [
+      "Avant la bataille de la forêt blanche, l'Alien entre dans l'histoire par les profondeurs de la Terre des Insectes. Son corps bleuté, ses gestes légèrement mal accordés au vivant et sa manière d'observer les insectes donnent déjà l'impression d'une présence venue d'un dehors que Pandorus ne sait pas absorber.",
+      "Insect Master l'accueille malgré la prudence de Lady Pink. L'Alien ne commence pas par la violence: il admire les créations d'Insé, pose des questions sur les papillons, les créateurs et l'équilibre, puis déplace lentement la blessure ancienne du médecin vers une conviction plus dure.",
+      "C'est lui qui formule la tentation la plus dangereuse: si les insectes agissent vraiment, pourquoi laisser les papillons recevoir la gloire et l'autorité du vivant ? À force de phrases calmes, il aide Insect Master à transformer une injustice ressentie en projet de remplacement.",
       "L'Alien apparaît dans la forêt blanche aux côtés d'Elennya. Sa présence dérange immédiatement parce qu'elle ne suit pas tout à fait la logique du vivant pandorien: ses mouvements semblent décalés, son regard dissèque plus qu'il ne rencontre.",
       "Il parle d'évolution avec une froideur vide, comme si les émotions, les créateurs et les attachements du monde n'étaient que des faiblesses à corriger. Son autorité sur Elennya révèle aussi une contrainte directe, presque humiliante, exercée sur ceux qui servent le camp adverse.",
       "Face à Shan et Shaushana, il déforme l'espace, trouble les perceptions et tente de toucher l'esprit autant que le corps. Pourtant la lumière rose réagit à sa présence, et le combat montre qu'il peut être repoussé lorsque l'émotion devient force commune plutôt que faiblesse."
@@ -471,11 +474,16 @@
       { title: "Mystère", text: "Son monde, sa hiérarchie réelle et son lien exact avec Insect Master restent encore ouverts." }
     ],
     relations: [
+      { title: "Insect Master", text: "Il devient le patient corrupteur de sa blessure: admirer ses insectes, puis l'amener à haïr l'ordre qui place les papillons au centre." },
+      { title: "Lady Pink", text: "Il comprend qu'elle reste le dernier lien capable de retenir Insé et pousse la rupture jusqu'à son enfermement." },
       { title: "Elennya", text: "Il lui impose d'obéir, ce qui révèle une domination plus froide que l'alliance." },
       { title: "Shan et Shaushana", text: "Leur réponse commune le force à reculer et montre que son regard sur les émotions est incomplet." },
       { title: "Lumière rose", text: "La présence souterraine réagit violemment lorsqu'il approche, comme si elle reconnaissait en lui une menace étrangère." }
     ],
     timeline: [
+      { era: "Avant le récit", title: "Arrivée souterraine", summary: "L'Alien apparaît dans les profondeurs de la Terre des Insectes, étranger aux règles naturelles du territoire." },
+      { era: "Avant le récit", title: "Blessure retournée", summary: "Par admiration et par doute, il pousse Insect Master à voir les papillons comme une faiblesse injustement placée au centre du monde." },
+      { era: "Avant le récit", title: "Rupture avec Lady Pink", summary: "Il aide à couper le dernier lien qui retenait encore Insé et accompagne l'enfermement de Lady Pink." },
       { era: "Jour 22", title: "Apparition dans la forêt blanche", summary: "L'Alien apparaît auprès d'Elennya et impose immédiatement une pression étrangère aux règles de Pandorus." },
       { era: "Jour 22", title: "Distorsion du combat", summary: "Il trouble l'espace et les perceptions de Shan et Shaushana avant d'être repoussé par leur réponse commune." },
       { era: "Jour 22", title: "Retrait par les insectes", summary: "Une nuée noire l'emporte hors de la forêt blanche avant que Shan puisse comprendre son monde." }
@@ -1309,41 +1317,95 @@
     ]
   },
   {
+    slug: "lady-pink",
+    hash: "#fiches-lady-pink",
+    name: "Lady Pink",
+    image: buildMediaPath("pandorus", "Lady Pink.png"),
+    category: "Créatrice de l'équilibre",
+    intro: "Lady Pink est la lumière rose que la Terre des Insectes retenait sous ses racines. Elle n'est pas une simple force enfouie: elle est celle qui avait reconnu Insé, aimé son écoute du monde et nommé Insect Master avant d'être trahie.",
+    meta: [
+      { label: "Statut", value: "Créatrice prisonnière sous la Terre des Insectes" },
+      { label: "Spécialité", value: "Équilibre, reconnaissance, veille du vivant" },
+      { label: "Lien majeur", value: "Insé / Insect Master et la lumière rose" }
+    ],
+    biography: [
+      "Lady Pink apparaît d'abord comme une lumière rose lointaine au-dessus de La Veyron, puis comme une femme entourée de papillons lumineux, capable d'immobiliser le vent sans imposer la peur. Les insectes eux-mêmes la reconnaissent, signe qu'elle ne règne pas contre le vivant mais avec lui.",
+      "Elle voit en Insé autre chose qu'un médecin brillant: une écoute rare de ce que le monde oublie. En lui parlant des créateurs et de l'équilibre, elle ne lui impose pas un destin, elle lui laisse une année pour choisir de rejoindre la Terre des Insectes.",
+      "À la Source Pandorielle, elle accompagne sa transformation et lui donne son nom nouveau. Les premières années qui suivent sont heureuses, presque fondatrices: elle lui montre les équilibres de Pandorus tandis qu'il crée des insectes capables de soigner, purifier et protéger.",
+      "Lorsque l'Alien commence à retourner Insé contre les papillons, Lady Pink tente encore de sauver celui qu'elle aime. Elle comprend le danger, mais refuse de le réduire à sa chute. Sa douleur devient alors l'un des centres secrets de la tragédie.",
+      "Piégée dans les profondeurs de la Terre des Insectes par Insect Master et l'Alien, elle demeure nourrie mais incapable de contrer pleinement leurs plans. La lumière rose que Shaushana et Lévy ressentent n'est autre que son dernier battement, épuisé mais encore vivant."
+    ],
+    summary: [
+      "Lady Pink révèle que la lumière rose est une personne, une créatrice et une mémoire d'amour trahie.",
+      "Son enfermement donne à la Terre des Insectes une dimension tragique: le territoire combat sur une prison construite par son propre créateur."
+    ],
+    profile: [
+      { title: "Nature", text: "Créatrice liée à l'équilibre du monde, à la reconnaissance des places et à une lumière rose profonde." },
+      { title: "Forces", text: "Lecture du vivant, autorité douce, capacité à reconnaître les créateurs et à maintenir une présence malgré l'enfermement." },
+      { title: "Blessure", text: "Elle est trahie par celui qu'elle avait choisi et aimé, mais sa lumière continue de lutter sous la terre." }
+    ],
+    relations: [
+      { title: "Insect Master", text: "Elle choisit Insé, le nomme, l'aime, puis devient la prisonnière de sa rupture avec l'équilibre." },
+      { title: "L'Alien", text: "Elle ressent très tôt son étrangeté et comprend trop tard qu'il pousse Insé à couper ce qui le retenait encore." },
+      { title: "Terre des Insectes", text: "Le territoire fut d'abord son lieu de reconnaissance pour Insé, avant de devenir la prison organique de sa lumière." },
+      { title: "Shaushana et Lévy", text: "Ils ressentent sa présence enfouie comme une vie épuisée que le réseau insecte cherche à étouffer." }
+    ],
+    timeline: [
+      { era: "Avant le récit", title: "Apparition en La Veyron", summary: "Lady Pink descend dans la lumière rose pour reconnaître l'écoute d'Insé et lui parler des créateurs." },
+      { era: "Avant le récit", title: "Choix laissé à Insé", summary: "Elle refuse de le forcer et lui donne une année pour rejoindre la Terre des Insectes s'il accepte." },
+      { era: "Avant le récit", title: "Nom d'Insect Master", summary: "À la Source Pandorielle, elle accompagne la reconnaissance d'Insé par la Terre et prononce son nouveau nom." },
+      { era: "Avant le récit", title: "Années d'équilibre", summary: "Avec Insect Master, elle parcourt Pandorus et la Terre des Insectes dans une période encore heureuse." },
+      { era: "Avant le récit", title: "Prison sous les racines", summary: "Insect Master et l'Alien l'enferment dans une salle organique profonde pour empêcher sa lumière de contrarier leurs plans." },
+      { era: "Jour 22", title: "Battement sous la Terre des Insectes", summary: "Sa lumière rose traverse encore le territoire, appelle Shaushana et Lévy puis contribue à faire tomber les structures qui la retiennent." }
+    ]
+  },
+  {
     slug: "insect-master",
     hash: "#fiches-insect-master",
     name: "Insect Master",
     image: buildMediaPath("pandorus", "Insect Master.png"),
     category: "Grand créateur dévoyé",
-    intro: "Insect Master surgit comme la grande figure encore absente qui pèse pourtant déjà sur l'ouest. Ancien créateur de la Terre des Insectes, il est désormais soupçonné d'être l'esprit qui tord le vivant par parasites, relais et remodelages.",
+    intro: "Insect Master n'est plus seulement le maître lointain de la Terre des Insectes. Le chapitre 34 révèle Insé derrière le nom: un enfant de La Veyron devenu médecin par les insectes, choisi par Lady Pink, puis lentement retourné par l'Alien contre l'équilibre qu'il devait protéger.",
     meta: [
-      { label: "Statut", value: "Créateur soupçonné d'orchestrer le dérèglement occidental" },
+      { label: "Statut", value: "Ancien médecin devenu créateur dévoyé" },
       { label: "Ancrage", value: "Terre des Insectes" },
-      { label: "Lien majeur", value: "Syne, Jacob, Barbo et le réseau insecte" }
+      { label: "Lien majeur", value: "Lady Pink, l'Alien et le réseau insecte" }
     ],
     biography: [
-      "Bichette ne le présente pas comme un simple ennemi de passage. Insect Master appartenait d'abord à la logique des grands créateurs, capables de maintenir l'équilibre d'un territoire vivant.",
-      "Quelque chose s'est pourtant rompu dans sa lecture. Les papillons lui apparaissent comme trop fragiles, trop légers, presque impropres à tenir un monde blessé. À partir de là, sa réponse ne cherche plus à accompagner le vivant mais à le remodeler.",
-      "Derrière Syne, Jacob, Mathéo, Cendr'oïde, Bouldouger, Nogard et Barbo, Insect Master devient ainsi la première grande intelligence nommée d'un réseau hostile déjà vaste.",
+      "Avant le titre, il y a Insé: un garçon de La Veyron, silencieux, fasciné par les insectes et par leur manière de maintenir le monde sans attirer les regards. Quand sa mère tombe malade, il cherche d'abord du côté des papillons lumineux, puis découvre que les abeilles, fourmis, coccinelles, scarabées et plantes de sa terre peuvent composer le remède qui la sauve.",
+      "Cette guérison fonde en lui une conviction simple et dangereuse: les insectes agissent vraiment, là où les papillons brillent. Devenu médecin, Insé soigne La Veyron sans rechercher de gloire, entouré d'insectes qui semblent répondre à sa présence comme à une nécessité du monde.",
+      "Lady Pink le reconnaît ensuite comme créateur possible et le mène à la Terre des Insectes. À la Source Pandorielle, la Terre le choisit, et Insé devient Insect Master. Ses premières années auprès de Lady Pink sont heureuses: il crée des espèces capables de soigner, purifier, protéger et maintenir les flux du territoire.",
+      "L'arrivée de l'Alien ouvre la fracture. En admirant sincèrement ses créations puis en questionnant la place des papillons, il retourne peu à peu la blessure fondatrice d'Insé contre l'équilibre de Lady Pink. Insect Master finit par croire qu'un monde qui accepte la souffrance mérite d'être corrigé.",
+      "La bascule devient irréversible lorsqu'il piège Lady Pink dans les profondeurs de la Terre des Insectes. La lumière rose que le territoire étouffe n'est donc pas une anomalie abstraite, mais celle qu'il a aimée, choisie comme guide, puis enfermée pour ne plus entendre sa limite.",
+      "Derrière Syne, Jacob, Mathéo, Cendr'oïde, Bouldouger, Kuji et Elennya, Insect Master devient ainsi la première grande intelligence nommée d'un réseau hostile déjà vaste. Il crée les parasites pour dérégler les flux des papillons et envoyer ses agents ouvrir les ruptures du monde.",
       "Lorsque la Terre des Insectes s'effondre sous les pulsations de la lumière rose, il se montre enfin au-dessus de la plaine révélée. Sa présence calme, entourée d'insectes qui n'osent pas l'approcher, donne au conflit son prochain centre direct."
     ],
     summary: [
-      "Insect Master donne enfin un visage plus haut au camp adverse.",
-      "Il transforme la Terre des Insectes en foyer idéologique du dérèglement.",
+      "Insect Master donne enfin un visage intime et tragique au camp adverse.",
+      "Sa chute naît d'une vraie écoute des insectes, déformée ensuite en refus violent des papillons et de l'équilibre.",
       "Son apparition devant les survivants marque le passage de l'épreuve territoriale au face-à-face avec le maître du lieu."
     ],
     profile: [
-      { title: "Nature", text: "Ancien créateur devenu maître d'un réagencement hostile du vivant." },
+      { title: "Nature", text: "Ancien médecin de La Veyron et créateur devenu maître d'un réagencement hostile du vivant." },
       { title: "Rôle", text: "Centraliser, orienter et légitimer la logique des parasites et du remplacement." },
-      { title: "Mystère", text: "On connaît désormais son nom et sa terre, mais pas encore toute l'étendue réelle de sa puissance." }
+      { title: "Blessure", text: "Il confond la limite des papillons avec leur inutilité, puis transforme une gratitude envers les insectes en idéologie de domination." }
     ],
     relations: [
-      { title: "Syne", text: "Bichette le désigne comme le maître probable du réseau dans lequel Syne agit." },
-      { title: "Terre des Insectes", text: "Il est lié au territoire comme un ancien gardien devenu centre de dérive." },
-      { title: "Barbo", text: "Barbo appartient au même horizon hiérarchique trouble, peut-être à un étage encore plus opaque du même système." }
+      { title: "Lady Pink", text: "Elle le choisit, le nomme et l'aime avant de devenir la lumière rose qu'il enferme sous sa propre terre." },
+      { title: "L'Alien", text: "L'Alien agit comme le patient corrupteur de sa blessure contre les papillons et contre l'équilibre." },
+      { title: "La Veyron", text: "Sa terre d'enfance explique son lien aux insectes, à la médecine et à la conviction que l'utile vaut plus que l'éclat." },
+      { title: "Terre des Insectes", text: "Il est lié au territoire comme créateur reconnu, puis comme maître d'une prison organique et d'un réseau de missions." },
+      { title: "Syne", text: "Il l'intègre à son organisation avec Jacob, dans une logique où les êtres blessés deviennent des outils d'un ordre nouveau." }
     ],
     timeline: [
-      { era: "Avant le récit", title: "Créateur de la Terre des Insectes", summary: "Insect Master maintenait autrefois l'équilibre de son territoire comme l'un des grands créateurs." },
-      { era: "Avant le récit", title: "Bascule contre les papillons", summary: "Sa lecture du monde se détourne de la fragilité des papillons et s'oriente vers une logique plus dure de remodelage." },
+      { era: "Avant le récit", title: "Enfant de La Veyron", summary: "Insé grandit au bord du Veyrine en observant les insectes que les autres ne regardent presque pas." },
+      { era: "Avant le récit", title: "Sa mère sauvée", summary: "Après l'échec des papillons lumineux, il compose avec les insectes et les plantes le remède qui guérit sa mère." },
+      { era: "Avant le récit", title: "Médecin des insectes", summary: "Devenu adulte, Insé soigne La Veyron avec des préparations que les insectes l'aident à réunir." },
+      { era: "Avant le récit", title: "Choisi par Lady Pink", summary: "Lady Pink reconnaît son écoute du monde et lui propose de rejoindre la Terre des Insectes comme nouveau créateur." },
+      { era: "Avant le récit", title: "Nom d'Insect Master", summary: "À la Source Pandorielle, la Terre le reconnaît et Lady Pink prononce son nouveau nom." },
+      { era: "Avant le récit", title: "Bascule contre les papillons", summary: "Sous l'influence de l'Alien, sa vieille blessure devient une conviction: les papillons occupent une place qu'ils ne méritent pas." },
+      { era: "Avant le récit", title: "Lady Pink enfermée", summary: "Il piège la créatrice dans les profondeurs de la Terre des Insectes pour empêcher sa lumière de contrecarrer ses plans." },
+      { era: "Avant le récit", title: "Parasites et missions", summary: "Il crée les parasites et envoie ses agents frapper les régions où les flux des papillons peuvent être brisés." },
       { era: "Jour 18", title: "Nom enfin donné", summary: "Bichette nomme Insect Master comme source probable du réseau qui agit derrière Syne et le Parasite." },
       { era: "Jour 22", title: "Apparition sur la plaine", summary: "Après l'effondrement du territoire, Insect Master apparaît enfin face aux survivants avec Syne, Jacob et Elennya." }
     ]

@@ -5,6 +5,7 @@
     passar: buildMediaPath("lieux", "Passar.jpg"),
     "bidonville-du-passar": buildMediaPath("lieux", "Bidonville du Passar.jpg"),
     veyrine: buildMediaPath("lieux", "Veyrine.jpg"),
+    "la-veyron": buildMediaPath("lieux", "Veyrine.jpg"),
     bassai: buildMediaPath("lieux", "Bassaï.jpg"),
     vrax: buildMediaPath("lieux", "Le Vrax.jpg"),
     "coeur-du-vrax": buildMediaPath("lieux", "Coeur Du Vrax.jpg"),
@@ -143,6 +144,38 @@ export function createLocationFiches(buildMediaPath) {
       { href: "#fiches-capitaine", label: "Voir le Capitaine" },
       { href: "#mysteres", label: "Ouvrir les mystères" },
       { href: "#chronologie", label: "Lire les bascules" }
+    ]
+  },
+  {
+    slug: "la-veyron",
+    name: "La Veyron",
+    tone: "river",
+    category: "Terre d'origine",
+    intro: "La Veyron est une région vivante bordée par le Veyrine, pleine d'eaux claires, de hautes herbes et d'insectes au travail. Elle révèle l'origine sensible d'Insé avant qu'il ne devienne Insect Master.",
+    meta: [
+      { label: "Atmosphère", value: "Abondance, observation, médecine du vivant" },
+      { label: "Fonction", value: "Origine d'Insé et de sa lecture des insectes" },
+      { label: "Présences", value: "Insé, sa mère, Lady Pink, insectes de La Veyron" }
+    ],
+    biography: [
+      "La Veyron n'apparaît pas comme une terre de guerre, mais comme un monde qui respire partout à la fois. Fleuve, cultures, arbres, insectes et nuits douces y forment une abondance discrète, presque maternelle.",
+      "C'est là qu'Insé apprend à voir ce que les autres négligent. Les papillons lumineux attirent les regards, mais lui suit les fourmis, les abeilles, les coccinelles et les scarabées qui maintiennent la vie par des gestes minuscules.",
+      "Lorsque sa mère tombe malade, La Veyron devient aussi le lieu de sa première grande bascule. Les papillons ne suffisent pas, tandis que les insectes apportent feuilles, miel et poudres capables de faire naître un vrai remède.",
+      "Des années plus tard, Lady Pink descend dans cette même région pour reconnaître en Insé une écoute rare du monde. La Veyron devient alors le seuil intime entre le médecin des insectes et le futur créateur de la Terre des Insectes."
+    ],
+    summary: [
+      "La Veyron donne à Insect Master une origine humaine, douce et blessée.",
+      "Elle explique pourquoi les insectes deviennent pour Insé une vérité plus concrète que l'éclat des papillons."
+    ],
+    profile: [
+      { title: "Texture du lieu", text: "Fleuve clair, herbes hautes, ateliers de soin, insectes partout et lumière rose lointaine." },
+      { title: "Rôle narratif", text: "Révéler la source intime d'une conviction qui deviendra plus tard dangereuse." },
+      { title: "Point de tension", text: "La beauté du lieu porte déjà une question: pourquoi admire-t-on ce qui brille plus que ce qui sauve en silence ?" }
+    ],
+    contextLinks: [
+      { href: "#fiches-insect-master", label: "Voir Insect Master" },
+      { href: "#chronologie", label: "Lire l'origine d'Insé" },
+      { href: "#lieux-terre-des-insectes", label: "Voir la Terre des Insectes" }
     ]
   },
   {
@@ -430,13 +463,13 @@ export function createLocationFiches(buildMediaPath) {
     meta: [
       { label: "Atmosphère", value: "Silence, vibrations, surveillance, effondrement organique" },
       { label: "Fonction", value: "Refuge d'exil, matrice hostile, piège et champ d'épreuves" },
-      { label: "Présences", value: "Insect Master, Syne, Jacob, Elennya, Mathéo, Cendr'oïde, Bouldouger, Kuji, lumière rose" }
+      { label: "Présences", value: "Insect Master, Lady Pink, l'Alien, Syne, Jacob, Elennya, Mathéo, Cendr'oïde, Bouldouger, Kuji" }
     ],
     biography: [
-      "Syne et Jacob atteignent la Terre des Insectes après avoir quitté l'Arkains. Le lieu ne se présente pas comme un simple refuge, mais comme un territoire déjà traversé par une autre compréhension du monde et du déséquilibre.",
-      "C'est là qu'un homme lié à un frelon noir fait basculer Syne vers une logique plus dure: ce qui dérègle le vivant n'a peut-être pas à être seulement contenu, mais prolongé, orienté ou utilisé pour qu'un autre monde prenne sa place.",
-      "Les chapitres les plus récents donnent enfin un nom plus net à ce centre: Insect Master, ancien grand créateur de la Terre des Insectes, désormais soupçonné de piloter la logique des parasites et du remodelage.",
-      "Mathéo, Cendr'oïde, Bouldouger, Jacob, Syne et même Barbo s'y lisent alors comme les maillons d'un réseau. La Terre des Insectes devient moins un décor qu'une fabrique de missions, de pressions lentes, de parasitages et de retours calculés vers l'ouest.",
+      "Avant de devenir un territoire oppressant, la Terre des Insectes fut le foyer choisi pour Insé. Lady Pink le mena jusqu'à la Source Pandorielle, la Terre le reconnut, et le médecin de La Veyron devint Insect Master, créateur capable d'inventer des espèces qui soignent, purifient et protègent.",
+      "L'arrivée de l'Alien déplace pourtant cette harmonie. En admirant les insectes d'Insé et en grattant sa vieille blessure contre les papillons, il l'amène peu à peu à voir l'équilibre comme une faiblesse et le monde vivant comme une matière à corriger.",
+      "La lumière rose enfouie n'est plus seulement une présence anonyme: elle est Lady Pink, enfermée sous le territoire par celui qu'elle avait choisi. La Terre des Insectes devient alors une prison organique autant qu'un royaume, un lieu où l'amour ancien se change en geôle.",
+      "Kuji, Mathéo, Elennya, Bouldouger, Syne, Jacob et Cendr'oïde s'y lisent comme les maillons d'une organisation construite autour de cette rupture. La Terre des Insectes devient moins un décor qu'une fabrique de missions, de parasites, de pressions lentes et de retours calculés vers l'ouest.",
       "La route qui y mène confirme cette nature. Avant même la rive nord, les arbres sont rongés, les galeries se multiplient, les toiles barrent le passage et les créatures ne surgissent pas au hasard: les Mouchards écoutent le sol, les Dardaignées et les Poux-Religieux frappent comme un avertissement collectif.",
       "L'arrivée par la Source Pandorielle donne au lieu une gravité plus ancienne encore. Après l'eau lumineuse et les ombres immenses sous les radeaux, la rive de la Terre des Insectes oppose un silence sans vent, sans chant, presque entier.",
       "Plus loin, le territoire se révèle comme un organisme de séparation. Il montre ses nids, ses alvéoles, ses cocons, ses galeries et cette lumière rose enfouie qui ne ressemble pas au réseau insecte. Lorsque la lumière tente de remonter, la Terre des Insectes réagit comme si elle étouffait une présence prisonnière.",

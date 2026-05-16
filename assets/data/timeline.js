@@ -110,6 +110,56 @@
     summary: "Un homme lié à un frelon noir, puis des figures comme Mathéo, Bouldouger et Cendr'oïde, font entrer Syne dans une logique d'observation, d'infection et de remplacement."
   },
   {
+    era: "Avant le récit",
+    title: "Enfance d'Insé en La Veyron",
+    summary: "Au bord du Veyrine, Insé grandit dans une terre abondante en observant les insectes que les autres regardent à peine, déjà plus attentif à leur travail silencieux qu'à l'éclat des papillons."
+  },
+  {
+    era: "Avant le récit",
+    title: "Remède des insectes",
+    summary: "Lorsque sa mère tombe malade, Insé échoue avec les papillons lumineux puis comprend, grâce aux abeilles, fourmis, coccinelles et plantes de La Veyron, que les insectes peuvent aussi sauver."
+  },
+  {
+    era: "Avant le récit",
+    title: "Insé devient le médecin de La Veyron",
+    summary: "Les années font de lui un soigneur reconnu, entouré d'insectes capables de récolter, purifier et soutenir ses remèdes sans jamais chercher de gloire."
+  },
+  {
+    era: "Avant le récit",
+    title: "Lady Pink choisit Insé",
+    summary: "Une lumière rose descend en La Veyron : Lady Pink reconnaît l'écoute d'Insé, lui parle des créateurs et lui laisse une année pour rejoindre la Terre des Insectes."
+  },
+  {
+    era: "Avant le récit",
+    title: "Naissance d'Insect Master",
+    summary: "À la Source Pandorielle, la Terre répond à Insé et Lady Pink le nomme Insect Master, nouveau créateur de la Terre des Insectes."
+  },
+  {
+    era: "Avant le récit",
+    title: "Années heureuses avec Lady Pink",
+    summary: "Insect Master crée des espèces capables de soigner, purifier, protéger et maintenir les flux de son territoire, tandis que Lady Pink lui montre les équilibres plus vastes de Pandorus."
+  },
+  {
+    era: "Avant le récit",
+    title: "Arrivée de l'Alien dans les profondeurs",
+    summary: "Un être extérieur à Pandorus apparaît dans la Terre des Insectes, admire les créations d'Insé et commence lentement à retourner sa blessure ancienne contre les papillons."
+  },
+  {
+    era: "Avant le récit",
+    title: "Lady Pink est enfermée sous la Terre des Insectes",
+    summary: "Convaincu que l'équilibre accepte trop la souffrance, Insect Master piège Lady Pink avec l'aide de l'Alien et emprisonne la lumière rose sous son propre territoire."
+  },
+  {
+    era: "Avant le récit",
+    title: "Constitution du camp d'Insect Master",
+    summary: "Kuji, Mathéo, Elennya, Bouldouger, Syne, Bulldozer Jacob et Cendr'oïde rejoignent peu à peu l'organisation d'Insect Master, tandis que les Très Orés et Mugniweh refusent sa proposition."
+  },
+  {
+    era: "Avant le récit",
+    title: "Création des parasites",
+    summary: "Pendant deux années, Insect Master travaille dans les profondeurs pour créer des parasites capables de dérégler les flux des papillons et de faire basculer Pandorus."
+  },
+  {
     era: "Jour 1",
     title: "Reveil de Shaushana dans Le Passage",
     summary: "Shaushana ouvre les yeux dans un monde déjà vivant et ressent immediatement le souffle profond qui le traverse."

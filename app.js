@@ -1418,11 +1418,23 @@ const relationNodes = [
     name: "Insect Master",
     role: "Créateur dévoyé des insectes",
     links: [
-      { target: "Terre des Insectes", type: "Règne", description: "Insect Master règne sur la Terre des Insectes et en maintenait autrefois l'équilibre avant de basculer vers une logique de remodelage." },
-      { target: "Syne", type: "Maître supposé", description: "Bichette pense que le maître de Syne n'est autre qu'Insect Master lui-même, derrière la logique des parasites et des infiltrations." },
-      { target: "Papillons", type: "Mépris ancien", description: "Il ne comprenait pas la place décisive des papillons, qu'il jugeait trop fragiles pour tenir un rôle majeur dans l'équilibre du monde." },
-      { target: "Barbo", type: "Hiérarchie obscure", description: "Autour d'Insect Master gravitent déjà des figures plus étranges encore, comme Barbo, signes d'une architecture hostile plus haute et plus vaste." },
-      { target: "Lumière rose", type: "Territoire contesté", description: "L'effondrement de la Terre des Insectes montre qu'une présence enfouie échappe à sa maîtrise complète du lieu." }
+      { target: "La Veyron", type: "Origine", description: "Avant son nom de créateur, Insé vient d'une terre vivante où les insectes lui apprennent à soigner ce que les papillons seuls ne peuvent sauver." },
+      { target: "Lady Pink", type: "Amour trahi", description: "Lady Pink le choisit, le nomme et l'aime avant de devenir la lumière rose qu'il enferme sous la Terre des Insectes." },
+      { target: "L'Alien", type: "Corruption patiente", description: "L'Alien admire ses créations puis retourne sa blessure ancienne contre les papillons et contre l'équilibre." },
+      { target: "Terre des Insectes", type: "Règne", description: "Insect Master règne sur la Terre des Insectes, d'abord comme créateur reconnu, puis comme maître d'une prison organique et d'un réseau de missions." },
+      { target: "Syne", type: "Outil du réseau", description: "Syne et Jacob deviennent des relais d'un ordre nouveau que l'Alien et Insect Master construisent à partir d'êtres blessés." },
+      { target: "Papillons", type: "Mépris ancien", description: "Il confond la limite des papillons avec leur inutilité et transforme cette blessure en justification pour remodeler Pandorus." }
+    ]
+  },
+  {
+    name: "Lady Pink",
+    role: "Créatrice prisonnière de la lumière rose",
+    links: [
+      { target: "Insect Master", type: "Choix devenu trahison", description: "Elle reconnaît Insé, le conduit vers la Terre des Insectes et prononce son nouveau nom avant qu'il ne l'enferme." },
+      { target: "Terre des Insectes", type: "Prison organique", description: "Sa lumière rose reste retenue sous les racines et les structures vivantes du territoire." },
+      { target: "L'Alien", type: "Menace pressentie", description: "Elle sent très tôt que l'Alien ne relève pas des règles de Pandorus et qu'il fissure lentement Insé." },
+      { target: "Shaushana", type: "Appel enfoui", description: "Shaushana ressent sa présence comme une vie épuisée que le territoire insecte tente d'étouffer." },
+      { target: "Lévy", type: "Lecture du vivant", description: "Lévy distingue sa lumière du réseau insecte et comprend qu'elle ne vient pas de la même volonté." }
     ]
   },
   {
@@ -1528,7 +1540,10 @@ function buildLoreLinkEntries() {
     ["Cendr'oïde", "#fiches-cendroide"],
     ["Cendroide", "#fiches-cendroide"],
     ["Will le Tigre Bois", "#fiches-will-le-tigre-bois"],
+    ["Lady Pink", "#fiches-lady-pink"],
     ["Insect Master", "#fiches-insect-master"],
+    ["Insé", "#fiches-insect-master"],
+    ["Inse", "#fiches-insect-master"],
     ["Barbo", "#fiches-barbo"],
     ["O'Sama", "#fiches-o-sama"],
     ["Osama", "#fiches-o-sama"],
@@ -1552,6 +1567,7 @@ function buildLoreLinkEntries() {
     ["Passar", "#lieux-passar"],
     ["Bidonville du Passar", "#lieux-bidonville-du-passar"],
     ["Veyrine", "#lieux-veyrine"],
+    ["La Veyron", "#lieux-la-veyron"],
     ["Bassaï", "#lieux-bassai"],
     ["Bassai", "#lieux-bassai"],
     ["Cœur du Vrax", "#lieux-coeur-du-vrax"],
@@ -2397,6 +2413,11 @@ const chapters = [
     path: "./media/chapitres/Chapitre%2033%20-%20Batailles.pdf",
     summary: "Séparés par la Terre des Insectes, les alliés affrontent Elennya et l'Alien, Cendr'oïde, Bouldouger, Kuji et Mathéo, tandis que la lumière rose fait s'effondrer le territoire avant l'apparition d'Insect Master.",
     accessKey: "ChapPando33"
+  },
+  {
+    path: "./media/chapitres/Chapitre%2034%20-%20Ins%C3%A9.pdf",
+    summary: "L'origine d'Insé se révèle depuis La Veyron jusqu'à la Terre des Insectes : médecin lié aux insectes, choisi par Lady Pink, il devient Insect Master avant que l'Alien ne transforme sa blessure contre les papillons en trahison du monde.",
+    accessKey: "ChapPando34"
   }
 ];
 
@@ -3032,6 +3053,7 @@ function renderTimeline() {
     if (normalizedEventText.includes("PASSAR")) contextCandidates.push({ href: "#lieux-passar", label: "Voir le Passar" });
     if (normalizedEventText.includes("BASSAI")) contextCandidates.push({ href: "#lieux-bassai", label: "Voir le Bassaï" });
     if (normalizedEventText.includes("VEYRINE")) contextCandidates.push({ href: "#lieux-veyrine", label: "Voir le Veyrine" });
+    if (normalizedEventText.includes("VEYRON")) contextCandidates.push({ href: "#lieux-la-veyron", label: "Voir La Veyron" });
     if (normalizedEventText.includes("CAPITAINE")) contextCandidates.push({ href: "#fiches-capitaine", label: "Voir le Capitaine" });
     if (normalizedEventText.includes("VRAX")) contextCandidates.push({ href: "#lieux-vrax", label: "Voir le Vrax" });
     if (normalizedEventText.includes("VERT")) contextCandidates.push({ href: "#lieux-vert", label: "Voir le Vert" });
@@ -3067,7 +3089,8 @@ function renderTimeline() {
     if (normalizedEventText.includes("ALIEN")) contextCandidates.push({ href: "#fiches-lalien", label: "Voir l'Alien" });
     if (normalizedEventText.includes("ZAINOB")) contextCandidates.push({ href: "#fiches-zainob", label: "Voir Zaïnob" });
     if (normalizedEventText.includes("WILL")) contextCandidates.push({ href: "#fiches-will-le-tigre-bois", label: "Voir Will le Tigre Bois" });
-    if (normalizedEventText.includes("INSECT MASTER")) contextCandidates.push({ href: "#fiches-insect-master", label: "Voir Insect Master" });
+    if (normalizedEventText.includes("LADY PINK")) contextCandidates.push({ href: "#fiches-lady-pink", label: "Voir Lady Pink" });
+    if (normalizedEventText.includes("INSECT MASTER") || normalizedEventText.includes("INSE")) contextCandidates.push({ href: "#fiches-insect-master", label: "Voir Insect Master" });
     if (normalizedEventText.includes("BARBO")) contextCandidates.push({ href: "#fiches-barbo", label: "Voir Barbo" });
     if (normalizedEventText.includes("O'SAMA") || normalizedEventText.includes("OSAMA")) contextCandidates.push({ href: "#fiches-o-sama", label: "Voir O'Sama" });
     if (normalizedEventText.includes("BELLA")) contextCandidates.push({ href: "#fiches-bella", label: "Voir Bella" });
@@ -3815,7 +3838,9 @@ const relationPortraitMap = {
   "Padre Souf": buildMediaPath("pandorus", "Padre Souf.png"),
   Bichette: buildMediaPath("pandorus", "Bichette.png"),
   "Luna Queen": buildMediaPath("pandorus", "Luna Queen.png"),
-  "Méli Mélo": buildMediaPath("pandorus", "Méli Mélo.png")
+  "Méli Mélo": buildMediaPath("pandorus", "Méli Mélo.png"),
+  "Lady Pink": buildMediaPath("pandorus", "Lady Pink.png"),
+  "Insect Master": buildMediaPath("pandorus", "Insect Master.png")
 };
 
 function renderLandingPulse() {
