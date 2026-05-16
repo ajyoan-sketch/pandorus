@@ -359,6 +359,15 @@ const characterRouteMap = {
   barbo: "#fiches-barbo",
   "insect-master": "#fiches-insect-master",
   insectmaster: "#fiches-insect-master",
+  inse: "#fiches-insect-master",
+  "insé": "#fiches-insect-master",
+  abou: "#fiches-abou",
+  boubou: "#fiches-boubou",
+  aboudacar: "#fiches-aboudacar",
+  aboudakar: "#fiches-aboudacar",
+  lyssah: "#fiches-lyssah",
+  mugniweh: "#fiches-mugniweh",
+  mungniweh: "#fiches-mugniweh",
   will: "#fiches-will-le-tigre-bois",
   "will-le-tigre-bois": "#fiches-will-le-tigre-bois",
   "mitra-sesse": "#fiches-mitra-sesse",
@@ -420,6 +429,15 @@ const characterPrimaryLocationMap = {
   barbo: "#lieux-terre-des-insectes",
   "insect-master": "#lieux-terre-des-insectes",
   insectmaster: "#lieux-terre-des-insectes",
+  inse: "#lieux-la-veyron",
+  "insé": "#lieux-la-veyron",
+  abou: "#chronologie",
+  boubou: "#chronologie",
+  aboudacar: "#chronologie",
+  aboudakar: "#chronologie",
+  lyssah: "#chronologie",
+  mugniweh: "#chronologie",
+  mungniweh: "#chronologie",
   will: "#lieux-sombra",
   "will-le-tigre-bois": "#lieux-sombra",
   "mitra-sesse": "#lieux-taverne-du-sombrail",
@@ -1427,6 +1445,51 @@ const relationNodes = [
     ]
   },
   {
+    name: "Abou",
+    role: "Très Oré solaire",
+    links: [
+      { target: "Insect Master", type: "Rencontre d'origine", description: "Abou rencontre Insé avant sa nomination, dans La Sèche, et lui offre une hospitalité immédiate." },
+      { target: "Aboudacar", type: "Compagnon de camp", description: "Avec Aboudacar, Boubou et Lyssah, il forme un groupe qui protège ce qui peut encore vivre autour des fleuves." },
+      { target: "Lyssah", type: "Même veille", description: "Son accueil ouvert complète la lecture plus silencieuse de Lyssah." }
+    ]
+  },
+  {
+    name: "Boubou",
+    role: "Très Oré discret",
+    links: [
+      { target: "Insect Master", type: "Aide de route", description: "Boubou donne à Insé des herbes rares, prolongeant son accueil par un geste utile." },
+      { target: "Abou", type: "Contrepoids calme", description: "Là où Abou ouvre le camp par le rire et la parole, Boubou le tient par la présence et les gestes." },
+      { target: "Aboudacar", type: "Vie de camp", description: "Tous deux incarnent la part concrète des Très Orés: nourriture, soin, patience et protection." }
+    ]
+  },
+  {
+    name: "Aboudacar",
+    role: "Très Oré réfléchi",
+    links: [
+      { target: "Insect Master", type: "Phrase laissée", description: "Aboudacar laisse à Insé l'idée que tout le monde protège quelque chose, avant de lui confier une courte lame." },
+      { target: "Lyssah", type: "Lecture commune", description: "Sa parole mesurée répond à l'intuition silencieuse de Lyssah autour du destin d'Insé." },
+      { target: "Abou", type: "Même fidélité", description: "Ils montrent deux manières différentes de protéger La Sèche sans chercher à imposer un nouvel ordre." }
+    ]
+  },
+  {
+    name: "Lyssah",
+    role: "Très Orée lectrice",
+    links: [
+      { target: "Insect Master", type: "Intuition du départ", description: "Lyssah pressent que le monde attend Insé ailleurs, avant qu'il ne rejoigne Lady Pink et la Terre des Insectes." },
+      { target: "Lady Pink", type: "Lumière remarquée", description: "Elle observe la lumière rose lointaine et semble comprendre qu'elle n'est pas un simple phénomène." },
+      { target: "Aboudacar", type: "Parole et silence", description: "Leur duo donne aux Très Orés une lecture morale et intuitive de ce qui traverse Insé." }
+    ]
+  },
+  {
+    name: "Mugniweh",
+    role: "Chaos indépendant",
+    links: [
+      { target: "Insect Master", type: "Recrutement refusé", description: "Mugniweh refuse de rejoindre Insect Master parce qu'un nouvel ordre reste encore un ordre." },
+      { target: "Très Orés", type: "Refus opposé", description: "Les Très Orés refusent pour protéger l'équilibre; Mugniweh refuse parce qu'il veut casser tous les équilibres." },
+      { target: "Pandorus", type: "Menace latérale", description: "Sa logique ne semble appartenir ni à la réparation du monde ni au remodelage organisé, mais à une rupture plus libre." }
+    ]
+  },
+  {
     name: "Lady Pink",
     role: "Créatrice prisonnière de la lumière rose",
     links: [
@@ -1544,6 +1607,13 @@ function buildLoreLinkEntries() {
     ["Insect Master", "#fiches-insect-master"],
     ["Insé", "#fiches-insect-master"],
     ["Inse", "#fiches-insect-master"],
+    ["Abou", "#fiches-abou"],
+    ["Boubou", "#fiches-boubou"],
+    ["Aboudacar", "#fiches-aboudacar"],
+    ["Aboudakar", "#fiches-aboudacar"],
+    ["Lyssah", "#fiches-lyssah"],
+    ["Mugniweh", "#fiches-mugniweh"],
+    ["Mungniweh", "#fiches-mugniweh"],
     ["Barbo", "#fiches-barbo"],
     ["O'Sama", "#fiches-o-sama"],
     ["Osama", "#fiches-o-sama"],
@@ -3091,6 +3161,11 @@ function renderTimeline() {
     if (normalizedEventText.includes("WILL")) contextCandidates.push({ href: "#fiches-will-le-tigre-bois", label: "Voir Will le Tigre Bois" });
     if (normalizedEventText.includes("LADY PINK")) contextCandidates.push({ href: "#fiches-lady-pink", label: "Voir Lady Pink" });
     if (normalizedEventText.includes("INSECT MASTER") || normalizedEventText.includes("INSE")) contextCandidates.push({ href: "#fiches-insect-master", label: "Voir Insect Master" });
+    if (normalizedEventText.includes("ABOU")) contextCandidates.push({ href: "#fiches-abou", label: "Voir Abou" });
+    if (normalizedEventText.includes("BOUBOU")) contextCandidates.push({ href: "#fiches-boubou", label: "Voir Boubou" });
+    if (normalizedEventText.includes("ABOUDACAR") || normalizedEventText.includes("ABOUDAKAR")) contextCandidates.push({ href: "#fiches-aboudacar", label: "Voir Aboudacar" });
+    if (normalizedEventText.includes("LYSSAH")) contextCandidates.push({ href: "#fiches-lyssah", label: "Voir Lyssah" });
+    if (normalizedEventText.includes("MUGNIWEH") || normalizedEventText.includes("MUNGNIWEH")) contextCandidates.push({ href: "#fiches-mugniweh", label: "Voir Mugniweh" });
     if (normalizedEventText.includes("BARBO")) contextCandidates.push({ href: "#fiches-barbo", label: "Voir Barbo" });
     if (normalizedEventText.includes("O'SAMA") || normalizedEventText.includes("OSAMA")) contextCandidates.push({ href: "#fiches-o-sama", label: "Voir O'Sama" });
     if (normalizedEventText.includes("BELLA")) contextCandidates.push({ href: "#fiches-bella", label: "Voir Bella" });
@@ -3840,7 +3915,12 @@ const relationPortraitMap = {
   "Luna Queen": buildMediaPath("pandorus", "Luna Queen.png"),
   "Méli Mélo": buildMediaPath("pandorus", "Méli Mélo.png"),
   "Lady Pink": buildMediaPath("pandorus", "Lady Pink.png"),
-  "Insect Master": buildMediaPath("pandorus", "Insect Master.png")
+  "Insect Master": buildMediaPath("pandorus", "Insect Master.png"),
+  Abou: buildMediaPath("pandorus", "Abou.jpg"),
+  Boubou: buildMediaPath("pandorus", "Boubou.jpg"),
+  Aboudacar: buildMediaPath("pandorus", "Aboudakar.jpg"),
+  Lyssah: buildMediaPath("pandorus", "Lyssah.jpg"),
+  Mugniweh: buildMediaPath("pandorus", "Mugniweh.png")
 };
 
 function renderLandingPulse() {

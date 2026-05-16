@@ -126,6 +126,11 @@
   },
   {
     era: "Avant le récit",
+    title: "Rencontre des Très Orés en La Sèche",
+    summary: "En suivant l'appel de Lady Pink, Insé traverse La Sèche et rencontre Abou, Boubou, Aboudacar et Lyssah, quatre protecteurs qui tiennent les fleuves contre les Virus et les terres mortes."
+  },
+  {
+    era: "Avant le récit",
     title: "Lady Pink choisit Insé",
     summary: "Une lumière rose descend en La Veyron : Lady Pink reconnaît l'écoute d'Insé, lui parle des créateurs et lui laisse une année pour rejoindre la Terre des Insectes."
   },
@@ -152,7 +157,7 @@
   {
     era: "Avant le récit",
     title: "Constitution du camp d'Insect Master",
-    summary: "Kuji, Mathéo, Elennya, Bouldouger, Syne, Bulldozer Jacob et Cendr'oïde rejoignent peu à peu l'organisation d'Insect Master, tandis que les Très Orés et Mugniweh refusent sa proposition."
+    summary: "Kuji, Mathéo, Elennya, Bouldouger, Syne, Bulldozer Jacob et Cendr'oïde rejoignent peu à peu l'organisation d'Insect Master, tandis qu'Abou, Boubou, Aboudacar, Lyssah et Mugniweh refusent sa proposition pour des raisons opposées."
   },
   {
     era: "Avant le récit",

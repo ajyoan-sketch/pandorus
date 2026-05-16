@@ -450,7 +450,7 @@
     name: "L'Alien",
     image: buildMediaPath("pandorus", "L'alien.png"),
     category: "Être venu d'ailleurs",
-    intro: "L'Alien est une présence étrangère aux règles de Pandorus. Son corps, ses gestes et sa parole donnent l'impression d'un monde extérieur qui observe le vivant sans jamais le comprendre vraiment.",
+    intro: "L'Alien est une présence étrangère aux règles de Pandorus. Le chapitre 34 le révèle moins comme un simple combattant que comme une influence patiente, capable d'admirer sincèrement les créations d'Insé pour mieux déplacer sa blessure contre les papillons.",
     meta: [
       { label: "Statut", value: "Figure hostile étrangère à Pandorus" },
       { label: "Spécialité", value: "Distorsion, contrôle, pression mentale" },
@@ -459,19 +459,19 @@
     biography: [
       "Avant la bataille de la forêt blanche, l'Alien entre dans l'histoire par les profondeurs de la Terre des Insectes. Son corps bleuté, ses gestes légèrement mal accordés au vivant et sa manière d'observer les insectes donnent déjà l'impression d'une présence venue d'un dehors que Pandorus ne sait pas absorber.",
       "Insect Master l'accueille malgré la prudence de Lady Pink. L'Alien ne commence pas par la violence: il admire les créations d'Insé, pose des questions sur les papillons, les créateurs et l'équilibre, puis déplace lentement la blessure ancienne du médecin vers une conviction plus dure.",
-      "C'est lui qui formule la tentation la plus dangereuse: si les insectes agissent vraiment, pourquoi laisser les papillons recevoir la gloire et l'autorité du vivant ? À force de phrases calmes, il aide Insect Master à transformer une injustice ressentie en projet de remplacement.",
+      "Sa méthode tient à la précision. Il ne dit pas tout d'un coup, ne force pas la haine, ne bouscule pas Insé. Il répète seulement ce que la blessure veut déjà entendre: les insectes agissent, les papillons reçoivent la gloire, et Lady Pink accepte encore un monde où la souffrance existe.",
       "L'Alien apparaît dans la forêt blanche aux côtés d'Elennya. Sa présence dérange immédiatement parce qu'elle ne suit pas tout à fait la logique du vivant pandorien: ses mouvements semblent décalés, son regard dissèque plus qu'il ne rencontre.",
       "Il parle d'évolution avec une froideur vide, comme si les émotions, les créateurs et les attachements du monde n'étaient que des faiblesses à corriger. Son autorité sur Elennya révèle aussi une contrainte directe, presque humiliante, exercée sur ceux qui servent le camp adverse.",
       "Face à Shan et Shaushana, il déforme l'espace, trouble les perceptions et tente de toucher l'esprit autant que le corps. Pourtant la lumière rose réagit à sa présence, et le combat montre qu'il peut être repoussé lorsque l'émotion devient force commune plutôt que faiblesse."
     ],
     summary: [
       "L'Alien introduit une menace qui ne vient pas seulement de la Terre des Insectes, mais d'un dehors plus vaste.",
-      "Il révèle une strate de contrôle froide autour d'Elennya et une hostilité profonde envers la part émotionnelle du vivant."
+      "Il révèle une strate de contrôle froide autour d'Elennya et une capacité plus insidieuse encore: transformer une douleur juste en idéologie de rupture."
     ],
     profile: [
       { title: "Nature", text: "Être extérieur, à la présence presque artificielle, capable de distordre l'espace et la perception." },
       { title: "Forces", text: "Contrôle, déplacement impossible à lire, pression mentale, mépris des émotions." },
-      { title: "Mystère", text: "Son monde, sa hiérarchie réelle et son lien exact avec Insect Master restent encore ouverts." }
+      { title: "Mystère", text: "Son monde, sa hiérarchie réelle et les raisons de son intérêt pour les insectes restent encore ouverts." }
     ],
     relations: [
       { title: "Insect Master", text: "Il devient le patient corrupteur de sa blessure: admirer ses insectes, puis l'amener à haïr l'ordre qui place les papillons au centre." },
@@ -1322,7 +1322,7 @@
     name: "Lady Pink",
     image: buildMediaPath("pandorus", "Lady Pink.png"),
     category: "Créatrice de l'équilibre",
-    intro: "Lady Pink est la lumière rose que la Terre des Insectes retenait sous ses racines. Elle n'est pas une simple force enfouie: elle est celle qui avait reconnu Insé, aimé son écoute du monde et nommé Insect Master avant d'être trahie.",
+    intro: "Lady Pink est la lumière rose que la Terre des Insectes retenait sous ses racines. Elle n'est pas une simple force enfouie: elle est celle qui reconnaît Insé, l'aime assez pour ne pas le forcer, puis devient la prisonnière de l'homme qu'elle avait nommé Insect Master.",
     meta: [
       { label: "Statut", value: "Créatrice prisonnière sous la Terre des Insectes" },
       { label: "Spécialité", value: "Équilibre, reconnaissance, veille du vivant" },
@@ -1330,9 +1330,9 @@
     ],
     biography: [
       "Lady Pink apparaît d'abord comme une lumière rose lointaine au-dessus de La Veyron, puis comme une femme entourée de papillons lumineux, capable d'immobiliser le vent sans imposer la peur. Les insectes eux-mêmes la reconnaissent, signe qu'elle ne règne pas contre le vivant mais avec lui.",
-      "Elle voit en Insé autre chose qu'un médecin brillant: une écoute rare de ce que le monde oublie. En lui parlant des créateurs et de l'équilibre, elle ne lui impose pas un destin, elle lui laisse une année pour choisir de rejoindre la Terre des Insectes.",
+      "Elle voit en Insé autre chose qu'un médecin brillant: une écoute rare de ce que le monde oublie. En lui parlant des créateurs et de l'équilibre, elle ne lui impose pas un destin. Ce détail compte profondément: Lady Pink reconnaît, propose, attend, mais ne possède pas.",
       "À la Source Pandorielle, elle accompagne sa transformation et lui donne son nom nouveau. Les premières années qui suivent sont heureuses, presque fondatrices: elle lui montre les équilibres de Pandorus tandis qu'il crée des insectes capables de soigner, purifier et protéger.",
-      "Lorsque l'Alien commence à retourner Insé contre les papillons, Lady Pink tente encore de sauver celui qu'elle aime. Elle comprend le danger, mais refuse de le réduire à sa chute. Sa douleur devient alors l'un des centres secrets de la tragédie.",
+      "Lorsque l'Alien commence à retourner Insé contre les papillons, Lady Pink tente encore de sauver celui qu'elle aime. Elle sait que l'équilibre n'efface pas toute souffrance, mais qu'il empêche le monde de devenir une correction brutale imposée aux vivants.",
       "Piégée dans les profondeurs de la Terre des Insectes par Insect Master et l'Alien, elle demeure nourrie mais incapable de contrer pleinement leurs plans. La lumière rose que Shaushana et Lévy ressentent n'est autre que son dernier battement, épuisé mais encore vivant."
     ],
     summary: [
@@ -1360,12 +1360,163 @@
     ]
   },
   {
+    slug: "abou",
+    hash: "#fiches-abou",
+    name: "Abou",
+    image: buildMediaPath("pandorus", "Abou.jpg"),
+    category: "Très Oré de La Sèche",
+    intro: "Abou apparaît dans La Sèche comme une chaleur humaine immédiate. Grand, rieur, direct, il accueille Insé sans cérémonial et donne aux Très Orés leur premier visage vivant.",
+    meta: [
+      { label: "Statut", value: "Membre des Très Orés" },
+      { label: "Ancrage", value: "La Sèche, fleuves Arkains et Le Sec" },
+      { label: "Lien majeur", value: "Insé et les Très Orés" }
+    ],
+    biography: [
+      "Abou rencontre Insé au bord du fleuve Le Sec, dans un campement posé entre les pierres d'une terre rude. Il parle le premier, rit aussitôt et s'approche comme si l'étranger n'avait pas besoin de prouver son droit à être accueilli.",
+      "Son geste le plus simple dit déjà beaucoup: il donne à boire avant de questionner. Dans La Sèche, où le soleil ne pardonne pas, cette attention vaut presque une loi morale.",
+      "Autour du feu, Abou raconte les tempêtes, les régions mortes, les créatures du désert et les Virus. Sa parole abondante ne sert pas seulement à remplir le silence: elle rend habitable un monde difficile.",
+      "Lorsque Insé reprend la route, Abou lui donne des provisions. Ce départ laisse une trace sobre mais décisive: les Très Orés montrent à Insé une autre manière de tenir le vivant, par la protection des autres plutôt que par la domination du monde."
+    ],
+    summary: [
+      "Abou donne aux Très Orés leur chaleur d'accueil et leur énergie la plus ouverte.",
+      "Il incarne une protection simple, joyeuse et concrète dans une terre qui force chacun à tenir debout."
+    ],
+    profile: [
+      { title: "Caractère", text: "Rieur, franc, généreux, capable de rendre l'hospitalité presque immédiate." },
+      { title: "Forces", text: "Accueil, endurance, parole vivante, connaissance de La Sèche et de ses dangers." },
+      { title: "Rôle narratif", text: "Faire sentir à Insé qu'un monde rude peut rester fraternel sans chercher à se refaire par la force." }
+    ],
+    relations: [
+      { title: "Insé", text: "Il l'accueille comme un voyageur à protéger avant de le laisser reprendre une route plus grande que le camp." },
+      { title: "Très Orés", text: "Il donne au groupe sa première impulsion humaine, solaire et immédiatement accessible." },
+      { title: "La Sèche", text: "Son rire et ses gestes existent contre la dureté du territoire, pas en dehors d'elle." }
+    ],
+    timeline: [
+      { era: "Avant le récit", title: "Rencontre au campement", summary: "Abou accueille Insé près du fleuve Le Sec avec humour, eau et une confiance presque immédiate." },
+      { era: "Avant le récit", title: "Parole autour du feu", summary: "Il raconte les dangers de La Sèche, les Virus et les combats nécessaires pour protéger ce qui vit encore." },
+      { era: "Avant le récit", title: "Provisions pour la route", summary: "Au départ d'Insé vers le Trou Noctra, Abou lui donne de quoi poursuivre sans tomber sous la dureté du territoire." }
+    ]
+  },
+  {
+    slug: "boubou",
+    hash: "#fiches-boubou",
+    name: "Boubou",
+    image: buildMediaPath("pandorus", "Boubou.jpg"),
+    category: "Très Oré de La Sèche",
+    intro: "Boubou parle peu, mais ses gestes donnent une densité calme au camp des Très Orés. Il cuisine, observe, ricane doucement et protège par une présence plus discrète que spectaculaire.",
+    meta: [
+      { label: "Statut", value: "Membre des Très Orés" },
+      { label: "Ancrage", value: "La Sèche" },
+      { label: "Lien majeur", value: "Abou, Aboudacar, Lyssah et Insé" }
+    ],
+    biography: [
+      "Boubou apparaît d'abord par un geste tranquille: une main levée en salut, puis la marmite qu'il continue de remuer au-dessus du feu. Là où Abou ouvre le camp par la voix, Boubou le tient par le quotidien.",
+      "Le chapitre insiste peu sur lui, mais ce peu suffit à lui donner une place nette. Il ne cherche pas à occuper le centre, ne force pas Insé à parler, et laisse l'accueil devenir naturel par la nourriture, le feu et la présence.",
+      "Autour des Très Orés, Boubou semble appartenir à cette force basse qui rend la protection durable. Dans une région où la survie dépend des gestes utiles, il est l'un de ceux qui font tenir le camp sans avoir besoin de grands discours.",
+      "Lors du départ d'Insé, il lui confie des herbes rares. Ce don silencieux prolonge son rôle: aider sans dramatiser, donner de quoi passer plus loin, puis laisser la route faire son œuvre."
+    ],
+    summary: [
+      "Boubou est la force discrète des Très Orés.",
+      "Sa fiche repose sur peu d'informations, mais elles dessinent déjà un personnage de geste, de feu et de soin pratique."
+    ],
+    profile: [
+      { title: "Caractère", text: "Peu bavard, attentif, calme, avec une ironie douce qui passe plus par le regard que par la parole." },
+      { title: "Forces", text: "Geste utile, connaissance des herbes, stabilité de campement, présence rassurante." },
+      { title: "Mystère", text: "Son passé et ses capacités restent ouverts, mais son utilité concrète est déjà claire." }
+    ],
+    relations: [
+      { title: "Insé", text: "Il l'aide sans envahir son silence, notamment par les herbes rares données au moment du départ." },
+      { title: "Abou", text: "Là où Abou parle et rit, Boubou tient un contrepoint plus calme et plus terrien." },
+      { title: "Très Orés", text: "Il participe à leur image de protecteurs qui construisent plus qu'ils ne se mettent en avant." }
+    ],
+    timeline: [
+      { era: "Avant le récit", title: "Accueil au feu", summary: "Boubou salue Insé sans interrompre la préparation du repas, inscrivant l'accueil dans un geste simple." },
+      { era: "Avant le récit", title: "Herbes rares", summary: "Il remet à Insé quelques herbes utiles avant la suite du voyage vers le Trou Noctra." }
+    ]
+  },
+  {
+    slug: "aboudacar",
+    hash: "#fiches-aboudacar",
+    name: "Aboudacar",
+    image: buildMediaPath("pandorus", "Aboudakar.jpg"),
+    category: "Très Oré de La Sèche",
+    intro: "Aboudacar est la parole mesurée des Très Orés. Il réfléchit avant de parler, travaille sans agitation et rappelle à Insé que tout être protège quelque chose.",
+    meta: [
+      { label: "Statut", value: "Membre des Très Orés" },
+      { label: "Ancrage", value: "La Sèche, fleuve Le Sec" },
+      { label: "Lien majeur", value: "Les Très Orés et Insé" }
+    ],
+    biography: [
+      "Aboudacar apparaît en train de nettoyer des poissons près du feu. Sa première présence est donc liée au travail précis, à la nourriture et à la continuité matérielle du camp.",
+      "Quand il parle, il ne se précipite pas. Il observe Insé sans le réduire, note qu'il n'a pas une tête de marchand, et laisse à Lyssah comme à Abou le soin de compléter la lecture.",
+      "Son trait le plus net arrive le troisième soir. À la question d'Insé sur le départ, Aboudacar répond que tout le monde protège quelque chose. Cette phrase donne aux Très Orés une profondeur simple: ils ne restent pas par manque d'horizon, mais par fidélité à ce qui dépend d'eux.",
+      "Au moment de la séparation, il offre une vieille lame courte à Insé. Le geste est sobre, presque pratique, mais il porte la même logique que sa parole: protéger le chemin de l'autre sans décider à sa place."
+    ],
+    summary: [
+      "Aboudacar donne aux Très Orés leur gravité calme.",
+      "Il formule l'une des phrases qui peuvent rester dans Insé: protéger quelque chose est déjà une manière de vivre."
+    ],
+    profile: [
+      { title: "Caractère", text: "Réfléchi, posé, peu démonstratif, attentif au poids réel des mots." },
+      { title: "Forces", text: "Lucidité, patience, gestes précis, capacité à formuler simplement une vérité morale." },
+      { title: "Rôle narratif", text: "Opposer à la future logique d'Insect Master une protection sans domination." }
+    ],
+    relations: [
+      { title: "Insé", text: "Il lui laisse une phrase et une lame, deux formes différentes de protection pour la suite." },
+      { title: "Lyssah", text: "Leurs lectures se complètent: lui parle avec mesure, elle observe avant de nommer." },
+      { title: "Très Orés", text: "Il incarne la stabilité morale du groupe, son refus de confondre force et conquête." }
+    ],
+    timeline: [
+      { era: "Avant le récit", title: "Lecture du voyageur", summary: "Aboudacar observe Insé sans agitation et comprend qu'il n'est ni marchand ni simple passant." },
+      { era: "Avant le récit", title: "Tout le monde protège quelque chose", summary: "Au coin du feu, il donne à Insé une phrase qui résume la raison d'être des Très Orés." },
+      { era: "Avant le récit", title: "Lame pour le voyage", summary: "Il remet à Insé une courte lame avant son départ vers le Trou Noctra." }
+    ]
+  },
+  {
+    slug: "lyssah",
+    hash: "#fiches-lyssah",
+    name: "Lyssah",
+    image: buildMediaPath("pandorus", "Lyssah.jpg"),
+    category: "Très Orée de La Sèche",
+    intro: "Lyssah observe avant de parler. Dans le camp des Très Orés, elle est celle qui lit le voyageur silencieux, perçoit l'appel de la lumière rose et devine qu'Insé ne reviendra peut-être pas le même.",
+    meta: [
+      { label: "Statut", value: "Membre des Très Orés" },
+      { label: "Ancrage", value: "La Sèche" },
+      { label: "Lien majeur", value: "Insé et la lumière rose" }
+    ],
+    biography: [
+      "Lyssah entre dans la scène par son regard. Pendant qu'Abou parle et qu'Aboudacar travaille, elle observe déjà attentivement Insé, comme si son silence demandait une lecture plus fine qu'une simple question.",
+      "Elle complète vite la parole des autres: Insé n'a pas l'air d'un bandit. Cette remarque, légère en apparence, montre qu'elle sait situer quelqu'un sans le brusquer.",
+      "Dans La Sèche, Lyssah porte une forme d'attention presque prophétique. Le troisième soir, elle regarde la lumière rose au-dessus des montagnes et murmure que le monde entier attend peut-être Insé quelque part.",
+      "Au départ, elle ne donne ni provisions, ni herbes, ni lame. Elle offre un regard. Ce silence a son propre poids: elle comprend que le voyage d'Insé vers la Terre des Insectes peut le transformer plus profondément que lui-même ne le sait encore."
+    ],
+    summary: [
+      "Lyssah est la lectrice silencieuse des Très Orés.",
+      "Elle relie le camp de La Sèche à l'appel plus vaste qui mène Insé vers Lady Pink et la Terre des Insectes."
+    ],
+    profile: [
+      { title: "Caractère", text: "Observatrice, fine, retenue, plus prompte à comprendre qu'à occuper la parole." },
+      { title: "Forces", text: "Lecture des êtres, intuition des appels du monde, capacité à parler peu mais juste." },
+      { title: "Mystère", text: "Son rapport exact à la lumière rose reste ouvert, mais elle la remarque et semble en saisir la portée." }
+    ],
+    relations: [
+      { title: "Insé", text: "Elle devine que son voyage n'est pas seulement géographique, mais lié à une attente du monde." },
+      { title: "Lumière rose", text: "Elle l'observe au loin et semble comprendre qu'elle appelle Insé vers autre chose." },
+      { title: "Très Orés", text: "Elle donne au groupe une qualité de lecture intérieure, moins bruyante mais essentielle." }
+    ],
+    timeline: [
+      { era: "Avant le récit", title: "Observation d'Insé", summary: "Lyssah lit le voyageur silencieux dès son arrivée au campement de La Sèche." },
+      { era: "Avant le récit", title: "Le monde entier t'attend", summary: "Face à la lumière rose, elle formule l'intuition que la route d'Insé dépasse déjà leur camp." },
+      { era: "Avant le récit", title: "Regard de départ", summary: "Elle laisse partir Insé avec un simple regard, comme si elle savait qu'il ne reviendrait pas inchangé." }
+    ]
+  },
+  {
     slug: "insect-master",
     hash: "#fiches-insect-master",
     name: "Insect Master",
     image: buildMediaPath("pandorus", "Insect Master.png"),
     category: "Grand créateur dévoyé",
-    intro: "Insect Master n'est plus seulement le maître lointain de la Terre des Insectes. Le chapitre 34 révèle Insé derrière le nom: un enfant de La Veyron devenu médecin par les insectes, choisi par Lady Pink, puis lentement retourné par l'Alien contre l'équilibre qu'il devait protéger.",
+    intro: "Insect Master n'est plus seulement le maître lointain de la Terre des Insectes. Le chapitre 34 révèle Insé derrière le nom: un enfant de La Veyron devenu médecin par les insectes, touché par les Très Orés, choisi par Lady Pink, puis lentement retourné par l'Alien contre l'équilibre qu'il devait protéger.",
     meta: [
       { label: "Statut", value: "Ancien médecin devenu créateur dévoyé" },
       { label: "Ancrage", value: "Terre des Insectes" },
@@ -1374,10 +1525,12 @@
     biography: [
       "Avant le titre, il y a Insé: un garçon de La Veyron, silencieux, fasciné par les insectes et par leur manière de maintenir le monde sans attirer les regards. Quand sa mère tombe malade, il cherche d'abord du côté des papillons lumineux, puis découvre que les abeilles, fourmis, coccinelles, scarabées et plantes de sa terre peuvent composer le remède qui la sauve.",
       "Cette guérison fonde en lui une conviction simple et dangereuse: les insectes agissent vraiment, là où les papillons brillent. Devenu médecin, Insé soigne La Veyron sans rechercher de gloire, entouré d'insectes qui semblent répondre à sa présence comme à une nécessité du monde.",
+      "Avant d'accepter l'appel de Lady Pink, Insé traverse La Sèche et rencontre les Très Orés: Abou, Boubou, Aboudacar et Lyssah. Leur campement lui montre une protection sans conquête, rude mais fraternelle, où chacun tient quelque chose pour que d'autres puissent vivre.",
       "Lady Pink le reconnaît ensuite comme créateur possible et le mène à la Terre des Insectes. À la Source Pandorielle, la Terre le choisit, et Insé devient Insect Master. Ses premières années auprès de Lady Pink sont heureuses: il crée des espèces capables de soigner, purifier, protéger et maintenir les flux du territoire.",
       "L'arrivée de l'Alien ouvre la fracture. En admirant sincèrement ses créations puis en questionnant la place des papillons, il retourne peu à peu la blessure fondatrice d'Insé contre l'équilibre de Lady Pink. Insect Master finit par croire qu'un monde qui accepte la souffrance mérite d'être corrigé.",
       "La bascule devient irréversible lorsqu'il piège Lady Pink dans les profondeurs de la Terre des Insectes. La lumière rose que le territoire étouffe n'est donc pas une anomalie abstraite, mais celle qu'il a aimée, choisie comme guide, puis enfermée pour ne plus entendre sa limite.",
       "Derrière Syne, Jacob, Mathéo, Cendr'oïde, Bouldouger, Kuji et Elennya, Insect Master devient ainsi la première grande intelligence nommée d'un réseau hostile déjà vaste. Il crée les parasites pour dérégler les flux des papillons et envoyer ses agents ouvrir les ruptures du monde.",
+      "Tous ne le suivent pourtant pas. Les Très Orés refusent de toucher à l'équilibre, et Mugniweh refuse pour une raison opposée: non par sagesse, mais parce que tout nouvel ordre reste encore trop ordonné pour son chaos.",
       "Lorsque la Terre des Insectes s'effondre sous les pulsations de la lumière rose, il se montre enfin au-dessus de la plaine révélée. Sa présence calme, entourée d'insectes qui n'osent pas l'approcher, donne au conflit son prochain centre direct."
     ],
     summary: [
@@ -1394,6 +1547,8 @@
       { title: "Lady Pink", text: "Elle le choisit, le nomme et l'aime avant de devenir la lumière rose qu'il enferme sous sa propre terre." },
       { title: "L'Alien", text: "L'Alien agit comme le patient corrupteur de sa blessure contre les papillons et contre l'équilibre." },
       { title: "La Veyron", text: "Sa terre d'enfance explique son lien aux insectes, à la médecine et à la conviction que l'utile vaut plus que l'éclat." },
+      { title: "Très Orés", text: "Abou, Boubou, Aboudacar et Lyssah lui montrent une protection rude mais fraternelle, que sa chute future ne parvient pas à effacer complètement." },
+      { title: "Mugniweh", text: "Son refus révèle que le projet d'Insect Master n'épuise pas le chaos possible de Pandorus." },
       { title: "Terre des Insectes", text: "Il est lié au territoire comme créateur reconnu, puis comme maître d'une prison organique et d'un réseau de missions." },
       { title: "Syne", text: "Il l'intègre à son organisation avec Jacob, dans une logique où les êtres blessés deviennent des outils d'un ordre nouveau." }
     ],
@@ -1401,11 +1556,13 @@
       { era: "Avant le récit", title: "Enfant de La Veyron", summary: "Insé grandit au bord du Veyrine en observant les insectes que les autres ne regardent presque pas." },
       { era: "Avant le récit", title: "Sa mère sauvée", summary: "Après l'échec des papillons lumineux, il compose avec les insectes et les plantes le remède qui guérit sa mère." },
       { era: "Avant le récit", title: "Médecin des insectes", summary: "Devenu adulte, Insé soigne La Veyron avec des préparations que les insectes l'aident à réunir." },
+      { era: "Avant le récit", title: "Rencontre des Très Orés", summary: "Dans La Sèche, Abou, Boubou, Aboudacar et Lyssah accueillent Insé et lui montrent une protection fondée sur la fidélité à ce qui vit encore." },
       { era: "Avant le récit", title: "Choisi par Lady Pink", summary: "Lady Pink reconnaît son écoute du monde et lui propose de rejoindre la Terre des Insectes comme nouveau créateur." },
       { era: "Avant le récit", title: "Nom d'Insect Master", summary: "À la Source Pandorielle, la Terre le reconnaît et Lady Pink prononce son nouveau nom." },
       { era: "Avant le récit", title: "Bascule contre les papillons", summary: "Sous l'influence de l'Alien, sa vieille blessure devient une conviction: les papillons occupent une place qu'ils ne méritent pas." },
       { era: "Avant le récit", title: "Lady Pink enfermée", summary: "Il piège la créatrice dans les profondeurs de la Terre des Insectes pour empêcher sa lumière de contrecarrer ses plans." },
       { era: "Avant le récit", title: "Parasites et missions", summary: "Il crée les parasites et envoie ses agents frapper les régions où les flux des papillons peuvent être brisés." },
+      { era: "Avant le récit", title: "Refus extérieurs", summary: "Les Très Orés refusent son nouvel ordre pour protéger l'équilibre, tandis que Mugniweh refuse parce qu'il veut casser tous les équilibres." },
       { era: "Jour 18", title: "Nom enfin donné", summary: "Bichette nomme Insect Master comme source probable du réseau qui agit derrière Syne et le Parasite." },
       { era: "Jour 22", title: "Apparition sur la plaine", summary: "Après l'effondrement du territoire, Insect Master apparaît enfin face aux survivants avec Syne, Jacob et Elennya." }
     ]
@@ -1441,6 +1598,42 @@
     ],
     timeline: [
       { era: "Jour 18", title: "Nom de l'étage supérieur", summary: "Bichette nomme Barbo comme une présence plus haute et plus étrange dans l'organisation hostile." }
+    ]
+  },
+  {
+    slug: "mugniweh",
+    hash: "#fiches-mugniweh",
+    name: "Mugniweh",
+    image: buildMediaPath("pandorus", "Mugniweh.png"),
+    category: "Chaos indépendant",
+    intro: "Mugniweh apparaît brièvement, mais sa réponse suffit à le rendre net : il refuse Insect Master non par sagesse, mais parce qu'il ne veut pas remplacer l'équilibre par un autre ordre. Il veut casser tous les équilibres.",
+    meta: [
+      { label: "Statut", value: "Figure chaotique indépendante" },
+      { label: "Ancrage", value: "Encore inconnu" },
+      { label: "Lien majeur", value: "Refus de l'ordre d'Insect Master" }
+    ],
+    biography: [
+      "Mugniweh est nommé au moment où Insect Master cherche à rallier d'autres forces à son projet. Là où certains rejoignent l'organisation, et où les Très Orés refusent par fidélité à l'équilibre, lui refuse pour une raison beaucoup plus dangereuse.",
+      "Sa phrase trace son territoire moral: il ne veut pas créer un nouvel ordre, ni corriger Pandorus, ni installer une domination plus stable. Il veut briser les équilibres eux-mêmes.",
+      "Ce refus le distingue des alliés d'Insect Master autant que des protecteurs du monde. Mugniweh ne semble pas être un adversaire de principe du chaos: il en revendique au contraire la liberté, ce qui le rend potentiellement imprévisible pour tous les camps.",
+      "Pour l'instant, on ne sait presque rien de lui. Mais ce presque rien suffit à poser une menace latérale: une force qui refuse d'être utilisée parce qu'elle ne veut pas servir un plan, seulement ouvrir la casse."
+    ],
+    summary: [
+      "Mugniweh n'est pas intégré au camp d'Insect Master.",
+      "Son refus révèle une menace plus libre, plus chaotique et peut-être moins contrôlable que les agents déjà connus."
+    ],
+    profile: [
+      { title: "Nature", text: "Présence de rupture, indépendante, hostile à toute stabilité imposée." },
+      { title: "Forces", text: "Imprévisibilité, refus d'être enrôlé, logique du chaos pur plutôt que du nouvel ordre." },
+      { title: "Mystère", text: "Son lieu, ses pouvoirs et son histoire restent ouverts, mais son orientation est déjà dangereusement claire." }
+    ],
+    relations: [
+      { title: "Insect Master", text: "Il refuse son recrutement parce que le projet d'un nouvel ordre reste encore trop construit pour lui." },
+      { title: "Très Orés", text: "Comme eux, il dit non; contrairement à eux, ce refus ne protège pas l'équilibre, il rejette toute forme d'équilibre." },
+      { title: "Pandorus", text: "Sa parole suggère un rapport au monde fondé sur la rupture, pas sur la réparation ni sur la conquête organisée." }
+    ],
+    timeline: [
+      { era: "Avant le récit", title: "Refus du recrutement", summary: "Mugniweh refuse de rejoindre Insect Master, non par sagesse mais parce qu'il veut casser tous les équilibres plutôt qu'en créer un nouveau." }
     ]
   },
   {
